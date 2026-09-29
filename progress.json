@@ -1,10 +1,10 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "updated": "2026-09-29",
   "candidate": {"base": 604832956, "n": 65536, "exponent_bits": 1911814},
   "reference_clock_mhz": 100,
   "clock_status": "Hypothetical common clock for comparing architectures; not a measured or guaranteed operating frequency.",
-  "time_definition": "cycles_per_square * exponent_bits / reference_clock_hz; approximate arithmetic-only time per main PRP candidate, not measured hardware runtime.",
+  "time_definition": "Without caching: cycles_per_square * exponent_bits / reference_clock_hz. With cold_start_cycles: (cold_start_cycles + (exponent_bits - 1) * cycles_per_square) / reference_clock_hz. Approximate arithmetic-only time per main PRP candidate, not measured hardware runtime.",
   "targets_seconds": [300, 600],
   "targets_status": "Chosen 5–10 minute engineering goals, not a matched GPU benchmark or a claim of parity.",
   "milestones": [
@@ -60,6 +60,20 @@
       "full_size_recurrent_squares": 5,
       "rtl_core_sha256": "ef9f7c1904465e4b7d68f0af98aa9712400dd8d3283738d62e741c3648d89923",
       "private_regression_report_sha256": "86f40d17e5fec2925ae3e704bbd79e02974002507775a960f022be7009c0d030"
+    },
+    {
+      "id": "sixteen-cached-prefix",
+      "label": "16 transform + carry\nlanes, cached roots",
+      "date": "2026-09-29",
+      "cycles_per_square": 217522,
+      "cold_start_cycles": 479674,
+      "evidence_class": "integrated_rtl_simulation",
+      "description": "Sixteen butterflies per field and sixteen carry lanes, with root phases retained across squares. Conversion and CRT remain scalar. Projection uses one cold square plus warm squares, assuming no cache-invalidating reset/error. This RTL snapshot is simulation-verified, not physically timing-qualified.",
+      "full_size_recurrent_squares": 5,
+      "cold_samples": 1,
+      "warm_samples": 4,
+      "rtl_core_sha256": "f8a4b3936e11cd08865ea0fcb7812dc75fc950a2ab67b0fd8eff5ee9550eacf8",
+      "private_regression_report_sha256": "7ed2ff0d229534dfbba4582c255fa5cacdfd5a91963a5a1d9a7e33f2785b9cc8"
     }
   ],
   "limitations": [
@@ -67,6 +81,7 @@
     "No complete GFN16 PRP/proof worker has been benchmarked; time is extrapolated from sampled modular squares.",
     "The baseline is a component model; later milestones include conversion, root loading, CRT, carry and controller overhead.",
     "Carry work can be data-dependent; five chained random squares are not a full-PRP average or a universal upper bound.",
+    "Cached milestones assume roots stay resident after one cold square. Cache invalidation, resets or errors require additional root loading.",
     "Proof generation, verification, checkpoints and board/host overhead are excluded.",
     "Raw private reports and vendor outputs are intentionally not published. Hashes identify internal evidence, not a publicly reproducible RTL build.",
     "Milestone order is not elapsed development time. All listed milestones currently share the same date."

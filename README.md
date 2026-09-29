@@ -15,6 +15,17 @@ Every point uses a **hypothetical common 100 MHz clock** to compare architecture
 projected seconds = cycles per square × 1,911,814 / 100,000,000
 ```
 
+For cached-root milestones, the estimate instead uses one cold start and warm
+iterations thereafter:
+
+```text
+projected seconds = (cold-start cycles + warm cycles × 1,911,813) / 100,000,000
+```
+
+The latest simulated milestone uses 217,522 warm cycles (479,674 cold), giving
+about **1.2 hours at the hypothetical 100 MHz**. It has not been physically
+timing-qualified. Cache resets/errors would add root-loading work.
+
 The example candidate is `604832956^65536 + 1`. This approximates one modular
 square/conditional-double per exponent bit. The clock is **not a verified operating
 frequency**, and the plotted times are **not FPGA measurements or full PRP benchmarks**.

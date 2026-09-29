@@ -22,3 +22,9 @@ class ProgressTests(unittest.TestCase):
         self.assertGreater(seconds(data,data["milestones"][-1]),600)
         for forbidden in ("/Users/","/home/","ssh://","BEGIN PRIVATE KEY","github_pat_"):
             self.assertNotIn(forbidden,path.read_text())
+
+    def test_cached_point_includes_one_cold_start(self):
+        data=load_progress(Path(__file__).parents[1]/"progress.json")
+        row=next(r for r in data["milestones"] if r["id"]=="sixteen-cached-prefix")
+        self.assertAlmostEqual(seconds(data,row),(479674+1911813*217522)/1e8)
+        self.assertEqual(row["cold_samples"]+row["warm_samples"],5)

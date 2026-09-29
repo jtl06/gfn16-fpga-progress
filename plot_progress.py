@@ -19,12 +19,18 @@ def load_progress(path: Path) -> dict:
             raise ValueError("duplicate milestone or invalid cycle count")
         if row["evidence_class"] not in {"component_model","integrated_rtl_simulation"}:
             raise ValueError("unknown evidence class")
+        if "cold_start_cycles" in row and (row["cold_start_cycles"] < row["cycles_per_square"]
+                or row.get("cold_samples", 0) < 1 or row.get("warm_samples", 0) < 1
+                or row["cold_samples"] + row["warm_samples"] != row.get("full_size_recurrent_squares")):
+            raise ValueError("cached milestone needs consistent cold/warm evidence")
         seen.add(row["id"])
     return data
 
 
 def seconds(data, row):
-    return row["cycles_per_square"]*data["candidate"]["exponent_bits"]/(data["reference_clock_mhz"]*1e6)
+    bits = data["candidate"]["exponent_bits"]
+    cycles = row.get("cold_start_cycles", row["cycles_per_square"]) + (bits - 1) * row["cycles_per_square"]
+    return cycles/(data["reference_clock_mhz"]*1e6)
 
 
 def duration(s):
@@ -44,7 +50,7 @@ def render(data, destination):
     rows=data["milestones"]; xs=list(range(len(rows)))
     ys=[seconds(data,row)/3600 for row in rows]
     blue="#2369a1"; gray="#687480"; green="#28734e"
-    fig,ax=plt.subplots(figsize=(11.6,6.6),facecolor="white")
+    fig,ax=plt.subplots(figsize=(13,6.6),facecolor="white")
     fig.subplots_adjust(left=.12,right=.97,bottom=.32,top=.78)
     fig.text(.12,.935,"GFN-16: time-per-candidate progress",fontsize=21,color="#182d3c",weight="medium")
     fig.text(.12,.88,f"Architectural comparison at a hypothetical {data['reference_clock_mhz']:g} MHz • lower is better",color="#475966",fontsize=12)
@@ -81,7 +87,7 @@ def render(data, destination):
             Line2D([],[],linestyle="none",marker="o",color=blue,markersize=7,label="Integrated RTL simulation")]
     fig.legend(handles=legend,loc="lower left",bbox_to_anchor=(.115,.12),ncol=2,frameon=False,fontsize=10.5)
     fig.text(.12,.082,"Example: 604832956^65536 + 1 • 1,911,814 assumed square/conditional-double iterations",fontsize=10,color="#475966")
-    fig.text(.12,.047,"Excludes proof/checkpoint/host work. Operating frequency remains design-dependent. Updated "+data["updated"]+".",fontsize=10,color="#475966")
+    fig.text(.12,.047,"Cached point: one cold start, then warm roots. Excludes proof/checkpoint/host work. Updated "+data["updated"]+".",fontsize=10,color="#475966")
     destination.mkdir(parents=True,exist_ok=True)
     for ext in ("svg","png"):
         metadata={"Date":None,"Creator":"GFN16 progress plotting script"} if ext=="svg" else {"Software":"GFN16 progress plotting script"}
