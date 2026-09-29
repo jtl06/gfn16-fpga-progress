@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "updated": "2026-09-29",
+  "candidate": {"base": 604832956, "n": 65536, "exponent_bits": 1911814},
+  "reference_clock_mhz": 100,
+  "clock_status": "Hypothetical common clock for comparing architectures; not a measured or guaranteed operating frequency.",
+  "time_definition": "cycles_per_square * exponent_bits / reference_clock_hz; approximate arithmetic-only time per main PRP candidate, not measured hardware runtime.",
+  "targets_seconds": [300, 600],
+  "targets_status": "Chosen 5–10 minute engineering goals, not a matched GPU benchmark or a claim of parity.",
+  "milestones": [
+    {
+      "id": "serial-baseline",
+      "label": "Serial\nbaseline",
+      "date": "2026-09-29",
+      "cycles_per_square": 32046363,
+      "evidence_class": "component_model",
+      "description": "Three serial field transforms plus serial CRT and carry. Component-cycle model; excluded several integration overheads.",
+      "full_size_recurrent_squares": null
+    },
+    {
+      "id": "integrated-stream",
+      "label": "Pipelined\nintegration",
+      "date": "2026-09-29",
+      "cycles_per_square": 2424980,
+      "evidence_class": "integrated_rtl_simulation",
+      "description": "Three concurrent field engines, streaming CRT, reciprocal carry and on-chip root generation; full-square control overhead included.",
+      "full_size_recurrent_squares": 5,
+      "rtl_core_sha256": "e61352a12b3836c90db2ae0413adb528b86e25b9405900323c11464f5e6fc58f",
+      "private_regression_report_sha256": "1b00be8f332a2e0c992ec1a64429c54b791a6ef7c3e3e81b18e497a4e6162ef1"
+    },
+    {
+      "id": "difdit",
+      "label": "Remove transform\nreordering",
+      "date": "2026-09-29",
+      "cycles_per_square": 2228660,
+      "evidence_class": "integrated_rtl_simulation",
+      "description": "Forward DIF and inverse DIT remove both explicit bit-reversal passes.",
+      "full_size_recurrent_squares": 5,
+      "rtl_core_sha256": "07a40a884b567d58d39167230cb16f6ee76a004ced01588670170d694b202296",
+      "private_regression_report_sha256": "6cac2d15ac5aa8b00e8cfbf82b27b034995d111dc24e01d57ba37ce280a91bdb"
+    },
+    {
+      "id": "parallel-four",
+      "label": "Four transform\nlanes / field",
+      "date": "2026-09-29",
+      "cycles_per_square": 1294772,
+      "evidence_class": "integrated_rtl_simulation",
+      "description": "Four butterflies per cycle in each field, using eight conflict-free memory banks.",
+      "full_size_recurrent_squares": 5,
+      "rtl_core_sha256": "e2df6e0d02da4f33bc12ab5687317a2fd6335bd33c2c408c78537a86d4b7aa9b",
+      "private_regression_report_sha256": "c46c7a882f188696a0181d30f721308112ab01d2569c7b08012318f3676aeac5"
+    },
+    {
+      "id": "parallel-four-prefix",
+      "label": "Add prefix\ncarry handling",
+      "date": "2026-09-29",
+      "cycles_per_square": 836026,
+      "evidence_class": "integrated_rtl_simulation",
+      "description": "Independent coefficient division and bounded five-state carry propagation, with a runtime-checked large-radix domain.",
+      "full_size_recurrent_squares": 5,
+      "rtl_core_sha256": "ef9f7c1904465e4b7d68f0af98aa9712400dd8d3283738d62e741c3648d89923",
+      "private_regression_report_sha256": "86f40d17e5fec2925ae3e704bbd79e02974002507775a960f022be7009c0d030"
+    }
+  ],
+  "limitations": [
+    "No FPGA hardware runtime measurements are included.",
+    "No complete GFN16 PRP/proof worker has been benchmarked; time is extrapolated from sampled modular squares.",
+    "The baseline is a component model; later milestones include conversion, root loading, CRT, carry and controller overhead.",
+    "Carry work can be data-dependent; five chained random squares are not a full-PRP average or a universal upper bound.",
+    "Proof generation, verification, checkpoints and board/host overhead are excluded.",
+    "Raw private reports and vendor outputs are intentionally not published. Hashes identify internal evidence, not a publicly reproducible RTL build.",
+    "Milestone order is not elapsed development time. All listed milestones currently share the same date."
+  ]
+}
