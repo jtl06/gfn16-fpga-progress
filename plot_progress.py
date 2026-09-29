@@ -86,6 +86,8 @@ def render(data, destination):
     for ext in ("svg","png"):
         metadata={"Date":None,"Creator":"GFN16 progress plotting script"} if ext=="svg" else {"Software":"GFN16 progress plotting script"}
         fig.savefig(destination/f"progress.{ext}",dpi=180,metadata=metadata)
+    svg=destination/"progress.svg"
+    svg.write_text("\n".join(line.rstrip() for line in svg.read_text().splitlines())+"\n")
     plt.close(fig)
 
 
