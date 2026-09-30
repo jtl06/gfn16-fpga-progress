@@ -50,11 +50,11 @@ def render(data, destination):
     rows=data["milestones"]; xs=list(range(len(rows)))
     ys=[seconds(data,row)/3600 for row in rows]
     blue="#2369a1"; gray="#687480"; green="#28734e"
-    fig,ax=plt.subplots(figsize=(13,6.6),facecolor="white")
+    fig,ax=plt.subplots(figsize=(16,7.2),facecolor="white")
     fig.subplots_adjust(left=.12,right=.97,bottom=.32,top=.78)
     fig.text(.12,.935,"GFN-16: time-per-candidate progress",fontsize=21,color="#182d3c",weight="medium")
     fig.text(.12,.88,f"Architectural comparison at a hypothetical {data['reference_clock_mhz']:g} MHz • lower is better",color="#475966",fontsize=12)
-    fig.text(.12,.835,"Compute-only projections from RTL cycle counts — not measured FPGA runtimes",color="#475966",fontsize=11)
+    fig.text(.12,.835,"Selected architecture milestones, including separate branches — not measured FPGA runtimes",color="#475966",fontsize=11)
     ax.set_yscale("log")
     lo,hi=[v/3600 for v in data["targets_seconds"]]
     ax.axhspan(lo,hi,color=green,alpha=.11,zorder=0)
@@ -74,7 +74,7 @@ def render(data, destination):
     ax.yaxis.set_minor_locator(NullLocator())
     ax.set_ylim(min(lo*.5,min(ys)*.6),max(ys)*2.1)
     ax.set_xlim(-.3,len(rows)-.7)
-    ax.set_xticks(xs,[r["label"] for r in rows],fontsize=10.5)
+    ax.set_xticks(xs,[r["label"] for r in rows],fontsize=9.5)
     ax.set_ylabel("Projected time per candidate (log scale)",labelpad=12,color="#334b5a")
     ax.set_xlabel("Development milestone — not elapsed time",labelpad=15,color="#475966")
     ax.grid(axis="y",color="#dae0e5",linewidth=.6)
@@ -87,7 +87,7 @@ def render(data, destination):
             Line2D([],[],linestyle="none",marker="o",color=blue,markersize=7,label="Integrated RTL simulation")]
     fig.legend(handles=legend,loc="lower left",bbox_to_anchor=(.115,.12),ncol=2,frameon=False,fontsize=10.5)
     fig.text(.12,.082,"Example: 604832956^65536 + 1 • 1,911,814 assumed square/conditional-double iterations",fontsize=10,color="#475966")
-    fig.text(.12,.047,"Cached point: one cold start, then warm roots. Excludes proof/checkpoint/host work. Updated "+data["updated"]+".",fontsize=10,color="#475966")
+    fig.text(.12,.047,"Cached points: one cold start, then warm roots. No fit yet for the final point. Updated "+data["updated"]+".",fontsize=10,color="#475966")
     destination.mkdir(parents=True,exist_ok=True)
     for ext in ("svg","png"):
         metadata={"Date":None,"Creator":"GFN16 progress plotting script"} if ext=="svg" else {"Software":"GFN16 progress plotting script"}

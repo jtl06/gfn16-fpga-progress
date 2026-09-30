@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated": "2026-09-29",
+  "updated": "2026-09-30",
   "candidate": {"base": 604832956, "n": 65536, "exponent_bits": 1911814},
   "reference_clock_mhz": 100,
   "clock_status": "Hypothetical common clock for comparing architectures; not a measured or guaranteed operating frequency.",
@@ -74,6 +74,48 @@
       "warm_samples": 4,
       "rtl_core_sha256": "f8a4b3936e11cd08865ea0fcb7812dc75fc950a2ab67b0fd8eff5ee9550eacf8",
       "private_regression_report_sha256": "7ed2ff0d229534dfbba4582c255fa5cacdfd5a91963a5a1d9a7e33f2785b9cc8"
+    },
+    {
+      "id": "fast16",
+      "label": "FAST16\nwide I/O + carry",
+      "date": "2026-09-30",
+      "cycles_per_square": 94682,
+      "cold_start_cycles": 356834,
+      "evidence_class": "integrated_rtl_simulation",
+      "description": "Sixteen-wide conversion, CRT and carry with cached transforms. This chart still assumes100MHz; the separate whole-core fit reports82.28MHz and an80MHz planning projection is about37.7minutes.",
+      "full_size_recurrent_squares": 5,
+      "cold_samples": 1,
+      "warm_samples": 4,
+      "rtl_core_sha256": "9ccea541ec1beaad1331da60e30c83b6d53a607b18eb962d087e694db0413b1a",
+      "private_regression_report_sha256": "86f9be5702baab7838a7810250fc9a2255a4b0c7450052a54ed957b62d10060a"
+    },
+    {
+      "id": "atomic27-64",
+      "label": "27-bit fields\n64 NTT / 16 I/O",
+      "date": "2026-09-30",
+      "cycles_per_square": 36318,
+      "cold_start_cycles": 298470,
+      "evidence_class": "integrated_rtl_simulation",
+      "description": "Atomic three-field27-bit arithmetic with radix2^32, cached roots and64 transform lanes per field. Full-size correctness and fault gates passed. Whole-core routing is in progress; no completed fit or supported operating clock yet.",
+      "full_size_recurrent_squares": 5,
+      "cold_samples": 1,
+      "warm_samples": 4,
+      "rtl_core_sha256": "47f61c263ddcfe6f707ab65fdaadf5a412528692f99a3c9bd3dc123137b435ce",
+      "private_regression_report_sha256": "dba47cb784209b6b76d39dc8219ce994cda8e7f0b39115169f5e46addd837b6b"
+    },
+    {
+      "id": "streaming64",
+      "label": "Overlap CRT\nand carry (64 lanes)",
+      "date": "2026-09-30",
+      "cycles_per_square": 32116,
+      "cold_start_cycles": 294268,
+      "evidence_class": "integrated_rtl_simulation",
+      "description": "Separate original-field-basis branch with fused input conversion and ordered CRT-to-carry streaming. Full-size, fault and compatibility gates passed; no completed physical fit. This is not yet the27-bit streaming-precision integration. Transport-interrupted original reports are preserved with SHA-linked successful recovery evidence.",
+      "full_size_recurrent_squares": 5,
+      "cold_samples": 1,
+      "warm_samples": 4,
+      "rtl_core_sha256": "204388900f84fea154ccb2a673b48cb5467779854905942f696f64b533a81201",
+      "private_regression_report_sha256": "686c7024ae7a562833a7e4ed7716ffbd0741c96027bcc77d7de7b3ee64f3a822"
     }
   ],
   "limitations": [
@@ -84,6 +126,7 @@
     "Cached milestones assume roots stay resident after one cold square. Cache invalidation, resets or errors require additional root loading.",
     "Proof generation, verification, checkpoints and board/host overhead are excluded.",
     "Raw private reports and vendor outputs are intentionally not published. Hashes identify internal evidence, not a publicly reproducible RTL build.",
-    "Milestone order is not elapsed development time. All listed milestones currently share the same date."
+    "Milestone order is not elapsed development time. Dates use the publication update day; architecture points can belong to separate experimental branches.",
+    "The common100MHz chart is not a series of fitted operating clocks. The32,116-cycle point has no completed physical fit; it is not demonstrated10-minute hardware throughput."
   ]
 }

@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "updated": "2026-09-30",
+  "publication_scope": "Sanitized measurements and private-evidence hashes only; no RTL, vendor reports, credentials or infrastructure details.",
+  "fit_backed_planning": {
+    "milestone_id": "fast16",
+    "evidence_class": "integrated_simulation_and_virtual_io_fit_not_hardware",
+    "reported_fmax_mhz": 82.28,
+    "fit_target_mhz": 100,
+    "fit_target_met": false,
+    "assumed_clock_mhz": 80,
+    "warm_cycles": 94682,
+    "cold_cycles": 356834,
+    "projected_candidate_seconds": 2262.68294125,
+    "private_fit_summary_sha256": "299413c8bff949b8f49176193ca0e98087bc844fce2b72e63e0067733920edb1",
+    "private_projection_sha256": "44d5c9f5201adcdf2a64e499f461404378d06152bc729fa6d77301611d040796",
+    "qualification": "Planning at80MHz below reported Fmax; no80MHz refit, board runtime or complete PRP benchmark. Same representative candidate and exponent-bit approximation as progress.json."
+  },
+  "component_fits": [
+    {
+      "id": "crt27-retimed", "fmax_mhz": 133.87, "target_mhz": 200,
+      "target_met": false, "raw_dsp_blocks": 10, "raw_alms": 4370,
+      "private_summary_sha256": "fb43a421deda5ae685fb4d3c4fb32c927db800b543f1603c5e5ab39e7d69e0b9"
+    },
+    {
+      "id": "crt27-pair", "fmax_mhz": 214.73, "target_mhz": 200,
+      "target_met": true, "raw_dsp_blocks": 10, "raw_alms": 4550,
+      "private_summary_sha256": "38c0f34a0225a6ea1db31648b7bfa16dc30512d69e79164d2ee94ad3ddac807b",
+      "qualification": "Same initiation interval1 as retimed baseline;32 extra latency clocks and1606 more registers. Fmax ratio is not whole-core speedup."
+    },
+    {
+      "id": "carry-precision16", "fmax_mhz": 150.74, "target_mhz": 150,
+      "target_met": true, "raw_dsp_blocks": 275, "raw_alms": 42101,
+      "private_summary_sha256": "ffd77832ac55daf04b1ba377258861e6fa6fd12e096f63a30e1b30263522dd2f"
+    },
+    {
+      "id": "ntt27-generated64-field2", "fmax_mhz": 104.08, "target_mhz": 100,
+      "target_met": true, "raw_dsp_blocks": 128, "raw_alms": 105614,
+      "private_summary_sha256": "9bcadfac322e08db7e3b8599335de74b3b7e43a0940a0b7bd13a58c621e4131a"
+    }
+  ],
+  "new_integration": {
+    "id": "atomic27-stream-precision16",
+    "status": "full_size_normal_arithmetic_passed_wider_fault_gates_pending",
+    "warm_cycles": 90521,
+    "cold_cycles": 352673,
+    "baseline_warm_cycles": 94686,
+    "physical_fit_complete": false,
+    "rtl_core_sha256": "75eb580540fc6a7939f824182d244123e03e3b780e65e57722352564b145b648",
+    "private_normalized_report_sha256": "96e11807a7bd1a28617da67a574e319176fc2d240ae463ff360095b6b97c2f23"
+  },
+  "prefetch_ntt16": {
+    "status": "full_size_all_field_gate_passed_not_fitted",
+    "arithmetic_cycles": 78340,
+    "generated_baseline_cycles": 79771,
+    "qualification": "Five NTT arithmetic phases only; excludes CRT/carry/host/profile upload and does not establish a whole-core win.",
+    "private_report_sha256": "8ee6ad19a74e7d4f74816b9521e02da981003614103655452282a756979587f4"
+  },
+  "limitations": [
+    "All physical results are standalone or whole-core virtual-I/O probes on a provisional Arria10 target, with reset false-pathed; not board sign-off.",
+    "Raw resources are distinct from packing-adjusted resource needs.",
+    "Report hashes identify private evidence but do not make the underlying RTL publicly reproducible.",
+    "Component Fmax cannot replace integrated-core timing in a candidate-throughput estimate."
+  ]
+}
