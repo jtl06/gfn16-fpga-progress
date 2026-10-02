@@ -2,6 +2,8 @@
 
 This branch preserves a stable byte-for-byte snapshot of independently written FPGA RTL, arithmetic references, tests, tools, technical notes and compact record evidence. The chart on `main` remains a separate history. The live source snapshot is work in progress; filenames and presence in this branch do not establish qualification.
 
+Read the [two-context correctness correction](CORRECTNESS-2026-10-02.md): older full-GFN16 two-context projections and promotion readiness are withdrawn after a repeated 32-bit cold-correction condition was found. Finite tests and scoped clocks are preserved; the R6 fix has separate, still-incomplete qualification.
+
 The adopted internal compute-only record is P16 timing7, one context, canonical pipeline1: root `0011468ec67d7ca7ebb86fac88103fd19ea0207dc75685289da64d508228ea28`, projected cold compute time 178.632348730264 seconds at the selected audited 11.044 ns period. The printed setup reserve is only 1 ps. This is neither measured complete PRP/board runtime nor board timing sign-off. Exact adoption and independent-review receipts are under `fpga/results/throughput-20260929/`; retained fallbacks include the P16 baseline, P8 and F3.
 
 The original two-context storage2 candidate has an immutable 53-source physical project under `fpga/results/throughput-20260929/trackS-c2-storage2-route14-v1/project`. Its structural inventory is retained separately. It has no inherited timing7 clock or promotion. The new storage2 + packed delays + root register + term lookahead composition was still being prepared when this snapshot was taken; its exact qualified candidate capture is pending. General generator source here is labeled WIP.
