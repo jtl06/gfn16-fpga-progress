@@ -1,0 +1,129 @@
+{
+  "archive": {
+    "path": "/home/ubuntu/gfn16-worker/fit-queue-collection-s4-p16-diet-whole-full-four-hour-v1-retry1/native-reports.tar.gz",
+    "sha256": "07df0d05ec435e8244a49c3b3e4d9a09621ea9c384dadcb7a60340ffe40e4695",
+    "size": 4026936
+  },
+  "collected_native_report_files": 8,
+  "collection_completed": true,
+  "collector_sha256": "51aec17246c64a289917517f690c77f0497fb2dd004e214c1a5889fe15f70dd3",
+  "compiled_db_bytes": null,
+  "compiled_db_files": null,
+  "compiled_db_provenance": "Native runner final inventory retained; raw QDB remains on worker, not transferred or rehashed by collector.",
+  "findings": [
+    "missing_execution-result.json",
+    "missing_plain-final-source-guard.json",
+    "missing_database-inventory-final.json"
+  ],
+  "fit_allowed": false,
+  "host": "gfn16-aws-m8i",
+  "inventory_sha256": "d1f9d49989fcbb058ccd2849f1f5f748c4bf82a6ae40e64f84f206944f874f82",
+  "invocation_id": "5fdb0a36cbde4455b465d47e1ccb60ce",
+  "limitation": "Terminal collection and source provenance only. Native failures stay failures; component clocks never become whole-core clocks. All-corner STA/critical paths require separate report interpretation and independent promotion review.",
+  "native_context_resources": {
+    "affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "cpu_max": "600000 100000",
+    "launcher_sha256": "a8f56b31431c88042fb430827322a7b5340d56f105e2ee1389133dcc3966a269",
+    "memory_max": "21474836480",
+    "physical_cores": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        5
+      ]
+    ],
+    "quartus_workers": 6,
+    "started_at": "2026-10-01T22:39:22.877309+00:00",
+    "swap_max": "0",
+    "timeout_seconds": 14400
+  },
+  "native_job_succeeded": false,
+  "native_journal_proof": {
+    "invocation_id": "5fdb0a36cbde4455b465d47e1ccb60ce",
+    "manager_elapsed_seconds": 2511.541233,
+    "manager_end_realtime_us": "1790896874001826",
+    "manager_main_exit_messages": [],
+    "manager_start_realtime_us": "1790894362460593",
+    "manager_terminal_message": "gfn16-fit-s4-p16-diet-whole-full-four-hour-v1-retry1.service: Failed with result 'oom-kill'.",
+    "provenance": "Trusted manager _PID=1 UNIT/INVOCATION_ID fields. GC properties are not reconstructed from inactivity.",
+    "resource_journal": [
+      {
+        "CODE_FILE": "src/core/unit.c",
+        "CODE_FUNC": "unit_log_resources",
+        "CODE_LINE": "2577",
+        "CPU_USAGE_NSEC": "10229225320000",
+        "INVOCATION_ID": "5fdb0a36cbde4455b465d47e1ccb60ce",
+        "MEMORY_PEAK": "21177008128",
+        "MEMORY_SWAP_PEAK": "0",
+        "MESSAGE": "gfn16-fit-s4-p16-diet-whole-full-four-hour-v1-retry1.service: Consumed 2h 50min 29.225s CPU time, 19.7G memory peak, 0B memory swap peak.",
+        "MESSAGE_ID": "ae8f7b866b0347b9af31fe1c80b127c0",
+        "PRIORITY": "5",
+        "SYSLOG_FACILITY": "3",
+        "SYSLOG_IDENTIFIER": "systemd",
+        "TID": "1",
+        "UNIT": "gfn16-fit-s4-p16-diet-whole-full-four-hour-v1-retry1.service",
+        "_BOOT_ID": "b7d1d4d8dc3a40959d3f04bc3e9f53ba",
+        "_CAP_EFFECTIVE": "1ffffffffff",
+        "_CMDLINE": "/sbin/init",
+        "_COMM": "systemd",
+        "_EXE": "/usr/lib/systemd/systemd",
+        "_GID": "0",
+        "_HOSTNAME": "gfn16-aws-m8i",
+        "_MACHINE_ID": "ec2f58d01cfd3132dbfab49b88d1fec0",
+        "_PID": "1",
+        "_RUNTIME_SCOPE": "system",
+        "_SELINUX_CONTEXT": "unconfined\n",
+        "_SOURCE_REALTIME_TIMESTAMP": "1790896874002028",
+        "_SYSTEMD_CGROUP": "/init.scope",
+        "_SYSTEMD_SLICE": "-.slice",
+        "_SYSTEMD_UNIT": "init.scope",
+        "_TRANSPORT": "journal",
+        "_UID": "0",
+        "__CURSOR": "s=cca42f6d7ee64842b928fd8a217a461e;i=1a0c8;b=b7d1d4d8dc3a40959d3f04bc3e9f53ba;m=22e179390;t=65ccfac011671;x=17d80128e9fcf676",
+        "__MONOTONIC_TIMESTAMP": "9363231632",
+        "__REALTIME_TIMESTAMP": "1790896874002033",
+        "__SEQNUM": "106696",
+        "__SEQNUM_ID": "cca42f6d7ee64842b928fd8a217a461e"
+      }
+    ],
+    "terminal_kind": "failed",
+    "terminal_proven": true,
+    "unit": "gfn16-fit-s4-p16-diet-whole-full-four-hour-v1-retry1.service"
+  },
+  "native_result": null,
+  "observed_at_utc": "2026-10-01T23:21:24.974942+00:00",
+  "project": "/home/ubuntu/gfn16-worker/fit-s4-p16-diet-whole-full-four-hour-v1-retry1",
+  "promotion_allowed": false,
+  "schema": "plain-fit-terminal-collection-v1",
+  "scope": "whole_core",
+  "source_request_sha256": "b5bbe10e9a3002a68d38d0c228967492e8af4a4a1040b7d77e8b78b1e939221d",
+  "terminal_proven": true,
+  "unit": "gfn16-fit-s4-p16-diet-whole-full-four-hour-v1-retry1.service",
+  "whole_core_clock_claim": false
+}

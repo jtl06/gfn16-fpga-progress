@@ -1,0 +1,45 @@
+{
+  "schema": "gfn16-production-adoption-v1",
+  "recorded_date_utc": "2026-10-02",
+  "candidate": "Streaming P8 canonical-pipeline1, contexts1, no r75 flags",
+  "status": "adopted_internal_compute_only_production_parent",
+  "replaces_record": "A-next-writeback-v1 (F3)",
+  "retained_fallback": "A-next-writeback-v1 (F3)",
+  "candidate_core_sha256": "140e2b306e39a5fba02046917d0733eb31ed1e2f9c80f81be7fd086181b8c051",
+  "owner_consolidation": {
+    "path": "results/throughput-20260929/s4-p8-canon1-promotion-owner-v1/handoff.json",
+    "sha256": "a303e74877ee0be6e0c0064a3cc9017ced11ef20865857d542d3b2e5f7d9428f"
+  },
+  "independent_numerical_and_timing_review": {
+    "path": "results/throughput-20260929/s4-p8-canon1-promotion-independent-v1.json",
+    "sha256": "36dd77ecf5978799a5a02def89b3658cae8c14acd4e6ff7d3524e0152463458c"
+  },
+  "advisor_acceptance": {
+    "path": "docs/briefs/2026-10-02-advisor-verification-P8.md",
+    "sha256": "30f16934254532998fb2101f60ea6f77b5366e7f4cbd30fbc81026f9cfadcf35"
+  },
+  "sample": {"N": 65536, "base": 604832956, "operations_including_leading_bit": 1911814},
+  "compute_projection": {
+    "cold_ordinary_completion_cycles": 680315,
+    "warm_interval_cycles": 16653,
+    "cold_total_cycles": 31838102204,
+    "selected_audited_period_ns": "12.814",
+    "cold_ordinary_seconds": "407.973441642056",
+    "cached_root_total_cycles": 31838102105,
+    "cached_root_seconds": "407.973440373470",
+    "special_final_image_extra_cycles": 65536,
+    "boundary": "Start to internal finalized publication, with cold root setup and one final canonicalization/internal copy. External configuration/load, final host readback, gaps and board I/O excluded.",
+    "measured_full_sample_PRP_runtime": false
+  },
+  "whole_resources": {"needed_alms": 199512, "placed_alms": 252991, "labs": 32989, "device_labs": 42720, "registers": 433154, "m20ks": 1844, "needed_dsps": 686, "placed_dsps": 696},
+  "selected_internal_timing": {"minimum_setup_ns": "0.001", "minimum_hold_ns": "0.014", "minimum_pulse_width_ns": "5.757", "adjacent_failing_period_ns": "12.812"},
+  "qualification_scope": {"own_small_prp_cases": 8, "small_prp_base_floor": 172, "continuous_operations": 1000, "doubles": 500, "final_words": 65536, "continuous_cycles": 17316662, "resets": 1, "loads": 1},
+  "exclusions": [
+    "Selected internal timing point only; 1 ps setup reserve is not robust hardware margin or proof of a global maximum clock.",
+    "Virtual I/O: 193 inputs and 797 outputs unconstrained. Reset recovery/removal reports no paths, not reset-release sign-off.",
+    "No board operation, executed full-size complete sample PRP, exhaustive fault coverage or wider base-range proof.",
+    "P16, two-context and newer timing variants do not inherit this source's qualification or clock.",
+    "F3 and P8 projections use explicitly documented source-specific internal completion boundaries, not measured identical external-I/O runtimes."
+  ],
+  "implementation": "Records independent review plus explicit advisor acceptance; no third replay, native run, source rebase, publication or hardware programming. P16 area-first priority remains unchanged."
+}

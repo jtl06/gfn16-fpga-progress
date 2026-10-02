@@ -1,0 +1,12 @@
+{
+  "status": "PASS_expected_contracts",
+  "job": "s4-p16-timing7-whole-host-faults-q1-v1",
+  "host": "gfn16-azure-sim-f32",
+  "whole_native_seconds": 188.01764112800083,
+  "whole_unit_peak_bytes": 1769840640,
+  "collected_bundle_sha256": "0593f98a4888dc10d9eefc39549e73783cb438c935a91ffd861528b07a14d4e7",
+  "evidence": "queue/evidence/s4-p16-timing7-whole-host-faults-q1-v1/gate-receipt.json",
+  "scope": "Own descriptor1..4/occupied reset ages10,273/quarantine/recovery, special10N full signed96 and typed comparator rejection; not exhaustive faults.",
+  "promotion_allowed": false,
+  "owner_numerical_replay": false
+}

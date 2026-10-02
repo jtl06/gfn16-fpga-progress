@@ -1,0 +1,66 @@
+{
+  "schema": "gfn16-independent-review-v1",
+  "updated_at_utc": "2026-10-02T01:40:31Z",
+  "reviewer": "/root/p16_independent_reviewer",
+  "status": "PASS_exact_original_P16_long_numerical_evidence_PROMOTION_PENDING_CLOCK_AND_ADVISOR",
+  "promotion_allowed": false,
+  "independence": "Own history contains no authorship of candidate RTL, compiler, reference, harness or qualification tests. Only separate reviewer records/status authored. Prior conflicted helper verdict not reused.",
+  "job": "s4-p16-diet-continuous1000-thread8-normal-q1-v3",
+  "gate": {
+    "path": "queue/evidence/s4-p16-diet-continuous1000-thread8-normal-q1-v3/gate-receipt.json",
+    "sha256": "fbf06270d29789b677a7c36d4cc72e6c29bddfbb3b0a5d94afdcf381f918b195",
+    "status": "PASS_expected_contracts"
+  },
+  "evidence": {
+    "path": "queue/evidence/s4-p16-diet-continuous1000-thread8-normal-q1-v3/attempt-0/collected",
+    "manifest_sha256": "2c6d656f75e53acd4b3ee30b67ba6638042fb114900bf4f905f7f45d03397332",
+    "report_sha256": "137f6c71bb6175b2ccefad76cb70ce811986158d00d6b2fcbbfe3257d888fc4b",
+    "outer_archive_sha256": "8c5ac597e2b26d549702f1a6dd93bbe9b25228b78f99fa42be78acdd1f723fd8",
+    "dispatcher_inventory_sha256": "db46e29e77e13a6a045a4cf929ff3cde96d30ce9b248b2f8a9d7ab4a99991e5e",
+    "decompressed_model_sha256": "83cd8b8329a399cd860bfb6d35120a7a84f231772d20367335b0c36981d60c77",
+    "replayed": "All 26 dispatcher inventory files checked on disk and inside outer archive; all 16 report artifact hashes; all 228 archived source members and manifest/report equality; all 330 generated source pins; decompressed executable; native commands/return codes; eight-thread runtime probe; raw lint classification; frozen archived typed validator independently rerun against actual retained stdout/stderr and source-bound plan, exactly reproducing worker and gate validations. No native simulation or full-N arithmetic rerun.",
+    "lint": "Actual -Wall -Wno-fatal rc0, 1470 style-only warnings; no fatal/unknown/malformed diagnostics. Classifier replay uses existing local captured root, with source_root normalized only when comparing the receipt to the remote retained one."
+  },
+  "source_join": {
+    "candidate_root_sha256": "b683cb1113a17652f5d6266c4298c5eb825c6af6b9f92bd28f758dba9b8de898",
+    "paired69_map_sha256": "d05d90dd2ffb0f3ec06951288afdf7d0fc748b0f2221c2a608ac05434720c025",
+    "standalone58_map_sha256": "9a88a9f185bec153dd2531bcaa5e2634305bc30e216c53cc2107bc7f43e2111f",
+    "actual_routed_manifest": "queue/standing-fit-state/terminal/s4-p16-diet-whole-9000-azure-clockprobe-v1/evidence/project/manifest.json",
+    "actual_routed_manifest_sha256": "3869c9c0defbeaad7c2ac7dba834c7192007b6cc0863b68b1a46c1ffee003e52",
+    "parameters": {"AW": 16, "P": 16, "CONTEXTS": 1, "EPOCH_SEED": 65534, "CORR_SERIAL_BFS": 2, "COMM_STAGE_SHARED_MLAB": 1, "MONT_FACTORED": 1, "CANONICAL_PIPE_STAGES": 1},
+    "checked": "Every actual routed58 pin is identical to the compiled paired69 member; fit and simulation parameters match exactly. Original serial1000 bench/config/plan/validator/full-reference/NTT pins match this eight-thread infrastructure successor. Earlier original full9/short/100 and routed-source reviews remain unchanged. P8 and timing7 successor evidence not inherited.",
+    "reference_sha256": "88849a77ad7c58fc99f6d56eeded2a772a78fbe2b2da03fabdf7ac71aaf12c54",
+    "ntt_reference_sha256": "c7837ba92829293131efda704dfdde347708641bf9aff46dccbcb87b825ba390",
+    "plan_sha256": "913aa09793ed16e032ab79bdb73d8edfcfb3f6f4243bd72645d83348cc224d51"
+  },
+  "actual_contract": {
+    "operations": 1000, "doubles": 500, "resets": 1, "loads": 1,
+    "loaded_digits": 65536, "starts": 1, "readbacks": 1,
+    "words": 65536, "signed96_words": 65536, "feed_descriptors": 999,
+    "fifo_peak": 4, "full_exchanges": 995, "backpressure_edges": 8415808,
+    "final_rows": 4096, "canonical_cycles": 589824, "copy_cycles": 65539,
+    "candidate_cycles": 9118566, "profile_loads": 1, "profile_hits": 0,
+    "root_cycles": 99, "conversion_cycles": 4096, "special": 0,
+    "independent_reference_equal": true,
+    "final_actual_and_expected_sha256": "1f8d6dc3b8ce600339f4454e4b8458abad2ab107b943fae131667bd4a4150cdb",
+    "candidate_ms": 1675361, "read_ms": 10569, "reference_ms": 44364,
+    "native_step_seconds": 1740.703171031997,
+    "scope": "One actually dependent FIFO job, dense signed initial image with -1 at17/65535, final-only canonical/copy/readback. Actual source-bound full65536 native reference equality, not 1000 independent scalar restarts; T5b compiled but dormant in this long job. Full9 supplies own actual T5b cross-check. Finite qualification, not a measured full-sample PRP or clock."
+  },
+  "execution": {
+    "model_threads": 8, "context_threads": 8, "physical_cores": 8,
+    "affinity": "0-7", "cpu_quota_percent": 800, "memory_bytes": 8589934592,
+    "compile_workers": 2, "systemd_result": "success", "native_exit": 0,
+    "preserved_predecessors": "v1 source-route and v2 precommand cgroup infrastructure failures remain separate; neither executed the 1000 numerical model. No cap waiver or serial duplicate."
+  },
+  "unchanged_prior_reviews": [
+    "results/throughput-20260929/s4-p16-diet-review-readiness-v1.md",
+    "results/throughput-20260929/s4-p16-diet-completed-subset-independent-v1.json",
+    "results/throughput-20260929/s4-p16-diet-routed-readiness-independent-v1.json"
+  ],
+  "remaining_promotion_gates": [
+    "Actual passing same-source saved-layout four-corner setup/hold/MPW audit with raw source/constraints/QDB/guards joined; queued12.604ns is not a result. Actual audit0 selected10ns fails setup -2.594ns; original9ns fails -3.594ns.",
+    "Owner consolidated source-specific sample projection ledger review and advisor verification followed by main-agent adoption; no self-promotion."
+  ],
+  "projection_boundary": "Ordinary cold internal publication668025 + (K-1)*8459, cached-root alternative subtracts99 only, leading-bit K included. 9N canonical and N+3 image copy occur once; special final image addsN. Excludes initial external load/readback/board/transport/gaps. No seconds claim until actual passing clock and checked consolidated inputs."
+}

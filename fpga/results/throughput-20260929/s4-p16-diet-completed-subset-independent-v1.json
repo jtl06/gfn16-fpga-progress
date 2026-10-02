@@ -1,0 +1,397 @@
+{
+  "schema": "gfn16-independent-partial-qualification-v1",
+  "updated_at_utc": "2026-10-02 00:14:23 UTC",
+  "reviewer": "/root/p16_independent_reviewer",
+  "independence": "No authorship of P16 RTL/compiler/harness/reference in my own history; only reviewer files written.",
+  "status": "PASS_reviewed_completed_numerical_subset_PROMOTION_INCOMPLETE",
+  "candidate": "Original fullN/P16/C1 canonical1 corr2/sharedMLAB/factored diet",
+  "candidate_root_sha256": "b683cb1113a17652f5d6266c4298c5eb825c6af6b9f92bd28f758dba9b8de898",
+  "full_paired69_map_sha256": "d05d90dd2ffb0f3ec06951288afdf7d0fc748b0f2221c2a608ac05434720c025",
+  "full_standalone58_map_sha256": "9a88a9f185bec153dd2531bcaa5e2634305bc30e216c53cc2107bc7f43e2111f",
+  "review_method": "Independently verified outer archives/dispatcher inventories, all report artifacts, archived sources, generated C++ source archives, gzip executable hashes, raw lint classes and runtime probes. Replayed exact typed normal/nonzero-negative output contracts; frozen full-size validator also rechecks every returned word and descriptor age. No native/full-size arithmetic rerun.",
+  "roles": [
+    {
+      "id": "s4-p16-diet-eight-prp-normal-q1-v1",
+      "evidence": "queue/evidence/s4-p16-diet-eight-prp-normal-q1-v1/attempt-0/collected",
+      "collected_bundle_sha256": "16d1b16bad324414bc59887afeaf5d10ff6d91792711083dd11caac2b2af3c59",
+      "report_sha256": "16fb9dc66be37d10c713e0da8a4b0df7e7e8acb61afbe92cd9168c73058d9fd9",
+      "manifest_sha256": "81da21d649db1d53aa21fbd0319e63570effc0d94b4f3ca818ccac9be2f5661a",
+      "dispatcher_inventory_sha256": "833a01425d1434df6c21ce5a77b8a325695fea8e35ab5a94a74d2c682e2eb6ec",
+      "rtl_map_sha256": "02fdcb6604349d2ed066f27c73d8783b392346cd298e43c6256fd9644a530e1d",
+      "source_members_verified": 360,
+      "generated_members_verified": 211,
+      "artifacts_verified": {
+        "approved-manifest.json": "81da21d649db1d53aa21fbd0319e63570effc0d94b4f3ca818ccac9be2f5661a",
+        "sources.tar.gz": "4d649ce0172c5e430ff93d81b2418734d8bb252a21efd8eed71888733a3b1a81",
+        "verilator-version.log": "550e7237fdcc27f6da4ad434eab5c4ab24bfeb224f9fbf011946548bc050757c",
+        "verilator-version.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "compiler-version.log": "39553616934606f58b27c04bed0cdbbe5b00c92c831a9aaadebd7ceda61d1334",
+        "compiler-version.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "lint.log": "c3ca2174395ba5bbb568c364d285b4b9ff5f6daa9425a3381de8a3a2efdee05d",
+        "lint.stderr.log": "79214c6d0f5d0fb18e333ad74dd48434b6b2a8b0fa855c3cf4d9b78d2a23cf87",
+        "build.log": "d4a182f14bd9b2c6ca0e3081dc80ff107b7e01fc521ae065915f8e81e990e26c",
+        "build.stderr.log": "79214c6d0f5d0fb18e333ad74dd48434b6b2a8b0fa855c3cf4d9b78d2a23cf87",
+        "model.gz": "ab27d379ccf95317db4fa27ea8a64a383568358c72f18327148b4bcf22c4c149",
+        "generated-sources.tar.gz": "9f56c20c5932542452ac5cd4626446eacd7bceadb3d681bb93e34ef24373d9e1",
+        "probe.log": "0f57a1e8c279804d38c87b31c24e5f357451d80d6cc8797a72c766c2440bcb91",
+        "probe.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "p16-diet-eight-prp-normal.log": "4b658fa3a559b043f3eb7882cb47ca65b358f0b60cd4d2730c2bcf09e7a4d6db",
+        "p16-diet-eight-prp-normal.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_test_returncodes": {
+        "p16-diet-eight-prp-normal": 0
+      },
+      "validations": null,
+      "lint_classes": {
+        "DECLFILENAME": 10,
+        "GENUNNAMED": 42,
+        "PINCONNECTEMPTY": 321,
+        "SYNCASYNCNET": 23,
+        "UNUSEDPARAM": 6,
+        "UNUSEDSIGNAL": 161,
+        "VARHIDDEN": 31
+      },
+      "runtime_probe": {
+        "context_threads": 1,
+        "model_threads": 1,
+        "expected_threads": 1
+      }
+    },
+    {
+      "id": "s4-p16-diet-short-normal-q1-v1",
+      "evidence": "queue/evidence/s4-p16-diet-short-normal-q1-v1/attempt-0/collected",
+      "collected_bundle_sha256": "b04b4572ff174788b25a65da997a8db2cc257b8c89adbed98d00a0bd42acd994",
+      "report_sha256": "b190349e3ea7fb3381bcee7a6335554393d402e81161f83dfb0d499c1f1cda2d",
+      "manifest_sha256": "b6505f933562c940944f20c3ba62915d0dca3875530c47e9aafc2d4be49461ee",
+      "dispatcher_inventory_sha256": "547a1a19cac1e13857349a17e5abcd36d3c63448afbebdf710fd5d8c2e7de758",
+      "rtl_map_sha256": "d05d90dd2ffb0f3ec06951288afdf7d0fc748b0f2221c2a608ac05434720c025",
+      "source_members_verified": 177,
+      "generated_members_verified": 331,
+      "artifacts_verified": {
+        "approved-manifest.json": "b6505f933562c940944f20c3ba62915d0dca3875530c47e9aafc2d4be49461ee",
+        "sources.tar.gz": "033a6153657c49adb88d7d229a127608441eff4d4434c182ba8ef6397d4d4196",
+        "verilator-version.log": "31ee8ba532711b2dcaef0bb2e203e20284e39ea422325f094074f3c2a9da7996",
+        "verilator-version.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "compiler-version.log": "e61c12990ebd03da62165bc47b2e2bb1470b3a6500f703aa912b9364a145caa3",
+        "compiler-version.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "lint.log": "c44b48e03ac3b79b04db52ae4a6071328a445aaf524bef987488eb2de93033ca",
+        "lint.stderr.log": "a0b54db09e463494e8c903a35d6de279ba4045c6ff25cf8238487eac336754a4",
+        "build.log": "9c8ce5983b8db7a62b31753b3cb61aa0b58881c0b07cbfdab79a6317703e89d7",
+        "build.stderr.log": "a0b54db09e463494e8c903a35d6de279ba4045c6ff25cf8238487eac336754a4",
+        "model.gz": "00218392118aeeb67ad27eba7c314e162764d031981e6de56d71dd2fe8c6ec3d",
+        "generated-sources.tar.gz": "2bc9831d908b8d83148908aac0586860abdbc3b87cc458a21fa62d7e4340cea8",
+        "probe.log": "0f57a1e8c279804d38c87b31c24e5f357451d80d6cc8797a72c766c2440bcb91",
+        "probe.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stream27-s4-continuous-normal.log": "f7f98304569be2cf23f2795cafff8e0b213653c86361ae37ccc723212b535f36",
+        "stream27-s4-continuous-normal.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_test_returncodes": {
+        "stream27-s4-continuous-normal": 0
+      },
+      "validations": {
+        "stream27-s4-continuous-normal": {
+          "status": "PASS_expected_contracts",
+          "candidate": "diet-corr2-sharedmlab-factored-canonical1-P16-context1",
+          "candidate_root_sha256": "b683cb1113a17652f5d6266c4298c5eb825c6af6b9f92bd28f758dba9b8de898",
+          "canonical_pipe_stages": 1,
+          "base": 604832956,
+          "operations": 1,
+          "counts": {
+            "case_id": "6ca8a0f47b334ff3e66d0780b2801a343ea8c0bca81a3393c761fa6eccd6b24e",
+            "operations": 1,
+            "doubles": 0,
+            "resets": 1,
+            "loads": 1,
+            "loaded_digits": 65536,
+            "starts": 1,
+            "readbacks": 1,
+            "words": 65536,
+            "signed96_words": 65536,
+            "feed_descriptors": 0,
+            "fifo_peak": 0,
+            "full_exchanges": 0,
+            "backpressure_edges": 0,
+            "final_rows": 4096,
+            "canonical_cycles": 589824,
+            "copy_cycles": 65539,
+            "candidate_cycles": 668025,
+            "profile_loads": 1,
+            "profile_hits": 0,
+            "root_cycles": 99,
+            "conversion_cycles": 4096,
+            "special": 0
+          },
+          "phase_wall_ms": {
+            "candidate_ms": 265915,
+            "read_ms": 25580,
+            "reference_ms": 36
+          },
+          "independent_reference_equal": true,
+          "final_actual_sha256": "57f7050913565a91eb40e32a8a723757256ec0bbcb181d1a0851dbcdf5b57aa4",
+          "final_expected_sha256": "57f7050913565a91eb40e32a8a723757256ec0bbcb181d1a0851dbcdf5b57aa4",
+          "uninterrupted_1000_native": false,
+          "promotion_allowed": false,
+          "scope": "ONE actually dependent FIFO job, exact source-selected candidate; independent reference is native-only, T5b dormant, not full PRP/clock or inherited9/25/100-op result.",
+          "p16_diet": 1
+        }
+      },
+      "lint_classes": {
+        "DECLFILENAME": 10,
+        "GENUNNAMED": 42,
+        "PINCONNECTEMPTY": 1113,
+        "SYNCASYNCNET": 23,
+        "UNUSEDPARAM": 6,
+        "UNUSEDSIGNAL": 179,
+        "VARHIDDEN": 97
+      },
+      "runtime_probe": {
+        "context_threads": 1,
+        "model_threads": 1,
+        "expected_threads": 1
+      }
+    },
+    {
+      "id": "s4-p16-diet-continuous100-normal-q1-v1",
+      "evidence": "queue/evidence/s4-p16-diet-continuous100-normal-q1-v1/attempt-0/collected",
+      "collected_bundle_sha256": "8854b48a8a76d9c455960e3f18e53afe772c47021456cf8712e0194cc0d009b1",
+      "report_sha256": "19c35e9d447ca596bd52d3641f6a937316079801819a229cfb5ada6548d332fc",
+      "manifest_sha256": "c237d2c143320cd4bfaafdac45b171179b8eb640abb3d8523ae3fc93e01ccb84",
+      "dispatcher_inventory_sha256": "3ca36d30b0fb194b936f2a077ff4188a94ef03cf34fb7266e073422e8d45aff7",
+      "rtl_map_sha256": "d05d90dd2ffb0f3ec06951288afdf7d0fc748b0f2221c2a608ac05434720c025",
+      "source_members_verified": 177,
+      "generated_members_verified": 331,
+      "artifacts_verified": {
+        "approved-manifest.json": "c237d2c143320cd4bfaafdac45b171179b8eb640abb3d8523ae3fc93e01ccb84",
+        "sources.tar.gz": "ae1c510e764d553df15311987765dfe5f3337485f9b06d635fa9f71d9e7921be",
+        "verilator-version.log": "31ee8ba532711b2dcaef0bb2e203e20284e39ea422325f094074f3c2a9da7996",
+        "verilator-version.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "compiler-version.log": "e61c12990ebd03da62165bc47b2e2bb1470b3a6500f703aa912b9364a145caa3",
+        "compiler-version.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "lint.log": "77df0f5c813bb066ae522af645c1f24e16b2b899a0d8ef1444514b679a4fa498",
+        "lint.stderr.log": "308f0c1f6bafebc0375b620daaaa059bbee4ab1cf8cbf530e21994ae9e16a745",
+        "build.log": "0f6961bdcf5f5cbd8d06a1e22786da16a1c4c86a2986eae8d599a1f9eb87e330",
+        "build.stderr.log": "308f0c1f6bafebc0375b620daaaa059bbee4ab1cf8cbf530e21994ae9e16a745",
+        "model.gz": "dd9f3550215bdf1b95263ac15702f5eb84c80454d62da61ec6958a71b1639296",
+        "generated-sources.tar.gz": "a253b559b4d838844c7768a36c5141a75818951dd1df5fc2454484300f31aea8",
+        "probe.log": "0f57a1e8c279804d38c87b31c24e5f357451d80d6cc8797a72c766c2440bcb91",
+        "probe.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stream27-s4-continuous-normal.log": "414fed916616154b8e26f585a245a829556ff7787847d510de1f28fff5537baf",
+        "stream27-s4-continuous-normal.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_test_returncodes": {
+        "stream27-s4-continuous-normal": 0
+      },
+      "validations": {
+        "stream27-s4-continuous-normal": {
+          "status": "PASS_expected_contracts",
+          "candidate": "diet-corr2-sharedmlab-factored-canonical1-P16-context1",
+          "candidate_root_sha256": "b683cb1113a17652f5d6266c4298c5eb825c6af6b9f92bd28f758dba9b8de898",
+          "canonical_pipe_stages": 1,
+          "base": 604832956,
+          "operations": 100,
+          "counts": {
+            "case_id": "6ca8a0f47b334ff3e66d0780b2801a343ea8c0bca81a3393c761fa6eccd6b24e",
+            "operations": 100,
+            "doubles": 50,
+            "resets": 1,
+            "loads": 1,
+            "loaded_digits": 65536,
+            "starts": 1,
+            "readbacks": 1,
+            "words": 65536,
+            "signed96_words": 65536,
+            "feed_descriptors": 99,
+            "fifo_peak": 4,
+            "full_exchanges": 95,
+            "backpressure_edges": 803608,
+            "final_rows": 4096,
+            "canonical_cycles": 589824,
+            "copy_cycles": 65539,
+            "candidate_cycles": 1505466,
+            "profile_loads": 1,
+            "profile_hits": 0,
+            "root_cycles": 99,
+            "conversion_cycles": 4096,
+            "special": 0
+          },
+          "phase_wall_ms": {
+            "candidate_ms": 630511,
+            "read_ms": 26008,
+            "reference_ms": 3647
+          },
+          "independent_reference_equal": true,
+          "final_actual_sha256": "d2178c685400efad6743e0dc9d8c50c7a6c49cdae04724e54445c53ec9fe5f30",
+          "final_expected_sha256": "d2178c685400efad6743e0dc9d8c50c7a6c49cdae04724e54445c53ec9fe5f30",
+          "uninterrupted_1000_native": false,
+          "promotion_allowed": false,
+          "scope": "ONE actually dependent FIFO job, exact source-selected candidate; independent reference is native-only, T5b dormant, not full PRP/clock or inherited9/25/100-op result.",
+          "p16_diet": 1
+        }
+      },
+      "lint_classes": {
+        "DECLFILENAME": 10,
+        "GENUNNAMED": 42,
+        "PINCONNECTEMPTY": 1113,
+        "SYNCASYNCNET": 23,
+        "UNUSEDPARAM": 6,
+        "UNUSEDSIGNAL": 179,
+        "VARHIDDEN": 97
+      },
+      "runtime_probe": {
+        "context_threads": 1,
+        "model_threads": 1,
+        "expected_threads": 1
+      }
+    },
+    {
+      "id": "s4-p16-diet-aw8-dense-normal-q1-v1",
+      "evidence": "queue/evidence/s4-p16-diet-aw8-dense-normal-q1-v1/attempt-0/collected",
+      "collected_bundle_sha256": "844de2aa470e1e9f9854e1eaa5aa9c2cc14423a310df0eacb3b184f9be82c1b4",
+      "report_sha256": "972d6ad1488cf87490335750bdc45865e59c40dd4cd336fad8b464520cbedea2",
+      "manifest_sha256": "5d355f46f61ac539d1e7bfea079a3a7312162568468c48753d9015a177cae639",
+      "dispatcher_inventory_sha256": "707b78d2ee5421bf116b19911f611f4e633d38adfc62789d423079b4119d6787",
+      "rtl_map_sha256": "92de68f9e59aec86ae0f126451756c08ad9f852bf55970dd976bab6fe1afe237",
+      "source_members_verified": 331,
+      "generated_members_verified": 238,
+      "artifacts_verified": {
+        "approved-manifest.json": "5d355f46f61ac539d1e7bfea079a3a7312162568468c48753d9015a177cae639",
+        "sources.tar.gz": "61c705001911ca7002b386682385c3a38e416e61661c7015cdaf0f79c7338d7c",
+        "verilator-version.log": "31ee8ba532711b2dcaef0bb2e203e20284e39ea422325f094074f3c2a9da7996",
+        "verilator-version.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "compiler-version.log": "e61c12990ebd03da62165bc47b2e2bb1470b3a6500f703aa912b9364a145caa3",
+        "compiler-version.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "lint.log": "009722c435335238763f62c1a53d81cd8d398cb55ae4452436e3431e57818588",
+        "lint.stderr.log": "f5dbba6215c6404e06c8f13c0727195b0115ec58fa1ba9efcc5dc2c9cda61d78",
+        "build.log": "51d394869cd614090d5bcd2030c2cb743f1796ed7d6e300918e61729c3214544",
+        "build.stderr.log": "f5dbba6215c6404e06c8f13c0727195b0115ec58fa1ba9efcc5dc2c9cda61d78",
+        "model.gz": "d8d0622f66c0c3b34d9119ba23ad427b3452651c5e3dc61df46457178b9e1c85",
+        "generated-sources.tar.gz": "7fa36b8e57d300826bf0671561146a85ee37a73b75f11d29b4016b89b28c447b",
+        "probe.log": "0f57a1e8c279804d38c87b31c24e5f357451d80d6cc8797a72c766c2440bcb91",
+        "probe.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "p16-diet-aw8-dense-normal.log": "efcaf3a4adc1b20a4df5e6bbd713678e010c6607a17ea21444b23206fe06c39b",
+        "p16-diet-aw8-dense-normal.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "actual_test_returncodes": {
+        "p16-diet-aw8-dense-normal": 0
+      },
+      "validations": null,
+      "lint_classes": {
+        "DECLFILENAME": 10,
+        "GENUNNAMED": 42,
+        "PINCONNECTEMPTY": 537,
+        "SYNCASYNCNET": 23,
+        "UNUSEDPARAM": 6,
+        "UNUSEDSIGNAL": 167,
+        "VARHIDDEN": 49
+      },
+      "runtime_probe": {
+        "context_threads": 1,
+        "model_threads": 1,
+        "expected_threads": 1
+      }
+    },
+    {
+      "id": "s4-p16-diet-whole-host-faults-q1-v1",
+      "evidence": "queue/evidence/s4-p16-diet-whole-host-faults-q1-v1/attempt-0/collected",
+      "collected_bundle_sha256": "197f65d204ddca6c78a18ef65074bd4b73cea2aba6d78c7533a2500b7da1a309",
+      "report_sha256": "88fb30a3ee0a56bf74f2fabbad7d61e59da78eb8d7a15e9cda4e307a51cb13c8",
+      "manifest_sha256": "aba116b03adc27949374908cbe76961dba0aee82b5eeb82c70c1985496661a62",
+      "dispatcher_inventory_sha256": "6293341aa66a2ebd28d09d986fd3483bc3d69c1360c22b8fdcd219dbbcb2f37d",
+      "rtl_map_sha256": "02fdcb6604349d2ed066f27c73d8783b392346cd298e43c6256fd9644a530e1d",
+      "source_members_verified": 360,
+      "generated_members_verified": 211,
+      "artifacts_verified": {
+        "approved-manifest.json": "aba116b03adc27949374908cbe76961dba0aee82b5eeb82c70c1985496661a62",
+        "sources.tar.gz": "5a70ae5a144cb134022cef40a764a9717804670dcb2c0af2ec357c93210aa828",
+        "verilator-version.log": "550e7237fdcc27f6da4ad434eab5c4ab24bfeb224f9fbf011946548bc050757c",
+        "verilator-version.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "compiler-version.log": "39553616934606f58b27c04bed0cdbbe5b00c92c831a9aaadebd7ceda61d1334",
+        "compiler-version.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "lint.log": "e74def817502cbac1e95d9a5088685b3e0692d36a84671ae8879534df21d8eaa",
+        "lint.stderr.log": "8b872a78fb963d6874a6bef7f2199f6a1f0eb0514998bfca97a75cd65f8f5260",
+        "build.log": "95500c604c328054cfe41502bad597b9e75f7260ab7062aaffb492370624b512",
+        "build.stderr.log": "8b872a78fb963d6874a6bef7f2199f6a1f0eb0514998bfca97a75cd65f8f5260",
+        "model.gz": "206fca7dfbc1570e030faf56dec3c33e9f07668d5c3b56910b055cc3723975ff",
+        "generated-sources.tar.gz": "2be72a0cda6a9a77cb65eb7a59332f672183d34d521b32b2f5f5790c16ceee49",
+        "probe.log": "0f57a1e8c279804d38c87b31c24e5f357451d80d6cc8797a72c766c2440bcb91",
+        "probe.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "p16-diet-whole-host-controls-and-special.log": "df46fe6cca926fac88e035aa1a49f3c05187cbf3942b30f47290f58c32c2c5c5",
+        "p16-diet-whole-host-controls-and-special.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "p16-diet-special-oracle-negative.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "p16-diet-special-oracle-negative.stderr.log": "6ae70b2d138de3fff6fa80041d43c0d1499a60ed89e290552a4906abdd03e912"
+      },
+      "actual_test_returncodes": {
+        "p16-diet-whole-host-controls-and-special": 0,
+        "p16-diet-special-oracle-negative": 1
+      },
+      "validations": null,
+      "lint_classes": {
+        "DECLFILENAME": 10,
+        "GENUNNAMED": 42,
+        "PINCONNECTEMPTY": 321,
+        "SYNCASYNCNET": 23,
+        "UNUSEDPARAM": 6,
+        "UNUSEDSIGNAL": 161,
+        "VARHIDDEN": 31
+      },
+      "runtime_probe": {
+        "context_threads": 1,
+        "model_threads": 1,
+        "expected_threads": 1
+      }
+    }
+  ],
+  "results": {
+    "small_prps": 8,
+    "small_prp_operations": 5051,
+    "small_prp_descriptors": 5043,
+    "small_prp_cycles": 816635,
+    "small_prp_signed96_reads": 256,
+    "short_operations": 1,
+    "short_candidate_cycles": 668025,
+    "short_signed96_words": 65536,
+    "continuous100_operations": 100,
+    "continuous100_doubles": 50,
+    "continuous100_cycles": 1505466,
+    "continuous100_signed96_words": 65536,
+    "continuous100_final_array_sha256": "d2178c685400efad6743e0dc9d8c50c7a6c49cdae04724e54445c53ec9fe5f30",
+    "aw8_operations": 256,
+    "aw8_cycles": 56940,
+    "aw8_feedback_rows": 18,
+    "aw8_signed96_reads": 256,
+    "fault_descriptor_codes": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "fault_occupied_reset_ages": [
+      10,
+      271
+    ],
+    "quarantine_checks": 20,
+    "recovery_words": 224,
+    "special_signed96_words": 32,
+    "special_canonical_cycles": 320
+  },
+  "source_and_scope": {
+    "short100": "Both exact paired69 maps equal the original full9 model and physical58 subset previously independently verified.",
+    "small": "Own N32 paired69 PRP and fault maps match02fdcb66; N256 map92de68f9 separately qualifies its18-row/calendar. These are source-linked scaled tests, not byte-identical fullN data paths.",
+    "faults": "Reviewed C++: all4 descriptor faults plus occupied cold/warm aborts; special inputb**16 squares to−1, actual T5b/comparator output, canonical10N and complete signed96 reads. Wrong comparator is applied after executing the correct special branch. Finite samples, not exhaustive protocol/reset proof.",
+    "timing7": "Future timing7/source75 has separate qualification and fit; none of these baseline PASS results qualify it.",
+    "clock": "No P8 or component clock/resource result is inherited."
+  },
+  "physical_state": {
+    "aws10ns": "Original actual whole fit failed at routing start with trusted OOM20GiB. Partial placement only; no successful terminal end guard, routed fit or clock PASS.",
+    "failure_receipt": "queue/standing-fit-state/terminal/s4-p16-diet-whole-full-four-hour-v1-retry1/receipt.json",
+    "partial_resource_receipt": "results/throughput-20260929/trackS-p16-diet-analysis-v1/whole-placement-route-oom.json",
+    "azure9ns": "Distinct whole layout was last reported running; no final routed timing/resource evidence has been reviewed."
+  },
+  "remaining_promotion_gates": [
+    "Own uninterrupted1000 result.",
+    "Completed whole routed resource/constraint/four-corner timing evidence with explicit exclusions.",
+    "Advisor verification and main adoption after complete independent receipt."
+  ],
+  "promotion_allowed": false,
+  "exploration_held": false
+}

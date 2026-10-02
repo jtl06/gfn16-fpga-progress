@@ -1,0 +1,22 @@
+{
+  "calculation": {
+    "backend_cycles": 41817111739,
+    "backend_seconds": "468.184383029844",
+    "cold_cycles": 25990,
+    "command_latency_sum_seconds": "468.227192368932",
+    "invalid_scalar_rejections": 5,
+    "operations": 1911814,
+    "warm_cycles": 21873
+  },
+  "pins": {
+    "independent_point_audit_sha256": "224effbc2c29b14ac49d77eb1de6ad7924019ae139ff89c53490a74f51caab58",
+    "ledger_sha256": "271a3c572e2126db94275af275a26b3e83702e9c3b195c9c3a8d8cfa023633a2",
+    "replay_sha256": "874a15278fb2887ca4d3c70e61489a2ee72eac2aa1775b505ea916124cd3f6b0",
+    "source_sha256": "067ac7d330e5da909694a87d0a8b9212eaa80de9c0b0a9a9616da413113bbbba"
+  },
+  "promotion_allowed": false,
+  "reviewer": "independent_review",
+  "scope": "Scalar schedule projection only. Exactly one cached-cold operation then warm operations at explicit11.196 internal testpoint, with separate two-edge command overhead. Initial host configure/load/final readback/hold gaps/board walltime omitted; exactsamplePRP and same-base point1000 are unrun. Not original or upper-sum inheritance. No numerical/native/cloud run or clock/advisor adoption.",
+  "status": "PASS_scoped_Anext_point_only_source_matched_scalar_full_operation_projection",
+  "author_scalar_tests_passed": 2
+}

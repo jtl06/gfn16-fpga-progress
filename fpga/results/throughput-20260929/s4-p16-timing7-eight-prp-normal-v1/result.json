@@ -1,0 +1,12 @@
+{
+  "status": "PASS_expected_contracts",
+  "job": "s4-p16-timing7-eight-prp-normal-q1-v1",
+  "host": "gfn16-pilot-c4d",
+  "whole_native_seconds": 696.1783583829965,
+  "whole_unit_peak_bytes": 2081591296,
+  "collected_bundle_sha256": "bfe2564c09e35408dc3646b0e24d931647a14fe0a87ed550343a02858e2e8bb3",
+  "evidence": "queue/evidence/s4-p16-timing7-eight-prp-normal-q1-v1/gate-receipt.json",
+  "scope": "5051 complete small-PRP operations/826737 cycles/256 signed96 T5b-pow read words; own timing7 source, no inherited baseline outcome.",
+  "promotion_allowed": false,
+  "owner_numerical_replay": false
+}

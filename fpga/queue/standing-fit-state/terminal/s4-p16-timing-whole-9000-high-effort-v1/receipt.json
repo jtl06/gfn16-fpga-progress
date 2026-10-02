@@ -1,0 +1,120 @@
+{
+  "archive": {
+    "path": "/home/azureuser/gfn16-worker/fit-queue-collection-s4-p16-timing-whole-9000-high-effort-v1/native-reports.tar.gz",
+    "sha256": "40847903bb1e8bc3245c7c63c7056601dc05618e447878ffc7499547a8107da1",
+    "size": 5152631
+  },
+  "collected_native_report_files": 14,
+  "collection_completed": true,
+  "collector_sha256": "51aec17246c64a289917517f690c77f0497fb2dd004e214c1a5889fe15f70dd3",
+  "compiled_db_bytes": 2698411830,
+  "compiled_db_files": 279,
+  "compiled_db_provenance": "Native runner final inventory retained; raw QDB remains on worker, not transferred or rehashed by collector.",
+  "findings": [],
+  "fit_allowed": false,
+  "host": "gfn16-azure-f16",
+  "inventory_sha256": "1a0d13fc8800f64a49c23c94e7dc8e86cc21b422c19451734253c5ca6d18b6f7",
+  "invocation_id": "df63a525e1794fa7ab7fbf35e9417211",
+  "limitation": "Terminal collection and source provenance only. Native failures stay failures; component clocks never become whole-core clocks. All-corner STA/critical paths require separate report interpretation and independent promotion review.",
+  "native_context_resources": {
+    "affinity": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "cpu_max": "400000 100000",
+    "launcher_sha256": "7c90cf9ccac779942e83872c11a6632f4ff9228dc247488b221f94432939bfad",
+    "memory_max": "34359738368",
+    "physical_cores": [
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        7
+      ]
+    ],
+    "quartus_workers": 4,
+    "started_at": "2026-10-01T23:54:58.854129+00:00",
+    "swap_max": "0",
+    "timeout_seconds": 14400
+  },
+  "native_job_succeeded": true,
+  "native_journal_proof": {
+    "invocation_id": "df63a525e1794fa7ab7fbf35e9417211",
+    "manager_elapsed_seconds": 9029.065954,
+    "manager_end_realtime_us": "1790907927314484",
+    "manager_main_exit_messages": [],
+    "manager_start_realtime_us": "1790898898248530",
+    "manager_terminal_message": "gfn16-fit-s4-p16-timing-whole-9000-high-effort-v1.service: Deactivated successfully.",
+    "provenance": "Trusted manager _PID=1 UNIT/INVOCATION_ID fields. GC properties are not reconstructed from inactivity.",
+    "resource_journal": [
+      {
+        "CODE_FILE": "src/core/unit.c",
+        "CODE_FUNC": "unit_log_resources",
+        "CODE_LINE": "2577",
+        "CPU_USAGE_NSEC": "28172011143000",
+        "INVOCATION_ID": "df63a525e1794fa7ab7fbf35e9417211",
+        "MEMORY_PEAK": "25600835584",
+        "MEMORY_SWAP_PEAK": "0",
+        "MESSAGE": "gfn16-fit-s4-p16-timing-whole-9000-high-effort-v1.service: Consumed 7h 49min 32.011s CPU time, 23.8G memory peak, 0B memory swap peak.",
+        "MESSAGE_ID": "ae8f7b866b0347b9af31fe1c80b127c0",
+        "PRIORITY": "5",
+        "SYSLOG_FACILITY": "3",
+        "SYSLOG_IDENTIFIER": "systemd",
+        "TID": "1",
+        "UNIT": "gfn16-fit-s4-p16-timing-whole-9000-high-effort-v1.service",
+        "_BOOT_ID": "ab9fc298b58f4f4eabbe9e650cef43f8",
+        "_CAP_EFFECTIVE": "1ffffffffff",
+        "_CMDLINE": "/sbin/init",
+        "_COMM": "systemd",
+        "_EXE": "/usr/lib/systemd/systemd",
+        "_GID": "0",
+        "_HOSTNAME": "gfn16-azure-f16",
+        "_MACHINE_ID": "7f96f971766340ccba0d3b4e8b514b0f",
+        "_PID": "1",
+        "_RUNTIME_SCOPE": "system",
+        "_SELINUX_CONTEXT": "unconfined\n",
+        "_SOURCE_REALTIME_TIMESTAMP": "1790907927314688",
+        "_SYSTEMD_CGROUP": "/init.scope",
+        "_SYSTEMD_SLICE": "-.slice",
+        "_SYSTEMD_UNIT": "init.scope",
+        "_TRANSPORT": "journal",
+        "_UID": "0",
+        "__CURSOR": "s=38f34d322ecc437abe0f5169d89fd1da;i=1d367;b=ab9fc298b58f4f4eabbe9e650cef43f8;m=746981685;t=65cd23ed5411e;x=25363be2fbbbb628",
+        "__MONOTONIC_TIMESTAMP": "31249143429",
+        "__REALTIME_TIMESTAMP": "1790907927314718",
+        "__SEQNUM": "119655",
+        "__SEQNUM_ID": "38f34d322ecc437abe0f5169d89fd1da"
+      }
+    ],
+    "terminal_kind": "deactivated_successfully",
+    "terminal_proven": true,
+    "unit": "gfn16-fit-s4-p16-timing-whole-9000-high-effort-v1.service"
+  },
+  "native_result": {
+    "context_sha256": "bca394c5ae1022798870618f4be87463fb6a9fab7411545e00d95a1d9d960dfc",
+    "finished_at": "2026-10-02T02:25:24.823353+00:00",
+    "quartus_returncode": 0,
+    "summarize_returncode": 0
+  },
+  "observed_at_utc": "2026-10-02T02:25:51.041396+00:00",
+  "project": "/home/azureuser/gfn16-worker/fit-s4-p16-timing-whole-9000-high-effort-v1",
+  "promotion_allowed": false,
+  "schema": "plain-fit-terminal-collection-v1",
+  "scope": "whole_core",
+  "source_request_sha256": "b71f46418f0c337af861af692c8bc6b020399b6d0859c77fc926c0b295a51b8c",
+  "terminal_proven": true,
+  "unit": "gfn16-fit-s4-p16-timing-whole-9000-high-effort-v1.service",
+  "whole_core_clock_claim": false
+}

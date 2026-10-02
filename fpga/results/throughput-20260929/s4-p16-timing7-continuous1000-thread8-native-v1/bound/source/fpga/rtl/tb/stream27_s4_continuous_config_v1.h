@@ -1,0 +1,7 @@
+#include <cstdint>
+#include "Vgenefer_stream27_host_chain_t5b_paired_aw16_p16_diet_v1_descriptor_ff_v1_timing_r75_v1_term_select_v1.h"
+using DUT=Vgenefer_stream27_host_chain_t5b_paired_aw16_p16_diet_v1_descriptor_ff_v1_timing_r75_v1_term_select_v1;
+constexpr unsigned AW=16,P=16,N=65536,BASE=604832956;
+constexpr unsigned CANONICAL_PIPE_STAGES=1;
+constexpr uint64_t INTERVAL=8460,CARRY_DONE=12558,FIRST_DIGIT=8459;
+constexpr const char* CASE_ID="75d245e889927761cc17d22dc054775698f65b89334c2d1aaf22ebe963c3dac4";

@@ -1,0 +1,90 @@
+{
+  "device": "10AX115N4F40E3SG",
+  "physical_device_verified": false,
+  "target": "square_core27_stream_prefetch_r2_host_broadcast_orient8_rootfused_crtmont_ntt64_carry16",
+  "top": "genefer_square_core27_stream_prefetch_r2_host_broadcast_orient8_rootfused_crtmont",
+  "address_width": 16,
+  "field": null,
+  "field_parameters": null,
+  "field_profile": null,
+  "montgomery_radix_bits": null,
+  "compile_processors": 4,
+  "clock_period_ns": 10.0,
+  "edition": "pro",
+  "allowed_stages": [
+    "syn",
+    "fit",
+    "sta"
+  ],
+  "core_parameters": {
+    "NTT_LANES": 64
+  },
+  "arithmetic_profile": "atomic27_stream_precision_prefetch_r2_host_broadcast_orient8_rootfused_crtmont_v1",
+  "core_field_basis": [
+    {
+      "P": 104857601,
+      "Q": 4190109697,
+      "GENERATOR": 3,
+      "R2": 45971250
+    },
+    {
+      "P": 69206017,
+      "Q": 4225761281,
+      "GENERATOR": 5,
+      "R2": 50081300
+    },
+    {
+      "P": 67239937,
+      "Q": 4227727361,
+      "GENERATOR": 10,
+      "R2": 63576045
+    }
+  ],
+  "core_montgomery_radix_bits": 32,
+  "raw_multiplier_parameters": null,
+  "bitstream_generation": false,
+  "source_sha256": {
+    "genefer_montgomery_mul27_sparse_pipe.sv": "501d0ce309a3915f7aed0f3bde14ba1ee8d56ddc5f6abef1f2f5bb572d64db4b",
+    "genefer_digit_reduce27_pipe.sv": "61e14bb13c2dbcc13b5030756578a0d0358269beb24fb207a5641b98795883e8",
+    "genefer_sdp_ram32.sv": "993567fb68fdc216b9ff04489d1810f743b86564434e4b48261ad606b25d53b0",
+    "genefer_ntt_banked27_engine.sv": "7ae89e702b671e3fbe8a1f90beb99ea595c832729e5e94232bf82515f1d74fe9",
+    "genefer_root_recurrence27.sv": "c8adc265915192807efee46799a782f1649a4408313098baaed8b4a808afeb9e",
+    "genefer_ntt_banked27_prefetch_r2_orient8_rootfused_engine.sv": "d52351bdf53c6809208f7a466848b4376cbd8ff87c52f633dc8c2814026b47ee",
+    "genefer_ntt_banked27_prefetch_r2_host_broadcast_orient8_rootfused_engine.sv": "b3d06d1e5f90e4944fdf88ff264cb7edbd73d0daf9f46ccf93389ab4889d9e3f",
+    "genefer_root_profile27_r2_rom.sv": "cb851bec51f518a71d216d4a993ffa3aa937b8230474c38898b061e7ad42dea6",
+    "genefer_mod64_pipe.sv": "e582dba87dce51794a38039fd02574f443c53750bcafc8fcb1f4d0d50fc60839",
+    "genefer_crt3_27_mont_pipe.sv": "8bb5b62423c1f61e069f131b5d393dd3dbc84d05348fc1945f6e9c419c104c58",
+    "genefer_sp_ram.sv": "b97d2f43db1b1e1aa60b9b7fc2b720af1e302bd5ff9e35854c89b30e5fb610df",
+    "genefer_div_recip_narrow.sv": "eef327cee81d41895a068b746a3715daba95d43bea919edbddf9b498ecfc38bf",
+    "genefer_carry_prefix_stream_pipe.sv": "9838c6852cac57f7901f8b57dcbb4ee11b7fa129ef86e40158d67cc789b06e5e",
+    "genefer_div_recip_precision.sv": "832021ed0b3410dc867d92ac4436a725d5717f9630d233073e39896789ebbd7c",
+    "genefer_carry_prefix_stream_precision.sv": "ba7ce9d0c1a99ad959bfe9909c62f341fabd537c76f196c5bcb6394c161296d3",
+    "genefer_square_core27_stream_prefetch_r2_host_broadcast_orient8_rootfused_crtmont.sv": "b6dbd4fccc6d7708fd295d3c82e2ebec444c4a2fbde8612851f10f979da04895"
+  },
+  "status": "prepared_fullfit_not_executed_or_physical_qualified",
+  "note": "Compute-only matched whole64 full-fit preparation, not execution. No resource/timing/board claim until terminal evidence audit.",
+  "root_profile_format": 2,
+  "control_sha256": {
+    "probe.qsf": "feddd28d269bb7bd1aa22def4a266d4a5d41052c7a586aa12a3757976138d09c",
+    "probe.qpf": "ff7f5a00df0fdbe48ba84142a0a94058de5a259b5f7f1e38d6bd50e87d408004",
+    "probe.sdc": "5036d452b426258e0f2e5a122ae1eb24a889b39494ac227b5b8abbd594673470",
+    "run.tcl": "1f535047267b24a76bffa75818c441d49247f0d01329129a0a53657c7ba31ef1"
+  },
+  "seed": 1,
+  "frozen_parent_manifest_sha256": "f547d1f801ad3a37036ced1a991023d5d611a76eaa874f19c63a10276939e638",
+  "G2_report_sha256": "551d5365dbd8059a372c9bed26fc860b47191a72b596e4f911af862753c3902e",
+  "G3_independent_review_sha256": "4852b9af853135a7c6872167c36142ad38771db0d017a0b4bcc19b40ab998b90",
+  "G4_report_sha256": "d32023abd40f925fade2f4844e7eb57a4cc9fee2c19203ec51569165e8ea3808",
+  "G4_independent_review_sha256": "ec5e1adad36eb815b2525b30f810a1decf760a5ad1d4ec1e43502a7537ea2b0a",
+  "G4_AW16_normal_qualified": true,
+  "physical_fit_qualified": false,
+  "advisor_r4_sha256": "d587c6eef8869aef1975e9814cb18cb15b2eafd0b5243c5c6da406dba04c9216",
+  "requested_vendor_sequence": [
+    "syn",
+    "fit",
+    "sta"
+  ],
+  "forecast_gate": "No 280K forecast gate: pinned parent routed; r4 admits direct fullfit after independently verified AW16.",
+  "launcher_sha256": "ef66b020cf4317492c43a6baba6aea85f186e32dfdef6e7de7fa150a854e47a4",
+  "shell_launcher_sha256": "a819f56f1743027083ed1fe304909ad2655f8dcc90377dc24ab2057392984111"
+}

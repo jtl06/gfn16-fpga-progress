@@ -1,0 +1,28 @@
+{
+  "status": "PASS_expected_contracts",
+  "job": "s4-p16-diet-whole-host-faults-q1-v1",
+  "host": "gfn16-azure-sim-f32",
+  "typed_step_returncodes": [
+    0,
+    1
+  ],
+  "descriptor_codes": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "reset_ages": [
+    10,
+    271
+  ],
+  "quarantine_checks": 20,
+  "recovery_words": 224,
+  "special_signed96_words": 32,
+  "canonical_special_cycles": 320,
+  "whole_seconds": 203.9362,
+  "unit_peak_bytes": 2094612480,
+  "collected_bundle_sha256": "197f65d204ddca6c78a18ef65074bd4b73cea2aba6d78c7533a2500b7da1a309",
+  "evidence": "../../../queue/evidence/s4-p16-diet-whole-host-faults-q1-v1/gate-receipt.json",
+  "scope": "Own whole N32/P16 diet:underflow/stalegeneration/index/range, occupied cold/warm reset, sticky quarantine/recovery, b**16 square→special−1/T5b/fullsigned96. Wrong comparator only after correct special execution; no fullN/timing7/clock claim."
+}

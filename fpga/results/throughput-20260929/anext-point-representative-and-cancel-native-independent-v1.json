@@ -1,0 +1,546 @@
+{
+  "limitations": [
+    "Representative16 deterministicsigned/monomial/dense squares/eightfullimages524288words atminimum131077/max1e9 remain unconditional nativeC++comparison, no perworddump/offlineactualarray or newfullNoracle. Sameoriginal1029closedrecipe+harness onlynameschanged; all16 phase/backend/latency rows +1 pointretime, total ticks +16.",
+    "Cancelreset sixAW5actualages0/1/3 observes lane0 point_launch_valid in eachofthreefields and ORofeverybank data_re/data_we, done/imagepublication/cache.16posteventquietclock samples and32word9+zeros recoveryAFTERmandatoryreset+completeimage reload. No guaranteed killing-edge/preedgeatomicity, alladdressmemorypreservation, everypointage/fullNreset or publiccancelopcode qualification.",
+    "NewpointpayloadFF itselfunreset, but asyncchildreset clears allvalid/type/half/row/butterfly/cache and backendpublicationeligibility; stalepayloadhasnolegalvalidaftercancel. Actualfault matrix remainsfinite, no genericallfaultclaim.",
+    "RepresentativeGCPpair23/24GiB andcancelAzurepair01/4GiB use distincttools/hosts. No crosshostspeed/size/threadprofile inference. Classstylewarnings retained, notcleanlint.",
+    "Separate ownpointnumericalPRP/short/pilot/1000 receiptbcbdd9 reusedonlyasclosedsource/harnessidentity, notthirdnumericalreplay. Timing224eff/projectionf1a1/advisoradoption remain separate. No original/upper/F3/RAM27/hostcut/wholeboardclock/highestclock/promotion inference."
+  ],
+  "local_GMP_imports": 0,
+  "local_full_N_arithmetic": 0,
+  "local_native_or_cloud_commands": 0,
+  "pins": {
+    "reference/anext_point_cancel_v1.py": "9a2b378af4a2117388fd3f142358a914a47c13695ebc14f9082123174f4b4c78",
+    "reference/anext_point_contract_v1.py": "2e2fe1ebdd4413596d8e9dbd701ef7b4bdd1faa54623cfab5a133ab30e716322",
+    "reference/anext_point_representative_output_v1.py": "e4bfb16cb1bb15145d821219a4b7ac77465acdd3926a93af04a2d93ca745d5f7",
+    "reference/anext_point_representative_v1.py": "b4b944cc31cc86b7a581ffce1d18a77c67d2d1a753f8028ca18c93c26eb6c527",
+    "replay_sha256": "2348312c2227e36bcb7ae7cb2e6ba0835fe1f9a644ba2f072ac232f23dc65158",
+    "results/throughput-20260929/anext-point-aw16-native-owner-v1.json": "3ae123db6da3a0e9452df7710dddf5c5bbf18164436295becfe2e7f759ca0d2d",
+    "results/throughput-20260929/anext-point-cancel-native-owner-v1.json": "c611be23292fb9ab42b53c843727e94ba306941d386c1226c67b5d3b6eb5338a",
+    "results/throughput-20260929/anext-point-qualification-native-independent-v1.json": "bcbdd9ee72c670bbb9718f8e1ed6a0a9bed22e30faa8f6b674ce7ff0b4cf4fa6",
+    "results/throughput-20260929/anext-point-qualification-replay-independent-v1.py": "93251ca16d9d9dca5c6b5e098c2f87c024ca7a306d2dbc3a6ce7148f940846a8",
+    "results/throughput-20260929/anext-v1-representative-aw16-native-independent-v1.json": "1029d023b6633432daa76e46961ab9b1619a18929a747931eadc7c71d7537ea0",
+    "rtl/tb/anext_point_cancel_v1.cpp": "0937d405c3be08cd9140b326ad8afedc6f700e27ed0cedfb5d5f4da413d59de1",
+    "rtl/tb/genefer_anext_point_cancel_probe_v1.sv": "3e8dfa28a561aa915aad32b530be65209450cd4acff9a292aabd5c130df87b2a",
+    "rtl/tb/track_anext_point_representative_v1.cpp": "8669e591b9b35a3f72b4d65667f893cb85f5e299466e3b6bd8473d72e1b21f76"
+  },
+  "promotion_allowed": false,
+  "replay": {
+    "artifacts": 42,
+    "author_pure_source_methods": 3,
+    "commands": 17,
+    "dispatcher_pins": 62,
+    "generated": 313,
+    "independent_bad_output_rejections": 77,
+    "package_members": 498,
+    "sources": 488
+  },
+  "reviewer": "independent_review",
+  "roles": [
+    {
+      "done_sha256": "d4682d3c854ba46d8638b0228b88579f74dfb030a9935acbd67e0ee9f2226e95",
+      "evidence_archive_sha256": "a7f0982b4dc87e25cc2a73b101448da3f7bb3bc17ae4ba224c9031d034e457f4",
+      "executable_sha256": "74021e883ec1dafb7c3beeafbb4e200f9e7f9b60c9e54f02b29fd87cc0377a6e",
+      "gate_sha256": "c9c7082ca546c3834f000c9e99768918585f4e0cda00cab2b4ec6313fb27be44",
+      "generated_map_sha256": "d215003c7f8b07a2bb9a6b4ca83f60826d41f3148b5d402ae60af7749c192f49",
+      "id": "anext-point-representative-aw16-q1-v1",
+      "kind": "representative",
+      "manifest_sha256": "bb1103d4cc5815fab34eb29dd02aecc027ce461843ca12b09d4034e9bb56649f",
+      "package_sha256": "28a09b431ca832f3aa0f697913b7dfd45799beefa6581efec483a520a1511d13",
+      "report_sha256": "2ae7a6367b3b436576204c0224117d914294434da02b90c0bc255923db68110d",
+      "results": [
+        {
+          "footer": {
+            "aw": 16,
+            "cold_squares": 8,
+            "commands": 786452,
+            "hold_checks": 1572904,
+            "max_latency": 69642,
+            "profile_loads": 4,
+            "readbacks": 524288,
+            "squares": 16,
+            "ticks": 7465695
+          },
+          "metrics": [
+            {
+              "cold": 1,
+              "double": 0,
+              "index": 65537,
+              "latency": 25992,
+              "load": 1,
+              "ntt": 17710,
+              "post": 4158,
+              "prefill": 4106,
+              "root": 9,
+              "seed": 0,
+              "total": 25990
+            },
+            {
+              "cold": 0,
+              "double": 1,
+              "index": 65538,
+              "latency": 21875,
+              "load": 0,
+              "ntt": 17710,
+              "post": 4158,
+              "prefill": 0,
+              "root": 0,
+              "seed": 0,
+              "total": 21873
+            },
+            {
+              "cold": 0,
+              "double": 0,
+              "index": 65539,
+              "latency": 21875,
+              "load": 0,
+              "ntt": 17710,
+              "post": 4158,
+              "prefill": 0,
+              "root": 0,
+              "seed": 0,
+              "total": 21873
+            },
+            {
+              "cold": 1,
+              "double": 1,
+              "index": 131076,
+              "latency": 25983,
+              "load": 0,
+              "ntt": 17710,
+              "post": 4158,
+              "prefill": 4106,
+              "root": 0,
+              "seed": 0,
+              "total": 25981
+            },
+            {
+              "cold": 1,
+              "double": 0,
+              "index": 262150,
+              "latency": 25992,
+              "load": 1,
+              "ntt": 17710,
+              "post": 4158,
+              "prefill": 4106,
+              "root": 9,
+              "seed": 0,
+              "total": 25990
+            },
+            {
+              "cold": 0,
+              "double": 1,
+              "index": 262151,
+              "latency": 21875,
+              "load": 0,
+              "ntt": 17710,
+              "post": 4158,
+              "prefill": 0,
+              "root": 0,
+              "seed": 0,
+              "total": 21873
+            },
+            {
+              "cold": 0,
+              "double": 0,
+              "index": 262152,
+              "latency": 21875,
+              "load": 0,
+              "ntt": 17710,
+              "post": 4158,
+              "prefill": 0,
+              "root": 0,
+              "seed": 0,
+              "total": 21873
+            },
+            {
+              "cold": 1,
+              "double": 1,
+              "index": 327689,
+              "latency": 25983,
+              "load": 0,
+              "ntt": 17710,
+              "post": 4158,
+              "prefill": 4106,
+              "root": 0,
+              "seed": 0,
+              "total": 25981
+            },
+            {
+              "cold": 1,
+              "double": 0,
+              "index": 458763,
+              "latency": 25992,
+              "load": 1,
+              "ntt": 17710,
+              "post": 4158,
+              "prefill": 4106,
+              "root": 9,
+              "seed": 0,
+              "total": 25990
+            },
+            {
+              "cold": 0,
+              "double": 1,
+              "index": 458764,
+              "latency": 21875,
+              "load": 0,
+              "ntt": 17710,
+              "post": 4158,
+              "prefill": 0,
+              "root": 0,
+              "seed": 0,
+              "total": 21873
+            },
+            {
+              "cold": 0,
+              "double": 0,
+              "index": 458765,
+              "latency": 21875,
+              "load": 0,
+              "ntt": 17710,
+              "post": 4158,
+              "prefill": 0,
+              "root": 0,
+              "seed": 0,
+              "total": 21873
+            },
+            {
+              "cold": 1,
+              "double": 1,
+              "index": 524302,
+              "latency": 25983,
+              "load": 0,
+              "ntt": 17710,
+              "post": 4158,
+              "prefill": 4106,
+              "root": 0,
+              "seed": 0,
+              "total": 25981
+            },
+            {
+              "cold": 1,
+              "double": 0,
+              "index": 655376,
+              "latency": 25992,
+              "load": 1,
+              "ntt": 17710,
+              "post": 4158,
+              "prefill": 4106,
+              "root": 9,
+              "seed": 0,
+              "total": 25990
+            },
+            {
+              "cold": 0,
+              "double": 1,
+              "index": 655377,
+              "latency": 21875,
+              "load": 0,
+              "ntt": 17710,
+              "post": 4158,
+              "prefill": 0,
+              "root": 0,
+              "seed": 0,
+              "total": 21873
+            },
+            {
+              "cold": 0,
+              "double": 0,
+              "index": 655378,
+              "latency": 21875,
+              "load": 0,
+              "ntt": 17710,
+              "post": 4158,
+              "prefill": 0,
+              "root": 0,
+              "seed": 0,
+              "total": 21873
+            },
+            {
+              "cold": 1,
+              "double": 1,
+              "index": 720915,
+              "latency": 25983,
+              "load": 0,
+              "ntt": 17710,
+              "post": 4158,
+              "prefill": 4106,
+              "root": 0,
+              "seed": 0,
+              "total": 25981
+            }
+          ]
+        }
+      ],
+      "runtime": {
+        "bounds": {
+          "command_seconds": 1800,
+          "durable_floor_bytes": 10737418240,
+          "durable_reserve_bytes": 134217728,
+          "host_memory_floor_bytes": 34359738368,
+          "lock_wait_seconds": 1800,
+          "memory_bytes": 25769803776,
+          "overall_seconds": 3600,
+          "scratch_floor_bytes": 10737418240,
+          "scratch_reservation_evidence": "Conservative estimate for new threaded/unknown-peak builds, not a measured upper bound. Guard abort threshold may overshoot; it is not a filesystem hard quota. Peak allocated blocks are recorded.",
+          "scratch_reserve_bytes": 4294967296,
+          "static_lane_reservation_bytes": 8589934592
+        },
+        "invocation_id": "4d189bfde7184f939856212e2e4e7ce9",
+        "limits": {
+          "affinity": [
+            2,
+            3
+          ],
+          "cgroup": "/system.slice/gfn16-q-anext-point-representative-aw16-gcp23-v1.service",
+          "cpu_max": [
+            "200000",
+            "100000"
+          ],
+          "full_topology": {
+            "0": [
+              0,
+              0
+            ],
+            "1": [
+              0,
+              1
+            ],
+            "2": [
+              0,
+              2
+            ],
+            "3": [
+              0,
+              3
+            ],
+            "4": [
+              0,
+              0
+            ],
+            "5": [
+              0,
+              1
+            ],
+            "6": [
+              0,
+              2
+            ],
+            "7": [
+              0,
+              3
+            ]
+          },
+          "memory_max_bytes": 25769803776,
+          "physical_cores": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "swap_max_bytes": 0
+        },
+        "packet_seconds": 812.1737248360005,
+        "style_counts": {
+          "DECLFILENAME": 3,
+          "GENUNNAMED": 15,
+          "PINCONNECTEMPTY": 19,
+          "SYNCASYNCNET": 18,
+          "UNUSEDSIGNAL": 36,
+          "VARHIDDEN": 1
+        },
+        "unit_CPU_seconds": 958.03985,
+        "unit_peak_bytes": 7554789376,
+        "unit_seconds": 812.745325
+      },
+      "source_map_sha256": "5ed192a58c915b0bd973f42deae242af4787778ac29f172b0c8decb4f114121d"
+    },
+    {
+      "done_sha256": "f2b8e15a9658e4abd3fe57d243b9054fbf9fd6de56dfff89bafbfe0eeb28bba8",
+      "evidence_archive_sha256": "9b2f06b8d8df4f91610864d101f56da98c727578cba7b48cc897f38688b579b1",
+      "executable_sha256": "4f1e311fda909c378cffbff1d0e0df708bc5e98a74b38b9d97f0e91519abd2e2",
+      "gate_sha256": "56c95d1c70487029bf2cb1f0753684874e65b47e90eebd50b32f75e7a9237ac3",
+      "generated_map_sha256": "e27b3d4d93e0de1f859630082207f3bf38e31d3f283c08ae6e2e60b01836302b",
+      "id": "anext-point-cancel-aw5-q1-v1",
+      "kind": "cancel",
+      "manifest_sha256": "473b19c8bc7e4746d0751c3161f7fd5df209358717b390e9f53d32e6f62a9424",
+      "package_sha256": "fbf611494fca48a836365c4c09ca26284883f8ac7d68a1581090dca31c05750f",
+      "report_sha256": "a788757286f929283dba6dc184b34288952da8776cf31395ab443c9afb0dcc7c",
+      "results": [
+        {
+          "age": 0,
+          "case": "reset0",
+          "physical_fields": 3,
+          "quiet_post_event_edges": 16,
+          "recovered_words_after_reset_fullreload": 32,
+          "ticks": 1205
+        },
+        {
+          "age": 1,
+          "case": "reset1",
+          "physical_fields": 3,
+          "quiet_post_event_edges": 16,
+          "recovered_words_after_reset_fullreload": 32,
+          "ticks": 1206
+        },
+        {
+          "age": 3,
+          "case": "reset3",
+          "physical_fields": 3,
+          "quiet_post_event_edges": 16,
+          "recovered_words_after_reset_fullreload": 32,
+          "ticks": 1208
+        },
+        {
+          "age": 0,
+          "case": "cancel0",
+          "physical_fields": 3,
+          "quiet_post_event_edges": 16,
+          "recovered_words_after_reset_fullreload": 32,
+          "ticks": 1205
+        },
+        {
+          "age": 1,
+          "case": "cancel1",
+          "physical_fields": 3,
+          "quiet_post_event_edges": 16,
+          "recovered_words_after_reset_fullreload": 32,
+          "ticks": 1206
+        },
+        {
+          "age": 3,
+          "case": "cancel3",
+          "physical_fields": 3,
+          "quiet_post_event_edges": 16,
+          "recovered_words_after_reset_fullreload": 32,
+          "ticks": 1208
+        }
+      ],
+      "runtime": {
+        "bounds": {
+          "command_seconds": 1800,
+          "durable_floor_bytes": 10737418240,
+          "durable_reserve_bytes": 134217728,
+          "host_memory_floor_bytes": 8589934592,
+          "lock_wait_seconds": 1800,
+          "memory_bytes": 4294967296,
+          "overall_seconds": 3600,
+          "scratch_floor_bytes": 10737418240,
+          "scratch_reservation_evidence": "Conservative four-GiB per build across eight possible static lanes plus ten-GiB floor, not a measured upper bound or filesystem hard quota. Polling abort threshold may overshoot. Native own-UID byte/inode quota admission and observed peaks remain mandatory.",
+          "scratch_reserve_bytes": 4294967296,
+          "static_lane_reservation_bytes": 34359738368
+        },
+        "invocation_id": "7afb1fe1459a48dbb5aba8e25c5967ab",
+        "limits": {
+          "affinity": [
+            0,
+            1
+          ],
+          "cgroup": "/system.slice/gfn16-q-auto-anext-point-cancel-aw5-q1-v1-84e4dbda33392e5d.service",
+          "cpu_max": [
+            "200000",
+            "100000"
+          ],
+          "full_topology": {
+            "0": [
+              0,
+              0
+            ],
+            "1": [
+              0,
+              1
+            ],
+            "2": [
+              0,
+              2
+            ],
+            "3": [
+              0,
+              3
+            ],
+            "4": [
+              0,
+              4
+            ],
+            "5": [
+              0,
+              5
+            ],
+            "6": [
+              0,
+              6
+            ],
+            "7": [
+              0,
+              7
+            ],
+            "8": [
+              0,
+              8
+            ],
+            "9": [
+              0,
+              9
+            ],
+            "10": [
+              0,
+              10
+            ],
+            "11": [
+              0,
+              11
+            ],
+            "12": [
+              0,
+              12
+            ],
+            "13": [
+              0,
+              13
+            ],
+            "14": [
+              0,
+              14
+            ],
+            "15": [
+              0,
+              15
+            ]
+          },
+          "memory_max_bytes": 4294967296,
+          "physical_cores": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "swap_max_bytes": 0
+        },
+        "packet_seconds": 62.26869849200011,
+        "style_counts": {
+          "DECLFILENAME": 3,
+          "GENUNNAMED": 15,
+          "PINCONNECTEMPTY": 19,
+          "SYNCASYNCNET": 18,
+          "UNUSEDSIGNAL": 36,
+          "VARHIDDEN": 1
+        },
+        "unit_CPU_seconds": 101.731409,
+        "unit_peak_bytes": 389492736,
+        "unit_seconds": 63.043063
+      },
+      "source_map_sha256": "d69e481e56184ed0e527efea2adb6efbcd8d8a2855aff19c811bfcbdad6658dc"
+    }
+  ],
+  "schema": "independent-native-review-v1",
+  "status": "PASS_scoped_point_AW16_representative_and_six_AW5_flight_reset_cancel_native_deltas_ONLY"
+}

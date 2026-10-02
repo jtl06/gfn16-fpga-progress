@@ -1,0 +1,554 @@
+// S-M2 source-only root service. One packed ROM read per accepted physical row.
+// Root addresses gather only contributing row bits, not row modulo ROM depth.
+// Canceled occupied rows advance. Only rst_n/frame_start re-establish cadence.
+module merged_stream27_root_ct_aw5_p16_f2_s0_v1 #(
+    parameter int WIDTH=27,
+    parameter int FRAME_T=2,
+    parameter int ADDRESS_BITS=0,
+    parameter int ROW_W=(FRAME_T>1 ? $clog2(FRAME_T) : 1),
+    parameter int MAP_W=(ADDRESS_BITS>0 ? ADDRESS_BITS*ROW_W : 1),
+    parameter logic [MAP_W-1:0] ADDRESS_ROW_POSITIONS=1'h0,
+    parameter logic [WIDTH-1:0] FIRST_ROOT=27'h35ca559,
+    parameter string HEX_FILE="EMBEDDED_SOURCE_ONLY"
+) (
+    input logic clk,rst_n,in_slot_valid,frame_start,
+    output logic [WIDTH-1:0] root
+);
+    generate if(ADDRESS_BITS==0)begin : constant_root
+        assign root=FIRST_ROOT;
+    end else begin : gathered_root
+        localparam int WORDS=1<<ADDRESS_BITS;
+        (* ramstyle = "M20K" *) logic [WIDTH-1:0] roots[0:WORDS-1];
+        logic [ROW_W-1:0] current_row,following_row;
+        wire [ADDRESS_BITS-1:0] following_address;
+        logic [WIDTH-1:0] prefetched;
+        assign following_row=frame_start ? ROW_W'(1) : current_row+ROW_W'(1);
+        for(genvar bit_index=0;bit_index<ADDRESS_BITS;bit_index=bit_index+1)begin : address_bits
+            localparam int ROW_BIT=int'(ADDRESS_ROW_POSITIONS[bit_index*ROW_W+:ROW_W]);
+            assign following_address[bit_index]=following_row[ROW_BIT];
+        end
+        assign root=frame_start ? FIRST_ROOT : prefetched;
+        initial begin
+            roots[0]=27'h35ca559;
+        end
+        // Memory and read output have no reset; row0 static bypass is mandatory.
+        always_ff @(posedge clk)
+            if(rst_n && in_slot_valid)prefetched<=roots[following_address];
+        always_ff @(posedge clk or negedge rst_n)begin
+            if(!rst_n)current_row<='0;
+            else if(in_slot_valid)current_row<=following_row;
+        end
+        // synthesis translate_off
+        initial begin
+            if(FRAME_T<2 || (FRAME_T&(FRAME_T-1))!=0 || ADDRESS_BITS<1 || ADDRESS_BITS>ROW_W || HEX_FILE=="")
+                $fatal(1,"S_M2_COMPACT_ROOT_GEOMETRY_OR_FILE");
+            for(int k=0;k<ADDRESS_BITS;k=k+1)begin
+                if(int'(ADDRESS_ROW_POSITIONS[k*ROW_W+:ROW_W])>=ROW_W)$fatal(1,"S_M2_ROOT_ROW_BIT");
+                for(int j=0;j<k;j=j+1)
+                    if(ADDRESS_ROW_POSITIONS[k*ROW_W+:ROW_W]==ADDRESS_ROW_POSITIONS[j*ROW_W+:ROW_W])
+                        $fatal(1,"S_M2_DUPLICATE_ROOT_ROW_BIT");
+            end
+        end
+        // synthesis translate_on
+    end endgenerate
+endmodule
+
+// S-M2 source-only root service. One packed ROM read per accepted physical row.
+// Root addresses gather only contributing row bits, not row modulo ROM depth.
+// Canceled occupied rows advance. Only rst_n/frame_start re-establish cadence.
+module merged_stream27_root_ct_aw5_p16_f2_s1_v1 #(
+    parameter int WIDTH=54,
+    parameter int FRAME_T=2,
+    parameter int ADDRESS_BITS=0,
+    parameter int ROW_W=(FRAME_T>1 ? $clog2(FRAME_T) : 1),
+    parameter int MAP_W=(ADDRESS_BITS>0 ? ADDRESS_BITS*ROW_W : 1),
+    parameter logic [MAP_W-1:0] ADDRESS_ROW_POSITIONS=1'h0,
+    parameter logic [WIDTH-1:0] FIRST_ROOT=54'h0d505c387f7226,
+    parameter string HEX_FILE="EMBEDDED_SOURCE_ONLY"
+) (
+    input logic clk,rst_n,in_slot_valid,frame_start,
+    output logic [WIDTH-1:0] root
+);
+    generate if(ADDRESS_BITS==0)begin : constant_root
+        assign root=FIRST_ROOT;
+    end else begin : gathered_root
+        localparam int WORDS=1<<ADDRESS_BITS;
+        (* ramstyle = "M20K" *) logic [WIDTH-1:0] roots[0:WORDS-1];
+        logic [ROW_W-1:0] current_row,following_row;
+        wire [ADDRESS_BITS-1:0] following_address;
+        logic [WIDTH-1:0] prefetched;
+        assign following_row=frame_start ? ROW_W'(1) : current_row+ROW_W'(1);
+        for(genvar bit_index=0;bit_index<ADDRESS_BITS;bit_index=bit_index+1)begin : address_bits
+            localparam int ROW_BIT=int'(ADDRESS_ROW_POSITIONS[bit_index*ROW_W+:ROW_W]);
+            assign following_address[bit_index]=following_row[ROW_BIT];
+        end
+        assign root=frame_start ? FIRST_ROOT : prefetched;
+        initial begin
+            roots[0]=54'h0d505c387f7226;
+        end
+        // Memory and read output have no reset; row0 static bypass is mandatory.
+        always_ff @(posedge clk)
+            if(rst_n && in_slot_valid)prefetched<=roots[following_address];
+        always_ff @(posedge clk or negedge rst_n)begin
+            if(!rst_n)current_row<='0;
+            else if(in_slot_valid)current_row<=following_row;
+        end
+        // synthesis translate_off
+        initial begin
+            if(FRAME_T<2 || (FRAME_T&(FRAME_T-1))!=0 || ADDRESS_BITS<1 || ADDRESS_BITS>ROW_W || HEX_FILE=="")
+                $fatal(1,"S_M2_COMPACT_ROOT_GEOMETRY_OR_FILE");
+            for(int k=0;k<ADDRESS_BITS;k=k+1)begin
+                if(int'(ADDRESS_ROW_POSITIONS[k*ROW_W+:ROW_W])>=ROW_W)$fatal(1,"S_M2_ROOT_ROW_BIT");
+                for(int j=0;j<k;j=j+1)
+                    if(ADDRESS_ROW_POSITIONS[k*ROW_W+:ROW_W]==ADDRESS_ROW_POSITIONS[j*ROW_W+:ROW_W])
+                        $fatal(1,"S_M2_DUPLICATE_ROOT_ROW_BIT");
+            end
+        end
+        // synthesis translate_on
+    end endgenerate
+endmodule
+
+// S-M2 source-only root service. One packed ROM read per accepted physical row.
+// Root addresses gather only contributing row bits, not row modulo ROM depth.
+// Canceled occupied rows advance. Only rst_n/frame_start re-establish cadence.
+module merged_stream27_root_ct_aw5_p16_f2_s2_v1 #(
+    parameter int WIDTH=108,
+    parameter int FRAME_T=2,
+    parameter int ADDRESS_BITS=0,
+    parameter int ROW_W=(FRAME_T>1 ? $clog2(FRAME_T) : 1),
+    parameter int MAP_W=(ADDRESS_BITS>0 ? ADDRESS_BITS*ROW_W : 1),
+    parameter logic [MAP_W-1:0] ADDRESS_ROW_POSITIONS=1'h0,
+    parameter logic [WIDTH-1:0] FIRST_ROOT=108'h6169756b00aab9991772ae9b271,
+    parameter string HEX_FILE="EMBEDDED_SOURCE_ONLY"
+) (
+    input logic clk,rst_n,in_slot_valid,frame_start,
+    output logic [WIDTH-1:0] root
+);
+    generate if(ADDRESS_BITS==0)begin : constant_root
+        assign root=FIRST_ROOT;
+    end else begin : gathered_root
+        localparam int WORDS=1<<ADDRESS_BITS;
+        (* ramstyle = "M20K" *) logic [WIDTH-1:0] roots[0:WORDS-1];
+        logic [ROW_W-1:0] current_row,following_row;
+        wire [ADDRESS_BITS-1:0] following_address;
+        logic [WIDTH-1:0] prefetched;
+        assign following_row=frame_start ? ROW_W'(1) : current_row+ROW_W'(1);
+        for(genvar bit_index=0;bit_index<ADDRESS_BITS;bit_index=bit_index+1)begin : address_bits
+            localparam int ROW_BIT=int'(ADDRESS_ROW_POSITIONS[bit_index*ROW_W+:ROW_W]);
+            assign following_address[bit_index]=following_row[ROW_BIT];
+        end
+        assign root=frame_start ? FIRST_ROOT : prefetched;
+        initial begin
+            roots[0]=108'h6169756b00aab9991772ae9b271;
+        end
+        // Memory and read output have no reset; row0 static bypass is mandatory.
+        always_ff @(posedge clk)
+            if(rst_n && in_slot_valid)prefetched<=roots[following_address];
+        always_ff @(posedge clk or negedge rst_n)begin
+            if(!rst_n)current_row<='0;
+            else if(in_slot_valid)current_row<=following_row;
+        end
+        // synthesis translate_off
+        initial begin
+            if(FRAME_T<2 || (FRAME_T&(FRAME_T-1))!=0 || ADDRESS_BITS<1 || ADDRESS_BITS>ROW_W || HEX_FILE=="")
+                $fatal(1,"S_M2_COMPACT_ROOT_GEOMETRY_OR_FILE");
+            for(int k=0;k<ADDRESS_BITS;k=k+1)begin
+                if(int'(ADDRESS_ROW_POSITIONS[k*ROW_W+:ROW_W])>=ROW_W)$fatal(1,"S_M2_ROOT_ROW_BIT");
+                for(int j=0;j<k;j=j+1)
+                    if(ADDRESS_ROW_POSITIONS[k*ROW_W+:ROW_W]==ADDRESS_ROW_POSITIONS[j*ROW_W+:ROW_W])
+                        $fatal(1,"S_M2_DUPLICATE_ROOT_ROW_BIT");
+            end
+        end
+        // synthesis translate_on
+    end endgenerate
+endmodule
+
+// S-M2 source-only root service. One packed ROM read per accepted physical row.
+// Root addresses gather only contributing row bits, not row modulo ROM depth.
+// Canceled occupied rows advance. Only rst_n/frame_start re-establish cadence.
+module merged_stream27_root_ct_aw5_p16_f2_s3_v1 #(
+    parameter int WIDTH=216,
+    parameter int FRAME_T=2,
+    parameter int ADDRESS_BITS=0,
+    parameter int ROW_W=(FRAME_T>1 ? $clog2(FRAME_T) : 1),
+    parameter int MAP_W=(ADDRESS_BITS>0 ? ADDRESS_BITS*ROW_W : 1),
+    parameter logic [MAP_W-1:0] ADDRESS_ROW_POSITIONS=1'h0,
+    parameter logic [WIDTH-1:0] FIRST_ROOT=216'h6d9b1be86188382873dd0ab43c770dfec04f79da10cebda80dd0db,
+    parameter string HEX_FILE="EMBEDDED_SOURCE_ONLY"
+) (
+    input logic clk,rst_n,in_slot_valid,frame_start,
+    output logic [WIDTH-1:0] root
+);
+    generate if(ADDRESS_BITS==0)begin : constant_root
+        assign root=FIRST_ROOT;
+    end else begin : gathered_root
+        localparam int WORDS=1<<ADDRESS_BITS;
+        (* ramstyle = "M20K" *) logic [WIDTH-1:0] roots[0:WORDS-1];
+        logic [ROW_W-1:0] current_row,following_row;
+        wire [ADDRESS_BITS-1:0] following_address;
+        logic [WIDTH-1:0] prefetched;
+        assign following_row=frame_start ? ROW_W'(1) : current_row+ROW_W'(1);
+        for(genvar bit_index=0;bit_index<ADDRESS_BITS;bit_index=bit_index+1)begin : address_bits
+            localparam int ROW_BIT=int'(ADDRESS_ROW_POSITIONS[bit_index*ROW_W+:ROW_W]);
+            assign following_address[bit_index]=following_row[ROW_BIT];
+        end
+        assign root=frame_start ? FIRST_ROOT : prefetched;
+        initial begin
+            roots[0]=216'h6d9b1be86188382873dd0ab43c770dfec04f79da10cebda80dd0db;
+        end
+        // Memory and read output have no reset; row0 static bypass is mandatory.
+        always_ff @(posedge clk)
+            if(rst_n && in_slot_valid)prefetched<=roots[following_address];
+        always_ff @(posedge clk or negedge rst_n)begin
+            if(!rst_n)current_row<='0;
+            else if(in_slot_valid)current_row<=following_row;
+        end
+        // synthesis translate_off
+        initial begin
+            if(FRAME_T<2 || (FRAME_T&(FRAME_T-1))!=0 || ADDRESS_BITS<1 || ADDRESS_BITS>ROW_W || HEX_FILE=="")
+                $fatal(1,"S_M2_COMPACT_ROOT_GEOMETRY_OR_FILE");
+            for(int k=0;k<ADDRESS_BITS;k=k+1)begin
+                if(int'(ADDRESS_ROW_POSITIONS[k*ROW_W+:ROW_W])>=ROW_W)$fatal(1,"S_M2_ROOT_ROW_BIT");
+                for(int j=0;j<k;j=j+1)
+                    if(ADDRESS_ROW_POSITIONS[k*ROW_W+:ROW_W]==ADDRESS_ROW_POSITIONS[j*ROW_W+:ROW_W])
+                        $fatal(1,"S_M2_DUPLICATE_ROOT_ROW_BIT");
+            end
+        end
+        // synthesis translate_on
+    end endgenerate
+endmodule
+
+// S-M2 source-only root service. One packed ROM read per accepted physical row.
+// Root addresses gather only contributing row bits, not row modulo ROM depth.
+// Canceled occupied rows advance. Only rst_n/frame_start re-establish cadence.
+module merged_stream27_root_ct_aw5_p16_f2_s4_v1 #(
+    parameter int WIDTH=216,
+    parameter int FRAME_T=2,
+    parameter int ADDRESS_BITS=1,
+    parameter int ROW_W=(FRAME_T>1 ? $clog2(FRAME_T) : 1),
+    parameter int MAP_W=(ADDRESS_BITS>0 ? ADDRESS_BITS*ROW_W : 1),
+    parameter logic [MAP_W-1:0] ADDRESS_ROW_POSITIONS=1'h0,
+    parameter logic [WIDTH-1:0] FIRST_ROOT=216'h768bb821d3f0f444901103e2b434b711126e096a13be62fbcf7401,
+    parameter string HEX_FILE="EMBEDDED_SOURCE_ONLY"
+) (
+    input logic clk,rst_n,in_slot_valid,frame_start,
+    output logic [WIDTH-1:0] root
+);
+    generate if(ADDRESS_BITS==0)begin : constant_root
+        assign root=FIRST_ROOT;
+    end else begin : gathered_root
+        localparam int WORDS=1<<ADDRESS_BITS;
+        (* ramstyle = "M20K" *) logic [WIDTH-1:0] roots[0:WORDS-1];
+        logic [ROW_W-1:0] current_row,following_row;
+        wire [ADDRESS_BITS-1:0] following_address;
+        logic [WIDTH-1:0] prefetched;
+        assign following_row=frame_start ? ROW_W'(1) : current_row+ROW_W'(1);
+        for(genvar bit_index=0;bit_index<ADDRESS_BITS;bit_index=bit_index+1)begin : address_bits
+            localparam int ROW_BIT=int'(ADDRESS_ROW_POSITIONS[bit_index*ROW_W+:ROW_W]);
+            assign following_address[bit_index]=following_row[ROW_BIT];
+        end
+        assign root=frame_start ? FIRST_ROOT : prefetched;
+        initial begin
+            roots[0]=216'h768bb821d3f0f444901103e2b434b711126e096a13be62fbcf7401;
+            roots[1]=216'h7d3cdfe2c575bc2224810f8155d5a4b10c4cf39d496b8303459652;
+        end
+        // Memory and read output have no reset; row0 static bypass is mandatory.
+        always_ff @(posedge clk)
+            if(rst_n && in_slot_valid)prefetched<=roots[following_address];
+        always_ff @(posedge clk or negedge rst_n)begin
+            if(!rst_n)current_row<='0;
+            else if(in_slot_valid)current_row<=following_row;
+        end
+        // synthesis translate_off
+        initial begin
+            if(FRAME_T<2 || (FRAME_T&(FRAME_T-1))!=0 || ADDRESS_BITS<1 || ADDRESS_BITS>ROW_W || HEX_FILE=="")
+                $fatal(1,"S_M2_COMPACT_ROOT_GEOMETRY_OR_FILE");
+            for(int k=0;k<ADDRESS_BITS;k=k+1)begin
+                if(int'(ADDRESS_ROW_POSITIONS[k*ROW_W+:ROW_W])>=ROW_W)$fatal(1,"S_M2_ROOT_ROW_BIT");
+                for(int j=0;j<k;j=j+1)
+                    if(ADDRESS_ROW_POSITIONS[k*ROW_W+:ROW_W]==ADDRESS_ROW_POSITIONS[j*ROW_W+:ROW_W])
+                        $fatal(1,"S_M2_DUPLICATE_ROOT_ROW_BIT");
+            end
+        end
+        // synthesis translate_on
+    end endgenerate
+endmodule
+
+// S-M2 source-only root service. One packed ROM read per accepted physical row.
+// Root addresses gather only contributing row bits, not row modulo ROM depth.
+// Canceled occupied rows advance. Only rst_n/frame_start re-establish cadence.
+module merged_stream27_root_gs_aw5_p16_f2_s0_v1 #(
+    parameter int WIDTH=216,
+    parameter int FRAME_T=2,
+    parameter int ADDRESS_BITS=1,
+    parameter int ROW_W=(FRAME_T>1 ? $clog2(FRAME_T) : 1),
+    parameter int MAP_W=(ADDRESS_BITS>0 ? ADDRESS_BITS*ROW_W : 1),
+    parameter logic [MAP_W-1:0] ADDRESS_ROW_POSITIONS=1'h0,
+    parameter logic [WIDTH-1:0] FIRST_ROOT=216'h178d35eb523e856718c612fa77b613d548ef6dbfda851490181902,
+    parameter string HEX_FILE="EMBEDDED_SOURCE_ONLY"
+) (
+    input logic clk,rst_n,in_slot_valid,frame_start,
+    output logic [WIDTH-1:0] root
+);
+    generate if(ADDRESS_BITS==0)begin : constant_root
+        assign root=FIRST_ROOT;
+    end else begin : gathered_root
+        localparam int WORDS=1<<ADDRESS_BITS;
+        (* ramstyle = "M20K" *) logic [WIDTH-1:0] roots[0:WORDS-1];
+        logic [ROW_W-1:0] current_row,following_row;
+        wire [ADDRESS_BITS-1:0] following_address;
+        logic [WIDTH-1:0] prefetched;
+        assign following_row=frame_start ? ROW_W'(1) : current_row+ROW_W'(1);
+        for(genvar bit_index=0;bit_index<ADDRESS_BITS;bit_index=bit_index+1)begin : address_bits
+            localparam int ROW_BIT=int'(ADDRESS_ROW_POSITIONS[bit_index*ROW_W+:ROW_W]);
+            assign following_address[bit_index]=following_row[ROW_BIT];
+        end
+        assign root=frame_start ? FIRST_ROOT : prefetched;
+        initial begin
+            roots[0]=216'h178d35eb523e856718c612fa77b613d548ef6dbfda851490181902;
+            roots[1]=216'h0651800628ce8924ed2c9a67778787a97cde37f7dc681e204da240;
+        end
+        // Memory and read output have no reset; row0 static bypass is mandatory.
+        always_ff @(posedge clk)
+            if(rst_n && in_slot_valid)prefetched<=roots[following_address];
+        always_ff @(posedge clk or negedge rst_n)begin
+            if(!rst_n)current_row<='0;
+            else if(in_slot_valid)current_row<=following_row;
+        end
+        // synthesis translate_off
+        initial begin
+            if(FRAME_T<2 || (FRAME_T&(FRAME_T-1))!=0 || ADDRESS_BITS<1 || ADDRESS_BITS>ROW_W || HEX_FILE=="")
+                $fatal(1,"S_M2_COMPACT_ROOT_GEOMETRY_OR_FILE");
+            for(int k=0;k<ADDRESS_BITS;k=k+1)begin
+                if(int'(ADDRESS_ROW_POSITIONS[k*ROW_W+:ROW_W])>=ROW_W)$fatal(1,"S_M2_ROOT_ROW_BIT");
+                for(int j=0;j<k;j=j+1)
+                    if(ADDRESS_ROW_POSITIONS[k*ROW_W+:ROW_W]==ADDRESS_ROW_POSITIONS[j*ROW_W+:ROW_W])
+                        $fatal(1,"S_M2_DUPLICATE_ROOT_ROW_BIT");
+            end
+        end
+        // synthesis translate_on
+    end endgenerate
+endmodule
+
+// S-M2 source-only root service. One packed ROM read per accepted physical row.
+// Root addresses gather only contributing row bits, not row modulo ROM depth.
+// Canceled occupied rows advance. Only rst_n/frame_start re-establish cadence.
+module merged_stream27_root_gs_aw5_p16_f2_s1_v1 #(
+    parameter int WIDTH=108,
+    parameter int FRAME_T=2,
+    parameter int ADDRESS_BITS=1,
+    parameter int ROW_W=(FRAME_T>1 ? $clog2(FRAME_T) : 1),
+    parameter int MAP_W=(ADDRESS_BITS>0 ? ADDRESS_BITS*ROW_W : 1),
+    parameter logic [MAP_W-1:0] ADDRESS_ROW_POSITIONS=1'h0,
+    parameter logic [WIDTH-1:0] FIRST_ROOT=108'h6ad7874ec4611cf4cef98952722,
+    parameter string HEX_FILE="EMBEDDED_SOURCE_ONLY"
+) (
+    input logic clk,rst_n,in_slot_valid,frame_start,
+    output logic [WIDTH-1:0] root
+);
+    generate if(ADDRESS_BITS==0)begin : constant_root
+        assign root=FIRST_ROOT;
+    end else begin : gathered_root
+        localparam int WORDS=1<<ADDRESS_BITS;
+        (* ramstyle = "M20K" *) logic [WIDTH-1:0] roots[0:WORDS-1];
+        logic [ROW_W-1:0] current_row,following_row;
+        wire [ADDRESS_BITS-1:0] following_address;
+        logic [WIDTH-1:0] prefetched;
+        assign following_row=frame_start ? ROW_W'(1) : current_row+ROW_W'(1);
+        for(genvar bit_index=0;bit_index<ADDRESS_BITS;bit_index=bit_index+1)begin : address_bits
+            localparam int ROW_BIT=int'(ADDRESS_ROW_POSITIONS[bit_index*ROW_W+:ROW_W]);
+            assign following_address[bit_index]=following_row[ROW_BIT];
+        end
+        assign root=frame_start ? FIRST_ROOT : prefetched;
+        initial begin
+            roots[0]=108'h6ad7874ec4611cf4cef98952722;
+            roots[1]=108'h7e85e4c7a0a131620c4c87b00a1;
+        end
+        // Memory and read output have no reset; row0 static bypass is mandatory.
+        always_ff @(posedge clk)
+            if(rst_n && in_slot_valid)prefetched<=roots[following_address];
+        always_ff @(posedge clk or negedge rst_n)begin
+            if(!rst_n)current_row<='0;
+            else if(in_slot_valid)current_row<=following_row;
+        end
+        // synthesis translate_off
+        initial begin
+            if(FRAME_T<2 || (FRAME_T&(FRAME_T-1))!=0 || ADDRESS_BITS<1 || ADDRESS_BITS>ROW_W || HEX_FILE=="")
+                $fatal(1,"S_M2_COMPACT_ROOT_GEOMETRY_OR_FILE");
+            for(int k=0;k<ADDRESS_BITS;k=k+1)begin
+                if(int'(ADDRESS_ROW_POSITIONS[k*ROW_W+:ROW_W])>=ROW_W)$fatal(1,"S_M2_ROOT_ROW_BIT");
+                for(int j=0;j<k;j=j+1)
+                    if(ADDRESS_ROW_POSITIONS[k*ROW_W+:ROW_W]==ADDRESS_ROW_POSITIONS[j*ROW_W+:ROW_W])
+                        $fatal(1,"S_M2_DUPLICATE_ROOT_ROW_BIT");
+            end
+        end
+        // synthesis translate_on
+    end endgenerate
+endmodule
+
+// S-M2 source-only root service. One packed ROM read per accepted physical row.
+// Root addresses gather only contributing row bits, not row modulo ROM depth.
+// Canceled occupied rows advance. Only rst_n/frame_start re-establish cadence.
+module merged_stream27_root_gs_aw5_p16_f2_s2_v1 #(
+    parameter int WIDTH=54,
+    parameter int FRAME_T=2,
+    parameter int ADDRESS_BITS=1,
+    parameter int ROW_W=(FRAME_T>1 ? $clog2(FRAME_T) : 1),
+    parameter int MAP_W=(ADDRESS_BITS>0 ? ADDRESS_BITS*ROW_W : 1),
+    parameter logic [MAP_W-1:0] ADDRESS_ROW_POSITIONS=1'h0,
+    parameter logic [WIDTH-1:0] FIRST_ROOT=54'h0a0eaa98f6b456,
+    parameter string HEX_FILE="EMBEDDED_SOURCE_ONLY"
+) (
+    input logic clk,rst_n,in_slot_valid,frame_start,
+    output logic [WIDTH-1:0] root
+);
+    generate if(ADDRESS_BITS==0)begin : constant_root
+        assign root=FIRST_ROOT;
+    end else begin : gathered_root
+        localparam int WORDS=1<<ADDRESS_BITS;
+        (* ramstyle = "M20K" *) logic [WIDTH-1:0] roots[0:WORDS-1];
+        logic [ROW_W-1:0] current_row,following_row;
+        wire [ADDRESS_BITS-1:0] following_address;
+        logic [WIDTH-1:0] prefetched;
+        assign following_row=frame_start ? ROW_W'(1) : current_row+ROW_W'(1);
+        for(genvar bit_index=0;bit_index<ADDRESS_BITS;bit_index=bit_index+1)begin : address_bits
+            localparam int ROW_BIT=int'(ADDRESS_ROW_POSITIONS[bit_index*ROW_W+:ROW_W]);
+            assign following_address[bit_index]=following_row[ROW_BIT];
+        end
+        assign root=frame_start ? FIRST_ROOT : prefetched;
+        initial begin
+            roots[0]=54'h0a0eaa98f6b456;
+            roots[1]=54'h08c26c80cfd11c;
+        end
+        // Memory and read output have no reset; row0 static bypass is mandatory.
+        always_ff @(posedge clk)
+            if(rst_n && in_slot_valid)prefetched<=roots[following_address];
+        always_ff @(posedge clk or negedge rst_n)begin
+            if(!rst_n)current_row<='0;
+            else if(in_slot_valid)current_row<=following_row;
+        end
+        // synthesis translate_off
+        initial begin
+            if(FRAME_T<2 || (FRAME_T&(FRAME_T-1))!=0 || ADDRESS_BITS<1 || ADDRESS_BITS>ROW_W || HEX_FILE=="")
+                $fatal(1,"S_M2_COMPACT_ROOT_GEOMETRY_OR_FILE");
+            for(int k=0;k<ADDRESS_BITS;k=k+1)begin
+                if(int'(ADDRESS_ROW_POSITIONS[k*ROW_W+:ROW_W])>=ROW_W)$fatal(1,"S_M2_ROOT_ROW_BIT");
+                for(int j=0;j<k;j=j+1)
+                    if(ADDRESS_ROW_POSITIONS[k*ROW_W+:ROW_W]==ADDRESS_ROW_POSITIONS[j*ROW_W+:ROW_W])
+                        $fatal(1,"S_M2_DUPLICATE_ROOT_ROW_BIT");
+            end
+        end
+        // synthesis translate_on
+    end endgenerate
+endmodule
+
+// S-M2 source-only root service. One packed ROM read per accepted physical row.
+// Root addresses gather only contributing row bits, not row modulo ROM depth.
+// Canceled occupied rows advance. Only rst_n/frame_start re-establish cadence.
+module merged_stream27_root_gs_aw5_p16_f2_s3_v1 #(
+    parameter int WIDTH=27,
+    parameter int FRAME_T=2,
+    parameter int ADDRESS_BITS=1,
+    parameter int ROW_W=(FRAME_T>1 ? $clog2(FRAME_T) : 1),
+    parameter int MAP_W=(ADDRESS_BITS>0 ? ADDRESS_BITS*ROW_W : 1),
+    parameter logic [MAP_W-1:0] ADDRESS_ROW_POSITIONS=1'h0,
+    parameter logic [WIDTH-1:0] FIRST_ROOT=27'h257f47a,
+    parameter string HEX_FILE="EMBEDDED_SOURCE_ONLY"
+) (
+    input logic clk,rst_n,in_slot_valid,frame_start,
+    output logic [WIDTH-1:0] root
+);
+    generate if(ADDRESS_BITS==0)begin : constant_root
+        assign root=FIRST_ROOT;
+    end else begin : gathered_root
+        localparam int WORDS=1<<ADDRESS_BITS;
+        (* ramstyle = "M20K" *) logic [WIDTH-1:0] roots[0:WORDS-1];
+        logic [ROW_W-1:0] current_row,following_row;
+        wire [ADDRESS_BITS-1:0] following_address;
+        logic [WIDTH-1:0] prefetched;
+        assign following_row=frame_start ? ROW_W'(1) : current_row+ROW_W'(1);
+        for(genvar bit_index=0;bit_index<ADDRESS_BITS;bit_index=bit_index+1)begin : address_bits
+            localparam int ROW_BIT=int'(ADDRESS_ROW_POSITIONS[bit_index*ROW_W+:ROW_W]);
+            assign following_address[bit_index]=following_row[ROW_BIT];
+        end
+        assign root=frame_start ? FIRST_ROOT : prefetched;
+        initial begin
+            roots[0]=27'h257f47a;
+            roots[1]=27'h3828ddb;
+        end
+        // Memory and read output have no reset; row0 static bypass is mandatory.
+        always_ff @(posedge clk)
+            if(rst_n && in_slot_valid)prefetched<=roots[following_address];
+        always_ff @(posedge clk or negedge rst_n)begin
+            if(!rst_n)current_row<='0;
+            else if(in_slot_valid)current_row<=following_row;
+        end
+        // synthesis translate_off
+        initial begin
+            if(FRAME_T<2 || (FRAME_T&(FRAME_T-1))!=0 || ADDRESS_BITS<1 || ADDRESS_BITS>ROW_W || HEX_FILE=="")
+                $fatal(1,"S_M2_COMPACT_ROOT_GEOMETRY_OR_FILE");
+            for(int k=0;k<ADDRESS_BITS;k=k+1)begin
+                if(int'(ADDRESS_ROW_POSITIONS[k*ROW_W+:ROW_W])>=ROW_W)$fatal(1,"S_M2_ROOT_ROW_BIT");
+                for(int j=0;j<k;j=j+1)
+                    if(ADDRESS_ROW_POSITIONS[k*ROW_W+:ROW_W]==ADDRESS_ROW_POSITIONS[j*ROW_W+:ROW_W])
+                        $fatal(1,"S_M2_DUPLICATE_ROOT_ROW_BIT");
+            end
+        end
+        // synthesis translate_on
+    end endgenerate
+endmodule
+
+// S-M2 source-only root service. One packed ROM read per accepted physical row.
+// Root addresses gather only contributing row bits, not row modulo ROM depth.
+// Canceled occupied rows advance. Only rst_n/frame_start re-establish cadence.
+module merged_stream27_root_gs_aw5_p16_f2_s4_v1 #(
+    parameter int WIDTH=27,
+    parameter int FRAME_T=2,
+    parameter int ADDRESS_BITS=0,
+    parameter int ROW_W=(FRAME_T>1 ? $clog2(FRAME_T) : 1),
+    parameter int MAP_W=(ADDRESS_BITS>0 ? ADDRESS_BITS*ROW_W : 1),
+    parameter logic [MAP_W-1:0] ADDRESS_ROW_POSITIONS=1'h0,
+    parameter logic [WIDTH-1:0] FIRST_ROOT=27'h227efb9,
+    parameter string HEX_FILE="EMBEDDED_SOURCE_ONLY"
+) (
+    input logic clk,rst_n,in_slot_valid,frame_start,
+    output logic [WIDTH-1:0] root
+);
+    generate if(ADDRESS_BITS==0)begin : constant_root
+        assign root=FIRST_ROOT;
+    end else begin : gathered_root
+        localparam int WORDS=1<<ADDRESS_BITS;
+        (* ramstyle = "M20K" *) logic [WIDTH-1:0] roots[0:WORDS-1];
+        logic [ROW_W-1:0] current_row,following_row;
+        wire [ADDRESS_BITS-1:0] following_address;
+        logic [WIDTH-1:0] prefetched;
+        assign following_row=frame_start ? ROW_W'(1) : current_row+ROW_W'(1);
+        for(genvar bit_index=0;bit_index<ADDRESS_BITS;bit_index=bit_index+1)begin : address_bits
+            localparam int ROW_BIT=int'(ADDRESS_ROW_POSITIONS[bit_index*ROW_W+:ROW_W]);
+            assign following_address[bit_index]=following_row[ROW_BIT];
+        end
+        assign root=frame_start ? FIRST_ROOT : prefetched;
+        initial begin
+            roots[0]=27'h227efb9;
+        end
+        // Memory and read output have no reset; row0 static bypass is mandatory.
+        always_ff @(posedge clk)
+            if(rst_n && in_slot_valid)prefetched<=roots[following_address];
+        always_ff @(posedge clk or negedge rst_n)begin
+            if(!rst_n)current_row<='0;
+            else if(in_slot_valid)current_row<=following_row;
+        end
+        // synthesis translate_off
+        initial begin
+            if(FRAME_T<2 || (FRAME_T&(FRAME_T-1))!=0 || ADDRESS_BITS<1 || ADDRESS_BITS>ROW_W || HEX_FILE=="")
+                $fatal(1,"S_M2_COMPACT_ROOT_GEOMETRY_OR_FILE");
+            for(int k=0;k<ADDRESS_BITS;k=k+1)begin
+                if(int'(ADDRESS_ROW_POSITIONS[k*ROW_W+:ROW_W])>=ROW_W)$fatal(1,"S_M2_ROOT_ROW_BIT");
+                for(int j=0;j<k;j=j+1)
+                    if(ADDRESS_ROW_POSITIONS[k*ROW_W+:ROW_W]==ADDRESS_ROW_POSITIONS[j*ROW_W+:ROW_W])
+                        $fatal(1,"S_M2_DUPLICATE_ROOT_ROW_BIT");
+            end
+        end
+        // synthesis translate_on
+    end endgenerate
+endmodule

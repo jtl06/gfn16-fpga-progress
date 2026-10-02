@@ -1,0 +1,137 @@
+{
+  "device": "10AX115N4F40E3SG",
+  "physical_device_verified": false,
+  "address_width": 16,
+  "clock_period_ns": 10.0,
+  "edition": "pro",
+  "allowed_stages": [
+    "syn",
+    "fit",
+    "sta"
+  ],
+  "core_parameters": {
+    "NTT_LANES": 64
+  },
+  "arithmetic_profile": "atomic27_stream_precision_prefetch_r2_host_broadcast_orient8_rootfused_crtmont_v1",
+  "core_field_basis": [
+    {
+      "P": 104857601,
+      "Q": 4190109697,
+      "GENERATOR": 3,
+      "R2": 45971250
+    },
+    {
+      "P": 69206017,
+      "Q": 4225761281,
+      "GENERATOR": 5,
+      "R2": 50081300
+    },
+    {
+      "P": 67239937,
+      "Q": 4227727361,
+      "GENERATOR": 10,
+      "R2": 63576045
+    }
+  ],
+  "core_montgomery_radix_bits": 32,
+  "bitstream_generation": false,
+  "root_profile_format": 2,
+  "seed": 1,
+  "target": "square_core27_stream_prefetch_r2_host_broadcast_orient8_rootfused_crtmont_ntt64_carry16_T5_PROVISIONAL_T5b_PIPE_m8azn6",
+  "top": "genefer_square_core27_stream_prefetch_r2_host_broadcast_orient8_rootfused_crtmont_prefill_pipe_v1",
+  "compile_processors": 6,
+  "status": "PROVISIONAL_prepared_not_executed",
+  "provisional": true,
+  "promotion_allowed": false,
+  "T5b_correctness_complete": false,
+  "note": "PROVISIONAL T5b: scoped native controls passed; complete successor qualification and clock/throughput promotion remain locked. Preserve all failed evidence.",
+  "usable_clock_mhz": null,
+  "throughput": null,
+  "parent_physical_manifest_sha256": "ec5adfe81114741fc3d2761be66b7d452e53ce84425acbccf8a698ee8498b8df",
+  "evidence_sha256": {
+    "parent-physical-manifest.json": "ec5adfe81114741fc3d2761be66b7d452e53ce84425acbccf8a698ee8498b8df",
+    "aw5-normal-report.json": "4d85a1fec652a5ab19e871b9ddaa7295124761e07023f4085233ecd062109308",
+    "aw5-targeted-report.json": "149b08859601029dc3381e9ca3aa9f5d6bfb8a05503172d091ff24c86360c1ef",
+    "aw16-normal-report.json": "96257f0e110aae95a69b971034eb83ed8abc80c186cc7cd759e70b22a48f6551",
+    "source-review.json": "bd5b0fb08303057aeaf038d4d30f16df577b2e9ce151918ebe276a3057070517",
+    "aw5-normal-review.json": "8df384b768a02eaa38b9a58292850a076860922d7e1d8bb82b22c68ac7b31f0c",
+    "aw5-targeted-review.json": "d3a1ed7ef0f451a7c7c502650afa8af455e5a99b8a17b1f1e66b49a205b7dbc1",
+    "aw16-normal-review.json": "55b2819c8496a850c556aa7d72ec4865c51482047a621190b82dea2dc4068a89"
+  },
+  "adapter_sha256": "77daad4e00065795ded89a112e5a821a8a12b554f8bc4bafe9560ab67deed251",
+  "resource_policy_sha256": "9d81159e80613db360b539027abe3a41a75404166c0d91d39849e41640a0780c",
+  "frozen_policy_sha256": "ef66b020cf4317492c43a6baba6aea85f186e32dfdef6e7de7fa150a854e47a4",
+  "resource_profile": "m8azn.3xlarge-12p12l-two6trial-v1",
+  "advisor_r13_sha256": "1b2ca0ebb6a6c50b84cbac7cae86f0a0334c8bc6546afc60e24550c710656f01",
+  "source_sha256": {
+    "genefer_montgomery_mul27_sparse_pipe.sv": "501d0ce309a3915f7aed0f3bde14ba1ee8d56ddc5f6abef1f2f5bb572d64db4b",
+    "genefer_digit_reduce27_pipe.sv": "61e14bb13c2dbcc13b5030756578a0d0358269beb24fb207a5641b98795883e8",
+    "genefer_sdp_ram32.sv": "993567fb68fdc216b9ff04489d1810f743b86564434e4b48261ad606b25d53b0",
+    "genefer_ntt_banked27_engine.sv": "7ae89e702b671e3fbe8a1f90beb99ea595c832729e5e94232bf82515f1d74fe9",
+    "genefer_root_recurrence27.sv": "c8adc265915192807efee46799a782f1649a4408313098baaed8b4a808afeb9e",
+    "genefer_ntt_banked27_prefetch_r2_orient8_rootfused_engine.sv": "d52351bdf53c6809208f7a466848b4376cbd8ff87c52f633dc8c2814026b47ee",
+    "genefer_ntt_banked27_prefetch_r2_host_broadcast_orient8_rootfused_engine.sv": "b3d06d1e5f90e4944fdf88ff264cb7edbd73d0daf9f46ccf93389ab4889d9e3f",
+    "genefer_root_profile27_r2_rom.sv": "cb851bec51f518a71d216d4a993ffa3aa937b8230474c38898b061e7ad42dea6",
+    "genefer_mod64_pipe.sv": "e582dba87dce51794a38039fd02574f443c53750bcafc8fcb1f4d0d50fc60839",
+    "genefer_crt3_27_mont_pipe.sv": "8bb5b62423c1f61e069f131b5d393dd3dbc84d05348fc1945f6e9c419c104c58",
+    "genefer_sp_ram.sv": "b97d2f43db1b1e1aa60b9b7fc2b720af1e302bd5ff9e35854c89b30e5fb610df",
+    "genefer_div_recip_narrow.sv": "eef327cee81d41895a068b746a3715daba95d43bea919edbddf9b498ecfc38bf",
+    "genefer_carry_prefix_stream_pipe.sv": "9838c6852cac57f7901f8b57dcbb4ee11b7fa129ef86e40158d67cc789b06e5e",
+    "genefer_div_recip_precision.sv": "832021ed0b3410dc867d92ac4436a725d5717f9630d233073e39896789ebbd7c",
+    "genefer_carry_prefix_stream_precision_emit.sv": "ac01093c075b8bb0f7c5493b18623209164e42659a92a0310893aee086619c3a",
+    "genefer_square_core27_stream_prefetch_r2_host_broadcast_orient8_rootfused_crtmont_prefill_pipe_v1.sv": "704f7fed433d724dbc8e56c7b725824ec36cce78d6ce8f021307837d2a96b8e7"
+  },
+  "control_sha256": {
+    "probe.qsf": "29ec658f30ef789f0ed1da0899300927e3d149c71110a2942360482b9df0d477",
+    "probe.qpf": "ff7f5a00df0fdbe48ba84142a0a94058de5a259b5f7f1e38d6bd50e87d408004",
+    "probe.sdc": "5036d452b426258e0f2e5a122ae1eb24a889b39494ac227b5b8abbd594673470",
+    "run.tcl": "1f535047267b24a76bffa75818c441d49247f0d01329129a0a53657c7ba31ef1"
+  },
+  "isolated_RTL_change": "T5b source-row register plus two aligned field-local launch stages;15 unchanged dependencies; arithmetic/root profile unchanged",
+  "qualification": {
+    "aw5_normal": "independent PASS568operations",
+    "aw5_targeted": "independent PASS36controls",
+    "aw16_normal": "independent PASS12operations/10readbacks",
+    "remaining": [
+      "eight native mutation contracts",
+      "AW16 fault/recovery matrix",
+      "PRP/soak",
+      "physical/clock audits"
+    ]
+  },
+  "runtime_single_variable_comparison": false,
+  "execution_changes": {
+    "parent_quartus_workers": 4,
+    "candidate_quartus_workers": 6,
+    "parent_memory_max_bytes": 25769803776,
+    "candidate_memory_max_bytes": 21474836480,
+    "parent_cpu_quota_percent": 400,
+    "candidate_cpu_quota_percent": 600,
+    "candidate_instance_type": "m8azn.3xlarge",
+    "candidate_guest_geometry": "12logical/12physical; actual topology and RAM must be measured",
+    "fit_slots": 2,
+    "workers_per_slot": 6,
+    "nominal_guest_memory_bytes": 51539607552,
+    "minimum_actual_guest_memory_bytes": 47244640256,
+    "candidate_slot_affinities": {
+      "a": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "b": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "interpretation": "Changed hardware and worker/memory conditions. Fit-runtime differences are not a single-variable RTL comparison."
+  },
+  "correctness_gate_failure_action": "invalidate promotion, preserve all evidence; exploratory results remain provisional"
+}

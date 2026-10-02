@@ -1,0 +1,1196 @@
+{
+  "advisor_ready_scoped_gates": true,
+  "advisor_verification_complete": false,
+  "limitations": [
+    "Own AW5 eight complete valid-base PRPs5051 squares1825 doubles985129backendcycles/256final digits, independently ordinary builtin-pow/MSB schedule/Proth-or-factor checked. Original inadmissible69/70/96/112 coverage is not inherited; replacements301/300/448/7552 plus fourlarge cases are explicit.",
+    "Own AW16 short2, pilot100 and actual continuous1000 compare all existing checkpoint lists and raw native phase rows. Continuous1000 has488doubles11fullarrays720896digits/21947089backendcycles,one model/reset/load65536/root1+999/prefill10+990. Checkpoint canonical reads invalidate prefill and remain in the real execution; uninterrupted means no reset/reload/reseed, not zero readback interruptions.",
+    "Preserved worker GCP21-fileGMP2.3.1 runtime admission/independent boundary recomputation and normalized-log byte binding inspected. Separate portable Azure23-fileGMP2.2.1 controls retain BOTH generation and target provenance with identical math/modulus; no localGMP/newfullNinteger/NTT/native/ELF/cloud execution.",
+    "Comparator/final-double/loaded-state/boundary controls are exact host-side intended rc1 failures, not new RTL arithmetic mutants or exhaustive ownership/fault/reset coverage. Original withdrawals/unstarted tickets remain preserved and are not relabeled arithmetic failures; no duplicate runs.",
+    "Closed4ad0 finite actual source/representative/physical-write cancellation and29419 selected10.828ns MCMM evidence are pinned/source-matched and reused, not third-replayed. Baseline9.668ns\u22121.155 remainsFAIL. Selectedsetup+.005/hold+.014/recovery1.454/removal1.025/MPW4.791 internal only; virtualI/O/externalresetrelease/board/exhaustive/highestclock/latchesunsupported exclusions remain.",
+    "Scalar full-operation ledger is compute-only, not measured full1,911,814-op PRP or board walltime. Simulator model/user/system, wholeunit peak/CPU and cumulative childRSS are separate; compile-dominated childRSS is not isolated model peak. No unlike-host/thread speed ratio, original/point/upper/hostcut/RAM27 inheritance or automatic adoption. Advisor verification is required."
+  ],
+  "local_GMP_imports": 0,
+  "local_full_N_arithmetic": 0,
+  "local_native_or_cloud_commands": 0,
+  "pins": {
+    "reference/anext_writeback_contract_v2.py": "69778f730a2457f7f626536a95ebc435316ef6ed36584a5e9c45b77d7a0c2904",
+    "reference/anext_writeback_qualification_v1.py": "54b65d2790a206e89d02556895cc0d820d8dfc5d1972924a6d3c21d7f1392782",
+    "reference/anext_writeback_small_prp_v1.py": "3362a13aebc9e6b6c46b6d2b5335772bd09f55e28fe11886e75a1ee87f2d092b",
+    "reference/anext_writeback_soak_output_v1.py": "4cba6084312dab0c388e6893b5ade3fd6e22d683a958475d87c474a0766f9b6d",
+    "reference/anext_writeback_soak_portable_fault_v1.py": "090cb31631b686f036eb62bd34dff9b63a08440c8a2b798e9fb796c3ce4b9509",
+    "reference/anext_writeback_soak_portable_v1.py": "f9025bd90a924aef5af0a139800077f6c3d8f630242e8a71ad0d0f42b6d08b63",
+    "reference/anext_writeback_source_v1.py": "2df6dc679837c44bf1f40410cc5da560f9830a9936341cee0c7fb8dc7521be11",
+    "reference/core27_t5b_soak_cross_runtime_v1.py": "3be94f597e09455a2b9f3f363dfc6a4ac36a240eb26b22a1717e91a072ea1e83",
+    "replay_sha256": "ec02a728e7c6a39a3227bc798351fef9b9aac11fc6826d230f2bcb678170bd08",
+    "results/throughput-20260929/anext-point-qualification-replay-independent-v1.py": "93251ca16d9d9dca5c6b5e098c2f87c024ca7a306d2dbc3a6ce7148f940846a8",
+    "results/throughput-20260929/anext-writeback-native-independent-v1.json": "4ad0f89e4388e184a244781a085499d9a9832a5c0f9b05dd0d6f6a7840aa8065",
+    "results/throughput-20260929/anext-writeback-qualification-native-v1/continuous-owner.json": "1555b5eb7a355ddbe1da09de0e7cf678069e330f6a6376ce8aace7ba8ba49405",
+    "results/throughput-20260929/anext-writeback-qualification-native-v1/promotion-index.json": "6c0f7c703ec9f04342def88c072db9f79391daa862d3faccdfbc575d39930388",
+    "results/throughput-20260929/anext-writeback-qualification-native-v1/terminal-snapshot.json": "0e54d49fd04d439785b368bd70192bbcb41117ecafb13ea411eda9e7eddd3c13",
+    "results/throughput-20260929/f3-selected10828-qualification-recovery-independent-v1.json": "29419ffad5e0f4f55089c7218d62ed8bb41d8fe18c042290fbd158e1f0efe5c6",
+    "rtl/tb/anext_writeback_small_prp_v1.cpp": "727e82471b69af51d1e29d316fe5db17f2742c9ada3166500b223b5e66de7705",
+    "rtl/tb/anext_writeback_soak_v1.cpp": "f8c25278f9de4ddd10a5ccf290b95a648c09d853e121e14af045ad5a26829e1b",
+    "tests/test_anext_writeback_qualification_v1.py": "83b1f50efedf3ee72dcaefea9f578f385d40c4df3a30a54509ae64e2d8a69c83",
+    "tests/test_anext_writeback_soak_portable_fault_v1.py": "b12a6dde7db2ff672df54651fbc320fca560fba26f59d6defb4a8f678193cb38",
+    "tests/test_anext_writeback_soak_portable_v1.py": "b4897b9a814e6e7ebc023d8b0bd4f332126317bb1470aef9edc5629d6c3a881d"
+  },
+  "projection": {
+    "assumed_sample_operations": 1911814,
+    "backend_cycles": 41880201601,
+    "backend_seconds": "453.478822935628",
+    "base": 604832956,
+    "cold_backend_cycles": 26023,
+    "command_latency_sum_seconds": "453.520225179612",
+    "command_response_extra_edges_per_operation": 2,
+    "full_PRP_walltime_measured": false,
+    "n": 65536,
+    "period_ns": "10.828",
+    "scope": "scalar compute-only cold+(K-1)*warm; excludes initial host configure/load, final readback, holds/gaps and board I/O; K supplied sample count, not a newly computed full-N exponent",
+    "warm_backend_cycles": 21906
+  },
+  "promotion_allowed": false,
+  "replay": {
+    "artifacts": 100,
+    "author_pure_small_source_mock_methods": 12,
+    "commands": 38,
+    "dispatcher_pins": 160,
+    "generated": 974,
+    "independent_bad_output_rejections": 97,
+    "package_members": 2043,
+    "sources": 2013
+  },
+  "reused_gates": {
+    "finite_native_sha256": "4ad0f89e4388e184a244781a085499d9a9832a5c0f9b05dd0d6f6a7840aa8065",
+    "finite_scope": "AW5/AW8/AW16 representative plus six pending-physical-write reset/cancel cases; original finite limitations retained",
+    "selected_layout_timing_sha256": "29419ffad5e0f4f55089c7218d62ed8bb41d8fe18c042290fbd158e1f0efe5c6",
+    "timing": {
+      "baseline_period_ns": 9.668,
+      "baseline_setup_ns": -1.155,
+      "internal_frequency_mhz": 92.35315847801995,
+      "invocation": "e7e21f74f52740fe82ecdc6f8e66b8fa",
+      "manager_CPU_seconds": 1083.251439,
+      "manager_peak_bytes": 12319256576,
+      "manager_swap_peak_bytes": 0,
+      "manager_wall_seconds": 319.650802,
+      "selected_minima_ns": {
+        "hold": "0.014",
+        "mpw": "4.791",
+        "recovery": "1.454",
+        "removal": "1.025",
+        "setup": "0.005"
+      },
+      "selected_period_ns": 10.828,
+      "selected_waveform_ns": [
+        0,
+        5.414
+      ]
+    }
+  },
+  "reviewer": "independent_review",
+  "roles": [
+    {
+      "done_sha256": "bd6961c68678e03cbdfc8a9238fc26da4ac5ed67b3567bbaf0cf9ef93ca9cd58",
+      "evidence_archive_sha256": "7f6cfa5689cb49ec651e1fcdfd0a4da74151e12289213a50a2bf85a33bba3b6a",
+      "executable_sha256": "e2765c93e6885aa5e3ab5a5e6154106422ee3086124c6937714e83390aa62447",
+      "gate_sha256": "14e6598cfa3464bfe58ebc46881547881880fffaf44732c7c56daa845c5a915b",
+      "generated_map_sha256": "c11b657de0a31962f572ae43deb0d34d9b8af65bd1d902ab5b6ee9a9c362aebb",
+      "id": "anext-writeback-prp-normal-q3-v1",
+      "kind": "prp",
+      "manifest_sha256": "8b801690cf69eca50c0f9dd91578b6e41029fd2174982846cf76dd6367ce2ee9",
+      "package_sha256": "f46794065d4195f071d59765243a5ac4a2062ca07e2fdec168f5d15ab484ee80",
+      "report_sha256": "5e2a78204214ace031121ef8ba5dba47a926dc53c53aa4ea477486cebde8a44e",
+      "results": [
+        {
+          "backend_cycles": 985129,
+          "cases": [
+            {
+              "base": 301,
+              "certificate": {
+                "factor": 2,
+                "kind": "proper-factor"
+              },
+              "classification": "composite",
+              "cycles": 51503,
+              "doubles": 114,
+              "operations": 264,
+              "residue_hex": "0x392097177c02ab4a7aa071334e75a5c2a38b06191d0983b1a8a458ddb918b45f5c"
+            },
+            {
+              "base": 300,
+              "certificate": {
+                "factor": 1217,
+                "kind": "proper-factor"
+              },
+              "classification": "composite",
+              "cycles": 51503,
+              "doubles": 97,
+              "operations": 264,
+              "residue_hex": "0x2f2411a63ad41619c5dc131ba335370d31a9d4550bd4e954933fa2eda516cdffce"
+            },
+            {
+              "base": 448,
+              "certificate": {
+                "half_exponent_residue_hex": "0x3918fa8303c33586e913b01000000000000000000000000000000000000000000000000",
+                "kind": "Proth-proof",
+                "odd_cofactor_hex": "0x3918fa8303c33586e913b01",
+                "power_of_two": 192,
+                "witness": 3
+              },
+              "classification": "prime",
+              "cycles": 55013,
+              "doubles": 40,
+              "operations": 282,
+              "residue_hex": "0x1"
+            },
+            {
+              "base": 7552,
+              "certificate": {
+                "half_exponent_residue_hex": "0x12f4b80a5a0bc46263903ed2542cbb14c191a972eaf1878100000000000000000000000000000000000000000000000000000000",
+                "kind": "Proth-proof",
+                "odd_cofactor_hex": "0x12f4b80a5a0bc46263903ed2542cbb14c191a972eaf18781",
+                "power_of_two": 224,
+                "witness": 3
+              },
+              "classification": "prime",
+              "cycles": 80558,
+              "doubles": 85,
+              "operations": 413,
+              "residue_hex": "0x1"
+            },
+            {
+              "base": 989233152,
+              "certificate": {
+                "half_exponent_residue_hex": "0x1293fe704be8445ca5c230de6f755752402650ea5d2bbc69d8d8ccd562f9f71338c51850918e41948252819240a15b8e2a5d98edc7ad1e183a64c481000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+                "kind": "Proth-proof",
+                "odd_cofactor_hex": "0x1293fe704be8445ca5c230de6f755752402650ea5d2bbc69d8d8ccd562f9f71338c51850918e41948252819240a15b8e2a5d98edc7ad1e183a64c481",
+                "power_of_two": 480,
+                "witness": 5
+              },
+              "classification": "prime",
+              "cycles": 186638,
+              "doubles": 220,
+              "operations": 957,
+              "residue_hex": "0x1"
+            },
+            {
+              "base": 999999998,
+              "certificate": {
+                "factor": 1409,
+                "kind": "proper-factor"
+              },
+              "classification": "composite",
+              "cycles": 186638,
+              "doubles": 459,
+              "operations": 957,
+              "residue_hex": "0x2f5a24fe79356e2604841513191ad03a38b02450dc467a55fea1e220b4b43294d23275774f7fe26674fe585d44f0b7725e7955654d81164cd4d87509e7d78c1460625da60045e5a5a65cd85538cb372a7a6a943d284c67437f2c783a3c271624ceaa54703b9c2b420458c38dfa8d0bf31fec3b0943ce1a4"
+            },
+            {
+              "base": 999999999,
+              "certificate": {
+                "factor": 2,
+                "kind": "proper-factor"
+              },
+              "classification": "composite",
+              "cycles": 186638,
+              "doubles": 465,
+              "operations": 957,
+              "residue_hex": "0x5a001d4960c66ff58ae74493e669abf88c141e9bba6be7cb470fa97d9fd685526fedb12453f2b8961f0dc74bcb6eb51ec83f12de4ea4c9c77208e3428b56da09e77a4eedd7550e4725da3eb552369944917823c66a1ce25227cfac66ac37f8ce3e56e1f6027d76d7c3c80a319070796440a6bbf6db8dba4"
+            },
+            {
+              "base": 1000000000,
+              "certificate": {
+                "factor": 193,
+                "kind": "proper-factor"
+              },
+              "classification": "composite",
+              "cycles": 186638,
+              "doubles": 345,
+              "operations": 957,
+              "residue_hex": "0x63eab1f68b660e2dc8a7cf6d8b6723936797613bb1a83fbdd92e4debfa42b3064f28e3abd09522f2089e966e0f8cd5b788d276ab37731777ac71e6a8bf1ad7395469688152f4559b61ff186559296d5816af509a9d716f19cfbd523a88fce095099cbd702358a415d40dbd99e88e6357da127b73585c207"
+            }
+          ],
+          "mode": "normal"
+        }
+      ],
+      "runtime": {
+        "bounds": {
+          "command_seconds": 1800,
+          "durable_floor_bytes": 10737418240,
+          "durable_reserve_bytes": 134217728,
+          "host_memory_floor_bytes": 8589934592,
+          "lock_wait_seconds": 1800,
+          "memory_bytes": 8589934592,
+          "overall_seconds": 3600,
+          "scratch_floor_bytes": 10737418240,
+          "scratch_reservation_evidence": "Conservative estimate for new threaded/unknown-peak builds, not a measured upper bound. Guard abort threshold may overshoot; it is not a filesystem hard quota. Peak allocated blocks are recorded.",
+          "scratch_reserve_bytes": 4294967296,
+          "static_lane_reservation_bytes": 8589934592
+        },
+        "host": "gfn16-pilot-c4d",
+        "invocation_id": "d710b1dce05242679f9ed593aa8302a8",
+        "limits": {
+          "affinity": [
+            2,
+            3
+          ],
+          "cgroup": "/system.slice/gfn16-q-anext-writeback-prp-normal-gcp23-v1.service",
+          "cpu_max": [
+            "200000",
+            "100000"
+          ],
+          "full_topology": {
+            "0": [
+              0,
+              0
+            ],
+            "1": [
+              0,
+              1
+            ],
+            "2": [
+              0,
+              2
+            ],
+            "3": [
+              0,
+              3
+            ],
+            "4": [
+              0,
+              0
+            ],
+            "5": [
+              0,
+              1
+            ],
+            "6": [
+              0,
+              2
+            ],
+            "7": [
+              0,
+              3
+            ]
+          },
+          "memory_max_bytes": 8589934592,
+          "physical_cores": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "swap_max_bytes": 0
+        },
+        "packet_seconds": 179.65041749599914,
+        "style_counts": {
+          "DECLFILENAME": 3,
+          "GENUNNAMED": 15,
+          "PINCONNECTEMPTY": 19,
+          "SYNCASYNCNET": 18,
+          "UNUSEDSIGNAL": 37,
+          "VARHIDDEN": 1
+        },
+        "unit_CPU_seconds": 225.913237,
+        "unit_peak_bytes": 1259778048,
+        "unit_seconds": 179.844149
+      },
+      "source_map_sha256": "b0acb498f5c6bc4c4fca7f2bf8be467acbcd488de9e70a035effe086b959f30c",
+      "source_role_sha256": "c598ec0cca0766a8c2f61d92ac040438bbabd7bddf7e46f4d77c0bc4a083f1f0"
+    },
+    {
+      "done_sha256": "6ac4f8f9bec31f11ae87354a9dc6d947b9ea04fe0741d7b6308d6195e991c3d5",
+      "evidence_archive_sha256": "c17eebb9b243b9675c456c169cba32dfd17a3b36fed51aa0735050944c727b0b",
+      "executable_sha256": "ed50e119b8f64d258259097fa88bb959593c182f3f89eedb74dfcf80a086138b",
+      "gate_sha256": "90d3c49c112ec2cbddecdeb39f935663ec9c0d91e8279be5c5be6cec1fe028f5",
+      "generated_map_sha256": "f1f88d4d644bec4fe6f66a413fc64bd208c4006cb947ca04e6e319ca6623b428",
+      "id": "anext-writeback-prp-fault-q3-v1",
+      "kind": "prp-controls",
+      "manifest_sha256": "495e06b23db5696c5736946f7384d00ed0ec7671594c1310af960328241c91ec",
+      "package_sha256": "11a0542efaac05452f4b7823cd7da24fb13d40ab836b600403c7700c9a62635e",
+      "report_sha256": "6726d17d4d37115b670023f6fd39d113641d7b0980c8a109c7016d8947e8b082",
+      "results": [
+        {
+          "backend_cycles": 51503,
+          "cases": [
+            {
+              "base": 301,
+              "certificate": {
+                "factor": 2,
+                "kind": "proper-factor"
+              },
+              "classification": "composite",
+              "cycles": 51503,
+              "doubles": 114,
+              "operations": 264,
+              "residue_hex": "0x392097177c02ab4a7aa071334e75a5c2a38b06191d0983b1a8a458ddb918b45f5c"
+            }
+          ],
+          "mode": "negative-comparator"
+        },
+        {
+          "backend_cycles": 51503,
+          "cases": [
+            {
+              "base": 301,
+              "certificate": {
+                "factor": 2,
+                "kind": "proper-factor"
+              },
+              "classification": "composite",
+              "cycles": 51503,
+              "doubles": 113,
+              "operations": 264,
+              "residue_hex": "0x1c904b8bbe0155a53d503899a73ad2e151c5830c8e84c1d8d4522c6edc8c5a2fae"
+            }
+          ],
+          "mode": "negative-schedule"
+        }
+      ],
+      "runtime": {
+        "bounds": {
+          "command_seconds": 1800,
+          "durable_floor_bytes": 10737418240,
+          "durable_reserve_bytes": 134217728,
+          "host_memory_floor_bytes": 8589934592,
+          "lock_wait_seconds": 1800,
+          "memory_bytes": 8589934592,
+          "overall_seconds": 3600,
+          "scratch_floor_bytes": 10737418240,
+          "scratch_reservation_evidence": "Conservative estimate for new threaded/unknown-peak builds, not a measured upper bound. Guard abort threshold may overshoot; it is not a filesystem hard quota. Peak allocated blocks are recorded.",
+          "scratch_reserve_bytes": 4294967296,
+          "static_lane_reservation_bytes": 8589934592
+        },
+        "host": "gfn16-pilot-c4d",
+        "invocation_id": "ae37f737120541cb8a09c843d319de4a",
+        "limits": {
+          "affinity": [
+            2,
+            3
+          ],
+          "cgroup": "/system.slice/gfn16-q-anext-writeback-prp-fault-gcp23-v1.service",
+          "cpu_max": [
+            "200000",
+            "100000"
+          ],
+          "full_topology": {
+            "0": [
+              0,
+              0
+            ],
+            "1": [
+              0,
+              1
+            ],
+            "2": [
+              0,
+              2
+            ],
+            "3": [
+              0,
+              3
+            ],
+            "4": [
+              0,
+              0
+            ],
+            "5": [
+              0,
+              1
+            ],
+            "6": [
+              0,
+              2
+            ],
+            "7": [
+              0,
+              3
+            ]
+          },
+          "memory_max_bytes": 8589934592,
+          "physical_cores": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "swap_max_bytes": 0
+        },
+        "packet_seconds": 71.53244891900249,
+        "style_counts": {
+          "DECLFILENAME": 3,
+          "GENUNNAMED": 15,
+          "PINCONNECTEMPTY": 19,
+          "SYNCASYNCNET": 18,
+          "UNUSEDSIGNAL": 37,
+          "VARHIDDEN": 1
+        },
+        "unit_CPU_seconds": 111.997675,
+        "unit_peak_bytes": 1273106432,
+        "unit_seconds": 71.721368
+      },
+      "source_map_sha256": "b0acb498f5c6bc4c4fca7f2bf8be467acbcd488de9e70a035effe086b959f30c",
+      "source_role_sha256": "c598ec0cca0766a8c2f61d92ac040438bbabd7bddf7e46f4d77c0bc4a083f1f0"
+    },
+    {
+      "done_sha256": "39077fb46c377eb85c9053460e3a4e155fef437d4b8a06eeebf897f6267de957",
+      "evidence_archive_sha256": "20c29113d8ec7579c41bf6d62c688afbe9123e67ef7eda04a1f7e64175577613",
+      "executable_sha256": "a7c9e34f7d5d6d208226de22c0355e1a6697b9ecf7de33145b1852b5b4b1d81c",
+      "gate_sha256": "9b3ed1d63de676393d9ff1196c47c3cb967a028267b1c938289d9f699f412cb0",
+      "generated_map_sha256": "73a714a1b2d40ea02d9980e112d58ccce6663c80e35185490d818ca6a943c65c",
+      "id": "anext-writeback-short-normal-q3-v1",
+      "kind": "short",
+      "manifest_sha256": "7dc15a385b6e4390ffce651007b40fc0fecfa7e39d1979b450d3b874c9480242",
+      "package_sha256": "e86121b9783e744113fcf124b36fbba8816e95f8b0c2128407ac5f92f771178e",
+      "report_sha256": "d910cf4638b481e70f7e3373bb1bc17716bfa1cd15765698f42d4bf324512b76",
+      "results": [
+        {
+          "checkpoint_arrays": {
+            "0": {
+              "canonical_array_sha256": "4f5339ff6c7e64fece03737e4f6a4de8bc0c2667830951e738d9d01d30e1d3f4",
+              "digits": 65536,
+              "retained_native_residue_sha256": "b175148de73be715a7268c25026d6198309b0bd1504388a4846aec6984be3af8"
+            },
+            "1": {
+              "canonical_array_sha256": "6f3219422121a2db8507a20b836f12df42e2171c4e2c134e206393cfe9be5f1e",
+              "digits": 65536,
+              "retained_native_residue_sha256": "70bb825be5e299752b7067a9347b545aef41369617d20fce20de85649de87e15"
+            },
+            "2": {
+              "canonical_array_sha256": "0c80310703f35793476b8adb2ef5e6f99eed1d51bd5de2a4c992a0b2c91af57c",
+              "digits": 65536,
+              "retained_native_residue_sha256": "afbfa2967029557681f87da44d12c0ff7a454fe2b85288f1dda17e71e67934b5"
+            }
+          },
+          "checkpoints": 3,
+          "cold_prefill": 2,
+          "compared_digits": 196608,
+          "cumulative_children_peak_rss_kib": 3947880,
+          "cycles": 52037,
+          "doubles": 1,
+          "first_operation": {
+            "bit": 0,
+            "case_id": "5f156dd8fc7c8530b5f9c697b2a4e9bb479ba7d919f74a855f47db93c97e9801",
+            "control": 7,
+            "cycles": 26023,
+            "ntt": 17743,
+            "post": 4158,
+            "prefill": 4106,
+            "profile_hits": 0,
+            "profile_loads": 1,
+            "roots": 9,
+            "step": 1
+          },
+          "isolated_model_peak_measured": false,
+          "last_operation": {
+            "bit": 1,
+            "case_id": "5f156dd8fc7c8530b5f9c697b2a4e9bb479ba7d919f74a855f47db93c97e9801",
+            "control": 7,
+            "cycles": 26014,
+            "ntt": 17743,
+            "post": 4158,
+            "prefill": 4106,
+            "profile_hits": 1,
+            "profile_loads": 0,
+            "roots": 0,
+            "step": 2
+          },
+          "loaded_digits": 65536,
+          "model_seconds": 231.63426326699846,
+          "model_system_seconds": 0.006999999999999673,
+          "model_user_seconds": 231.58194500000002,
+          "native_GMP_boundary_replay_retained": true,
+          "native_GMP_validation_sha256": "5d273baf7333d4efe329678609c287e6732e6f7b2da81fed2218083254313b01",
+          "negative": "none",
+          "operations": 2,
+          "resets": 1,
+          "root_hits": 1,
+          "root_loads": 1,
+          "warm_prefill": 0
+        }
+      ],
+      "runtime": {
+        "bounds": {
+          "command_seconds": 1800,
+          "durable_floor_bytes": 10737418240,
+          "durable_reserve_bytes": 134217728,
+          "host_memory_floor_bytes": 8589934592,
+          "lock_wait_seconds": 1800,
+          "memory_bytes": 8589934592,
+          "overall_seconds": 3600,
+          "scratch_floor_bytes": 10737418240,
+          "scratch_reservation_evidence": "Conservative estimate for new threaded/unknown-peak builds, not a measured upper bound. Guard abort threshold may overshoot; it is not a filesystem hard quota. Peak allocated blocks are recorded.",
+          "scratch_reserve_bytes": 4294967296,
+          "static_lane_reservation_bytes": 8589934592
+        },
+        "host": "gfn16-pilot-c4d",
+        "invocation_id": "cd6c34977fa84a3099c4bae16fcea174",
+        "limits": {
+          "affinity": [
+            0,
+            1
+          ],
+          "cgroup": "/system.slice/gfn16-q-anext-writeback-short-normal-gcp01-v1.service",
+          "cpu_max": [
+            "200000",
+            "100000"
+          ],
+          "full_topology": {
+            "0": [
+              0,
+              0
+            ],
+            "1": [
+              0,
+              1
+            ],
+            "2": [
+              0,
+              2
+            ],
+            "3": [
+              0,
+              3
+            ],
+            "4": [
+              0,
+              0
+            ],
+            "5": [
+              0,
+              1
+            ],
+            "6": [
+              0,
+              2
+            ],
+            "7": [
+              0,
+              3
+            ]
+          },
+          "memory_max_bytes": 8589934592,
+          "physical_cores": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "swap_max_bytes": 0
+        },
+        "packet_seconds": 369.0963819280005,
+        "style_counts": {
+          "DECLFILENAME": 3,
+          "GENUNNAMED": 15,
+          "PINCONNECTEMPTY": 19,
+          "SYNCASYNCNET": 18,
+          "UNUSEDSIGNAL": 37,
+          "VARHIDDEN": 1
+        },
+        "unit_CPU_seconds": 498.191467,
+        "unit_peak_bytes": 8254050304,
+        "unit_seconds": 369.399302
+      },
+      "source_map_sha256": "86dbe38712e7ef01c663170495e194f2fb6d788fcf0e4cbdfbcd69f60254b203",
+      "source_role_sha256": "89dcc87409ae717564c2880504c0c2760c8fc4b89bf81886dd9903f59dc67037"
+    },
+    {
+      "done_sha256": "d4950d87734e8795bb9d65265f0cc3d3f81264c57e6e451577ab2e7f56e7d904",
+      "evidence_archive_sha256": "7f62caaf49145014f5d411f6d69713695d268ec530b0d96acef24bee0b8c4009",
+      "executable_sha256": "63c89afd408f88c0994bb1520272c83a47be385d0145dcb90de5d6841ced21bf",
+      "gate_sha256": "7e7782c8b7bdbd524e51f1952faa8d7fd51280acc8994d721ee22e445dc175f4",
+      "generated_map_sha256": "7e564cf0237cf5051e79009313eba62f88bba2a2f692149853c6961c7c038e74",
+      "id": "anext-writeback-short-fault-portable-q3-v1",
+      "kind": "short-controls",
+      "manifest_sha256": "d5a525cfe8082a529fba374f61bcaaabde5187d4359923892a15027203026459",
+      "package_sha256": "aed393e4b0e4f59aa18f572d10f8035f112d19ae126079c41109251e3657f722",
+      "report_sha256": "4da3e4e9b0fd66b5db668f01a132dc0e21714ba88b77f307daac2ae0f1640587",
+      "results": [
+        {
+          "checkpoint_arrays": {
+            "0": {
+              "canonical_array_sha256": "4f5339ff6c7e64fece03737e4f6a4de8bc0c2667830951e738d9d01d30e1d3f4",
+              "digits": 65536,
+              "retained_native_residue_sha256": "b175148de73be715a7268c25026d6198309b0bd1504388a4846aec6984be3af8"
+            },
+            "1": {
+              "canonical_array_sha256": "6f3219422121a2db8507a20b836f12df42e2171c4e2c134e206393cfe9be5f1e",
+              "digits": 65536,
+              "retained_native_residue_sha256": "70bb825be5e299752b7067a9347b545aef41369617d20fce20de85649de87e15"
+            }
+          },
+          "compared_digits": 131072,
+          "cumulative_children_peak_rss_kib": 3686472,
+          "cycles": 26023,
+          "first_operation": {
+            "bit": 0,
+            "case_id": "5f156dd8fc7c8530b5f9c697b2a4e9bb479ba7d919f74a855f47db93c97e9801",
+            "control": 7,
+            "cycles": 26023,
+            "ntt": 17743,
+            "post": 4158,
+            "prefill": 4106,
+            "profile_hits": 0,
+            "profile_loads": 1,
+            "roots": 9,
+            "step": 1
+          },
+          "isolated_model_peak_measured": false,
+          "last_operation": {
+            "bit": 0,
+            "case_id": "5f156dd8fc7c8530b5f9c697b2a4e9bb479ba7d919f74a855f47db93c97e9801",
+            "control": 7,
+            "cycles": 26023,
+            "ntt": 17743,
+            "post": 4158,
+            "prefill": 4106,
+            "profile_hits": 0,
+            "profile_loads": 1,
+            "roots": 9,
+            "step": 1
+          },
+          "model_seconds": 169.85095731099955,
+          "model_system_seconds": 0.005000000000000782,
+          "model_user_seconds": 169.70123399999997,
+          "native_GMP_boundary_replay_retained": true,
+          "native_GMP_validation_sha256": "ea72e71947f35b700f82ab31fc6982cb81b92b3a9038a0c2ad3ea715e38b5f00",
+          "negative": "boundary",
+          "operations": 1
+        },
+        {
+          "checkpoint_arrays": {
+            "0": {
+              "canonical_array_sha256": "cafe9a783b3936f83ad14280768e819188aea5a84bdfb8b40c3bdbfe97c15a24",
+              "digits": 65536,
+              "retained_native_residue_sha256": "b175148de73be715a7268c25026d6198309b0bd1504388a4846aec6984be3af8"
+            }
+          },
+          "compared_digits": 65536,
+          "cumulative_children_peak_rss_kib": 3686472,
+          "cycles": 0,
+          "first_operation": null,
+          "isolated_model_peak_measured": false,
+          "last_operation": null,
+          "model_seconds": 104.60809374099972,
+          "model_system_seconds": 0.0029989999999990857,
+          "model_user_seconds": 104.42178700000005,
+          "native_GMP_boundary_replay_retained": true,
+          "native_GMP_validation_sha256": "b7948790be9f706c8735265479435311d564d7b9b5a2c05c1c68feb1838228d6",
+          "negative": "loaded-state",
+          "operations": 0
+        }
+      ],
+      "runtime": {
+        "bounds": {
+          "command_seconds": 1800,
+          "durable_floor_bytes": 10737418240,
+          "durable_reserve_bytes": 134217728,
+          "host_memory_floor_bytes": 8589934592,
+          "lock_wait_seconds": 1800,
+          "memory_bytes": 8589934592,
+          "overall_seconds": 3600,
+          "scratch_floor_bytes": 10737418240,
+          "scratch_reservation_evidence": "Conservative four-GiB per build across eight possible static lanes plus ten-GiB floor, not a measured upper bound or filesystem hard quota. Polling abort threshold may overshoot. Native own-UID byte/inode quota admission and observed peaks remain mandatory.",
+          "scratch_reserve_bytes": 4294967296,
+          "static_lane_reservation_bytes": 34359738368
+        },
+        "host": "gfn16-azure-sim-f32",
+        "invocation_id": "554b30f59d044dd4941d99cedb0a6653",
+        "limits": {
+          "affinity": [
+            8,
+            9
+          ],
+          "cgroup": "/system.slice/gfn16-q-auto-anext-writeback-short-fault-portabl-9de825860109bd33.service",
+          "cpu_max": [
+            "200000",
+            "100000"
+          ],
+          "full_topology": {
+            "0": [
+              0,
+              0
+            ],
+            "1": [
+              0,
+              1
+            ],
+            "10": [
+              0,
+              10
+            ],
+            "11": [
+              0,
+              11
+            ],
+            "12": [
+              0,
+              12
+            ],
+            "13": [
+              0,
+              13
+            ],
+            "14": [
+              0,
+              14
+            ],
+            "15": [
+              0,
+              15
+            ],
+            "2": [
+              0,
+              2
+            ],
+            "3": [
+              0,
+              3
+            ],
+            "4": [
+              0,
+              4
+            ],
+            "5": [
+              0,
+              5
+            ],
+            "6": [
+              0,
+              6
+            ],
+            "7": [
+              0,
+              7
+            ],
+            "8": [
+              0,
+              8
+            ],
+            "9": [
+              0,
+              9
+            ]
+          },
+          "memory_max_bytes": 8589934592,
+          "physical_cores": [
+            [
+              0,
+              8
+            ],
+            [
+              0,
+              9
+            ]
+          ],
+          "swap_max_bytes": 0
+        },
+        "packet_seconds": 429.80371814200043,
+        "style_counts": {
+          "DECLFILENAME": 3,
+          "GENUNNAMED": 15,
+          "PINCONNECTEMPTY": 19,
+          "SYNCASYNCNET": 18,
+          "UNUSEDSIGNAL": 37,
+          "VARHIDDEN": 1
+        },
+        "unit_CPU_seconds": 592.17736,
+        "unit_peak_bytes": 7173652480,
+        "unit_seconds": 431.223965
+      },
+      "source_map_sha256": "ef983921736d9e31786077cbb7696b0a1025abb0b9257b330c0a25c2a05895e6",
+      "source_role_sha256": "89dcc87409ae717564c2880504c0c2760c8fc4b89bf81886dd9903f59dc67037"
+    },
+    {
+      "done_sha256": "87bf7ca92aac2bd386c89402aff9d5ab407c8bb90a4f52c9adeb0e9f0b1637ed",
+      "evidence_archive_sha256": "052cdb9e812ddab5bdf0d51c13ee541b8bb4a4b592a0531c16dd2f59c64feb9a",
+      "executable_sha256": "5772263e78316099a7fbd2bf79a18dff02b4d6b2a35c222f3d6de75992f222bd",
+      "gate_sha256": "2e4785774e0b2c1b9bbd85f7bd6f150357ddef0c54a091fc2699b00750ab625a",
+      "generated_map_sha256": "1c3e4e06ed494aab118a62ea33630babefb2f08468b8fa8c23120d6089040f34",
+      "id": "anext-writeback-pilot-normal-q3-v1",
+      "kind": "pilot",
+      "manifest_sha256": "f2d17646c6ae04cf2cb678bb64b0b28893d3674938762a59556b3383bcfb7b44",
+      "package_sha256": "b9b40bb0c2166870c4bf3a8bb4fcf8fcf15c0afc399f86498420fb5a097d293c",
+      "report_sha256": "e7eb37d89127e18f5d3bae32b9602d76c5793b4cc36011c98bcea3fcb69df9ab",
+      "results": [
+        {
+          "checkpoint_arrays": {
+            "0": {
+              "canonical_array_sha256": "4f5339ff6c7e64fece03737e4f6a4de8bc0c2667830951e738d9d01d30e1d3f4",
+              "digits": 65536,
+              "retained_native_residue_sha256": "b175148de73be715a7268c25026d6198309b0bd1504388a4846aec6984be3af8"
+            },
+            "100": {
+              "canonical_array_sha256": "df1f33ce5426ee5025e3ebe38c6230a1070afd8c3614f63069af912130d66745",
+              "digits": 65536,
+              "retained_native_residue_sha256": "4578b49be71df5e86da47594ba754ceec1cec35ee1a357f60023e4858c0298f0"
+            }
+          },
+          "checkpoints": 2,
+          "cold_prefill": 1,
+          "compared_digits": 131072,
+          "cumulative_children_peak_rss_kib": 3947832,
+          "cycles": 2194717,
+          "doubles": 42,
+          "first_operation": {
+            "bit": 0,
+            "case_id": "2730e05de298ecbf5d7125acb7d6859b581b21ed8c84fb1bbfd7d3aaccd007ba",
+            "control": 7,
+            "cycles": 26023,
+            "ntt": 17743,
+            "post": 4158,
+            "prefill": 4106,
+            "profile_hits": 0,
+            "profile_loads": 1,
+            "roots": 9,
+            "step": 1
+          },
+          "isolated_model_peak_measured": false,
+          "last_operation": {
+            "bit": 1,
+            "case_id": "2730e05de298ecbf5d7125acb7d6859b581b21ed8c84fb1bbfd7d3aaccd007ba",
+            "control": 5,
+            "cycles": 21906,
+            "ntt": 17743,
+            "post": 4158,
+            "prefill": 0,
+            "profile_hits": 1,
+            "profile_loads": 0,
+            "roots": 0,
+            "step": 100
+          },
+          "loaded_digits": 65536,
+          "model_seconds": 421.35150039900327,
+          "model_system_seconds": 0.019999000000000322,
+          "model_user_seconds": 421.18751599999996,
+          "native_GMP_boundary_replay_retained": true,
+          "native_GMP_validation_sha256": "b9801bf8f0543b3c96e16a35a07afddd74b0e8a34eca2e6319b46352aec1c289",
+          "negative": "none",
+          "operations": 100,
+          "resets": 1,
+          "root_hits": 99,
+          "root_loads": 1,
+          "warm_prefill": 99
+        }
+      ],
+      "runtime": {
+        "bounds": {
+          "command_seconds": 1800,
+          "durable_floor_bytes": 10737418240,
+          "durable_reserve_bytes": 134217728,
+          "host_memory_floor_bytes": 8589934592,
+          "lock_wait_seconds": 1800,
+          "memory_bytes": 8589934592,
+          "overall_seconds": 3600,
+          "scratch_floor_bytes": 10737418240,
+          "scratch_reservation_evidence": "Conservative estimate for new threaded/unknown-peak builds, not a measured upper bound. Guard abort threshold may overshoot; it is not a filesystem hard quota. Peak allocated blocks are recorded.",
+          "scratch_reserve_bytes": 4294967296,
+          "static_lane_reservation_bytes": 8589934592
+        },
+        "host": "gfn16-pilot-c4d",
+        "invocation_id": "614c9a38691e4d5c8e2a366faa53a1ee",
+        "limits": {
+          "affinity": [
+            0,
+            1
+          ],
+          "cgroup": "/system.slice/gfn16-q-anext-writeback-pilot-normal-gcp01-v1.service",
+          "cpu_max": [
+            "200000",
+            "100000"
+          ],
+          "full_topology": {
+            "0": [
+              0,
+              0
+            ],
+            "1": [
+              0,
+              1
+            ],
+            "2": [
+              0,
+              2
+            ],
+            "3": [
+              0,
+              3
+            ],
+            "4": [
+              0,
+              0
+            ],
+            "5": [
+              0,
+              1
+            ],
+            "6": [
+              0,
+              2
+            ],
+            "7": [
+              0,
+              3
+            ]
+          },
+          "memory_max_bytes": 8589934592,
+          "physical_cores": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "swap_max_bytes": 0
+        },
+        "packet_seconds": 563.165821331997,
+        "style_counts": {
+          "DECLFILENAME": 3,
+          "GENUNNAMED": 15,
+          "PINCONNECTEMPTY": 19,
+          "SYNCASYNCNET": 18,
+          "UNUSEDSIGNAL": 37,
+          "VARHIDDEN": 1
+        },
+        "unit_CPU_seconds": 722.194516,
+        "unit_peak_bytes": 7347838976,
+        "unit_seconds": 563.540073
+      },
+      "source_map_sha256": "9410a6aead7e024ed5941a0fe822456a437ba8e72b7a9d412e38b6b0f2d80553",
+      "source_role_sha256": "3b074e2a39b6260679e4b369e5c6727f0f9d36182b2429bb509fa5843aaea738"
+    },
+    {
+      "done_sha256": "385287f260ccf62d84b994bc53084e14ab9e541629dec111d0ae60fa6d0ed144",
+      "evidence_archive_sha256": "342ca4a3c591fe56196b8b2e857e0e3dde97940f15ae2589d00de1dfc7f484da",
+      "executable_sha256": "d08bd08db43d6e7b21faa546dc18bb6aa6b55dffd85768bcc6948e9db6eb8147",
+      "gate_sha256": "b7c665057c02a8bfe18327cf709082bee5135524c3a03b5f7ca8e7ddf62271af",
+      "generated_map_sha256": "057910f99459242b0dd3b98ab14fb6a6de7ca76494f9a4209594c953e90aba4e",
+      "id": "anext-writeback-continuous-aw16-q3-v1",
+      "kind": "continuous",
+      "manifest_sha256": "d022cc3b973a6d7b9c40372a4ba8332275402b94cdc0a135da6c8b6ed6d72643",
+      "package_sha256": "8013a420e4c34ae796066df563d51b07cd7bfc8416921b7cf2f9f3bb0f863a1b",
+      "report_sha256": "bcb3f098f000e6b770b1a283152ccc4d46e1ec78eec4d72299b20ae4f4423935",
+      "results": [
+        {
+          "checkpoint_arrays": {
+            "0": {
+              "canonical_array_sha256": "4f5339ff6c7e64fece03737e4f6a4de8bc0c2667830951e738d9d01d30e1d3f4",
+              "digits": 65536,
+              "retained_native_residue_sha256": "b175148de73be715a7268c25026d6198309b0bd1504388a4846aec6984be3af8"
+            },
+            "100": {
+              "canonical_array_sha256": "df1f33ce5426ee5025e3ebe38c6230a1070afd8c3614f63069af912130d66745",
+              "digits": 65536,
+              "retained_native_residue_sha256": "4578b49be71df5e86da47594ba754ceec1cec35ee1a357f60023e4858c0298f0"
+            },
+            "1000": {
+              "canonical_array_sha256": "0618dc6ec2d4227d82e6ad9a9a4c031f35253a883f7b5a84ce29d33ea24350a5",
+              "digits": 65536,
+              "retained_native_residue_sha256": "290dccbe46cd86750cdb4347e37df2fd0c6a8dd0be4d60e91fb689e8b07d7baa"
+            },
+            "200": {
+              "canonical_array_sha256": "9b520b57c51b14f6701b9aedcf441976750285c3268f6cd1d0f173906fdba527",
+              "digits": 65536,
+              "retained_native_residue_sha256": "46d415fbc54241ae546c31e01b76a5ce04db114324b6b78d6aadd719f83cddee"
+            },
+            "300": {
+              "canonical_array_sha256": "28f5bb953ef3bfd6a1a6b3abe96ce538a8ed7faf4fd8a9f1aabdcdd3735fe355",
+              "digits": 65536,
+              "retained_native_residue_sha256": "f88e315194cfa172abca8c301959ccbad37019a2bc3f745d101026b1e63eb676"
+            },
+            "400": {
+              "canonical_array_sha256": "27bd2e8c25f11b4cba4d1eec3ee51d7faccd75b1fb7fe6e9e124c40f1f1a99cf",
+              "digits": 65536,
+              "retained_native_residue_sha256": "a0702f15e24e96ffe9d89baee1a809bc3030810337e0f76f32ae1650acaa5895"
+            },
+            "500": {
+              "canonical_array_sha256": "29da56848a0f13208921fc2013a66edcd95bd0a0db6a513ac8771ca757f380d3",
+              "digits": 65536,
+              "retained_native_residue_sha256": "7b9fbd06ccd5e48d3ee227a13d242e611291c1a0bfd21957e43f668349ab1e1c"
+            },
+            "600": {
+              "canonical_array_sha256": "0ed8d129904735854a170b8ba0bfda51e134528b317d515c910b147523e17664",
+              "digits": 65536,
+              "retained_native_residue_sha256": "fc47a4bebcc95d08cd87e50674f0a21f35f763df15e27e6e0069dffa33faae17"
+            },
+            "700": {
+              "canonical_array_sha256": "ad5d2ecae1944b7dc5636f14124345de695d89981a23d731190b59d3c74d0bab",
+              "digits": 65536,
+              "retained_native_residue_sha256": "b444803080201b668a602bf18fcfbcad35922b4636e4bf6f03bcd120ceb4c4ed"
+            },
+            "800": {
+              "canonical_array_sha256": "b26b745d287882cbf7c22d0f4105de6383fbbb51ddb32abd41b3c42d566e9df7",
+              "digits": 65536,
+              "retained_native_residue_sha256": "70484cb75ec5d4da91cbb492c3e1c33e31701138ba7d301ef833d206e9cabfa2"
+            },
+            "900": {
+              "canonical_array_sha256": "a812a1b5d966fcef4d2e37a87fe32f821e1b0122790baed49fc5cf85cc1cd7c9",
+              "digits": 65536,
+              "retained_native_residue_sha256": "ed69b8febf3b7290e449ed4fbaf8c5d8ade039473bde2e4316cb34ba96a8e0bc"
+            }
+          },
+          "checkpoints": 11,
+          "cold_prefill": 10,
+          "compared_digits": 720896,
+          "cumulative_children_peak_rss_kib": 3947648,
+          "cycles": 21947089,
+          "doubles": 488,
+          "first_operation": {
+            "bit": 0,
+            "case_id": "2730e05de298ecbf5d7125acb7d6859b581b21ed8c84fb1bbfd7d3aaccd007ba",
+            "control": 7,
+            "cycles": 26023,
+            "ntt": 17743,
+            "post": 4158,
+            "prefill": 4106,
+            "profile_hits": 0,
+            "profile_loads": 1,
+            "roots": 9,
+            "step": 1
+          },
+          "isolated_model_peak_measured": false,
+          "last_operation": {
+            "bit": 0,
+            "case_id": "2730e05de298ecbf5d7125acb7d6859b581b21ed8c84fb1bbfd7d3aaccd007ba",
+            "control": 5,
+            "cycles": 21906,
+            "ntt": 17743,
+            "post": 4158,
+            "prefill": 0,
+            "profile_hits": 1,
+            "profile_loads": 0,
+            "roots": 0,
+            "step": 1000
+          },
+          "loaded_digits": 65536,
+          "model_seconds": 3258.0643390999976,
+          "model_system_seconds": 0.11599499999999985,
+          "model_user_seconds": 3257.590244,
+          "native_GMP_boundary_replay_retained": true,
+          "native_GMP_validation_sha256": "33373b5d85096114a693d2e757a1d2b015dd2b58f7bfc18f457d476b1afbed5c",
+          "negative": "none",
+          "operations": 1000,
+          "resets": 1,
+          "root_hits": 999,
+          "root_loads": 1,
+          "warm_prefill": 990
+        }
+      ],
+      "runtime": {
+        "bounds": {
+          "ancillary_command_seconds": 1800,
+          "command_seconds": 10450,
+          "durable_floor_bytes": 10737418240,
+          "durable_reserve_bytes": 134217728,
+          "host_memory_floor_bytes": 8589934592,
+          "lock_wait_seconds": 1800,
+          "memory_bytes": 8589934592,
+          "outer_seconds": 10800,
+          "overall_seconds": 10700,
+          "scratch_floor_bytes": 10737418240,
+          "scratch_reservation_evidence": "Conservative estimate for new threaded/unknown-peak builds, not a measured upper bound. Guard abort threshold may overshoot; it is not a filesystem hard quota. Peak allocated blocks are recorded.",
+          "scratch_reserve_bytes": 4294967296,
+          "static_lane_reservation_bytes": 8589934592,
+          "stop_grace_seconds": 15
+        },
+        "host": "gfn16-pilot-c4d",
+        "invocation_id": "b743e81b0af747729cd6ad07972cbe44",
+        "limits": {
+          "affinity": [
+            0,
+            1
+          ],
+          "cgroup": "/system.slice/gfn16-q-anext-writeback-continuous-long-gcp01-v1.service",
+          "cpu_max": [
+            "200000",
+            "100000"
+          ],
+          "full_topology": {
+            "0": [
+              0,
+              0
+            ],
+            "1": [
+              0,
+              1
+            ],
+            "2": [
+              0,
+              2
+            ],
+            "3": [
+              0,
+              3
+            ],
+            "4": [
+              0,
+              0
+            ],
+            "5": [
+              0,
+              1
+            ],
+            "6": [
+              0,
+              2
+            ],
+            "7": [
+              0,
+              3
+            ]
+          },
+          "memory_max_bytes": 8589934592,
+          "physical_cores": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "swap_max_bytes": 0
+        },
+        "packet_seconds": 3414.4836026139965,
+        "style_counts": {
+          "DECLFILENAME": 3,
+          "GENUNNAMED": 15,
+          "PINCONNECTEMPTY": 19,
+          "SYNCASYNCNET": 18,
+          "UNUSEDSIGNAL": 37,
+          "VARHIDDEN": 1
+        },
+        "unit_CPU_seconds": 3889.011746,
+        "unit_peak_bytes": 7917088768,
+        "unit_seconds": 3415.407881
+      },
+      "source_map_sha256": "1760b961a0981a24877567a6d43a8d880b2de92695d86d3c2de4fe9ad532206c",
+      "source_role_sha256": "f8c142ff564d11f620b1c124651f5d9d2492b1c21ba6e349dffb49f0036bdc48"
+    }
+  ],
+  "schema": "independent-promotion-review-v1",
+  "source": {
+    "AW16_source_map_sha256": "3d3853729414f5b1a05467d75df3f854b6e352e4d820da955fa75b5ac529ed38",
+    "all_compiled_RTL": 30,
+    "core_sha256": "04fe3faa490c83395cec936c40cad15644885ddfd83f008b9f8d7e27da9f8fc9",
+    "numerical_donor_byte_preserved": true,
+    "old_native_results_inherited": false,
+    "qualification_calendar_only_delta_verified": true
+  },
+  "status": "PASS_scoped_F3_own_PRP_short_pilot_uninterrupted1000_numerical_and_source_matched_advisor_readiness_ONLY"
+}

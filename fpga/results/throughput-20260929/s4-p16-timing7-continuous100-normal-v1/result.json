@@ -1,0 +1,16 @@
+{
+  "status": "PASS_expected_contracts",
+  "job": "s4-p16-timing7-continuous100-normal-q1-v1",
+  "host": "gfn16-pilot-c4d",
+  "model_seconds": 669.4401401790019,
+  "whole_native_seconds": 1019.2572547699965,
+  "whole_unit_peak_bytes": 4044374016,
+  "collected_bundle_sha256": "a3bc7b25ace466d9eef712a7007ac015c8a6a13e202a3c23e1b656d7eb80d8b6",
+  "evidence": "queue/evidence/s4-p16-timing7-continuous100-normal-q1-v1/gate-receipt.json",
+  "operations": 100,
+  "cycles": 1505566,
+  "words": 65536,
+  "scope": "Own timing7 P16 continuous100, one reset-load-start-finalread, full65536 signed96 native reference equality. Not baseline8 timing/fullPRP/clock/1000/adoption.",
+  "promotion_allowed": false,
+  "owner_numerical_replay": false
+}

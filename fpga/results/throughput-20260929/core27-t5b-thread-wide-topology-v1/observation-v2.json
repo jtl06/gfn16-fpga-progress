@@ -1,0 +1,221 @@
+{
+  "schema": "gfn16-wide-pilot-topology-observation-v1",
+  "observed_at_utc": "2026-10-01T13:45:21.075899+00:00",
+  "host": "gfn16-azure-sim-f32",
+  "uid": 1000,
+  "boot_id": "409f7044-67a3-472a-b712-0be373729998",
+  "online": "0-15",
+  "cpus": {
+    "0": {
+      "physical_package_id": 0,
+      "core_id": 0,
+      "thread_siblings_list": "0",
+      "l3": [
+        {
+          "level": "3",
+          "type": "Unified",
+          "id": "0",
+          "shared_cpu_list": "0-7"
+        }
+      ]
+    },
+    "1": {
+      "physical_package_id": 0,
+      "core_id": 1,
+      "thread_siblings_list": "1",
+      "l3": [
+        {
+          "level": "3",
+          "type": "Unified",
+          "id": "0",
+          "shared_cpu_list": "0-7"
+        }
+      ]
+    },
+    "2": {
+      "physical_package_id": 0,
+      "core_id": 2,
+      "thread_siblings_list": "2",
+      "l3": [
+        {
+          "level": "3",
+          "type": "Unified",
+          "id": "0",
+          "shared_cpu_list": "0-7"
+        }
+      ]
+    },
+    "3": {
+      "physical_package_id": 0,
+      "core_id": 3,
+      "thread_siblings_list": "3",
+      "l3": [
+        {
+          "level": "3",
+          "type": "Unified",
+          "id": "0",
+          "shared_cpu_list": "0-7"
+        }
+      ]
+    },
+    "4": {
+      "physical_package_id": 0,
+      "core_id": 4,
+      "thread_siblings_list": "4",
+      "l3": [
+        {
+          "level": "3",
+          "type": "Unified",
+          "id": "0",
+          "shared_cpu_list": "0-7"
+        }
+      ]
+    },
+    "5": {
+      "physical_package_id": 0,
+      "core_id": 5,
+      "thread_siblings_list": "5",
+      "l3": [
+        {
+          "level": "3",
+          "type": "Unified",
+          "id": "0",
+          "shared_cpu_list": "0-7"
+        }
+      ]
+    },
+    "6": {
+      "physical_package_id": 0,
+      "core_id": 6,
+      "thread_siblings_list": "6",
+      "l3": [
+        {
+          "level": "3",
+          "type": "Unified",
+          "id": "0",
+          "shared_cpu_list": "0-7"
+        }
+      ]
+    },
+    "7": {
+      "physical_package_id": 0,
+      "core_id": 7,
+      "thread_siblings_list": "7",
+      "l3": [
+        {
+          "level": "3",
+          "type": "Unified",
+          "id": "0",
+          "shared_cpu_list": "0-7"
+        }
+      ]
+    },
+    "8": {
+      "physical_package_id": 0,
+      "core_id": 8,
+      "thread_siblings_list": "8",
+      "l3": [
+        {
+          "level": "3",
+          "type": "Unified",
+          "id": "1",
+          "shared_cpu_list": "8-15"
+        }
+      ]
+    },
+    "9": {
+      "physical_package_id": 0,
+      "core_id": 9,
+      "thread_siblings_list": "9",
+      "l3": [
+        {
+          "level": "3",
+          "type": "Unified",
+          "id": "1",
+          "shared_cpu_list": "8-15"
+        }
+      ]
+    },
+    "10": {
+      "physical_package_id": 0,
+      "core_id": 10,
+      "thread_siblings_list": "10",
+      "l3": [
+        {
+          "level": "3",
+          "type": "Unified",
+          "id": "1",
+          "shared_cpu_list": "8-15"
+        }
+      ]
+    },
+    "11": {
+      "physical_package_id": 0,
+      "core_id": 11,
+      "thread_siblings_list": "11",
+      "l3": [
+        {
+          "level": "3",
+          "type": "Unified",
+          "id": "1",
+          "shared_cpu_list": "8-15"
+        }
+      ]
+    },
+    "12": {
+      "physical_package_id": 0,
+      "core_id": 12,
+      "thread_siblings_list": "12",
+      "l3": [
+        {
+          "level": "3",
+          "type": "Unified",
+          "id": "1",
+          "shared_cpu_list": "8-15"
+        }
+      ]
+    },
+    "13": {
+      "physical_package_id": 0,
+      "core_id": 13,
+      "thread_siblings_list": "13",
+      "l3": [
+        {
+          "level": "3",
+          "type": "Unified",
+          "id": "1",
+          "shared_cpu_list": "8-15"
+        }
+      ]
+    },
+    "14": {
+      "physical_package_id": 0,
+      "core_id": 14,
+      "thread_siblings_list": "14",
+      "l3": [
+        {
+          "level": "3",
+          "type": "Unified",
+          "id": "1",
+          "shared_cpu_list": "8-15"
+        }
+      ]
+    },
+    "15": {
+      "physical_package_id": 0,
+      "core_id": 15,
+      "thread_siblings_list": "15",
+      "l3": [
+        {
+          "level": "3",
+          "type": "Unified",
+          "id": "1",
+          "shared_cpu_list": "8-15"
+        }
+      ]
+    }
+  },
+  "running_units_returncode": 0,
+  "running_unit_names": [],
+  "running_units_stderr": ""
+}

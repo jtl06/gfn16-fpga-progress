@@ -1,0 +1,15 @@
+{
+  "status": "PASS_expected_contracts",
+  "job": "s4-p16-diet-eight-prp-normal-q1-v1",
+  "host": "gfn16-azure-sim-f32",
+  "cases": 8,
+  "operations": 5051,
+  "cycles": 816635,
+  "signed96_words": 256,
+  "base_floor": 300,
+  "whole_seconds": 779.192172888,
+  "unit_peak_bytes": 2095566848,
+  "collected_bundle_sha256": "16d1b16bad324414bc59887afeaf5d10ff6d91792711083dd11caac2b2af3c59",
+  "evidence": "../../../queue/evidence/s4-p16-diet-eight-prp-normal-q1-v1/gate-receipt.json",
+  "scope": "Own N32/P16 diet full PRPs:3 Proth primes/5 proper-factor composites, complete MSB bits/x0=1; uninterrupted each job, actual T5b and builtin pow all signed96 words. Not fullN PRP/clock/timing7 coverage."
+}

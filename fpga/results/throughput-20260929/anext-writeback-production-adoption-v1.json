@@ -1,0 +1,51 @@
+{
+  "schema": "gfn16-production-adoption-v1",
+  "recorded_date_utc": "2026-10-01",
+  "candidate": "A-next-writeback-v1 (F3)",
+  "status": "adopted_internal_compute_only_production_parent",
+  "replaces_record": "A-next-point-v1",
+  "retained_fallback": "A-next-point-v1",
+  "candidate_core_sha256": "04fe3faa490c83395cec936c40cad15644885ddfd83f008b9f8d7e27da9f8fc9",
+  "compiled_rtl_source_map_sha256": "3d3853729414f5b1a05467d75df3f854b6e352e4d820da955fa75b5ac529ed38",
+  "independent_numerical_qualification": {
+    "path": "results/throughput-20260929/anext-writeback-qualification-native-independent-v1.json",
+    "sha256": "abe15924abb82392bd352c9b59c1f15229ffcfd2cc9076b58245f344c446cd92"
+  },
+  "independent_selected_timing": {
+    "path": "results/throughput-20260929/f3-selected10828-qualification-recovery-independent-v1.json",
+    "sha256": "29419ffad5e0f4f55089c7218d62ed8bb41d8fe18c042290fbd158e1f0efe5c6"
+  },
+  "advisor_acceptance": {
+    "path": "docs/briefs/2026-10-01-advisor-verification-F3.md",
+    "sha256": "70e77144788d0d6289cd248c90631ba8e46435d592a35799df8bc1aefb743a39"
+  },
+  "sample": {"N": 65536, "base": 604832956, "operations": 1911814},
+  "compute_projection": {
+    "cold_cycles": 26023,
+    "warm_cycles": 21906,
+    "total_cycles": 41880201601,
+    "selected_audited_period_ns": "10.828",
+    "backend_seconds": "453.478822935628",
+    "command_latency_sum_seconds": "453.520225179612",
+    "measured_full_sample_PRP_runtime": false
+  },
+  "qualification_scope": {
+    "own_small_prp_cases": 8,
+    "continuous_operations": 1000,
+    "doubles": 488,
+    "checkpoint_arrays": 11,
+    "checkpoint_words": 720896,
+    "continuous_backend_cycles": 21947089,
+    "resets": 1,
+    "loads": 1,
+    "checkpoint_reads_interrupt_warm_prefill": true
+  },
+  "exclusions": [
+    "Selected internal timing point only; 5 ps printed setup reserve is not hardware margin or highest-clock proof. Original 9.668 ns remains a failure.",
+    "Virtual I/O, top reset release, board operation and exhaustive fault/cancel coverage remain excluded.",
+    "Initial host configuration/load, final readback, gaps/holds and board I/O are excluded from the scalar projection.",
+    "Small-PRP base admissibility is the source-specific AW5 corpus; no wider base-range proof is inherited.",
+    "Streaming, RAM27, hostcut and other variants do not inherit this candidate's numerical qualification or clock."
+  ],
+  "implementation": "Records the independent numerical/timing receipts plus explicit advisor acceptance; no third replay, source rebase, board programming or publication. Track A closes; existing frozen streaming sources and running jobs stay unchanged."
+}

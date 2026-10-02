@@ -1,0 +1,149 @@
+{
+  "schema": "independent-qualification-consolidation-v1",
+  "status": "PASS_scoped_point_numerical_representative_cancel_and_internal_timing_evidence_ready_for_advisor_NOT_adoption",
+  "reviewer": "independent_review",
+  "candidate": "A-next-point-v1",
+  "candidate_core_sha256": "f37123255ed08225f9c26a5d556fafb94c4e3eda9547b28713be956cda4cbe7b",
+  "candidate_block_sha256": "076f6dcf120b448f38aff04fcb438e0f43158262ef08fcaa7c07ce8de8c83091",
+  "closed_gates": [
+    {
+      "scope": "Own AW5 base-valid complete PRPs and matched comparator/schedule controls; own AW16 short/pilot/continuous1000 numerical chain",
+      "path": "results/throughput-20260929/anext-point-qualification-native-independent-v1.json",
+      "sha256": "bcbdd9ee72c670bbb9718f8e1ed6a0a9bed22e30faa8f6b674ce7ff0b4cf4fa6",
+      "replay_sha256": "93251ca16d9d9dca5c6b5e098c2f87c024ca7a306d2dbc3a6ce7148f940846a8"
+    },
+    {
+      "scope": "Point AW16 representative and six AW5 flight reset/cancel deltas",
+      "path": "results/throughput-20260929/anext-point-representative-and-cancel-native-independent-v1.json",
+      "sha256": "3449e022cde400606f26967145e657d9ac3b73b366941ee053869ddc7cfd86d2",
+      "replay_sha256": "2348312c2227e36bcb7ae7cb2e6ba0835fe1f9a644ba2f072ac232f23dc65158"
+    },
+    {
+      "scope": "Source-matched selected11.196ns internal MCMM timing-only audit, retained baselineFAIL",
+      "path": "results/throughput-20260929/anext-point-9668-11196-timing-audit-v1/independent-review-v1.json",
+      "sha256": "224effbc2c29b14ac49d77eb1de6ad7924019ae139ff89c53490a74f51caab58",
+      "replayed_again": false
+    },
+    {
+      "scope": "Source-matched scalar full-operation compute projection, not measured PRP walltime",
+      "path": "results/throughput-20260929/anext-point-compute-projection-independent-v1.json",
+      "sha256": "f1a1ac44d3d2182c39e45f9365471a08d8f68f1666aee0166d7f06469f83d7b5",
+      "replayed_again": false
+    }
+  ],
+  "evidence": {
+    "PRP": {
+      "aw": 5,
+      "cases": 8,
+      "prime_certificates": 3,
+      "proper_factor_composites": 5,
+      "squares": 5051,
+      "doubles": 1825,
+      "backend_cycles": 929568,
+      "final_words": 256,
+      "excluded_inadmissible_old_bases": [
+        69,
+        70,
+        96,
+        112
+      ]
+    },
+    "representative": {
+      "aw": 16,
+      "squares": 16,
+      "complete_images": 8,
+      "native_asserted_words": 524288,
+      "backend_warm_cycles": 21873,
+      "host_warm_cycles": 21875,
+      "unchanged_recipe": true,
+      "no_raw_array_dump": true
+    },
+    "continuous1000": {
+      "actual_report_sha256": "2b0d0a90a02b6467efb102e0913e527183f0cc642523352bffeeb641bbcf14db",
+      "invocation": "3c4c862984f94b01bb73f9e27f1264d9",
+      "base": 604832956,
+      "squares": 1000,
+      "doubles": 488,
+      "checkpoints": 11,
+      "compared_existing_words": 720896,
+      "backend_cycles": 21914089,
+      "initial_resets": 1,
+      "loaded_digits": 65536,
+      "midchain_reset_reload": false,
+      "cache_loads": 1,
+      "cache_hits": 999,
+      "cold_prefill": 10,
+      "warm_prefill": 990,
+      "native_GMP_runtime_sha256": "84fb40c8e6452d4b660d9302e83584dd3c4761aa6219495e57f2df582401cf0b",
+      "model_seconds": 2783.833160107999,
+      "unit_seconds": 2964.830184,
+      "unit_CPU_seconds": 3348.191789,
+      "unit_peak_bytes": 7277023232,
+      "cumulative_children_RSS_KiB": 3946916,
+      "isolated_model_peak_measured": false
+    },
+    "cancellation": {
+      "geometry": "AW5",
+      "cases": 6,
+      "ages": [
+        0,
+        1,
+        3
+      ],
+      "reset_and_backend_cancel": true,
+      "observed_fields": 3,
+      "post_event_quiet_edges_per_case": 16,
+      "recovered_words_per_case": 32,
+      "recovery_requires_reset_and_full_reload": true,
+      "public_cancel_API": false,
+      "killing_edge_atomicity_qualified": false,
+      "exhaustive_reset_faults": false
+    },
+    "timing": {
+      "selected_period_ns": "11.196",
+      "waveform_ns": [
+        "0",
+        "5.598"
+      ],
+      "internal_frequency_mhz": 89.31761343336906,
+      "minima_ns": {
+        "setup": "0.003",
+        "hold": "0.014",
+        "recovery": "1.653",
+        "removal": "0.712",
+        "mpw": "4.975"
+      },
+      "baseline_period_ns": "9.668",
+      "baseline_setup_ns": "-1.525",
+      "baseline_pass": false,
+      "phase_corners": 8,
+      "finite_setup_observations": 8000,
+      "highest_clock": false,
+      "board_clock": false,
+      "latch_selector_supported": false
+    },
+    "projection": {
+      "operations": 1911814,
+      "backend_cycles": 41817111739,
+      "backend_seconds": "468.184383029844",
+      "command_latency_sum_seconds": "468.227192368932",
+      "measured_full_sample_PRP": false
+    }
+  },
+  "scope_update": "The older immutable timing/projection receipts accurately said point1000 was then unrun. The new independently reviewed source-identical point chain now closes that same-base1000 numerical gap; no historical receipt is edited or relabeled. Full sample1,911,814-operation PRP remains a scalar projection, not measured evidence.",
+  "remaining_before_adoption": [
+    "Separate advisor verification and explicit adoption decision; no independent numerical/representative/cancel/internal-STA evidence gap remains within the stated finite scope."
+  ],
+  "exclusions": [
+    "Not exhaustive reset/fault/kill-edge atomicity, all-address preservation, arbitrary public-cancel recovery or full-N point-flight reset sweep.",
+    "Internal STA excludes virtual-I/O/top reset-release/board/exhaustive graph;3ps printed setup reserve is not hardware margin proof or highest-clock search. Unsupported latch selector is not a latch-absence PASS.",
+    "Full-size stored arrays compared without GMP/full-N recomputation; runtime-admitted independent GMP replay was executed only on the source-bound native worker.",
+    "Distinct GCP24GiB/Azure4GiB tools/hosts for representative/cancel; no speed/area/threadprofile, isolated model RSS, original/upper/F3/RAM27/hostcut result inheritance.",
+    "Initial host configure/load, final reads, response holds/gaps and board walltime remain excluded from the scalar full-operation projection."
+  ],
+  "local_full_N_arithmetic": 0,
+  "local_GMP_imports": 0,
+  "local_native_or_cloud_commands": 0,
+  "production_promotion_allowed": false,
+  "advisor_verification_required": true
+}

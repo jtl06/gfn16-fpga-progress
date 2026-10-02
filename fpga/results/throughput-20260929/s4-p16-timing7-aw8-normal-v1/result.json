@@ -1,0 +1,12 @@
+{
+  "status": "PASS_expected_contracts",
+  "job": "s4-p16-timing7-aw8-dense-normal-q1-v1",
+  "host": "gfn16-pilot-c4d",
+  "whole_native_seconds": 314.6443550089971,
+  "whole_unit_peak_bytes": 2353942528,
+  "collected_bundle_sha256": "5c347e224d5320997ab0d45351f6d1fd6d916f95b98138e7e6e0fd574c975b61",
+  "evidence": "queue/evidence/s4-p16-timing7-aw8-dense-normal-q1-v1/gate-receipt.json",
+  "scope": "Own AW8 dense256 operations/57452 cycles/full256 signed96 actual T5b-pow words;18-row feedback adapter.",
+  "promotion_allowed": false,
+  "owner_numerical_replay": false
+}

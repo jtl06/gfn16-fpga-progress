@@ -1,0 +1,149 @@
+{
+  "archive": {
+    "path": "/home/ubuntu/gfn16-worker/fit-queue-collection-s4-p16-diet-whole-synthesis-screen/native-reports.tar.gz",
+    "sha256": "776f3f6a24ddf2a6189ffaa6635e0023c18c9bc65b0f71d88bfc19eda2cf3f82",
+    "size": 3249410
+  },
+  "collected_native_report_files": 6,
+  "collection_completed": true,
+  "collector_sha256": "51aec17246c64a289917517f690c77f0497fb2dd004e214c1a5889fe15f70dd3",
+  "compiled_db_bytes": 190316124,
+  "compiled_db_files": 130,
+  "compiled_db_provenance": "Native runner final inventory retained; raw QDB remains on worker, not transferred or rehashed by collector.",
+  "findings": [],
+  "fit_allowed": false,
+  "host": "gfn16-aws-m8i",
+  "inventory_sha256": "785d81fd0a12a3a0621f2032a207d005872b875068c5057129d8150f1cf9da1d",
+  "invocation_id": "69e976719f294917a293cdd02cf6a5c1",
+  "limitation": "Terminal collection and source provenance only. Native failures stay failures; component clocks never become whole-core clocks. All-corner STA/critical paths require separate report interpretation and independent promotion review.",
+  "native_context_resources": {
+    "affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "cpu_max": "600000 100000",
+    "launcher_sha256": "f5350b521fcd7a94378ffbe7db94b2c400af4e6dc8429f529f5936f58b884e5a",
+    "memory_max": "21474836480",
+    "physical_cores": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        5
+      ]
+    ],
+    "quartus_workers": 6,
+    "started_at": "2026-10-01T22:13:40.082006+00:00",
+    "swap_max": "0",
+    "timeout_seconds": 7200
+  },
+  "native_job_succeeded": true,
+  "native_journal_proof": {
+    "invocation_id": "69e976719f294917a293cdd02cf6a5c1",
+    "manager_elapsed_seconds": 284.861166,
+    "manager_end_realtime_us": "1790893104536103",
+    "manager_main_exit_messages": [],
+    "manager_start_realtime_us": "1790892819674937",
+    "manager_terminal_message": "gfn16-fit-s4-p16-diet-whole-synthesis-screen.service: Deactivated successfully.",
+    "provenance": "Trusted manager _PID=1 UNIT/INVOCATION_ID fields. GC properties are not reconstructed from inactivity.",
+    "resource_journal": [
+      {
+        "CODE_FILE": "src/core/unit.c",
+        "CODE_FUNC": "unit_log_resources",
+        "CODE_LINE": "2577",
+        "CPU_USAGE_NSEC": "568582907000",
+        "INVOCATION_ID": "69e976719f294917a293cdd02cf6a5c1",
+        "MEMORY_PEAK": "10268487680",
+        "MEMORY_SWAP_PEAK": "0",
+        "MESSAGE": "gfn16-fit-s4-p16-diet-whole-synthesis-screen.service: Consumed 9min 28.582s CPU time, 9.5G memory peak, 0B memory swap peak.",
+        "MESSAGE_ID": "ae8f7b866b0347b9af31fe1c80b127c0",
+        "PRIORITY": "6",
+        "SYSLOG_FACILITY": "3",
+        "SYSLOG_IDENTIFIER": "systemd",
+        "TID": "1",
+        "UNIT": "gfn16-fit-s4-p16-diet-whole-synthesis-screen.service",
+        "_BOOT_ID": "b7d1d4d8dc3a40959d3f04bc3e9f53ba",
+        "_CAP_EFFECTIVE": "1ffffffffff",
+        "_CMDLINE": "/sbin/init",
+        "_COMM": "systemd",
+        "_EXE": "/usr/lib/systemd/systemd",
+        "_GID": "0",
+        "_HOSTNAME": "gfn16-aws-m8i",
+        "_MACHINE_ID": "ec2f58d01cfd3132dbfab49b88d1fec0",
+        "_PID": "1",
+        "_RUNTIME_SCOPE": "system",
+        "_SELINUX_CONTEXT": "unconfined\n",
+        "_SOURCE_REALTIME_TIMESTAMP": "1790893104536243",
+        "_SYSTEMD_CGROUP": "/init.scope",
+        "_SYSTEMD_SLICE": "-.slice",
+        "_SYSTEMD_UNIT": "init.scope",
+        "_TRANSPORT": "journal",
+        "_UID": "0",
+        "__CURSOR": "s=cca42f6d7ee64842b928fd8a217a461e;i=18038;b=b7d1d4d8dc3a40959d3f04bc3e9f53ba;m=14d6a22bc;t=65ccecb53a59d;x=f256bfc26791cf12",
+        "__MONOTONIC_TIMESTAMP": "5593768636",
+        "__REALTIME_TIMESTAMP": "1790893104539037",
+        "__SEQNUM": "98360",
+        "__SEQNUM_ID": "cca42f6d7ee64842b928fd8a217a461e"
+      }
+    ],
+    "terminal_kind": "deactivated_successfully",
+    "terminal_proven": true,
+    "unit": "gfn16-fit-s4-p16-diet-whole-synthesis-screen.service"
+  },
+  "native_result": {
+    "context_sha256": "4c9ef0009037637071c2ed22465350fc9b552612fb55831a0fd94ef8c1c08ea1",
+    "finished_at": "2026-10-01T22:18:24.396860+00:00",
+    "mode": "synthesis_only",
+    "quartus_returncode": 0,
+    "resource_estimates": {
+      "M20K_placed": null,
+      "alms_needed": null,
+      "alms_placed": null,
+      "fmax_mhz": null,
+      "hold_slack_ns": null,
+      "limitation": "Synthesis estimates only, no placement/routing/timing/throughput or board qualification.",
+      "metrics": {
+        "synthesis_alms_estimate": 293872,
+        "synthesis_dsp_blocks_post_merging_estimate": 1300,
+        "synthesis_registers": 613548
+      },
+      "physical_fit_success": null,
+      "setup_slack_ns": null,
+      "status": "synthesis_complete_estimates_only",
+      "summary_sha256": "a220f2215fcee99e6f0f721638415d9649ed764ff0b4bed09ac4d2d24e3e2d73",
+      "synthesis_success": true
+    },
+    "summarize_returncode": 0
+  },
+  "observed_at_utc": "2026-10-01T22:18:38.234706+00:00",
+  "project": "/home/ubuntu/gfn16-worker/fit-s4-p16-diet-whole-synthesis-screen",
+  "promotion_allowed": false,
+  "schema": "plain-fit-terminal-collection-v1",
+  "scope": "whole_core",
+  "source_request_sha256": "06117a01aa889fa128f27210e25effe97d9f377f31a05ba7b8c4a2eb88758590",
+  "terminal_proven": true,
+  "unit": "gfn16-fit-s4-p16-diet-whole-synthesis-screen.service",
+  "whole_core_clock_claim": false
+}

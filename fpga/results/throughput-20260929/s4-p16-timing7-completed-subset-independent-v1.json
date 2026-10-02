@@ -1,0 +1,61 @@
+{
+  "schema": "gfn16-independent-review-v1",
+  "updated_at_utc": "2026-10-02T02:49:40Z",
+  "reviewer": "/root/p16_independent_reviewer",
+  "status": "PASS_timing7_own_completed_numerical_subset_SOURCE_LEDGER_READY_LONG_AND_FINAL_CLOCK_PENDING",
+  "promotion_allowed": false,
+  "independence": "Confirmed own history contains no candidate/compiler/reference/harness/qualification-test or consolidation authorship. Only reviewer records/status authored; baseline review machinery reused, not baseline numerical or clock verdicts. Prior conflicted helper verdict not used.",
+  "source_join": {
+    "standalone_bundle": "results/throughput-20260929/trackS-p16-timing-v1/bundles-v1/whole-standalone-aw16.json",
+    "paired_bundle": "results/throughput-20260929/trackS-p16-timing-v1/bundles-v1/whole-paired-aw16.json",
+    "standalone64_compact_map_sha256": "fdcbfb2f8440eb35f35f5e54ebcf3466edfe39f9bca5ce823979f8a923fb9e66",
+    "paired75_compact_map_sha256": "2cc10d06281709f381b8ef242a1525dede8fccafecbd32c87666b0ee960ebabd",
+    "root_sha256": "0011468ec67d7ca7ebb86fac88103fd19ea0207dc75685289da64d508228ea28",
+    "paired_root_sha256": "05d7d28e468857602b23a9dad9e8a6d992bc09854d446e6838bd098238ffcc37",
+    "actual_routed_manifest": "queue/standing-fit-state/terminal/s4-p16-timing-whole-9000-high-effort-v1/evidence/project/manifest.json",
+    "actual_routed_manifest_sha256": "2bc778183dcb2e4fd0e98726839edfda4a60aad76155607b35814a013ce0cf76",
+    "parameters": {"AW": 16, "P": 16, "CONTEXTS": 1, "EPOCH_SEED": 65534, "CANONICAL_PIPE_STAGES": 1, "CORR_SERIAL_BFS": 2, "COMM_STAGE_SHARED_MLAB": 1, "MONT_FACTORED": 1, "BOUNDARY_INPUTREG": 1, "DESCRIPTOR_FIFO_FF": 1, "QUARANTINE_REPLICAS": 1, "FINAL_GS_INPUTREG": 1, "CANONICAL_LOCALBASE": 1, "CARRY_LOCALBASE": 1, "TERM_SELECT_TOKEN": 1},
+    "checked": "Every emitted bundle file hashes to its declared generated pin; exact64 subset of75, full-size compiled75 maps identical across full9/short/serial100/eight-thread100; actual routed64 pins match exact standalone64 and fit/simulation parameters match. Bundles omit explicit EPOCH_SEED while both actual fit and numerical simulation set65534. CRT/T5b sparse Montgomery leaves and production core match original donor bytes, without inheriting donor execution evidence."
+  },
+  "changed_contract_review": {
+    "read": ["reference/stream27_p16_timing_flags.py", "reference/stream27_timing_flags.py", "reference/stream27_term_select_p16_diet_bind.py", "reference/stream27_fault_fanout_p16_bind.py", "rtl/kernel/genefer_stream27_merged_final_gs_pair_inputreg_v1.sv", "rtl/kernel/genefer_stream27_mul_select_token_v1.sv", "own captured small PRP/AW8/fault drivers and common actual FIFO/T5b/readback helper"],
+    "local_bounded_tests": "15 tests PASS3.565s: test_stream27_p16_timing_flags, test_stream27_term_select_p16_diet, test_stream27_fault_fanout_p16. Source/reverse/event tests only; no native simulation or full-N arithmetic.",
+    "full_geometry": {"pointwise_accept": 4207, "sink_accept": 8417, "first_digit": 8459, "carry_done": 12558, "warm_interval": 8460, "correction_cache_latency": 78, "cache_margin": 30, "feedback_rows": 0, "boundary_frontend_added": 0},
+    "small_geometry": {"N32": {"first_digit": 158, "carry_done": 163, "warm_interval": 163, "feedback_rows": 4, "input_delay": 41, "boundary_frontend_added": 1, "cache_margin": 0}, "N256": {"first_digit": 195, "carry_done": 214, "warm_interval": 214, "feedback_rows": 18, "input_delay": 8, "boundary_frontend_added": 1, "cache_margin": 0}},
+    "interpretation": "Final GS captures complete canonical operands and original root, adds1 arithmetic edge and equally extends slot/start/generation metadata. Boundary ingress adds1 cache edge; zero-margin small geometries add an actual frontend edge, giving distinct small calendars. Same-origin-edge quarantine replicas retain public fault/tails. Descriptor FF, static accepted-begin localbase thresholds and payload-only term selector add no calendar edge. Term selector is not admission/cache/commit authority; three field reverse-to-parent bindings preserve exact factored multiplier. Finite own controls/small-feedback/full-size equality tests cover composed source, not exhaustive fault space."
+  },
+  "replay_method": "For each of seven roles: queue/gate/report/manifest joins, outer archive hash and every dispatcher file on disk and inside archive, all report artifact hashes, archived source manifest equality, every generated source pin, decompressed executable, runtime probe and raw lint independently verified. Frozen archived typed validators rerun for full9/short/100/pilot; small roles have null typed validators, so exact stdout/stderr/return codes and actual archived C++ guards/assets were reviewed. All actual full signed96 reads and T5b/reference comparisons guarded in C++ before PASS footer. Small oracle values independently checked with bounded N32/N256 Python integer arithmetic only; no fullN/GMP/HDL/vendor rerun.",
+  "roles": [
+    {"id": "s4-aw16-p16-timing-host-normal-q1-v1", "gate_sha256": "9ca8c21591058030b984e07bf0f532e69f6c2ad4a6e2d60c3c4097258a0c6052", "report_sha256": "9311c91dda0879e7086b599a079ffe4e4c5b47a40dfc775629c2ad5488d38277", "manifest_sha256": "38b0fc25d9e8ab7c23d1aa2fe80899f520c09099e812adcbba6738ff7b721948", "archive_sha256": "9b526c6b35f3c7d14a3bd96a651842cace3463ce355af891d0f7501789f01d7d", "sources": 224, "generated": 342, "inventory_files": 26, "style_warnings": 1477, "scope": "Own cold1 plus cached8, two jobs9 operations1395173 cycles25376 backpressure, all131072 signed96 reads equal actual T5b and native independent reference; canonical1179648/copy131078."},
+    {"id": "s4-p16-timing7-eight-prp-normal-q1-v1", "gate_sha256": "cbee283aa3c2dfea87eafff0c1fdd8a3c0cb99a3bd0ee46ef1153e96ea736976", "report_sha256": "451ac7ffd6151405013c893e02b898fa727120a94b2815a591ac11adbb8a9716", "manifest_sha256": "6e1ab728907cbe5c55bee7552fcfd35ee4c77124fad77dbb9053a6d8b69df72b", "archive_sha256": "bfe2564c09e35408dc3646b0e24d931647a14fe0a87ed550343a02858e2e8bb3", "sources": 352, "generated": 224, "inventory_files": 26, "style_warnings": 601, "own_N32_paired75_map": "0658595e2b243bbaa74488038c64219abf85689cd2d0ae86b819f2563575f460", "scope": "Eight complete base300..1e9 PRPs5051 operations5043 descriptors826737 cycles, all256 signed96 words equal actual T5b and independently rechecked pow oracle/leading-bit program; basefloor300."},
+    {"id": "s4-p16-timing7-short-normal-q1-v1", "gate_sha256": "b473a85a075b9822457532285283b26fb50bb3347698e56e8f572e06cee0d8ff", "report_sha256": "3f6dabecef4c77c7932ef0f8942acf531349e6d77923a34ce146ccee28c7e747", "manifest_sha256": "43ec71cb52071abfaf955afd7cef1a3c3e67c23a1d3e4ea12ed56633bfe4b18b", "archive_sha256": "9b1ab70446aa04d0d2baa6dd324b19d52d60ef54300876f0fdc191ed6b92a4c0", "sources": 201, "generated": 342, "inventory_files": 26, "style_warnings": 1477, "scope": "Actual1 operation668026 cycles65536 signed96 words equal own native reference, one reset/load/start/readback."},
+    {"id": "s4-p16-timing7-continuous100-normal-q1-v1", "gate_sha256": "ffd00eef6669d8eefd60c8e815a3bf99d6bd7a39a90fe5ad8911c0e9bc405aeb", "report_sha256": "b207d711a98ccda70f63a681bf48a97c0bb0dcbded614231bc92b290602160f2", "manifest_sha256": "77ed761739502ed6cd53010353990283e8c82c4ccc4bf39d423c4dbe1319fb53", "archive_sha256": "a3bc7b25ace466d9eef712a7007ac015c8a6a13e202a3c23e1b656d7eb80d8b6", "sources": 201, "generated": 342, "inventory_files": 26, "style_warnings": 1477, "scope": "Actual100/50doubles1505566 cycles65536 signed96 words equal own native reference; own99 pop ages102+index*8460 directly checked. One reset/load/start/readback, canonical589824/copy65539; actualarrayd2178c68."},
+    {"id": "s4-p16-timing7-aw8-dense-normal-q1-v1", "gate_sha256": "a297853c0b7194650970e05dbaf8d62e4da288aa5b668f3957a16f2eb549295e", "report_sha256": "c6b1c29bcaf586c9f7f33394f4cfdbdd37d6da1d4a4301b08f54f3043c7200b2", "manifest_sha256": "93661568db3aef0494e2fe6d40fefc758f5ab0e6fe79374e3d67d9959f9b1823", "archive_sha256": "5c347e224d5320997ab0d45351f6d1fd6d916f95b98138e7e6e0fd574c975b61", "sources": 352, "generated": 249, "inventory_files": 26, "style_warnings": 841, "own_N256_paired75_map": "c06bce39bd4ff072bf6f01d8c5bc23d8291e6acc62e46ae931f6bfc305b8546a", "scope": "256 dependent operations104doubles57452 cycles255descriptors18 feedbackrows, dense signed initial-1, all256 actualT5b/signed96 oracle words; independently rechecked bounded smallinteger recurrence."},
+    {"id": "s4-p16-timing7-whole-host-faults-q1-v1", "gate_sha256": "0fa3f081d7e3548a4b35f24ad62a49c1f49e754441b422d183a86ccc35306d00", "report_sha256": "68848cc05a4b36d9565f3314af87373c17f3fbe740f83cc2cb8eeaef6f869ab4", "manifest_sha256": "55cb3f85186de4d516591766d99242838979ab2a006b8e88f634be562e1faf16", "archive_sha256": "0593f98a4888dc10d9eefc39549e73783cb438c935a91ffd861528b07a14d4e7", "sources": 381, "generated": 224, "inventory_files": 28, "style_warnings": 601, "scope": "Own four descriptor codes1..4, occupied cold10/warm273 reset ages,20sticky quarantine checks/recovery224words, inputb**16→special-1 with320canonicalcycles+35copy/all32 signed96 actualT5b. Negative comparator only after correct execution: rc1 exact address0 expected0 actual-1; positive rc0. Finite sampled controls."},
+    {"id": "r75-p16-timing7-threads8-q1-v1", "gate_sha256": "5d1a1c72b5b6d7808c37fec795a53b9865553bf2c46f38a8a4b32944aa7722c2", "report_sha256": "978eb3b229fee5da6f0914429d3a789a4c0818adb8b4e880d13c65dae9b2fc53", "manifest_sha256": "73d591093f6f870134ee0f960a302c3d1b1447c28fe69c99e83eb2ab4950688d", "archive_sha256": "13e9ff57945e968eada312bcd3780c1237b829325c97970c36d1e787bd520ecd", "sources": 239, "generated": 346, "inventory_files": 26, "style_warnings": 1477, "scope": "Own8model/context-thread runtime probe/full100 native contract and array equal own serial100; candidate330603ms/read16500/reference4279. Numerical equality only, no matched causal speedup inference."}
+  ],
+  "provisional_own_ledger": {
+    "cold_completion": 668026, "cached_completion": 667927, "warm_interval": 8460,
+    "operations_including_leading_bit": 1911814,
+    "cold_sample_cycles": 16174606006, "cached_sample_cycles": 16174605907,
+    "special_final_extra_cycles_once": 65536,
+    "equation": "668026 + (1911814-1)*8460 = 16174606006",
+    "period_ns": null, "seconds": null,
+    "scope": "Independent Decimal exponent-bit count and scalar finish calculation, corroborated own full9/short/100 calendar.9N canonical/N+3 image copy once; cold setup included; cache-99/special+N once. Await exact owner consolidation join; no fullsample PRP/board runtime or baseline calendar/clock inheritance."
+  },
+  "pending_long_source_readiness": {
+    "id": "s4-p16-timing7-continuous1000-thread8-normal-q1-v1",
+    "manifest": "results/throughput-20260929/s4-p16-timing7-continuous1000-thread8-native-v1/packet-v1/capture/approved-manifest.json",
+    "manifest_sha256": "fcddb9d2b93ac39331ab5366a302f1ca771042b130244872cc9748fbd88f355e",
+    "source_pins_checked": 252,
+    "compiled75_join_to_own_fullsize_subset": true,
+    "runtime_threads": 8, "expected_candidate_cycles": 9119566,
+    "numerical1000_executed_result_reviewed": false
+  },
+  "actual_remaining_gates": [
+    "Collected own75-source1000 numerical terminal/archive/arrays/validator (not baseline9118566); expected own9119566 is not result.",
+    "Final selected timing7 same-QDB four-corner audit/source/resource/constraint guards. Native11.054 provisionalPASS and11.040FAIL owner reports are not independently replayed clock verdicts here; tighter audit ongoing.",
+    "Exact timing7 owner consolidation/ledger final joins, then advisor verification/main adoption."
+  ],
+  "exploration_approval_gate": false
+}

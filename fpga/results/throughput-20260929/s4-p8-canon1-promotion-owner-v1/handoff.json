@@ -1,0 +1,1415 @@
+{
+  "author_tests": {
+    "path": "tests/test_stream27_p8_canon1_promotion_v1.py",
+    "sha256": "e82aa387d770241c07a6ecb9578ab4002a918dac156656e8f3161e0e94566c72"
+  },
+  "candidate": "canonical-pipeline P8, contexts1, no r75 flags",
+  "complete_author_scope": [
+    "own eight small PRPs",
+    "own full9 cold1/cached8 two-image loaded-state normal",
+    "own100 and uninterrupted1000 one-reset/load/start/final-read FIFO jobs",
+    "own minimal whole-host underflow/reset/recovery/typed comparator controls",
+    "exact leaf AW5/AW8 normal/sentinel plus leaf range/reset/read-oracle controls",
+    "exact49 fitted RTL matches full normal/100/1000"
+  ],
+  "independent_review": {
+    "path": "results/throughput-20260929/s4-p8-canon1-promotion-independent-v1.json",
+    "sha256": "36dd77ecf5978799a5a02def89b3658cae8c14acd4e6ff7d3524e0152463458c"
+  },
+  "method": "Read-only metadata/source archive hashing and exact text/typed contract checks plus bounded scalar frozen cycle function arithmetic; no GMP, NTT, HDL, vendor or native rerun.",
+  "preserved_history": [
+    {
+      "error": "ImportError(\"cannot import name 'stream27_host_chain_param_v2' from 'fpga.reference' (unknown location)\")",
+      "id": "s4-canon-pipe-aw5-p8-normal-q1-v1",
+      "reason": null,
+      "receipt": {
+        "path": "queue/done/s4-canon-pipe-aw5-p8-normal-q1-v1.json",
+        "sha256": "269d910727aaab8bc8bfc1a9612f3241210d17bd2872e329efd89322b191f8a8"
+      },
+      "status": "terminal_failure"
+    },
+    {
+      "error": null,
+      "id": "s4-canon-pipe-aw8-p8-normal-q1-v1",
+      "reason": "failed dependency: s4-canon-pipe-aw5-p8-normal-q1-v1 (terminal_failure)",
+      "receipt": {
+        "path": "queue/done/s4-canon-pipe-aw8-p8-normal-q1-v1.json",
+        "sha256": "d9e30df4516fb540b9a4e969061c725577059a486c54e52c93dc48e0ef03db92"
+      },
+      "status": "cancelled_unstarted_dependency_failure"
+    },
+    {
+      "error": null,
+      "id": "s4-aw16-p8-canon-pipe-host-normal-q1-v1",
+      "reason": "failed dependency: s4-canon-pipe-aw8-p8-normal-q1-v1 (cancelled_unstarted_dependency_failure)",
+      "receipt": {
+        "path": "queue/done/s4-aw16-p8-canon-pipe-host-normal-q1-v1.json",
+        "sha256": "65a6a21fd08d7300c339cb8d3b652f95cb5c84a934fb6e1f3a851ded484cd105"
+      },
+      "status": "cancelled_unstarted_dependency_failure"
+    },
+    {
+      "error": "ValueError('approved resized burst static pair')",
+      "id": "s4-p8-canon1-continuous1000-normal-q1-v1",
+      "reason": null,
+      "receipt": {
+        "path": "queue/done/s4-p8-canon1-continuous1000-normal-q1-v1.json",
+        "sha256": "706dd8c2d20d292f2c53d4e3147ad554b44b37638e168656c5e86531015ecd64"
+      },
+      "status": "terminal_failure"
+    }
+  ],
+  "producer": {
+    "path": "reference/stream27_p8_canon1_promotion_v1.py",
+    "sha256": "3fde6220087edd01bc8ec27d89345a6eab366e7456effd6d798362c57a7efe37"
+  },
+  "receipt_index": [
+    {
+      "author_does_not_claim_independent_replay": true,
+      "contracts": [
+        {
+          "argv": [
+            "{exe}"
+          ],
+          "expected_returncode": 0,
+          "name": "canonical-pipe-full-host-normal",
+          "validator": {
+            "assets": {},
+            "config": {
+              "aw": 16,
+              "base": 604832956,
+              "canonical_pipe_stages": 1,
+              "mode": "normal",
+              "p": 8
+            },
+            "function": "validate",
+            "source": "reference/stream27_host_chain_canonpipe_native_v1.py"
+          }
+        }
+      ],
+      "fitted49_join": true,
+      "gate": {
+        "path": "queue/evidence/s4-aw16-p8-canon-pipe-host-normal-q1-v2/gate-receipt.json",
+        "sha256": "127af58c5d44e11bc941800ca01d9ce6b16abe923124f058a81fb10a2d99b95e"
+      },
+      "host": "gfn16-azure-sim-f32",
+      "id": "s4-aw16-p8-canon-pipe-host-normal-q1-v2",
+      "manifest": {
+        "path": "queue/evidence/s4-aw16-p8-canon-pipe-host-normal-q1-v2/attempt-0/collected/output/native/approved-manifest.json",
+        "sha256": "0922d2462f54e228315bf9fd16aa4815e07b8a9be820e9d771c304dfd086f33e"
+      },
+      "metadata": {},
+      "model_threads": 1,
+      "numerical_recompute": false,
+      "overall_seconds": 934.7892635000007,
+      "report": {
+        "path": "queue/evidence/s4-aw16-p8-canon-pipe-host-normal-q1-v2/attempt-0/collected/output/native/report.json",
+        "sha256": "892d867b1162c9ea8a4d185732d2402dd970db9206263762e4ebd90755461423"
+      },
+      "role": "full_normal_and_cold_short",
+      "rtl_count": 60,
+      "source_archive": {
+        "path": "queue/evidence/s4-aw16-p8-canon-pipe-host-normal-q1-v2/attempt-0/collected/output/native/sources.tar.gz",
+        "sha256": "b51c1ca6059649f57f7d970f5a0ffd2ad201d42d43b41391543378bf37fbc865"
+      },
+      "source_count": 186,
+      "typed_results": [
+        {
+          "actual_returncode": 0,
+          "expected_returncode": 0,
+          "name": "canonical-pipe-full-host-normal",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "0c7d3fade8dbcc55a50d38d1ffc0a8d5f6cfcac74643642ed3fd79e6ccdfc46a",
+          "typed_validator_sha256": "500260043c9898826f506c8da7e29f9e93e9fb5fd521904460717dd3addac163",
+          "validation": {
+            "base": 604832956,
+            "canonical_pipe_stages": 1,
+            "counts": {
+              "backpressure_edges": 49955,
+              "candidate_cycles": 1477102,
+              "canonical_cycles": 1179648,
+              "copied_words": 131072,
+              "feed_descriptors": 7,
+              "fifo_peak": 4,
+              "full_exchanges": 3,
+              "image_copy_cycles": 131078,
+              "jobs": 2,
+              "operations": 9,
+              "paired_reads": 131072,
+              "partial_reads": 1,
+              "true_final_rows": 16384
+            },
+            "measured_t5b_wait_edges": 272282,
+            "scope": "Exact fullN9ops/two final images, all131072 signed96 T5b/reference words; new canonical register flag; not PRP/1000/physical clock/promotion.",
+            "status": "PASS_expected_contracts"
+          }
+        }
+      ]
+    },
+    {
+      "author_does_not_claim_independent_replay": true,
+      "contracts": [
+        {
+          "argv": [
+            "{exe}",
+            "{root}/assets/p8-eight-prp-v1.txt"
+          ],
+          "expected_returncode": 0,
+          "expected_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "expected_stdout_sha256": "eca36be83dae57e7013234260cd1e4ace1cbbb9e8fe5754e15a7cb6d69bdac3c",
+          "name": "p8-canon1-eight-prp-normal"
+        }
+      ],
+      "fitted49_join": false,
+      "gate": {
+        "path": "queue/evidence/s4-p8-canon1-eight-prp-normal-q1-v1/gate-receipt.json",
+        "sha256": "18257266d805f03bcde413a4423923d10f6fd8c9569665e9063c65f1f3166589"
+      },
+      "host": "gfn16-azure-sim-f32",
+      "id": "s4-p8-canon1-eight-prp-normal-q1-v1",
+      "manifest": {
+        "path": "queue/evidence/s4-p8-canon1-eight-prp-normal-q1-v1/attempt-0/collected/output/native/approved-manifest.json",
+        "sha256": "fd278bd81433671b474dd787fc96ce029a6837bdab0971e3678a69f10e2f2b6b"
+      },
+      "metadata": {
+        "canonical_qualification": {
+          "added_candidate_finalization_cycles_per_job": 96,
+          "baseline_native_result_not_inherited": true,
+          "canonical_pipe_stages": 1,
+          "donor_manifest_sha256": "f549e1d1b0c1953a21ddbb845228f77afb57597ef33387b0067be090546071e9",
+          "full_N_numeric_locally_performed": false,
+          "generated_sha256_map_digest": "9fbfdcfd3bef6256819feccb9aba3f6dbe415120a48981e8e380fb2b36205631",
+          "initial_states_and_oracle_assets_byte_preserved": true,
+          "mode": "normal",
+          "promotion_allowed": false,
+          "shared_compiler_sha256": "017f581581d3f832cbb511a278901afb0a9a59ae6ed14a8df6234641634aa102",
+          "source_sha256_map_digest": "66bfc869be5c00712cefe9f9f0e9872907536f2e6c82cb4d8f8e28f62ea7d494"
+        },
+        "p8_prp_qualification": {
+          "base_floor": 172,
+          "baseline_host_cycles": 637672,
+          "canonical_pipe_stages": 1,
+          "cases": [
+            {
+              "base": 173,
+              "baseline_cycles": 30560,
+              "bit_program_sha256": "5a9a098d34c51e71626dc98d4d573dbfe9d0fe6267c0243b5c2ee9a077531889",
+              "cycles": 30656,
+              "doubles": 102,
+              "index": 0,
+              "label": "composite",
+              "operations": 238,
+              "proof_metadata_sha256": "58f303c8feb4db43d41bb90f82fb5d9150f2ada0e9e915e6ce79b60c6ca64318"
+            },
+            {
+              "base": 176,
+              "baseline_cycles": 30687,
+              "bit_program_sha256": "0d1048ce0378242e3ae90e9d3b1bb687a6af3cac9d0f81f2c2270b67e89d8484",
+              "cycles": 30783,
+              "doubles": 49,
+              "index": 1,
+              "label": "composite",
+              "operations": 239,
+              "proof_metadata_sha256": "7b0e2e0e8ecad2752b82ece444aab089982fdd5976afe51108f6c2599e8acaaf"
+            },
+            {
+              "base": 448,
+              "baseline_cycles": 36148,
+              "bit_program_sha256": "0d377e9b947980d264f450a033e169bc40029862a19595f0df609d6e634f52fa",
+              "cycles": 36244,
+              "doubles": 40,
+              "index": 2,
+              "label": "prime",
+              "operations": 282,
+              "proof_metadata_sha256": "78b70459ed136be899c90e59831f82cf022f25fd03e6fea080dfcb863d42243d"
+            },
+            {
+              "base": 7552,
+              "baseline_cycles": 52785,
+              "bit_program_sha256": "9c54453848708b67eacef249fd39a52b2535c5192acf46ed6b711fcecf672273",
+              "cycles": 52881,
+              "doubles": 85,
+              "index": 3,
+              "label": "prime",
+              "operations": 413,
+              "proof_metadata_sha256": "5f09b86c93205b3bf26016a78f3b2c9b621353b6ccae6916f6135fbf52202bb6"
+            },
+            {
+              "base": 989233152,
+              "baseline_cycles": 121873,
+              "bit_program_sha256": "b0f6e843f0bffbe025ff5869b7529b3002ec0019de8d5868310c2a3da4f71a78",
+              "cycles": 121969,
+              "doubles": 220,
+              "index": 4,
+              "label": "prime",
+              "operations": 957,
+              "proof_metadata_sha256": "3eb4d9fce9a97ce92465c8715b0c2c4c9fbea43fc1966b703fc3cce5b8bf6bf6"
+            },
+            {
+              "base": 999999998,
+              "baseline_cycles": 121873,
+              "bit_program_sha256": "845992a7a55febc78916f07b9cc63e440c65c4f45284aabef4ec00814df0f7cb",
+              "cycles": 121969,
+              "doubles": 459,
+              "index": 5,
+              "label": "composite",
+              "operations": 957,
+              "proof_metadata_sha256": "6b069b1da3d27e8dda84256b22436754554291cc653f17f9aa341390965e492f"
+            },
+            {
+              "base": 999999999,
+              "baseline_cycles": 121873,
+              "bit_program_sha256": "1bcca89bd12040624013bd2f4aa998dfac178430d87997f7ca388aaeef1ed34c",
+              "cycles": 121969,
+              "doubles": 465,
+              "index": 6,
+              "label": "composite",
+              "operations": 957,
+              "proof_metadata_sha256": "58f303c8feb4db43d41bb90f82fb5d9150f2ada0e9e915e6ce79b60c6ca64318"
+            },
+            {
+              "base": 1000000000,
+              "baseline_cycles": 121873,
+              "bit_program_sha256": "257bc22d6bc5837d27fdb4ee7a1081949803acc70d35222883ab3d16a4a11996",
+              "cycles": 121969,
+              "doubles": 345,
+              "index": 7,
+              "label": "composite",
+              "operations": 957,
+              "proof_metadata_sha256": "002775f8fe3490703bfd594e256ac8bd1bad82df68f57cd349a99b89adc2c6a8"
+            }
+          ],
+          "host_cycles": 638440,
+          "operations": 5000,
+          "reads": 256,
+          "scope": "Own canonical1 eight complete AW5 PRPs, same frozen labels/bits/x0/pow words; persistent DUT and one initial load per PRP, no mid-PRP barrier; paired actual T5b/signed96 reads. Not fullN PRP/clock."
+        }
+      },
+      "model_threads": 1,
+      "numerical_recompute": false,
+      "overall_seconds": 552.9532946210002,
+      "report": {
+        "path": "queue/evidence/s4-p8-canon1-eight-prp-normal-q1-v1/attempt-0/collected/output/native/report.json",
+        "sha256": "89c76819658b54c92e3369157c8df39232d0358ea9172760b5a73a5dc86c2cd2"
+      },
+      "role": "eight_prps",
+      "rtl_count": 60,
+      "source_archive": {
+        "path": "queue/evidence/s4-p8-canon1-eight-prp-normal-q1-v1/attempt-0/collected/output/native/sources.tar.gz",
+        "sha256": "8d28125918c7b54f70fe19c0d05e58b6dc674e5c51bd142162d16930ded4b322"
+      },
+      "source_count": 267,
+      "typed_results": [
+        {
+          "actual_returncode": 0,
+          "expected_returncode": 0,
+          "name": "p8-canon1-eight-prp-normal",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "eca36be83dae57e7013234260cd1e4ace1cbbb9e8fe5754e15a7cb6d69bdac3c",
+          "typed_validator_sha256": null,
+          "validation": null
+        }
+      ]
+    },
+    {
+      "author_does_not_claim_independent_replay": true,
+      "contracts": [
+        {
+          "argv": [
+            "{exe}"
+          ],
+          "expected_returncode": 0,
+          "expected_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "expected_stdout_sha256": "248867d9e734d25525543a6ba281978eb0bf1d6e97ce378a617160df5a121073",
+          "name": "p8-canon1-minimal-reset-cancellation"
+        },
+        {
+          "argv": [
+            "{exe}",
+            "--negative-oracle"
+          ],
+          "expected_returncode": 1,
+          "expected_stderr_sha256": "73adf90f333c637cb468bd40b001e7d296156e9250551820f9f306d53d3e895e",
+          "expected_stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "name": "p8-canon1-typed-oracle-negative"
+        }
+      ],
+      "fitted49_join": false,
+      "gate": {
+        "path": "queue/evidence/s4-p8-canon1-host-faults-q1-v1/gate-receipt.json",
+        "sha256": "8e454597c53d727cc7d5bd7353f33da028ca1c96116efd3308a9732288e11095"
+      },
+      "host": "gfn16-azure-sim-f32",
+      "id": "s4-p8-canon1-host-faults-q1-v1",
+      "manifest": {
+        "path": "queue/evidence/s4-p8-canon1-host-faults-q1-v1/attempt-0/collected/output/native/approved-manifest.json",
+        "sha256": "179832050fcf7ad614190610feebd80e61aa1a697432084a15e9c15826a2776e"
+      },
+      "metadata": {
+        "canonical_qualification": {
+          "added_candidate_finalization_cycles_per_job": 96,
+          "baseline_native_result_not_inherited": true,
+          "canonical_pipe_stages": 1,
+          "donor_manifest_sha256": "f549e1d1b0c1953a21ddbb845228f77afb57597ef33387b0067be090546071e9",
+          "full_N_numeric_locally_performed": false,
+          "generated_sha256_map_digest": "9fbfdcfd3bef6256819feccb9aba3f6dbe415120a48981e8e380fb2b36205631",
+          "initial_states_and_oracle_assets_byte_preserved": true,
+          "mode": "faults",
+          "promotion_allowed": false,
+          "shared_compiler_sha256": "017f581581d3f832cbb511a278901afb0a9a59ae6ed14a8df6234641634aa102",
+          "source_sha256_map_digest": "66bfc869be5c00712cefe9f9f0e9872907536f2e6c82cb4d8f8e28f62ea7d494"
+        }
+      },
+      "model_threads": 1,
+      "numerical_recompute": false,
+      "overall_seconds": 335.0376718209991,
+      "report": {
+        "path": "queue/evidence/s4-p8-canon1-host-faults-q1-v1/attempt-0/collected/output/native/report.json",
+        "sha256": "f3543ab076fc3476f0f1cbff9933aef19166e0b675b33fe80ba03e279ee6ef91"
+      },
+      "role": "whole_host_faults",
+      "rtl_count": 60,
+      "source_archive": {
+        "path": "queue/evidence/s4-p8-canon1-host-faults-q1-v1/attempt-0/collected/output/native/sources.tar.gz",
+        "sha256": "bc2e6eca373219f73ed469c18cac617587b58ec909d940f91b5f3a0c093fcf3a"
+      },
+      "source_count": 267,
+      "typed_results": [
+        {
+          "actual_returncode": 0,
+          "expected_returncode": 0,
+          "name": "p8-canon1-minimal-reset-cancellation",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "248867d9e734d25525543a6ba281978eb0bf1d6e97ce378a617160df5a121073",
+          "typed_validator_sha256": null,
+          "validation": null
+        },
+        {
+          "actual_returncode": 1,
+          "expected_returncode": 1,
+          "name": "p8-canon1-typed-oracle-negative",
+          "stderr_sha256": "73adf90f333c637cb468bd40b001e7d296156e9250551820f9f306d53d3e895e",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "typed_validator_sha256": null,
+          "validation": null
+        }
+      ]
+    },
+    {
+      "author_does_not_claim_independent_replay": true,
+      "contracts": [
+        {
+          "argv": [
+            "{exe}",
+            "100"
+          ],
+          "expected_returncode": 0,
+          "expected_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "name": "stream27-s4-continuous-normal",
+          "validator": {
+            "assets": {
+              "plan": "continuous/plan.json"
+            },
+            "config": {
+              "canonical_pipe_stages": 1,
+              "negative": "none",
+              "operations": 100
+            },
+            "function": "validate",
+            "source": "reference/stream27_s4_continuous_v1.py"
+          }
+        }
+      ],
+      "fitted49_join": true,
+      "gate": {
+        "path": "queue/evidence/s4-p8-canon1-continuous100-normal-q1-v1/gate-receipt.json",
+        "sha256": "14a72ca67eac01d6b34c8b8c62cb51d3780c577f9e0b82f61f378a8120b4b634"
+      },
+      "host": "gfn16-azure-sim-f32",
+      "id": "s4-p8-canon1-continuous100-normal-q1-v1",
+      "manifest": {
+        "path": "queue/evidence/s4-p8-canon1-continuous100-normal-q1-v1/attempt-0/collected/output/native/approved-manifest.json",
+        "sha256": "55f12ad04bad5a88a82092d8c7670f6c67ab1478fec01332928fc6632717c0ff"
+      },
+      "metadata": {
+        "continuous": {
+          "T5b_compiled_but_dormant": true,
+          "canonical_pipe_stages": 1,
+          "counts_ordinary_source_projection": {
+            "backpressure_edges": 1582038,
+            "candidate_cycles": 2328962,
+            "canonical_cycles": 589824,
+            "case_id": "92f1b494a6f24f26a5b058739402d02351e29609775e675341d7db07d79099da",
+            "conversion_cycles": 8192,
+            "copy_cycles": 65539,
+            "doubles": 50,
+            "feed_descriptors": 99,
+            "fifo_peak": 4,
+            "final_rows": 8192,
+            "full_exchanges": 95,
+            "loaded_digits": 65536,
+            "loads": 1,
+            "operations": 100,
+            "profile_hits": 0,
+            "profile_loads": 1,
+            "readbacks": 1,
+            "resets": 1,
+            "root_cycles": 99,
+            "signed96_words": 65536,
+            "special": 0,
+            "starts": 1,
+            "words": 65536
+          },
+          "full_N_math_locally_performed": false,
+          "operations": 100,
+          "original_RTL_unchanged": true,
+          "plan": {
+            "candidate_root_sha256": "140e2b306e39a5fba02046917d0733eb31ed1e2f9c80f81be7fd086181b8c051",
+            "case_id": "92f1b494a6f24f26a5b058739402d02351e29609775e675341d7db07d79099da",
+            "contract": "ONE reset/load/start; dependent FIFO; final-only canonical/copy/full readback, no per-square host barrier.",
+            "double_bits_sha256": "6b3c4fc0a0647fa6cea313f1d832ccaff3a40f4ba15866db0a478d5db73d3325",
+            "geometry": {
+              "carry_done": 24847,
+              "cold_first": 102,
+              "first_digit": 16652,
+              "interval": 16653
+            },
+            "initial": {
+              "algorithm": "xorshift32 unsigned modulo base",
+              "full_nontrivial_dense": true,
+              "seed": 2436217383,
+              "signed_minus_one_positions": [
+                17,
+                65535
+              ]
+            },
+            "maximum_operations": 1000,
+            "ntt_sha256": "c7837ba92829293131efda704dfdde347708641bf9aff46dccbcb87b825ba390",
+            "profile": {
+              "aw": 16,
+              "base": 604832956,
+              "canonical_pipe_stages": 1,
+              "contexts": 1,
+              "epoch_seed": 65534,
+              "n": 65536,
+              "p": 8
+            },
+            "reference_sha256": "88849a77ad7c58fc99f6d56eeded2a772a78fbe2b2da03fabdf7ac71aaf12c54",
+            "schema": "stream27-s4-continuous-plan-v1"
+          },
+          "requested_scope": "one continuous100-operation timing pilot"
+        }
+      },
+      "model_threads": 1,
+      "numerical_recompute": false,
+      "overall_seconds": 1091.909514609999,
+      "report": {
+        "path": "queue/evidence/s4-p8-canon1-continuous100-normal-q1-v1/attempt-0/collected/output/native/report.json",
+        "sha256": "dc67f76568b375c72832d4a35fd1e6b977c7aeb303d98bb5223e60cb5768d242"
+      },
+      "role": "continuous100",
+      "rtl_count": 60,
+      "source_archive": {
+        "path": "queue/evidence/s4-p8-canon1-continuous100-normal-q1-v1/attempt-0/collected/output/native/sources.tar.gz",
+        "sha256": "d6827a6d4187ffa078e5f5e7fb3d3122a7d26f01f1266c3bbe1eda331a9d95bb"
+      },
+      "source_count": 192,
+      "typed_results": [
+        {
+          "actual_returncode": 0,
+          "expected_returncode": 0,
+          "name": "stream27-s4-continuous-normal",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "e9fdb05f25d2673a7b985dd53d925cf3b02ca784b3b573a12f9da4a0c2a4a9b2",
+          "typed_validator_sha256": "31f7f62d9a8c37b01aa438720748473d4e1dbf1b72ee6be6d649a8e3d6063711",
+          "validation": {
+            "base": 604832956,
+            "candidate": "canonical-pipe1-P8-context1",
+            "candidate_root_sha256": "140e2b306e39a5fba02046917d0733eb31ed1e2f9c80f81be7fd086181b8c051",
+            "canonical_pipe_stages": 1,
+            "counts": {
+              "backpressure_edges": 1582038,
+              "candidate_cycles": 2328962,
+              "canonical_cycles": 589824,
+              "case_id": "92f1b494a6f24f26a5b058739402d02351e29609775e675341d7db07d79099da",
+              "conversion_cycles": 8192,
+              "copy_cycles": 65539,
+              "doubles": 50,
+              "feed_descriptors": 99,
+              "fifo_peak": 4,
+              "final_rows": 8192,
+              "full_exchanges": 95,
+              "loaded_digits": 65536,
+              "loads": 1,
+              "operations": 100,
+              "profile_hits": 0,
+              "profile_loads": 1,
+              "readbacks": 1,
+              "resets": 1,
+              "root_cycles": 99,
+              "signed96_words": 65536,
+              "special": 0,
+              "starts": 1,
+              "words": 65536
+            },
+            "final_actual_sha256": "d2178c685400efad6743e0dc9d8c50c7a6c49cdae04724e54445c53ec9fe5f30",
+            "final_expected_sha256": "d2178c685400efad6743e0dc9d8c50c7a6c49cdae04724e54445c53ec9fe5f30",
+            "independent_reference_equal": true,
+            "operations": 100,
+            "phase_wall_ms": {
+              "candidate_ms": 707827,
+              "read_ms": 19244,
+              "reference_ms": 4640
+            },
+            "promotion_allowed": false,
+            "scope": "ONE actually dependent FIFO job, exact source-selected49; independent reference is native-only, T5b dormant, not full PRP/clock or inherited9/25/100-op result.",
+            "status": "PASS_expected_contracts",
+            "uninterrupted_1000_native": false
+          }
+        }
+      ]
+    },
+    {
+      "author_does_not_claim_independent_replay": true,
+      "contracts": [
+        {
+          "argv": [
+            "{exe}",
+            "1000"
+          ],
+          "expected_returncode": 0,
+          "expected_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "name": "stream27-s4-continuous-normal",
+          "validator": {
+            "assets": {
+              "plan": "continuous/plan.json"
+            },
+            "config": {
+              "canonical_pipe_stages": 1,
+              "negative": "none",
+              "operations": 1000
+            },
+            "function": "validate",
+            "source": "reference/stream27_s4_continuous_v1.py"
+          }
+        }
+      ],
+      "fitted49_join": true,
+      "gate": {
+        "path": "queue/evidence/s4-p8-canon1-continuous1000-normal-q1-v2/gate-receipt.json",
+        "sha256": "9680104042db6ebc1536aa911eb5f91302450ac8c18aba0c26a4c26c07c47f7f"
+      },
+      "host": "gfn16-azure-sim-f32",
+      "id": "s4-p8-canon1-continuous1000-normal-q1-v2",
+      "manifest": {
+        "path": "queue/evidence/s4-p8-canon1-continuous1000-normal-q1-v2/attempt-0/collected/output/native/approved-manifest.json",
+        "sha256": "dff24fdca19bc83659085921a6ec6424c9c88f5ada9a85a119b1faaaf59b49ed"
+      },
+      "metadata": {
+        "continuous": {
+          "T5b_compiled_but_dormant": true,
+          "canonical_pipe_stages": 1,
+          "counts_ordinary_source_projection": {
+            "backpressure_edges": 16568838,
+            "candidate_cycles": 17316662,
+            "canonical_cycles": 589824,
+            "case_id": "92f1b494a6f24f26a5b058739402d02351e29609775e675341d7db07d79099da",
+            "conversion_cycles": 8192,
+            "copy_cycles": 65539,
+            "doubles": 500,
+            "feed_descriptors": 999,
+            "fifo_peak": 4,
+            "final_rows": 8192,
+            "full_exchanges": 995,
+            "loaded_digits": 65536,
+            "loads": 1,
+            "operations": 1000,
+            "profile_hits": 0,
+            "profile_loads": 1,
+            "readbacks": 1,
+            "resets": 1,
+            "root_cycles": 99,
+            "signed96_words": 65536,
+            "special": 0,
+            "starts": 1,
+            "words": 65536
+          },
+          "full_N_math_locally_performed": false,
+          "operations": 1000,
+          "original_RTL_unchanged": true,
+          "plan": {
+            "candidate_root_sha256": "140e2b306e39a5fba02046917d0733eb31ed1e2f9c80f81be7fd086181b8c051",
+            "case_id": "92f1b494a6f24f26a5b058739402d02351e29609775e675341d7db07d79099da",
+            "contract": "ONE reset/load/start; dependent FIFO; final-only canonical/copy/full readback, no per-square host barrier.",
+            "double_bits_sha256": "6b3c4fc0a0647fa6cea313f1d832ccaff3a40f4ba15866db0a478d5db73d3325",
+            "geometry": {
+              "carry_done": 24847,
+              "cold_first": 102,
+              "first_digit": 16652,
+              "interval": 16653
+            },
+            "initial": {
+              "algorithm": "xorshift32 unsigned modulo base",
+              "full_nontrivial_dense": true,
+              "seed": 2436217383,
+              "signed_minus_one_positions": [
+                17,
+                65535
+              ]
+            },
+            "maximum_operations": 1000,
+            "ntt_sha256": "c7837ba92829293131efda704dfdde347708641bf9aff46dccbcb87b825ba390",
+            "profile": {
+              "aw": 16,
+              "base": 604832956,
+              "canonical_pipe_stages": 1,
+              "contexts": 1,
+              "epoch_seed": 65534,
+              "n": 65536,
+              "p": 8
+            },
+            "reference_sha256": "88849a77ad7c58fc99f6d56eeded2a772a78fbe2b2da03fabdf7ac71aaf12c54",
+            "schema": "stream27-s4-continuous-plan-v1"
+          },
+          "requested_scope": "uninterrupted1000"
+        }
+      },
+      "model_threads": 1,
+      "numerical_recompute": false,
+      "overall_seconds": 5876.4471759809985,
+      "report": {
+        "path": "queue/evidence/s4-p8-canon1-continuous1000-normal-q1-v2/attempt-0/collected/output/native/report.json",
+        "sha256": "019024a90e375e7cb2864723920ad647c3692109b17c4fd793794033ebc7846e"
+      },
+      "role": "continuous1000",
+      "rtl_count": 60,
+      "source_archive": {
+        "path": "queue/evidence/s4-p8-canon1-continuous1000-normal-q1-v2/attempt-0/collected/output/native/sources.tar.gz",
+        "sha256": "d29b54811eb6864f3999eedae496547e0c55587b3140a5c5d9bea3b60b2e217b"
+      },
+      "source_count": 202,
+      "typed_results": [
+        {
+          "actual_returncode": 0,
+          "expected_returncode": 0,
+          "name": "stream27-s4-continuous-normal",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "0de2017cf9b474e6b5010899ee3a79af2f97d89a46f58a87d01abfef2a6ae5f8",
+          "typed_validator_sha256": "7048b3e20e9144a91caea8c7af81ec94c12e7169a9ed1cd4acaa49222380c733",
+          "validation": {
+            "base": 604832956,
+            "candidate": "canonical-pipe1-P8-context1",
+            "candidate_root_sha256": "140e2b306e39a5fba02046917d0733eb31ed1e2f9c80f81be7fd086181b8c051",
+            "canonical_pipe_stages": 1,
+            "counts": {
+              "backpressure_edges": 16568838,
+              "candidate_cycles": 17316662,
+              "canonical_cycles": 589824,
+              "case_id": "92f1b494a6f24f26a5b058739402d02351e29609775e675341d7db07d79099da",
+              "conversion_cycles": 8192,
+              "copy_cycles": 65539,
+              "doubles": 500,
+              "feed_descriptors": 999,
+              "fifo_peak": 4,
+              "final_rows": 8192,
+              "full_exchanges": 995,
+              "loaded_digits": 65536,
+              "loads": 1,
+              "operations": 1000,
+              "profile_hits": 0,
+              "profile_loads": 1,
+              "readbacks": 1,
+              "resets": 1,
+              "root_cycles": 99,
+              "signed96_words": 65536,
+              "special": 0,
+              "starts": 1,
+              "words": 65536
+            },
+            "final_actual_sha256": "1f8d6dc3b8ce600339f4454e4b8458abad2ab107b943fae131667bd4a4150cdb",
+            "final_expected_sha256": "1f8d6dc3b8ce600339f4454e4b8458abad2ab107b943fae131667bd4a4150cdb",
+            "independent_reference_equal": true,
+            "operations": 1000,
+            "phase_wall_ms": {
+              "candidate_ms": 5486991,
+              "read_ms": 19443,
+              "reference_ms": 44329
+            },
+            "promotion_allowed": false,
+            "scope": "ONE actually dependent FIFO job, exact source-selected49; independent reference is native-only, T5b dormant, not full PRP/clock or inherited9/25/100-op result.",
+            "status": "PASS_expected_contracts",
+            "uninterrupted_1000_native": true
+          }
+        }
+      ]
+    },
+    {
+      "author_does_not_claim_independent_replay": true,
+      "contracts": [
+        {
+          "argv": [
+            "{exe}"
+          ],
+          "expected_returncode": 0,
+          "name": "canonical-pipe-normal",
+          "validator": {
+            "assets": {},
+            "config": {
+              "aw": 5,
+              "p": 8
+            },
+            "function": "validate",
+            "source": "reference/stream27_canonical_pipe_v1.py"
+          }
+        }
+      ],
+      "fitted49_join": false,
+      "gate": {
+        "path": "queue/evidence/s4-canon-pipe-aw5-p8-normal-q1-v2/gate-receipt.json",
+        "sha256": "a93beca834a661e76f68c33ae522a9c9cc3914bbd48d21177a54ce16016384c4"
+      },
+      "host": "gfn16-azure-sim-f32",
+      "id": "s4-canon-pipe-aw5-p8-normal-q1-v2",
+      "manifest": {
+        "path": "queue/evidence/s4-canon-pipe-aw5-p8-normal-q1-v2/attempt-0/collected/output/native/approved-manifest.json",
+        "sha256": "e9c4e033dcff1fc1dc58e401d33dc4e379ebe6a213af5907ae0d5f10bdd2df4c"
+      },
+      "metadata": {
+        "canonical_pipe": {
+          "added_cycles": 96,
+          "counts": {
+            "cases": 42,
+            "cycles": 12224,
+            "normal": 38,
+            "reads": 1344,
+            "special": 4
+          },
+          "flag": "CANONICAL_PIPE_STAGES=1",
+          "full_N_numeric_locally_performed": false,
+          "normal_cycles": 288,
+          "normal_only": true,
+          "read_request_to_response": 1,
+          "special_cycles": 320,
+          "warm_delta": 0
+        }
+      },
+      "model_threads": 1,
+      "numerical_recompute": false,
+      "overall_seconds": 4.111432202999822,
+      "report": {
+        "path": "queue/evidence/s4-canon-pipe-aw5-p8-normal-q1-v2/attempt-0/collected/output/native/report.json",
+        "sha256": "2ce5094bc63bf1d29a6b1935c9ca9c4defd449e3889ed3e66551bb38a025c4c3"
+      },
+      "role": "leaf_aw5_normal",
+      "rtl_count": 2,
+      "source_archive": {
+        "path": "queue/evidence/s4-canon-pipe-aw5-p8-normal-q1-v2/attempt-0/collected/output/native/sources.tar.gz",
+        "sha256": "77f5c7f38e2e85a85e7b1aedb69f97b9e1ec48a85001bb57e7fb1b184b6dd378"
+      },
+      "source_count": 62,
+      "typed_results": [
+        {
+          "actual_returncode": 0,
+          "expected_returncode": 0,
+          "name": "canonical-pipe-normal",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "87b0463da17ad7f989319402b6a4c777f60279df1f7b22eb593b75734b049c13",
+          "typed_validator_sha256": "995e996e4bcfb7e530f267e1d6b076c5a4be50331fe3cc927400f2a1495e464c",
+          "validation": {
+            "counts": {
+              "cases": 42,
+              "cycles": 12224,
+              "normal": 38,
+              "reads": 1344,
+              "special": 4
+            },
+            "scope": "42 standalone normal images, all signed96 words and exact9N/10N latency; not whole-host/warm/clock/promotion.",
+            "status": "PASS_expected_contracts"
+          }
+        }
+      ]
+    },
+    {
+      "author_does_not_claim_independent_replay": true,
+      "contracts": [
+        {
+          "argv": [
+            "{exe}"
+          ],
+          "expected_returncode": 0,
+          "name": "canonical-pipe-normal",
+          "validator": {
+            "assets": {},
+            "config": {
+              "aw": 8,
+              "p": 8
+            },
+            "function": "validate",
+            "source": "reference/stream27_canonical_pipe_v1.py"
+          }
+        }
+      ],
+      "fitted49_join": false,
+      "gate": {
+        "path": "queue/evidence/s4-canon-pipe-aw8-p8-normal-q1-v2/gate-receipt.json",
+        "sha256": "e7b4f71c839cf4abab481ced16a61d2e3570613b023a5900fac5d6d196318aaa"
+      },
+      "host": "gfn16-azure-sim-f32",
+      "id": "s4-canon-pipe-aw8-p8-normal-q1-v2",
+      "manifest": {
+        "path": "queue/evidence/s4-canon-pipe-aw8-p8-normal-q1-v2/attempt-0/collected/output/native/approved-manifest.json",
+        "sha256": "5263ce203a2168c82b1fc0e62b6c24006951655cbb7790055e354615838ed2f4"
+      },
+      "metadata": {
+        "canonical_pipe": {
+          "added_cycles": 768,
+          "counts": {
+            "cases": 42,
+            "cycles": 97792,
+            "normal": 38,
+            "reads": 10752,
+            "special": 4
+          },
+          "flag": "CANONICAL_PIPE_STAGES=1",
+          "full_N_numeric_locally_performed": false,
+          "normal_cycles": 2304,
+          "normal_only": true,
+          "read_request_to_response": 1,
+          "special_cycles": 2560,
+          "warm_delta": 0
+        }
+      },
+      "model_threads": 1,
+      "numerical_recompute": false,
+      "overall_seconds": 4.137485236999964,
+      "report": {
+        "path": "queue/evidence/s4-canon-pipe-aw8-p8-normal-q1-v2/attempt-0/collected/output/native/report.json",
+        "sha256": "3bc0abdb771d79a83c3f94f4f1245b53640cc290f05bfa16d5b6d07aa8868f63"
+      },
+      "role": "leaf_aw8_normal",
+      "rtl_count": 2,
+      "source_archive": {
+        "path": "queue/evidence/s4-canon-pipe-aw8-p8-normal-q1-v2/attempt-0/collected/output/native/sources.tar.gz",
+        "sha256": "dec624bae57e5246c9c4228054adbc9340a56d7e9ef3d0caabdbc0cb564c761f"
+      },
+      "source_count": 62,
+      "typed_results": [
+        {
+          "actual_returncode": 0,
+          "expected_returncode": 0,
+          "name": "canonical-pipe-normal",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "7d387aad303e2a6737a98fb14e6164ae1debb3afad533dfc7f9f54e6acd44081",
+          "typed_validator_sha256": "88838c2aca7a92f399581af776141125399ced2c4561590e001e9d00e017ed56",
+          "validation": {
+            "counts": {
+              "cases": 42,
+              "cycles": 97792,
+              "normal": 38,
+              "reads": 10752,
+              "special": 4
+            },
+            "scope": "42 standalone normal images, all signed96 words and exact9N/10N latency; not whole-host/warm/clock/promotion.",
+            "status": "PASS_expected_contracts"
+          }
+        }
+      ]
+    },
+    {
+      "author_does_not_claim_independent_replay": true,
+      "contracts": [
+        {
+          "argv": [
+            "{exe}"
+          ],
+          "expected_returncode": 0,
+          "expected_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "expected_stdout_sha256": "ab7a12bc163c39e4386c40071fcde0aeef891b9cdbaf8c3e671c83051aea0764",
+          "name": "canonical-pipe-range-reset"
+        },
+        {
+          "argv": [
+            "{exe}",
+            "--wrong-word"
+          ],
+          "expected_returncode": 1,
+          "expected_stderr_sha256": "5e2a14f9afb1e23a67c985e75a9324876d25117d235a469f3c82a32086c68d78",
+          "expected_stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "name": "canonical-pipe-wrong-word"
+        }
+      ],
+      "fitted49_join": false,
+      "gate": {
+        "path": "queue/evidence/s4-canon-pipe-aw5-p8-fault-q1-v1/gate-receipt.json",
+        "sha256": "2660108e7953f3a30eab5425077c88497817263ff0edf45132308a2a727c01b6"
+      },
+      "host": "gfn16-pilot-c4d",
+      "id": "s4-canon-pipe-aw5-p8-fault-q1-v1",
+      "manifest": {
+        "path": "queue/evidence/s4-canon-pipe-aw5-p8-fault-q1-v1/attempt-0/collected/output/native/approved-manifest.json",
+        "sha256": "98df3bcf7266ed3b28ccba75ce882983230d4e9e6051852fc27fa80302947400"
+      },
+      "metadata": {},
+      "model_threads": 1,
+      "numerical_recompute": false,
+      "overall_seconds": 3.927983301997301,
+      "report": {
+        "path": "queue/evidence/s4-canon-pipe-aw5-p8-fault-q1-v1/attempt-0/collected/output/native/report.json",
+        "sha256": "72455da8590f2fb3a86131ffaad62d865d44512002ebe04c407d3f278822b47d"
+      },
+      "role": "leaf_faults",
+      "rtl_count": 2,
+      "source_archive": {
+        "path": "queue/evidence/s4-canon-pipe-aw5-p8-fault-q1-v1/attempt-0/collected/output/native/sources.tar.gz",
+        "sha256": "0da910beb1aef7f999d8b8c3fad32b588432d87c035ce1120fbfd8ef17d3a2e7"
+      },
+      "source_count": 24,
+      "typed_results": [
+        {
+          "actual_returncode": 0,
+          "expected_returncode": 0,
+          "name": "canonical-pipe-range-reset",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "ab7a12bc163c39e4386c40071fcde0aeef891b9cdbaf8c3e671c83051aea0764",
+          "typed_validator_sha256": null,
+          "validation": null
+        },
+        {
+          "actual_returncode": 1,
+          "expected_returncode": 1,
+          "name": "canonical-pipe-wrong-word",
+          "stderr_sha256": "5e2a14f9afb1e23a67c985e75a9324876d25117d235a469f3c82a32086c68d78",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "typed_validator_sha256": null,
+          "validation": null
+        }
+      ]
+    }
+  ],
+  "remaining": [
+    "Advisor verification and main adoption; no author self-promotion"
+  ],
+  "sample_ledger": {
+    "base": 604832956,
+    "bit_convention": "K=floor(N*log2(base))+1 includes leading exponent bit; x0=1 and every bit performs square then optional double. Sample full PRP not executed.",
+    "cached_alternate_cycles": 31838102105,
+    "cached_alternate_seconds": "407.97344037347",
+    "canonical_and_copy_occurrences": 1,
+    "canonical_normal_cycles": 589824,
+    "carry_done": 24847,
+    "cold_primary_cycles": 31838102204,
+    "cold_primary_seconds": "407.973441642056",
+    "cold_setup_extra_cycles": 99,
+    "copy_cycles": 65539,
+    "equation": "102 + (1911814-1)*16653 + 24847 + 2 + 9*65536 + 65536 + 4",
+    "first_field_accept_cached": 3,
+    "first_field_accept_cold": 102,
+    "method": "Frozen scalar functions only; no full-N arithmetic/oracle run.",
+    "n": 65536,
+    "operations": 1911814,
+    "p": 8,
+    "scope": "Compute-only source-ledger projection: cold setup and one ordinary final canonical/copy included; initial host load, final host readback, board I/O, stalls/gaps and measured full PRP excluded.",
+    "selected_frequency_mhz": "78.03964413922272514437334166",
+    "selected_period_ns": "12.814",
+    "sentinel_alternate_extra_cycles": 65536,
+    "source_functions": [
+      {
+        "path": "reference/stream27_host_chain_v1.py",
+        "sha256": "0ca7724092b7b93dfe5976f8dac023cf90aab7a483e877cc3f126acee04c3759"
+      },
+      {
+        "path": "reference/stream27_host_chain_param_v3.py",
+        "sha256": "017f581581d3f832cbb511a278901afb0a9a59ae6ed14a8df6234641634aa102"
+      }
+    ],
+    "warm_interval": 16653
+  },
+  "schema": "stream27-p8-canon1-promotion-author-handoff-v1",
+  "scope_limits": [
+    "No executed full-size sample PRP or board runtime",
+    "100/1000 dense signed mixed-bit chain is not the complete sample PRP",
+    "No component clock inheritance or P16/r75 source inheritance",
+    "Recovery/removal audit reports no paths, not asynchronous reset-release signoff",
+    "Minimal whole-host controls do not claim exhaustive malformed descriptor/fault coverage",
+    "No standalone new canonical1 short ticket: own full9 contains exact cold1 and cached8 stopped jobs"
+  ],
+  "selected_layout_audits": [
+    {
+      "corners": {
+        "Fast 900mV 0C Model": {
+          "hold": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 0.014,
+            "status": "measured",
+            "tns_ns": 0.0
+          },
+          "mpw": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 6.02,
+            "status": "measured",
+            "tns_ns": 0.0
+          },
+          "recovery": {
+            "failing_endpoints": null,
+            "slack_ns": null,
+            "status": "excluded_no_paths",
+            "tns_ns": null
+          },
+          "removal": {
+            "failing_endpoints": null,
+            "slack_ns": null,
+            "status": "excluded_no_paths",
+            "tns_ns": null
+          },
+          "setup": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 5.809,
+            "status": "measured",
+            "tns_ns": 0.0
+          }
+        },
+        "Fast 900mV 100C Model": {
+          "hold": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 0.017,
+            "status": "measured",
+            "tns_ns": 0.0
+          },
+          "mpw": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 6.022,
+            "status": "measured",
+            "tns_ns": 0.0
+          },
+          "recovery": {
+            "failing_endpoints": null,
+            "slack_ns": null,
+            "status": "excluded_no_paths",
+            "tns_ns": null
+          },
+          "removal": {
+            "failing_endpoints": null,
+            "slack_ns": null,
+            "status": "excluded_no_paths",
+            "tns_ns": null
+          },
+          "setup": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 4.642,
+            "status": "measured",
+            "tns_ns": 0.0
+          }
+        },
+        "Slow 900mV 0C Model": {
+          "hold": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 0.022,
+            "status": "measured",
+            "tns_ns": 0.0
+          },
+          "mpw": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 5.757,
+            "status": "measured",
+            "tns_ns": 0.0
+          },
+          "recovery": {
+            "failing_endpoints": null,
+            "slack_ns": null,
+            "status": "excluded_no_paths",
+            "tns_ns": null
+          },
+          "removal": {
+            "failing_endpoints": null,
+            "slack_ns": null,
+            "status": "excluded_no_paths",
+            "tns_ns": null
+          },
+          "setup": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 0.001,
+            "status": "measured",
+            "tns_ns": 0.0
+          }
+        },
+        "Slow 900mV 100C Model": {
+          "hold": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 0.061,
+            "status": "measured",
+            "tns_ns": 0.0
+          },
+          "mpw": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 5.845,
+            "status": "measured",
+            "tns_ns": 0.0
+          },
+          "recovery": {
+            "failing_endpoints": null,
+            "slack_ns": null,
+            "status": "excluded_no_paths",
+            "tns_ns": null
+          },
+          "removal": {
+            "failing_endpoints": null,
+            "slack_ns": null,
+            "status": "excluded_no_paths",
+            "tns_ns": null
+          },
+          "setup": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 0.175,
+            "status": "measured",
+            "tns_ns": 0.0
+          }
+        }
+      },
+      "observed_failing_setup_paths": 0,
+      "observed_setup_paths": 4000,
+      "original_tree_sha256": "d806de239793593c2848a4d698f6f26b016ee8ef6f3183b8920e8c69973872be",
+      "period_ns": 12.814,
+      "qdb_inventory_sha256": "1f9020e55c3cd7546b0a8af49a5fbb9984949a3f3b88a26757345fbbccef89a4",
+      "receipt": {
+        "path": "queue/standing-fit-state/audit-terminal/s4-p8-canonical-pipe-whole-10000-v1-audit5/receipt.json",
+        "sha256": "00ec056e1023007b15fcae2e106c4d95902f40b66928f4a1e414adbdab97ad06"
+      },
+      "scope": "Same saved whole layout; four-corner scoped internal STA, virtual I/O, recovery/removal excluded_no_paths; not board/reset-release or exhaustive maximum clock.",
+      "timing_closes": true
+    },
+    {
+      "corners": {
+        "Fast 900mV 0C Model": {
+          "hold": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 0.014,
+            "status": "measured",
+            "tns_ns": 0.0
+          },
+          "mpw": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 6.019,
+            "status": "measured",
+            "tns_ns": 0.0
+          },
+          "recovery": {
+            "failing_endpoints": null,
+            "slack_ns": null,
+            "status": "excluded_no_paths",
+            "tns_ns": null
+          },
+          "removal": {
+            "failing_endpoints": null,
+            "slack_ns": null,
+            "status": "excluded_no_paths",
+            "tns_ns": null
+          },
+          "setup": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 5.807,
+            "status": "measured",
+            "tns_ns": 0.0
+          }
+        },
+        "Fast 900mV 100C Model": {
+          "hold": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 0.017,
+            "status": "measured",
+            "tns_ns": 0.0
+          },
+          "mpw": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 6.021,
+            "status": "measured",
+            "tns_ns": 0.0
+          },
+          "recovery": {
+            "failing_endpoints": null,
+            "slack_ns": null,
+            "status": "excluded_no_paths",
+            "tns_ns": null
+          },
+          "removal": {
+            "failing_endpoints": null,
+            "slack_ns": null,
+            "status": "excluded_no_paths",
+            "tns_ns": null
+          },
+          "setup": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 4.64,
+            "status": "measured",
+            "tns_ns": 0.0
+          }
+        },
+        "Slow 900mV 0C Model": {
+          "hold": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 0.022,
+            "status": "measured",
+            "tns_ns": 0.0
+          },
+          "mpw": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 5.756,
+            "status": "measured",
+            "tns_ns": 0.0
+          },
+          "recovery": {
+            "failing_endpoints": null,
+            "slack_ns": null,
+            "status": "excluded_no_paths",
+            "tns_ns": null
+          },
+          "removal": {
+            "failing_endpoints": null,
+            "slack_ns": null,
+            "status": "excluded_no_paths",
+            "tns_ns": null
+          },
+          "setup": {
+            "closes": false,
+            "failing_endpoints": 1,
+            "slack_ns": -0.001,
+            "status": "measured",
+            "tns_ns": -0.001
+          }
+        },
+        "Slow 900mV 100C Model": {
+          "hold": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 0.061,
+            "status": "measured",
+            "tns_ns": 0.0
+          },
+          "mpw": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 5.844,
+            "status": "measured",
+            "tns_ns": 0.0
+          },
+          "recovery": {
+            "failing_endpoints": null,
+            "slack_ns": null,
+            "status": "excluded_no_paths",
+            "tns_ns": null
+          },
+          "removal": {
+            "failing_endpoints": null,
+            "slack_ns": null,
+            "status": "excluded_no_paths",
+            "tns_ns": null
+          },
+          "setup": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 0.173,
+            "status": "measured",
+            "tns_ns": 0.0
+          }
+        }
+      },
+      "observed_failing_setup_paths": 2,
+      "observed_setup_paths": 4000,
+      "original_tree_sha256": "d806de239793593c2848a4d698f6f26b016ee8ef6f3183b8920e8c69973872be",
+      "period_ns": 12.812,
+      "qdb_inventory_sha256": "1f9020e55c3cd7546b0a8af49a5fbb9984949a3f3b88a26757345fbbccef89a4",
+      "receipt": {
+        "path": "queue/standing-fit-state/audit-terminal/s4-p8-canonical-pipe-whole-10000-v1-audit4/receipt.json",
+        "sha256": "deca149a6a37bab56b99701e8e78e960b76cfebf93be38c0d9e74ad145f415f3"
+      },
+      "scope": "Same saved whole layout; four-corner scoped internal STA, virtual I/O, recovery/removal excluded_no_paths; not board/reset-release or exhaustive maximum clock.",
+      "timing_closes": false
+    }
+  ],
+  "source_map": {
+    "canonical_leaf_sha256": "763b069a9797b91c7122bdf30fe86879b8c34dd318613ec4e096797610a379a5",
+    "control_sha256": {
+      "probe.qpf": "ff7f5a00df0fdbe48ba84142a0a94058de5a259b5f7f1e38d6bd50e87d408004",
+      "probe.qsf": "d62d1877ab92d98a2fbffdab47242ddafbe7f4ff1e445bcefb15b05488b02837",
+      "probe.sdc": "7df5f4ad78bde58dfbca97eb38f7cf2153cda481ef61cba590da9953d0c5ee6c",
+      "run.tcl": "92711aace1e4f6f7cd577eb764403382a3a95aa495b02c379c0e27912c15c1b4"
+    },
+    "fit_manifest": {
+      "path": "artifacts/s4-p8-canonical-pipe-whole-aw16-f164-v2/project/manifest.json",
+      "sha256": "3609c409adf2650d40611a037cae832c534e79b0052f0c0ddac0c6f951abcc38"
+    },
+    "standalone49": {
+      "genefer_crt3_27_mont_pipe.sv": "8bb5b62423c1f61e069f131b5d393dd3dbc84d05348fc1945f6e9c419c104c58",
+      "genefer_digit_reduce27_pipe.sv": "61e14bb13c2dbcc13b5030756578a0d0358269beb24fb207a5641b98795883e8",
+      "genefer_div_recip_precision.sv": "832021ed0b3410dc867d92ac4436a725d5717f9630d233073e39896789ebbd7c",
+      "genefer_montgomery_mul27_sparse_pipe.sv": "501d0ce309a3915f7aed0f3bde14ba1ee8d56ddc5f6abef1f2f5bb572d64db4b",
+      "genefer_montgomery_mul28x27_sparse_pipe_v2.sv": "a93cb002eb08e585e62a847ef4b070175ae8108919da30ea5bf67dad3a597026",
+      "genefer_ntt_banked27_engine.sv": "7ae89e702b671e3fbe8a1f90beb99ea595c832729e5e94232bf82515f1d74fe9",
+      "genefer_ntt_lazy28_butterfly_v1.sv": "ade6280dd1dac0fe3049ac2860dea7bbc7db292b634368e12f557b63865aa00d",
+      "genefer_sdp_ram32.sv": "993567fb68fdc216b9ff04489d1810f743b86564434e4b48261ad606b25d53b0",
+      "genefer_stream27_blockcarry_lane_param_v1.sv": "8a458519272e89e635eb5cd7e6b2d07c93c8d3b1fc0f44874ba67aeccca77d4b",
+      "genefer_stream27_blockcarry_setup_param_v1.sv": "c9ba8163c8bb43afecf1afee07a8a55c4eb89539318cf235b83508ab692f4f26",
+      "genefer_stream27_blockcarry_small_cell.sv": "eafee617681cbd84cedfe90874938f63bf5ae84123ba1c914410785b44a3e74f",
+      "genefer_stream27_canonical_image_pipe_v1.sv": "763b069a9797b91c7122bdf30fe86879b8c34dd318613ec4e096797610a379a5",
+      "genefer_stream27_chain_canonical_aw16_p8_canonreg_v1.sv": "4392a6f5d05c9379ba855ecc82340f32547c0f258ea8cfb57ec16ff0dadde906",
+      "genefer_stream27_dif_aw3_p8_f0_shared_registered_v1.sv": "2977d995cf3e17f682b8f04b086fcb944be7819e238abaccea5b32150d3f39e9",
+      "genefer_stream27_dif_aw3_p8_f1_shared_registered_v1.sv": "3531e58fee85db287a2ac25a918c32b4da911e8719c107bd28dc4e90701b6666",
+      "genefer_stream27_dif_aw3_p8_f2_shared_registered_v1.sv": "dc1f321616e167f67b7613c70b7b21db3bfb738ed39867382606675104111f9c",
+      "genefer_stream27_epoch_protocol_v5.sv": "a01f6b93200d4ee5d1eb7e81664cfd89e373a447e9cbf5173387188f1212df45",
+      "genefer_stream27_host_chain_aw16_p8_canonreg_v1.sv": "140e2b306e39a5fba02046917d0733eb31ed1e2f9c80f81be7fd086181b8c051",
+      "genefer_stream27_host_image_ports_v1.sv": "2d1dbcd3d923323481b920d1354127306cf19253ee98ad60c0a87626cb1ba11e",
+      "genefer_stream27_mdc_commutator_slots_v2.sv": "3484e192967d6295dd6dc7f6a325dfd31e1573a327c881be9f9e10558c458da5",
+      "genefer_stream27_mdc_commutator_sm1_registered_v1.sv": "c262261f1a7c7428056111ccdef97462edd081016f219428d2a81b7e429819c9",
+      "genefer_stream27_mdc_commutator_sync.sv": "72e6d497280f8d5eeba28c0af30b79a116e20b338d50a9894355a28d3aa4d218",
+      "genefer_stream27_mdc_fifo_smallreg_v1.sv": "0ff1605c74d81670291f1bd0ee88afe6f5461d999d5ee65fc6f1cc722f4ec4be",
+      "genefer_stream27_merged_final_gs_pair_v1.sv": "c860243f74d445324e93d8d2bc202521249316f04364c4bb2e630d4328216d4b",
+      "genefer_stream27_root_rom_prefetch.sv": "f4b9415b855d58a1c5ddbc79fd473eef5388b05c888db1c5dde4825e2b3184fc",
+      "genefer_stream27_row_arithmetic_param_v1.sv": "34cbd71a998ebc5aff532dff24c7bef904c2a8e7a1c27ee69d9e0f55caf07f9a",
+      "genefer_stream27_shared_term_roots_aw16_p8_f0_v1.sv": "0a2daf4f46a1caccaf601eba382b5d76954d0a448158f2c5a3e57f764f2b2d88",
+      "genefer_stream27_shared_term_roots_aw16_p8_f1_v1.sv": "b0e5ed99d9dc2fa2f2dffa36ab77e6fc9a67671b27dd08aaa37c1f85fd5987e4",
+      "genefer_stream27_shared_term_roots_aw16_p8_f2_v1.sv": "4b72cc81b24da062db4a43a7e0d53f5fa70a5c630678e1d68bdf89d657333bf3",
+      "genefer_stream27_shared_warm_aw16_p8_f0_v1_signed_host_v3_valid_start_v4.sv": "328fe9bc85a9e84251f6446490182acb7604e5ffefc20c5b084d6d8be05cefc6",
+      "genefer_stream27_shared_warm_aw16_p8_f1_v1_signed_host_v3_valid_start_v4.sv": "5174c825002ff3067cadec7f7b96d5bea066eb6ccf2d0dc38774e0605da3eb74",
+      "genefer_stream27_shared_warm_aw16_p8_f2_v1_signed_host_v3_valid_start_v4.sv": "f2cb529953ee2097c1566dc11ecfb4fc835c9b6da2af425d1bee24baf8b20132",
+      "genefer_stream27_signed_boundary_reduce27_pipe.sv": "140fcad078bd089456712e27eed9c1f78f340298f72a7d6860d5bed70bbb9f2d",
+      "genefer_stream27_square_p8_f0_v1.sv": "bbd07822d6d91c37b8edf282d83eb400b9ca13b77430dd0144259467092a9a76",
+      "genefer_stream27_square_p8_f1_v1.sv": "fee015d7958adfb0ad5e5b8fe01188cb9198ea3e00df4a14ae3e6a8f4edaeb97",
+      "genefer_stream27_square_p8_f2_v1.sv": "999a0b75c2f17655c6a754cd871c152268f7dd8760fd90e6867fd338989ead5e",
+      "genefer_stream27_term_context_param_v1.sv": "d8651c253ec856e9b6b514433aa58896811a275942f3c592333a8436a2c95949",
+      "genefer_stream27_term_context_v2.sv": "1785c86519e52908e5e450ec8d48656e2fc402808ad3660bda6aa7e8d4c86592",
+      "genefer_stream27_threefield_carry_aw16_p8_param_v1_signed.sv": "38ed4cb4b288c01754a169e84986ea598ed87635f98badfc64745f470350ac08",
+      "genefer_stream27_warm_chain_aw16_p8_param_v1.sv": "eb336ab659d7a424987bdd797442ca1caab9a565952feac6c1d57d56d5584a33",
+      "genefer_stream28_merged_ct_aw16_p8_f0_v1.sv": "6b797b8b970b7b52adf036e33d3b6cc51ec2595bf61d13fe45cfd035791d4230",
+      "genefer_stream28_merged_ct_aw16_p8_f1_v1.sv": "5975a2e961c1b6ef8a3add163b6434a0efdd54cd1a699e502085bd75a7747c01",
+      "genefer_stream28_merged_ct_aw16_p8_f2_v1.sv": "68318118b69e8599840aed90f3c4ab09c058ea773c3bf33fafa34fd4b27e80c6",
+      "genefer_stream28_merged_gs_aw16_p8_f0_v1.sv": "12361f888589743f39843ca077ffc490bdb1edac60798009b5d6365405fab5c3",
+      "genefer_stream28_merged_gs_aw16_p8_f1_v1.sv": "f9d82c515b8efc7b2217e3dabe0cdd611cdfd0e41b55f0321990a355148778fd",
+      "genefer_stream28_merged_gs_aw16_p8_f2_v1.sv": "70d62f8fa79688b7d2bd061d8d3cf33a7bf70c75a005ae69ffe200b092cf65cf",
+      "merged_stream27_root_library_aw16_p8_f0_v1.sv": "c9e9d61306373bd3967bc4b284f848d4373b056cd48121f4606900a11e5f9a9f",
+      "merged_stream27_root_library_aw16_p8_f1_v1.sv": "ac74898661f3c07d49a9ffcc57ab783c33dddd76413284a7a7ed8028c5d72237",
+      "merged_stream27_root_library_aw16_p8_f2_v1.sv": "83b1db2a1d91ebb9844826784f7dc56fb042a0d0be900de9ccfd628b1d1964f2"
+    },
+    "top": "genefer_stream27_host_chain_aw16_p8_canonreg_v1",
+    "top_sha256": "140e2b306e39a5fba02046917d0733eb31ed1e2f9c80f81be7fd086181b8c051"
+  },
+  "status": "AUTHOR_CONSOLIDATION_COMPLETE_FINAL_INDEPENDENT_PASS_REFERENCED_ADVISOR_PENDING"
+}

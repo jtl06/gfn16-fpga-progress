@@ -1,0 +1,13 @@
+{
+  "schema": "gfn16-independent-review-addendum-v1",
+  "updated_at_utc": "2026-10-02T01:47:27Z",
+  "reviewer": "/root/p16_independent_reviewer",
+  "status": "PASS_serialization_only_no_scope_change",
+  "promotion_allowed": false,
+  "review": "results/throughput-20260929/s4-p16-diet-ledger-independent-v1.json",
+  "review_sha256": "05ce9d1b58e479999e407f5efe38fbcadb17df9b9e9cf45cf62f9b4a4072144f",
+  "preserved_handoff_sha256": "79f0e8e67d2afe6ff0512566626fd974bbe36d8a89cf56582af0235b63abd7bb",
+  "authoritative_byteexact_handoff": "results/throughput-20260929/s4-p16-diet-consolidation-owner-v1/handoff-byteexact.json",
+  "authoritative_byteexact_handoff_sha256": "f5510497ff2fd81b6596299549bdc954c67d69171be3a2e53b2d1b53ac8907a0",
+  "checks": "Independently verified both handoff parsed dictionaries are identical; authoritative byteexact hash matches; direct readonly python -B producer stdout exactly reproduces all byteexact bytes. Only JSON escape serialization changed. Original source, numerical evidence, reviewed scalar ledger, null selected clock and promotion exclusions unchanged. Original review/handoff retained without overwrite."
+}

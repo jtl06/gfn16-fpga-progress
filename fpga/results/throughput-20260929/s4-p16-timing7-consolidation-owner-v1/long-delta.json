@@ -1,0 +1,132 @@
+{
+  "direct_trace": {
+    "accepted_pop_rows": 999,
+    "cold_completion_from_trace": 668026,
+    "counts": {
+      "backpressure_edges": 8416803,
+      "candidate_cycles": 9119566,
+      "canonical_cycles": 589824,
+      "case_id": "75d245e889927761cc17d22dc054775698f65b89334c2d1aaf22ebe963c3dac4",
+      "conversion_cycles": 4096,
+      "copy_cycles": 65539,
+      "doubles": 500,
+      "feed_descriptors": 999,
+      "fifo_peak": 4,
+      "final_rows": 4096,
+      "full_exchanges": 995,
+      "loaded_digits": 65536,
+      "loads": 1,
+      "operations": 1000,
+      "profile_hits": 0,
+      "profile_loads": 1,
+      "readbacks": 1,
+      "resets": 1,
+      "root_cycles": 99,
+      "signed96_words": 65536,
+      "special": 0,
+      "starts": 1,
+      "words": 65536
+    },
+    "directly_observed_interval": 8460,
+    "log": {
+      "path": "queue/evidence/s4-p16-timing7-continuous1000-thread8-normal-q1-v1/attempt-0/collected/output/native/stream27-s4-continuous-normal.log",
+      "sha256": "061d4211781efb207895a78a9a86cebefb3fdca132a2c826aa12bebd513aa848"
+    },
+    "phase_wall_ms": {
+      "candidate_ms": 2227110,
+      "read_ms": 13743,
+      "reference_ms": 42879
+    },
+    "role": "thread8_continuous1000"
+  },
+  "long": {
+    "gate": {
+      "path": "queue/evidence/s4-p16-timing7-continuous1000-thread8-normal-q1-v1/gate-receipt.json",
+      "sha256": "bcb99270718499e052b0504fc734e6db079c95b3315c95b7cc5e626d92ed9033"
+    },
+    "host": "gfn16-azure-sim-f32",
+    "id": "s4-p16-timing7-continuous1000-thread8-normal-q1-v1",
+    "manifest": {
+      "path": "queue/evidence/s4-p16-timing7-continuous1000-thread8-normal-q1-v1/attempt-0/collected/output/native/approved-manifest.json",
+      "sha256": "fcddb9d2b93ac39331ab5366a302f1ca771042b130244872cc9748fbd88f355e"
+    },
+    "model_threads": 8,
+    "overall_seconds": 2622.934152224003,
+    "report": {
+      "path": "queue/evidence/s4-p16-timing7-continuous1000-thread8-normal-q1-v1/attempt-0/collected/output/native/report.json",
+      "sha256": "7270c9488b6a28063025eeb3b5ccc52d3f233e45fa6f19d8688f324655901196"
+    },
+    "rtl_count": 75,
+    "rtl_map_sha256": "ba6bd255588666a08daf98ff29b0b619f4c9d8bc8e2d6ff3fa05eac81d21a4b5",
+    "typed_results": [
+      {
+        "actual_returncode": 0,
+        "expected_returncode": 0,
+        "name": "stream27-s4-continuous-normal",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout_sha256": "061d4211781efb207895a78a9a86cebefb3fdca132a2c826aa12bebd513aa848",
+        "typed_validator_sha256": "41b1d978335bf711c1e4e07249677ca9b3f56072065ad3ee99f52ed290b015a0",
+        "validation": {
+          "base": 604832956,
+          "candidate": "timing7-diet-canonical1-P16-context1",
+          "candidate_root_sha256": "0011468ec67d7ca7ebb86fac88103fd19ea0207dc75685289da64d508228ea28",
+          "canonical_pipe_stages": 1,
+          "counts": {
+            "backpressure_edges": 8416803,
+            "candidate_cycles": 9119566,
+            "canonical_cycles": 589824,
+            "case_id": "75d245e889927761cc17d22dc054775698f65b89334c2d1aaf22ebe963c3dac4",
+            "conversion_cycles": 4096,
+            "copy_cycles": 65539,
+            "doubles": 500,
+            "feed_descriptors": 999,
+            "fifo_peak": 4,
+            "final_rows": 4096,
+            "full_exchanges": 995,
+            "loaded_digits": 65536,
+            "loads": 1,
+            "operations": 1000,
+            "profile_hits": 0,
+            "profile_loads": 1,
+            "readbacks": 1,
+            "resets": 1,
+            "root_cycles": 99,
+            "signed96_words": 65536,
+            "special": 0,
+            "starts": 1,
+            "words": 65536
+          },
+          "final_actual_sha256": "1f8d6dc3b8ce600339f4454e4b8458abad2ab107b943fae131667bd4a4150cdb",
+          "final_expected_sha256": "1f8d6dc3b8ce600339f4454e4b8458abad2ab107b943fae131667bd4a4150cdb",
+          "independent_reference_equal": true,
+          "operations": 1000,
+          "p16_diet": 1,
+          "p16_timing": 1,
+          "phase_wall_ms": {
+            "candidate_ms": 2227110,
+            "read_ms": 13743,
+            "reference_ms": 42879
+          },
+          "promotion_allowed": false,
+          "scope": "ONE actually dependent FIFO job, exact source-selected candidate; independent reference is native-only, T5b dormant, not full PRP/clock or inherited9/25/100-op result.",
+          "status": "PASS_expected_contracts",
+          "uninterrupted_1000_native": true
+        }
+      }
+    ]
+  },
+  "previous_snapshot": {
+    "path": "results/throughput-20260929/s4-p16-timing7-consolidation-owner-v1/completed-subset.json",
+    "sha256": "1fa5127bb2f5a41b736472abc0e23faba0f390c73231e6da90cca0a33e0e3c4c"
+  },
+  "producer": {
+    "path": "reference/stream27_p16_timing7_consolidation.py",
+    "sha256": "96e63c790de4b0b646172e54efdf83c7de0f2f46e2a4de8d5ef710d2770a2619"
+  },
+  "projected_seconds": null,
+  "promotion_allowed": false,
+  "schema": "stream27-p16-timing7-author-long-delta-v1",
+  "scope": "Only final1000 delta appended to frozen completed subset. Independent terminal/clock consolidation and advisor acceptance remain separate.",
+  "selected_period_ns": null,
+  "status": "OWN1000_TYPED_PASS_SOURCE_MATCHES_PARTIAL_CLOCK_SEPARATE"
+}

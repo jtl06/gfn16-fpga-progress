@@ -1,0 +1,520 @@
+Fitter Route Stage Report for probe
+Thu Oct  1 20:58:05 2026
+Quartus Prime Version 26.1.0 Build 110 03/26/2026 SC Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Nets with Highest Wire Count
+  3. Delay Chain Summary
+  4. Routing Usage Summary
+  5. Route Messages
+  6. Estimated Delay Added for Hold Timing Summary
+  7. Estimated Delay Added for Hold Timing Details
+  8. Global Router Wire Utilization Map
+  9. Peak Wire Demand Summary
+ 10. Peak Wire Demand Details
+ 11. Peak Total Grid Crossings
+ 12. Global Router Congestion Hotspot Summary
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2026  Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Altera and sold by Altera or its authorized distributors.  Please
+refer to the Altera Software License Subscription Agreements 
+on the Quartus Prime software download page.
+
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Nets with Highest Wire Count                                                                                  ;
++-------------------------------------------------------------------------------+----------------------+--------+
+; Net                                                                           ; Number of Wires Used ; Fanout ;
++-------------------------------------------------------------------------------+----------------------+--------+
+; ~GND                                                                          ; 1148                 ; 3796   ;
+; rst_n~input                                                                   ; 605                  ; 433    ;
+; engine|recurrence|feedback_slot                                               ; 250                  ; 424    ;
+; engine|recurrence|arithmetic|field1|inverse_transform|stage11.shuffle0|i156~0 ; 243                  ; 242    ;
+; engine|recurrence|arithmetic|field2|inverse_transform|stage11.shuffle0|i156~0 ; 235                  ; 247    ;
+; engine|recurrence|arithmetic|field2|forward_transform|stage3.shuffle0|i156~0  ; 214                  ; 257    ;
+; engine|recurrence|arithmetic|field1|inverse_transform|stop                    ; 204                  ; 148    ;
+; engine|recurrence|child_start~2                                               ; 196                  ; 260    ;
+; engine|recurrence|arithmetic|field0|forward_transform|stage3.shuffle0|i156~0  ; 193                  ; 249    ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage11.shuffle0|i156~0 ; 193                  ; 254    ;
++-------------------------------------------------------------------------------+----------------------+--------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Delay Chain Summary                                                                                                                                    ;
++-------+----------+---------------------+--------------------+----------------+-----------------------------------+-------------------------------------+
+; Name  ; Pin Type ; Input Delay Chain 0 ; Output Delay Chain ; OE Delay Chain ; IO_12_LANE Input Data Delay Chain ; IO_12_LANE Input Strobe Delay Chain ;
++-------+----------+---------------------+--------------------+----------------+-----------------------------------+-------------------------------------+
+; rst_n ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; clk   ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
++-------+----------+---------------------+--------------------+----------------+-----------------------------------+-------------------------------------+
+
+
++-------------------------------------------------------------+
+; Routing Usage Summary                                       ;
++------------------------------+------------------------------+
+; Routing Resource Type        ; Usage                        ;
++------------------------------+------------------------------+
+; Block interconnects          ; 955,315 / 3,375,986 ( 28 % ) ;
+; C27 interconnects            ; 7,826 / 56,741 ( 14 % )      ;
+; C4 interconnects             ; 452,576 / 2,570,048 ( 18 % ) ;
+; Direct links                 ; 237,861 / 3,375,986 ( 7 % )  ;
+; Global clocks                ; 2 / 32 ( 6 % )               ;
+; Periphery clocks             ; 0 / 910 ( 0 % )              ;
+; R3 interconnects             ; 261,245 / 1,214,760 ( 22 % ) ;
+; R32 interconnects            ; 6,964 / 99,472 ( 7 % )       ;
+; R32/C27 interconnect drivers ; 11,103 / 385,136 ( 3 % )     ;
+; R6 interconnects             ; 428,226 / 2,336,152 ( 18 % ) ;
+; Regional clock lefts         ; 0 / 16 ( 0 % )               ;
+; Regional clock out bottoms   ; 0 / 16 ( 0 % )               ;
+; Regional clock out tops      ; 0 / 16 ( 0 % )               ;
+; Regional clock rights        ; 0 / 16 ( 0 % )               ;
+; Regional clocks              ; 0 / 16 ( 0 % )               ;
+; Spine buffers                ; 32 / 704 ( 5 % )             ;
+; Spine clocks                 ; 64 / 1,056 ( 6 % )           ;
+; Spine feedthroughs           ; 0 / 1,024 ( 0 % )            ;
++------------------------------+------------------------------+
+
+
++----------------+
+; Route Messages ;
++----------------+
+Info (20032): Parallel compilation is enabled and will use up to 4 processors
+Info: *******************************************************************
+Info: Running Quartus Prime Fitter
+    Info: Version 26.1.0 Build 110 03/26/2026 SC Pro Edition
+    Info: Processing started: Thu Oct  1 20:12:19 2026
+    Info: System process ID: 41263
+Info: Command: quartus_fit --read_settings_files=on --write_settings_files=off probe -c probe --dni
+Info: qfit2_default_script.tcl version: #1
+Info: Project  = probe
+Info: Revision = probe
+Info (22300): Design uses Placement Effort Multiplier = 1.0.
+Info (170193): Fitter routing operations beginning
+Info (170089): 3e+04 ns of routing delay (approximately 2.0% of available device routing delay) has been added to meet hold timing. For more information, refer to the Estimated Delay Added for Hold Timing section in the Fitter report.
+Info (20215): Router estimated peak short interconnect demand : 81% of up directional wire in region X88_Y91 to X95_Y97
+    Info (20265): Estimated peak short right directional wire demand : 43% in region X104_Y84 to X111_Y90
+    Info (20265): Estimated peak short left directional wire demand : 43% in region X96_Y91 to X103_Y97
+    Info (20265): Estimated peak short up directional wire demand : 81% in region X88_Y91 to X95_Y97
+    Info (20265): Estimated peak short down directional wire demand : 46% in region X104_Y91 to X111_Y97
+Info (20215): Router estimated peak long high speed interconnect demand : 142% of left directional wire in region X128_Y84 to X135_Y90
+    Info (20265): Estimated peak long high speed right directional wire demand : 135% in region X64_Y91 to X71_Y97
+    Info (20265): Estimated peak long high speed left directional wire demand : 142% in region X128_Y84 to X135_Y90
+    Info (20265): Estimated peak long high speed up directional wire demand : 134% in region X88_Y91 to X95_Y97
+    Info (20265): Estimated peak long high speed down directional wire demand : 106% in region X64_Y112 to X71_Y118
+    Info (20315): Note that the router may use short wires to implement long connections at higher delay
+Info (170202): The Fitter performed an Auto Fit compilation.  No optimizations were skipped because the design's timing and routability requirements required full optimization.
+Info (25133): Total time spent on timing analysis during Routing is 138.37 seconds.
+Info (16607): Fitter routing operations ending: elapsed time is 00:12:16
+
+
++------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Summary              ;
++-----------------+----------------------+-------------------+
+; Source Clock(s) ; Destination Clock(s) ; Delay Added in ns ;
++-----------------+----------------------+-------------------+
+; kernel_clk      ; kernel_clk           ; 33881.4           ;
++-----------------+----------------------+-------------------+
+Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
+This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Details                                                                                                                                                                                               ;
++------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+-------------------+
+; Source Register                                                                                            ; Destination Register                                                                                       ; Delay Added in ns ;
++------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+-------------------+
+; engine|recurrence|arithmetic|field0|inverse_transform|stage3.shuffle1|lower_fifo|short_logic.chain[0][3]   ; engine|recurrence|arithmetic|field0|inverse_transform|stage3.shuffle1|upper_fifo|short_logic.chain[0][3]   ; 0.723             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage3.shuffle1|lower_fifo|short_logic.chain[0][2]   ; engine|recurrence|arithmetic|field0|inverse_transform|stage3.shuffle1|upper_fifo|short_logic.chain[0][2]   ; 0.697             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage3.shuffle1|lower_fifo|short_logic.chain[0][5]   ; engine|recurrence|arithmetic|field0|inverse_transform|stage3.shuffle1|upper_fifo|short_logic.chain[0][5]   ; 0.688             ;
+; engine|recurrence|arithmetic|field1|inverse_transform|stage6.shuffle3|lower_fifo|short_logic.chain[7][6]   ; engine|recurrence|arithmetic|field1|inverse_transform|stage6.shuffle3|upper_fifo|short_logic.chain[0][6]   ; 0.684             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage5.shuffle2|lower_fifo|short_logic.chain[3][2]   ; engine|recurrence|arithmetic|field0|inverse_transform|stage5.shuffle2|upper_fifo|short_logic.chain[0][2]   ; 0.684             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage3.shuffle0|lower_fifo|short_logic.chain[0][38]  ; engine|recurrence|arithmetic|field0|inverse_transform|stage3.shuffle0|upper_fifo|short_logic.chain[0][38]  ; 0.683             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage3.shuffle1|lower_fifo|short_logic.chain[0][38]  ; engine|recurrence|arithmetic|field0|inverse_transform|stage3.shuffle1|upper_fifo|short_logic.chain[0][38]  ; 0.678             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage3.shuffle1|lower_fifo|short_logic.chain[0][6]   ; engine|recurrence|arithmetic|field0|inverse_transform|stage3.shuffle1|upper_fifo|short_logic.chain[0][6]   ; 0.678             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage4.shuffle0|upper_fifo|short_logic.chain[1][5]   ; engine|recurrence|arithmetic|field0|inverse_transform|stage4.shuffle0|output_generation[5]                 ; 0.672             ;
+; engine|recurrence|arithmetic|field2|forward_transform|stage15.shuffle3|lower_fifo|short_logic.chain[0][38] ; engine|recurrence|arithmetic|field2|forward_transform|stage15.shuffle3|upper_fifo|short_logic.chain[0][38] ; 0.668             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage3.shuffle0|lower_fifo|short_logic.chain[0][5]   ; engine|recurrence|arithmetic|field0|inverse_transform|stage3.shuffle0|upper_fifo|short_logic.chain[0][5]   ; 0.664             ;
+; engine|recurrence|arithmetic|field1|inverse_transform|stage6.shuffle3|lower_fifo|short_logic.chain[7][4]   ; engine|recurrence|arithmetic|field1|inverse_transform|stage6.shuffle3|upper_fifo|short_logic.chain[0][4]   ; 0.660             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage3.shuffle1|lower_fifo|short_logic.chain[0][0]   ; engine|recurrence|arithmetic|field0|inverse_transform|stage3.shuffle1|upper_fifo|short_logic.chain[0][0]   ; 0.658             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage8.shuffle2|lower_fifo|short_logic.chain[31][2]  ; engine|recurrence|arithmetic|field0|inverse_transform|stage8.shuffle2|upper_fifo|short_logic.chain[0][2]   ; 0.654             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage3.shuffle0|upper_fifo|short_logic.chain[0][7]   ; engine|recurrence|arithmetic|field0|inverse_transform|stage3.shuffle0|output_generation[7]                 ; 0.653             ;
+; engine|recurrence|arithmetic|field1|inverse_transform|stage6.shuffle0|lower_fifo|short_logic.chain[7][3]   ; engine|recurrence|arithmetic|field1|inverse_transform|stage6.shuffle0|upper_fifo|short_logic.chain[0][3]   ; 0.646             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage5.shuffle3|lower_fifo|short_logic.chain[3][1]   ; engine|recurrence|arithmetic|field0|inverse_transform|stage5.shuffle3|upper_fifo|short_logic.chain[0][1]   ; 0.643             ;
+; engine|recurrence|arithmetic|field2|forward_transform|stage15.shuffle0|lower_fifo|short_logic.chain[0][6]  ; engine|recurrence|arithmetic|field2|forward_transform|stage15.shuffle0|upper_fifo|short_logic.chain[0][6]  ; 0.643             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage3.shuffle3|upper_fifo|short_logic.chain[0][5]   ; engine|recurrence|arithmetic|field0|inverse_transform|stage3.shuffle3|output_generation[5]                 ; 0.639             ;
+; engine|recurrence|arithmetic|field2|forward_transform|stage11.shuffle3|lower_fifo|short_logic.chain[15][7] ; engine|recurrence|arithmetic|field2|forward_transform|stage11.shuffle3|upper_fifo|short_logic.chain[0][7]  ; 0.638             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage5.shuffle3|upper_fifo|short_logic.chain[3][6]   ; engine|recurrence|arithmetic|field0|inverse_transform|stage5.shuffle3|output_generation[6]                 ; 0.637             ;
+; engine|recurrence|arithmetic|field2|inverse_transform|stage6.shuffle3|lower_fifo|short_logic.chain[7][0]   ; engine|recurrence|arithmetic|field2|inverse_transform|stage6.shuffle3|upper_fifo|short_logic.chain[0][0]   ; 0.637             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage5.shuffle2|lower_fifo|short_logic.chain[3][5]   ; engine|recurrence|arithmetic|field0|inverse_transform|stage5.shuffle2|upper_fifo|short_logic.chain[0][5]   ; 0.636             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage4.shuffle2|lower_fifo|short_logic.chain[1][38]  ; engine|recurrence|arithmetic|field0|inverse_transform|stage4.shuffle2|upper_fifo|short_logic.chain[0][38]  ; 0.635             ;
+; engine|recurrence|arithmetic|field2|forward_transform|stage10.shuffle2|lower_fifo|short_logic.chain[31][0] ; engine|recurrence|arithmetic|field2|forward_transform|stage10.shuffle2|upper_fifo|short_logic.chain[0][0]  ; 0.634             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage5.shuffle3|lower_fifo|short_logic.chain[3][4]   ; engine|recurrence|arithmetic|field0|inverse_transform|stage5.shuffle3|upper_fifo|short_logic.chain[0][4]   ; 0.634             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage5.shuffle2|upper_fifo|short_logic.chain[3][7]   ; engine|recurrence|arithmetic|field0|inverse_transform|stage5.shuffle2|output_generation[7]                 ; 0.632             ;
+; engine|recurrence|arithmetic|field2|forward_transform|stage15.shuffle0|lower_fifo|short_logic.chain[0][7]  ; engine|recurrence|arithmetic|field2|forward_transform|stage15.shuffle0|upper_fifo|short_logic.chain[0][7]  ; 0.632             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage3.shuffle0|lower_fifo|short_logic.chain[0][7]   ; engine|recurrence|arithmetic|field0|inverse_transform|stage3.shuffle0|upper_fifo|short_logic.chain[0][7]   ; 0.632             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage5.shuffle3|upper_fifo|short_logic.chain[3][5]   ; engine|recurrence|arithmetic|field0|inverse_transform|stage5.shuffle3|output_generation[5]                 ; 0.632             ;
+; engine|recurrence|arithmetic|field2|forward_transform|stage15.shuffle0|lower_fifo|short_logic.chain[0][0]  ; engine|recurrence|arithmetic|field2|forward_transform|stage15.shuffle0|upper_fifo|short_logic.chain[0][0]  ; 0.631             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage5.shuffle3|upper_fifo|short_logic.chain[3][4]   ; engine|recurrence|arithmetic|field0|inverse_transform|stage5.shuffle3|output_generation[4]                 ; 0.631             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage5.shuffle2|lower_fifo|short_logic.chain[3][0]   ; engine|recurrence|arithmetic|field0|inverse_transform|stage5.shuffle2|upper_fifo|short_logic.chain[0][0]   ; 0.631             ;
+; engine|recurrence|arithmetic|field2|forward_transform|stage15.shuffle2|lower_fifo|short_logic.chain[0][5]  ; engine|recurrence|arithmetic|field2|forward_transform|stage15.shuffle2|upper_fifo|short_logic.chain[0][5]  ; 0.630             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage5.shuffle3|lower_fifo|short_logic.chain[3][0]   ; engine|recurrence|arithmetic|field0|inverse_transform|stage5.shuffle3|upper_fifo|short_logic.chain[0][0]   ; 0.629             ;
+; engine|recurrence|arithmetic|field1|inverse_transform|stage7.shuffle3|lower_fifo|short_logic.chain[15][7]  ; engine|recurrence|arithmetic|field1|inverse_transform|stage7.shuffle3|upper_fifo|short_logic.chain[0][7]   ; 0.628             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage8.shuffle3|lower_fifo|short_logic.chain[31][1]  ; engine|recurrence|arithmetic|field0|inverse_transform|stage8.shuffle3|upper_fifo|short_logic.chain[0][1]   ; 0.628             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage3.shuffle1|lower_fifo|short_logic.chain[0][4]   ; engine|recurrence|arithmetic|field0|inverse_transform|stage3.shuffle1|upper_fifo|short_logic.chain[0][4]   ; 0.628             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage5.shuffle3|lower_fifo|short_logic.chain[3][3]   ; engine|recurrence|arithmetic|field0|inverse_transform|stage5.shuffle3|upper_fifo|short_logic.chain[0][3]   ; 0.627             ;
+; engine|recurrence|arithmetic|field2|inverse_transform|stage8.shuffle0|lower_fifo|short_logic.chain[31][38] ; engine|recurrence|arithmetic|field2|inverse_transform|stage8.shuffle0|upper_fifo|short_logic.chain[0][38]  ; 0.626             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage4.shuffle3|lower_fifo|short_logic.chain[1][38]  ; engine|recurrence|arithmetic|field0|inverse_transform|stage4.shuffle3|upper_fifo|short_logic.chain[0][38]  ; 0.626             ;
+; engine|recurrence|arithmetic|field1|inverse_transform|stage8.shuffle0|lower_fifo|short_logic.chain[31][4]  ; engine|recurrence|arithmetic|field1|inverse_transform|stage8.shuffle0|upper_fifo|short_logic.chain[0][4]   ; 0.626             ;
+; engine|recurrence|arithmetic|field2|forward_transform|stage10.shuffle0|lower_fifo|short_logic.chain[31][1] ; engine|recurrence|arithmetic|field2|forward_transform|stage10.shuffle0|upper_fifo|short_logic.chain[0][1]  ; 0.626             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage3.shuffle1|lower_fifo|short_logic.chain[0][7]   ; engine|recurrence|arithmetic|field0|inverse_transform|stage3.shuffle1|upper_fifo|short_logic.chain[0][7]   ; 0.624             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage4.shuffle3|upper_fifo|short_logic.chain[1][5]   ; engine|recurrence|arithmetic|field0|inverse_transform|stage4.shuffle3|output_generation[5]                 ; 0.624             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage5.shuffle2|lower_fifo|short_logic.chain[3][6]   ; engine|recurrence|arithmetic|field0|inverse_transform|stage5.shuffle2|upper_fifo|short_logic.chain[0][6]   ; 0.624             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage6.shuffle0|lower_fifo|short_logic.chain[7][7]   ; engine|recurrence|arithmetic|field0|inverse_transform|stage6.shuffle0|upper_fifo|short_logic.chain[0][7]   ; 0.623             ;
+; engine|recurrence|arithmetic|field2|inverse_transform|stage8.shuffle1|upper_fifo|short_logic.chain[31][4]  ; engine|recurrence|arithmetic|field2|inverse_transform|stage8.shuffle1|output_generation[4]                 ; 0.623             ;
+; engine|recurrence|arithmetic|field2|forward_transform|stage15.shuffle0|lower_fifo|short_logic.chain[0][5]  ; engine|recurrence|arithmetic|field2|forward_transform|stage15.shuffle0|upper_fifo|short_logic.chain[0][5]  ; 0.623             ;
+; engine|recurrence|arithmetic|field2|forward_transform|stage15.shuffle3|lower_fifo|short_logic.chain[0][1]  ; engine|recurrence|arithmetic|field2|forward_transform|stage15.shuffle3|upper_fifo|short_logic.chain[0][1]  ; 0.623             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage4.shuffle3|upper_fifo|short_logic.chain[1][4]   ; engine|recurrence|arithmetic|field0|inverse_transform|stage4.shuffle3|output_generation[4]                 ; 0.622             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage3.shuffle0|upper_fifo|short_logic.chain[0][6]   ; engine|recurrence|arithmetic|field0|inverse_transform|stage3.shuffle0|output_generation[6]                 ; 0.621             ;
+; engine|recurrence|arithmetic|field1|inverse_transform|stage7.shuffle0|lower_fifo|short_logic.chain[15][38] ; engine|recurrence|arithmetic|field1|inverse_transform|stage7.shuffle0|upper_fifo|short_logic.chain[0][38]  ; 0.620             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage6.shuffle3|lower_fifo|short_logic.chain[7][38]  ; engine|recurrence|arithmetic|field0|inverse_transform|stage6.shuffle3|upper_fifo|short_logic.chain[0][38]  ; 0.620             ;
+; engine|recurrence|arithmetic|field2|forward_transform|stage10.shuffle2|lower_fifo|short_logic.chain[31][3] ; engine|recurrence|arithmetic|field2|forward_transform|stage10.shuffle2|upper_fifo|short_logic.chain[0][3]  ; 0.620             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage5.shuffle3|lower_fifo|short_logic.chain[3][38]  ; engine|recurrence|arithmetic|field0|inverse_transform|stage5.shuffle3|upper_fifo|short_logic.chain[0][38]  ; 0.618             ;
+; engine|recurrence|arithmetic|field1|inverse_transform|stage7.shuffle2|lower_fifo|short_logic.chain[15][6]  ; engine|recurrence|arithmetic|field1|inverse_transform|stage7.shuffle2|upper_fifo|short_logic.chain[0][6]   ; 0.618             ;
+; engine|recurrence|arithmetic|field2|forward_transform|stage15.shuffle0|lower_fifo|short_logic.chain[0][3]  ; engine|recurrence|arithmetic|field2|forward_transform|stage15.shuffle0|upper_fifo|short_logic.chain[0][3]  ; 0.618             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage3.shuffle1|lower_fifo|short_logic.chain[0][1]   ; engine|recurrence|arithmetic|field0|inverse_transform|stage3.shuffle1|upper_fifo|short_logic.chain[0][1]   ; 0.616             ;
+; engine|recurrence|arithmetic|field2|forward_transform|stage11.shuffle2|lower_fifo|short_logic.chain[15][7] ; engine|recurrence|arithmetic|field2|forward_transform|stage11.shuffle2|upper_fifo|short_logic.chain[0][7]  ; 0.615             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage6.shuffle3|lower_fifo|short_logic.chain[7][5]   ; engine|recurrence|arithmetic|field0|inverse_transform|stage6.shuffle3|upper_fifo|short_logic.chain[0][5]   ; 0.615             ;
+; engine|recurrence|arithmetic|field2|forward_transform|stage15.shuffle2|lower_fifo|short_logic.chain[0][38] ; engine|recurrence|arithmetic|field2|forward_transform|stage15.shuffle2|upper_fifo|short_logic.chain[0][38] ; 0.615             ;
+; engine|recurrence|arithmetic|field1|inverse_transform|stage6.shuffle3|lower_fifo|short_logic.chain[7][5]   ; engine|recurrence|arithmetic|field1|inverse_transform|stage6.shuffle3|upper_fifo|short_logic.chain[0][5]   ; 0.615             ;
+; engine|recurrence|arithmetic|field2|forward_transform|stage11.shuffle0|lower_fifo|short_logic.chain[15][7] ; engine|recurrence|arithmetic|field2|forward_transform|stage11.shuffle0|upper_fifo|short_logic.chain[0][7]  ; 0.615             ;
+; engine|recurrence|arithmetic|field2|inverse_transform|stage4.shuffle3|lower_fifo|short_logic.chain[1][38]  ; engine|recurrence|arithmetic|field2|inverse_transform|stage4.shuffle3|upper_fifo|short_logic.chain[0][38]  ; 0.615             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage5.shuffle2|lower_fifo|short_logic.chain[3][4]   ; engine|recurrence|arithmetic|field0|inverse_transform|stage5.shuffle2|upper_fifo|short_logic.chain[0][4]   ; 0.614             ;
+; engine|recurrence|arithmetic|field2|forward_transform|stage15.shuffle3|lower_fifo|short_logic.chain[0][5]  ; engine|recurrence|arithmetic|field2|forward_transform|stage15.shuffle3|upper_fifo|short_logic.chain[0][5]  ; 0.613             ;
+; engine|recurrence|arithmetic|field2|inverse_transform|stage7.shuffle3|lower_fifo|short_logic.chain[15][38] ; engine|recurrence|arithmetic|field2|inverse_transform|stage7.shuffle3|upper_fifo|short_logic.chain[0][38]  ; 0.613             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage8.shuffle3|lower_fifo|short_logic.chain[31][7]  ; engine|recurrence|arithmetic|field0|inverse_transform|stage8.shuffle3|upper_fifo|short_logic.chain[0][7]   ; 0.612             ;
+; engine|recurrence|arithmetic|field1|inverse_transform|stage6.shuffle3|lower_fifo|short_logic.chain[7][3]   ; engine|recurrence|arithmetic|field1|inverse_transform|stage6.shuffle3|upper_fifo|short_logic.chain[0][3]   ; 0.611             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage3.shuffle0|lower_fifo|short_logic.chain[0][4]   ; engine|recurrence|arithmetic|field0|inverse_transform|stage3.shuffle0|upper_fifo|short_logic.chain[0][4]   ; 0.611             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage4.shuffle3|upper_fifo|short_logic.chain[1][7]   ; engine|recurrence|arithmetic|field0|inverse_transform|stage4.shuffle3|output_generation[7]                 ; 0.611             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage3.shuffle3|upper_fifo|short_logic.chain[0][6]   ; engine|recurrence|arithmetic|field0|inverse_transform|stage3.shuffle3|output_generation[6]                 ; 0.611             ;
+; engine|recurrence|arithmetic|field2|forward_transform|stage11.shuffle2|lower_fifo|short_logic.chain[15][6] ; engine|recurrence|arithmetic|field2|forward_transform|stage11.shuffle2|upper_fifo|short_logic.chain[0][6]  ; 0.611             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage5.shuffle3|upper_fifo|short_logic.chain[3][7]   ; engine|recurrence|arithmetic|field0|inverse_transform|stage5.shuffle3|output_generation[7]                 ; 0.610             ;
+; engine|recurrence|arithmetic|field2|inverse_transform|stage8.shuffle3|lower_fifo|short_logic.chain[31][5]  ; engine|recurrence|arithmetic|field2|inverse_transform|stage8.shuffle3|upper_fifo|short_logic.chain[0][5]   ; 0.610             ;
+; engine|recurrence|arithmetic|field2|forward_transform|stage15.shuffle0|lower_fifo|short_logic.chain[0][4]  ; engine|recurrence|arithmetic|field2|forward_transform|stage15.shuffle0|upper_fifo|short_logic.chain[0][4]  ; 0.610             ;
+; engine|recurrence|arithmetic|field2|forward_transform|stage15.shuffle3|lower_fifo|short_logic.chain[0][3]  ; engine|recurrence|arithmetic|field2|forward_transform|stage15.shuffle3|upper_fifo|short_logic.chain[0][3]  ; 0.610             ;
+; engine|recurrence|arithmetic|field1|inverse_transform|stage8.shuffle3|lower_fifo|short_logic.chain[31][3]  ; engine|recurrence|arithmetic|field1|inverse_transform|stage8.shuffle3|upper_fifo|short_logic.chain[0][3]   ; 0.609             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage5.shuffle2|upper_fifo|short_logic.chain[3][6]   ; engine|recurrence|arithmetic|field0|inverse_transform|stage5.shuffle2|output_generation[6]                 ; 0.609             ;
+; engine|recurrence|arithmetic|field1|inverse_transform|stage6.shuffle0|lower_fifo|short_logic.chain[7][6]   ; engine|recurrence|arithmetic|field1|inverse_transform|stage6.shuffle0|upper_fifo|short_logic.chain[0][6]   ; 0.609             ;
+; engine|recurrence|arithmetic|field0|forward_transform|stage12.shuffle3|lower_fifo|short_logic.chain[7][7]  ; engine|recurrence|arithmetic|field0|forward_transform|stage12.shuffle3|upper_fifo|short_logic.chain[0][7]  ; 0.609             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage6.shuffle3|upper_fifo|short_logic.chain[7][4]   ; engine|recurrence|arithmetic|field0|inverse_transform|stage6.shuffle3|output_generation[4]                 ; 0.608             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage4.shuffle3|upper_fifo|short_logic.chain[1][6]   ; engine|recurrence|arithmetic|field0|inverse_transform|stage4.shuffle3|output_generation[6]                 ; 0.607             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage7.shuffle1|lower_fifo|short_logic.chain[15][2]  ; engine|recurrence|arithmetic|field0|inverse_transform|stage7.shuffle1|upper_fifo|short_logic.chain[0][2]   ; 0.607             ;
+; engine|recurrence|arithmetic|field2|inverse_transform|stage7.shuffle3|lower_fifo|short_logic.chain[15][5]  ; engine|recurrence|arithmetic|field2|inverse_transform|stage7.shuffle3|upper_fifo|short_logic.chain[0][5]   ; 0.604             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage3.shuffle0|lower_fifo|short_logic.chain[0][3]   ; engine|recurrence|arithmetic|field0|inverse_transform|stage3.shuffle0|upper_fifo|short_logic.chain[0][3]   ; 0.604             ;
+; engine|recurrence|arithmetic|field2|forward_transform|stage15.shuffle1|lower_fifo|short_logic.chain[0][5]  ; engine|recurrence|arithmetic|field2|forward_transform|stage15.shuffle1|upper_fifo|short_logic.chain[0][5]  ; 0.604             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage8.shuffle1|lower_fifo|short_logic.chain[31][6]  ; engine|recurrence|arithmetic|field0|inverse_transform|stage8.shuffle1|upper_fifo|short_logic.chain[0][6]   ; 0.604             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage4.shuffle1|lower_fifo|short_logic.chain[1][0]   ; engine|recurrence|arithmetic|field0|inverse_transform|stage4.shuffle1|upper_fifo|short_logic.chain[0][0]   ; 0.604             ;
+; engine|recurrence|arithmetic|field1|inverse_transform|stage8.shuffle3|lower_fifo|short_logic.chain[31][6]  ; engine|recurrence|arithmetic|field1|inverse_transform|stage8.shuffle3|upper_fifo|short_logic.chain[0][6]   ; 0.603             ;
+; engine|recurrence|arithmetic|field2|forward_transform|stage12.shuffle3|lower_fifo|short_logic.chain[7][7]  ; engine|recurrence|arithmetic|field2|forward_transform|stage12.shuffle3|upper_fifo|short_logic.chain[0][7]  ; 0.603             ;
+; engine|recurrence|arithmetic|field2|forward_transform|stage14.shuffle3|lower_fifo|short_logic.chain[1][4]  ; engine|recurrence|arithmetic|field2|forward_transform|stage14.shuffle3|upper_fifo|short_logic.chain[0][4]  ; 0.602             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage3.shuffle3|lower_fifo|short_logic.chain[0][4]   ; engine|recurrence|arithmetic|field0|inverse_transform|stage3.shuffle3|upper_fifo|short_logic.chain[0][4]   ; 0.602             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage7.shuffle3|lower_fifo|short_logic.chain[15][7]  ; engine|recurrence|arithmetic|field0|inverse_transform|stage7.shuffle3|upper_fifo|short_logic.chain[0][7]   ; 0.602             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage8.shuffle2|lower_fifo|short_logic.chain[31][3]  ; engine|recurrence|arithmetic|field0|inverse_transform|stage8.shuffle2|upper_fifo|short_logic.chain[0][3]   ; 0.601             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage5.shuffle2|lower_fifo|short_logic.chain[3][3]   ; engine|recurrence|arithmetic|field0|inverse_transform|stage5.shuffle2|upper_fifo|short_logic.chain[0][3]   ; 0.600             ;
+; engine|recurrence|arithmetic|field2|inverse_transform|stage8.shuffle0|upper_fifo|short_logic.chain[31][5]  ; engine|recurrence|arithmetic|field2|inverse_transform|stage8.shuffle0|output_generation[5]                 ; 0.600             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage6.shuffle1|upper_fifo|short_logic.chain[7][4]   ; engine|recurrence|arithmetic|field0|inverse_transform|stage6.shuffle1|output_generation[4]                 ; 0.600             ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage3.shuffle0|lower_fifo|short_logic.filled[0]     ; engine|recurrence|arithmetic|field0|inverse_transform|stage3.shuffle0|upper_fifo|short_logic.chain[0][3]   ; 0.600             ;
++------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+-------------------+
+Note: This table only shows the top 100 path(s) that have the largest delay added for hold.
+
+
+--------------------------------------
+; Global Router Wire Utilization Map ;
+--------------------------------------
+This report is unavailable in plain text report export.
+
+
++-------------------------------------------------------------------------------+
+; Peak Wire Demand Summary                                                      ;
++-----------------+-----------+-----------------------------------+-------------+
+; Wire            ; Direction ; Grid [(Xmin, Ymin), (Xmax, Ymax)] ; Peak Demand ;
++-----------------+-----------+-----------------------------------+-------------+
+; short           ; right     ; [(104, 84), (111, 90)]            ; 43.194 %    ;
+; short           ; left      ; [(96, 91), (103, 97)]             ; 43.489 %    ;
+; short           ; up        ; [(88, 91), (95, 97)]              ; 81.374 %    ;
+; short           ; down      ; [(104, 91), (111, 97)]            ; 46.412 %    ;
+; long high speed ; right     ; [(64, 91), (71, 97)]              ; 135.714 %   ;
+; long high speed ; left      ; [(128, 84), (135, 90)]            ; 142.857 %   ;
+; long high speed ; up        ; [(88, 91), (95, 97)]              ; 134.375 %   ;
+; long high speed ; down      ; [(64, 112), (71, 118)]            ; 106.250 %   ;
++-----------------+-----------+-----------------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Peak Wire Demand Details                                                                                                                                         ;
++-----------------+-----------+-----------------------------------+-------------+----------------------------------------------------------------------------------+
+; Wire            ; Direction ; Grid [(Xmin, Ymin), (Xmax, Ymax)] ; Peak Demand ; Net Names                                                                        ;
++-----------------+-----------+-----------------------------------+-------------+----------------------------------------------------------------------------------+
+; short           ; right     ; [(104, 84), (111, 90)]            ; 43.194 %    ;    High Routing Fan-Out                                                          ;
+;     --          ;           ;                                   ;             ; engine|chain_base[13]                                                            ;
+;     --          ;           ;                                   ;             ; engine|chain_base[17]                                                            ;
+;     --          ;           ;                                   ;             ; engine|chain_base[18]                                                            ;
+;     --          ;           ;                                   ;             ; engine|chain_base[20]                                                            ;
+;     --          ;           ;                                   ;             ; engine|chain_base[26]                                                            ;
+;     --          ;           ;                                   ;             ; engine|chain_base[27]                                                            ;
+;     --          ;           ;                                   ;             ; engine|chain_base[28]                                                            ;
+;     --          ;           ;                                   ;             ; engine|chain_base[19]                                                            ;
+;     --          ;           ;                                   ;             ; engine|chain_base[16]                                                            ;
+;     --          ;           ;                                   ;             ; engine|chain_base[15]                                                            ;
+; short           ; right     ; [(104, 84), (111, 90)]            ; 43.194 %    ;    Long Distance                                                                 ;
+;     --          ;           ;                                   ;             ; host_image|natural_blocks[3].image_ram|mem_rtl_0|auto_generated|q_b[25]          ;
+;     --          ;           ;                                   ;             ; host_image|natural_blocks[3].image_ram|mem_rtl_0|auto_generated|q_b[5]           ;
+;     --          ;           ;                                   ;             ; host_image|natural_blocks[3].image_ram|mem_rtl_0|auto_generated|q_b[29]          ;
+;     --          ;           ;                                   ;             ; host_image|natural_blocks[3].image_ram|mem_rtl_0|auto_generated|q_b[4]           ;
+;     --          ;           ;                                   ;             ; host_image|natural_blocks[3].image_ram|mem_rtl_0|auto_generated|q_b[6]           ;
+;     --          ;           ;                                   ;             ; host_image|natural_blocks[3].image_ram|mem_rtl_0|auto_generated|q_b[7]           ;
+;     --          ;           ;                                   ;             ; host_image|natural_blocks[3].image_ram|mem_rtl_0|auto_generated|q_b[9]           ;
+;     --          ;           ;                                   ;             ; host_image|natural_blocks[3].image_ram|mem_rtl_0|auto_generated|q_b[8]           ;
+;     --          ;           ;                                   ;             ; host_image|natural_blocks[3].image_ram|mem_rtl_0|auto_generated|q_b[28]          ;
+;     --          ;           ;                                   ;             ; host_image|natural_blocks[3].image_ram|mem_rtl_0|auto_generated|q_b[15]          ;
+; short           ; left      ; [(96, 91), (103, 97)]             ; 43.489 %    ;    High Routing Fan-Out                                                          ;
+;     --          ;           ;                                   ;             ; engine|recurrence|auto_correction~0                                              ;
+;     --          ;           ;                                   ;             ; engine|recurrence|feedback_slot                                                  ;
+;     --          ;           ;                                   ;             ; engine|recurrence|i1172~0                                                        ;
+;     --          ;           ;                                   ;             ; engine|recurrence|i1268~0                                                        ;
+;     --          ;           ;                                   ;             ; engine|recurrence|i1076~0                                                        ;
+;     --          ;           ;                                   ;             ; engine|recurrence|i1140~0                                                        ;
+;     --          ;           ;                                   ;             ; engine|recurrence|i1108~0                                                        ;
+;     --          ;           ;                                   ;             ; engine|recurrence|i1236~0                                                        ;
+;     --          ;           ;                                   ;             ; engine|recurrence|i1300~0                                                        ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|field0|epoch_protocol|sink_found~0                  ;
+; short           ; left      ; [(96, 91), (103, 97)]             ; 43.489 %    ;    Long Distance                                                                 ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|shared_setup|accepted_base[4]                       ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|shared_setup|accepted_base[6]                       ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|shared_setup|accepted_base[3]                       ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|shared_setup|accepted_base[5]                       ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|shared_setup|accepted_base[8]                       ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|shared_setup|accepted_base[7]                       ;
+;     --          ;           ;                                   ;             ; engine|recurrence|i1578~0                                                        ;
+;     --          ;           ;                                   ;             ; engine|recurrence|i1558~0                                                        ;
+;     --          ;           ;                                   ;             ; engine|recurrence|i1580~0                                                        ;
+;     --          ;           ;                                   ;             ; engine|recurrence|i1579~0                                                        ;
+; short           ; up        ; [(88, 91), (95, 97)]              ; 81.374 %    ;    High Routing Fan-Out                                                          ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|field0|i1935~0                                      ;
+;     --          ;           ;                                   ;             ; engine|recurrence|i1140~0                                                        ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|field0|high_correction[255]~0                       ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|field0|epoch_protocol|valid[0]                      ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|field0|add_0~101                                    ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|field0|epoch_protocol|sink_found~0                  ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|field0|add_0~105                                    ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|field0|add_0~85                                     ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|field0|add_0~81                                     ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|field0|add_0~49                                     ;
+; short           ; up        ; [(88, 91), (95, 97)]              ; 81.374 %    ;    Long Distance                                                                 ;
+;     --          ;           ;                                   ;             ; engine|recurrence|i1572~0                                                        ;
+;     --          ;           ;                                   ;             ; engine|recurrence|i1560~0                                                        ;
+;     --          ;           ;                                   ;             ; engine|recurrence|i1562~0                                                        ;
+;     --          ;           ;                                   ;             ; engine|recurrence|i1564~0                                                        ;
+;     --          ;           ;                                   ;             ; engine|recurrence|i1566~0                                                        ;
+;     --          ;           ;                                   ;             ; engine|recurrence|i1586~0                                                        ;
+;     --          ;           ;                                   ;             ; engine|recurrence|i1573~0                                                        ;
+;     --          ;           ;                                   ;             ; engine|recurrence|i1570~0                                                        ;
+;     --          ;           ;                                   ;             ; engine|recurrence|i1571~0                                                        ;
+;     --          ;           ;                                   ;             ; engine|recurrence|i1559~0                                                        ;
+; short           ; down      ; [(104, 91), (111, 97)]            ; 46.412 %    ;    High Routing Fan-Out                                                          ;
+;     --          ;           ;                                   ;             ; engine|recurrence|i1140~0                                                        ;
+;     --          ;           ;                                   ;             ; engine|recurrence|i1076~0                                                        ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|reduce_and_5~1                                      ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|reduce_and_5~0                                      ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|digit_valid                                         ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|out_error                                           ;
+;     --          ;           ;                                   ;             ; engine|final_image|address[11]                                                   ;
+;     --          ;           ;                                   ;             ; engine|final_image|address[7]                                                    ;
+;     --          ;           ;                                   ;             ; engine|final_image|address[8]                                                    ;
+;     --          ;           ;                                   ;             ; engine|final_image|address[4]                                                    ;
+; short           ; down      ; [(104, 91), (111, 97)]            ; 46.412 %    ;    Long Distance                                                                 ;
+;     --          ;           ;                                   ;             ; engine|final_image|address[11]                                                   ;
+;     --          ;           ;                                   ;             ; engine|final_image|address[7]                                                    ;
+;     --          ;           ;                                   ;             ; engine|final_image|address[8]                                                    ;
+;     --          ;           ;                                   ;             ; engine|final_image|address[4]                                                    ;
+;     --          ;           ;                                   ;             ; engine|final_image|address[2]                                                    ;
+;     --          ;           ;                                   ;             ; engine|final_image|address[12]                                                   ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|arithmetic[0].carry|digits|payload_out[10]          ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|arithmetic[0].carry|digits|payload_out[5]           ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|arithmetic[0].carry|digits|payload_out[4]           ;
+;     --          ;           ;                                   ;             ; engine|recurrence|i1140~0                                                        ;
+; long high speed ; right     ; [(64, 91), (71, 97)]              ; 135.714 %   ;    High Routing Fan-Out                                                          ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|field0|epoch_protocol|LessThan_1~4                  ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|field0|term_producer|cache_ready~3                  ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|field0|epoch_protocol|cache_index~14                ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|field0|add_B|i6~0                                   ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|field0|epoch_protocol|cache_matches[0]~14           ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|field0|epoch_protocol|reduce_nor_13                 ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|field0|term_producer|add_0~1                        ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|field0|add_B|reduce_or_0~5                          ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|field0|epoch_protocol|add_2~125                     ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|field0|epoch_protocol|add_2~93                      ;
+; long high speed ; right     ; [(64, 91), (71, 97)]              ; 135.714 %   ;    Long Distance                                                                 ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|field0|epoch_protocol|add_2~93                      ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|field0|epoch_protocol|add_2~117                     ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|field0|epoch_protocol|add_2~77                      ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|field0|epoch_protocol|add_2~97                      ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|field0|epoch_protocol|add_2~101                     ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|field0|epoch_protocol|add_2~121                     ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|field0|epoch_protocol|add_2~81                      ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|field0|epoch_protocol|add_2~85                      ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|field0|epoch_protocol|add_2~89                      ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|field0|epoch_protocol|add_2~125                     ;
+; long high speed ; left      ; [(128, 84), (135, 90)]            ; 142.857 %   ;    High Routing Fan-Out                                                          ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|arithmetic[6].carry|normalize_boundary|carry_out[2] ;
+;     --          ;           ;                                   ;             ; engine|final_image|fold_r[1]~177                                                 ;
+;     --          ;           ;                                   ;             ; engine|final_image|fold_r[1]~172                                                 ;
+;     --          ;           ;                                   ;             ; engine|final_image|fold_r[1]~181                                                 ;
+;     --          ;           ;                                   ;             ; engine|final_image|fold_r[1]~180                                                 ;
+;     --          ;           ;                                   ;             ; engine|final_image|fold_r[1]~182                                                 ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|arithmetic[6].carry|digits|digit[19]                ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|arithmetic[6].carry|digits|digit[11]                ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|arithmetic[6].carry|digits|digit[6]                 ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|arithmetic[6].carry|digits|digit[8]                 ;
+; long high speed ; left      ; [(128, 84), (135, 90)]            ; 142.857 %   ;    Long Distance                                                                 ;
+;     --          ;           ;                                   ;             ; engine|final_image|fold_r[1]~177                                                 ;
+;     --          ;           ;                                   ;             ; engine|final_image|fold_r[1]~172                                                 ;
+;     --          ;           ;                                   ;             ; engine|final_image|fold_r[1]~181                                                 ;
+;     --          ;           ;                                   ;             ; engine|final_image|fold_r[1]~180                                                 ;
+;     --          ;           ;                                   ;             ; engine|final_image|fold_r[1]~182                                                 ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|arithmetic[6].carry|normalize_boundary|digit[6]     ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|arithmetic[6].carry|normalize_boundary|digit[26]    ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|arithmetic[6].carry|normalize_boundary|digit[4]     ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|arithmetic[6].carry|normalize_boundary|digit[7]     ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|arithmetic[6].carry|normalize_boundary|digit[20]    ;
+; long high speed ; up        ; [(88, 91), (95, 97)]              ; 134.375 %   ;    High Routing Fan-Out                                                          ;
+;     --          ;           ;                                   ;             ; engine|recurrence|i1076~0                                                        ;
+;     --          ;           ;                                   ;             ; engine|recurrence|i1154~0                                                        ;
+;     --          ;           ;                                   ;             ; engine|recurrence|i1161~0                                                        ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|field0|i1201~25                                     ;
+;     --          ;           ;                                   ;             ; engine|recurrence|i1289~0                                                        ;
+;     --          ;           ;                                   ;             ; engine|recurrence|i1147~0                                                        ;
+;     --          ;           ;                                   ;             ; engine|recurrence|i1211~0                                                        ;
+;     --          ;           ;                                   ;             ; engine|recurrence|i1115~0                                                        ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|field0|i1337~6                                      ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|field0|i1337~5                                      ;
+; long high speed ; up        ; [(88, 91), (95, 97)]              ; 134.375 %   ;    Long Distance                                                                 ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|arithmetic[1].carry|digits|digit[27]                ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|arithmetic[1].carry|digits|digit[21]                ;
+;     --          ;           ;                                   ;             ; engine|recurrence|i1144~0                                                        ;
+;     --          ;           ;                                   ;             ; engine|recurrence|i1142~0                                                        ;
+;     --          ;           ;                                   ;             ; engine|recurrence|i1146~0                                                        ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|arithmetic[1].carry|digits|digit[23]                ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|arithmetic[1].carry|digits|digit[24]                ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|arithmetic[1].carry|digits|digit[25]                ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|arithmetic[1].carry|digits|digit[22]                ;
+;     --          ;           ;                                   ;             ; engine|recurrence|arithmetic|arithmetic[1].carry|digits|digit[26]                ;
+; long high speed ; down      ; [(64, 112), (71, 118)]            ; 106.250 %   ;    High Routing Fan-Out                                                          ;
+;     --          ;           ;                                   ;             ; host_image|ram_wa[0][1]~2                                                        ;
+;     --          ;           ;                                   ;             ; host_image|ram_w[0][0]~58                                                        ;
+;     --          ;           ;                                   ;             ; host_image|ram_w[0][0]~67                                                        ;
+;     --          ;           ;                                   ;             ; host_image|ram_ra[0][0]~0                                                        ;
+;     --          ;           ;                                   ;             ; host_image|ram_ra[0][8]~17                                                       ;
+;     --          ;           ;                                   ;             ; host_image|ram_ra[0][2]~5                                                        ;
+;     --          ;           ;                                   ;             ; host_image|ram_ra[0][12]~25                                                      ;
+;     --          ;           ;                                   ;             ; host_image|ram_ra[0][7]~15                                                       ;
+;     --          ;           ;                                   ;             ; host_image|ram_ra[0][1]~3                                                        ;
+;     --          ;           ;                                   ;             ; host_image|ram_wa[0][12]~24                                                      ;
+; long high speed ; down      ; [(64, 112), (71, 118)]            ; 106.250 %   ;    Long Distance                                                                 ;
+;     --          ;           ;                                   ;             ; host_image|natural_blocks[0].image_ram|mem_rtl_0|auto_generated|q_b[14]          ;
+;     --          ;           ;                                   ;             ; host_image|ram_w[0][0]~58                                                        ;
+;     --          ;           ;                                   ;             ; host_image|ram_ra[0][6]~13                                                       ;
+;     --          ;           ;                                   ;             ; host_image|ram_wa[0][1]~2                                                        ;
+;     --          ;           ;                                   ;             ; host_image|ram_wa[0][4]~8                                                        ;
+;     --          ;           ;                                   ;             ; host_image|ram_wa[0][3]~6                                                        ;
+;     --          ;           ;                                   ;             ; host_image|ram_ra[0][4]~9                                                        ;
+;     --          ;           ;                                   ;             ; host_image|ram_ra[0][10]~21                                                      ;
+;     --          ;           ;                                   ;             ; host_image|ram_ra[0][11]~23                                                      ;
+;     --          ;           ;                                   ;             ; host_image|ram_ra[0][5]~11                                                       ;
++-----------------+-----------+-----------------------------------+-------------+----------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; Peak Total Grid Crossings                                                                             ;
++--------------------------------------------------------------------------------+----------------------+
+; Net Name                                                                       ; Total Grid Crossings ;
++--------------------------------------------------------------------------------+----------------------+
+; ~GND                                                                           ; 369                  ;
+; rst_n~input                                                                    ; 316                  ;
+; engine|recurrence|arithmetic|field1|inverse_transform|stage11.shuffle0|i156~0  ; 124                  ;
+; engine|recurrence|arithmetic|field1|inverse_transform|stop                     ; 92                   ;
+; engine|recurrence|arithmetic|field2|inverse_transform|stage11.shuffle0|i156~0  ; 71                   ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stage11.shuffle0|i156~0  ; 67                   ;
+; engine|recurrence|arithmetic|field1|forward_transform|stage3.shuffle0|i156~0   ; 54                   ;
+; engine|recurrence|arithmetic|field2|inverse_transform|stop                     ; 51                   ;
+; engine|recurrence|arithmetic|field2|forward_transform|stage3.shuffle0|i156~0   ; 46                   ;
+; engine|recurrence|arithmetic|field2|controller_error                           ; 45                   ;
+; engine|recurrence|arithmetic|field0|forward_transform|stage3.shuffle0|i156~0   ; 44                   ;
+; engine|recurrence|arithmetic|field0|forward_transform|stop                     ; 43                   ;
+; engine|recurrence|arithmetic|field2|forward_transform|stop                     ; 43                   ;
+; engine|recurrence|arithmetic|field0|controller_error                           ; 43                   ;
+; host_image|ram_w[0][0]~130                                                     ; 41                   ;
+; engine|recurrence|arithmetic|field1|forward_transform|stop                     ; 41                   ;
+; host_image|ram_wa[0][9]~18                                                     ; 40                   ;
+; engine|recurrence|arithmetic|field0|inverse_transform|stop                     ; 37                   ;
+; engine|recurrence|arithmetic|field1|controller_error                           ; 37                   ;
+; host_image|ram_w[0][0]~139                                                     ; 36                   ;
+; engine|recurrence|child_start~2                                                ; 36                   ;
+; host_image|ram_w[0][0]~238                                                     ; 35                   ;
+; host_image|ram_w[0][0]~121                                                     ; 34                   ;
+; host_image|ram_w[0][0]~256                                                     ; 33                   ;
+; host_image|ram_w[0][0]~157                                                     ; 33                   ;
+; engine|recurrence|arithmetic|shared_setup|reciprocal[84]                       ; 33                   ;
+; engine|recurrence|arithmetic|shared_setup|reciprocal[82]                       ; 33                   ;
+; engine|recurrence|arithmetic|shared_setup|reciprocal[81]                       ; 33                   ;
+; host_image|ram_w[0][0]~13                                                      ; 32                   ;
+; engine|recurrence|arithmetic|field2|inverse_transform|stage8.shuffle0|advance  ; 32                   ;
+; engine|recurrence|arithmetic|arithmetic[7].carry|i529~0                        ; 32                   ;
+; host_image|ram_w[0][0]~202                                                     ; 31                   ;
+; host_image|ram_wa[0][11]~22                                                    ; 31                   ;
+; engine|recurrence|arithmetic|field1|forward_transform|stage10.shuffle1|advance ; 31                   ;
+; host_image|ram_w[0][0]~229                                                     ; 30                   ;
+; host_image|ram_w[0][0]~211                                                     ; 30                   ;
+; host_image|ram_w[0][0]~76                                                      ; 30                   ;
+; host_image|ram_w[0][0]~166                                                     ; 30                   ;
+; engine|recurrence|arithmetic|field1|forward_transform|stage10.shuffle0|advance ; 30                   ;
+; engine|recurrence|arithmetic|shared_setup|reciprocal[93]                       ; 30                   ;
+; engine|recurrence|arithmetic|shared_setup|reciprocal[91]                       ; 30                   ;
+; engine|recurrence|arithmetic|shared_setup|reciprocal[76]                       ; 30                   ;
+; engine|recurrence|arithmetic|shared_setup|reciprocal[75]                       ; 30                   ;
+; engine|recurrence|arithmetic|shared_setup|reciprocal[63]                       ; 30                   ;
+; engine|recurrence|arithmetic|shared_setup|reciprocal[60]                       ; 30                   ;
+; host_image|ram_w[0][0]~94                                                      ; 29                   ;
+; host_image|ram_w[0][0]~175                                                     ; 29                   ;
+; host_image|ram_w[0][0]~247                                                     ; 29                   ;
+; engine|recurrence|arithmetic|shared_setup|reciprocal[78]                       ; 29                   ;
+; engine|recurrence|arithmetic|shared_setup|reciprocal[77]                       ; 29                   ;
++--------------------------------------------------------------------------------+----------------------+
+
+
+--------------------------------------------
+; Global Router Congestion Hotspot Summary ;
+--------------------------------------------
+No congestion hotspots found where global router short wire usage exceeded 100%.
+If the design is hard to route, use other techniques to analyze congestion. Refer to the Estimated Delay Added for Hold Timing section in the Fitter report and routing utilization in the Chip Planner.
+
+

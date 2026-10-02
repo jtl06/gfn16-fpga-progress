@@ -1,0 +1,860 @@
+{
+  "author_pure_tests": {
+    "methods": 5,
+    "modules": [
+      "test_anext_writeback_v1",
+      "test_anext_writeback_cancel_v1",
+      "test_anext_writeback_contract_v2"
+    ],
+    "status": "PASS"
+  },
+  "auxiliary_metadata_correction": [
+    {
+      "aw": 5,
+      "corrected_v2_transform": 55,
+      "frozen_v1_transform": 50,
+      "ntt": 126,
+      "point": 10
+    },
+    {
+      "aw": 8,
+      "corrected_v2_transform": 96,
+      "frozen_v1_transform": 88,
+      "ntt": 211,
+      "point": 13
+    },
+    {
+      "aw": 16,
+      "corrected_v2_transform": 8352,
+      "frozen_v1_transform": 8336,
+      "ntt": 17743,
+      "point": 1033
+    }
+  ],
+  "limitations": [
+    "Source-pinned native word comparisons, including 524288 AW16 readbacks, run inside unchanged closed-form/small-N oracle harnesses; there is no standalone full residue dump or offline array recomputation in this review.",
+    "Six AW5 simulation-seam reset/cancel ages0/1/3 observe pending three-field bank launches,16 post-event samples of actual physical ram_write_en/read/pending/publication/cache quiet and32-word recovery AFTER full reset/reload. No public cancel opcode, unobserved pre-edge cancel atomicity, all-address preservation or exhaustive ages/faults claimed.",
+    "Frozen v1 transform_engine_cycles auxiliary metadata missed+AW; additive69778 v2 corrects only that field. Native-used NTT/whole/point fields and all raw outcomes were correct and remain unchanged.",
+    "F3 commits E9 instead of E8, II1; +AW per transform/+1 point produces+2AW+1 whole warm/cold/host schedule. Arithmetic, roots, normalizations, external E0/E1 block API and production host ABI unchanged under ten-site reverse proof.",
+    "Actual normal one-reset/held-response and finite signed monomial/dense/min-max-base coverage only; no F3 PRP/continuous1000/original-or-upper soak inheritance, physical timing/hold repair/adopted clock/highest clock/board/general pipeline or production promotion."
+  ],
+  "physical_plan_source_bindings": [
+    {
+      "compiled_RTL_count": 30,
+      "manifest_sha256": "8a5a4ef0f93f2fc82353207d6be5ab366514f9bc64675bc88cbbd648be3b43fe",
+      "scope": "source equality only, NOT fit/STA qualification"
+    },
+    {
+      "compiled_RTL_count": 30,
+      "manifest_sha256": "4afd8f47552977f2b5cbc36608d7dcd1d15ed6287f825e0aebdd4eafbe072890",
+      "scope": "source equality only, NOT fit/STA qualification"
+    }
+  ],
+  "pins": {
+    "reference/anext_writeback_cancel_v1.py": "682c740da0c636cf587e07e067a1aa4090cce6da7bd022d321f6a6bb792a5231",
+    "reference/anext_writeback_contract_v1.py": "82b8bc11c1d78ade66be6c0868f160d4d149c2a92d7cddd82b5b5baf35d54b91",
+    "reference/anext_writeback_contract_v2.py": "69778f730a2457f7f626536a95ebc435316ef6ed36584a5e9c45b77d7a0c2904",
+    "reference/anext_writeback_output_v1.py": "9d380768158aa15b71773e2238b02993b85d277300ec84acf9374999d60608b2",
+    "reference/anext_writeback_representative_output_v1.py": "8f3daf36d28c2066a299ea2aff6f83f4a3d1a016f6fc727a71bb19a314385f6b",
+    "reference/anext_writeback_source_v1.py": "2df6dc679837c44bf1f40410cc5da560f9830a9936341cee0c7fb8dc7521be11",
+    "replay_sha256": "c72ea7adbbe289a25a616cfe3794e56947edee57f0cc7b5445e72be35182cd8b",
+    "results/throughput-20260929/core27-t5b-thread-pilot-native-replay-independent-v1.py": "1720b2c3ff5e6b4225fe845fc73b76314a6a657ab61c825445012302fca6b907",
+    "tools/native_gate_receipt_v1.py": "131d4e6b9cafd424935094c3ec50ef81d7c2e8024efae6a5d37ce20d0c5a29d3",
+    "tools/native_lint_classes_v1.py": "0f9b3cfd9a2723a8fb10f4b30614da253e04e3eab52e220241403fec8908d031"
+  },
+  "promotion_allowed": false,
+  "replay": {
+    "artifacts": 74,
+    "commands": 29,
+    "dispatcher_pins": 114,
+    "generated": 605,
+    "independent_malformed_output_rejections": 63,
+    "package_members": 1052,
+    "sources": 1032
+  },
+  "reviewer": "independent_review",
+  "roles": [
+    {
+      "affinity": [
+        2,
+        3
+      ],
+      "done_sha256": "1c016241df2b6f145cad11114ef375861f51c559448ed375a11a56344b22463b",
+      "gate_sha256": "28d22c98a3d5811df7f318fe547b3b6e73b12ed7799f0317947ffd85fb0dbb3e",
+      "id": "anext-writeback-whole-aw5-q1-v1",
+      "invocation_id": "b7fa0c70f94b40d18109a302741192d4",
+      "manifest_sha256": "05365ec626fcca95ec62a871224a4ddb2f0fdf0e827ea99df388464d338ee69a",
+      "memory_max_bytes": 8589934592,
+      "native_seconds": 59.77378978699926,
+      "observed": [
+        {
+          "footer": {
+            "aw": 5,
+            "cold_squares": 8,
+            "commands": 404,
+            "hold_checks": 808,
+            "max_latency": 220,
+            "profile_loads": 4,
+            "readbacks": 256,
+            "squares": 14,
+            "ticks": 7351
+          },
+          "metrics": [
+            {
+              "cold": 1,
+              "double": 0,
+              "index": 33,
+              "latency": 220,
+              "load": 1,
+              "ntt": 126,
+              "post": 64,
+              "prefill": 12,
+              "root": 9,
+              "seed": 0,
+              "total": 218
+            },
+            {
+              "cold": 0,
+              "double": 1,
+              "index": 34,
+              "latency": 197,
+              "load": 0,
+              "ntt": 126,
+              "post": 64,
+              "prefill": 0,
+              "root": 0,
+              "seed": 0,
+              "total": 195
+            },
+            {
+              "cold": 0,
+              "double": 0,
+              "index": 35,
+              "latency": 197,
+              "load": 0,
+              "ntt": 126,
+              "post": 64,
+              "prefill": 0,
+              "root": 0,
+              "seed": 0,
+              "total": 195
+            },
+            {
+              "cold": 1,
+              "double": 1,
+              "index": 68,
+              "latency": 211,
+              "load": 0,
+              "ntt": 126,
+              "post": 64,
+              "prefill": 12,
+              "root": 0,
+              "seed": 0,
+              "total": 209
+            },
+            {
+              "cold": 1,
+              "double": 0,
+              "index": 134,
+              "latency": 220,
+              "load": 1,
+              "ntt": 126,
+              "post": 64,
+              "prefill": 12,
+              "root": 9,
+              "seed": 0,
+              "total": 218
+            },
+            {
+              "cold": 0,
+              "double": 1,
+              "index": 135,
+              "latency": 197,
+              "load": 0,
+              "ntt": 126,
+              "post": 64,
+              "prefill": 0,
+              "root": 0,
+              "seed": 0,
+              "total": 195
+            },
+            {
+              "cold": 0,
+              "double": 0,
+              "index": 136,
+              "latency": 197,
+              "load": 0,
+              "ntt": 126,
+              "post": 64,
+              "prefill": 0,
+              "root": 0,
+              "seed": 0,
+              "total": 195
+            },
+            {
+              "cold": 1,
+              "double": 1,
+              "index": 169,
+              "latency": 211,
+              "load": 0,
+              "ntt": 126,
+              "post": 64,
+              "prefill": 12,
+              "root": 0,
+              "seed": 0,
+              "total": 209
+            },
+            {
+              "cold": 1,
+              "double": 0,
+              "index": 235,
+              "latency": 220,
+              "load": 1,
+              "ntt": 126,
+              "post": 64,
+              "prefill": 12,
+              "root": 9,
+              "seed": 0,
+              "total": 218
+            },
+            {
+              "cold": 0,
+              "double": 1,
+              "index": 236,
+              "latency": 197,
+              "load": 0,
+              "ntt": 126,
+              "post": 64,
+              "prefill": 0,
+              "root": 0,
+              "seed": 0,
+              "total": 195
+            },
+            {
+              "cold": 0,
+              "double": 0,
+              "index": 237,
+              "latency": 197,
+              "load": 0,
+              "ntt": 126,
+              "post": 64,
+              "prefill": 0,
+              "root": 0,
+              "seed": 0,
+              "total": 195
+            },
+            {
+              "cold": 1,
+              "double": 1,
+              "index": 270,
+              "latency": 211,
+              "load": 0,
+              "ntt": 126,
+              "post": 64,
+              "prefill": 12,
+              "root": 0,
+              "seed": 0,
+              "total": 209
+            },
+            {
+              "cold": 1,
+              "double": 0,
+              "index": 304,
+              "latency": 211,
+              "load": 0,
+              "ntt": 126,
+              "post": 64,
+              "prefill": 12,
+              "root": 0,
+              "seed": 0,
+              "total": 209
+            },
+            {
+              "cold": 1,
+              "double": 1,
+              "index": 371,
+              "latency": 220,
+              "load": 1,
+              "ntt": 126,
+              "post": 64,
+              "prefill": 12,
+              "root": 9,
+              "seed": 0,
+              "total": 218
+            }
+          ]
+        }
+      ],
+      "owner_sha256": "086dfedb1707ac226080c0f6535e881df0e959b78ad83e1a3f2c3c23876eef09",
+      "package_sha256": "ebc3e24809c280ff8a7044c061708851d55e7e83b05e80c18d3741bb63aa4986",
+      "report_sha256": "09de250bd3118c4cfc7a2e45999e7343be5241f9ce43ace0bc60ac7cddca4356",
+      "style_counts": {
+        "DECLFILENAME": 3,
+        "GENUNNAMED": 15,
+        "PINCONNECTEMPTY": 19,
+        "SYNCASYNCNET": 18,
+        "UNUSEDSIGNAL": 37,
+        "VARHIDDEN": 1
+      }
+    },
+    {
+      "affinity": [
+        2,
+        3
+      ],
+      "done_sha256": "a3e6900c6ea2adfceccd17b575cb6bc1598b56bb693bec16e5d6a7ece1cb44b9",
+      "gate_sha256": "f621296abdf279df5e4a05343309221925d9cf6f2fd1980e56e17f543956439c",
+      "id": "anext-writeback-whole-aw8-q1-v1",
+      "invocation_id": "87a7a8262cb84a5fa70ebd51e0607ec4",
+      "manifest_sha256": "bbc2081d9d90e0a003ccceaca81ea5395cd8fbac69be26ddc2f105ec54b385bc",
+      "memory_max_bytes": 8589934592,
+      "native_seconds": 87.27204700899892,
+      "observed": [
+        {
+          "footer": {
+            "aw": 8,
+            "cold_squares": 8,
+            "commands": 3092,
+            "hold_checks": 6184,
+            "max_latency": 524,
+            "profile_loads": 4,
+            "readbacks": 2048,
+            "squares": 14,
+            "ticks": 33503
+          },
+          "metrics": [
+            {
+              "cold": 1,
+              "double": 0,
+              "index": 257,
+              "latency": 333,
+              "load": 1,
+              "ntt": 211,
+              "post": 78,
+              "prefill": 26,
+              "root": 9,
+              "seed": 0,
+              "total": 331
+            },
+            {
+              "cold": 0,
+              "double": 1,
+              "index": 258,
+              "latency": 296,
+              "load": 0,
+              "ntt": 211,
+              "post": 78,
+              "prefill": 0,
+              "root": 0,
+              "seed": 0,
+              "total": 294
+            },
+            {
+              "cold": 0,
+              "double": 0,
+              "index": 259,
+              "latency": 296,
+              "load": 0,
+              "ntt": 211,
+              "post": 78,
+              "prefill": 0,
+              "root": 0,
+              "seed": 0,
+              "total": 294
+            },
+            {
+              "cold": 1,
+              "double": 1,
+              "index": 516,
+              "latency": 324,
+              "load": 0,
+              "ntt": 211,
+              "post": 78,
+              "prefill": 26,
+              "root": 0,
+              "seed": 0,
+              "total": 322
+            },
+            {
+              "cold": 1,
+              "double": 0,
+              "index": 1030,
+              "latency": 333,
+              "load": 1,
+              "ntt": 211,
+              "post": 78,
+              "prefill": 26,
+              "root": 9,
+              "seed": 0,
+              "total": 331
+            },
+            {
+              "cold": 0,
+              "double": 1,
+              "index": 1031,
+              "latency": 296,
+              "load": 0,
+              "ntt": 211,
+              "post": 78,
+              "prefill": 0,
+              "root": 0,
+              "seed": 0,
+              "total": 294
+            },
+            {
+              "cold": 0,
+              "double": 0,
+              "index": 1032,
+              "latency": 296,
+              "load": 0,
+              "ntt": 211,
+              "post": 78,
+              "prefill": 0,
+              "root": 0,
+              "seed": 0,
+              "total": 294
+            },
+            {
+              "cold": 1,
+              "double": 1,
+              "index": 1289,
+              "latency": 324,
+              "load": 0,
+              "ntt": 211,
+              "post": 78,
+              "prefill": 26,
+              "root": 0,
+              "seed": 0,
+              "total": 322
+            },
+            {
+              "cold": 1,
+              "double": 0,
+              "index": 1803,
+              "latency": 333,
+              "load": 1,
+              "ntt": 211,
+              "post": 78,
+              "prefill": 26,
+              "root": 9,
+              "seed": 0,
+              "total": 331
+            },
+            {
+              "cold": 0,
+              "double": 1,
+              "index": 1804,
+              "latency": 296,
+              "load": 0,
+              "ntt": 211,
+              "post": 78,
+              "prefill": 0,
+              "root": 0,
+              "seed": 0,
+              "total": 294
+            },
+            {
+              "cold": 0,
+              "double": 0,
+              "index": 1805,
+              "latency": 296,
+              "load": 0,
+              "ntt": 211,
+              "post": 78,
+              "prefill": 0,
+              "root": 0,
+              "seed": 0,
+              "total": 294
+            },
+            {
+              "cold": 1,
+              "double": 1,
+              "index": 2062,
+              "latency": 324,
+              "load": 0,
+              "ntt": 211,
+              "post": 78,
+              "prefill": 26,
+              "root": 0,
+              "seed": 0,
+              "total": 322
+            },
+            {
+              "cold": 1,
+              "double": 0,
+              "index": 2320,
+              "latency": 324,
+              "load": 0,
+              "ntt": 211,
+              "post": 78,
+              "prefill": 26,
+              "root": 0,
+              "seed": 0,
+              "total": 322
+            },
+            {
+              "cold": 1,
+              "double": 1,
+              "index": 2835,
+              "latency": 333,
+              "load": 1,
+              "ntt": 211,
+              "post": 78,
+              "prefill": 26,
+              "root": 9,
+              "seed": 0,
+              "total": 331
+            }
+          ]
+        }
+      ],
+      "owner_sha256": "49cc97b6fa1f2e0bf267567f64c240e433362a4cddb7ffc47c7e834434e34855",
+      "package_sha256": "167963dde01d960026d53f25e103b6dc3a5b28f38524dd873e14d36627ac41a3",
+      "report_sha256": "143dcadd4449b13129ba41e5808d85028fb39765a49f11e5debc60dffe321600",
+      "style_counts": {
+        "DECLFILENAME": 3,
+        "GENUNNAMED": 15,
+        "PINCONNECTEMPTY": 19,
+        "SYNCASYNCNET": 18,
+        "UNUSEDSIGNAL": 37,
+        "VARHIDDEN": 1
+      }
+    },
+    {
+      "affinity": [
+        2,
+        3
+      ],
+      "done_sha256": "32ab60a1f9e55ea56b939095ba2dab6852917d4587f095cc4a5a5db5dc5af356",
+      "gate_sha256": "687d2017ae81cd767b37d3ba5b7e5c7910a0b9df922e0c62afdd08abe057dbd9",
+      "id": "anext-writeback-whole-aw16-q1-v1",
+      "invocation_id": "74855cc4d22b426385508471b3aa8f2d",
+      "manifest_sha256": "4de5cf5388962c9a783ffa671d68d6d19e0adc2f2cf7bf00f6f00bc02a8f6e2e",
+      "memory_max_bytes": 25769803776,
+      "native_seconds": 929.0047532130011,
+      "observed": [
+        {
+          "footer": {
+            "aw": 16,
+            "cold_squares": 8,
+            "commands": 786452,
+            "hold_checks": 1572904,
+            "max_latency": 69642,
+            "profile_loads": 4,
+            "readbacks": 524288,
+            "squares": 16,
+            "ticks": 7466223
+          },
+          "metrics": [
+            {
+              "cold": 1,
+              "double": 0,
+              "index": 65537,
+              "latency": 26025,
+              "load": 1,
+              "ntt": 17743,
+              "post": 4158,
+              "prefill": 4106,
+              "root": 9,
+              "seed": 0,
+              "total": 26023
+            },
+            {
+              "cold": 0,
+              "double": 1,
+              "index": 65538,
+              "latency": 21908,
+              "load": 0,
+              "ntt": 17743,
+              "post": 4158,
+              "prefill": 0,
+              "root": 0,
+              "seed": 0,
+              "total": 21906
+            },
+            {
+              "cold": 0,
+              "double": 0,
+              "index": 65539,
+              "latency": 21908,
+              "load": 0,
+              "ntt": 17743,
+              "post": 4158,
+              "prefill": 0,
+              "root": 0,
+              "seed": 0,
+              "total": 21906
+            },
+            {
+              "cold": 1,
+              "double": 1,
+              "index": 131076,
+              "latency": 26016,
+              "load": 0,
+              "ntt": 17743,
+              "post": 4158,
+              "prefill": 4106,
+              "root": 0,
+              "seed": 0,
+              "total": 26014
+            },
+            {
+              "cold": 1,
+              "double": 0,
+              "index": 262150,
+              "latency": 26025,
+              "load": 1,
+              "ntt": 17743,
+              "post": 4158,
+              "prefill": 4106,
+              "root": 9,
+              "seed": 0,
+              "total": 26023
+            },
+            {
+              "cold": 0,
+              "double": 1,
+              "index": 262151,
+              "latency": 21908,
+              "load": 0,
+              "ntt": 17743,
+              "post": 4158,
+              "prefill": 0,
+              "root": 0,
+              "seed": 0,
+              "total": 21906
+            },
+            {
+              "cold": 0,
+              "double": 0,
+              "index": 262152,
+              "latency": 21908,
+              "load": 0,
+              "ntt": 17743,
+              "post": 4158,
+              "prefill": 0,
+              "root": 0,
+              "seed": 0,
+              "total": 21906
+            },
+            {
+              "cold": 1,
+              "double": 1,
+              "index": 327689,
+              "latency": 26016,
+              "load": 0,
+              "ntt": 17743,
+              "post": 4158,
+              "prefill": 4106,
+              "root": 0,
+              "seed": 0,
+              "total": 26014
+            },
+            {
+              "cold": 1,
+              "double": 0,
+              "index": 458763,
+              "latency": 26025,
+              "load": 1,
+              "ntt": 17743,
+              "post": 4158,
+              "prefill": 4106,
+              "root": 9,
+              "seed": 0,
+              "total": 26023
+            },
+            {
+              "cold": 0,
+              "double": 1,
+              "index": 458764,
+              "latency": 21908,
+              "load": 0,
+              "ntt": 17743,
+              "post": 4158,
+              "prefill": 0,
+              "root": 0,
+              "seed": 0,
+              "total": 21906
+            },
+            {
+              "cold": 0,
+              "double": 0,
+              "index": 458765,
+              "latency": 21908,
+              "load": 0,
+              "ntt": 17743,
+              "post": 4158,
+              "prefill": 0,
+              "root": 0,
+              "seed": 0,
+              "total": 21906
+            },
+            {
+              "cold": 1,
+              "double": 1,
+              "index": 524302,
+              "latency": 26016,
+              "load": 0,
+              "ntt": 17743,
+              "post": 4158,
+              "prefill": 4106,
+              "root": 0,
+              "seed": 0,
+              "total": 26014
+            },
+            {
+              "cold": 1,
+              "double": 0,
+              "index": 655376,
+              "latency": 26025,
+              "load": 1,
+              "ntt": 17743,
+              "post": 4158,
+              "prefill": 4106,
+              "root": 9,
+              "seed": 0,
+              "total": 26023
+            },
+            {
+              "cold": 0,
+              "double": 1,
+              "index": 655377,
+              "latency": 21908,
+              "load": 0,
+              "ntt": 17743,
+              "post": 4158,
+              "prefill": 0,
+              "root": 0,
+              "seed": 0,
+              "total": 21906
+            },
+            {
+              "cold": 0,
+              "double": 0,
+              "index": 655378,
+              "latency": 21908,
+              "load": 0,
+              "ntt": 17743,
+              "post": 4158,
+              "prefill": 0,
+              "root": 0,
+              "seed": 0,
+              "total": 21906
+            },
+            {
+              "cold": 1,
+              "double": 1,
+              "index": 720915,
+              "latency": 26016,
+              "load": 0,
+              "ntt": 17743,
+              "post": 4158,
+              "prefill": 4106,
+              "root": 0,
+              "seed": 0,
+              "total": 26014
+            }
+          ]
+        }
+      ],
+      "owner_sha256": "719c76f8158f3c009f5a795e708ccdafc06d25af10679f789250eb60d4288325",
+      "package_sha256": "5d3dcf4b6d1268cd2b0c530a3edde4e7f99dd18d4afafa4f2f96c7b3153fe4c8",
+      "report_sha256": "4b9e1b340a03b04f8ed5e2553a026b2c077900fc4dbc241ecb9631e077997c53",
+      "style_counts": {
+        "DECLFILENAME": 3,
+        "GENUNNAMED": 15,
+        "PINCONNECTEMPTY": 19,
+        "SYNCASYNCNET": 18,
+        "UNUSEDSIGNAL": 37,
+        "VARHIDDEN": 1
+      }
+    },
+    {
+      "affinity": [
+        0,
+        1
+      ],
+      "done_sha256": "5f6968d667e0f27b88956f9f48e2ab903da61082e5757cb7ac2fcc530e8028a8",
+      "gate_sha256": "f63a1dd904cec477c622818fcf4c435907264e4b9af3ec79724c8ca524166f20",
+      "id": "anext-writeback-cancel-aw5-q1-v1",
+      "invocation_id": "82b7b1c6a7e9452d9326424371b22e29",
+      "manifest_sha256": "b674bdcea1f732dd6f8512b3c43d4c016aa797ecd4a0cfc96e3a15cc3b9c8ac4",
+      "memory_max_bytes": 4294967296,
+      "native_seconds": 67.08399870699941,
+      "observed": [
+        {
+          "case": "reset0",
+          "fields": 3,
+          "quiet_edges": 16,
+          "recovery_words": 32,
+          "ticks": 1172
+        },
+        {
+          "case": "reset1",
+          "fields": 3,
+          "quiet_edges": 16,
+          "recovery_words": 32,
+          "ticks": 1173
+        },
+        {
+          "case": "reset3",
+          "fields": 3,
+          "quiet_edges": 16,
+          "recovery_words": 32,
+          "ticks": 1175
+        },
+        {
+          "case": "cancel0",
+          "fields": 3,
+          "quiet_edges": 16,
+          "recovery_words": 32,
+          "ticks": 1172
+        },
+        {
+          "case": "cancel1",
+          "fields": 3,
+          "quiet_edges": 16,
+          "recovery_words": 32,
+          "ticks": 1173
+        },
+        {
+          "case": "cancel3",
+          "fields": 3,
+          "quiet_edges": 16,
+          "recovery_words": 32,
+          "ticks": 1175
+        }
+      ],
+      "owner_sha256": "d1d6554c287fd1402386fe60651ddc4ee13fd3d599dd1199c6b98730b38ff34a",
+      "package_sha256": "7d394c5decfb0272a894660764092fe8d045d14c92f0e88f05f65da7d130115f",
+      "report_sha256": "06390345a7119854eb077f16a909ffcb4bd0e56acea715d765c697acb0c7d271",
+      "style_counts": {
+        "DECLFILENAME": 3,
+        "GENUNNAMED": 15,
+        "PINCONNECTEMPTY": 19,
+        "SYNCASYNCNET": 18,
+        "UNUSEDSIGNAL": 36,
+        "VARHIDDEN": 1
+      }
+    }
+  ],
+  "schema": "independent-native-review-v1",
+  "source_derivative_sites": 10,
+  "source_proof": {
+    "cancel_harness_sha256": "4526843768227eef2f4fe382edbca7e230bac71e3f64aadbff88ebfb21d8247d",
+    "cancel_probe_sha256": "2e55d12cce0c198acfdf3565f27a5fc8251c55934ea313639cfd12d694890f47",
+    "generated_whole_sources": {
+      "reference/anext_writeback_output_v1.py": "9d380768158aa15b71773e2238b02993b85d277300ec84acf9374999d60608b2",
+      "reference/anext_writeback_representative_output_v1.py": "8f3daf36d28c2066a299ea2aff6f83f4a3d1a016f6fc727a71bb19a314385f6b",
+      "rtl/kernel/genefer_anext_writeback_block_engine_v1.sv": "76f195246961fc97db61bdcc9e1958bb4f04e238e59726b6c31add12d87cde45",
+      "rtl/kernel/genefer_anext_writeback_core_v1.sv": "04fe3faa490c83395cec936c40cad15644885ddfd83f008b9f8d7e27da9f8fc9",
+      "rtl/kernel/genefer_anext_writeback_ntt_sequencer_v1.sv": "839497d3cd2740519809fdf50db4976ffe45db6761f1a9fef551c5aa64c4d6c0",
+      "rtl/kernel/genefer_anext_writeback_square_backend_v1.sv": "47cfcc569d8eb152cfeeb74b8346fa78d379aa01f6233bc9510b6f3d897fe9ad",
+      "rtl/tb/track_anext_writeback_core_v1.cpp": "107d1d2f0f56335568ac491f47c5ca5c910cf7541b283fded02f599a67c91366",
+      "rtl/tb/track_anext_writeback_representative_v1.cpp": "4bc7891dab59e95152b56eed14179af93a8100adce4f140cef143ba61febeef9"
+    },
+    "generator_sha256": "fc3760529ddcc12044a531f9a39d89faf5e26dc0f7a3c7b611d1ea5f628d1f03",
+    "raw_engine_sha256": "f200303571a01042c17e5c8a5b4070bd94d810503bc05285523cec370cda2ace"
+  },
+  "status": "PASS_scoped_F3_whole_AW5_AW8_AW16_and_six_pending_physical_write_recovery_deltas"
+}

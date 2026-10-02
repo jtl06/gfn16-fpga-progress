@@ -1,0 +1,71 @@
+{
+  "schema": "gfn16-independent-review-delta-v1",
+  "updated_at_utc": "2026-10-02T02:15:00Z",
+  "reviewer": "/root/p16_independent_reviewer",
+  "status": "PASS_required_original_P16_source_bound_promotion_evidence_ADVISOR_AND_MAIN_ADOPTION_PENDING",
+  "promotion_allowed": false,
+  "independence": "Own history has no authorship of candidate, compiler, reference, harness, numerical tests or consolidation. Only reviewer records/status authored. Prior conflicted helper verdict not reused.",
+  "final_delta": {
+    "receipt": "queue/standing-fit-state/audit-terminal/s4-p16-diet-whole-9000-azure-clockprobe-v1-audit4/receipt.json",
+    "receipt_sha256": "b17877b9bd08ea3d38c3b6ebf65ed8db5f4498cd5295db6a55f6880faae867fd",
+    "archive_sha256": "ee08585bcaa7731315a14e5f8100ebf6851bfbd8a9eee7d80b4b711b34f68df7",
+    "raw_audit_receipt_sha256": "519ccf8e6ef597ece85a82603622cef7c58720b800eeba2da486448b659b70ba",
+    "spec_sha256": "baf48032e687ca5ed172a0df535bab5d42e2512c8a7046853a1dfdcecd8cac66",
+    "inventory_sha256": "a54c6b3cbf788a0122ce17cb38266920ecb9498ede8c4c7dc9336e1be4d47cfe",
+    "retained_files_verified": 262, "retained_bytes_verified": 2196919243,
+    "method": "Verified archive/inventory/spec/raw receipt pins and every retained member hash/size; all69 original source/control/report pins equal previously reviewed audit1. Frozen pinned helper and Tcl unchanged. Independently replayed complete baseline/selected ordered raw four-corner clock/effectiveSDC/UCP, setup paths and setup/hold/MPW/recovery/removal reports, exactly reproducing terminal timing object. Native STA commands all0/full completion, compiled-input/original unchanged, fit_commands0, final verification errors empty. Snapshot differences only4 exactreport outputs and2 exact allowed cache promotions with both bytecomparison receipts true. No numerical or vendor rerun."
+  },
+  "unchanged_source_and_saved_layout": {
+    "original_tree_sha256": "d9ea5ca48da6f919ed6d4d61ffb51ab33a1c1fab55f96c2ae25636155e83e1a7",
+    "qdb_inventory_sha256": "b52aca1b666d1f09ec1f6a353924429affe6b01fd75d2aef7c805f0ed49bba4b",
+    "manifest_sha256": "3869c9c0defbeaad7c2ac7dba834c7192007b6cc0863b68b1a46c1ffee003e52",
+    "source_scope": "Original diet rootb683cb11, exact paired69 numerical closure containing standalone/routed58. Same parameters/source/placement/routing/constraint scope as conservative audit1. No timing7, P8, packed or new retiming source inheritance. Raw saved-QDB bytes are pinned by trusted inventory/unchanged/cache guard receipts, not copied in the collection archive."
+  },
+  "fastest_tested_passing_internal_clock": {
+    "period_ns": "12.594", "frequency_mhz": "79.40289026520565348578688264",
+    "four_corners": [
+      {"corner": "Fast900mV0C", "setup_ns": "5.497", "hold_ns": "0.005", "mpw_ns": "5.909"},
+      {"corner": "Fast900mV100C", "setup_ns": "4.269", "hold_ns": "0.006", "mpw_ns": "5.903"},
+      {"corner": "Slow900mV0C", "setup_ns": "0.035", "hold_ns": "0.033", "mpw_ns": "5.647"},
+      {"corner": "Slow900mV100C", "setup_ns": "0.000", "hold_ns": "0.074", "mpw_ns": "5.732"}
+    ],
+    "failing_setup_hold_mpw_endpoints": 0,
+    "finite_setup_observations": 4000,
+    "adjacent_failing_period_ns": "12.592", "adjacent_failing_minimum_setup_ns": "-0.002",
+    "adjacent_fail_review": "results/throughput-20260929/s4-p16-diet-clock-independent-provisional-v1.json",
+    "meaning": "Fastest tested passing point of this finite2ps bracket on one exact saved layout. Printed zero setup margin is explicitly retained; not robust margin, exhaustive graph signoff, globalFmax or measured board clock."
+  },
+  "source_specific_projection": {
+    "base": 604832956, "n": 65536, "operations_including_leading_bit": 1911814,
+    "cold_equation": "668025 + (1911814-1)*8459 = 16172694192",
+    "cold_primary_cycles": 16172694192, "cached_alternate_cycles": 16172694093,
+    "period_ns": "12.594",
+    "cold_primary_seconds": "203.678910654048",
+    "cached_alternate_seconds": "203.678909407242",
+    "special_final_extra_cycles_once": 65536,
+    "special_final_extra_seconds_once": "0.000825360384",
+    "boundary": "Start through internal finalized publication, cold setup included; ordinary9N canonical andN+3 image copy once. Cached removes99 only; special addsN once. Initial external load/setup, final host readback, board/transport/gaps excluded. Source projection, not executed full-size sample PRP or identical external I/O end-to-end measurement."
+  },
+  "conservative_point_preserved": {
+    "review": "results/throughput-20260929/s4-p16-diet-clock-independent-provisional-v1.json",
+    "review_sha256": "a320e6b78b5dda1dae3ca643340b49e29eecb05c9b8847e840476d013696f4da",
+    "period_ns": "12.604", "minimum_setup_ns": "0.010",
+    "cold_primary_seconds": "203.840637595968",
+    "advisor_request_unchanged": "docs/briefs/replies/2026-10-02-P16-conservative-record-advisor-request.md"
+  },
+  "unchanged_numerical_and_ledger_proof": {
+    "completed_subset_review_sha256": "2bf7a35197fbfb2ce55b19fe4076cef0cb183e6ed969ab7d9da7579e6e36d1b1",
+    "routed_readiness_review_sha256": "32b51f3464fc5ce4069b0ed26bcb251b5dd11547c4bdda8009068b220c43a462",
+    "completed_long_review_sha256": "f8bb79493a1b0d59719d1b3ce043598340f98db43e14a9661f8ff39d6417c622",
+    "cycle_ledger_review_sha256": "05ce9d1b58e479999e407f5efe38fbcadb17df9b9e9cf45cf62f9b4a4072144f",
+    "owner_byteexact_handoff_sha256": "f5510497ff2fd81b6596299549bdc954c67d69171be3a2e53b2d1b53ac8907a0",
+    "scope": "Independent full9/T5b crosscheck, own smallPRPs, full-size short/100/1000, AW8dense and bounded whole-host faults/special. Seven component field entries are metadata/index checked only with null typed validators here; not individually replayed new field numerics or an exhaustive fault proof. Full1000 T5b dormant, native independent reference equal; no fullsample PRP executed."
+  },
+  "unchanged_exclusions": [
+    "Recovery/removal no paths excluded, native latch selector unsupported, no reset-release signoff.",
+    "193input/797output virtual unconstrained ports, zero illegal/unconstrained clocks; board I/O/pins/transceivers excluded.",
+    "Original9ns/selected10ns setup failures and AWS OOM remain preserved. Existing final resources include41915LAB=98.12%; not new-fit authority or area robustness.",
+    "Finite setup/path/fault coverage; no robust timing reserve/global maximum-frequency or production-board claim."
+  ],
+  "remaining": ["Advisor verification of selected point and boundary", "Explicit main-agent adoption; reviewer does not self-promote"]
+}

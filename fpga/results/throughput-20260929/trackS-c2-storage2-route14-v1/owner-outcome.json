@@ -1,0 +1,14 @@
+{
+  "status": "native_running_not_route_success",
+  "id": "s4-p16-c2-storage2-route14-aws12-v1",
+  "sources": "Exact original clean C2 storage2 production53, source-matched full normal and whole placement; no RTL change",
+  "project": "project",
+  "inventory": "structural-inventory.json",
+  "structural": "20 declared C2 source crossings, no source findings; phase/publication/fault exceptions explicit, not exhaustive netlist/DA/STA evidence",
+  "settings": "14ns, seed1, default Balanced, genuine syn/fit/STA; standing AWS12 physical cores/40GiB allocation",
+  "native_gate": "s4-p16-c2-storage2-full-normal-q1-v1",
+  "placed_basis": "41886/42720 LABs (98.04775%),315946 needed/382205 placed ALM,2096 M20K; placement only, no routed clock",
+  "ticket": "../../../queue/standing-fits/tickets/s4-p16-c2-storage2-route14-aws12-v1.json",
+  "actual_start": "2026-10-02T08:10:12Z, fit-owner observed Quartus synthesis; AWS CPUs0-11/12workers/40GiB/1200%/Swap0",
+  "promotion_allowed": false
+}

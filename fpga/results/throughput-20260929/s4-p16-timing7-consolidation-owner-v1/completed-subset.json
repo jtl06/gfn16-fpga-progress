@@ -1,0 +1,781 @@
+{
+  "author_tests": {
+    "path": "tests/test_stream27_p16_timing7_consolidation.py",
+    "sha256": "685588e628267b9f21cae8d6a105ebe43646ceca34bd0da319e15a1b13108715"
+  },
+  "candidate": "Timing7 P16 diet/canonical1/context1, distinct from original baseline P16",
+  "direct_traces": [
+    {
+      "accepted_pop_rows": 0,
+      "cold_completion_from_trace": 668026,
+      "counts": {
+        "backpressure_edges": 0,
+        "candidate_cycles": 668026,
+        "canonical_cycles": 589824,
+        "case_id": "75d245e889927761cc17d22dc054775698f65b89334c2d1aaf22ebe963c3dac4",
+        "conversion_cycles": 4096,
+        "copy_cycles": 65539,
+        "doubles": 0,
+        "feed_descriptors": 0,
+        "fifo_peak": 0,
+        "final_rows": 4096,
+        "full_exchanges": 0,
+        "loaded_digits": 65536,
+        "loads": 1,
+        "operations": 1,
+        "profile_hits": 0,
+        "profile_loads": 1,
+        "readbacks": 1,
+        "resets": 1,
+        "root_cycles": 99,
+        "signed96_words": 65536,
+        "special": 0,
+        "starts": 1,
+        "words": 65536
+      },
+      "directly_observed_interval": null,
+      "log": {
+        "path": "queue/evidence/s4-p16-timing7-short-normal-q1-v1/attempt-0/collected/output/native/stream27-s4-continuous-normal.log",
+        "sha256": "186c6913408e89ac33beada0e278011c7846dc8395b3bdf81dd60575c7f31ffc"
+      },
+      "phase_wall_ms": {
+        "candidate_ms": 264869,
+        "read_ms": 25685,
+        "reference_ms": 35
+      },
+      "role": "cold_short"
+    },
+    {
+      "accepted_pop_rows": 99,
+      "cold_completion_from_trace": 668026,
+      "counts": {
+        "backpressure_edges": 803703,
+        "candidate_cycles": 1505566,
+        "canonical_cycles": 589824,
+        "case_id": "75d245e889927761cc17d22dc054775698f65b89334c2d1aaf22ebe963c3dac4",
+        "conversion_cycles": 4096,
+        "copy_cycles": 65539,
+        "doubles": 50,
+        "feed_descriptors": 99,
+        "fifo_peak": 4,
+        "final_rows": 4096,
+        "full_exchanges": 95,
+        "loaded_digits": 65536,
+        "loads": 1,
+        "operations": 100,
+        "profile_hits": 0,
+        "profile_loads": 1,
+        "readbacks": 1,
+        "resets": 1,
+        "root_cycles": 99,
+        "signed96_words": 65536,
+        "special": 0,
+        "starts": 1,
+        "words": 65536
+      },
+      "directly_observed_interval": 8460,
+      "log": {
+        "path": "queue/evidence/s4-p16-timing7-continuous100-normal-q1-v1/attempt-0/collected/output/native/stream27-s4-continuous-normal.log",
+        "sha256": "ac8d7448b4dee8aa51fed953fd367bf7732486e863b85987b2f316b3abadef8f"
+      },
+      "phase_wall_ms": {
+        "candidate_ms": 615153,
+        "read_ms": 25690,
+        "reference_ms": 3531
+      },
+      "role": "serial_continuous100"
+    },
+    {
+      "accepted_pop_rows": 99,
+      "cold_completion_from_trace": 668026,
+      "counts": {
+        "backpressure_edges": 803703,
+        "candidate_cycles": 1505566,
+        "canonical_cycles": 589824,
+        "case_id": "75d245e889927761cc17d22dc054775698f65b89334c2d1aaf22ebe963c3dac4",
+        "conversion_cycles": 4096,
+        "copy_cycles": 65539,
+        "doubles": 50,
+        "feed_descriptors": 99,
+        "fifo_peak": 4,
+        "final_rows": 4096,
+        "full_exchanges": 95,
+        "loaded_digits": 65536,
+        "loads": 1,
+        "operations": 100,
+        "profile_hits": 0,
+        "profile_loads": 1,
+        "readbacks": 1,
+        "resets": 1,
+        "root_cycles": 99,
+        "signed96_words": 65536,
+        "special": 0,
+        "starts": 1,
+        "words": 65536
+      },
+      "directly_observed_interval": 8460,
+      "log": {
+        "path": "queue/evidence/r75-p16-timing7-threads8-q1-v1/attempt-0/collected/output/native/stream27-s4-continuous-normal.log",
+        "sha256": "3bdf34ba137343a6def7674d776491271c6786da8b33c6358fe8f9e430d04ff6"
+      },
+      "phase_wall_ms": {
+        "candidate_ms": 330603,
+        "read_ms": 16500,
+        "reference_ms": 4279
+      },
+      "role": "thread8_continuous100"
+    }
+  ],
+  "final_clock": {
+    "final_audit": null,
+    "fit_id": "s4-p16-timing-whole-9000-high-effort-v1",
+    "projected_seconds": null,
+    "selected_period_ns": null
+  },
+  "method": "Source/receipt metadata joins, retained ordinal/calendar traces and pinned scalar ledger ASTs only; no full-N numerical/reference/native/fit rerun.",
+  "pending1000": {
+    "gate": null,
+    "id": "s4-p16-timing7-continuous1000-thread8-normal-q1-v1",
+    "input": {
+      "path": "results/throughput-20260929/s4-p16-timing7-continuous1000-thread8-native-v1/global-ticket-v1.json",
+      "sha256": "69c244717deb86598cfa682bad0338856a28a1376985565cbe23204e76c9744c"
+    },
+    "numerical_pass": null,
+    "scope": "One own eight-thread dependent1000 FIFO job, final-only65536 signed96; live result must not be inferred from short/100."
+  },
+  "producer": {
+    "path": "reference/stream27_p16_timing7_consolidation.py",
+    "sha256": "96e63c790de4b0b646172e54efdf83c7de0f2f46e2a4de8d5ef710d2770a2619"
+  },
+  "promotion_allowed": false,
+  "receipt_index": [
+    {
+      "gate": {
+        "path": "queue/evidence/s4-aw16-p16-timing-host-normal-q1-v1/gate-receipt.json",
+        "sha256": "9ca8c21591058030b984e07bf0f532e69f6c2ad4a6e2d60c3c4097258a0c6052"
+      },
+      "host": "gfn16-azure-sim-f32",
+      "id": "s4-aw16-p16-timing-host-normal-q1-v1",
+      "manifest": {
+        "path": "queue/evidence/s4-aw16-p16-timing-host-normal-q1-v1/attempt-0/collected/output/native/approved-manifest.json",
+        "sha256": "38b0fc25d9e8ab7c23d1aa2fe80899f520c09099e812adcbba6738ff7b721948"
+      },
+      "model_threads": 1,
+      "overall_seconds": 1255.4505659360002,
+      "report": {
+        "path": "queue/evidence/s4-aw16-p16-timing-host-normal-q1-v1/attempt-0/collected/output/native/report.json",
+        "sha256": "9311c91dda0879e7086b599a079ffe4e4c5b47a40dfc775629c2ad5488d38277"
+      },
+      "role": "full9_two_stopped_jobs",
+      "rtl_count": 75,
+      "rtl_map_sha256": "ba6bd255588666a08daf98ff29b0b619f4c9d8bc8e2d6ff3fa05eac81d21a4b5",
+      "typed_results": [
+        {
+          "actual_returncode": 0,
+          "expected_returncode": 0,
+          "name": "p16-timing-full9-normal",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "9493b51efdfb23394f7e9d9ffe0cb6f2a7fad928ca8ed2a66d869a460f41aa27",
+          "typed_validator_sha256": "8458eeb75925301e2f7b1e2a6dee466bdf13fd1d24f2e2c4c733d09e1595c9b2",
+          "validation": {
+            "counts": {
+              "backpressure_edges": 25376,
+              "candidate_cycles": 1395173,
+              "canonical_cycles": 1179648,
+              "copied_words": 131072,
+              "feed_descriptors": 7,
+              "fifo_peak": 4,
+              "full_exchanges": 3,
+              "image_copy_cycles": 131078,
+              "jobs": 2,
+              "operations": 9,
+              "paired_reads": 131072,
+              "partial_reads": 1,
+              "true_final_rows": 8192
+            },
+            "flags": {
+              "BOUNDARY_INPUTREG": 1,
+              "CANONICAL_LOCALBASE": 1,
+              "CANONICAL_PIPE_STAGES": 1,
+              "CARRY_LOCALBASE": 1,
+              "COMM_STAGE_SHARED_MLAB": 1,
+              "CORR_SERIAL_BFS": 2,
+              "DESCRIPTOR_FIFO_FF": 1,
+              "FINAL_GS_INPUTREG": 1,
+              "MONT_FACTORED": 1,
+              "QUARANTINE_REPLICAS": 1,
+              "TERM_SELECT_TOKEN": 1
+            },
+            "measured_t5b_wait_edges": 272282,
+            "scope": "Own wholeP16 timing full9 normal; no PRP/1000/resource/clock/promotion inference.",
+            "status": "PASS_expected_contracts"
+          }
+        }
+      ]
+    },
+    {
+      "gate": {
+        "path": "queue/evidence/s4-p16-timing7-eight-prp-normal-q1-v1/gate-receipt.json",
+        "sha256": "cbee283aa3c2dfea87eafff0c1fdd8a3c0cb99a3bd0ee46ef1153e96ea736976"
+      },
+      "host": "gfn16-pilot-c4d",
+      "id": "s4-p16-timing7-eight-prp-normal-q1-v1",
+      "manifest": {
+        "path": "queue/evidence/s4-p16-timing7-eight-prp-normal-q1-v1/attempt-0/collected/output/native/approved-manifest.json",
+        "sha256": "6e1ab728907cbe5c55bee7552fcfd35ee4c77124fad77dbb9053a6d8b69df72b"
+      },
+      "model_threads": 1,
+      "overall_seconds": 696.1783583829965,
+      "report": {
+        "path": "queue/evidence/s4-p16-timing7-eight-prp-normal-q1-v1/attempt-0/collected/output/native/report.json",
+        "sha256": "451ac7ffd6151405013c893e02b898fa727120a94b2815a591ac11adbb8a9716"
+      },
+      "role": "eight_small_prps",
+      "rtl_count": 75,
+      "rtl_map_sha256": "ab759899402e7000a24e903154fba4474f097117bf9f4f87fb582a3046d14cd9",
+      "typed_results": [
+        {
+          "actual_returncode": 0,
+          "expected_returncode": 0,
+          "name": "p16-diet-eight-prp-normal",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "3cc8d22875fa6c23006ea51e58b68911680a9b8184a24722c5d0bbe42ead7c2d",
+          "typed_validator_sha256": null,
+          "validation": null
+        }
+      ]
+    },
+    {
+      "gate": {
+        "path": "queue/evidence/s4-p16-timing7-short-normal-q1-v1/gate-receipt.json",
+        "sha256": "b473a85a075b9822457532285283b26fb50bb3347698e56e8f572e06cee0d8ff"
+      },
+      "host": "gfn16-pilot-c4d",
+      "id": "s4-p16-timing7-short-normal-q1-v1",
+      "manifest": {
+        "path": "queue/evidence/s4-p16-timing7-short-normal-q1-v1/attempt-0/collected/output/native/approved-manifest.json",
+        "sha256": "43ec71cb52071abfaf955afd7cef1a3c3e67c23a1d3e4ea12ed56633bfe4b18b"
+      },
+      "model_threads": 1,
+      "overall_seconds": 664.7384807319977,
+      "report": {
+        "path": "queue/evidence/s4-p16-timing7-short-normal-q1-v1/attempt-0/collected/output/native/report.json",
+        "sha256": "3f6dabecef4c77c7932ef0f8942acf531349e6d77923a34ce146ccee28c7e747"
+      },
+      "role": "cold_short",
+      "rtl_count": 75,
+      "rtl_map_sha256": "ba6bd255588666a08daf98ff29b0b619f4c9d8bc8e2d6ff3fa05eac81d21a4b5",
+      "typed_results": [
+        {
+          "actual_returncode": 0,
+          "expected_returncode": 0,
+          "name": "stream27-s4-continuous-normal",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "186c6913408e89ac33beada0e278011c7846dc8395b3bdf81dd60575c7f31ffc",
+          "typed_validator_sha256": "45412a124abb21813df8dfb9b093b68a9e742434aab8883bfe1f568d55dfdba3",
+          "validation": {
+            "base": 604832956,
+            "candidate": "timing7-diet-canonical1-P16-context1",
+            "candidate_root_sha256": "0011468ec67d7ca7ebb86fac88103fd19ea0207dc75685289da64d508228ea28",
+            "canonical_pipe_stages": 1,
+            "counts": {
+              "backpressure_edges": 0,
+              "candidate_cycles": 668026,
+              "canonical_cycles": 589824,
+              "case_id": "75d245e889927761cc17d22dc054775698f65b89334c2d1aaf22ebe963c3dac4",
+              "conversion_cycles": 4096,
+              "copy_cycles": 65539,
+              "doubles": 0,
+              "feed_descriptors": 0,
+              "fifo_peak": 0,
+              "final_rows": 4096,
+              "full_exchanges": 0,
+              "loaded_digits": 65536,
+              "loads": 1,
+              "operations": 1,
+              "profile_hits": 0,
+              "profile_loads": 1,
+              "readbacks": 1,
+              "resets": 1,
+              "root_cycles": 99,
+              "signed96_words": 65536,
+              "special": 0,
+              "starts": 1,
+              "words": 65536
+            },
+            "final_actual_sha256": "57f7050913565a91eb40e32a8a723757256ec0bbcb181d1a0851dbcdf5b57aa4",
+            "final_expected_sha256": "57f7050913565a91eb40e32a8a723757256ec0bbcb181d1a0851dbcdf5b57aa4",
+            "independent_reference_equal": true,
+            "operations": 1,
+            "p16_diet": 1,
+            "p16_timing": 1,
+            "phase_wall_ms": {
+              "candidate_ms": 264869,
+              "read_ms": 25685,
+              "reference_ms": 35
+            },
+            "promotion_allowed": false,
+            "scope": "ONE actually dependent FIFO job, exact source-selected candidate; independent reference is native-only, T5b dormant, not full PRP/clock or inherited9/25/100-op result.",
+            "status": "PASS_expected_contracts",
+            "uninterrupted_1000_native": false
+          }
+        }
+      ]
+    },
+    {
+      "gate": {
+        "path": "queue/evidence/s4-p16-timing7-continuous100-normal-q1-v1/gate-receipt.json",
+        "sha256": "ffd00eef6669d8eefd60c8e815a3bf99d6bd7a39a90fe5ad8911c0e9bc405aeb"
+      },
+      "host": "gfn16-pilot-c4d",
+      "id": "s4-p16-timing7-continuous100-normal-q1-v1",
+      "manifest": {
+        "path": "queue/evidence/s4-p16-timing7-continuous100-normal-q1-v1/attempt-0/collected/output/native/approved-manifest.json",
+        "sha256": "77ed761739502ed6cd53010353990283e8c82c4ccc4bf39d423c4dbe1319fb53"
+      },
+      "model_threads": 1,
+      "overall_seconds": 1019.2572547699965,
+      "report": {
+        "path": "queue/evidence/s4-p16-timing7-continuous100-normal-q1-v1/attempt-0/collected/output/native/report.json",
+        "sha256": "b207d711a98ccda70f63a681bf48a97c0bb0dcbded614231bc92b290602160f2"
+      },
+      "role": "serial_continuous100",
+      "rtl_count": 75,
+      "rtl_map_sha256": "ba6bd255588666a08daf98ff29b0b619f4c9d8bc8e2d6ff3fa05eac81d21a4b5",
+      "typed_results": [
+        {
+          "actual_returncode": 0,
+          "expected_returncode": 0,
+          "name": "stream27-s4-continuous-normal",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "ac8d7448b4dee8aa51fed953fd367bf7732486e863b85987b2f316b3abadef8f",
+          "typed_validator_sha256": "d3f05a05bc9f07cda295f0aba390dad369ec79a6a1d0562a3ead4f105cce439b",
+          "validation": {
+            "base": 604832956,
+            "candidate": "timing7-diet-canonical1-P16-context1",
+            "candidate_root_sha256": "0011468ec67d7ca7ebb86fac88103fd19ea0207dc75685289da64d508228ea28",
+            "canonical_pipe_stages": 1,
+            "counts": {
+              "backpressure_edges": 803703,
+              "candidate_cycles": 1505566,
+              "canonical_cycles": 589824,
+              "case_id": "75d245e889927761cc17d22dc054775698f65b89334c2d1aaf22ebe963c3dac4",
+              "conversion_cycles": 4096,
+              "copy_cycles": 65539,
+              "doubles": 50,
+              "feed_descriptors": 99,
+              "fifo_peak": 4,
+              "final_rows": 4096,
+              "full_exchanges": 95,
+              "loaded_digits": 65536,
+              "loads": 1,
+              "operations": 100,
+              "profile_hits": 0,
+              "profile_loads": 1,
+              "readbacks": 1,
+              "resets": 1,
+              "root_cycles": 99,
+              "signed96_words": 65536,
+              "special": 0,
+              "starts": 1,
+              "words": 65536
+            },
+            "final_actual_sha256": "d2178c685400efad6743e0dc9d8c50c7a6c49cdae04724e54445c53ec9fe5f30",
+            "final_expected_sha256": "d2178c685400efad6743e0dc9d8c50c7a6c49cdae04724e54445c53ec9fe5f30",
+            "independent_reference_equal": true,
+            "operations": 100,
+            "p16_diet": 1,
+            "p16_timing": 1,
+            "phase_wall_ms": {
+              "candidate_ms": 615153,
+              "read_ms": 25690,
+              "reference_ms": 3531
+            },
+            "promotion_allowed": false,
+            "scope": "ONE actually dependent FIFO job, exact source-selected candidate; independent reference is native-only, T5b dormant, not full PRP/clock or inherited9/25/100-op result.",
+            "status": "PASS_expected_contracts",
+            "uninterrupted_1000_native": false
+          }
+        }
+      ]
+    },
+    {
+      "gate": {
+        "path": "queue/evidence/s4-p16-timing7-aw8-dense-normal-q1-v1/gate-receipt.json",
+        "sha256": "a297853c0b7194650970e05dbaf8d62e4da288aa5b668f3957a16f2eb549295e"
+      },
+      "host": "gfn16-pilot-c4d",
+      "id": "s4-p16-timing7-aw8-dense-normal-q1-v1",
+      "manifest": {
+        "path": "queue/evidence/s4-p16-timing7-aw8-dense-normal-q1-v1/attempt-0/collected/output/native/approved-manifest.json",
+        "sha256": "93661568db3aef0494e2fe6d40fefc758f5ab0e6fe79374e3d67d9959f9b1823"
+      },
+      "model_threads": 1,
+      "overall_seconds": 314.6443550089971,
+      "report": {
+        "path": "queue/evidence/s4-p16-timing7-aw8-dense-normal-q1-v1/attempt-0/collected/output/native/report.json",
+        "sha256": "c6b1c29bcaf586c9f7f33394f4cfdbdd37d6da1d4a4301b08f54f3043c7200b2"
+      },
+      "role": "aw8_dense_calendar",
+      "rtl_count": 75,
+      "rtl_map_sha256": "cbebea66f22bfbfafc933bb59680971e584f94a9a6f5d7f9950e1a8f843913a1",
+      "typed_results": [
+        {
+          "actual_returncode": 0,
+          "expected_returncode": 0,
+          "name": "p16-diet-aw8-dense-normal",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "5c84e13c152618861599f4e07806d685fc0767faa54af899a4aa77cdfde83bdc",
+          "typed_validator_sha256": null,
+          "validation": null
+        }
+      ]
+    },
+    {
+      "gate": {
+        "path": "queue/evidence/s4-p16-timing7-whole-host-faults-q1-v1/gate-receipt.json",
+        "sha256": "0fa3f081d7e3548a4b35f24ad62a49c1f49e754441b422d183a86ccc35306d00"
+      },
+      "host": "gfn16-azure-sim-f32",
+      "id": "s4-p16-timing7-whole-host-faults-q1-v1",
+      "manifest": {
+        "path": "queue/evidence/s4-p16-timing7-whole-host-faults-q1-v1/attempt-0/collected/output/native/approved-manifest.json",
+        "sha256": "55cb3f85186de4d516591766d99242838979ab2a006b8e88f634be562e1faf16"
+      },
+      "model_threads": 1,
+      "overall_seconds": 188.01764112800083,
+      "report": {
+        "path": "queue/evidence/s4-p16-timing7-whole-host-faults-q1-v1/attempt-0/collected/output/native/report.json",
+        "sha256": "68848cc05a4b36d9565f3314af87373c17f3fbe740f83cc2cb8eeaef6f869ab4"
+      },
+      "role": "whole_host_faults_and_special",
+      "rtl_count": 75,
+      "rtl_map_sha256": "ab759899402e7000a24e903154fba4474f097117bf9f4f87fb582a3046d14cd9",
+      "typed_results": [
+        {
+          "actual_returncode": 0,
+          "expected_returncode": 0,
+          "name": "p16-diet-whole-host-controls-and-special",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "be8ae3eec371bbffd39af8228c047c3cb0e8b8fc62dcfcfc844339725337e332",
+          "typed_validator_sha256": null,
+          "validation": null
+        },
+        {
+          "actual_returncode": 1,
+          "expected_returncode": 1,
+          "name": "p16-diet-special-oracle-negative",
+          "stderr_sha256": "6ae70b2d138de3fff6fa80041d43c0d1499a60ed89e290552a4906abdd03e912",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "typed_validator_sha256": null,
+          "validation": null
+        }
+      ]
+    },
+    {
+      "gate": {
+        "path": "queue/evidence/r75-p16-timing7-threads8-q1-v1/gate-receipt.json",
+        "sha256": "5d1a1c72b5b6d7808c37fec795a53b9865553bf2c46f38a8a4b32944aa7722c2"
+      },
+      "host": "gfn16-azure-sim-f32",
+      "id": "r75-p16-timing7-threads8-q1-v1",
+      "manifest": {
+        "path": "queue/evidence/r75-p16-timing7-threads8-q1-v1/attempt-0/collected/output/native/approved-manifest.json",
+        "sha256": "73d591093f6f870134ee0f960a302c3d1b1447c28fe69c99e83eb2ab4950688d"
+      },
+      "model_threads": 8,
+      "overall_seconds": 687.236259035999,
+      "report": {
+        "path": "queue/evidence/r75-p16-timing7-threads8-q1-v1/attempt-0/collected/output/native/report.json",
+        "sha256": "978eb3b229fee5da6f0914429d3a789a4c0818adb8b4e880d13c65dae9b2fc53"
+      },
+      "role": "thread8_continuous100",
+      "rtl_count": 75,
+      "rtl_map_sha256": "ba6bd255588666a08daf98ff29b0b619f4c9d8bc8e2d6ff3fa05eac81d21a4b5",
+      "typed_results": [
+        {
+          "actual_returncode": 0,
+          "expected_returncode": 0,
+          "name": "stream27-s4-continuous-normal",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "3bdf34ba137343a6def7674d776491271c6786da8b33c6358fe8f9e430d04ff6",
+          "typed_validator_sha256": "d3f05a05bc9f07cda295f0aba390dad369ec79a6a1d0562a3ead4f105cce439b",
+          "validation": {
+            "base": 604832956,
+            "candidate": "timing7-diet-canonical1-P16-context1",
+            "candidate_root_sha256": "0011468ec67d7ca7ebb86fac88103fd19ea0207dc75685289da64d508228ea28",
+            "canonical_pipe_stages": 1,
+            "counts": {
+              "backpressure_edges": 803703,
+              "candidate_cycles": 1505566,
+              "canonical_cycles": 589824,
+              "case_id": "75d245e889927761cc17d22dc054775698f65b89334c2d1aaf22ebe963c3dac4",
+              "conversion_cycles": 4096,
+              "copy_cycles": 65539,
+              "doubles": 50,
+              "feed_descriptors": 99,
+              "fifo_peak": 4,
+              "final_rows": 4096,
+              "full_exchanges": 95,
+              "loaded_digits": 65536,
+              "loads": 1,
+              "operations": 100,
+              "profile_hits": 0,
+              "profile_loads": 1,
+              "readbacks": 1,
+              "resets": 1,
+              "root_cycles": 99,
+              "signed96_words": 65536,
+              "special": 0,
+              "starts": 1,
+              "words": 65536
+            },
+            "final_actual_sha256": "d2178c685400efad6743e0dc9d8c50c7a6c49cdae04724e54445c53ec9fe5f30",
+            "final_expected_sha256": "d2178c685400efad6743e0dc9d8c50c7a6c49cdae04724e54445c53ec9fe5f30",
+            "independent_reference_equal": true,
+            "operations": 100,
+            "p16_diet": 1,
+            "p16_timing": 1,
+            "phase_wall_ms": {
+              "candidate_ms": 330603,
+              "read_ms": 16500,
+              "reference_ms": 4279
+            },
+            "promotion_allowed": false,
+            "scope": "ONE actually dependent FIFO job, exact source-selected candidate; independent reference is native-only, T5b dormant, not full PRP/clock or inherited9/25/100-op result.",
+            "status": "PASS_expected_contracts",
+            "uninterrupted_1000_native": false
+          }
+        }
+      ]
+    }
+  ],
+  "remaining": [
+    "Own actual1000 typed terminal and final source join",
+    "Same saved-layout final clock/audit review",
+    "Independent consolidation and advisor acceptance before adoption"
+  ],
+  "root_sha256": "0011468ec67d7ca7ebb86fac88103fd19ea0207dc75685289da64d508228ea28",
+  "sample_ledger": {
+    "base": 604832956,
+    "bit_convention": "K=floor(N*log2(base))+1 includes leading exponent bit, starting x0=1. Full-size sample PRP was not executed.",
+    "cached_alternate_cycles": 16174605907,
+    "cached_first": 3,
+    "cached_ordinary_completion": 667927,
+    "canonical_and_copy_occurrences": 1,
+    "canonical_normal_cycles": 589824,
+    "canonical_special_cycles": 655360,
+    "carry_done": 12558,
+    "cold_first": 102,
+    "cold_ordinary_completion": 668026,
+    "cold_primary_cycles": 16174606006,
+    "cold_root_extra": 99,
+    "copy_cycles": 65539,
+    "equation": "102 + (1911814-1)*8460 + 12558 + 2 + 9*65536 + 65536 + 4",
+    "finite_source_cycles": {
+      "continuous100": 1505566,
+      "continuous1000": 9119566,
+      "short1": 668026
+    },
+    "first_digit": 8459,
+    "n": 65536,
+    "operations": 1911814,
+    "p": 16,
+    "projected_seconds": null,
+    "scope": "Own source-ledger compute-only input. Cold setup and final ordinary canonical/copy once included; initial host load/final host readback/board I/O/gaps excluded. No baseline8459/P8 clock or result inheritance.",
+    "seconds_per_ns": "16.174606006",
+    "selected_frequency_mhz": null,
+    "selected_period_ns": null,
+    "sources": [
+      {
+        "path": "reference/stream27_p16_diet_consolidation.py",
+        "sha256": "dbcd884316fe552319d1fc73d27fad0c10e8f6c5f5c0e9d0e02e39303307732d"
+      },
+      {
+        "path": "reference/stream27_host_chain_v1.py",
+        "sha256": "0ca7724092b7b93dfe5976f8dac023cf90aab7a483e877cc3f126acee04c3759"
+      },
+      {
+        "path": "reference/stream27_host_chain_param_v3.py",
+        "sha256": "017f581581d3f832cbb511a278901afb0a9a59ae6ed14a8df6234641634aa102"
+      }
+    ],
+    "special_alternate_cycles": 16174671542,
+    "special_extra_cycles": 65536,
+    "warm_interval": 8460
+  },
+  "schema": "stream27-p16-timing7-author-completed-subset-v1",
+  "scope_limits": [
+    "Own N32 PRPs and N256 dense18-row calendar are scaled source qualification, not full-size sample PRP.",
+    "Full9 is two stopped jobs, not one continuous9/1000 chain.",
+    "Minimal whole-host controls cover four descriptor faults/occupied reset/quarantine/recovery/sentinel and typed comparator, not exhaustive fault coverage.",
+    "No original baseline P16/P8 numerical or clock inheritance. Simulation times do not establish achievable FPGA MHz."
+  ],
+  "small_geometry_coverage": {
+    "aw8_dense_calendar": {
+      "declared_summary": {
+        "candidate_cycles": 57452,
+        "operations": 256
+      },
+      "expected_stdout_sha256": [
+        "5c84e13c152618861599f4e07806d685fc0767faa54af899a4aa77cdfde83bdc"
+      ],
+      "geometry": {
+        "carry_done": 214,
+        "feedback_fifo_rows": 18,
+        "first_digit": 195,
+        "n": 256,
+        "p": 16,
+        "warm_interval": 214
+      }
+    },
+    "eight_small_prps": {
+      "declared_summary": {
+        "base_floor": 300,
+        "host_cycles": 826737,
+        "operations": 5051,
+        "reads": 256
+      },
+      "expected_stdout_sha256": [
+        "3cc8d22875fa6c23006ea51e58b68911680a9b8184a24722c5d0bbe42ead7c2d"
+      ],
+      "geometry": {
+        "carry_done": 163,
+        "feedback_fifo_rows": 4,
+        "first_digit": 158,
+        "n": 32,
+        "p": 16,
+        "warm_interval": 163
+      }
+    },
+    "whole_host_faults_and_special": {
+      "declared_summary": {
+        "descriptor_codes": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "reset_ages": [
+          10,
+          273
+        ],
+        "special_cycles": 320
+      },
+      "expected_stdout_sha256": [
+        "be8ae3eec371bbffd39af8228c047c3cb0e8b8fc62dcfcfc844339725337e332",
+        "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      ],
+      "geometry": {
+        "carry_done": 163,
+        "feedback_fifo_rows": 4,
+        "first_digit": 158,
+        "n": 32,
+        "p": 16,
+        "warm_interval": 163
+      }
+    }
+  },
+  "source_binding": {
+    "archive": {
+      "path": "queue/standing-fit-state/terminal/s4-p16-timing-whole-9000-high-effort-v1/native-reports.tar.gz",
+      "sha256": "40847903bb1e8bc3245c7c63c7056601dc05618e447878ffc7499547a8107da1"
+    },
+    "archived_manifest_member": "project/manifest.json",
+    "archived_manifest_sha256": "2bc778183dcb2e4fd0e98726839edfda4a60aad76155607b35814a013ce0cf76",
+    "exact_fitted64_subset_of_paired75": true,
+    "own_full9_cpp_sha256": "3890090a2d4cc1e60ca6120b36fba533ca77fdf6ee97e1a09cf36ce9a2ac6aec",
+    "own_full9_header_sha256": "92102743be383f40497b0dd17411806bdfac8a78d8d7775978a886eca67dab9a",
+    "paired75_map_sha256": "ba6bd255588666a08daf98ff29b0b619f4c9d8bc8e2d6ff3fa05eac81d21a4b5",
+    "parameters": {
+      "AW": 16,
+      "BOUNDARY_INPUTREG": 1,
+      "CANONICAL_LOCALBASE": 1,
+      "CANONICAL_PIPE_STAGES": 1,
+      "CARRY_LOCALBASE": 1,
+      "COMM_STAGE_SHARED_MLAB": 1,
+      "CONTEXTS": 1,
+      "CORR_SERIAL_BFS": 2,
+      "DESCRIPTOR_FIFO_FF": 1,
+      "EPOCH_SEED": 65534,
+      "FINAL_GS_INPUTREG": 1,
+      "MONT_FACTORED": 1,
+      "P": 16,
+      "QUARANTINE_REPLICAS": 1,
+      "TERM_SELECT_TOKEN": 1
+    },
+    "receipt": {
+      "path": "queue/standing-fit-state/terminal/s4-p16-timing-whole-9000-high-effort-v1/receipt.json",
+      "sha256": "2d4b20bac40bda37a35a03dec7eecb88eb625ca7fd39a9afefefe65f95508b0e"
+    },
+    "scope": "Exact completed whole-fit source identity, not an inherited clock or selected final passing audit.",
+    "standalone64": {
+      "genefer_crt3_27_mont_pipe.sv": "8bb5b62423c1f61e069f131b5d393dd3dbc84d05348fc1945f6e9c419c104c58",
+      "genefer_digit_reduce27_pipe.sv": "61e14bb13c2dbcc13b5030756578a0d0358269beb24fb207a5641b98795883e8",
+      "genefer_div_recip_precision.sv": "832021ed0b3410dc867d92ac4436a725d5717f9630d233073e39896789ebbd7c",
+      "genefer_montgomery_mul27_sparse_pipe.sv": "501d0ce309a3915f7aed0f3bde14ba1ee8d56ddc5f6abef1f2f5bb572d64db4b",
+      "genefer_montgomery_mul28x27_sparse_pipe_v2.sv": "a93cb002eb08e585e62a847ef4b070175ae8108919da30ea5bf67dad3a597026",
+      "genefer_ntt_banked27_engine.sv": "7ae89e702b671e3fbe8a1f90beb99ea595c832729e5e94232bf82515f1d74fe9",
+      "genefer_ntt_banked27_engine_p16_diet_v1.sv": "cbf88945d9b2c297b8f7f5ac17b0b1b3597487638661502f3b27c593004ac413",
+      "genefer_ntt_lazy28_butterfly_v1.sv": "ade6280dd1dac0fe3049ac2860dea7bbc7db292b634368e12f557b63865aa00d",
+      "genefer_ntt_lazy28_butterfly_v1_p16_diet_v1.sv": "78af502096f28e4f01cac92eef9b8ad07e61aecb102acc7d940867e52da6a3e5",
+      "genefer_sdp_ram32.sv": "993567fb68fdc216b9ff04489d1810f743b86564434e4b48261ad606b25d53b0",
+      "genefer_stream27_blockcarry_lane_localbase_v1.sv": "cb3fcd665036a1d9028bc2d7e33e96c2e5f57e3e95e16a25460173d32560b236",
+      "genefer_stream27_blockcarry_small_cell.sv": "eafee617681cbd84cedfe90874938f63bf5ae84123ba1c914410785b44a3e74f",
+      "genefer_stream27_blockcarry_small_cell_localbase_v1.sv": "2005d97a1b512c365b1b6494d8974d3f869d15ee7ce8713115eab8d713e69c1b",
+      "genefer_stream27_canonical_image_localbase_v1.sv": "87264ca12a08cdf4b905ffdcc27d066b25333c0f0283904ac0cf9d36f707d70d",
+      "genefer_stream27_chain_canonical_aw16_p16_v1.sv": "5d49109582a90d21344a56bf05625d8ef1b0c5035492de80e7c5d08ad6fa0a1b",
+      "genefer_stream27_correction_serial_p16_f0_v1.sv": "ef4bc7575185d545c56cc6922470414f821c60fdf3ad2b75baec85787c69778f",
+      "genefer_stream27_correction_serial_p16_f1_v1.sv": "c5cc1405cba830e7453e0dab85fb3500bfb7a7578a72d267beead468072ca1b9",
+      "genefer_stream27_correction_serial_p16_f2_v1.sv": "9c46d963f71eec3214677cc7d8a3a1b684f1905bb64d288ebf3f584fae1433a2",
+      "genefer_stream27_correction_serial_v1.sv": "44e931759e014f3b4612f1d51eb2f9d7a169a77db069a390d512fb239f92859f",
+      "genefer_stream27_delay_mlab_v1.sv": "fbcdb5da28c9ae64a68189d0b5a6b60182edcc2c80d98728ca9673555591b36e",
+      "genefer_stream27_descriptor_fifo_ff_v1.sv": "24977500d5f4cbae04358065877371436218b6c5341e930a6922c91e46a44a86",
+      "genefer_stream27_epoch_protocol_v5.sv": "a01f6b93200d4ee5d1eb7e81664cfd89e373a447e9cbf5173387188f1212df45",
+      "genefer_stream27_host_chain_aw16_p16_diet_v1_descriptor_ff_v1_timing_r75_v1_term_select_v1.sv": "0011468ec67d7ca7ebb86fac88103fd19ea0207dc75685289da64d508228ea28",
+      "genefer_stream27_host_image_ports_v1.sv": "2d1dbcd3d923323481b920d1354127306cf19253ee98ad60c0a87626cb1ba11e",
+      "genefer_stream27_mdc_commutator_shared_mlab_v1.sv": "fcdd68339b15dc1474a5b9f45a9f9fb7764772f7a79b093b168c6ee5c40ea235",
+      "genefer_stream27_mdc_commutator_slots_v2.sv": "3484e192967d6295dd6dc7f6a325dfd31e1573a327c881be9f9e10558c458da5",
+      "genefer_stream27_mdc_commutator_sm1_registered_v1.sv": "c262261f1a7c7428056111ccdef97462edd081016f219428d2a81b7e429819c9",
+      "genefer_stream27_mdc_commutator_sync.sv": "72e6d497280f8d5eeba28c0af30b79a116e20b338d50a9894355a28d3aa4d218",
+      "genefer_stream27_mdc_fifo_smallreg_v1.sv": "0ff1605c74d81670291f1bd0ee88afe6f5461d999d5ee65fc6f1cc722f4ec4be",
+      "genefer_stream27_merged_final_gs_pair_inputreg_v1_p16_diet_v1.sv": "010ce3afe00d27e94bf52274831ee73af4d76b9efec655b38ed962d5b552eb61",
+      "genefer_stream27_merged_final_gs_pair_v1.sv": "c860243f74d445324e93d8d2bc202521249316f04364c4bb2e630d4328216d4b",
+      "genefer_stream27_merged_final_gs_pair_v1_p16_diet_v1.sv": "92ca6fe138bfc01c36b1bcf85d358ab2ef555cf1a17d441bc4ce2c220903f36a",
+      "genefer_stream27_montgomery_factored_v1.sv": "866c2b19c9e6afbbb56ce71089288334579f90e977ca139b41097d0f9191c690",
+      "genefer_stream27_mul_select_token_v1_p16_diet_v1.sv": "b5388a65b13c7273a9e9c6e16149dad2dc4a3633cc1eec11cf846827fa4fa6d6",
+      "genefer_stream27_quarantine_replicas_v1.sv": "9fc57a202e70c7894d05e29a9de09f44bcf97bb410d783d432cd9aa5ea342a9f",
+      "genefer_stream27_root_rom_prefetch.sv": "f4b9415b855d58a1c5ddbc79fd473eef5388b05c888db1c5dde4825e2b3184fc",
+      "genefer_stream27_row_arithmetic_param_v1.sv": "34cbd71a998ebc5aff532dff24c7bef904c2a8e7a1c27ee69d9e0f55caf07f9a",
+      "genefer_stream27_row_arithmetic_param_v1_p16_diet_v1.sv": "f41b0298631cb181ec69ed0bc50e5e8d8c39064b5789ae4f19628e60b3071872",
+      "genefer_stream27_shared_term_roots_aw16_p16_f0_v1.sv": "7aba21482ae0ea956865a542826f1c24445b3fb85ec776ed1fcf35c69dd2ca92",
+      "genefer_stream27_shared_term_roots_aw16_p16_f1_v1.sv": "54862b70e382fc3a1083794844969629492f5ae101ed1ad7ddb3cd1cd6150058",
+      "genefer_stream27_shared_term_roots_aw16_p16_f2_v1.sv": "44e96d3f541cb91a596b766a29f4aa33cb877f3d49f318c07d4d8b454dacdb21",
+      "genefer_stream27_shared_warm_aw16_p16_f0_v1_signed_host_v3_valid_start_v4_corr_serial2_v5_shared_comm_mlab_v1_mont_factored_v1_boundary_inputreg_v1_quarantine_replicas_v1_final_inputreg_v1_term_select_token_v1.sv": "0f1e8d7d8266d549b4810d04f75d2cb47b21b177a2f4e52b6a96adba5a367465",
+      "genefer_stream27_shared_warm_aw16_p16_f1_v1_signed_host_v3_valid_start_v4_corr_serial2_v5_shared_comm_mlab_v1_mont_factored_v1_boundary_inputreg_v1_quarantine_replicas_v1_final_inputreg_v1_term_select_token_v1.sv": "6a90177a7150f1f5c21dd156a1789891f05aeb94c505525810b7dff97e7e0a68",
+      "genefer_stream27_shared_warm_aw16_p16_f2_v1_signed_host_v3_valid_start_v4_corr_serial2_v5_shared_comm_mlab_v1_mont_factored_v1_boundary_inputreg_v1_quarantine_replicas_v1_final_inputreg_v1_term_select_token_v1.sv": "46290db017ddf880ed67095f28e7c04ae448de43e891ffcacc278c6fcf5474f0",
+      "genefer_stream27_signed_boundary_inputreg_v1.sv": "907f71b5aad203375d2822ede4207c5e69b3ed4ea79210fc018313e555615a54",
+      "genefer_stream27_signed_boundary_reduce27_pipe.sv": "140fcad078bd089456712e27eed9c1f78f340298f72a7d6860d5bed70bbb9f2d",
+      "genefer_stream27_square_p16_f0_v1_p16_diet_v1.sv": "060d2daa5a2ff3ac1987ac8e511ec9756bdfbebe3f11b592cff0d033c0afde67",
+      "genefer_stream27_square_p16_f1_v1_p16_diet_v1.sv": "59fa29d31ed49c804c17b4499e14858530a1ed1faf3ada0434892b5f8f824075",
+      "genefer_stream27_square_p16_f2_v1_p16_diet_v1.sv": "929c0428c6f0ae4f6236c483786bf15a21c9dd24649c7daed2c72f6facc6d71b",
+      "genefer_stream27_term_context_param_v1.sv": "d8651c253ec856e9b6b514433aa58896811a275942f3c592333a8436a2c95949",
+      "genefer_stream27_term_context_param_v1_p16_diet_v1_select_token_v1.sv": "2af45da5e84dbffb24a242d233205c25cca2b02ac87e6cf330f77477987026d0",
+      "genefer_stream27_term_context_v2.sv": "1785c86519e52908e5e450ec8d48656e2fc402808ad3660bda6aa7e8d4c86592",
+      "genefer_stream27_threefield_carry_aw16_p16_v1_host_v1.sv": "649a5f1c024bde9f120ccd1908ca8c53f0ea4db7808616c9c68fcc5a1f65565c",
+      "genefer_stream27_warm_chain_aw16_p16_v1.sv": "e8b4f56450f70bb9c5d402d41f9a50745a21937c21607c32edf62fd3a5676593",
+      "genefer_stream28_merged_ct_aw16_p16_f0_v1_shared_comm_mlab_v1.sv": "8f24bf1015c9e70584501c2b3ecec374739493d6cf635d59378ea87266867d57",
+      "genefer_stream28_merged_ct_aw16_p16_f1_v1_shared_comm_mlab_v1.sv": "20a799cd9b1ee735de3afaf939ec99879c1f45defe1924507efa3da6ac8cdca9",
+      "genefer_stream28_merged_ct_aw16_p16_f2_v1_shared_comm_mlab_v1.sv": "6f9859d767993ed1c4e976e37306395cd0049aa01667e375802adb1e8ae8f3b0",
+      "genefer_stream28_merged_gs_aw16_p16_f0_v1_shared_comm_mlab_v1_inputreg_v1.sv": "fb0bf653597095c5e971c71036a7ba7198c7fa69ee0d54e43d4365d0aae242c0",
+      "genefer_stream28_merged_gs_aw16_p16_f1_v1_shared_comm_mlab_v1_inputreg_v1.sv": "2ff2632f14ca743d3493f895e8a3860ef27809c67e29c440a0f70a1afda19a07",
+      "genefer_stream28_merged_gs_aw16_p16_f2_v1_shared_comm_mlab_v1_inputreg_v1.sv": "c91ec4e50de134ae840b38220bca71c7b3320c0b22f739067aa65c32ba8a7161",
+      "genefer_track_a4_setup_v1.sv": "23d2a6832dc589fd8782cc7ed3f90980be1018b833d1a94714ab34058915da25",
+      "merged_stream27_root_library_aw16_p16_f0_v1.sv": "076c1ef249226d809ed4d1d228ce3aaf30cbe0436c948df6766ef56bb71002a8",
+      "merged_stream27_root_library_aw16_p16_f1_v1.sv": "60762a746465570a2a89f9c056064c027e08a90750c7c4f3882e0ac5533e624e",
+      "merged_stream27_root_library_aw16_p16_f2_v1.sv": "4c9558f51dbaee82e78ce025efe3a4013de0c2f6abe13f16e834924a787aeb47"
+    },
+    "standalone64_map_sha256": "5fe3d1ad5427e9b27ebaa002e6050bf4f1b682d5bb1d5f7bac33ad0533bca146"
+  },
+  "status": "COMPLETED_OWN_SUBSET_LONG_AND_FINAL_CLOCK_PENDING"
+}

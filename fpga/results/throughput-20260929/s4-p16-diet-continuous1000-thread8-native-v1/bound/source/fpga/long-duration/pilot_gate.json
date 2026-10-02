@@ -1,0 +1,68 @@
+{
+  "schema": "gfn16-native-gate-receipt-v1",
+  "status": "PASS_expected_contracts",
+  "id": "r75-p16-diet-threads8-q1-v1",
+  "candidate_id": "r75-p16-diet-source-identical-thread-pilot",
+  "manifest_sha256": "88a38216e17d69e0b1b9540dff5785a420efe2e8de98dd6b9ca71277e0898db4",
+  "candidate_source_sha256": "cb9ee3ee4acd2b24192202df2eb6d7808b0d1c09686967cd77b7f123c27c597c",
+  "contract_sha256": "993856841f2ff8b4a88df590c664f985f144eb6b5674c602c3904cc7016cb29a",
+  "report_sha256": "a5deff8d7b0e564ff934deca437897c6ba98b63691fa1fd308076b59c9503d8e",
+  "artifact_inventory_sha256": "4ea180574f4a530ab201f730da2b8ac1ab2cc0ae621d5f1a4cbe3f7cc26de48c",
+  "steps": [
+    {
+      "name": "stream27-s4-continuous-normal",
+      "expected_returncode": 0,
+      "actual_returncode": 0,
+      "stdout_sha256": "16e7f0589ef449b150e9750a3dfb7ac12996d753a48d3c409e0cdd25d9d24ac8",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "typed_validator_sha256": "52653818d3fe28eceb904b38c2668c6698c5b7141f6a4aa5072a40df0ceb3691",
+      "validation": {
+        "status": "PASS_expected_contracts",
+        "candidate": "diet-corr2-sharedmlab-factored-canonical1-P16-context1",
+        "candidate_root_sha256": "b683cb1113a17652f5d6266c4298c5eb825c6af6b9f92bd28f758dba9b8de898",
+        "canonical_pipe_stages": 1,
+        "base": 604832956,
+        "operations": 100,
+        "counts": {
+          "case_id": "6ca8a0f47b334ff3e66d0780b2801a343ea8c0bca81a3393c761fa6eccd6b24e",
+          "operations": 100,
+          "doubles": 50,
+          "resets": 1,
+          "loads": 1,
+          "loaded_digits": 65536,
+          "starts": 1,
+          "readbacks": 1,
+          "words": 65536,
+          "signed96_words": 65536,
+          "feed_descriptors": 99,
+          "fifo_peak": 4,
+          "full_exchanges": 95,
+          "backpressure_edges": 803608,
+          "final_rows": 4096,
+          "canonical_cycles": 589824,
+          "copy_cycles": 65539,
+          "candidate_cycles": 1505466,
+          "profile_loads": 1,
+          "profile_hits": 0,
+          "root_cycles": 99,
+          "conversion_cycles": 4096,
+          "special": 0
+        },
+        "phase_wall_ms": {
+          "candidate_ms": 256084,
+          "read_ms": 11542,
+          "reference_ms": 4365
+        },
+        "independent_reference_equal": true,
+        "final_actual_sha256": "d2178c685400efad6743e0dc9d8c50c7a6c49cdae04724e54445c53ec9fe5f30",
+        "final_expected_sha256": "d2178c685400efad6743e0dc9d8c50c7a6c49cdae04724e54445c53ec9fe5f30",
+        "uninterrupted_1000_native": false,
+        "promotion_allowed": false,
+        "scope": "ONE actually dependent FIFO job, exact source-selected candidate; independent reference is native-only, T5b dormant, not full PRP/clock or inherited9/25/100-op result.",
+        "p16_diet": 1
+      }
+    }
+  ],
+  "promotion_allowed": false,
+  "validation_scope": "Dependency progress only: trusted pinned worker typed receipts plus full raw artifact/source archive replay; no role imports or coordinator numerical rerun"
+}

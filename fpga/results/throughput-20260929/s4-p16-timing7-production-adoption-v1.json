@@ -1,0 +1,43 @@
+{
+  "schema": "gfn16-production-adoption-v1",
+  "recorded_date_utc": "2026-10-02",
+  "candidate": "Streaming P16 timing7, canonical pipeline1, contexts1",
+  "status": "adopted_internal_compute_only_production_parent",
+  "replaces_record": "Streaming P16 diet baseline, contexts1",
+  "retained_fallback": "P16 diet baseline at12.594ns; P8 canonical1 and F3 remain earlier fallbacks",
+  "candidate_core_sha256": "0011468ec67d7ca7ebb86fac88103fd19ea0207dc75685289da64d508228ea28",
+  "source_scope": "Exact64 fitted RTL sources contained by own75-source numerical build, CORR2/COMM1/MONT1 and all seven explicit timing flags; no C2 or newer area composition.",
+  "independent_numerical_and_timing_review": {
+    "path": "results/throughput-20260929/s4-p16-timing7-promotion-independent-v1.json",
+    "sha256": "ecd1b7534400813b0de1de60f1a3ad1aafa4540afb392eec1f0d918c3853f546"
+  },
+  "advisor_acceptance": {
+    "path": "docs/briefs/2026-10-02-advisor-verification-P16-timing7.md",
+    "sha256": "44de75c15a12aafc480d6a08141358e35eca3d6183126178a05ee4842720f5c4"
+  },
+  "sample": {"N": 65536, "base": 604832956, "operations_including_leading_bit": 1911814},
+  "compute_projection": {
+    "cold_ordinary_completion_cycles": 668026,
+    "warm_interval_cycles": 8460,
+    "cold_total_cycles": 16174606006,
+    "selected_audited_period_ns": "11.044",
+    "cold_ordinary_seconds": "178.632348730264",
+    "cached_root_total_cycles": 16174605907,
+    "cached_root_seconds": "178.632347636908",
+    "special_final_image_extra_cycles": 65536,
+    "boundary": "Start through internal finalized publication, including cold roots and one final canonicalization/internal copy. Initial external load/setup, final host readback, transport and board gaps excluded.",
+    "measured_full_sample_PRP_runtime": false
+  },
+  "whole_resources": {"needed_alms": 318091, "placed_alms": 382948, "labs": 41959, "device_labs": 42720, "registers": 605823, "m20ks": 1910, "needed_dsps": 1300, "placed_dsps": 1318},
+  "selected_internal_timing": {"minimum_setup_ns": "0.001", "failing_endpoints": 0, "minimum_hold_ns": "0.004", "minimum_pulse_width_ns": "4.878", "adjacent_failing_period_ns": "11.042", "raw_sdc_exceptions": "none"},
+  "qualification_scope": {"continuous_operations": 1000, "doubles": 500, "final_signed96_words": 65536, "continuous_cycles": 9119566, "resets": 1, "loads": 1, "starts": 1, "readbacks": 1, "composed_numerical_ladder": "Independently reviewed own full9/T5b, eight small PRPs, short/100/1000, AW8 dense and bounded host faults/special cases."},
+  "exclusions": [
+    "1ps printed setup reserve is not robust hardware margin, global maximum frequency or board sign-off.",
+    "Virtual I/O: 193 inputs and797 outputs unconstrained. Recovery/removal have no paths; native latch selector unsupported. Neither is reset-release or latch sign-off.",
+    "Generic summary text saying reset false-pathed is stale: reviewed raw SDC has no exceptions.",
+    "No board operation, executed complete full-size sample PRP, exhaustive fault coverage or wider base-range proof.",
+    "C2, composed area/timing and later variants retain their own source qualification; no clock or numerical inheritance.",
+    "98.22% LAB occupancy remains above future whole-fit area aim; adoption does not release new whole fits."
+  ],
+  "implementation": "Records independent review plus explicit advisor acceptance with receipt identity verification only. No third replay, frozen source rebase, new native job, public publication or hardware programming."
+}

@@ -1,0 +1,1312 @@
+{
+  "schema": "gfn16-independent-promotion-evidence-v1",
+  "updated_at_utc": "2026-10-02 00:12:23 UTC",
+  "status": "PASS_internal_compute_only_evidence_ready_for_advisor_verification",
+  "reviewer": "/root/p16_independent_reviewer",
+  "independence": "My own task history contains no authorship of canonical P8 RTL, compiler, harness or references. I authored only reviewer records; the previous disqualified helper's verdict is not reused.",
+  "authority": "User-adopted r79 permits completing the saved canonical P8 record package alongside P16. No new native execution, fit, host, spend, deadline or publication action was taken.",
+  "candidate": "canonical-pipeline1 P8 C1 fixed saved layout",
+  "candidate_root_sha256": "140e2b306e39a5fba02046917d0733eb31ed1e2f9c80f81be7fd086181b8c051",
+  "promotion_recorded": false,
+  "advisor_verification_required": true,
+  "review_method": [
+    "Verified native outer bundle hashes and every retained dispatcher-inventory member against disk and archived bytes.",
+    "Verified every report artifact, archived source member, generated C++ source member and gzip executable hash; replayed exact typed normal/nonzero-negative contracts and runtime probes. No full-size numerical or RTL simulation rerun.",
+    "Replayed pinned audit5 helper against all raw four-corner timing reports; independently parsed audit4 adjacent failing raw four-corner summaries, clocks, effective SDC and UCP coverage. Verified both audit archives and all 253 retained inventory members in each, plus 60 pinned original project files.",
+    "Regenerated physical49 from exact compiler017f5815 source and compared its complete generated map/cycle contract; regenerated own small canonical binding and checked all eight ordinary builtin-pow oracle values.",
+    "Reviewed source/harness contracts and independent iterative NTT/centered128 CRT/serial Euclidean reference; no r75 or P16 source/clock/numerical qualification is inherited."
+  ],
+  "roles": [
+    {
+      "id": "s4-aw16-p8-canon-pipe-host-normal-q1-v2",
+      "evidence": "queue/evidence/s4-aw16-p8-canon-pipe-host-normal-q1-v2/attempt-0/collected",
+      "collected_bundle_sha256": "6b6251d67b823b3cdf16afb61fbe95a41cd7b435b77721ab58761743890469ce",
+      "dispatcher_inventory_sha256": "a16debf15bf8a7c8352876b251259db04ba1befc3c2860c2f85dbc9eb2ad5b7e",
+      "report_sha256": "892d867b1162c9ea8a4d185732d2402dd970db9206263762e4ebd90755461423",
+      "manifest_sha256": "0922d2462f54e228315bf9fd16aa4815e07b8a9be820e9d771c304dfd086f33e",
+      "rtl_map_sha256": "5a8d98ee722502acdbfc712531e0b05e06f18a239f838f0f7efa210c081fd619",
+      "rtl_members": 60,
+      "source_members_verified": 186,
+      "generated_members_verified": 306,
+      "artifacts_verified": {
+        "approved-manifest.json": "0922d2462f54e228315bf9fd16aa4815e07b8a9be820e9d771c304dfd086f33e",
+        "sources.tar.gz": "b51c1ca6059649f57f7d970f5a0ffd2ad201d42d43b41391543378bf37fbc865",
+        "verilator-version.log": "550e7237fdcc27f6da4ad434eab5c4ab24bfeb224f9fbf011946548bc050757c",
+        "verilator-version.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "compiler-version.log": "39553616934606f58b27c04bed0cdbbe5b00c92c831a9aaadebd7ceda61d1334",
+        "compiler-version.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "lint.log": "5753d7460dd80f7485fc0928153fe3518b17b7eec2542ee48eff1b6a531fc732",
+        "lint.stderr.log": "2770fb5b2d02a7f9968397b8df1e51a20613c0edfc7608122720754b0c6c8792",
+        "build.log": "bdd3dde2761dd9b507e66a813ca2ae61748c23a7d1a837fd86d5e64b34edc272",
+        "build.stderr.log": "2770fb5b2d02a7f9968397b8df1e51a20613c0edfc7608122720754b0c6c8792",
+        "model.gz": "0a2e5985fd4fd50f008cb83b03c2f8ef1911d7e387cd378f6883892ace2848e8",
+        "generated-sources.tar.gz": "ee3246b5122e7df4651d78def1672cdee8f7aa4db26f69c3e3d840d886d7c104",
+        "probe.log": "0f57a1e8c279804d38c87b31c24e5f357451d80d6cc8797a72c766c2440bcb91",
+        "probe.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "canonical-pipe-full-host-normal.log": "0c7d3fade8dbcc55a50d38d1ffc0a8d5f6cfcac74643642ed3fd79e6ccdfc46a",
+        "canonical-pipe-full-host-normal.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "tool_pins": {
+        "/home/azureuser/gfn16-worker/native-tools-v3/verilator-5.032/bin/verilator": "7d5fc777216026d1da97d5aa2a68704fc8470d1300c242ea133d331d81c3aa13",
+        "/home/azureuser/gfn16-worker/native-tools-v3/verilator-5.032/bin/verilator_bin": "9b66c0bbc00b6d046e4f120db607aa808774b9b5d9accfd25190cce8f47b1f40",
+        "/usr/bin/x86_64-linux-gnu-g++-13": "1353e9bdd29a7295c7226bf6c63abccce056d8cac31f112e5cdbecc3f28c2769",
+        "/home/azureuser/gfn16-worker/native-tools-v3/python-env/bin/python3": "e50d468e8b0adfb05733f5b87b3cff34829c4a8c1aea50c865aa8bdfe4bb150f",
+        "/usr/bin/make": "d78b8f1d099fbcfb6f2f49ab87223b9b68fb3956642f92d6ec6de812e8afa965",
+        "/usr/bin/taskset": "a431738fadddc2e2326c8ab81843e72f4011658379381aef1502a6ddb1c1115b"
+      },
+      "runtime_probe": {
+        "context_threads": 1,
+        "model_threads": 1,
+        "expected_threads": 1
+      },
+      "typed_contract_replay": "PASS",
+      "lint_classes": {
+        "DECLFILENAME": 7,
+        "GENUNNAMED": 34,
+        "PINCONNECTEMPTY": 1700,
+        "SYNCASYNCNET": 14,
+        "UNUSEDPARAM": 6,
+        "UNUSEDSIGNAL": 218,
+        "VARHIDDEN": 97
+      },
+      "validations": {
+        "canonical-pipe-full-host-normal": {
+          "status": "PASS_expected_contracts",
+          "base": 604832956,
+          "canonical_pipe_stages": 1,
+          "counts": {
+            "jobs": 2,
+            "operations": 9,
+            "feed_descriptors": 7,
+            "true_final_rows": 16384,
+            "paired_reads": 131072,
+            "copied_words": 131072,
+            "partial_reads": 1,
+            "canonical_cycles": 1179648,
+            "image_copy_cycles": 131078,
+            "candidate_cycles": 1477102,
+            "fifo_peak": 4,
+            "full_exchanges": 3,
+            "backpressure_edges": 49955
+          },
+          "measured_t5b_wait_edges": 272282,
+          "scope": "Exact fullN9ops/two final images, all131072 signed96 T5b/reference words; new canonical register flag; not PRP/1000/physical clock/promotion."
+        }
+      },
+      "actual_test_returncodes": {
+        "canonical-pipe-full-host-normal": 0
+      }
+    },
+    {
+      "id": "s4-p8-canon1-eight-prp-normal-q1-v1",
+      "evidence": "queue/evidence/s4-p8-canon1-eight-prp-normal-q1-v1/attempt-0/collected",
+      "collected_bundle_sha256": "a1f71691ca892d1408672fb1252d319fa4bd6b1e99f3c3f3df27701ad2d10bbb",
+      "dispatcher_inventory_sha256": "4eff2bf2c73df966744e5eb1018bca7a7f7a56d990fabeebac1c7ba5bea89492",
+      "report_sha256": "89c76819658b54c92e3369157c8df39232d0358ea9172760b5a73a5dc86c2cd2",
+      "manifest_sha256": "fd278bd81433671b474dd787fc96ce029a6837bdab0971e3678a69f10e2f2b6b",
+      "rtl_map_sha256": "969ba2a9b8c53649c1842ae1bf3bf4cee4acacbd6cfe6927dd97e88cd7e5d2f0",
+      "rtl_members": 60,
+      "source_members_verified": 267,
+      "generated_members_verified": 180,
+      "artifacts_verified": {
+        "approved-manifest.json": "fd278bd81433671b474dd787fc96ce029a6837bdab0971e3678a69f10e2f2b6b",
+        "sources.tar.gz": "8d28125918c7b54f70fe19c0d05e58b6dc674e5c51bd142162d16930ded4b322",
+        "verilator-version.log": "550e7237fdcc27f6da4ad434eab5c4ab24bfeb224f9fbf011946548bc050757c",
+        "verilator-version.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "compiler-version.log": "39553616934606f58b27c04bed0cdbbe5b00c92c831a9aaadebd7ceda61d1334",
+        "compiler-version.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "lint.log": "5fd5464cc3832980856ec6b568287324c1e832ba64bb59d763682ac8b8e75b6a",
+        "lint.stderr.log": "2eb05cc73770eb6f8916ff8acf4086c04da47190a1c74dbb263d27143cda8518",
+        "build.log": "091426b9ffbfce326b9333a38f4f6625bca3b3002ff2dbf201ef5f93af2ad886",
+        "build.stderr.log": "2eb05cc73770eb6f8916ff8acf4086c04da47190a1c74dbb263d27143cda8518",
+        "model.gz": "00534f06623445d87f296dbd5391736952a36da0191964be84fcd2a4b01c7c20",
+        "generated-sources.tar.gz": "dd6e92860256c5c7382f203675cf486e6ab35bfd1bf61f436928e0c52ac8ac98",
+        "probe.log": "0f57a1e8c279804d38c87b31c24e5f357451d80d6cc8797a72c766c2440bcb91",
+        "probe.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "p8-canon1-eight-prp-normal.log": "eca36be83dae57e7013234260cd1e4ace1cbbb9e8fe5754e15a7cb6d69bdac3c",
+        "p8-canon1-eight-prp-normal.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "tool_pins": {
+        "/home/azureuser/gfn16-worker/native-tools-v3/verilator-5.032/bin/verilator": "7d5fc777216026d1da97d5aa2a68704fc8470d1300c242ea133d331d81c3aa13",
+        "/home/azureuser/gfn16-worker/native-tools-v3/verilator-5.032/bin/verilator_bin": "9b66c0bbc00b6d046e4f120db607aa808774b9b5d9accfd25190cce8f47b1f40",
+        "/usr/bin/x86_64-linux-gnu-g++-13": "1353e9bdd29a7295c7226bf6c63abccce056d8cac31f112e5cdbecc3f28c2769",
+        "/home/azureuser/gfn16-worker/native-tools-v3/python-env/bin/python3": "e50d468e8b0adfb05733f5b87b3cff34829c4a8c1aea50c865aa8bdfe4bb150f",
+        "/usr/bin/make": "d78b8f1d099fbcfb6f2f49ab87223b9b68fb3956642f92d6ec6de812e8afa965",
+        "/usr/bin/taskset": "a431738fadddc2e2326c8ab81843e72f4011658379381aef1502a6ddb1c1115b"
+      },
+      "runtime_probe": {
+        "context_threads": 1,
+        "model_threads": 1,
+        "expected_threads": 1
+      },
+      "typed_contract_replay": "PASS",
+      "lint_classes": {
+        "DECLFILENAME": 7,
+        "GENUNNAMED": 34,
+        "PINCONNECTEMPTY": 380,
+        "SYNCASYNCNET": 14,
+        "UNUSEDPARAM": 6,
+        "UNUSEDSIGNAL": 200,
+        "VARHIDDEN": 31
+      },
+      "validations": null,
+      "actual_test_returncodes": {
+        "p8-canon1-eight-prp-normal": 0
+      }
+    },
+    {
+      "id": "s4-p8-canon1-host-faults-q1-v1",
+      "evidence": "queue/evidence/s4-p8-canon1-host-faults-q1-v1/attempt-0/collected",
+      "collected_bundle_sha256": "696a19e46acecd4625e8f69a82e71d956fb635d4b0d0f4b8143225f6eecf26b0",
+      "dispatcher_inventory_sha256": "ecc0cc2a4503cdd980766752261ad422e734504413706ef679b4bc2489f94838",
+      "report_sha256": "f3543ab076fc3476f0f1cbff9933aef19166e0b675b33fe80ba03e279ee6ef91",
+      "manifest_sha256": "179832050fcf7ad614190610feebd80e61aa1a697432084a15e9c15826a2776e",
+      "rtl_map_sha256": "969ba2a9b8c53649c1842ae1bf3bf4cee4acacbd6cfe6927dd97e88cd7e5d2f0",
+      "rtl_members": 60,
+      "source_members_verified": 267,
+      "generated_members_verified": 180,
+      "artifacts_verified": {
+        "approved-manifest.json": "179832050fcf7ad614190610feebd80e61aa1a697432084a15e9c15826a2776e",
+        "sources.tar.gz": "bc2e6eca373219f73ed469c18cac617587b58ec909d940f91b5f3a0c093fcf3a",
+        "verilator-version.log": "550e7237fdcc27f6da4ad434eab5c4ab24bfeb224f9fbf011946548bc050757c",
+        "verilator-version.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "compiler-version.log": "39553616934606f58b27c04bed0cdbbe5b00c92c831a9aaadebd7ceda61d1334",
+        "compiler-version.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "lint.log": "56dd4c5b1e89426d12db6b3e22f827619e147af100214f49d0f10f908c056d8e",
+        "lint.stderr.log": "e7a7122ceee788fe4f65b0bf6dc5ff071917e7605b36bc76d9e1e3040ab58b81",
+        "build.log": "f265485558100d4faf8deb3fb5f01aa0d511685f98aacbc2258920847e654501",
+        "build.stderr.log": "e7a7122ceee788fe4f65b0bf6dc5ff071917e7605b36bc76d9e1e3040ab58b81",
+        "model.gz": "3ee1143686d70d8eb04b77bf4576f1e9d4ab2a0d30fd64787883d745bdcd2e08",
+        "generated-sources.tar.gz": "7652d22cb357742893d3d88751c8822428b3a16bfd22f829dad9a2916db401cc",
+        "probe.log": "0f57a1e8c279804d38c87b31c24e5f357451d80d6cc8797a72c766c2440bcb91",
+        "probe.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "p8-canon1-minimal-reset-cancellation.log": "248867d9e734d25525543a6ba281978eb0bf1d6e97ce378a617160df5a121073",
+        "p8-canon1-minimal-reset-cancellation.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "p8-canon1-typed-oracle-negative.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "p8-canon1-typed-oracle-negative.stderr.log": "73adf90f333c637cb468bd40b001e7d296156e9250551820f9f306d53d3e895e"
+      },
+      "tool_pins": {
+        "/home/azureuser/gfn16-worker/native-tools-v3/verilator-5.032/bin/verilator": "7d5fc777216026d1da97d5aa2a68704fc8470d1300c242ea133d331d81c3aa13",
+        "/home/azureuser/gfn16-worker/native-tools-v3/verilator-5.032/bin/verilator_bin": "9b66c0bbc00b6d046e4f120db607aa808774b9b5d9accfd25190cce8f47b1f40",
+        "/usr/bin/x86_64-linux-gnu-g++-13": "1353e9bdd29a7295c7226bf6c63abccce056d8cac31f112e5cdbecc3f28c2769",
+        "/home/azureuser/gfn16-worker/native-tools-v3/python-env/bin/python3": "e50d468e8b0adfb05733f5b87b3cff34829c4a8c1aea50c865aa8bdfe4bb150f",
+        "/usr/bin/make": "d78b8f1d099fbcfb6f2f49ab87223b9b68fb3956642f92d6ec6de812e8afa965",
+        "/usr/bin/taskset": "a431738fadddc2e2326c8ab81843e72f4011658379381aef1502a6ddb1c1115b"
+      },
+      "runtime_probe": {
+        "context_threads": 1,
+        "model_threads": 1,
+        "expected_threads": 1
+      },
+      "typed_contract_replay": "PASS",
+      "lint_classes": {
+        "DECLFILENAME": 7,
+        "GENUNNAMED": 34,
+        "PINCONNECTEMPTY": 380,
+        "SYNCASYNCNET": 14,
+        "UNUSEDPARAM": 6,
+        "UNUSEDSIGNAL": 200,
+        "VARHIDDEN": 31
+      },
+      "validations": null,
+      "actual_test_returncodes": {
+        "p8-canon1-minimal-reset-cancellation": 0,
+        "p8-canon1-typed-oracle-negative": 1
+      }
+    },
+    {
+      "id": "s4-p8-canon1-continuous100-normal-q1-v1",
+      "evidence": "queue/evidence/s4-p8-canon1-continuous100-normal-q1-v1/attempt-0/collected",
+      "collected_bundle_sha256": "e1fb20f0eb7ae10dffca2fa024a4a81237becc28bd5ee3934e77294c48f5a0ee",
+      "dispatcher_inventory_sha256": "22dff736b75e23dc185466fd790a54a340a844d0a2de427f40911104e043b33d",
+      "report_sha256": "dc67f76568b375c72832d4a35fd1e6b977c7aeb303d98bb5223e60cb5768d242",
+      "manifest_sha256": "55f12ad04bad5a88a82092d8c7670f6c67ab1478fec01332928fc6632717c0ff",
+      "rtl_map_sha256": "5a8d98ee722502acdbfc712531e0b05e06f18a239f838f0f7efa210c081fd619",
+      "rtl_members": 60,
+      "source_members_verified": 192,
+      "generated_members_verified": 306,
+      "artifacts_verified": {
+        "approved-manifest.json": "55f12ad04bad5a88a82092d8c7670f6c67ab1478fec01332928fc6632717c0ff",
+        "sources.tar.gz": "d6827a6d4187ffa078e5f5e7fb3d3122a7d26f01f1266c3bbe1eda331a9d95bb",
+        "verilator-version.log": "550e7237fdcc27f6da4ad434eab5c4ab24bfeb224f9fbf011946548bc050757c",
+        "verilator-version.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "compiler-version.log": "39553616934606f58b27c04bed0cdbbe5b00c92c831a9aaadebd7ceda61d1334",
+        "compiler-version.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "lint.log": "47413b1404a8e86d57c49f3f9079d80e24a3280a895effcb7ef5ff684f8cb768",
+        "lint.stderr.log": "c1e848fbecfb19bc67fd20e286c3c3aec95de4defb7ef8b5f39a489a46468e9b",
+        "build.log": "5feb7188c56ee9d787b64f13a829f65639e8412a4e85600103af1f073cc6c211",
+        "build.stderr.log": "c1e848fbecfb19bc67fd20e286c3c3aec95de4defb7ef8b5f39a489a46468e9b",
+        "model.gz": "dcfaa1b8d88f2b2abf6fd6ad903d8378a93a7281cf9141f8fe158c9d43eb1345",
+        "generated-sources.tar.gz": "76e8d37b470b789fd0939df17f238f1969c0c98a217da0bcdc14989a48739712",
+        "probe.log": "0f57a1e8c279804d38c87b31c24e5f357451d80d6cc8797a72c766c2440bcb91",
+        "probe.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stream27-s4-continuous-normal.log": "e9fdb05f25d2673a7b985dd53d925cf3b02ca784b3b573a12f9da4a0c2a4a9b2",
+        "stream27-s4-continuous-normal.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "tool_pins": {
+        "/home/azureuser/gfn16-worker/native-tools-v3/verilator-5.032/bin/verilator": "7d5fc777216026d1da97d5aa2a68704fc8470d1300c242ea133d331d81c3aa13",
+        "/home/azureuser/gfn16-worker/native-tools-v3/verilator-5.032/bin/verilator_bin": "9b66c0bbc00b6d046e4f120db607aa808774b9b5d9accfd25190cce8f47b1f40",
+        "/usr/bin/x86_64-linux-gnu-g++-13": "1353e9bdd29a7295c7226bf6c63abccce056d8cac31f112e5cdbecc3f28c2769",
+        "/home/azureuser/gfn16-worker/native-tools-v3/python-env/bin/python3": "e50d468e8b0adfb05733f5b87b3cff34829c4a8c1aea50c865aa8bdfe4bb150f",
+        "/usr/bin/make": "d78b8f1d099fbcfb6f2f49ab87223b9b68fb3956642f92d6ec6de812e8afa965",
+        "/usr/bin/taskset": "a431738fadddc2e2326c8ab81843e72f4011658379381aef1502a6ddb1c1115b"
+      },
+      "runtime_probe": {
+        "context_threads": 1,
+        "model_threads": 1,
+        "expected_threads": 1
+      },
+      "typed_contract_replay": "PASS",
+      "lint_classes": {
+        "DECLFILENAME": 7,
+        "GENUNNAMED": 34,
+        "PINCONNECTEMPTY": 1700,
+        "SYNCASYNCNET": 14,
+        "UNUSEDPARAM": 6,
+        "UNUSEDSIGNAL": 218,
+        "VARHIDDEN": 97
+      },
+      "validations": {
+        "stream27-s4-continuous-normal": {
+          "status": "PASS_expected_contracts",
+          "candidate": "canonical-pipe1-P8-context1",
+          "candidate_root_sha256": "140e2b306e39a5fba02046917d0733eb31ed1e2f9c80f81be7fd086181b8c051",
+          "canonical_pipe_stages": 1,
+          "base": 604832956,
+          "operations": 100,
+          "counts": {
+            "case_id": "92f1b494a6f24f26a5b058739402d02351e29609775e675341d7db07d79099da",
+            "operations": 100,
+            "doubles": 50,
+            "resets": 1,
+            "loads": 1,
+            "loaded_digits": 65536,
+            "starts": 1,
+            "readbacks": 1,
+            "words": 65536,
+            "signed96_words": 65536,
+            "feed_descriptors": 99,
+            "fifo_peak": 4,
+            "full_exchanges": 95,
+            "backpressure_edges": 1582038,
+            "final_rows": 8192,
+            "canonical_cycles": 589824,
+            "copy_cycles": 65539,
+            "candidate_cycles": 2328962,
+            "profile_loads": 1,
+            "profile_hits": 0,
+            "root_cycles": 99,
+            "conversion_cycles": 8192,
+            "special": 0
+          },
+          "phase_wall_ms": {
+            "candidate_ms": 707827,
+            "read_ms": 19244,
+            "reference_ms": 4640
+          },
+          "independent_reference_equal": true,
+          "final_actual_sha256": "d2178c685400efad6743e0dc9d8c50c7a6c49cdae04724e54445c53ec9fe5f30",
+          "final_expected_sha256": "d2178c685400efad6743e0dc9d8c50c7a6c49cdae04724e54445c53ec9fe5f30",
+          "uninterrupted_1000_native": false,
+          "promotion_allowed": false,
+          "scope": "ONE actually dependent FIFO job, exact source-selected49; independent reference is native-only, T5b dormant, not full PRP/clock or inherited9/25/100-op result."
+        }
+      },
+      "actual_test_returncodes": {
+        "stream27-s4-continuous-normal": 0
+      }
+    },
+    {
+      "id": "s4-p8-canon1-continuous1000-normal-q1-v2",
+      "evidence": "queue/evidence/s4-p8-canon1-continuous1000-normal-q1-v2/attempt-0/collected",
+      "collected_bundle_sha256": "2ec976ead4c30299a8b3b0854dd772f5dbd73133726af2981f149577696e9225",
+      "dispatcher_inventory_sha256": "2bcc0fbf1929bd38ad64f1e7cc82f401f78b2be8754e375b39f6c689452fde43",
+      "report_sha256": "019024a90e375e7cb2864723920ad647c3692109b17c4fd793794033ebc7846e",
+      "manifest_sha256": "dff24fdca19bc83659085921a6ec6424c9c88f5ada9a85a119b1faaaf59b49ed",
+      "rtl_map_sha256": "5a8d98ee722502acdbfc712531e0b05e06f18a239f838f0f7efa210c081fd619",
+      "rtl_members": 60,
+      "source_members_verified": 202,
+      "generated_members_verified": 306,
+      "artifacts_verified": {
+        "approved-manifest.json": "dff24fdca19bc83659085921a6ec6424c9c88f5ada9a85a119b1faaaf59b49ed",
+        "sources.tar.gz": "d29b54811eb6864f3999eedae496547e0c55587b3140a5c5d9bea3b60b2e217b",
+        "verilator-version.log": "550e7237fdcc27f6da4ad434eab5c4ab24bfeb224f9fbf011946548bc050757c",
+        "verilator-version.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "compiler-version.log": "39553616934606f58b27c04bed0cdbbe5b00c92c831a9aaadebd7ceda61d1334",
+        "compiler-version.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "lint.log": "6ba7fafc544789d10cca5edf9a2f6b4a7707fc26a8ff0e04a5e402a5376086cc",
+        "lint.stderr.log": "9146531bb39b9b54bb59b5a1acff97f4d1e05528bdf9fd1ec7611f95cf4af64d",
+        "build.log": "7bd5645e3ef2bc90746a65951d0507bcb97c74f76971a4938829544256731fc2",
+        "build.stderr.log": "9146531bb39b9b54bb59b5a1acff97f4d1e05528bdf9fd1ec7611f95cf4af64d",
+        "model.gz": "875244467e692c466b29fd5ff4d91e197c729b02ddb4acba4e23ffdc9583da7e",
+        "generated-sources.tar.gz": "360dde2d255367c41aae0e31434a627fedafe5a63565fd825844a8b4573452c6",
+        "probe.log": "0f57a1e8c279804d38c87b31c24e5f357451d80d6cc8797a72c766c2440bcb91",
+        "probe.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stream27-s4-continuous-normal.log": "0de2017cf9b474e6b5010899ee3a79af2f97d89a46f58a87d01abfef2a6ae5f8",
+        "stream27-s4-continuous-normal.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "tool_pins": {
+        "/home/azureuser/gfn16-worker/native-tools-v3/verilator-5.032/bin/verilator": "7d5fc777216026d1da97d5aa2a68704fc8470d1300c242ea133d331d81c3aa13",
+        "/home/azureuser/gfn16-worker/native-tools-v3/verilator-5.032/bin/verilator_bin": "9b66c0bbc00b6d046e4f120db607aa808774b9b5d9accfd25190cce8f47b1f40",
+        "/usr/bin/x86_64-linux-gnu-g++-13": "1353e9bdd29a7295c7226bf6c63abccce056d8cac31f112e5cdbecc3f28c2769",
+        "/home/azureuser/gfn16-worker/native-tools-v3/python-env/bin/python3": "e50d468e8b0adfb05733f5b87b3cff34829c4a8c1aea50c865aa8bdfe4bb150f",
+        "/usr/bin/make": "d78b8f1d099fbcfb6f2f49ab87223b9b68fb3956642f92d6ec6de812e8afa965",
+        "/usr/bin/taskset": "a431738fadddc2e2326c8ab81843e72f4011658379381aef1502a6ddb1c1115b"
+      },
+      "runtime_probe": {
+        "context_threads": 1,
+        "model_threads": 1,
+        "expected_threads": 1
+      },
+      "typed_contract_replay": "PASS",
+      "lint_classes": {
+        "DECLFILENAME": 7,
+        "GENUNNAMED": 34,
+        "PINCONNECTEMPTY": 1700,
+        "SYNCASYNCNET": 14,
+        "UNUSEDPARAM": 6,
+        "UNUSEDSIGNAL": 218,
+        "VARHIDDEN": 97
+      },
+      "validations": {
+        "stream27-s4-continuous-normal": {
+          "status": "PASS_expected_contracts",
+          "candidate": "canonical-pipe1-P8-context1",
+          "candidate_root_sha256": "140e2b306e39a5fba02046917d0733eb31ed1e2f9c80f81be7fd086181b8c051",
+          "canonical_pipe_stages": 1,
+          "base": 604832956,
+          "operations": 1000,
+          "counts": {
+            "case_id": "92f1b494a6f24f26a5b058739402d02351e29609775e675341d7db07d79099da",
+            "operations": 1000,
+            "doubles": 500,
+            "resets": 1,
+            "loads": 1,
+            "loaded_digits": 65536,
+            "starts": 1,
+            "readbacks": 1,
+            "words": 65536,
+            "signed96_words": 65536,
+            "feed_descriptors": 999,
+            "fifo_peak": 4,
+            "full_exchanges": 995,
+            "backpressure_edges": 16568838,
+            "final_rows": 8192,
+            "canonical_cycles": 589824,
+            "copy_cycles": 65539,
+            "candidate_cycles": 17316662,
+            "profile_loads": 1,
+            "profile_hits": 0,
+            "root_cycles": 99,
+            "conversion_cycles": 8192,
+            "special": 0
+          },
+          "phase_wall_ms": {
+            "candidate_ms": 5486991,
+            "read_ms": 19443,
+            "reference_ms": 44329
+          },
+          "independent_reference_equal": true,
+          "final_actual_sha256": "1f8d6dc3b8ce600339f4454e4b8458abad2ab107b943fae131667bd4a4150cdb",
+          "final_expected_sha256": "1f8d6dc3b8ce600339f4454e4b8458abad2ab107b943fae131667bd4a4150cdb",
+          "uninterrupted_1000_native": true,
+          "promotion_allowed": false,
+          "scope": "ONE actually dependent FIFO job, exact source-selected49; independent reference is native-only, T5b dormant, not full PRP/clock or inherited9/25/100-op result."
+        }
+      },
+      "actual_test_returncodes": {
+        "stream27-s4-continuous-normal": 0
+      }
+    },
+    {
+      "id": "s4-canon-pipe-aw5-p8-fault-q1-v1",
+      "evidence": "queue/evidence/s4-canon-pipe-aw5-p8-fault-q1-v1/attempt-0/collected",
+      "collected_bundle_sha256": "8dc895153351ebdb581f6d79b3bacc1d481cd6291885cc6f59890a2df2319858",
+      "dispatcher_inventory_sha256": "0aee7dcbb2d1aab2cbcd9b759f5fbb7154a947817a4358fa68300e0f7bf4297c",
+      "report_sha256": "72455da8590f2fb3a86131ffaad62d865d44512002ebe04c407d3f278822b47d",
+      "manifest_sha256": "98df3bcf7266ed3b28ccba75ce882983230d4e9e6051852fc27fa80302947400",
+      "rtl_map_sha256": "509ec6712bf4f5a35c63c661866d103ac1c07a3e9fa50794a6943609246c2e0e",
+      "rtl_members": 2,
+      "source_members_verified": 24,
+      "generated_members_verified": 15,
+      "artifacts_verified": {
+        "approved-manifest.json": "98df3bcf7266ed3b28ccba75ce882983230d4e9e6051852fc27fa80302947400",
+        "sources.tar.gz": "0da910beb1aef7f999d8b8c3fad32b588432d87c035ce1120fbfd8ef17d3a2e7",
+        "verilator-version.log": "31ee8ba532711b2dcaef0bb2e203e20284e39ea422325f094074f3c2a9da7996",
+        "verilator-version.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "compiler-version.log": "e61c12990ebd03da62165bc47b2e2bb1470b3a6500f703aa912b9364a145caa3",
+        "compiler-version.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "lint.log": "364c8b9865c58b7053ccd1ab3a2c5592098c08c072caeff6691c53263cbf86c8",
+        "lint.stderr.log": "e8d3b6d63152be09d8703109f9aef55de0cd21b7fd8585f3fb3b930eca83e2f4",
+        "build.log": "4d0cd796cbf761af598d4f8cbe527145010aaf6cf663c9249b1f74be7b8776bd",
+        "build.stderr.log": "e8d3b6d63152be09d8703109f9aef55de0cd21b7fd8585f3fb3b930eca83e2f4",
+        "model.gz": "e39e7feca26eedab82ef23ad0c4b1e58e35f27d6b35ef1dcf04bf0b3243c0c11",
+        "generated-sources.tar.gz": "8ba8164e3c6327ad463ae69a950724b7e8e88c6bc65914349174a3a9a0d79657",
+        "probe.log": "0f57a1e8c279804d38c87b31c24e5f357451d80d6cc8797a72c766c2440bcb91",
+        "probe.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "canonical-pipe-range-reset.log": "ab7a12bc163c39e4386c40071fcde0aeef891b9cdbaf8c3e671c83051aea0764",
+        "canonical-pipe-range-reset.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "canonical-pipe-wrong-word.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "canonical-pipe-wrong-word.stderr.log": "5e2a14f9afb1e23a67c985e75a9324876d25117d235a469f3c82a32086c68d78"
+      },
+      "tool_pins": {
+        "/usr/bin/verilator": "672a1ccf3468902f66387049f001b04f254bbcece7d5e816e3861715889bf252",
+        "/usr/bin/verilator_bin": "90fe12f3b2c752b607690cb05a566646398d1e07f38e83f5f7a7f35c20560247",
+        "/usr/bin/x86_64-linux-gnu-g++-15": "fd8730a05275b1f8a149b7df3e38ef67cf7a21ec817a706206955cd2929b900b",
+        "/usr/bin/python3.14": "be9a2a5eada8c89c1c399fdfb8397179e877c20d8db0739c802f726d4d0e69fd",
+        "/usr/bin/make": "59588d6a017dc48b12d525ddfd14dea52f214d81e89645de3d782eb3c684b698",
+        "/usr/bin/taskset": "f3ae0ca36e0a8a892fee6ed3f72f6058fc07991e49b03fe6d1f796989d8777c2"
+      },
+      "runtime_probe": {
+        "context_threads": 1,
+        "model_threads": 1,
+        "expected_threads": 1
+      },
+      "typed_contract_replay": "PASS",
+      "lint_classes": {
+        "SYNCASYNCNET": 1
+      },
+      "validations": null,
+      "actual_test_returncodes": {
+        "canonical-pipe-range-reset": 0,
+        "canonical-pipe-wrong-word": 1
+      }
+    },
+    {
+      "id": "s4-canon-pipe-aw8-p8-normal-q1-v2",
+      "evidence": "queue/evidence/s4-canon-pipe-aw8-p8-normal-q1-v2/attempt-0/collected",
+      "collected_bundle_sha256": "749f43a4181717d2890c069cd75142ea967a000c68185d1443591149033c033b",
+      "dispatcher_inventory_sha256": "1c83261cc3e790cfa1f18773a0bffa3975b7e2c09db92f752b09f83dd09c34f4",
+      "report_sha256": "3bc0abdb771d79a83c3f94f4f1245b53640cc290f05bfa16d5b6d07aa8868f63",
+      "manifest_sha256": "5263ce203a2168c82b1fc0e62b6c24006951655cbb7790055e354615838ed2f4",
+      "rtl_map_sha256": "509ec6712bf4f5a35c63c661866d103ac1c07a3e9fa50794a6943609246c2e0e",
+      "rtl_members": 2,
+      "source_members_verified": 62,
+      "generated_members_verified": 15,
+      "artifacts_verified": {
+        "approved-manifest.json": "5263ce203a2168c82b1fc0e62b6c24006951655cbb7790055e354615838ed2f4",
+        "sources.tar.gz": "dec624bae57e5246c9c4228054adbc9340a56d7e9ef3d0caabdbc0cb564c761f",
+        "verilator-version.log": "550e7237fdcc27f6da4ad434eab5c4ab24bfeb224f9fbf011946548bc050757c",
+        "verilator-version.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "compiler-version.log": "39553616934606f58b27c04bed0cdbbe5b00c92c831a9aaadebd7ceda61d1334",
+        "compiler-version.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "lint.log": "64fe5ffdb70cccfc6a510af49b0ff1acaa731a6c56994795f8b842998ff29fdb",
+        "lint.stderr.log": "09c67c913fe27f0a13dc27435863db2987027952b160e0f848b9535bbd6a53af",
+        "build.log": "a591ed4541324015e21062bb268dc8d08970d720edafabf13414ecde05edbd69",
+        "build.stderr.log": "a6cc6daf04701dcfdc6958117fe453a9d0ad852f11508071362e2cecd076af61",
+        "model.gz": "ecc4f9a407406c0235d553f0f8709dd78ed8d23227a38b5a0bdbad2db74312d1",
+        "generated-sources.tar.gz": "ef36fbcd9f5a17e071146001a27bfa2dcfc3140053445803e1d9d83d455a9be4",
+        "probe.log": "0f57a1e8c279804d38c87b31c24e5f357451d80d6cc8797a72c766c2440bcb91",
+        "probe.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "canonical-pipe-normal.log": "7d387aad303e2a6737a98fb14e6164ae1debb3afad533dfc7f9f54e6acd44081",
+        "canonical-pipe-normal.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "tool_pins": {
+        "/home/azureuser/gfn16-worker/native-tools-v3/verilator-5.032/bin/verilator": "7d5fc777216026d1da97d5aa2a68704fc8470d1300c242ea133d331d81c3aa13",
+        "/home/azureuser/gfn16-worker/native-tools-v3/verilator-5.032/bin/verilator_bin": "9b66c0bbc00b6d046e4f120db607aa808774b9b5d9accfd25190cce8f47b1f40",
+        "/usr/bin/x86_64-linux-gnu-g++-13": "1353e9bdd29a7295c7226bf6c63abccce056d8cac31f112e5cdbecc3f28c2769",
+        "/home/azureuser/gfn16-worker/native-tools-v3/python-env/bin/python3": "e50d468e8b0adfb05733f5b87b3cff34829c4a8c1aea50c865aa8bdfe4bb150f",
+        "/usr/bin/make": "d78b8f1d099fbcfb6f2f49ab87223b9b68fb3956642f92d6ec6de812e8afa965",
+        "/usr/bin/taskset": "a431738fadddc2e2326c8ab81843e72f4011658379381aef1502a6ddb1c1115b"
+      },
+      "runtime_probe": {
+        "context_threads": 1,
+        "model_threads": 1,
+        "expected_threads": 1
+      },
+      "typed_contract_replay": "PASS",
+      "lint_classes": {
+        "SYNCASYNCNET": 1
+      },
+      "validations": {
+        "canonical-pipe-normal": {
+          "status": "PASS_expected_contracts",
+          "counts": {
+            "cases": 42,
+            "reads": 10752,
+            "normal": 38,
+            "special": 4,
+            "cycles": 97792
+          },
+          "scope": "42 standalone normal images, all signed96 words and exact9N/10N latency; not whole-host/warm/clock/promotion."
+        }
+      },
+      "actual_test_returncodes": {
+        "canonical-pipe-normal": 0
+      }
+    },
+    {
+      "id": "s4-canon-pipe-aw5-p8-normal-q1-v2",
+      "evidence": "queue/evidence/s4-canon-pipe-aw5-p8-normal-q1-v2/attempt-0/collected",
+      "collected_bundle_sha256": "b69f6a97c208c1674105da8aed8f0d8362a97685a6a947184edf2ada1db13050",
+      "dispatcher_inventory_sha256": "330f0e620f4fefec9b8f5af13049c1bb6e7a3e3d98e22660bf15d928f3a62ad3",
+      "report_sha256": "2ce5094bc63bf1d29a6b1935c9ca9c4defd449e3889ed3e66551bb38a025c4c3",
+      "manifest_sha256": "e9c4e033dcff1fc1dc58e401d33dc4e379ebe6a213af5907ae0d5f10bdd2df4c",
+      "rtl_map_sha256": "509ec6712bf4f5a35c63c661866d103ac1c07a3e9fa50794a6943609246c2e0e",
+      "rtl_members": 2,
+      "source_members_verified": 62,
+      "generated_members_verified": 15,
+      "artifacts_verified": {
+        "approved-manifest.json": "e9c4e033dcff1fc1dc58e401d33dc4e379ebe6a213af5907ae0d5f10bdd2df4c",
+        "sources.tar.gz": "77f5c7f38e2e85a85e7b1aedb69f97b9e1ec48a85001bb57e7fb1b184b6dd378",
+        "verilator-version.log": "550e7237fdcc27f6da4ad434eab5c4ab24bfeb224f9fbf011946548bc050757c",
+        "verilator-version.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "compiler-version.log": "39553616934606f58b27c04bed0cdbbe5b00c92c831a9aaadebd7ceda61d1334",
+        "compiler-version.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "lint.log": "1befbb5f0c489324d8068d6e1bca2929c568a68c9e7c45807348d7453690da04",
+        "lint.stderr.log": "d699f998a618abcd8c34093e4d684b9004937dc657b59ce7194e04a15d3b74e4",
+        "build.log": "86ffa2b9f8c145d1ee7538e9a174441b0faab07a83d17a8869e65a2fe1d286fc",
+        "build.stderr.log": "01662bf601a2e5e658fc4b542bda3fd76db17ef2892cafecdf09c5a99188bd1f",
+        "model.gz": "d53afb87a787db7325bddc21b396bb47de3554dac4e367084083dd2a2e0bfe7e",
+        "generated-sources.tar.gz": "8836e6ab6f22dd406298d5aa29db84ebb6ab1adf683f3646377bc97a2ea2a8b8",
+        "probe.log": "0f57a1e8c279804d38c87b31c24e5f357451d80d6cc8797a72c766c2440bcb91",
+        "probe.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "canonical-pipe-normal.log": "87b0463da17ad7f989319402b6a4c777f60279df1f7b22eb593b75734b049c13",
+        "canonical-pipe-normal.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "tool_pins": {
+        "/home/azureuser/gfn16-worker/native-tools-v3/verilator-5.032/bin/verilator": "7d5fc777216026d1da97d5aa2a68704fc8470d1300c242ea133d331d81c3aa13",
+        "/home/azureuser/gfn16-worker/native-tools-v3/verilator-5.032/bin/verilator_bin": "9b66c0bbc00b6d046e4f120db607aa808774b9b5d9accfd25190cce8f47b1f40",
+        "/usr/bin/x86_64-linux-gnu-g++-13": "1353e9bdd29a7295c7226bf6c63abccce056d8cac31f112e5cdbecc3f28c2769",
+        "/home/azureuser/gfn16-worker/native-tools-v3/python-env/bin/python3": "e50d468e8b0adfb05733f5b87b3cff34829c4a8c1aea50c865aa8bdfe4bb150f",
+        "/usr/bin/make": "d78b8f1d099fbcfb6f2f49ab87223b9b68fb3956642f92d6ec6de812e8afa965",
+        "/usr/bin/taskset": "a431738fadddc2e2326c8ab81843e72f4011658379381aef1502a6ddb1c1115b"
+      },
+      "runtime_probe": {
+        "context_threads": 1,
+        "model_threads": 1,
+        "expected_threads": 1
+      },
+      "typed_contract_replay": "PASS",
+      "lint_classes": {
+        "SYNCASYNCNET": 1
+      },
+      "validations": {
+        "canonical-pipe-normal": {
+          "status": "PASS_expected_contracts",
+          "counts": {
+            "cases": 42,
+            "reads": 1344,
+            "normal": 38,
+            "special": 4,
+            "cycles": 12224
+          },
+          "scope": "42 standalone normal images, all signed96 words and exact9N/10N latency; not whole-host/warm/clock/promotion."
+        }
+      },
+      "actual_test_returncodes": {
+        "canonical-pipe-normal": 0
+      }
+    }
+  ],
+  "physical": {
+    "evidence": "queue/standing-fit-state/terminal/s4-p8-canonical-pipe-whole-10000-v1",
+    "terminal_receipt_sha256": "71afe5dcc84b345623c2dec14dd830c3da4b593c42f81b03a53c75b96ffab103",
+    "original_native_archive_sha256": "3c3462ed1df722454becaf2237a3f854b74cffb653a0878c969ab56ab09b4a5c",
+    "inventory_members_verified": 81,
+    "manifest_sha256": "eb97058af41790ce828bd9e8a4d872c6f0161ee7e6790b20cbc71d86f17983d9",
+    "rtl_map_sha256": "38ce394a95ff6dd2c44fc9c05a027f11a6a56852b5ef6c429ee77699a4625baf",
+    "rtl_source_pins": {
+      "genefer_ntt_lazy28_butterfly_v1.sv": "ade6280dd1dac0fe3049ac2860dea7bbc7db292b634368e12f557b63865aa00d",
+      "genefer_montgomery_mul28x27_sparse_pipe_v2.sv": "a93cb002eb08e585e62a847ef4b070175ae8108919da30ea5bf67dad3a597026",
+      "genefer_stream27_merged_final_gs_pair_v1.sv": "c860243f74d445324e93d8d2bc202521249316f04364c4bb2e630d4328216d4b",
+      "genefer_stream27_mdc_fifo_smallreg_v1.sv": "0ff1605c74d81670291f1bd0ee88afe6f5461d999d5ee65fc6f1cc722f4ec4be",
+      "genefer_stream27_mdc_commutator_sm1_registered_v1.sv": "c262261f1a7c7428056111ccdef97462edd081016f219428d2a81b7e429819c9",
+      "genefer_stream27_mdc_commutator_sync.sv": "72e6d497280f8d5eeba28c0af30b79a116e20b338d50a9894355a28d3aa4d218",
+      "genefer_montgomery_mul27_sparse_pipe.sv": "501d0ce309a3915f7aed0f3bde14ba1ee8d56ddc5f6abef1f2f5bb572d64db4b",
+      "genefer_ntt_banked27_engine.sv": "7ae89e702b671e3fbe8a1f90beb99ea595c832729e5e94232bf82515f1d74fe9",
+      "merged_stream27_root_library_aw16_p8_f0_v1.sv": "c9e9d61306373bd3967bc4b284f848d4373b056cd48121f4606900a11e5f9a9f",
+      "genefer_stream28_merged_ct_aw16_p8_f0_v1.sv": "6b797b8b970b7b52adf036e33d3b6cc51ec2595bf61d13fe45cfd035791d4230",
+      "genefer_stream28_merged_gs_aw16_p8_f0_v1.sv": "12361f888589743f39843ca077ffc490bdb1edac60798009b5d6365405fab5c3",
+      "genefer_stream27_square_p8_f0_v1.sv": "bbd07822d6d91c37b8edf282d83eb400b9ca13b77430dd0144259467092a9a76",
+      "genefer_stream27_dif_aw3_p8_f0_shared_registered_v1.sv": "2977d995cf3e17f682b8f04b086fcb944be7819e238abaccea5b32150d3f39e9",
+      "genefer_stream27_shared_term_roots_aw16_p8_f0_v1.sv": "0a2daf4f46a1caccaf601eba382b5d76954d0a448158f2c5a3e57f764f2b2d88",
+      "genefer_stream27_term_context_param_v1.sv": "d8651c253ec856e9b6b514433aa58896811a275942f3c592333a8436a2c95949",
+      "genefer_stream27_mdc_commutator_slots_v2.sv": "3484e192967d6295dd6dc7f6a325dfd31e1573a327c881be9f9e10558c458da5",
+      "genefer_stream27_root_rom_prefetch.sv": "f4b9415b855d58a1c5ddbc79fd473eef5388b05c888db1c5dde4825e2b3184fc",
+      "genefer_digit_reduce27_pipe.sv": "61e14bb13c2dbcc13b5030756578a0d0358269beb24fb207a5641b98795883e8",
+      "genefer_stream27_signed_boundary_reduce27_pipe.sv": "140fcad078bd089456712e27eed9c1f78f340298f72a7d6860d5bed70bbb9f2d",
+      "genefer_stream27_epoch_protocol_v5.sv": "a01f6b93200d4ee5d1eb7e81664cfd89e373a447e9cbf5173387188f1212df45",
+      "genefer_stream27_row_arithmetic_param_v1.sv": "34cbd71a998ebc5aff532dff24c7bef904c2a8e7a1c27ee69d9e0f55caf07f9a",
+      "genefer_stream27_term_context_v2.sv": "1785c86519e52908e5e450ec8d48656e2fc402808ad3660bda6aa7e8d4c86592",
+      "merged_stream27_root_library_aw16_p8_f1_v1.sv": "ac74898661f3c07d49a9ffcc57ab783c33dddd76413284a7a7ed8028c5d72237",
+      "genefer_stream28_merged_ct_aw16_p8_f1_v1.sv": "5975a2e961c1b6ef8a3add163b6434a0efdd54cd1a699e502085bd75a7747c01",
+      "genefer_stream28_merged_gs_aw16_p8_f1_v1.sv": "f9d82c515b8efc7b2217e3dabe0cdd611cdfd0e41b55f0321990a355148778fd",
+      "genefer_stream27_square_p8_f1_v1.sv": "fee015d7958adfb0ad5e5b8fe01188cb9198ea3e00df4a14ae3e6a8f4edaeb97",
+      "genefer_stream27_dif_aw3_p8_f1_shared_registered_v1.sv": "3531e58fee85db287a2ac25a918c32b4da911e8719c107bd28dc4e90701b6666",
+      "genefer_stream27_shared_term_roots_aw16_p8_f1_v1.sv": "b0e5ed99d9dc2fa2f2dffa36ab77e6fc9a67671b27dd08aaa37c1f85fd5987e4",
+      "merged_stream27_root_library_aw16_p8_f2_v1.sv": "83b1db2a1d91ebb9844826784f7dc56fb042a0d0be900de9ccfd628b1d1964f2",
+      "genefer_stream28_merged_ct_aw16_p8_f2_v1.sv": "68318118b69e8599840aed90f3c4ab09c058ea773c3bf33fafa34fd4b27e80c6",
+      "genefer_stream28_merged_gs_aw16_p8_f2_v1.sv": "70d62f8fa79688b7d2bd061d8d3cf33a7bf70c75a005ae69ffe200b092cf65cf",
+      "genefer_stream27_square_p8_f2_v1.sv": "999a0b75c2f17655c6a754cd871c152268f7dd8760fd90e6867fd338989ead5e",
+      "genefer_stream27_dif_aw3_p8_f2_shared_registered_v1.sv": "dc1f321616e167f67b7613c70b7b21db3bfb738ed39867382606675104111f9c",
+      "genefer_stream27_shared_term_roots_aw16_p8_f2_v1.sv": "4b72cc81b24da062db4a43a7e0d53f5fa70a5c630678e1d68bdf89d657333bf3",
+      "genefer_crt3_27_mont_pipe.sv": "8bb5b62423c1f61e069f131b5d393dd3dbc84d05348fc1945f6e9c419c104c58",
+      "genefer_div_recip_precision.sv": "832021ed0b3410dc867d92ac4436a725d5717f9630d233073e39896789ebbd7c",
+      "genefer_stream27_blockcarry_small_cell.sv": "eafee617681cbd84cedfe90874938f63bf5ae84123ba1c914410785b44a3e74f",
+      "genefer_stream27_blockcarry_setup_param_v1.sv": "c9ba8163c8bb43afecf1afee07a8a55c4eb89539318cf235b83508ab692f4f26",
+      "genefer_stream27_blockcarry_lane_param_v1.sv": "8a458519272e89e635eb5cd7e6b2d07c93c8d3b1fc0f44874ba67aeccca77d4b",
+      "genefer_stream27_threefield_carry_aw16_p8_param_v1_signed.sv": "38ed4cb4b288c01754a169e84986ea598ed87635f98badfc64745f470350ac08",
+      "genefer_stream27_warm_chain_aw16_p8_param_v1.sv": "eb336ab659d7a424987bdd797442ca1caab9a565952feac6c1d57d56d5584a33",
+      "genefer_stream27_chain_canonical_aw16_p8_canonreg_v1.sv": "4392a6f5d05c9379ba855ecc82340f32547c0f258ea8cfb57ec16ff0dadde906",
+      "genefer_sdp_ram32.sv": "993567fb68fdc216b9ff04489d1810f743b86564434e4b48261ad606b25d53b0",
+      "genefer_stream27_host_chain_aw16_p8_canonreg_v1.sv": "140e2b306e39a5fba02046917d0733eb31ed1e2f9c80f81be7fd086181b8c051",
+      "genefer_stream27_host_image_ports_v1.sv": "2d1dbcd3d923323481b920d1354127306cf19253ee98ad60c0a87626cb1ba11e",
+      "genefer_stream27_shared_warm_aw16_p8_f0_v1_signed_host_v3_valid_start_v4.sv": "328fe9bc85a9e84251f6446490182acb7604e5ffefc20c5b084d6d8be05cefc6",
+      "genefer_stream27_shared_warm_aw16_p8_f1_v1_signed_host_v3_valid_start_v4.sv": "5174c825002ff3067cadec7f7b96d5bea066eb6ccf2d0dc38774e0605da3eb74",
+      "genefer_stream27_shared_warm_aw16_p8_f2_v1_signed_host_v3_valid_start_v4.sv": "f2cb529953ee2097c1566dc11ecfb4fc835c9b6da2af425d1bee24baf8b20132",
+      "genefer_stream27_canonical_image_pipe_v1.sv": "763b069a9797b91c7122bdf30fe86879b8c34dd318613ec4e096797610a379a5"
+    },
+    "raw_control_pins": {
+      "probe.qsf": "657565c7227c2cb8414d4ad66e23a553e567c8fc7786a95eec2140588a9f694f",
+      "probe.qpf": "ff7f5a00df0fdbe48ba84142a0a94058de5a259b5f7f1e38d6bd50e87d408004",
+      "probe.sdc": "7df5f4ad78bde58dfbca97eb38f7cf2153cda481ef61cba590da9953d0c5ee6c",
+      "run.tcl": "92711aace1e4f6f7cd577eb764403382a3a95aa495b02c379c0e27912c15c1b4"
+    },
+    "geometry": {
+      "n": 65536,
+      "p": 8,
+      "rows": 8192,
+      "aw": 16,
+      "pointwise_accept": 8304,
+      "physical_first": 16609,
+      "sink_accept": 16610,
+      "last_sink": 24801,
+      "first_digit": 16652,
+      "boundary_output": 24846,
+      "carry_done": 24847,
+      "earliest_next_frame": 16653,
+      "warm_interval": 16653,
+      "feedback_delay": 0,
+      "feedback_fifo_rows": 0,
+      "next_correction_accept": 24847,
+      "correction_cache_latency": 36,
+      "next_cache_capture": 24883,
+      "cache_margin": 73,
+      "full_N_numeric_NTT_performed": false,
+      "input_delay": 0,
+      "initial_term_seeds": 4,
+      "crt_accept": 16610,
+      "crt_output": 16625,
+      "double_register": 16626,
+      "carry_accept": 16627,
+      "last_digit": 24843
+    },
+    "cycle_contract": {
+      "cold_first_field_accept": 102,
+      "final_carry_done": 24949,
+      "warm_done": 24950,
+      "canonical_begin": 24951,
+      "canonical_done": 614775,
+      "first_image_commit": 614779,
+      "host_done": 680315,
+      "canonical_busy_cycles": 589824,
+      "image_copy_cycles": 65539,
+      "canonical_done_to_host_done": 65540,
+      "scope": "Exact source/event ledger, not native or clock evidence"
+    }
+  },
+  "audits": [
+    {
+      "evidence": "queue/standing-fit-state/audit-terminal/s4-p8-canonical-pipe-whole-10000-v1-audit4",
+      "receipt_sha256": "deca149a6a37bab56b99701e8e78e960b76cfebf93be38c0d9e74ad145f415f3",
+      "archive_sha256": "a3e45ce3773cfc2274d5ad4c908513e1b64f4dce05c72cc0c407994881242ac5",
+      "original_tree_sha256": "d806de239793593c2848a4d698f6f26b016ee8ef6f3183b8920e8c69973872be",
+      "qdb_inventory_sha256": "1f9020e55c3cd7546b0a8af49a5fbb9984949a3f3b88a26757345fbbccef89a4",
+      "period_ns": 12.812,
+      "frequency_mhz": 78.05182641273807,
+      "timing_closes": false,
+      "corners": {
+        "Fast 900mV 0C Model": {
+          "setup": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 5.807,
+            "status": "measured",
+            "tns_ns": 0
+          },
+          "hold": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 0.014,
+            "status": "measured",
+            "tns_ns": 0
+          },
+          "mpw": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 6.019,
+            "status": "measured",
+            "tns_ns": 0
+          },
+          "recovery": {
+            "failing_endpoints": null,
+            "slack_ns": null,
+            "status": "excluded_no_paths",
+            "tns_ns": null
+          },
+          "removal": {
+            "failing_endpoints": null,
+            "slack_ns": null,
+            "status": "excluded_no_paths",
+            "tns_ns": null
+          },
+          "unconstrained": {
+            "Illegal Clocks": [
+              0,
+              0
+            ],
+            "Paths from Unconstrained Input Ports (Pairs-Only)": [
+              441222,
+              441222
+            ],
+            "Paths to Unconstrained Output Ports (Pairs-Only)": [
+              3356,
+              3356
+            ],
+            "Unconstrained Clocks": [
+              0,
+              0
+            ],
+            "Unconstrained Input Ports": [
+              193,
+              193
+            ],
+            "Unconstrained Output Ports": [
+              797,
+              797
+            ]
+          }
+        },
+        "Fast 900mV 100C Model": {
+          "setup": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 4.64,
+            "status": "measured",
+            "tns_ns": 0
+          },
+          "hold": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 0.017,
+            "status": "measured",
+            "tns_ns": 0
+          },
+          "mpw": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 6.021,
+            "status": "measured",
+            "tns_ns": 0
+          },
+          "recovery": {
+            "failing_endpoints": null,
+            "slack_ns": null,
+            "status": "excluded_no_paths",
+            "tns_ns": null
+          },
+          "removal": {
+            "failing_endpoints": null,
+            "slack_ns": null,
+            "status": "excluded_no_paths",
+            "tns_ns": null
+          },
+          "unconstrained": {
+            "Illegal Clocks": [
+              0,
+              0
+            ],
+            "Paths from Unconstrained Input Ports (Pairs-Only)": [
+              441222,
+              441222
+            ],
+            "Paths to Unconstrained Output Ports (Pairs-Only)": [
+              3356,
+              3356
+            ],
+            "Unconstrained Clocks": [
+              0,
+              0
+            ],
+            "Unconstrained Input Ports": [
+              193,
+              193
+            ],
+            "Unconstrained Output Ports": [
+              797,
+              797
+            ]
+          }
+        },
+        "Slow 900mV 0C Model": {
+          "setup": {
+            "closes": false,
+            "failing_endpoints": 1,
+            "slack_ns": -0.001,
+            "status": "measured",
+            "tns_ns": -0.001
+          },
+          "hold": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 0.022,
+            "status": "measured",
+            "tns_ns": 0
+          },
+          "mpw": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 5.756,
+            "status": "measured",
+            "tns_ns": 0
+          },
+          "recovery": {
+            "failing_endpoints": null,
+            "slack_ns": null,
+            "status": "excluded_no_paths",
+            "tns_ns": null
+          },
+          "removal": {
+            "failing_endpoints": null,
+            "slack_ns": null,
+            "status": "excluded_no_paths",
+            "tns_ns": null
+          },
+          "unconstrained": {
+            "Illegal Clocks": [
+              0,
+              0
+            ],
+            "Paths from Unconstrained Input Ports (Pairs-Only)": [
+              441222,
+              441222
+            ],
+            "Paths to Unconstrained Output Ports (Pairs-Only)": [
+              3356,
+              3356
+            ],
+            "Unconstrained Clocks": [
+              0,
+              0
+            ],
+            "Unconstrained Input Ports": [
+              193,
+              193
+            ],
+            "Unconstrained Output Ports": [
+              797,
+              797
+            ]
+          }
+        },
+        "Slow 900mV 100C Model": {
+          "setup": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 0.173,
+            "status": "measured",
+            "tns_ns": 0
+          },
+          "hold": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 0.061,
+            "status": "measured",
+            "tns_ns": 0
+          },
+          "mpw": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 5.844,
+            "status": "measured",
+            "tns_ns": 0
+          },
+          "recovery": {
+            "failing_endpoints": null,
+            "slack_ns": null,
+            "status": "excluded_no_paths",
+            "tns_ns": null
+          },
+          "removal": {
+            "failing_endpoints": null,
+            "slack_ns": null,
+            "status": "excluded_no_paths",
+            "tns_ns": null
+          },
+          "unconstrained": {
+            "Illegal Clocks": [
+              0,
+              0
+            ],
+            "Paths from Unconstrained Input Ports (Pairs-Only)": [
+              441222,
+              441222
+            ],
+            "Paths to Unconstrained Output Ports (Pairs-Only)": [
+              3356,
+              3356
+            ],
+            "Unconstrained Clocks": [
+              0,
+              0
+            ],
+            "Unconstrained Input Ports": [
+              193,
+              193
+            ],
+            "Unconstrained Output Ports": [
+              797,
+              797
+            ]
+          }
+        }
+      },
+      "inventory_members_verified": 253
+    },
+    {
+      "evidence": "queue/standing-fit-state/audit-terminal/s4-p8-canonical-pipe-whole-10000-v1-audit5",
+      "receipt_sha256": "00ec056e1023007b15fcae2e106c4d95902f40b66928f4a1e414adbdab97ad06",
+      "archive_sha256": "a6f108b319698e6f1b1fe90da34290488fa54f6b7a7986c3abef51710089a810",
+      "original_tree_sha256": "d806de239793593c2848a4d698f6f26b016ee8ef6f3183b8920e8c69973872be",
+      "qdb_inventory_sha256": "1f9020e55c3cd7546b0a8af49a5fbb9984949a3f3b88a26757345fbbccef89a4",
+      "period_ns": 12.814,
+      "frequency_mhz": 78.03964413922273,
+      "timing_closes": true,
+      "corners": {
+        "Fast 900mV 0C Model": {
+          "setup": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 5.809,
+            "status": "measured",
+            "tns_ns": 0
+          },
+          "hold": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 0.014,
+            "status": "measured",
+            "tns_ns": 0
+          },
+          "mpw": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 6.02,
+            "status": "measured",
+            "tns_ns": 0
+          },
+          "recovery": {
+            "failing_endpoints": null,
+            "slack_ns": null,
+            "status": "excluded_no_paths",
+            "tns_ns": null
+          },
+          "removal": {
+            "failing_endpoints": null,
+            "slack_ns": null,
+            "status": "excluded_no_paths",
+            "tns_ns": null
+          },
+          "unconstrained": {
+            "Illegal Clocks": [
+              0,
+              0
+            ],
+            "Paths from Unconstrained Input Ports (Pairs-Only)": [
+              441222,
+              441222
+            ],
+            "Paths to Unconstrained Output Ports (Pairs-Only)": [
+              3356,
+              3356
+            ],
+            "Unconstrained Clocks": [
+              0,
+              0
+            ],
+            "Unconstrained Input Ports": [
+              193,
+              193
+            ],
+            "Unconstrained Output Ports": [
+              797,
+              797
+            ]
+          }
+        },
+        "Fast 900mV 100C Model": {
+          "setup": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 4.642,
+            "status": "measured",
+            "tns_ns": 0
+          },
+          "hold": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 0.017,
+            "status": "measured",
+            "tns_ns": 0
+          },
+          "mpw": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 6.022,
+            "status": "measured",
+            "tns_ns": 0
+          },
+          "recovery": {
+            "failing_endpoints": null,
+            "slack_ns": null,
+            "status": "excluded_no_paths",
+            "tns_ns": null
+          },
+          "removal": {
+            "failing_endpoints": null,
+            "slack_ns": null,
+            "status": "excluded_no_paths",
+            "tns_ns": null
+          },
+          "unconstrained": {
+            "Illegal Clocks": [
+              0,
+              0
+            ],
+            "Paths from Unconstrained Input Ports (Pairs-Only)": [
+              441222,
+              441222
+            ],
+            "Paths to Unconstrained Output Ports (Pairs-Only)": [
+              3356,
+              3356
+            ],
+            "Unconstrained Clocks": [
+              0,
+              0
+            ],
+            "Unconstrained Input Ports": [
+              193,
+              193
+            ],
+            "Unconstrained Output Ports": [
+              797,
+              797
+            ]
+          }
+        },
+        "Slow 900mV 0C Model": {
+          "setup": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 0.001,
+            "status": "measured",
+            "tns_ns": 0
+          },
+          "hold": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 0.022,
+            "status": "measured",
+            "tns_ns": 0
+          },
+          "mpw": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 5.757,
+            "status": "measured",
+            "tns_ns": 0
+          },
+          "recovery": {
+            "failing_endpoints": null,
+            "slack_ns": null,
+            "status": "excluded_no_paths",
+            "tns_ns": null
+          },
+          "removal": {
+            "failing_endpoints": null,
+            "slack_ns": null,
+            "status": "excluded_no_paths",
+            "tns_ns": null
+          },
+          "unconstrained": {
+            "Illegal Clocks": [
+              0,
+              0
+            ],
+            "Paths from Unconstrained Input Ports (Pairs-Only)": [
+              441222,
+              441222
+            ],
+            "Paths to Unconstrained Output Ports (Pairs-Only)": [
+              3356,
+              3356
+            ],
+            "Unconstrained Clocks": [
+              0,
+              0
+            ],
+            "Unconstrained Input Ports": [
+              193,
+              193
+            ],
+            "Unconstrained Output Ports": [
+              797,
+              797
+            ]
+          }
+        },
+        "Slow 900mV 100C Model": {
+          "setup": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 0.175,
+            "status": "measured",
+            "tns_ns": 0
+          },
+          "hold": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 0.061,
+            "status": "measured",
+            "tns_ns": 0
+          },
+          "mpw": {
+            "closes": true,
+            "failing_endpoints": 0,
+            "slack_ns": 5.845,
+            "status": "measured",
+            "tns_ns": 0
+          },
+          "recovery": {
+            "failing_endpoints": null,
+            "slack_ns": null,
+            "status": "excluded_no_paths",
+            "tns_ns": null
+          },
+          "removal": {
+            "failing_endpoints": null,
+            "slack_ns": null,
+            "status": "excluded_no_paths",
+            "tns_ns": null
+          },
+          "unconstrained": {
+            "Illegal Clocks": [
+              0,
+              0
+            ],
+            "Paths from Unconstrained Input Ports (Pairs-Only)": [
+              441222,
+              441222
+            ],
+            "Paths to Unconstrained Output Ports (Pairs-Only)": [
+              3356,
+              3356
+            ],
+            "Unconstrained Clocks": [
+              0,
+              0
+            ],
+            "Unconstrained Input Ports": [
+              193,
+              193
+            ],
+            "Unconstrained Output Ports": [
+              797,
+              797
+            ]
+          }
+        }
+      },
+      "inventory_members_verified": 253
+    }
+  ],
+  "source_binding": {
+    "physical_rtl_members": 49,
+    "full_size_paired_rtl_members": 60,
+    "full_size_paired_map_sha256": "5a8d98ee722502acdbfc712531e0b05e06f18a239f838f0f7efa210c081fd619",
+    "small_aw5_paired_map_sha256": "969ba2a9b8c53649c1842ae1bf3bf4cee4acacbd6cfe6927dd97e88cd7e5d2f0",
+    "physical_subset_in_full9_100_1000": "All49 RTL filenames and hashes match byte for byte; same P8/C1/canonical1/epoch65534.",
+    "short_gate_basis": "The actual full9 test begins with a cold loaded-state one-operation subcase and complete T5b/reference readback. There is no invented separate canonical1 continuous-short ticket.",
+    "small_to_full_binding": "Small AW5 uses the same exact canonical compiler and own canonical1 result. Scaled geometry is separately checked, not claimed byte-identical to AW16. The changed canonical cell has the same763b069a bytes in full/small and own AW5/AW8 normal/fault evidence."
+  },
+  "qualification": {
+    "small_complete_prps": 8,
+    "small_prp_operations": 5000,
+    "small_prp_cycles": 638440,
+    "full9_operations": 9,
+    "full9_candidate_cycles": 1477102,
+    "full9_signed96_reads": 131072,
+    "continuous100_operations": 100,
+    "continuous100_cycles": 2328962,
+    "continuous1000_operations": 1000,
+    "continuous1000_doubles": 500,
+    "continuous1000_cycles": 17316662,
+    "continuous1000_signed96_words": 65536,
+    "reset_load_start_readback_each": 1,
+    "continuous1000_final_array_sha256": "1f8d6dc3b8ce600339f4454e4b8458abad2ab107b943fae131667bd4a4150cdb",
+    "host_fault_scope": "Own underflow cancellation, cold10/warm237 occupied resets, sticky quarantine/recovery128words including32nonzero, exact typed comparator rejection after a correct computation.",
+    "canonical_fault_scope": "AW5 two range faults,11 occupied reset ages,one pending-read reset,15 recovery images/480signed96 reads and separate wrong-word rejection; AW5/AW8 normals each42 cases including4special images.",
+    "coverage_limit": "Finite sampled fault/reset coverage; not exhaustive arbitrary-protocol proof or complete reset-release sign-off.",
+    "preserved_failure": "Canonical1000 v1 infrastructure failure is preserved; successful v2 uses unchanged candidate RTL, not an inherited result or duplicate benchmark."
+  },
+  "resources": {
+    "device": "10AX115N4F40E3SG",
+    "quartus": "26.1.0 Build110",
+    "alm_needed": 199512,
+    "alm_placed": 252991,
+    "lab_occupied": 32989,
+    "lab_capacity": 42720,
+    "registers": 433154,
+    "m20k": 1844,
+    "m20k_capacity": 2713,
+    "dsp_needed": 686,
+    "dsp_placed_fixed_point": 696,
+    "dsp_recoverable_dense_merge_estimate": 10,
+    "dsp_capacity": 1518,
+    "scope": "Final whole-core fit, virtual I/O. Needed ALM/DSP counts include packing/merging estimates and are distinct from placement."
+  },
+  "constraints_and_limits": {
+    "original_sdc": "Only create_clock(kernel_clk,clk,10ns) and derive_clock_uncertainty.",
+    "effective_sdc": "Exactly one kernel_clk; explicit four uncertainty edge pairs; no false paths, multicycles or min/max exceptions; period-specific half-period waveform.",
+    "unconstrained_input_ports": 193,
+    "unconstrained_output_ports": 797,
+    "unconstrained_clock_count": 0,
+    "illegal_clock_count": 0,
+    "recovery_removal": "No paths in all four corners; excluded, never PASS.",
+    "design_assistant": "Retained elaborated report has Low LNT-30020:19489 violations,5000 displayed; other three listed Low rules zero. No High/Critical result is shown; this is not exhaustive native DRC coverage.",
+    "latch_selector": "Unsupported native timing latch selector retained by audit; no latch-specific native PASS is claimed. Actual native lint has no LATCH/fatal/unknown class.",
+    "qdb": "Both audits bind the identical recorded original tree and QDB inventory. Raw QDB is not included in collected bundles; unchanged original/private-copy checks are source-bound trusted collector evidence, not a new independent netlist re-run.",
+    "selected_clock": "12.814ns =78.03964413922273MHz is the fastest passing tested saved-layout point within the12.812/12.814 bracket. Printed setup reserve1ps; this is not robust hardware margin, board operation, a global maximum, or a100MHz claim."
+  },
+  "projection": {
+    "sample": {
+      "N": 65536,
+      "base": 604832956,
+      "operations_including_leading_bit": 1911814
+    },
+    "operation_count_check": "65536*log2(604832956)=1911813.66952182079...; floor+1=1911814. No full-size exponent/residue was computed locally.",
+    "warm_interval_cycles": 16653,
+    "cold_ordinary_host_done_cycles": 680315,
+    "cached_ordinary_host_done_cycles": 680216,
+    "formula": "680315+(1911814-1)*16653",
+    "cold_total_cycles": 31838102204,
+    "cached_total_cycles": 31838102105,
+    "selected_period_ns": "12.814",
+    "cold_ordinary_seconds": "407.973441642056",
+    "cached_ordinary_seconds": "407.973440373470",
+    "special_final_image_extra_cycles": 65536,
+    "special_extra_seconds": "0.000839778304",
+    "once_only_canonical_pipeline_extra_cycles_vs_unpipelined": 196608,
+    "once_only_extra_seconds": "0.002519334912",
+    "boundary": "Start to internal finalized host publication; includes cold root99 and one final canonical9N/internal image-copy N+3. Excludes initial external configuration/load, host readback, gaps/transport/board I/O.",
+    "F3_reference_backend_seconds": "453.478822935628",
+    "F3_boundary": "F3 adopted source-specific backend26023+(K-1)*21906 at10.828ns. Command latency453.520225179612 is a separate quantity. These are source-specific internal completion boundaries, not measured identical external-I/O runtimes.",
+    "measured_full_sample_PRP_runtime": false
+  },
+  "remaining_gates": [
+    "Advisor verification and main's explicit adoption record."
+  ],
+  "adoption_limit": "This receipt supplies independent evidence for an advisor request. It does not adopt a production parent, modify a record, or authorize a future candidate to inherit qualification."
+}

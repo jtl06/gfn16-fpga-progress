@@ -1,0 +1,18 @@
+{
+  "status": "synthesis_complete_estimates_only",
+  "synthesis_success": true,
+  "metrics": {
+    "synthesis_alms_estimate": 345565,
+    "synthesis_registers": 648609,
+    "synthesis_dsp_blocks_post_merging_estimate": 1300
+  },
+  "summary_sha256": "8e6d228970d9d84ab05dfe85fde47f1d4f00b6e0d2ebf319dd7d20f79e541b0a",
+  "physical_fit_success": null,
+  "alms_needed": null,
+  "alms_placed": null,
+  "M20K_placed": null,
+  "fmax_mhz": null,
+  "setup_slack_ns": null,
+  "hold_slack_ns": null,
+  "limitation": "Synthesis estimates only, no placement/routing/timing/throughput or board qualification."
+}

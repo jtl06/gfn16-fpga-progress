@@ -1,0 +1,120 @@
+{
+  "archive": {
+    "path": "/home/azureuser/gfn16-worker/fit-queue-collection-s4-p8-canonical-pipe-whole-10000-v1/native-reports.tar.gz",
+    "sha256": "3c3462ed1df722454becaf2237a3f854b74cffb653a0878c969ab56ab09b4a5c",
+    "size": 4060824
+  },
+  "collected_native_report_files": 14,
+  "collection_completed": true,
+  "collector_sha256": "51aec17246c64a289917517f690c77f0497fb2dd004e214c1a5889fe15f70dd3",
+  "compiled_db_bytes": 1660236563,
+  "compiled_db_files": 284,
+  "compiled_db_provenance": "Native runner final inventory retained; raw QDB remains on worker, not transferred or rehashed by collector.",
+  "findings": [],
+  "fit_allowed": false,
+  "host": "gfn16-azure-f16",
+  "inventory_sha256": "28b99f2b21921250fec895df4eb47fac12a98925e9fa448b1a220e93be155c1c",
+  "invocation_id": "616644b9fedd49d9935829f086576a0e",
+  "limitation": "Terminal collection and source provenance only. Native failures stay failures; component clocks never become whole-core clocks. All-corner STA/critical paths require separate report interpretation and independent promotion review.",
+  "native_context_resources": {
+    "affinity": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "cpu_max": "400000 100000",
+    "launcher_sha256": "a37e058b5e380e4cf1c00e0db2adecfa835927fe991d1eeeae4bfe0f67f3b23d",
+    "memory_max": "25769803776",
+    "physical_cores": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ]
+    ],
+    "quartus_workers": 4,
+    "started_at": "2026-10-01T20:08:17.059063+00:00",
+    "swap_max": "0",
+    "timeout_seconds": 21600
+  },
+  "native_job_succeeded": true,
+  "native_journal_proof": {
+    "invocation_id": "616644b9fedd49d9935829f086576a0e",
+    "manager_elapsed_seconds": 4076.724917,
+    "manager_end_realtime_us": "1790889373205463",
+    "manager_main_exit_messages": [],
+    "manager_start_realtime_us": "1790885296480546",
+    "manager_terminal_message": "gfn16-fit-s4-p8-canonical-pipe-whole-10000-v1.service: Deactivated successfully.",
+    "provenance": "Trusted manager _PID=1 UNIT/INVOCATION_ID fields. GC properties are not reconstructed from inactivity.",
+    "resource_journal": [
+      {
+        "CODE_FILE": "src/core/unit.c",
+        "CODE_FUNC": "unit_log_resources",
+        "CODE_LINE": "2577",
+        "CPU_USAGE_NSEC": "12978542905000",
+        "INVOCATION_ID": "616644b9fedd49d9935829f086576a0e",
+        "MEMORY_PEAK": "17744977920",
+        "MEMORY_SWAP_PEAK": "0",
+        "MESSAGE": "gfn16-fit-s4-p8-canonical-pipe-whole-10000-v1.service: Consumed 3h 36min 18.542s CPU time, 16.5G memory peak, 0B memory swap peak.",
+        "MESSAGE_ID": "ae8f7b866b0347b9af31fe1c80b127c0",
+        "PRIORITY": "5",
+        "SYSLOG_FACILITY": "3",
+        "SYSLOG_IDENTIFIER": "systemd",
+        "TID": "1",
+        "UNIT": "gfn16-fit-s4-p8-canonical-pipe-whole-10000-v1.service",
+        "_BOOT_ID": "ab9fc298b58f4f4eabbe9e650cef43f8",
+        "_CAP_EFFECTIVE": "1ffffffffff",
+        "_CMDLINE": "/sbin/init",
+        "_COMM": "systemd",
+        "_EXE": "/usr/lib/systemd/systemd",
+        "_GID": "0",
+        "_HOSTNAME": "gfn16-azure-f16",
+        "_MACHINE_ID": "7f96f971766340ccba0d3b4e8b514b0f",
+        "_PID": "1",
+        "_RUNTIME_SCOPE": "system",
+        "_SELINUX_CONTEXT": "unconfined\n",
+        "_SOURCE_REALTIME_TIMESTAMP": "1790889373205674",
+        "_SYSTEMD_CGROUP": "/init.scope",
+        "_SYSTEMD_SLICE": "-.slice",
+        "_SYSTEMD_UNIT": "init.scope",
+        "_TRANSPORT": "journal",
+        "_UID": "0",
+        "__CURSOR": "s=38f34d322ecc437abe0f5169d89fd1da;i=15a5a;b=ab9fc298b58f4f4eabbe9e650cef43f8;m=2f4aedad2;t=65ccdecec056b;x=e6f4c0b2a16fee5d",
+        "__MONOTONIC_TIMESTAMP": "12695034578",
+        "__REALTIME_TIMESTAMP": "1790889373205867",
+        "__SEQNUM": "88666",
+        "__SEQNUM_ID": "38f34d322ecc437abe0f5169d89fd1da"
+      }
+    ],
+    "terminal_kind": "deactivated_successfully",
+    "terminal_proven": true,
+    "unit": "gfn16-fit-s4-p8-canonical-pipe-whole-10000-v1.service"
+  },
+  "native_result": {
+    "context_sha256": "41e3ac8f36b10737fc239da068d65956e9b5039ef439d14dec931ad4c679284e",
+    "finished_at": "2026-10-01T21:16:11.672135+00:00",
+    "quartus_returncode": 0,
+    "summarize_returncode": 0
+  },
+  "observed_at_utc": "2026-10-01T21:16:16.362966+00:00",
+  "project": "/home/azureuser/gfn16-worker/fit-s4-p8-canonical-pipe-whole-10000-v1",
+  "promotion_allowed": false,
+  "schema": "plain-fit-terminal-collection-v1",
+  "scope": "whole_core",
+  "source_request_sha256": "832dc40065177b3fe95bf5811598e4eb81959c01a7999f5f1676239e4ffec5df",
+  "terminal_proven": true,
+  "unit": "gfn16-fit-s4-p8-canonical-pipe-whole-10000-v1.service",
+  "whole_core_clock_claim": false
+}

@@ -1,0 +1,188 @@
+{
+  "archive": {
+    "path": "/home/azureuser/gfn16-worker/fit-queue-collection-s4-p16-c2-storage2-whole-place-v1/native-reports.tar.gz",
+    "sha256": "4db97c252105eeb587a6f6a9918a38232f0ef8f1620d8c2074fb0d58b4d9875f",
+    "size": 4857991
+  },
+  "collected_native_report_files": 10,
+  "collection_completed": true,
+  "collector_sha256": "51aec17246c64a289917517f690c77f0497fb2dd004e214c1a5889fe15f70dd3",
+  "compiled_db_bytes": 1219919170,
+  "compiled_db_files": 201,
+  "compiled_db_provenance": "Native runner final inventory retained; raw QDB remains on worker, not transferred or rehashed by collector.",
+  "findings": [],
+  "fit_allowed": false,
+  "host": "gfn16-azure-f16",
+  "inventory_sha256": "b43326bc90839ccb43260240852db6aae69b4f08fd95a29b41e29868c8e3f1fb",
+  "invocation_id": "191c4d5583ba4a7f8b87a4e9819c405b",
+  "limitation": "Terminal collection and source provenance only. Native failures stay failures; component clocks never become whole-core clocks. All-corner STA/critical paths require separate report interpretation and independent promotion review.",
+  "native_context_resources": {
+    "affinity": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "cpu_max": "400000 100000",
+    "launcher_sha256": "b4d699a16a6ca22c6a85c3c0f47af1ce45360a0eb4226728b0303a89ec039a76",
+    "memory_max": "34359738368",
+    "physical_cores": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ]
+    ],
+    "quartus_workers": 4,
+    "started_at": "2026-10-02T06:08:18.110824+00:00",
+    "swap_max": "0",
+    "timeout_seconds": 7200
+  },
+  "native_job_succeeded": true,
+  "native_journal_proof": {
+    "invocation_id": "191c4d5583ba4a7f8b87a4e9819c405b",
+    "manager_elapsed_seconds": 4709.864206,
+    "manager_end_realtime_us": "1790926007415850",
+    "manager_main_exit_messages": [],
+    "manager_start_realtime_us": "1790921297551644",
+    "manager_terminal_message": "gfn16-fit-s4-p16-c2-storage2-whole-place-v1.service: Deactivated successfully.",
+    "provenance": "Trusted manager _PID=1 UNIT/INVOCATION_ID fields. GC properties are not reconstructed from inactivity.",
+    "resource_journal": [
+      {
+        "CODE_FILE": "src/core/unit.c",
+        "CODE_FUNC": "unit_log_resources",
+        "CODE_LINE": "2577",
+        "CPU_USAGE_NSEC": "15002987193000",
+        "INVOCATION_ID": "191c4d5583ba4a7f8b87a4e9819c405b",
+        "MEMORY_PEAK": "21033811968",
+        "MEMORY_SWAP_PEAK": "0",
+        "MESSAGE": "gfn16-fit-s4-p16-c2-storage2-whole-place-v1.service: Consumed 4h 10min 2.987s CPU time, 19.5G memory peak, 0B memory swap peak.",
+        "MESSAGE_ID": "ae8f7b866b0347b9af31fe1c80b127c0",
+        "PRIORITY": "5",
+        "SYSLOG_FACILITY": "3",
+        "SYSLOG_IDENTIFIER": "systemd",
+        "TID": "1",
+        "UNIT": "gfn16-fit-s4-p16-c2-storage2-whole-place-v1.service",
+        "_BOOT_ID": "ab9fc298b58f4f4eabbe9e650cef43f8",
+        "_CAP_EFFECTIVE": "1ffffffffff",
+        "_CMDLINE": "/sbin/init",
+        "_COMM": "systemd",
+        "_EXE": "/usr/lib/systemd/systemd",
+        "_GID": "0",
+        "_HOSTNAME": "gfn16-azure-f16",
+        "_MACHINE_ID": "7f96f971766340ccba0d3b4e8b514b0f",
+        "_PID": "1",
+        "_RUNTIME_SCOPE": "system",
+        "_SELINUX_CONTEXT": "unconfined\n",
+        "_SOURCE_REALTIME_TIMESTAMP": "1790926007416065",
+        "_SYSTEMD_CGROUP": "/init.scope",
+        "_SYSTEMD_SLICE": "-.slice",
+        "_SYSTEMD_UNIT": "init.scope",
+        "_TRANSPORT": "journal",
+        "_UID": "0",
+        "__CURSOR": "s=38f34d322ecc437abe0f5169d89fd1da;i=26d3e;b=ab9fc298b58f4f4eabbe9e650cef43f8;m=b7c408a93;t=65cd6747db52c;x=827e91feebcdbfdd",
+        "__MONOTONIC_TIMESTAMP": "49329244819",
+        "__REALTIME_TIMESTAMP": "1790926007416108",
+        "__SEQNUM": "159038",
+        "__SEQNUM_ID": "38f34d322ecc437abe0f5169d89fd1da"
+      }
+    ],
+    "terminal_kind": "deactivated_successfully",
+    "terminal_proven": true,
+    "unit": "gfn16-fit-s4-p16-c2-storage2-whole-place-v1.service"
+  },
+  "native_result": {
+    "context_sha256": "868fe8e847f1b5393319e5f81f7d76e6c14710bbe231fd7ad239df8bfe3be2ba",
+    "finished_at": "2026-10-02T07:26:46.066030+00:00",
+    "mode": "place_only",
+    "placement_resources": {
+      "durations": [
+        {
+          "kind": "flow_module_elapsed",
+          "module": "Synthesis",
+          "seconds": 403,
+          "source": "probe.flow.rpt"
+        },
+        {
+          "kind": "flow_module_elapsed",
+          "module": "Total",
+          "seconds": 4686,
+          "source": "probe.flow.rpt"
+        }
+      ],
+      "limitations": [
+        "Synthesis estimate, raw placed ALMs and packing-adjusted needs are distinct.",
+        "LAB occupancy is not wire utilization; a place report is not final routed timing.",
+        "Missing wire estimates are unknown, not zero; peaks may be transient estimates.",
+        "Native operations-ending durations are tool-reported phase times, not inferred wall-clock watchdog deadlines.",
+        "Log and report duplicate wire observations are retained; maxima are not final wire utilization.",
+        "Source identities, matched settings, timing and independent archive audit are separate."
+      ],
+      "metrics": {
+        "alms_needed_packing_adjusted": 315946,
+        "alms_placed_raw": 382205,
+        "alms_recoverable": 70588,
+        "alms_unavailable": 4329,
+        "dsp_blocks_needed": 1300,
+        "dsp_blocks_placed_raw": 1318,
+        "dsp_fixed_raw": 1318,
+        "dsp_float_raw": 0,
+        "dsp_prime_raw": 0,
+        "lab_occupancy_percent": 98.04775280898876,
+        "labs_available": 42720,
+        "labs_used": 41886,
+        "m20k_used": 2096,
+        "peak_long_demand_percent": null,
+        "peak_short_demand_percent": null,
+        "place_seconds": null,
+        "placement_available_labs_on_failure": null,
+        "placement_requested_labs_on_failure": null,
+        "registers": 595954,
+        "route_seconds": null,
+        "route_through_aluts": 213548,
+        "route_to_place_time_ratio": null,
+        "synthesis_alms_estimate": 345322
+      },
+      "place_report_observed": true,
+      "placement_error_observed": false,
+      "placement_success": true,
+      "promotion_allowed": false,
+      "route_error_observed": false,
+      "routed": false,
+      "schema_version": 1,
+      "source_report_sha256": {
+        "probe.fit.place.rpt": "09d7b806a10519631fde2ae10ef5138fb7a5b19a59212c829c10126b21bdffe5",
+        "probe.fit.summary": "731bc03877c878c2f51869c572b8936c71d313880e312e51f2c9a53d02c9a99e",
+        "probe.flow.rpt": "bcb723618046021fdf18eb392640abbc1601c77aa7e208245f6d66026362e83d",
+        "probe.syn.summary": "311e45dc97f2d680bb578c3ae18e09f85289103817c640b4d2672387cff479a1"
+      },
+      "status": "placement_resources_only",
+      "synthesis_success_observed": true,
+      "terminal_fit_success_observed": true,
+      "timing_closure": false,
+      "wire_observations": []
+    },
+    "quartus_returncode": 0,
+    "summarize_returncode": 0
+  },
+  "observed_at_utc": "2026-10-02T07:26:53.751585+00:00",
+  "project": "/home/azureuser/gfn16-worker/fit-s4-p16-c2-storage2-whole-place-v1",
+  "promotion_allowed": false,
+  "schema": "plain-fit-terminal-collection-v1",
+  "scope": "whole_core",
+  "source_request_sha256": "8fe52a1dc72dd4073354e932b5fb04d217fb205e33a21acce71a2a504882e773",
+  "terminal_proven": true,
+  "unit": "gfn16-fit-s4-p16-c2-storage2-whole-place-v1.service",
+  "whole_core_clock_claim": false
+}

@@ -1,0 +1,9 @@
+{
+  "status": "prepared_not_executed",
+  "ticket_sha256": "49193517ec1ebfcdb057e4eb2e3599aae4202135be6305a7798fb13b195bf9cf",
+  "archive_sha256": "37b279ef683668851ac3ad7eaa6a18728af2ea6fcd1215e1af659dac313e55e5",
+  "archive_bytes": 5143894,
+  "native_root": "/home/azureuser/gfn16-worker/native/jobs/s4-p16-diet-continuous1000-wide07-v1",
+  "build_key": "3011998e52201c9be50edf443b127e0454d51c2b0e795ab2e02d8221beb04a21",
+  "files": 233
+}

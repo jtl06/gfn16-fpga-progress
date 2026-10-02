@@ -1,0 +1,33 @@
+{
+  "schema": "gfn16-production-adoption-v1",
+  "recorded_date_utc": "2026-10-01",
+  "candidate": "A-next-point-v1",
+  "status": "adopted_internal_compute_only_production_parent",
+  "replaces_record": "T5b",
+  "candidate_core_sha256": "f37123255ed08225f9c26a5d556fafb94c4e3eda9547b28713be956cda4cbe7b",
+  "candidate_block_sha256": "076f6dcf120b448f38aff04fcb438e0f43158262ef08fcaa7c07ce8de8c83091",
+  "independent_consolidation": {
+    "path": "results/throughput-20260929/anext-point-qualification-consolidation-independent-v1.json",
+    "sha256": "b0132933df1e645c4ac25b674364d92ee51a8126728f02453809336c08f03126"
+  },
+  "advisor_acceptance": {
+    "path": "docs/briefs/2026-10-01-advisor-verification-A-next-point.md",
+    "sha256": "3cdc3bc2e93140f23c0a301cdcea03b3b1f3abb091f1172cfba1488f14e797f9"
+  },
+  "sample": {"N": 65536, "base": 604832956, "operations": 1911814},
+  "compute_projection": {
+    "cold_cycles": 25990,
+    "warm_cycles": 21873,
+    "total_cycles": 41817111739,
+    "selected_audited_period_ns": 11.196,
+    "seconds_rounded_6dp": 468.184383,
+    "measured_full_sample_PRP_runtime": false
+  },
+  "exclusions": [
+    "Selected internal timing point only; 3 ps printed setup reserve is not hardware margin or highest-clock proof.",
+    "Virtual I/O, top reset release, board operation and exhaustive fault/cancel coverage remain excluded.",
+    "Initial host configuration/load and final readback are excluded from the projection.",
+    "F3, RAM27, hostcut and streaming do not inherit this candidate's numerical qualification or clock."
+  ],
+  "implementation": "Records independent receipt plus explicit advisor acceptance; no third replay, native run, source rebase, board programming or publication. Frozen queued designs stay unchanged. Track S retains priority; this is the production fallback until superseded by a qualified adoption."
+}

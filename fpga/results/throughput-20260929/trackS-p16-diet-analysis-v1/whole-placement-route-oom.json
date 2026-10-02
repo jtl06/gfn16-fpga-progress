@@ -1,0 +1,14 @@
+{
+ "status":"PLACEMENT_SUCCESS_THEN_ROUTE_OOM_NOT_PROMOTABLE",
+ "report":"queue/standing-fit-state/terminal/s4-p16-diet-whole-full-four-hour-v1-retry1/evidence/project/output_files/probe.fit.place.rpt",
+ "report_sha256":"a1e2b2af8e7d041a858489a62aacd3c637dcdd463b0f078d555e69bfccd764f1",
+ "archive_sha256":"07df0d05ec435e8244a49c3b3e4d9a09621ea9c384dadcb7a60340ffe40e4695",
+ "placed_utc":"2026-10-01T23:19:59Z",
+ "ALM_needed":314651,"ALM_placed":378176,"registers":568612,
+ "LAB_used":42065,"LAB_device":42720,"MLAB":816,"M20K":1911,
+ "DSP_needed":1300,"DSP_physical":1318,
+ "roots_per_field":{"CT":131,"GS":97,"term":11},
+ "planning_headroom":{"needed_ALM":25349,"M20K":389,"needed_DSP":100,"physical_DSP":82},
+ "context_memory_only_estimate":[2039,2167],
+ "caveat":"Actual58RTL baseline placement, not routed/successor/two-context evidence.98%LAB occupancy. No timing result. Frozen2276proxy ledger unchanged."
+}

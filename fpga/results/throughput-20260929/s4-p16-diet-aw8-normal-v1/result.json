@@ -1,0 +1,15 @@
+{
+  "status": "PASS_expected_contracts",
+  "job": "s4-p16-diet-aw8-dense-normal-q1-v1",
+  "host": "gfn16-pilot-c4d",
+  "operations": 256,
+  "cycles": 56940,
+  "signed96_words": 256,
+  "feedback_rows": 18,
+  "initial": "dense signed, -1 at3/255",
+  "whole_seconds": 596.848811869,
+  "unit_peak_bytes": 2293833728,
+  "collected_bundle_sha256": "844de2aa470e1e9f9854e1eaa5aa9c2cc14423a310df0eacb3b184f9be82c1b4",
+  "evidence": "../../../queue/evidence/s4-p16-diet-aw8-dense-normal-q1-v1/gate-receipt.json",
+  "scope": "Own N256/P16 diet recurrence/correction18-row adapter. Actual T5b/full256 signed96 words and ordinary closed-formpow vs sequential integer oracle. Not fullN PRP/clock/timing7 result."
+}

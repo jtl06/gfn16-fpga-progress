@@ -1,0 +1,27 @@
+{
+  "schema": "gfn-fpga-upstreams/v1",
+  "repositories": [
+    {
+      "name": "genefer22",
+      "url": "https://github.com/galloty/genefer22.git",
+      "commit": "d5060c61090942f42a908492628eba13ebd7cd82",
+      "files": {
+        "src/transformGPU.h": "97196e2383d72c91d3df385d871d7d8782278b6b59d93fa780b0fa9c568853d1",
+        "src/transform_ocl.cpp": "221e8d93f077e6f692c13d21229e9f2b3696030abf30e22f3255dafdd612bee1",
+        "ocl/kernel.cl": "f6d174b4f1f96eaf1234834fe9a2b87f939e56b5fc8e5f9087b853fee82487a9",
+        "src/genefer.h": "d436a100788d8e78b091fd423e9061e1c16a88d741b9394f9155888d974ea27f",
+        "src/transform.h": "603a54b84b4ef99b3981e8b6b3bc33d787dd1c72cdf78d313e96f4daf8d36957"
+      }
+    },
+    {
+      "name": "catapult-microsoft-pcie",
+      "url": "https://github.com/jimjiang2/catapult-microsoft-pcie.git",
+      "commit": "7a5ab269bb5f79d8251bb47a637fddb8f4545850",
+      "files": {
+        "README.md": "e3747e01b0aa7d4ce7eeb58582caad0405d0df2d75a0e9e6ae538ec18690e3c8",
+        "Projects/GoldenTop/GoldenTop.qsf": "9220647f1fbc4a9bf8825b96d4a8ebb45d151f39bd67db47602ea10d7ac8dd5c"
+      }
+    }
+  ]
+}
+

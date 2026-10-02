@@ -1,0 +1,12 @@
+{
+  "status": "PASS_expected_contracts",
+  "job": "s4-p16-timing7-short-normal-q1-v1",
+  "host": "gfn16-pilot-c4d",
+  "whole_native_seconds": 664.7384807319977,
+  "whole_unit_peak_bytes": 4043464704,
+  "collected_bundle_sha256": "9b1ab70446aa04d0d2baa6dd324b19d52d60ef54300876f0fdc191ed6b92a4c0",
+  "evidence": "queue/evidence/s4-p16-timing7-short-normal-q1-v1/gate-receipt.json",
+  "scope": "Own full-size1 operation/668026 cycles/full65536 signed96 final words; one reset-load-start-read, exact independent native reference.",
+  "promotion_allowed": false,
+  "owner_numerical_replay": false
+}

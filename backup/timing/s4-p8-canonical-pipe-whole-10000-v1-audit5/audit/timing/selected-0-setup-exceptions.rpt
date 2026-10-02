@@ -1,0 +1,4 @@
+---------------------
+; Report Exceptions ;
+---------------------
+No exceptions were found. Please note that an exception is one of: set_false_path, set_multicycle_path, set_min_delay, or set_max_delay

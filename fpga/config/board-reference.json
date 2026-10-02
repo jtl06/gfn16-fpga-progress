@@ -1,0 +1,15 @@
+{
+  "selected_by_user": "2026-09-29",
+  "family": "Arria 10",
+  "reference_url": "https://github.com/tow3rs/catapult-v3-smartnic-re",
+  "commit": "dc125eab3ea1d2c3e4fa62543868977a0142e019",
+  "readme_sha256": "fd8a2c529300e0c58f3eee47b88dd5294dda9156bfa9b72c8679ff028ce5ac19",
+  "variants_in_reference": ["Longs Peak PCIe", "Dragontails Peak OCP"],
+  "physical_variant": "UNVERIFIED",
+  "physical_device": "UNVERIFIED",
+  "quartus_trial_activated": true,
+  "quartus_trial_activated_on": "2026-09-29",
+  "quartus_trial_expires_on": "2026-10-29",
+  "hardware_programming_allowed": false,
+  "note": "Documentation reference only; does not authorize device or pin assignments."
+}

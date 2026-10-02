@@ -1,0 +1,18 @@
+{
+  "status": "PASS_expected_contracts",
+  "job": "s4-p16-diet-continuous100-normal-q1-v1",
+  "host": "gfn16-pilot-c4d",
+  "operations": 100,
+  "doubles": 50,
+  "cycles": 1505466,
+  "signed96_words": 65536,
+  "reset_load_start_readback_each": 1,
+  "final_reference_equal": true,
+  "model_seconds": 686.310078341,
+  "candidate_seconds": 630.511,
+  "whole_seconds": 1013.829457139,
+  "unit_peak_bytes": 3963113472,
+  "collected_bundle_sha256": "8854b48a8a76d9c455960e3f18e53afe772c47021456cf8712e0194cc0d009b1",
+  "evidence": "../../../queue/evidence/s4-p16-diet-continuous100-normal-q1-v1/gate-receipt.json",
+  "scope": "Own frozen69/full fitted58 diet P16/base604832956 continuous pilot, final-only9N canonical/copy/read. Not full PRP/1000/timing7/P8 or clock. Own phase forecast generated separately; no invented model ticks."
+}

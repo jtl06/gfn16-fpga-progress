@@ -1,0 +1,60 @@
+{
+  "limitations": [
+    "Only5ps reported setup reserve at explicit selected F3 whole testpoint; original9.668ns remainsFAIL, not highest clock or hardware margin proof.",
+    "Recovery/removal are actually measured; supplementary native latch selector unsupported, not latch-absence PASS.",
+    "Internal clock only: virtual-I/O/external reset-release/board/finite-path graph exclusions remain.",
+    "Original495/285QDB equality and six private-copy hash/size/native byte-comparison receipts replayed; raw QDB/cache bytes not present locally.",
+    "F3 whole30RTL source identity matches actual independently closed F3-AW16 evidence4ad0. No point-only/hostcut/upper/RAM27 or F3 PRP/1000 numerical inheritance, no repeated native numerical/vendor/cloud work, no automatic production-clock adoption. Advisor verification remains separate."
+  ],
+  "measured": {
+    "baseline_period_ns": 9.668,
+    "baseline_setup_ns": -1.155,
+    "internal_frequency_mhz": 92.35315847801995,
+    "invocation": "e7e21f74f52740fe82ecdc6f8e66b8fa",
+    "manager_CPU_seconds": 1083.251439,
+    "manager_peak_bytes": 12319256576,
+    "manager_swap_peak_bytes": 0,
+    "manager_wall_seconds": 319.650802,
+    "selected_minima_ns": {
+      "hold": "0.014",
+      "mpw": "4.791",
+      "recovery": "1.454",
+      "removal": "1.025",
+      "setup": "0.005"
+    },
+    "selected_period_ns": 10.828,
+    "selected_waveform_ns": [
+      0,
+      5.414
+    ]
+  },
+  "pins": {
+    "archive_sha256": "b231b05f2957133ec879e4a51bfe5e5cccfc76f376b95361710d03b06af4961d",
+    "audit_receipt_sha256": "4c22f2e04bcd70dc94903fbfce52f4d5674a39a6874496a3979bf7b0b25534c9",
+    "collector_sha256": "f2c19d39ccba48cd91ba48e2872a5ac7bd84d08d102b35a769239f3aa57ec90a",
+    "framework_review_sha256": "20967fa899a70e9db41c15602ee9e69ddb3fac58a04058281bd0b389b2c3785e",
+    "inventory_sha256": "d80bab4188b4270ea652023105cb6fbbac46880a77694d1ac23fe7e2867e6f0d",
+    "manifest_sha256": "8a5a4ef0f93f2fc82353207d6be5ab366514f9bc64675bc88cbbd648be3b43fe",
+    "native_independent_review_sha256": "4ad0f89e4388e184a244781a085499d9a9832a5c0f9b05dd0d6f6a7840aa8065",
+    "native_source_report_sha256": "4b9e1b340a03b04f8ed5e2553a026b2c077900fc4dbc241ecb9631e077997c53",
+    "prior_original_physical_review_sha256": "c741766b87879172bd5ff7de2840ae36274f91b71e1502bcdaceae2c21db1b24",
+    "replay_sha256": "0cb0c26ced4235e0917b29c0a1e6358b5b3ddcd06c2e98a6170febeb5e2fcd81",
+    "terminal_sha256": "60eb2191cb66c41b0b81a4a39a6a9e7f2fc338b6d5ac03497a8ecbb68b12f262"
+  },
+  "promotion_allowed": false,
+  "replay": {
+    "archive_members": 257,
+    "collector_literal_deltas": 5,
+    "compiled_RTL": 30,
+    "independent_tamper_fixtures": 13,
+    "original_QDB_files": 285,
+    "original_files": 495,
+    "phase_corners": 8,
+    "private_copy_deltas": 6,
+    "raw_analysis_summaries": 40,
+    "setup_path_observations": 8000,
+    "timing_files": 168
+  },
+  "reviewer": "qualification_recovery",
+  "status": "PASS_scoped_F3_whole_final_layout_explicit10828_internal_MCMM_STA_native_delta"
+}

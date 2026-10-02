@@ -1,0 +1,792 @@
+{
+  "schema": "prefit-structural-inventory-v1",
+  "scope": "whole_core",
+  "identity": {
+    "top": "genefer_stream27_host_contexts_aw16_p16_v1_diet_c2_m1_v1_cold_fence_v1_closed_ram_v2_explicitnets_v1_storage2_v1",
+    "device": "10AX115N4F40E3SG",
+    "parameters": {
+      "AW": 16,
+      "P": 16,
+      "CONTEXTS": 2,
+      "CORR_SERIAL_BFS": 2,
+      "MONT_FACTORED": 1,
+      "COMM_STAGE_SHARED_MLAB": 1,
+      "COLD_LAUNCH_FENCE": 1,
+      "EXPLICIT_NET_DECLARATIONS": 1,
+      "EPOCH_SEED0": 65534,
+      "EPOCH_SEED1": 42
+    },
+    "clock_period_ns": 14.0,
+    "seed": 1
+  },
+  "sources": {
+    "rtl/genefer_ntt_lazy28_butterfly_v1.sv": "ac9178b1c9f41f39661579bfe27313135912feb84c03107a91840afd4b4c24e2",
+    "rtl/genefer_stream27_merged_final_gs_pair_v1.sv": "07fc26a9ae44d37eeb8286296c7ddef94c1db6b0103855169d1c4a1bda20a3cc",
+    "rtl/genefer_stream27_mdc_fifo_smallreg_v1.sv": "0ff1605c74d81670291f1bd0ee88afe6f5461d999d5ee65fc6f1cc722f4ec4be",
+    "rtl/genefer_stream27_mdc_commutator_sm1_registered_v1.sv": "c262261f1a7c7428056111ccdef97462edd081016f219428d2a81b7e429819c9",
+    "rtl/genefer_stream27_mdc_commutator_sync.sv": "72e6d497280f8d5eeba28c0af30b79a116e20b338d50a9894355a28d3aa4d218",
+    "rtl/genefer_ntt_banked27_engine.sv": "534af0c3b2d16b9694200f415e90397ed5000c1350e3e8a7ca02ca4a3383f77f",
+    "rtl/merged_stream27_root_library_aw16_p16_f0_v1.sv": "076c1ef249226d809ed4d1d228ce3aaf30cbe0436c948df6766ef56bb71002a8",
+    "rtl/genefer_stream27_shared_term_roots_aw16_p16_f0_v1.sv": "7aba21482ae0ea956865a542826f1c24445b3fb85ec776ed1fcf35c69dd2ca92",
+    "rtl/genefer_stream27_mdc_commutator_slots_v2.sv": "3484e192967d6295dd6dc7f6a325dfd31e1573a327c881be9f9e10558c458da5",
+    "rtl/genefer_stream27_root_rom_prefetch.sv": "f4b9415b855d58a1c5ddbc79fd473eef5388b05c888db1c5dde4825e2b3184fc",
+    "rtl/genefer_digit_reduce27_pipe.sv": "61e14bb13c2dbcc13b5030756578a0d0358269beb24fb207a5641b98795883e8",
+    "rtl/genefer_stream27_signed_boundary_reduce27_pipe.sv": "140fcad078bd089456712e27eed9c1f78f340298f72a7d6860d5bed70bbb9f2d",
+    "rtl/genefer_stream27_epoch_protocol_v5.sv": "a01f6b93200d4ee5d1eb7e81664cfd89e373a447e9cbf5173387188f1212df45",
+    "rtl/genefer_stream27_row_arithmetic_param_v1.sv": "346528436c6351b96a2ce0340fa6bc2b55d9338e6a1045237bcba80b9b99ee05",
+    "rtl/genefer_stream27_term_context_v2.sv": "1785c86519e52908e5e450ec8d48656e2fc402808ad3660bda6aa7e8d4c86592",
+    "rtl/genefer_stream27_correction_serial_p16_f0_v1.sv": "ef4bc7575185d545c56cc6922470414f821c60fdf3ad2b75baec85787c69778f",
+    "rtl/genefer_stream27_correction_serial_v1.sv": "2cb1f600293128e56502ac2a3a4384cb437b7af03175033cb0ee6a8ada758309",
+    "rtl/genefer_stream28_merged_ct_aw16_p16_f0_v1_shared_comm_mlab_v1.sv": "d0ba95c98057c44df672df2853a6f728b960761b322c1d00709467732f65c9a9",
+    "rtl/genefer_stream28_merged_gs_aw16_p16_f0_v1_shared_comm_mlab_v1.sv": "8614275bf0729a8aa17c5ac4f20f1cc2f4dad949dc5fc6d2bb230e2d1237950c",
+    "rtl/genefer_stream27_mdc_commutator_shared_mlab_v1.sv": "fcdd68339b15dc1474a5b9f45a9f9fb7764772f7a79b093b168c6ee5c40ea235",
+    "rtl/genefer_stream27_delay_mlab_v1.sv": "fbcdb5da28c9ae64a68189d0b5a6b60182edcc2c80d98728ca9673555591b36e",
+    "rtl/genefer_stream27_montgomery_factored_v1.sv": "866c2b19c9e6afbbb56ce71089288334579f90e977ca139b41097d0f9191c690",
+    "rtl/genefer_stream27_square_p16_f0_v1_contexts_v1.sv": "5e1499e6e19c5a0d3549ec465a1a187ed324d85f0d685717b3c5a0205ecf653e",
+    "rtl/genefer_stream27_epoch_protocol_contexts_v1.sv": "44f90cfc24f5fd041f2a01be5b900541cfe9466f7356ee4f44e3dbd619022c23",
+    "rtl/merged_stream27_root_library_aw16_p16_f1_v1.sv": "60762a746465570a2a89f9c056064c027e08a90750c7c4f3882e0ac5533e624e",
+    "rtl/genefer_stream27_shared_term_roots_aw16_p16_f1_v1.sv": "54862b70e382fc3a1083794844969629492f5ae101ed1ad7ddb3cd1cd6150058",
+    "rtl/genefer_stream27_correction_serial_p16_f1_v1.sv": "c5cc1405cba830e7453e0dab85fb3500bfb7a7578a72d267beead468072ca1b9",
+    "rtl/genefer_stream28_merged_ct_aw16_p16_f1_v1_shared_comm_mlab_v1.sv": "aeb40b37ff994c39fb489bd78562fce0869dbd1099e39dd5eda75673d66eb849",
+    "rtl/genefer_stream28_merged_gs_aw16_p16_f1_v1_shared_comm_mlab_v1.sv": "440b9c5f87594861b2aef0714d88691fc05b0d595e1ae04c0a72df5da4cf9d10",
+    "rtl/genefer_stream27_square_p16_f1_v1_contexts_v1.sv": "2705d66be1124fc7365e57f96363a8385867a49c480f6efede407ea6c2ddc727",
+    "rtl/merged_stream27_root_library_aw16_p16_f2_v1.sv": "4c9558f51dbaee82e78ce025efe3a4013de0c2f6abe13f16e834924a787aeb47",
+    "rtl/genefer_stream27_shared_term_roots_aw16_p16_f2_v1.sv": "44e96d3f541cb91a596b766a29f4aa33cb877f3d49f318c07d4d8b454dacdb21",
+    "rtl/genefer_stream27_correction_serial_p16_f2_v1.sv": "9c46d963f71eec3214677cc7d8a3a1b684f1905bb64d288ebf3f584fae1433a2",
+    "rtl/genefer_stream28_merged_ct_aw16_p16_f2_v1_shared_comm_mlab_v1.sv": "9ac82ddf5929e31e1b01f27e70f1a2df46ff2db30d9de1e23cbedb809916c015",
+    "rtl/genefer_stream28_merged_gs_aw16_p16_f2_v1_shared_comm_mlab_v1.sv": "fb2b75004a2d8c9be44189e48adf6a739a3d442e9205958f2ba5a4d81a40183c",
+    "rtl/genefer_stream27_square_p16_f2_v1_contexts_v1.sv": "c963e0b647c4bcfb6192c81690b104ef49f66c0fa847c7c6a8911e53b6ab1ece",
+    "rtl/genefer_crt3_27_mont_pipe.sv": "8bb5b62423c1f61e069f131b5d393dd3dbc84d05348fc1945f6e9c419c104c58",
+    "rtl/genefer_montgomery_mul27_sparse_pipe.sv": "501d0ce309a3915f7aed0f3bde14ba1ee8d56ddc5f6abef1f2f5bb572d64db4b",
+    "rtl/genefer_div_recip_precision.sv": "832021ed0b3410dc867d92ac4436a725d5717f9630d233073e39896789ebbd7c",
+    "rtl/genefer_stream27_blockcarry_small_cell.sv": "eafee617681cbd84cedfe90874938f63bf5ae84123ba1c914410785b44a3e74f",
+    "rtl/genefer_stream27_blockcarry_setup_param_v1.sv": "c9ba8163c8bb43afecf1afee07a8a55c4eb89539318cf235b83508ab692f4f26",
+    "rtl/genefer_stream27_blockcarry_lane_param_v1.sv": "8a458519272e89e635eb5cd7e6b2d07c93c8d3b1fc0f44874ba67aeccca77d4b",
+    "rtl/genefer_stream27_threefield_carry_aw16_p16_param_v1_signed_contexts2_v1_profile_qualified_v2_diet_c2_m1_v1.sv": "c111cee4460bc760685270b5b5440079dd28cddf18ca6461c8036e3e805cfec6",
+    "rtl/genefer_stream27_warm_contexts_aw16_p16_v1_diet_c2_m1_v1.sv": "6ab395457083ab8db25ba26693a406d1bd19319d474ec770420caea0b92513a4",
+    "rtl/genefer_stream27_host_image_rowwrite_v1.sv": "885337be00e43a5a1b49f006e98db6607da35d5d3d62a1723b07e277788597cc",
+    "rtl/genefer_stream27_canonical_image_pipe_v1.sv": "763b069a9797b91c7122bdf30fe86879b8c34dd318613ec4e096797610a379a5",
+    "rtl/genefer_stream27_descriptor_fifo_ff_v1.sv": "24977500d5f4cbae04358065877371436218b6c5341e930a6922c91e46a44a86",
+    "rtl/genefer_sdp_ram32.sv": "993567fb68fdc216b9ff04489d1810f743b86564434e4b48261ad606b25d53b0",
+    "rtl/genefer_stream27_term_context_param_v1_contexts_v1_storage2_v1.sv": "b86387fe8ef03cb25aad3f47adec3664bec150bd16780ac679e9547bf0603706",
+    "rtl/genefer_stream27_shared_warm_aw16_p16_f0_v1_signed_host_v3_valid_start_v4_corr_serial2_v5_shared_comm_mlab_v1_mont_factored_v1_contexts2_v1_storage2_v1.sv": "5e72bae601954cc89feea19e11a0c13d3dd7c7facc2777e61e0ec445d3e481e8",
+    "rtl/genefer_stream27_shared_warm_aw16_p16_f1_v1_signed_host_v3_valid_start_v4_corr_serial2_v5_shared_comm_mlab_v1_mont_factored_v1_contexts2_v1_storage2_v1.sv": "548ac2d3148a429d4d054324e7a77f4a8b65f393361caef7e2480e82a127b9ce",
+    "rtl/genefer_stream27_shared_warm_aw16_p16_f2_v1_signed_host_v3_valid_start_v4_corr_serial2_v5_shared_comm_mlab_v1_mont_factored_v1_contexts2_v1_storage2_v1.sv": "00a2562cdb7cb1183ff54993f62aa8f7dcbb5d5235bd7142e0f4fb2d813b1ee0",
+    "rtl/genefer_stream27_host_contexts_aw16_p16_v1_diet_c2_m1_v1_cold_fence_v1_closed_ram_v2_explicitnets_v1_storage2_v1.sv": "f9933a8d444fb6a5d52a33f9af1d51d2e2d00eed022240d52bdd464fb72094cd"
+  },
+  "settings": {
+    "probe.qsf": "d9250a2143772b134ab59e242c510f8c13a552740c65364273cec1f8ddfa0273",
+    "probe.qpf": "ff7f5a00df0fdbe48ba84142a0a94058de5a259b5f7f1e38d6bd50e87d408004",
+    "probe.sdc": "c7a3822946b34a4610540c96ed2abec835a21a73b5ae3cfd4244ac14860f2723",
+    "run.tcl": "92711aace1e4f6f7cd577eb764403382a3a95aa495b02c379c0e27912c15c1b4",
+    "manifest.json": "7c0bbaf3b5bce52d183a1caeeb30d325011d4ad00e0765b832ca88b5532eea0a"
+  },
+  "blocks": [
+    "host_control",
+    "shadow_images",
+    "setup_profile_banks",
+    "warm_control",
+    "arithmetic_control",
+    "field0",
+    "field1",
+    "field2",
+    "CRT",
+    "carry",
+    "canonical_scratch",
+    "copy_publication"
+  ],
+  "transfers": [
+    {
+      "id": "cold_registered_row_to_source",
+      "producer": "shadow_images",
+      "consumer": "host_control",
+      "signals": [
+        "shadow_row_data",
+        "shadow_row_valid",
+        "shadow_response_owner",
+        "source_data",
+        "source_valid",
+        "source_context",
+        "source_row"
+      ],
+      "registered_stages": [
+        {
+          "id": "cold_response_metadata",
+          "owner": "shadow_images",
+          "edge": 0,
+          "kind": "flop",
+          "source": "rtl/genefer_stream27_host_image_rowwrite_v1.sv",
+          "payload": [
+            "ram_q"
+          ],
+          "valid": "row_valid_d",
+          "metadata": [
+            "row_response_context",
+            "row_response_owner"
+          ],
+          "anchors": [
+            "read_valid_d<=scalar_fire;row_valid_d<=row_fire;",
+            "if(row_fire)begin row_response_context<=row_read_context;row_response_owner<=row_read_owner;end"
+          ],
+          "alignment": "same_accepted_edge"
+        },
+        {
+          "id": "cold_source_capture",
+          "owner": "host_control",
+          "edge": 1,
+          "kind": "flop",
+          "source": "rtl/genefer_stream27_host_contexts_aw16_p16_v1_diet_c2_m1_v1_cold_fence_v1_closed_ram_v2_explicitnets_v1_storage2_v1.sv",
+          "payload": [
+            "source_data"
+          ],
+          "valid": "source_valid",
+          "metadata": [
+            "source_context",
+            "source_row"
+          ],
+          "anchors": [
+            "source_data[32*lane+:32]<=shadow_row_data[32*NATURAL+:32];",
+            "done_q<=0;source_valid<=shadow_row_valid && row_kind_d && !response_bad && !error;",
+            "if(shadow_row_valid && row_kind_d && !response_bad)begin source_context<=row_context_d;source_row<=row_address_d;end"
+          ],
+          "alignment": "same_accepted_edge"
+        }
+      ],
+      "control_reconvergence": [],
+      "exception": {
+        "kind": "phase_local_control",
+        "reason": "Enabled RAM output and response owner are followed by the accepted cold-source FF; RAM payload holds on disabled edges.",
+        "contract_anchors": [
+          {
+            "source": "rtl/genefer_stream27_host_contexts_aw16_p16_v1_diet_c2_m1_v1_cold_fence_v1_closed_ram_v2_explicitnets_v1_storage2_v1.sv",
+            "text": "wire response_bad=shadow_row_valid && (shadow_response_context!=row_context_d ||"
+          }
+        ]
+      }
+    },
+    {
+      "id": "source_to_warm",
+      "producer": "host_control",
+      "consumer": "warm_control",
+      "signals": [
+        "source_data",
+        "source_valid",
+        "source_row",
+        "source_context",
+        "job_epoch",
+        "job_generation"
+      ],
+      "registered_stages": [],
+      "control_reconvergence": [],
+      "exception": {
+        "kind": "phase_local_control",
+        "reason": "Source FF feeds the accepted-frame reducer path. Full context/epoch/generation admission remains active; no extra interface cycle is invented.",
+        "contract_anchors": [
+          {
+            "source": "rtl/genefer_stream27_host_contexts_aw16_p16_v1_diet_c2_m1_v1_cold_fence_v1_closed_ram_v2_explicitnets_v1_storage2_v1.sv",
+            "text": ".in_slot_valid(source_valid && !error),.frame_start(source_start),.context_in(source_context),"
+          }
+        ]
+      }
+    },
+    {
+      "id": "job_configuration_snapshot",
+      "producer": "host_control",
+      "consumer": "setup_profile_banks",
+      "signals": [
+        "job_base",
+        "job_generation",
+        "job_count",
+        "cold_c0",
+        "cold_c1"
+      ],
+      "registered_stages": [],
+      "control_reconvergence": [],
+      "exception": {
+        "kind": "operation_latched_configuration",
+        "reason": "Start accepted only with no busy/canonical owner; job configuration is atomically snapshotted and serialized setup retains its context.",
+        "contract_anchors": [
+          {
+            "source": "rtl/genefer_stream27_host_contexts_aw16_p16_v1_diet_c2_m1_v1_cold_fence_v1_closed_ram_v2_explicitnets_v1_storage2_v1.sv",
+            "text": "if((|start_contexts) && !(|busy) && !canonical_owned && !error)begin"
+          },
+          {
+            "source": "rtl/genefer_stream27_host_contexts_aw16_p16_v1_diet_c2_m1_v1_cold_fence_v1_closed_ram_v2_explicitnets_v1_storage2_v1.sv",
+            "text": "phase[c]<=PROFILE;job_base[c]<=base[c*32+:32];job_count[c]<=batch_mode[c] ? warm_count[c*32+:32] : 32'd1;"
+          },
+          {
+            "source": "rtl/genefer_stream27_threefield_carry_aw16_p16_param_v1_signed_contexts2_v1_profile_qualified_v2_diet_c2_m1_v1.sv",
+            "text": "profile_base[setup_context_q]<=qualified_base;profile_reciprocal[setup_context_q]<=reciprocal;"
+          }
+        ]
+      }
+    },
+    {
+      "id": "profiles_to_carry",
+      "producer": "setup_profile_banks",
+      "consumer": "carry",
+      "signals": [
+        "profile_base",
+        "profile_reciprocal",
+        "profile_limit",
+        "profile_generation"
+      ],
+      "registered_stages": [],
+      "control_reconvergence": [],
+      "exception": {
+        "kind": "operation_latched_configuration",
+        "reason": "Two profile banks are qualified against the exact frame context/base/generation. Setup is prohibited for a context with live owner/carry state.",
+        "contract_anchors": [
+          {
+            "source": "rtl/genefer_stream27_threefield_carry_aw16_p16_param_v1_signed_contexts2_v1_profile_qualified_v2_diet_c2_m1_v1.sv",
+            "text": "assign frame_profile_ok=config_valid[context_in] && base_in==profile_base[context_in] &&"
+          },
+          {
+            "source": "rtl/genefer_stream27_threefield_carry_aw16_p16_param_v1_signed_contexts2_v1_profile_qualified_v2_diet_c2_m1_v1.sv",
+            "text": ".base(profile_base[field_context[0]]),.reciprocal(profile_reciprocal[field_context[0]]),.coefficient_limit(profile_limit[field_context[0]]),"
+          }
+        ]
+      }
+    },
+    {
+      "id": "descriptors_to_warm_control",
+      "producer": "host_control",
+      "consumer": "warm_control",
+      "signals": [
+        "head_index",
+        "head_generation",
+        "head_double",
+        "feed_pop"
+      ],
+      "registered_stages": [],
+      "control_reconvergence": [],
+      "exception": {
+        "kind": "phase_local_control",
+        "reason": "Full descriptor ordinal/generation are checked before internal frame acceptance; FIFO accepted pop is not an invented pipeline stage.",
+        "contract_anchors": [
+          {
+            "source": "rtl/genefer_stream27_warm_contexts_aw16_p16_v1_diet_c2_m1_v1.sv",
+            "text": "wire command_bad=command_needed && (!command_valid[feedback_context] ||"
+          },
+          {
+            "source": "rtl/genefer_stream27_warm_contexts_aw16_p16_v1_diet_c2_m1_v1.sv",
+            "text": "assign command_accept[0]=internal_frame_accept && latched_feed[0] && !feedback_context && !command_bad;"
+          }
+        ]
+      }
+    },
+    {
+      "id": "arithmetic_to_field0",
+      "producer": "arithmetic_control",
+      "consumer": "field0",
+      "signals": [
+        "field_input_valid",
+        "context_in",
+        "epoch_in",
+        "generation_in",
+        "correction_bank"
+      ],
+      "registered_stages": [],
+      "control_reconvergence": [],
+      "exception": {
+        "kind": "phase_local_control",
+        "reason": "All four logical lease/full-owner checks remain; accepted data is reduced and tagged under the original calendar, not raw bank-index permission.",
+        "contract_anchors": [
+          {
+            "source": "rtl/genefer_stream27_threefield_carry_aw16_p16_param_v1_signed_contexts2_v1_profile_qualified_v2_diet_c2_m1_v1.sv",
+            "text": "assign field_input_valid=in_slot_valid && !out_error && (!frame_start || frame_profile_ok);"
+          },
+          {
+            "source": "rtl/genefer_stream27_shared_warm_aw16_p16_f0_v1_signed_host_v3_valid_start_v4_corr_serial2_v5_shared_comm_mlab_v1_mont_factored_v1_contexts2_v1_storage2_v1.sv",
+            "text": "logic [26:0] payload_owner[0:1];"
+          }
+        ]
+      }
+    },
+    {
+      "id": "field0_to_CRT",
+      "producer": "field0",
+      "consumer": "CRT",
+      "signals": [
+        "field_data[0]",
+        "field_valid",
+        "field_context",
+        "field_epoch",
+        "field_generation",
+        "field_row"
+      ],
+      "registered_stages": [],
+      "control_reconvergence": [],
+      "exception": {
+        "kind": "phase_local_control",
+        "reason": "Final physical residues feed CRT raw input capture. Three-field full tags/row join is checked; physical lane reverse is explicit. Field-internal pipeline is not counted again as a separate macroblock stage.",
+        "contract_anchors": [
+          {
+            "source": "rtl/genefer_stream27_threefield_carry_aw16_p16_param_v1_signed_contexts2_v1_profile_qualified_v2_diet_c2_m1_v1.sv",
+            "text": "wire joined=&field_valid;"
+          },
+          {
+            "source": "rtl/genefer_stream27_threefield_carry_aw16_p16_param_v1_signed_contexts2_v1_profile_qualified_v2_diet_c2_m1_v1.sv",
+            "text": "localparam int PHYSICAL=reverse_lane(b);"
+          },
+          {
+            "source": "rtl/genefer_crt3_27_mont_pipe.sv",
+            "text": "r1_pipe[0]<=r1[26:0];r2_input<=r2[26:0];r3_input<=r3[26:0];"
+          }
+        ]
+      }
+    },
+    {
+      "id": "arithmetic_to_field1",
+      "producer": "arithmetic_control",
+      "consumer": "field1",
+      "signals": [
+        "field_input_valid",
+        "context_in",
+        "epoch_in",
+        "generation_in",
+        "correction_bank"
+      ],
+      "registered_stages": [],
+      "control_reconvergence": [],
+      "exception": {
+        "kind": "phase_local_control",
+        "reason": "All four logical lease/full-owner checks remain; accepted data is reduced and tagged under the original calendar, not raw bank-index permission.",
+        "contract_anchors": [
+          {
+            "source": "rtl/genefer_stream27_threefield_carry_aw16_p16_param_v1_signed_contexts2_v1_profile_qualified_v2_diet_c2_m1_v1.sv",
+            "text": "assign field_input_valid=in_slot_valid && !out_error && (!frame_start || frame_profile_ok);"
+          },
+          {
+            "source": "rtl/genefer_stream27_shared_warm_aw16_p16_f1_v1_signed_host_v3_valid_start_v4_corr_serial2_v5_shared_comm_mlab_v1_mont_factored_v1_contexts2_v1_storage2_v1.sv",
+            "text": "logic [26:0] payload_owner[0:1];"
+          }
+        ]
+      }
+    },
+    {
+      "id": "field1_to_CRT",
+      "producer": "field1",
+      "consumer": "CRT",
+      "signals": [
+        "field_data[1]",
+        "field_valid",
+        "field_context",
+        "field_epoch",
+        "field_generation",
+        "field_row"
+      ],
+      "registered_stages": [],
+      "control_reconvergence": [],
+      "exception": {
+        "kind": "phase_local_control",
+        "reason": "Final physical residues feed CRT raw input capture. Three-field full tags/row join is checked; physical lane reverse is explicit. Field-internal pipeline is not counted again as a separate macroblock stage.",
+        "contract_anchors": [
+          {
+            "source": "rtl/genefer_stream27_threefield_carry_aw16_p16_param_v1_signed_contexts2_v1_profile_qualified_v2_diet_c2_m1_v1.sv",
+            "text": "wire joined=&field_valid;"
+          },
+          {
+            "source": "rtl/genefer_stream27_threefield_carry_aw16_p16_param_v1_signed_contexts2_v1_profile_qualified_v2_diet_c2_m1_v1.sv",
+            "text": "localparam int PHYSICAL=reverse_lane(b);"
+          },
+          {
+            "source": "rtl/genefer_crt3_27_mont_pipe.sv",
+            "text": "r1_pipe[0]<=r1[26:0];r2_input<=r2[26:0];r3_input<=r3[26:0];"
+          }
+        ]
+      }
+    },
+    {
+      "id": "arithmetic_to_field2",
+      "producer": "arithmetic_control",
+      "consumer": "field2",
+      "signals": [
+        "field_input_valid",
+        "context_in",
+        "epoch_in",
+        "generation_in",
+        "correction_bank"
+      ],
+      "registered_stages": [],
+      "control_reconvergence": [],
+      "exception": {
+        "kind": "phase_local_control",
+        "reason": "All four logical lease/full-owner checks remain; accepted data is reduced and tagged under the original calendar, not raw bank-index permission.",
+        "contract_anchors": [
+          {
+            "source": "rtl/genefer_stream27_threefield_carry_aw16_p16_param_v1_signed_contexts2_v1_profile_qualified_v2_diet_c2_m1_v1.sv",
+            "text": "assign field_input_valid=in_slot_valid && !out_error && (!frame_start || frame_profile_ok);"
+          },
+          {
+            "source": "rtl/genefer_stream27_shared_warm_aw16_p16_f2_v1_signed_host_v3_valid_start_v4_corr_serial2_v5_shared_comm_mlab_v1_mont_factored_v1_contexts2_v1_storage2_v1.sv",
+            "text": "logic [26:0] payload_owner[0:1];"
+          }
+        ]
+      }
+    },
+    {
+      "id": "field2_to_CRT",
+      "producer": "field2",
+      "consumer": "CRT",
+      "signals": [
+        "field_data[2]",
+        "field_valid",
+        "field_context",
+        "field_epoch",
+        "field_generation",
+        "field_row"
+      ],
+      "registered_stages": [],
+      "control_reconvergence": [],
+      "exception": {
+        "kind": "phase_local_control",
+        "reason": "Final physical residues feed CRT raw input capture. Three-field full tags/row join is checked; physical lane reverse is explicit. Field-internal pipeline is not counted again as a separate macroblock stage.",
+        "contract_anchors": [
+          {
+            "source": "rtl/genefer_stream27_threefield_carry_aw16_p16_param_v1_signed_contexts2_v1_profile_qualified_v2_diet_c2_m1_v1.sv",
+            "text": "wire joined=&field_valid;"
+          },
+          {
+            "source": "rtl/genefer_stream27_threefield_carry_aw16_p16_param_v1_signed_contexts2_v1_profile_qualified_v2_diet_c2_m1_v1.sv",
+            "text": "localparam int PHYSICAL=reverse_lane(b);"
+          },
+          {
+            "source": "rtl/genefer_crt3_27_mont_pipe.sv",
+            "text": "r1_pipe[0]<=r1[26:0];r2_input<=r2[26:0];r3_input<=r3[26:0];"
+          }
+        ]
+      }
+    },
+    {
+      "id": "CRT_double_to_carry",
+      "producer": "CRT",
+      "consumer": "carry",
+      "signals": [
+        "crt_coefficient",
+        "crt_valid",
+        "crt_tag",
+        "doubled_data",
+        "doubled_valid",
+        "doubled_row",
+        "doubled_context"
+      ],
+      "registered_stages": [
+        {
+          "id": "CRT_coefficient_output",
+          "owner": "CRT",
+          "edge": 0,
+          "kind": "flop",
+          "source": "rtl/genefer_crt3_27_mont_pipe.sv",
+          "payload": [
+            "coefficient"
+          ],
+          "valid": "out_valid",
+          "metadata": [],
+          "anchors": [
+            "out_valid<=valid_pipe[14];",
+            "if(valid_pipe[14])coefficient<=centered_work;"
+          ],
+          "alignment": "same_accepted_edge"
+        },
+        {
+          "id": "doubled_coefficient",
+          "owner": "arithmetic_control",
+          "edge": 1,
+          "kind": "flop",
+          "source": "rtl/genefer_stream27_threefield_carry_aw16_p16_param_v1_signed_contexts2_v1_profile_qualified_v2_diet_c2_m1_v1.sv",
+          "payload": [
+            "doubled_data"
+          ],
+          "valid": "doubled_valid",
+          "metadata": [
+            "doubled_row",
+            "doubled_start",
+            "doubled_context",
+            "crt_tag"
+          ],
+          "anchors": [
+            "for(int b=0;b<P;b=b+1)doubled_data[96*b+:96]<=crt_double[15] ? crt_coefficient[b]<<<1 : crt_coefficient[b];",
+            "doubled_valid<=(&crt_valid) && !out_error;",
+            "doubled_row<=crt_tag[15][ROW_W-1:0];doubled_start<=crt_tag[15][ROW_W-1:0]==0;doubled_context<=crt_tag[15][TAG_W-1];"
+          ],
+          "alignment": "same_accepted_edge"
+        }
+      ],
+      "control_reconvergence": [],
+      "exception": {
+        "kind": "phase_local_control",
+        "reason": "Actual CRT registered coefficient is followed by double-data/valid/context/row FF. Exact owner tag advances alongside CRT latency; selected profile is separately snapshotted.",
+        "contract_anchors": [
+          {
+            "source": "rtl/genefer_stream27_threefield_carry_aw16_p16_param_v1_signed_contexts2_v1_profile_qualified_v2_diet_c2_m1_v1.sv",
+            "text": "if(joined)begin crt_tag[0]<={field_context[0],field_epoch[0],field_generation[0],field_row[0]};crt_double[0]<=bank_double[bank];end"
+          }
+        ]
+      }
+    },
+    {
+      "id": "carry_feedback_to_warm",
+      "producer": "carry",
+      "consumer": "warm_control",
+      "signals": [
+        "digit_data",
+        "digit_valid",
+        "digit_context",
+        "digit_epoch",
+        "digit_generation",
+        "feedback_owner"
+      ],
+      "registered_stages": [],
+      "control_reconvergence": [],
+      "exception": {
+        "kind": "phase_local_control",
+        "reason": "Registered carry output feeds original same-calendar feedback; live generation eligibility and remaining-count authority are retained. Feedback mux is not falsely declared registered.",
+        "contract_anchors": [
+          {
+            "source": "rtl/genefer_stream27_warm_contexts_aw16_p16_v1_diet_c2_m1_v1.sv",
+            "text": "wire feedback_issue=digit_valid && need_feedback && !local_error;"
+          },
+          {
+            "source": "rtl/genefer_stream27_warm_contexts_aw16_p16_v1_diet_c2_m1_v1.sv",
+            "text": "assign feedback_owner={digit_context,digit_epoch+16'd1,digit_generation};"
+          }
+        ]
+      }
+    },
+    {
+      "id": "carry_boundary_to_fields",
+      "producer": "carry",
+      "consumer": "arithmetic_control",
+      "signals": [
+        "next_c0",
+        "next_c1",
+        "next_epoch",
+        "next_generation",
+        "boundary_context"
+      ],
+      "registered_stages": [],
+      "control_reconvergence": [],
+      "exception": {
+        "kind": "phase_local_control",
+        "reason": "Per-context correction begins only at original boundary acceptance; signed final-lane wrap and all owner/cache-ready/E4 checks are unchanged.",
+        "contract_anchors": [
+          {
+            "source": "rtl/genefer_stream27_warm_contexts_aw16_p16_v1_diet_c2_m1_v1.sv",
+            "text": "wire auto_correction=boundary_valid && feedback_enabled[boundary_context] && !local_error;"
+          },
+          {
+            "source": "rtl/genefer_stream27_threefield_carry_aw16_p16_param_v1_signed_contexts2_v1_profile_qualified_v2_diet_c2_m1_v1.sv",
+            "text": "assign next_c0[0+:32]=32'(-signed_low);assign next_c1[0+:32]=32'(-signed_high);"
+          }
+        ]
+      }
+    },
+    {
+      "id": "final_capture_to_shadows",
+      "producer": "warm_control",
+      "consumer": "shadow_images",
+      "signals": [
+        "final_owner",
+        "final_context",
+        "digit_row",
+        "digit_data",
+        "capture_fire"
+      ],
+      "registered_stages": [],
+      "control_reconvergence": [],
+      "exception": {
+        "kind": "phase_local_control",
+        "reason": "Actual final raw rows are accepted only in RUN with exact full56 owner and next row. Physical RAM capture acknowledgment is checked one edge later; raw capture is not public canonical publication.",
+        "contract_anchors": [
+          {
+            "source": "rtl/genefer_stream27_host_contexts_aw16_p16_v1_diet_c2_m1_v1_cold_fence_v1_closed_ram_v2_explicitnets_v1_storage2_v1.sv",
+            "text": "wire capture_bad=final_valid && (phase[final_context]!=RUN ||"
+          },
+          {
+            "source": "rtl/genefer_stream27_host_contexts_aw16_p16_v1_diet_c2_m1_v1_cold_fence_v1_closed_ram_v2_explicitnets_v1_storage2_v1.sv",
+            "text": "capture_req_d<=capture_fire;"
+          },
+          {
+            "source": "rtl/genefer_stream27_host_image_rowwrite_v1.sv",
+            "text": "commit_ack_d<=commit_fire;capture_ack_d<=capture_fire;rejected_d<=reject_fire;"
+          }
+        ]
+      }
+    },
+    {
+      "id": "shadows_to_canonical_scratch",
+      "producer": "shadow_images",
+      "consumer": "canonical_scratch",
+      "signals": [
+        "shadow_row_data",
+        "shadow_response_owner",
+        "canonical_load",
+        "row_address_d"
+      ],
+      "registered_stages": [],
+      "control_reconvergence": [],
+      "exception": {
+        "kind": "phase_local_control",
+        "reason": "Shared scratch is phase-exclusive. Registered row response is full-owner checked before canonical load; all rows must be loaded before CANON_WAIT. No one-edge total-image claim.",
+        "contract_anchors": [
+          {
+            "source": "rtl/genefer_stream27_host_contexts_aw16_p16_v1_diet_c2_m1_v1_cold_fence_v1_closed_ram_v2_explicitnets_v1_storage2_v1.sv",
+            "text": "wire canonical_load=shadow_row_valid && !row_kind_d && !response_bad && !error;"
+          },
+          {
+            "source": "rtl/genefer_stream27_host_contexts_aw16_p16_v1_diet_c2_m1_v1_cold_fence_v1_closed_ram_v2_explicitnets_v1_storage2_v1.sv",
+            "text": "if(canonical_load && row_address_d==ROW_W'(ROWS-1))phase[canonical_owner]<=CANON_WAIT;"
+          }
+        ]
+      }
+    },
+    {
+      "id": "canonical_read_to_copy",
+      "producer": "canonical_scratch",
+      "consumer": "copy_publication",
+      "signals": [
+        "canon_data",
+        "canon_read_valid",
+        "canon_address",
+        "canonical_owner",
+        "copy_fire"
+      ],
+      "registered_stages": [],
+      "control_reconvergence": [],
+      "exception": {
+        "kind": "phase_local_control",
+        "reason": "Real RAM response/read-data FF and ordered copy checks retain sign-extension/address validity. N successful physical commits, not a footer alias, release publication.",
+        "contract_anchors": [
+          {
+            "source": "rtl/genefer_stream27_canonical_image_pipe_v1.sv",
+            "text": "read_data<=$signed({{64{ram_q[read_bank_d][31]}},ram_q[read_bank_d]});"
+          },
+          {
+            "source": "rtl/genefer_stream27_host_contexts_aw16_p16_v1_diet_c2_m1_v1_cold_fence_v1_closed_ram_v2_explicitnets_v1_storage2_v1.sv",
+            "text": "wire copy_bad=canon_read_valid && (copy_issued>=(AW+1)'(N) || canon_address!=copy_issued[AW-1:0] ||"
+          }
+        ]
+      }
+    },
+    {
+      "id": "copy_to_shadow_publication",
+      "producer": "copy_publication",
+      "consumer": "shadow_images",
+      "signals": [
+        "copy_fire",
+        "canon_data",
+        "canon_address",
+        "shadow_commit_ack",
+        "published",
+        "live_owner"
+      ],
+      "registered_stages": [],
+      "control_reconvergence": [],
+      "exception": {
+        "kind": "phase_local_control",
+        "reason": "Shared copy phase commits into the exact context/full56 owner. Final Nth acknowledgment plus requested/issued counts gates done and canonical_ready. No immediate publication of partial data.",
+        "contract_anchors": [
+          {
+            "source": "rtl/genefer_stream27_host_contexts_aw16_p16_v1_diet_c2_m1_v1_cold_fence_v1_closed_ram_v2_explicitnets_v1_storage2_v1.sv",
+            "text": ".commit_owner(live_owner[canonical_owner*56+:56]),"
+          },
+          {
+            "source": "rtl/genefer_stream27_host_contexts_aw16_p16_v1_diet_c2_m1_v1_cold_fence_v1_closed_ram_v2_explicitnets_v1_storage2_v1.sv",
+            "text": "published[canonical_owner]<=1;done_q[canonical_owner]<=1;phase[canonical_owner]<=IDLE;canonical_owned<=0;"
+          }
+        ]
+      }
+    },
+    {
+      "id": "published_readback_to_host",
+      "producer": "shadow_images",
+      "consumer": "copy_publication",
+      "signals": [
+        "shadow_scalar_data",
+        "shadow_scalar_owner",
+        "shadow_scalar_valid",
+        "canonical_ready",
+        "read_valid"
+      ],
+      "registered_stages": [],
+      "control_reconvergence": [],
+      "exception": {
+        "kind": "phase_local_control",
+        "reason": "Registered RAM scalar read retains full56 live owner; public read_valid additionally requires this context published and no global error.",
+        "contract_anchors": [
+          {
+            "source": "rtl/genefer_stream27_host_contexts_aw16_p16_v1_diet_c2_m1_v1_cold_fence_v1_closed_ram_v2_explicitnets_v1_storage2_v1.sv",
+            "text": "assign read_valid=shadow_scalar_valid && canonical_ready[shadow_scalar_context] && !error;"
+          },
+          {
+            "source": "rtl/genefer_stream27_host_image_rowwrite_v1.sv",
+            "text": "read_owner<=live_owner[host_context*OWNER_W+:OWNER_W];end"
+          }
+        ]
+      }
+    },
+    {
+      "id": "prospective_fault_to_sticky_origin",
+      "producer": "arithmetic_control",
+      "consumer": "host_control",
+      "signals": [
+        "child_pending",
+        "fault_pending",
+        "out_error",
+        "child_error",
+        "local_error"
+      ],
+      "registered_stages": [],
+      "control_reconvergence": [],
+      "exception": {
+        "kind": "phase_local_control",
+        "reason": "Prospective diagnostics are intentionally combinational into the origin-edge sticky fault FF; pending has NO source FF. Already admitted origin-edge work/tails are unchanged. This bounded exception does not assert no reconvergent timing path.",
+        "contract_anchors": [
+          {
+            "source": "rtl/genefer_stream27_threefield_carry_aw16_p16_param_v1_signed_contexts2_v1_profile_qualified_v2_diet_c2_m1_v1.sv",
+            "text": "if(fault_pending)out_error<=1;"
+          },
+          {
+            "source": "rtl/genefer_stream27_host_contexts_aw16_p16_v1_diet_c2_m1_v1_cold_fence_v1_closed_ram_v2_explicitnets_v1_storage2_v1.sv",
+            "text": "assign error=local_error || child_error || canon_error;"
+          },
+          {
+            "source": "rtl/genefer_stream27_host_contexts_aw16_p16_v1_diet_c2_m1_v1_cold_fence_v1_closed_ram_v2_explicitnets_v1_storage2_v1.sv",
+            "text": "(capture_req_d && !shadow_capture_ack) || (|child_cancelled))local_error<=1;"
+          }
+        ]
+      }
+    }
+  ],
+  "exclusions": [
+    {
+      "kind": "external_virtual_io",
+      "reason": "Compute-only virtual pins; no board I/O, protocol electrical timing, pin mapping or external throughput.",
+      "endpoints": [
+        "all non-clock top virtual inputs/outputs"
+      ]
+    },
+    {
+      "kind": "external_reset",
+      "reason": "Reset release/recovery and board reset distribution are not proven by this source inventory.",
+      "endpoints": [
+        "rst_n"
+      ]
+    },
+    {
+      "kind": "inside_single_macroblock",
+      "reason": "Declared macroblock transfer ledger only; internal CT/GS/root/term/divider connectivity requires actual post-fit reports.",
+      "endpoints": [
+        "field0/1/2 internal arithmetic",
+        "CRT/carry internal pipelines"
+      ]
+    }
+  ],
+  "coverage_claim": "declared_source_inventory_not_netlist_completeness",
+  "limitations": [
+    "No C1 mechanical inheritance.",
+    "No synthesized connectivity completeness or DA/STA PASS.",
+    "Phase exceptions retain origin-edge fault/control semantics; pending is not registered."
+  ]
+}

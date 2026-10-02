@@ -1,0 +1,45 @@
+{
+  "schema": "gfn16-production-adoption-v1",
+  "recorded_date_utc": "2026-10-02",
+  "candidate": "Streaming P16 diet baseline, canonical pipeline1, contexts1, no timing7 flags",
+  "status": "adopted_internal_compute_only_production_parent",
+  "replaces_record": "Streaming P8 canonical-pipeline1, contexts1",
+  "retained_fallback": "Streaming P8 canonical-pipeline1, contexts1; F3 retained as Track A fallback",
+  "candidate_core_sha256": "b683cb1113a17652f5d6266c4298c5eb825c6af6b9f92bd28f758dba9b8de898",
+  "independent_reviews": [
+    {"path": "results/throughput-20260929/s4-p16-diet-clock-finaldelta-independent-v1.json", "sha256": "8517f70fc11744b956337a1be7604d5b1874c81318d43b5fa122362da5a00974"},
+    {"path": "results/throughput-20260929/s4-p16-diet-long-independent-v1.json", "sha256": "f8bb79493a1b0d59719d1b3ce043598340f98db43e14a9661f8ff39d6417c622"},
+    {"path": "results/throughput-20260929/s4-p16-diet-routed-readiness-independent-v1.json", "sha256": "32b51f3464fc5ce4069b0ed26bcb251b5dd11547c4bdda8009068b220c43a462"},
+    {"path": "results/throughput-20260929/s4-p16-diet-completed-subset-independent-v1.json", "sha256": "2bf7a35197fbfb2ce55b19fe4076cef0cb183e6ed969ab7d9da7579e6e36d1b1"},
+    {"path": "results/throughput-20260929/s4-p16-diet-ledger-byteexact-independent-v1.json", "sha256": "b4e0a93ae4e1be5b894f9f5ad5074949da4c285751b569ed8a50d9cdd13a2707"}
+  ],
+  "advisor_acceptance": {
+    "path": "docs/briefs/2026-10-02-advisor-verification-P16.md",
+    "sha256": "d3c4c7509118c952136ece3f43e3f450671d88535e24c511f0240a42efb39e2f"
+  },
+  "sample": {"N": 65536, "base": 604832956, "operations_including_leading_bit": 1911814},
+  "compute_projection": {
+    "cold_ordinary_completion_cycles": 668025,
+    "warm_interval_cycles": 8459,
+    "cold_total_cycles": 16172694192,
+    "selected_audited_period_ns": "12.594",
+    "cold_ordinary_seconds": "203.678910654048",
+    "cached_root_total_cycles": 16172694093,
+    "cached_root_seconds": "203.678909407242",
+    "special_final_image_extra_cycles": 65536,
+    "boundary": "Start through internal finalized publication, including cold roots and one final canonicalization/internal copy. Initial external load/setup, final host readback, transport and board gaps excluded.",
+    "measured_full_sample_PRP_runtime": false
+  },
+  "whole_resources": {"needed_alms": 314622, "placed_alms": 374930, "labs": 41915, "device_labs": 42720, "registers": 581815, "m20ks": 1911, "needed_dsps": 1300, "placed_dsps": 1318},
+  "selected_internal_timing": {"minimum_setup_ns": "0.000", "failing_endpoints": 0, "minimum_hold_ns": "0.005", "minimum_pulse_width_ns": "5.647", "adjacent_failing_period_ns": "12.592"},
+  "conservative_alternative": {"period_ns": "12.604", "minimum_setup_ns": "0.010", "cold_ordinary_seconds": "203.840637595968"},
+  "qualification_scope": {"continuous_operations": 1000, "doubles": 500, "final_signed96_words": 65536, "continuous_cycles": 9118566, "resets": 1, "loads": 1, "starts": 1, "readbacks": 1, "composed_numerical_ladder": "Independently reviewed own small PRPs, short/100/1000, AW8 and bounded host fault/special cases.", "supplementary_field_entries": "Seven entries metadata-checked only; not separate independent field numerical replays."},
+  "exclusions": [
+    "Zero printed setup margin is not robust hardware margin, global maximum frequency or board sign-off.",
+    "Virtual I/O: 193 inputs and 797 outputs unconstrained. Recovery/removal have no paths, not reset-release sign-off.",
+    "No board operation, executed complete full-size sample PRP, exhaustive fault coverage or wider base-range proof.",
+    "Timing7, two-context, packed/root and later variants retain their own source/qualification; no clock or numerical inheritance.",
+    "98.12% LAB occupancy remains above the future whole-fit area aim; adoption does not release new whole fits."
+  ],
+  "implementation": "Records independent review plus explicit advisor acceptance, with linked-receipt hash verification only. No third replay, source rebase, new native job, public publication or hardware programming."
+}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS_expected_contracts",
+  "job": "s4-p16-diet-short-normal-q1-v1",
+  "host": "gfn16-pilot-c4d",
+  "operations": 1,
+  "cycles": 668025,
+  "signed96_words": 65536,
+  "reset_load_start_readback_each": 1,
+  "final_reference_equal": true,
+  "candidate_seconds": 265.915,
+  "whole_seconds": 651.204159983,
+  "unit_peak_bytes": 3963768832,
+  "collected_bundle_sha256": "b04b4572ff174788b25a65da997a8db2cc257b8c89adbed98d00a0bd42acd994",
+  "evidence": "../../../queue/evidence/s4-p16-diet-short-normal-q1-v1/gate-receipt.json",
+  "scope": "Own frozen paired69/full fitted58 P16 diet/base604832956 cold loaded state. Independent native NTT/CRT/full signed96 final image. Not inherited P8/timing7 or full PRP/board/clock claim."
+}

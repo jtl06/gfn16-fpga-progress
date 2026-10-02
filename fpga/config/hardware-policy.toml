@@ -1,0 +1,29 @@
+schema_version = 1
+# Declarative pre-hardware policy. The mock runner verifies that this remains
+# simulation-only. A future hardware broker must load an operator-owned,
+# read-only copy; changing this workspace file can never enable hardware.
+mode = "simulation_only"
+hardware_enabled = false
+board_verified = false
+shell_verified = false
+primegrid_submission_enabled = false
+target_gfn_n = 16
+future_compatible_gfn_n = [17]
+
+editable_roots = ["rtl/kernel"]
+allowed_bitstream_extensions = [".sof"]
+forbidden_bitstream_extensions = [".pof", ".jic", ".rpd", ".jam", ".jbc"]
+
+[limits]
+# Sensor identity and safe thresholds remain unknown until card intake.
+thermal_limits_verified = false
+automatic_hard_hang_retries = 0
+initial_smoke_test_seconds = 5
+max_simulation_seconds = 1800
+
+[unverified_board]
+family = "Arria 10"
+device = "UNVERIFIED"
+revision = "UNVERIFIED"
+jtag_idcode = "UNVERIFIED"
+clock_profile = "simulation"

@@ -1,0 +1,164 @@
+{
+  "schema": "gfn16-independent-promotion-evidence-review-v1",
+  "updated_at_utc": "2026-10-02T03:07:39Z",
+  "reviewer": "/root/p16_independent_reviewer",
+  "status": "PASS_required_timing7_own_source_numerical_layout_clock_projection_evidence_ADVISOR_AND_MAIN_ADOPTION_PENDING",
+  "promotion_allowed": false,
+  "independence": "Own history contains no candidate/compiler/reference/harness/qualification-test/owner-consolidation authorship. Only separate reviewer records/status. Baseline review machinery reused, never baseline/P8 numerical or clock verdicts; prior conflicted helper verdict not reused.",
+  "candidate": {
+    "root_sha256": "0011468ec67d7ca7ebb86fac88103fd19ea0207dc75685289da64d508228ea28",
+    "paired_root_sha256": "05d7d28e468857602b23a9dad9e8a6d992bc09854d446e6838bd098238ffcc37",
+    "standalone64_compact_map_sha256": "fdcbfb2f8440eb35f35f5e54ebcf3466edfe39f9bca5ce823979f8a923fb9e66",
+    "paired75_compact_map_sha256": "2cc10d06281709f381b8ef242a1525dede8fccafecbd32c87666b0ee960ebabd",
+    "scope": "Timing7 own P16/context1/canonical1/CORR2/COMM1/MONT1 plus all seven explicit timing flags; exact fitted64 contained by qualified compiled75. Not baseline58/69/P8 or new area/retiming successor."
+  },
+  "own_numerical_and_ledger_reviews": [
+    {
+      "path": "results/throughput-20260929/s4-p16-timing7-completed-subset-independent-v1.json",
+      "sha256": "dea052a469849f4e57f78396d35e0e394f77b0d5afa782f00204e646c298db47"
+    },
+    {
+      "path": "results/throughput-20260929/s4-p16-timing7-ledger-independent-v1.json",
+      "sha256": "9ebc7ebc041bfc71d7f2d6d5a5771abba4cbf4a3fcbb9aa22bce83e3bc7204e8"
+    },
+    {
+      "path": "results/throughput-20260929/s4-p16-timing7-long-independent-v1.json",
+      "sha256": "a60762ecdd8f6d0228c511894a588e74f3f1e52bedcd9c58881fdb0369fd4ee5"
+    }
+  ],
+  "numerical_scope": "Own full9/T5b equality; eight complete smallPRPs; full65536 short/100/uninterrupted1000; N256 dense18feedback-row calendar; four descriptor faults/occupied reset10/273/sticky recovery/special-1/after-correct comparator-negative. Own1000 actual1000/500doubles/all65536signed96 words equal native independent reference,9119566cycles/one reset-load-start-readback. Full1000 T5b dormant, own full9 and small roles actualT5b equality. Finite qualification, not exhaustive faults or executed full-size sample PRP.",
+  "owner_snapshots": [
+    {
+      "path": "results/throughput-20260929/s4-p16-timing7-consolidation-owner-v1/completed-subset.json",
+      "sha256": "1fa5127bb2f5a41b736472abc0e23faba0f390c73231e6da90cca0a33e0e3c4c"
+    },
+    {
+      "path": "results/throughput-20260929/s4-p16-timing7-consolidation-owner-v1/long-delta.json",
+      "sha256": "c7cf6b8d67b5641e208d09f90ad6d64085186b749be54f42751bea8563786358"
+    }
+  ],
+  "original_whole_fit": {
+    "receipt": "queue/standing-fit-state/terminal/s4-p16-timing-whole-9000-high-effort-v1/receipt.json",
+    "receipt_sha256": "2d4b20bac40bda37a35a03dec7eecb88eb625ca7fd39a9afefefe65f95508b0e",
+    "archive_sha256": "40847903bb1e8bc3245c7c63c7056601dc05618e447878ffc7499547a8107da1",
+    "actual_manifest_sha256": "2bc778183dcb2e4fd0e98726839edfda4a60aad76155607b35814a013ce0cf76",
+    "files_independently_verified": 96,
+    "bytes_independently_verified": 86753424,
+    "quartus_exit": 0,
+    "summarizer_exit": 0,
+    "source_guard_unchanged": true,
+    "source_drift": [],
+    "seed": 1,
+    "optimization_mode": "High Performance Effort",
+    "device": "10AX115N4F40E3SG",
+    "resources": {
+      "ALM_needed": 318091,
+      "ALM_placed": 382948,
+      "registers": 605823,
+      "LAB": 41959,
+      "LAB_total": 42720,
+      "LAB_percent": "98.21863295880149812734082397",
+      "M20K": 1910,
+      "M20K_total": 2713,
+      "block_memory_bits": 26180638,
+      "DSP_needed": 1300,
+      "DSP_physical": 1318,
+      "DSP_total": 1518,
+      "physical_dense_merge_recoverable": 18
+    },
+    "original9ns_setup": "FAIL -2.043ns",
+    "checked": "Every original retained bundle file size/hash verified both on disk and archive; raw fitter report scalars match summarized final resources. Actual final manifest64/parameters/source controls match own qualified75. Raw source SDC only create_clock kernel_clk9.000 on clk and derive_clock_uncertainty; no exceptions. Raw QSF exact source closure/parameters/seed1/HighPerformanceEffort/4workers, final source guard unchanged. Original native fit/context/terminal success and inventory retained.",
+    "metadata_correction": "Generic summary limitations string says 'reset false-pathed' despite actual rawSDC having no exceptions. Treat that as stale template text, not constraint evidence; no reset-release signoff is claimed either way.",
+    "compiled_QDB_inventory_files": 279,
+    "compiled_QDB_inventory_bytes": 2698411830,
+    "raw_QDB_included": false
+  },
+  "final_audit": {
+    "receipt": "queue/standing-fit-state/audit-terminal/s4-p16-timing-whole-9000-high-effort-v1-audit5/receipt.json",
+    "receipt_sha256": "bae10d47e226584a2da999e30206ed79c206b4d240a729adaad9d176e09c11e1",
+    "archive_sha256": "f8a174cb55304ecb2d24c54ce8b153c1a736fa2759bd109edae03fc1aa486bfe",
+    "spec_sha256": "1aa80e7aba550f6880d51e07e78eb97f148b75ebff7e6c2ab73368d4c92cddb5",
+    "raw_audit_receipt_sha256": "330f5dc2dae966fd180cfdb74032faf6cf067ff11d34df1b4ad301acae667290",
+    "inventory_sha256": "9ba5fcb29e518fdad0bc8c3ba1eb892663fd69b0789296abb2fe192d2b6979bf",
+    "helper_sha256": "549041beeeb991f22d04a985bf040ed82393d48c737ce76d5eed90b3a11102b4",
+    "tcl_sha256": "f7baf3daeb13a06cca73683b0262e692deab9ba9fc935a7e1a97cba4d0051ae0",
+    "original_tree_sha256": "64468ffe0a1f79a0d94c9bafdd56762e80e57e4a523cde0755881db6504ce963",
+    "QDB_inventory_sha256": "4b76a3df68372a24e4f1d6d58e35b4fd4c65d3af5bd5f83baaf2fbde3093b3de",
+    "files_verified": 268,
+    "bytes_verified": 2176389836,
+    "original_source_control_report_pins_verified": 75,
+    "raw_replay": "Archive/inventory/spec/raw receipts and all retained members independently hashed. Frozen pinned helper replayed original9ns baseline and complete ordered raw four-corner selected clocks/effectiveSDC/UCP, setup paths and setup/hold/MPW/recovery/removal reports, reproducing exact terminal timing object. All native STA commands rc0/full completion, fit_commands0; compiled input/original unchanged, final verification errors empty. Snapshot deltas only4 exactreport outputs and2 exact final-from-routed cache promotions with retained exact bytecomparison receipts true. No vendor execution by reviewer.",
+    "QDB_guard_scope": "Original saved database identity is source-bound through trusted pinned inventory/unchanged/cache receipts; raw QDB bytes not in retained archive. No refit or arbitrary database mutation."
+  },
+  "clock": {
+    "period_ns": "11.044",
+    "frequency_MHz": "90.54690329590727997102499095",
+    "corners": [
+      {
+        "name": "Fast900mV0C",
+        "setup_ns": "4.928",
+        "hold_ns": "0.004",
+        "MPW_ns": "5.132"
+      },
+      {
+        "name": "Fast900mV100C",
+        "setup_ns": "3.782",
+        "hold_ns": "0.006",
+        "MPW_ns": "5.133"
+      },
+      {
+        "name": "Slow900mV0C",
+        "setup_ns": "0.195",
+        "hold_ns": "0.024",
+        "MPW_ns": "4.878"
+      },
+      {
+        "name": "Slow900mV100C",
+        "setup_ns": "0.001",
+        "hold_ns": "0.058",
+        "MPW_ns": "4.957"
+      }
+    ],
+    "failing_setup_hold_MPW_endpoints": 0,
+    "observed_setup_paths": 4000,
+    "failing_observed_setup_paths": 0,
+    "meaning": "Fastest tested passing point in finite2ps bracket on this exact saved layout, 1ps printed setup reserve explicitly retained. Internal supported4corner compute-only scope, not robust margin, exhaustive graph or globalFmax."
+  },
+  "adjacent_fail": {
+    "receipt": "queue/standing-fit-state/audit-terminal/s4-p16-timing-whole-9000-high-effort-v1-audit4/receipt.json",
+    "receipt_sha256": "a6ecf12339db504a1d11d3ed577fa2f89050c40a16096b6c7cdfa3e2df1f6b90",
+    "archive_sha256": "7053f46de2c75d3ab0af6ecf959dd96abad5abda7bb39b2e86fdcef5bc15eee3",
+    "period_ns": "11.042",
+    "minimum_setup_ns": "-0.001",
+    "files_verified": 268,
+    "bytes_verified": 2176392457,
+    "checked": "All inventory files size/hash, exact same original75 pins/tree/QDB, raw selected4corner setup/hold/MPW/recovery/removal summaries, clocks/effectiveSDC/UCP and worst setup path/summary bindings independently replayed. Native timing violation retained unchanged."
+  },
+  "projection": {
+    "n": 65536,
+    "p": 16,
+    "base": 604832956,
+    "operations_including_leading_bit": 1911814,
+    "equation": "668026+(1911814-1)*8460=16174606006",
+    "cold_primary_cycles": 16174606006,
+    "cached_alternate_cycles": 16174605907,
+    "period_ns": "11.044",
+    "cold_primary_seconds": "178.632348730264",
+    "cached_alternate_seconds": "178.632347636908",
+    "special_final_extra_cycles_once": 65536,
+    "special_final_extra_seconds_once": "0.000723779584",
+    "boundary": "Start through internal finalized publication, cold setup included;9N canonical andN+3 image copy once. Cached subtracts99 only, special final addsN once. Initial external scalar load/setup, final host readback, board/transport/gaps excluded. Source projection, not measured full-size sample PRP or identical external I/O end-to-end latency."
+  },
+  "exclusions": [
+    "Recovery/removal no paths remain excluded_no_paths, not PASS; native latch selector unsupported with warnings332051/332052, not PASS. No reset-release signoff.",
+    "193 input/797 output virtual unconstrained ports; zero illegal/unconstrained clocks. Pin I/O/location and unused RX/TX critical warnings retained; no board/transport signoff.",
+    "Fitter report's90.56MHz estimate is not selected audited period. Original9ns setup remains FAIL-2.043; no target success inferred.",
+    "LAB98.22% occupancy exceeds future-fit area aim; this completed previously admitted layout is not authority for new fits or area robustness.",
+    "Baseline adopted12.594 clock/58/69 numerical evidence not inherited. No further search, new host/spend/fit or duplicate numerical execution."
+  ],
+  "remaining": [
+    "Advisor verification of this source-specific clock/numerical/projection scope",
+    "Explicit main-agent adoption; reviewer does not self-promote"
+  ],
+  "exploratory_work_blocked": false
+}

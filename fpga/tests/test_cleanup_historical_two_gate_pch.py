@@ -1,0 +1,64 @@
+"""Local pure-Python guard tests; no helper run/native action/deletion."""
+import importlib.util
+from pathlib import Path
+import tempfile
+import unittest
+from unittest.mock import patch
+
+SOURCE=Path(__file__).resolve().parents[1]/'tools/cleanup_historical_two_gate_pch.py'
+spec=importlib.util.spec_from_file_location('pch_cleanup',SOURCE)
+helper=importlib.util.module_from_spec(spec);spec.loader.exec_module(helper)
+
+
+class GuardTests(unittest.TestCase):
+    def setUp(self):
+        self.temp=tempfile.TemporaryDirectory();self.addCleanup(self.temp.cleanup)
+        self.root=Path(self.temp.name).resolve();self.build=self.root/'build';self.build.mkdir()
+        self.target=self.build/'Vgenefer_square_core__pch.h.fast.gch'
+        self.target.write_bytes(b'gpchregenerable')
+        (self.build/'Vgenefer_square_core__pch.h').write_text('retained header')
+        exe=self.build/'Vgenefer_square_core';exe.write_bytes(b'retained executable');exe.chmod(0o755)
+        self.roots=patch.object(helper,'ROOTS',(self.root,));self.roots.start();self.addCleanup(self.roots.stop)
+
+    def record(self):
+        original=helper.identity
+        def owned(path):
+            result=original(path);result['uid']=1000;return result
+        with patch.object(helper,'identity',owned):return helper.target_record(self.target)
+
+    def test_exact_pch_keeps_header_executable_pins(self):
+        record=self.record()
+        self.assertEqual(record['identity']['size'],15)
+        self.assertEqual(len(record['header_sha256']),64)
+        self.assertEqual(len(record['executable_sha256']),64)
+
+    def test_non_pch_magic_rejected(self):
+        self.target.write_bytes(b'ELF!notpch')
+        with self.assertRaisesRegex(RuntimeError,'GCC PCH'):self.record()
+
+    def test_protected_digest_detects_retained_content_change(self):
+        before=helper.protected({self.target})
+        self.target.write_bytes(b'gpchchanged')
+        self.assertEqual(before,helper.protected({self.target}))
+        (self.build/'Vgenefer_square_core__pch.h').write_text('changed header')
+        self.assertNotEqual(before,helper.protected({self.target}))
+
+    def test_symlink_rejected(self):
+        (self.root/'link').symlink_to(self.target)
+        with self.assertRaisesRegex(RuntimeError,'symlink'):helper.protected({self.target})
+
+    def test_wrong_scope_rejected(self):
+        with patch.object(helper,'ROOTS',(self.root/'other',)):
+            with self.assertRaisesRegex(RuntimeError,'outside exact'):self.record()
+
+    def test_apply_surface_is_exact_unlink_not_recursion(self):
+        source=SOURCE.read_text()
+        self.assertEqual(source.count('path.unlink()'),1)
+        self.assertNotIn('rmtree',source)
+        self.assertNotIn('.chmod(',source)
+        self.assertIn('len(value[\'targets\'])==48',source)
+        self.assertIn("args.confirm==CONFIRM",source)
+        self.assertIn("protected(set())==value['protected']",source)
+
+
+if __name__=='__main__':unittest.main()
