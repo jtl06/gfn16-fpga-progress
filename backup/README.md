@@ -1,4 +1,4 @@
-> The snapshot below is historical. See [current FIELD100/R14-F status](CURRENT-CAMPAIGN-2026-10-03.md), its exact public manifest, and the preserved old-C2 HOLD notice.
+> The snapshots below are historical. See the [final technical disposition](FINAL-TECHNICAL-STATE-2026-10-03.md), [compute-completion summary](FINAL-COMPUTE-COMPLETION-SUMMARY.json), exact public manifest and preserved old-C2 HOLD notice.
 
 # Curated FPGA source and evidence backup
 

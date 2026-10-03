@@ -1,0 +1,44 @@
+{
+  "schema": "public-final-compute-completion-technical-summary-v1",
+  "classification": "NEW_LABELED_TECHNICAL_SUMMARY_NOT_SANITIZED_ORIGINAL_RECEIPT",
+  "original_audit_sha256": "e33f53c1adfb71d29e46fbb04385db9d12aaed3ca073dcb3615b9e855095801c",
+  "original_audit_reproduced_verbatim": false,
+  "original_software_compute_goal": "ACHIEVED_WITH_EXPLICIT_SCOPE",
+  "missing_explicit_original_compute_requirements_identified": [],
+  "basis": [
+    "Implemented pipelined NTT for three primes, parallel16-lane CRT/carry and protected two-context recurrence/publication.",
+    "Exact58-source FIELD100 bound to own finite full-size numerical evidence, targeted contracts, partitioned independent reviews and routed whole-core four-corner timing/resources.",
+    "Completion auditor verified twelve adoption-referenced file hashes and all58 captured RTL hashes, inspected integrated source and recomputed scalar projection arithmetic. No native or STA replay, new job or promotion."
+  ],
+  "record": {
+    "candidate": "protected FIELD100 seed2",
+    "core_sha256": "cf789d387c3d1b2e120e9e61a92a4de077a6ba5636a80359492efbd270d6be44",
+    "production_sources": 58,
+    "selected_internal_period_ns": "11.840",
+    "adjacent_failed_period_ns": "11.838",
+    "healthy_equal_count_pair_cycles": 16177181485,
+    "projected_pair_seconds": "191.5378287824",
+    "projected_seconds_per_test_amortized": "95.7689143912",
+    "printed_setup_reserve_ns": "0.000",
+    "no_robust_global_Fmax_claim": true
+  },
+  "excluded_or_unproved": [
+    "Individual-test latency, measured full-sample PRP/board runtime and matched GPU parity.",
+    "Board bitstream deployment, real pin/DDR/PCIe timing, reset release and hardware execution.",
+    "External transport, host GL/rollback, proof/checkpoint system or PrimeGrid release.",
+    "Exhaustive inputs/faults or arbitrary FF/RAM/configuration immunity; finite targeted qualification only.",
+    "Roomy density or100MHz with reserve: actual98.6percent LAB occupancy and zero printed setup reserve remain.",
+    "R14-F physical credit: its source/numerical scoped PASS is separate from final42GiB synthesisOOM, with no completed resources/RAM mapping/QDB/clock and no adoption."
+  ],
+  "original_evidence_pins": {
+    "main_adoption": "5455fd3812f1f4e6210a53370ed25a13c32417955837d653fa58d21454db792b",
+    "advisor_acceptance": "3a5241111b808c39686833750f7d49e5f52bc936dbf4c2555dc84f888ee36005",
+    "FIELD100_source_freeze": "2bb4189dd478b3c3acf25efe8a0655f06f025c5086408bab2cea35459f09ec0f",
+    "full_production_bundle": "f5f0617d989b64bb965b612a0d0cb8b6074c1ecd4f85f01ed66f970dfbf521f2",
+    "own_healthy_ledger": "924fd70b350eaa1916665a1a21163957964008962e1e333b6939bb6194c7275a",
+    "R14F_final_physical_failure": "2f87b80e267642c55c87c5ce51b6b7dbcff683d1123e5d2d8f4ef9029266b2d4"
+  },
+  "operational_shutdown_cleanup_certified_by_this_compute_audit": false,
+  "native_layout_image_supplied": false,
+  "public_source_reports_are_not_raw_QDB_or_bootable_vendor_backup": true
+}

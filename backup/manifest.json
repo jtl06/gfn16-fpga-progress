@@ -17,6 +17,18 @@
       "kind": "new-public-technical-summary-not-original-receipt"
     },
     {
+      "path": "backup/FINAL-COMPUTE-COMPLETION-SUMMARY.json",
+      "size": 3012,
+      "sha256": "7f25672d1c4bb69e94d14edf3d86014d5151b3354de89c9a01bb51d846523c4b",
+      "kind": "final-public-technical-summary-not-private-original"
+    },
+    {
+      "path": "backup/FINAL-TECHNICAL-STATE-2026-10-03.md",
+      "size": 5363,
+      "sha256": "9199fc61e5d0ee8b464d5ce7a217e7c9b09e31a2feb526b15498b6bcff421752",
+      "kind": "final-public-technical-summary-not-private-original"
+    },
+    {
       "path": "backup/timing/s4-p16-c2-combo-r9-whole-12000-azure4-seed2-v1-audit3/audit/timing/baseline-0-checks.rpt",
       "kind": "exact-collected-four-corner-summary-not-QDB",
       "size": 751,
@@ -57019,7 +57031,7 @@
       ]
     }
   ],
-  "phase": "CURRENT_SNAPSHOT_DIRECT_PUBLISH_AUTHORIZED_NOT_FINAL_FREEZE",
+  "phase": "FINAL_TECHNICAL_SNAPSHOT_ROOT_COMPLETION_HANDOFF",
   "base_commit": "8e81c3ed09c3fc469dd440954d6696047bc02030",
   "source_snapshot_frozen_for_copy": true,
   "public_current_summary": "backup/CURRENT-TECHNICAL-SUMMARY.json",
@@ -58069,5 +58081,29 @@
       "qdb_not_archived": true
     }
   ],
-  "source_only_bundle_policy": "Eight exact original generated-source production bundles, max8.7MB each, required by immutable compiler SHA checks. Full content screened in overlapping chunks; not raw native output/QDB/vendor binaries. All well below GitHub100MiB limit."
+  "source_only_bundle_policy": "Eight exact original generated-source production bundles, max8.7MB each, required by immutable compiler SHA checks. Full content screened in overlapping chunks; not raw native output/QDB/vendor binaries. All well below GitHub100MiB limit.",
+  "final_technical_delta": {
+    "base_commit": "a36b6bd0da311327aff5e3c345248701d86e87ed",
+    "prepared_utc": "2026-10-03T07:34:33.483Z",
+    "completion_audit_sha256": "e33f53c1adfb71d29e46fbb04385db9d12aaed3ca073dcb3615b9e855095801c",
+    "original_completion_audit_reproduced": false,
+    "reason": "Original assessment mixes private authority/agent-role context; technical conclusions/pins are preserved in a clearly labeled NEW public summary.",
+    "all_development_source_frozen": true,
+    "native_layout_image": false,
+    "no_private_final_state_or_provider_shutdown_record_published": true,
+    "additions": [
+      {
+        "path": "backup/FINAL-TECHNICAL-STATE-2026-10-03.md",
+        "size": 5363,
+        "sha256": "9199fc61e5d0ee8b464d5ce7a217e7c9b09e31a2feb526b15498b6bcff421752",
+        "kind": "final-public-technical-summary-not-private-original"
+      },
+      {
+        "path": "backup/FINAL-COMPUTE-COMPLETION-SUMMARY.json",
+        "size": 3012,
+        "sha256": "7f25672d1c4bb69e94d14edf3d86014d5151b3354de89c9a01bb51d846523c4b",
+        "kind": "final-public-technical-summary-not-private-original"
+      }
+    ]
+  }
 }
