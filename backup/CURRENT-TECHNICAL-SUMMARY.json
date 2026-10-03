@@ -1,0 +1,115 @@
+{
+  "schema": "public-curated-campaign-technical-summary-v1",
+  "captured_utc": "2026-10-03T06:28:44.636Z",
+  "is_final_freeze_snapshot": false,
+  "original_receipts_not_sanitized": true,
+  "private_receipts_are_digest_only_in_this_new_summary": true,
+  "adopted_FIELD100": {
+    "status": "adopted_internal_compute_only_throughput_record",
+    "core_sha256": "cf789d387c3d1b2e120e9e61a92a4de077a6ba5636a80359492efbd270d6be44",
+    "sources": 58,
+    "selected_period_ns": "11.840",
+    "adjacent_fail_period_ns": "11.838",
+    "projected_pair_cycles": 16177181485,
+    "projected_pair_seconds": "191.5378287824",
+    "projected_amortized_seconds": "95.7689143912",
+    "printed_setup_reserve_ns": 0,
+    "claim": "internal compute-only healthy equal-count projection; not individual latency/full measured PRP/board",
+    "source_numerical_review_status": "PASS_SCOPED_FIELD100_SOURCE_OWN_TEN_TARGETED_AND_HEALTHY_LEDGER",
+    "evidence": [
+      {
+        "path": "fpga/results/throughput-20260929/s4-p16-c2-protected-field100-production-adoption-v1.json",
+        "sha256": "5455fd3812f1f4e6210a53370ed25a13c32417955837d653fa58d21454db792b",
+        "publicly_retained": false
+      },
+      {
+        "path": "fpga/docs/briefs/2026-10-02-advisor-verification-C2-FIELD100.md",
+        "sha256": "3a5241111b808c39686833750f7d49e5f52bc936dbf4c2555dc84f888ee36005",
+        "publicly_retained": true
+      },
+      {
+        "path": "fpga/results/throughput-20260929/field100-source-numerical-scoped-review-v1.json",
+        "sha256": "bbd209beb7e7dcea67991e8a056818497d55292822984c9f1414a2fbd01e7c4c",
+        "publicly_retained": false
+      },
+      {
+        "path": "fpga/results/throughput-20260929/field100-physical-independent-v1.json",
+        "sha256": "a045225cec0225e9a5fc97329055e5f263b5bc34cb6b9785d1b49a96e7100216",
+        "publicly_retained": false
+      }
+    ],
+    "bracket_receipt_sha256": [
+      "2d6e507e84c48639df445f04353feb0de86805eba0381d89a4aad9cb02082f7d",
+      "6eafa657c66a1b2c13b02897946ac29a2543ace05cbd80b26f1a844b7124aa11"
+    ]
+  },
+  "R14F": {
+    "status": "SOURCE_NUMERICAL_SCOPED_PASS_PHYSICS_PARKED_NOT_ADOPTED",
+    "sources": 66,
+    "review_status": "PASS_SCOPED_R14F_SOURCE_EQUIVALENCE_OWN1000_AND_RAW_LEDGER",
+    "own1000": {
+      "count": 1000,
+      "squares": 2000,
+      "descriptors": 1998,
+      "doubles": 1022,
+      "input_words": 393408,
+      "raw_words": 131136,
+      "checked_words": 131072,
+      "initial_resets": 1,
+      "model_threads": 1,
+      "cycles": 8469534,
+      "overlap_edges": 8465303,
+      "warm_edges": [
+        8465302,
+        8469532
+      ],
+      "done_edges": [
+        8465304,
+        8469534
+      ],
+      "reference_seconds": 72.5413,
+      "model_seconds": 1155.46,
+      "seconds": 1228
+    },
+    "review": {
+      "path": "fpga/results/throughput-20260929/r14f-source-equivalence-scoped-review-v2.json",
+      "sha256": "24c1ec4cdd67feab8a733d166ad2f1c3183660e1e3dacd778d4189be91b80049",
+      "publicly_retained": false
+    },
+    "source_freeze": {
+      "path": "fpga/results/throughput-20260929/trackS-r14f-host-offload-chip-v1/source-freeze.json",
+      "sha256": "7f563856f5bd4ee67efc909512f246ad7aea0b8c94db0eccda44360b6afe7893",
+      "publicly_retained": true
+    },
+    "ledger": {
+      "path": "fpga/results/throughput-20260929/trackS-r14f-host-offload-ownlong-v1/healthy-source-native2-100-1000-ledger-v1.json",
+      "sha256": "9ea3dae9fdb093e4c46bb0c1e6248ad17283da87da2bf4eb7b7ab04c1eac4fd9",
+      "publicly_retained": false
+    },
+    "synthesis_failures": [
+      {
+        "actual_memory_max_bytes": 42949672960,
+        "status": "FAILED_LEAF_MEMORY_CGROUP_SYNTHESIS",
+        "phase": "Synthesis frontend; log reached all three fields' root/term extraction. No completed synthesis resource report or ingress RAM mapping proof.",
+        "original_diagnosis_sha256": "b876a96797138bff4f0d2b84a3ac3a787bd6e5befe18def7ef1aa582263ff5ee"
+      },
+      {
+        "actual_memory_max_bytes": 45097156608,
+        "status": "PARKED_ACTUAL_LEAF_OOM_NO_FURTHER_PHYSICAL_RETRY",
+        "elapsed_seconds": 623.478784,
+        "phase": "Actual Quartus synthesis frontend reached all three fields' root/term extraction; last retained RAM extraction is field2 root library line30431.",
+        "completed_synthesis_resource_reports": 0,
+        "original_diagnosis_sha256": "2f87b80e267642c55c87c5ce51b6b7dbcff683d1123e5d2d8f4ef9029266b2d4"
+      }
+    ],
+    "prior_pre_vendor_failures_are_not_physical_OOM_attempts": true,
+    "no_completed_resources_ram_mapping_routed_qdb_or_clock": true,
+    "transport_GL_rollback_implemented": false
+  },
+  "retention": {
+    "public_git_does_not_back_up_QDB": true,
+    "original_best_QDB_and_unique_failure_archives_retained_privately": true,
+    "no_vendor_license_binary_credential_operational_or_root_history_publication": true,
+    "upstream_boundaries_preserved_no_blanket_apache": true
+  }
+}

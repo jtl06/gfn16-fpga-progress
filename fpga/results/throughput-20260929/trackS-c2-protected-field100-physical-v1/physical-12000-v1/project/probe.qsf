@@ -1,0 +1,138 @@
+set_global_assignment -name FAMILY "Arria 10"
+set_global_assignment -name DEVICE 10AX115N4F40E3SG
+set_global_assignment -name TOP_LEVEL_ENTITY genefer_stream27_host_contexts_aw16_p16_protected_field100_v1
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name NUM_PARALLEL_PROCESSORS 4
+set_global_assignment -name SEED 2
+set_global_assignment -name ENABLE_INTERMEDIATE_SNAPSHOTS ON
+set_global_assignment -name SDC_FILE probe.sdc
+set_instance_assignment -name VIRTUAL_PIN ON -to {host_context}
+set_instance_assignment -name VIRTUAL_PIN ON -to {load_we}
+set_instance_assignment -name VIRTUAL_PIN ON -to {read_en}
+set_instance_assignment -name VIRTUAL_PIN ON -to {host_addr[*]}
+set_instance_assignment -name VIRTUAL_PIN ON -to {write_data[*]}
+set_instance_assignment -name VIRTUAL_PIN ON -to {start_contexts[*]}
+set_instance_assignment -name VIRTUAL_PIN ON -to {batch_mode[*]}
+set_instance_assignment -name VIRTUAL_PIN ON -to {feed_mode[*]}
+set_instance_assignment -name VIRTUAL_PIN ON -to {double_bit[*]}
+set_instance_assignment -name VIRTUAL_PIN ON -to {base[*]}
+set_instance_assignment -name VIRTUAL_PIN ON -to {warm_count[*]}
+set_instance_assignment -name VIRTUAL_PIN ON -to {double_mask[*]}
+set_instance_assignment -name VIRTUAL_PIN ON -to {initial_c0[*]}
+set_instance_assignment -name VIRTUAL_PIN ON -to {initial_c1[*]}
+set_instance_assignment -name VIRTUAL_PIN ON -to {command_context}
+set_instance_assignment -name VIRTUAL_PIN ON -to {command_valid}
+set_instance_assignment -name VIRTUAL_PIN ON -to {command_double}
+set_instance_assignment -name VIRTUAL_PIN ON -to {command_index[*]}
+set_instance_assignment -name VIRTUAL_PIN ON -to {command_generation[*]}
+set_instance_assignment -name VIRTUAL_PIN ON -to {command_ready}
+set_instance_assignment -name VIRTUAL_PIN ON -to {command_accept}
+set_instance_assignment -name VIRTUAL_PIN ON -to {operation_accept[*]}
+set_instance_assignment -name VIRTUAL_PIN ON -to {busy[*]}
+set_instance_assignment -name VIRTUAL_PIN ON -to {done[*]}
+set_instance_assignment -name VIRTUAL_PIN ON -to {canonical_ready[*]}
+set_instance_assignment -name VIRTUAL_PIN ON -to {warm_done[*]}
+set_instance_assignment -name VIRTUAL_PIN ON -to {completed_squares[*]}
+set_instance_assignment -name VIRTUAL_PIN ON -to {operations_started[*]}
+set_instance_assignment -name VIRTUAL_PIN ON -to {accepted_generation[*]}
+set_instance_assignment -name VIRTUAL_PIN ON -to {feed_level[*]}
+set_instance_assignment -name VIRTUAL_PIN ON -to {read_valid}
+set_instance_assignment -name VIRTUAL_PIN ON -to {read_context}
+set_instance_assignment -name VIRTUAL_PIN ON -to {read_owner[*]}
+set_instance_assignment -name VIRTUAL_PIN ON -to {read_data[*]}
+set_instance_assignment -name VIRTUAL_PIN ON -to {error}
+set_instance_assignment -name VIRTUAL_PIN ON -to {cycles[*]}
+set_instance_assignment -name VIRTUAL_PIN ON -to {canonical_cycles[*]}
+set_instance_assignment -name VIRTUAL_PIN ON -to {image_copy_cycles[*]}
+set_instance_assignment -name VIRTUAL_PIN ON -to {waiting_final[*]}
+set_instance_assignment -name VIRTUAL_PIN ON -to {final_image_rows[*]}
+set_parameter -name AW 16
+set_parameter -name P 16
+set_parameter -name CONTEXTS 2
+set_parameter -name CORR_SERIAL_BFS 2
+set_parameter -name MONT_FACTORED 1
+set_parameter -name COMM_STAGE_SHARED_MLAB 1
+set_parameter -name COLD_LAUNCH_FENCE 1
+set_parameter -name EXPLICIT_NET_DECLARATIONS 1
+set_parameter -name BOUNDARY_INPUTREG 1
+set_parameter -name QUARANTINE_REPLICAS 1
+set_parameter -name CANONICAL_READ_LOCAL 1
+set_parameter -name CANONICAL_LOAD_LOCAL 1
+set_parameter -name COLD_SECOND_ONESHOT 1
+set_parameter -name COMM_OWNER_COMPARE_LOCAL 1
+set_parameter -name CANONICAL_C0_DIRECT 1
+set_parameter -name ERROR_AGGREGATION_REGISTERED 1
+set_parameter -name FINAL_GS_INPUTREG 1
+set_parameter -name CANONICAL_LOCALBASE 1
+set_parameter -name CARRY_LOCALBASE 1
+set_parameter -name TERM_SELECT_TOKEN 1
+set_parameter -name CANONICAL_PROFILE_SNAPSHOT 1
+set_parameter -name CANONICAL_BEGIN_PAYLOAD_SPLIT 1
+set_parameter -name FIELD_PROTOCOL_ORIGIN_FAST 1
+set_parameter -name FIELD_ERROR_REPORT_REG 1
+set_parameter -name DATAPATH_QUARANTINE_REG 1
+set_parameter -name FEEDBACK_INGRESS_REG 1
+set_parameter -name AUTO_CORRECTION_INGRESS_REG 1
+set_parameter -name C0_ADMISSION_DIRECT 1
+set_parameter -name CANONICAL_FOLD_PAYLOAD_REG 1
+set_parameter -name CARRY_QUARANTINE_LOCAL 1
+set_parameter -name EPOCH_SEED0 65534
+set_parameter -name EPOCH_SEED1 42
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream27_merged_final_gs_pair_v1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream27_mdc_fifo_smallreg_v1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream27_mdc_commutator_sm1_registered_v1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream27_mdc_commutator_sync.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_ntt_banked27_engine.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/merged_stream27_root_library_aw16_p16_f0_v1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream27_shared_term_roots_aw16_p16_f0_v1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream27_mdc_commutator_slots_v2.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream27_root_rom_prefetch.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_digit_reduce27_pipe.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream27_signed_boundary_reduce27_pipe.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream27_epoch_protocol_v5.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream27_row_arithmetic_param_v1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream27_term_context_v2.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream27_correction_serial_p16_f0_v1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream27_correction_serial_v1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream28_merged_ct_aw16_p16_f0_v1_shared_comm_mlab_v1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream27_delay_mlab_v1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream27_montgomery_factored_v1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream27_square_p16_f0_v1_contexts_v1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/merged_stream27_root_library_aw16_p16_f1_v1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream27_shared_term_roots_aw16_p16_f1_v1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream27_correction_serial_p16_f1_v1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream28_merged_ct_aw16_p16_f1_v1_shared_comm_mlab_v1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream27_square_p16_f1_v1_contexts_v1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/merged_stream27_root_library_aw16_p16_f2_v1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream27_shared_term_roots_aw16_p16_f2_v1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream27_correction_serial_p16_f2_v1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream28_merged_ct_aw16_p16_f2_v1_shared_comm_mlab_v1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream27_square_p16_f2_v1_contexts_v1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_crt3_27_mont_pipe.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_montgomery_mul27_sparse_pipe.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_div_recip_precision.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream27_blockcarry_small_cell.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream27_blockcarry_setup_param_v1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream27_host_image_rowwrite_v1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream27_descriptor_fifo_ff_v1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_sdp_ram32.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream27_lazy28_rootregistered_butterfly_v1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream27_signed_boundary_inputreg_v1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream27_quarantine_replicas_v1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream27_mdc_commutator_shared_packed_faultlocal_v1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream27_term_context_param_v1_contexts_v1_storage2_v1_payload_lookahead_v1_select_token_v1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream27_mul_select_token_c2_timing10_v1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream28_merged_gs_aw16_p16_f0_v1_shared_comm_mlab_v1_c2_inputreg_v1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream27_merged_final_gs_pair_inputreg_v1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream28_merged_gs_aw16_p16_f1_v1_shared_comm_mlab_v1_c2_inputreg_v1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream28_merged_gs_aw16_p16_f2_v1_shared_comm_mlab_v1_c2_inputreg_v1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream27_blockcarry_lane_localbase_v1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream27_blockcarry_small_cell_localbase_v1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream27_host_contexts_aw16_p16_protected_field100_v1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream27_epoch_protocol_contexts_v1_payload_lookahead_v1_protected_field100_v1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream27_threefield_carry_aw16_p16_registered_error_v1_protected_field100_v1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream27_warm_contexts_aw16_p16_registered_error_v1_protected_field100_v1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream27_shared_warm_aw16_p16_f0_storage_combo_quarantine_v1_timing10_v1_protected_field100_v1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream27_shared_warm_aw16_p16_f1_storage_combo_quarantine_v1_timing10_v1_protected_field100_v1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream27_shared_warm_aw16_p16_f2_storage_combo_quarantine_v1_timing10_v1_protected_field100_v1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE rtl/genefer_stream27_canonical_image_foldpayload100_v1.sv

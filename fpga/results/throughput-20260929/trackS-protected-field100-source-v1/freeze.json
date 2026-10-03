@@ -1,0 +1,674 @@
+{
+  "R11_transports_composed": false,
+  "arithmetic_report_lag": 2,
+  "binary_inductive_only": true,
+  "bundles": {
+    "256": {
+      "calendars": {
+        "100": {
+          "allocation_edges": [
+            21706,
+            24290
+          ],
+          "clock_or_area_claim": false,
+          "conditional_model_only": true,
+          "count_per_context": 100,
+          "first_edges": [
+            204,
+            311
+          ],
+          "full_read_completion_cycles": 27129,
+          "interval": 215,
+          "measured_or_inherited_sample_cycles": false,
+          "pair_completion_cycles": 26873,
+          "proof_obligations": [
+            "actual transport/control/tag acceptance and fill",
+            "field-retirement versus downstream-CRT lease distinction",
+            "four-edge term recurrence and storage reuse",
+            "fault/reset/cancel flush and origin publication masking",
+            "source-owned I/F/C/cache/seed/PW and cold FIRST edges",
+            "unchanged N+4 copy and per-job publication drain"
+          ],
+          "publication_edges": [
+            24289,
+            26873
+          ],
+          "source_ready": false,
+          "warm_edges": [
+            21704,
+            21811
+          ]
+        },
+        "1000": {
+          "allocation_edges": [
+            215206,
+            217790
+          ],
+          "clock_or_area_claim": false,
+          "conditional_model_only": true,
+          "count_per_context": 1000,
+          "first_edges": [
+            204,
+            311
+          ],
+          "full_read_completion_cycles": 220629,
+          "interval": 215,
+          "measured_or_inherited_sample_cycles": false,
+          "pair_completion_cycles": 220373,
+          "proof_obligations": [
+            "actual transport/control/tag acceptance and fill",
+            "field-retirement versus downstream-CRT lease distinction",
+            "four-edge term recurrence and storage reuse",
+            "fault/reset/cancel flush and origin publication masking",
+            "source-owned I/F/C/cache/seed/PW and cold FIRST edges",
+            "unchanged N+4 copy and per-job publication drain"
+          ],
+          "publication_edges": [
+            217789,
+            220373
+          ],
+          "source_ready": false,
+          "warm_edges": [
+            215204,
+            215311
+          ]
+        },
+        "1911814": {
+          "allocation_edges": [
+            411040216,
+            411042800
+          ],
+          "clock_or_area_claim": false,
+          "conditional_model_only": true,
+          "count_per_context": 1911814,
+          "first_edges": [
+            204,
+            311
+          ],
+          "full_read_completion_cycles": 411045639,
+          "interval": 215,
+          "measured_or_inherited_sample_cycles": false,
+          "pair_completion_cycles": 411045383,
+          "proof_obligations": [
+            "actual transport/control/tag acceptance and fill",
+            "field-retirement versus downstream-CRT lease distinction",
+            "four-edge term recurrence and storage reuse",
+            "fault/reset/cancel flush and origin publication masking",
+            "source-owned I/F/C/cache/seed/PW and cold FIRST edges",
+            "unchanged N+4 copy and per-job publication drain"
+          ],
+          "publication_edges": [
+            411042799,
+            411045383
+          ],
+          "source_ready": false,
+          "warm_edges": [
+            411040214,
+            411040321
+          ]
+        },
+        "2": {
+          "allocation_edges": [
+            636,
+            3220
+          ],
+          "clock_or_area_claim": false,
+          "conditional_model_only": true,
+          "count_per_context": 2,
+          "first_edges": [
+            204,
+            311
+          ],
+          "full_read_completion_cycles": 6059,
+          "interval": 215,
+          "measured_or_inherited_sample_cycles": false,
+          "pair_completion_cycles": 5803,
+          "proof_obligations": [
+            "actual transport/control/tag acceptance and fill",
+            "field-retirement versus downstream-CRT lease distinction",
+            "four-edge term recurrence and storage reuse",
+            "fault/reset/cancel flush and origin publication masking",
+            "source-owned I/F/C/cache/seed/PW and cold FIRST edges",
+            "unchanged N+4 copy and per-job publication drain"
+          ],
+          "publication_edges": [
+            3219,
+            5803
+          ],
+          "source_ready": false,
+          "warm_edges": [
+            634,
+            741
+          ]
+        }
+      },
+      "generated_sha256": {
+        "genefer_crt3_27_mont_pipe.sv": "8bb5b62423c1f61e069f131b5d393dd3dbc84d05348fc1945f6e9c419c104c58",
+        "genefer_digit_reduce27_pipe.sv": "61e14bb13c2dbcc13b5030756578a0d0358269beb24fb207a5641b98795883e8",
+        "genefer_div_recip_precision.sv": "832021ed0b3410dc867d92ac4436a725d5717f9630d233073e39896789ebbd7c",
+        "genefer_montgomery_mul27_sparse_pipe.sv": "501d0ce309a3915f7aed0f3bde14ba1ee8d56ddc5f6abef1f2f5bb572d64db4b",
+        "genefer_ntt_banked27_engine.sv": "534af0c3b2d16b9694200f415e90397ed5000c1350e3e8a7ca02ca4a3383f77f",
+        "genefer_sdp_ram32.sv": "993567fb68fdc216b9ff04489d1810f743b86564434e4b48261ad606b25d53b0",
+        "genefer_stream27_blockcarry_lane_localbase_v1.sv": "cb3fcd665036a1d9028bc2d7e33e96c2e5f57e3e95e16a25460173d32560b236",
+        "genefer_stream27_blockcarry_setup_param_v1.sv": "c9ba8163c8bb43afecf1afee07a8a55c4eb89539318cf235b83508ab692f4f26",
+        "genefer_stream27_blockcarry_small_cell.sv": "eafee617681cbd84cedfe90874938f63bf5ae84123ba1c914410785b44a3e74f",
+        "genefer_stream27_blockcarry_small_cell_localbase_v1.sv": "2005d97a1b512c365b1b6494d8974d3f869d15ee7ce8713115eab8d713e69c1b",
+        "genefer_stream27_canonical_image_foldpayload100_v1.sv": "e07ccea57740154b803d9b4c4e85e456e280d61ca6f24d455834413dee02a234",
+        "genefer_stream27_correction_serial_p16_f0_v1.sv": "ef4bc7575185d545c56cc6922470414f821c60fdf3ad2b75baec85787c69778f",
+        "genefer_stream27_correction_serial_p16_f1_v1.sv": "c5cc1405cba830e7453e0dab85fb3500bfb7a7578a72d267beead468072ca1b9",
+        "genefer_stream27_correction_serial_p16_f2_v1.sv": "9c46d963f71eec3214677cc7d8a3a1b684f1905bb64d288ebf3f584fae1433a2",
+        "genefer_stream27_correction_serial_v1.sv": "2cb1f600293128e56502ac2a3a4384cb437b7af03175033cb0ee6a8ada758309",
+        "genefer_stream27_delay_mlab_v1.sv": "fbcdb5da28c9ae64a68189d0b5a6b60182edcc2c80d98728ca9673555591b36e",
+        "genefer_stream27_descriptor_fifo_ff_v1.sv": "24977500d5f4cbae04358065877371436218b6c5341e930a6922c91e46a44a86",
+        "genefer_stream27_epoch_protocol_contexts_v1_payload_lookahead_v1_protected_field100_v1.sv": "f15a0d82ceaab192417aed9a1e009c92447d662c0a4b69832bf06db99782e090",
+        "genefer_stream27_epoch_protocol_v5.sv": "a01f6b93200d4ee5d1eb7e81664cfd89e373a447e9cbf5173387188f1212df45",
+        "genefer_stream27_host_contexts_aw8_p16_protected_field100_v1.sv": "3bc3769756915482cc484a53bb662b0807781ff326a2e03d8c290fbc75752e67",
+        "genefer_stream27_host_image_rowwrite_v1.sv": "885337be00e43a5a1b49f006e98db6607da35d5d3d62a1723b07e277788597cc",
+        "genefer_stream27_lazy28_rootregistered_butterfly_v1.sv": "889cdb7ff9417897c7c62a52fe67e6750f3f71f5c854d8529c629cc3a98cb145",
+        "genefer_stream27_mdc_commutator_shared_packed_faultlocal_v1.sv": "b5fe6006fc2731f51deed81b47640d0ded34b1ee14c8164f5c9747924a062213",
+        "genefer_stream27_mdc_commutator_slots_v2.sv": "3484e192967d6295dd6dc7f6a325dfd31e1573a327c881be9f9e10558c458da5",
+        "genefer_stream27_mdc_commutator_sm1_registered_v1.sv": "c262261f1a7c7428056111ccdef97462edd081016f219428d2a81b7e429819c9",
+        "genefer_stream27_mdc_commutator_sync.sv": "72e6d497280f8d5eeba28c0af30b79a116e20b338d50a9894355a28d3aa4d218",
+        "genefer_stream27_mdc_fifo_smallreg_v1.sv": "0ff1605c74d81670291f1bd0ee88afe6f5461d999d5ee65fc6f1cc722f4ec4be",
+        "genefer_stream27_merged_final_gs_pair_inputreg_v1.sv": "a230a237c5650552e773cb06930ca5d90abb7f37209d4aae8973b6f2be059a5d",
+        "genefer_stream27_merged_final_gs_pair_v1.sv": "07fc26a9ae44d37eeb8286296c7ddef94c1db6b0103855169d1c4a1bda20a3cc",
+        "genefer_stream27_montgomery_factored_v1.sv": "866c2b19c9e6afbbb56ce71089288334579f90e977ca139b41097d0f9191c690",
+        "genefer_stream27_mul_select_token_c2_timing10_v1.sv": "e24cd1ad4207ebb542b9d3de1eac02bca85c64eebe4d532eddbaeaab35a33f97",
+        "genefer_stream27_quarantine_replicas_v1.sv": "9fc57a202e70c7894d05e29a9de09f44bcf97bb410d783d432cd9aa5ea342a9f",
+        "genefer_stream27_root_rom_prefetch.sv": "f4b9415b855d58a1c5ddbc79fd473eef5388b05c888db1c5dde4825e2b3184fc",
+        "genefer_stream27_row_arithmetic_param_v1.sv": "346528436c6351b96a2ce0340fa6bc2b55d9338e6a1045237bcba80b9b99ee05",
+        "genefer_stream27_shared_term_roots_aw8_p16_f0_v1.sv": "371e2890a158a2bcb2b14cf8e14ae212206a459bf83d3c3800e4e5b71c5644a7",
+        "genefer_stream27_shared_term_roots_aw8_p16_f1_v1.sv": "04842a3293eef8e9813d90b509385a50d75856cf3433d0e680810c8ab6f464f9",
+        "genefer_stream27_shared_term_roots_aw8_p16_f2_v1.sv": "6c4bba24c8b0753acb68a28d80edab8ac18961f371073d6b1f8a2cb488967822",
+        "genefer_stream27_shared_warm_aw8_p16_f0_storage_combo_quarantine_v1_timing10_v1_protected_field100_v1.sv": "9c3a6caa3ced8d44e53fcd5dfe0d6105c702f1496c6c63885b4d2809f5ac2f83",
+        "genefer_stream27_shared_warm_aw8_p16_f1_storage_combo_quarantine_v1_timing10_v1_protected_field100_v1.sv": "5df8f4efc107e91e81b848f9030729a97fccd78b3dae4761c677eaa3cfd6127b",
+        "genefer_stream27_shared_warm_aw8_p16_f2_storage_combo_quarantine_v1_timing10_v1_protected_field100_v1.sv": "2919dc2d4cd210f32bed076555bf42e04f15395d8c2a0ea18f03d2b8091510e1",
+        "genefer_stream27_signed_boundary_inputreg_v1.sv": "907f71b5aad203375d2822ede4207c5e69b3ed4ea79210fc018313e555615a54",
+        "genefer_stream27_signed_boundary_reduce27_pipe.sv": "140fcad078bd089456712e27eed9c1f78f340298f72a7d6860d5bed70bbb9f2d",
+        "genefer_stream27_square_p16_f0_v1_contexts_v1.sv": "5e1499e6e19c5a0d3549ec465a1a187ed324d85f0d685717b3c5a0205ecf653e",
+        "genefer_stream27_square_p16_f1_v1_contexts_v1.sv": "2705d66be1124fc7365e57f96363a8385867a49c480f6efede407ea6c2ddc727",
+        "genefer_stream27_square_p16_f2_v1_contexts_v1.sv": "c963e0b647c4bcfb6192c81690b104ef49f66c0fa847c7c6a8911e53b6ab1ece",
+        "genefer_stream27_term_context_param_v1_contexts_v1_storage2_v1_payload_lookahead_v1_select_token_v1.sv": "b8071f8ea6ba6ac1b7cf8f0b10f92253c738f1b9a4edbf366245b706af001422",
+        "genefer_stream27_term_context_v2.sv": "1785c86519e52908e5e450ec8d48656e2fc402808ad3660bda6aa7e8d4c86592",
+        "genefer_stream27_threefield_carry_aw8_p16_registered_error_v1_protected_field100_v1.sv": "b6e0b995fcb9b9bcda331709db269add9d6ec240f60c08208b62c07b4cddc8bb",
+        "genefer_stream27_warm_contexts_aw8_p16_registered_error_v1_protected_field100_v1.sv": "27cf80797a4c883c834b351e569c00acbbe3755b566cd83a5a89deb59a83da21",
+        "genefer_stream28_merged_ct_aw8_p16_f0_v1_shared_comm_mlab_v1.sv": "d96109dbc9e7c89f488d4b0434d3b611bc46b50f26c12617d7a7218185b38137",
+        "genefer_stream28_merged_ct_aw8_p16_f1_v1_shared_comm_mlab_v1.sv": "3753f6a0d1b216253debb498f67584fbb884ba62bcbd16cd1b7f56aa502ee685",
+        "genefer_stream28_merged_ct_aw8_p16_f2_v1_shared_comm_mlab_v1.sv": "1e253bf8b253cc6db0779994aafbd02b59b138047decd6905d49a1ec61c30499",
+        "genefer_stream28_merged_gs_aw8_p16_f0_v1_shared_comm_mlab_v1_c2_inputreg_v1.sv": "60a9fd69789503f6d82af11388b9e32bf3829751a66a7ef635f572a8e5fa5a0a",
+        "genefer_stream28_merged_gs_aw8_p16_f1_v1_shared_comm_mlab_v1_c2_inputreg_v1.sv": "f06110cea921a218e894f6b8412773be2cfe8c4a9c57421e052dcc434eafd03d",
+        "genefer_stream28_merged_gs_aw8_p16_f2_v1_shared_comm_mlab_v1_c2_inputreg_v1.sv": "0930b1139bc7e4c5855f8045251b024371c6031dc9f351b8e2f5de627fe0575e",
+        "merged_stream27_root_library_aw8_p16_f0_v1.sv": "6fa0f6d3558288b00c29c504b0e4eff850ba288fef1e7994da812bf6c5fbb47f",
+        "merged_stream27_root_library_aw8_p16_f1_v1.sv": "20fb20d7b4a8aefaf91da5ea76ab57e784965956aefa15d997c295be0b36c160",
+        "merged_stream27_root_library_aw8_p16_f2_v1.sv": "5d084e2391d134c1c6861bf9291a581b9791a3bc8d830069009ada5743c890b0"
+      },
+      "geometry": {
+        "automatic_correction_input_edges_added": 1,
+        "aw": 8,
+        "boundary_frontend_added": 1,
+        "boundary_inputreg": 1,
+        "boundary_output": 213,
+        "c0_admission_direct": 1,
+        "cache_margin": 0,
+        "carry_accept": 170,
+        "carry_busy_edges": 62,
+        "carry_done": 214,
+        "cold_correction_input_edges_added": 0,
+        "contexts": 2,
+        "corr_serial_bfs": 2,
+        "correction_cache_latency": 78,
+        "correction_pair_interval": 60,
+        "crt_accept": 153,
+        "crt_output": 168,
+        "ct_output_latency": 66,
+        "double_register": 169,
+        "earliest_feedback_transport_edge": 197,
+        "earliest_next_frame": 196,
+        "existing_feedback_delay": 18,
+        "explicit_feedback_register_rows": 1,
+        "feedback_delay": 19,
+        "feedback_fifo_rows": 19,
+        "final_gs_inputreg": 1,
+        "first_digit": 195,
+        "forward_accept": 12,
+        "full_N_numeric_NTT_performed": false,
+        "gs_output_latency": 67,
+        "initial_latest_correction": 0,
+        "initial_term_seeds": 4,
+        "input_delay": 8,
+        "inverse_accept": 85,
+        "last_digit": 210,
+        "last_sink": 168,
+        "lease_banks": 4,
+        "main_owner_bits": 25,
+        "minimum_transform_frame_spacing": 24,
+        "n": 256,
+        "next_cache_capture": 293,
+        "next_correction_accept": 215,
+        "p": 16,
+        "physical_first": 152,
+        "pointwise_accept": 79,
+        "rows": 16,
+        "scope": "proposed registered integration edge model; not RTL/native/clock qualification",
+        "sink_accept": 153,
+        "square_accept": 81,
+        "term_contexts": 4,
+        "term_owner_bits": 27,
+        "term_seed_first": 71,
+        "term_seed_last": 74,
+        "variant": "p16c",
+        "warm_interval": 215
+      },
+      "parameters": {
+        "AUTO_CORRECTION_INGRESS_REG": 1,
+        "AW": 8,
+        "BOUNDARY_INPUTREG": 1,
+        "C0_ADMISSION_DIRECT": 1,
+        "CANONICAL_BEGIN_PAYLOAD_SPLIT": 1,
+        "CANONICAL_C0_DIRECT": 1,
+        "CANONICAL_FOLD_PAYLOAD_REG": 1,
+        "CANONICAL_LOAD_LOCAL": 1,
+        "CANONICAL_LOCALBASE": 1,
+        "CANONICAL_PROFILE_SNAPSHOT": 1,
+        "CANONICAL_READ_LOCAL": 1,
+        "CARRY_LOCALBASE": 1,
+        "CARRY_QUARANTINE_LOCAL": 1,
+        "COLD_LAUNCH_FENCE": 1,
+        "COLD_SECOND_ONESHOT": 1,
+        "COMM_OWNER_COMPARE_LOCAL": 1,
+        "COMM_STAGE_SHARED_MLAB": 1,
+        "CONTEXTS": 2,
+        "CORR_SERIAL_BFS": 2,
+        "DATAPATH_QUARANTINE_REG": 1,
+        "ERROR_AGGREGATION_REGISTERED": 1,
+        "EXPLICIT_NET_DECLARATIONS": 1,
+        "FEEDBACK_INGRESS_REG": 1,
+        "FIELD_ERROR_REPORT_REG": 1,
+        "FIELD_PROTOCOL_ORIGIN_FAST": 1,
+        "FINAL_GS_INPUTREG": 1,
+        "MONT_FACTORED": 1,
+        "P": 16,
+        "QUARANTINE_REPLICAS": 1,
+        "TERM_SELECT_TOKEN": 1
+      },
+      "solo2": {
+        "allocation_edges": [
+          536
+        ],
+        "clock_or_area_claim": false,
+        "conditional_model_only": true,
+        "count_per_context": 2,
+        "first_edges": [
+          104
+        ],
+        "full_read_completion_cycles": 3375,
+        "interval": 215,
+        "measured_or_inherited_sample_cycles": false,
+        "pair_completion_cycles": 3119,
+        "proof_obligations": [
+          "actual transport/control/tag acceptance and fill",
+          "field-retirement versus downstream-CRT lease distinction",
+          "four-edge term recurrence and storage reuse",
+          "fault/reset/cancel flush and origin publication masking",
+          "source-owned I/F/C/cache/seed/PW and cold FIRST edges",
+          "unchanged N+4 copy and per-job publication drain"
+        ],
+        "publication_edges": [
+          3119
+        ],
+        "source_ready": false,
+        "warm_edges": [
+          534
+        ]
+      },
+      "top": "genefer_stream27_host_contexts_aw8_p16_protected_field100_v1"
+    },
+    "65536": {
+      "calendars": {
+        "100": {
+          "allocation_edges": [
+            850404,
+            1509868
+          ],
+          "clock_or_area_claim": false,
+          "conditional_model_only": true,
+          "count_per_context": 100,
+          "first_edges": [
+            204,
+            4434
+          ],
+          "full_read_completion_cycles": 2234867,
+          "interval": 8461,
+          "measured_or_inherited_sample_cycles": false,
+          "pair_completion_cycles": 2169331,
+          "proof_obligations": [
+            "actual transport/control/tag acceptance and fill",
+            "field-retirement versus downstream-CRT lease distinction",
+            "four-edge term recurrence and storage reuse",
+            "fault/reset/cancel flush and origin publication masking",
+            "source-owned I/F/C/cache/seed/PW and cold FIRST edges",
+            "unchanged N+4 copy and per-job publication drain"
+          ],
+          "publication_edges": [
+            1509867,
+            2169331
+          ],
+          "source_ready": false,
+          "warm_edges": [
+            850402,
+            854632
+          ]
+        },
+        "1000": {
+          "allocation_edges": [
+            8465304,
+            9124768
+          ],
+          "clock_or_area_claim": false,
+          "conditional_model_only": true,
+          "count_per_context": 1000,
+          "first_edges": [
+            204,
+            4434
+          ],
+          "full_read_completion_cycles": 9849767,
+          "interval": 8461,
+          "measured_or_inherited_sample_cycles": false,
+          "pair_completion_cycles": 9784231,
+          "proof_obligations": [
+            "actual transport/control/tag acceptance and fill",
+            "field-retirement versus downstream-CRT lease distinction",
+            "four-edge term recurrence and storage reuse",
+            "fault/reset/cancel flush and origin publication masking",
+            "source-owned I/F/C/cache/seed/PW and cold FIRST edges",
+            "unchanged N+4 copy and per-job publication drain"
+          ],
+          "publication_edges": [
+            9124767,
+            9784231
+          ],
+          "source_ready": false,
+          "warm_edges": [
+            8465302,
+            8469532
+          ]
+        },
+        "1911814": {
+          "allocation_edges": [
+            16175862558,
+            16176522022
+          ],
+          "clock_or_area_claim": false,
+          "conditional_model_only": true,
+          "count_per_context": 1911814,
+          "first_edges": [
+            204,
+            4434
+          ],
+          "full_read_completion_cycles": 16177247021,
+          "interval": 8461,
+          "measured_or_inherited_sample_cycles": false,
+          "pair_completion_cycles": 16177181485,
+          "proof_obligations": [
+            "actual transport/control/tag acceptance and fill",
+            "field-retirement versus downstream-CRT lease distinction",
+            "four-edge term recurrence and storage reuse",
+            "fault/reset/cancel flush and origin publication masking",
+            "source-owned I/F/C/cache/seed/PW and cold FIRST edges",
+            "unchanged N+4 copy and per-job publication drain"
+          ],
+          "publication_edges": [
+            16176522021,
+            16177181485
+          ],
+          "source_ready": false,
+          "warm_edges": [
+            16175862556,
+            16175866786
+          ]
+        },
+        "2": {
+          "allocation_edges": [
+            21226,
+            680690
+          ],
+          "clock_or_area_claim": false,
+          "conditional_model_only": true,
+          "count_per_context": 2,
+          "first_edges": [
+            204,
+            4434
+          ],
+          "full_read_completion_cycles": 1405689,
+          "interval": 8461,
+          "measured_or_inherited_sample_cycles": false,
+          "pair_completion_cycles": 1340153,
+          "proof_obligations": [
+            "actual transport/control/tag acceptance and fill",
+            "field-retirement versus downstream-CRT lease distinction",
+            "four-edge term recurrence and storage reuse",
+            "fault/reset/cancel flush and origin publication masking",
+            "source-owned I/F/C/cache/seed/PW and cold FIRST edges",
+            "unchanged N+4 copy and per-job publication drain"
+          ],
+          "publication_edges": [
+            680689,
+            1340153
+          ],
+          "source_ready": false,
+          "warm_edges": [
+            21224,
+            25454
+          ]
+        }
+      },
+      "generated_sha256": {
+        "genefer_crt3_27_mont_pipe.sv": "8bb5b62423c1f61e069f131b5d393dd3dbc84d05348fc1945f6e9c419c104c58",
+        "genefer_digit_reduce27_pipe.sv": "61e14bb13c2dbcc13b5030756578a0d0358269beb24fb207a5641b98795883e8",
+        "genefer_div_recip_precision.sv": "832021ed0b3410dc867d92ac4436a725d5717f9630d233073e39896789ebbd7c",
+        "genefer_montgomery_mul27_sparse_pipe.sv": "501d0ce309a3915f7aed0f3bde14ba1ee8d56ddc5f6abef1f2f5bb572d64db4b",
+        "genefer_ntt_banked27_engine.sv": "534af0c3b2d16b9694200f415e90397ed5000c1350e3e8a7ca02ca4a3383f77f",
+        "genefer_sdp_ram32.sv": "993567fb68fdc216b9ff04489d1810f743b86564434e4b48261ad606b25d53b0",
+        "genefer_stream27_blockcarry_lane_localbase_v1.sv": "cb3fcd665036a1d9028bc2d7e33e96c2e5f57e3e95e16a25460173d32560b236",
+        "genefer_stream27_blockcarry_setup_param_v1.sv": "c9ba8163c8bb43afecf1afee07a8a55c4eb89539318cf235b83508ab692f4f26",
+        "genefer_stream27_blockcarry_small_cell.sv": "eafee617681cbd84cedfe90874938f63bf5ae84123ba1c914410785b44a3e74f",
+        "genefer_stream27_blockcarry_small_cell_localbase_v1.sv": "2005d97a1b512c365b1b6494d8974d3f869d15ee7ce8713115eab8d713e69c1b",
+        "genefer_stream27_canonical_image_foldpayload100_v1.sv": "e07ccea57740154b803d9b4c4e85e456e280d61ca6f24d455834413dee02a234",
+        "genefer_stream27_correction_serial_p16_f0_v1.sv": "ef4bc7575185d545c56cc6922470414f821c60fdf3ad2b75baec85787c69778f",
+        "genefer_stream27_correction_serial_p16_f1_v1.sv": "c5cc1405cba830e7453e0dab85fb3500bfb7a7578a72d267beead468072ca1b9",
+        "genefer_stream27_correction_serial_p16_f2_v1.sv": "9c46d963f71eec3214677cc7d8a3a1b684f1905bb64d288ebf3f584fae1433a2",
+        "genefer_stream27_correction_serial_v1.sv": "2cb1f600293128e56502ac2a3a4384cb437b7af03175033cb0ee6a8ada758309",
+        "genefer_stream27_delay_mlab_v1.sv": "fbcdb5da28c9ae64a68189d0b5a6b60182edcc2c80d98728ca9673555591b36e",
+        "genefer_stream27_descriptor_fifo_ff_v1.sv": "24977500d5f4cbae04358065877371436218b6c5341e930a6922c91e46a44a86",
+        "genefer_stream27_epoch_protocol_contexts_v1_payload_lookahead_v1_protected_field100_v1.sv": "f15a0d82ceaab192417aed9a1e009c92447d662c0a4b69832bf06db99782e090",
+        "genefer_stream27_epoch_protocol_v5.sv": "a01f6b93200d4ee5d1eb7e81664cfd89e373a447e9cbf5173387188f1212df45",
+        "genefer_stream27_host_contexts_aw16_p16_protected_field100_v1.sv": "cf789d387c3d1b2e120e9e61a92a4de077a6ba5636a80359492efbd270d6be44",
+        "genefer_stream27_host_image_rowwrite_v1.sv": "885337be00e43a5a1b49f006e98db6607da35d5d3d62a1723b07e277788597cc",
+        "genefer_stream27_lazy28_rootregistered_butterfly_v1.sv": "889cdb7ff9417897c7c62a52fe67e6750f3f71f5c854d8529c629cc3a98cb145",
+        "genefer_stream27_mdc_commutator_shared_packed_faultlocal_v1.sv": "b5fe6006fc2731f51deed81b47640d0ded34b1ee14c8164f5c9747924a062213",
+        "genefer_stream27_mdc_commutator_slots_v2.sv": "3484e192967d6295dd6dc7f6a325dfd31e1573a327c881be9f9e10558c458da5",
+        "genefer_stream27_mdc_commutator_sm1_registered_v1.sv": "c262261f1a7c7428056111ccdef97462edd081016f219428d2a81b7e429819c9",
+        "genefer_stream27_mdc_commutator_sync.sv": "72e6d497280f8d5eeba28c0af30b79a116e20b338d50a9894355a28d3aa4d218",
+        "genefer_stream27_mdc_fifo_smallreg_v1.sv": "0ff1605c74d81670291f1bd0ee88afe6f5461d999d5ee65fc6f1cc722f4ec4be",
+        "genefer_stream27_merged_final_gs_pair_inputreg_v1.sv": "a230a237c5650552e773cb06930ca5d90abb7f37209d4aae8973b6f2be059a5d",
+        "genefer_stream27_merged_final_gs_pair_v1.sv": "07fc26a9ae44d37eeb8286296c7ddef94c1db6b0103855169d1c4a1bda20a3cc",
+        "genefer_stream27_montgomery_factored_v1.sv": "866c2b19c9e6afbbb56ce71089288334579f90e977ca139b41097d0f9191c690",
+        "genefer_stream27_mul_select_token_c2_timing10_v1.sv": "e24cd1ad4207ebb542b9d3de1eac02bca85c64eebe4d532eddbaeaab35a33f97",
+        "genefer_stream27_quarantine_replicas_v1.sv": "9fc57a202e70c7894d05e29a9de09f44bcf97bb410d783d432cd9aa5ea342a9f",
+        "genefer_stream27_root_rom_prefetch.sv": "f4b9415b855d58a1c5ddbc79fd473eef5388b05c888db1c5dde4825e2b3184fc",
+        "genefer_stream27_row_arithmetic_param_v1.sv": "346528436c6351b96a2ce0340fa6bc2b55d9338e6a1045237bcba80b9b99ee05",
+        "genefer_stream27_shared_term_roots_aw16_p16_f0_v1.sv": "7aba21482ae0ea956865a542826f1c24445b3fb85ec776ed1fcf35c69dd2ca92",
+        "genefer_stream27_shared_term_roots_aw16_p16_f1_v1.sv": "54862b70e382fc3a1083794844969629492f5ae101ed1ad7ddb3cd1cd6150058",
+        "genefer_stream27_shared_term_roots_aw16_p16_f2_v1.sv": "44e96d3f541cb91a596b766a29f4aa33cb877f3d49f318c07d4d8b454dacdb21",
+        "genefer_stream27_shared_warm_aw16_p16_f0_storage_combo_quarantine_v1_timing10_v1_protected_field100_v1.sv": "0497c3ca02ea95d2ac815b0febb61d8ce98258f0efb1f0f412cfdb8ba05d563a",
+        "genefer_stream27_shared_warm_aw16_p16_f1_storage_combo_quarantine_v1_timing10_v1_protected_field100_v1.sv": "8fc2136f47e997e9db99902ef7e59e357e81e1c2019e8d73edcca2e0924d6011",
+        "genefer_stream27_shared_warm_aw16_p16_f2_storage_combo_quarantine_v1_timing10_v1_protected_field100_v1.sv": "3fba82e291a422f5bfc786e365186e652addb7ddafb7e793204f9a89257725b2",
+        "genefer_stream27_signed_boundary_inputreg_v1.sv": "907f71b5aad203375d2822ede4207c5e69b3ed4ea79210fc018313e555615a54",
+        "genefer_stream27_signed_boundary_reduce27_pipe.sv": "140fcad078bd089456712e27eed9c1f78f340298f72a7d6860d5bed70bbb9f2d",
+        "genefer_stream27_square_p16_f0_v1_contexts_v1.sv": "5e1499e6e19c5a0d3549ec465a1a187ed324d85f0d685717b3c5a0205ecf653e",
+        "genefer_stream27_square_p16_f1_v1_contexts_v1.sv": "2705d66be1124fc7365e57f96363a8385867a49c480f6efede407ea6c2ddc727",
+        "genefer_stream27_square_p16_f2_v1_contexts_v1.sv": "c963e0b647c4bcfb6192c81690b104ef49f66c0fa847c7c6a8911e53b6ab1ece",
+        "genefer_stream27_term_context_param_v1_contexts_v1_storage2_v1_payload_lookahead_v1_select_token_v1.sv": "b8071f8ea6ba6ac1b7cf8f0b10f92253c738f1b9a4edbf366245b706af001422",
+        "genefer_stream27_term_context_v2.sv": "1785c86519e52908e5e450ec8d48656e2fc402808ad3660bda6aa7e8d4c86592",
+        "genefer_stream27_threefield_carry_aw16_p16_registered_error_v1_protected_field100_v1.sv": "35b83c3c7951947f88397a4bc21d6fffb3adea0a2284b3d9399bcf998d96df62",
+        "genefer_stream27_warm_contexts_aw16_p16_registered_error_v1_protected_field100_v1.sv": "c24a00fd7aa9f30b33ae44e31538a7857eb799007c5788b9031a1f0e539e36a4",
+        "genefer_stream28_merged_ct_aw16_p16_f0_v1_shared_comm_mlab_v1.sv": "5e1142f4c05bea2604fd49a7e17ec1b8453a96bcbd95b8de04307db7af00459d",
+        "genefer_stream28_merged_ct_aw16_p16_f1_v1_shared_comm_mlab_v1.sv": "9d076533927e7aa2e596051d5589717242f742abdda7a61f58ec6894c76114b7",
+        "genefer_stream28_merged_ct_aw16_p16_f2_v1_shared_comm_mlab_v1.sv": "a3b34fd30b59f99f4ab03a43a94b8318a8c1c92e4132de11a00386bc5c997d86",
+        "genefer_stream28_merged_gs_aw16_p16_f0_v1_shared_comm_mlab_v1_c2_inputreg_v1.sv": "073ea7e8bc87d9df321f0df8315109c54f1e6b28d8553def21955f327122baa2",
+        "genefer_stream28_merged_gs_aw16_p16_f1_v1_shared_comm_mlab_v1_c2_inputreg_v1.sv": "5c8998e219196b01bab225b05221d1ee25c2dc5113389962acc6bb2666f9ed25",
+        "genefer_stream28_merged_gs_aw16_p16_f2_v1_shared_comm_mlab_v1_c2_inputreg_v1.sv": "dbec8d3bb8ad6f445dd636047732b2dc5677c7b5f98ad33d50ca53cc1404a69e",
+        "merged_stream27_root_library_aw16_p16_f0_v1.sv": "dc3f79d0ca3e3779badc17ee1305eddc605f3563013b3bba468c1e2cafaab2b3",
+        "merged_stream27_root_library_aw16_p16_f1_v1.sv": "c33b591a34153da3562ae09d8e31180607b400c86a3203c92f3794d2fe27406d",
+        "merged_stream27_root_library_aw16_p16_f2_v1.sv": "ffebf05c66bd6e487d20f4ad853582d8397b655e9af77e8050402a7330d4bd5b"
+      },
+      "geometry": {
+        "automatic_correction_input_edges_added": 1,
+        "aw": 16,
+        "boundary_frontend_added": 0,
+        "boundary_inputreg": 1,
+        "boundary_output": 12557,
+        "c0_admission_direct": 1,
+        "cache_margin": 30,
+        "carry_accept": 8434,
+        "carry_busy_edges": 4142,
+        "carry_done": 12558,
+        "cold_correction_input_edges_added": 0,
+        "contexts": 2,
+        "corr_serial_bfs": 2,
+        "correction_cache_latency": 78,
+        "correction_pair_interval": 60,
+        "crt_accept": 8417,
+        "crt_output": 8432,
+        "ct_output_latency": 4202,
+        "double_register": 8433,
+        "earliest_feedback_transport_edge": 8461,
+        "earliest_next_frame": 8460,
+        "existing_feedback_delay": 0,
+        "explicit_feedback_register_rows": 1,
+        "feedback_delay": 1,
+        "feedback_fifo_rows": 1,
+        "final_gs_inputreg": 1,
+        "first_digit": 8459,
+        "forward_accept": 4,
+        "full_N_numeric_NTT_performed": false,
+        "gs_output_latency": 4203,
+        "initial_latest_correction": 4128,
+        "initial_term_seeds": 4,
+        "input_delay": 0,
+        "inverse_accept": 4213,
+        "last_digit": 12554,
+        "last_sink": 12512,
+        "lease_banks": 4,
+        "main_owner_bits": 25,
+        "minimum_transform_frame_spacing": 6144,
+        "n": 65536,
+        "next_cache_capture": 12637,
+        "next_correction_accept": 12559,
+        "p": 16,
+        "physical_first": 8416,
+        "pointwise_accept": 4207,
+        "rows": 4096,
+        "scope": "proposed registered integration edge model; not RTL/native/clock qualification",
+        "sink_accept": 8417,
+        "square_accept": 4209,
+        "term_contexts": 4,
+        "term_owner_bits": 27,
+        "term_seed_first": 71,
+        "term_seed_last": 74,
+        "variant": "p16c",
+        "warm_interval": 8461
+      },
+      "parameters": {
+        "AUTO_CORRECTION_INGRESS_REG": 1,
+        "AW": 16,
+        "BOUNDARY_INPUTREG": 1,
+        "C0_ADMISSION_DIRECT": 1,
+        "CANONICAL_BEGIN_PAYLOAD_SPLIT": 1,
+        "CANONICAL_C0_DIRECT": 1,
+        "CANONICAL_FOLD_PAYLOAD_REG": 1,
+        "CANONICAL_LOAD_LOCAL": 1,
+        "CANONICAL_LOCALBASE": 1,
+        "CANONICAL_PROFILE_SNAPSHOT": 1,
+        "CANONICAL_READ_LOCAL": 1,
+        "CARRY_LOCALBASE": 1,
+        "CARRY_QUARANTINE_LOCAL": 1,
+        "COLD_LAUNCH_FENCE": 1,
+        "COLD_SECOND_ONESHOT": 1,
+        "COMM_OWNER_COMPARE_LOCAL": 1,
+        "COMM_STAGE_SHARED_MLAB": 1,
+        "CONTEXTS": 2,
+        "CORR_SERIAL_BFS": 2,
+        "DATAPATH_QUARANTINE_REG": 1,
+        "ERROR_AGGREGATION_REGISTERED": 1,
+        "EXPLICIT_NET_DECLARATIONS": 1,
+        "FEEDBACK_INGRESS_REG": 1,
+        "FIELD_ERROR_REPORT_REG": 1,
+        "FIELD_PROTOCOL_ORIGIN_FAST": 1,
+        "FINAL_GS_INPUTREG": 1,
+        "MONT_FACTORED": 1,
+        "P": 16,
+        "QUARANTINE_REPLICAS": 1,
+        "TERM_SELECT_TOKEN": 1
+      },
+      "solo2": {
+        "allocation_edges": [
+          21126
+        ],
+        "clock_or_area_claim": false,
+        "conditional_model_only": true,
+        "count_per_context": 2,
+        "first_edges": [
+          104
+        ],
+        "full_read_completion_cycles": 746125,
+        "interval": 8461,
+        "measured_or_inherited_sample_cycles": false,
+        "pair_completion_cycles": 680589,
+        "proof_obligations": [
+          "actual transport/control/tag acceptance and fill",
+          "field-retirement versus downstream-CRT lease distinction",
+          "four-edge term recurrence and storage reuse",
+          "fault/reset/cancel flush and origin publication masking",
+          "source-owned I/F/C/cache/seed/PW and cold FIRST edges",
+          "unchanged N+4 copy and per-job publication drain"
+        ],
+        "publication_edges": [
+          680589
+        ],
+        "source_ready": false,
+        "warm_edges": [
+          21124
+        ]
+      },
+      "top": "genefer_stream27_host_contexts_aw16_p16_protected_field100_v1"
+    }
+  },
+  "copy": "N+4",
+  "field_FAST_lag": 0,
+  "field_report_lag": 1,
+  "flags": {
+    "AUTO_CORRECTION_INGRESS_REG": 1,
+    "C0_ADMISSION_DIRECT": 1,
+    "CANONICAL_FOLD_PAYLOAD_REG": 1,
+    "CARRY_QUARANTINE_LOCAL": 1,
+    "DATAPATH_QUARANTINE_REG": 1,
+    "FEEDBACK_INGRESS_REG": 1,
+    "FIELD_ERROR_REPORT_REG": 1,
+    "FIELD_PROTOCOL_ORIGIN_FAST": 1
+  },
+  "host_report_lag": 1,
+  "logic_level_cap_proven": false,
+  "native_or_clock_or_area_claim": false,
+  "private_tail_activity_not_blanket_flush": true,
+  "protected": true,
+  "publication_fence": 1,
+  "ready_at_utc": "2026-10-02T23:16:01Z",
+  "schema": "protected-field100-source-freeze-v1",
+  "source_pins": {
+    "reference/stream27_canonical_fold_payload_bind.py": "00e26e8a8265ab5eb3f2a8ea652c020d3d7cc0b801f409b3613ff340e467f358",
+    "reference/stream27_canonical_fold_payload_model.py": "506364a2077caa906b24ae66b183b0fe036446280bd407f10b6ead7736ff296f",
+    "reference/stream27_protected_field100_bind.py": "84b14c2ce04d37aec04d7eadb42eec04a9e34c0d1412ed927b8e1a0f60757ebd",
+    "reference/stream27_protected_field100_model.py": "5aa5a877da24c3105fc73d3885a0f1be4dd18c07344ca40e3cd3915030cd794a"
+  }
+}

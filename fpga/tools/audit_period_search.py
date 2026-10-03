@@ -102,7 +102,12 @@ def choose(receipts, project, original_invocation, baseline_ns='10.000', max_sel
                       margins['mpw']*2000)
         candidate = even(Decimal(best)-reserve-2, ROUND_FLOOR)
         if lower is not None and not (lower < candidate < best and candidate not in trials):
-            candidate = even(Decimal(best+lower)/2, ROUND_FLOOR)
+            # A repeated margin-minus2ps point is often the known failure.
+            # Test the untried grid-rounded zero-margin prediction INSIDE the
+            # actual bracket before bisecting. This is only a selected test:
+            # no clock closes without its own collected four-corner result.
+            prediction = even(Decimal(best)-reserve, ROUND_CEILING)
+            candidate = prediction if lower < prediction < best and prediction not in trials else even(Decimal(best+lower)/2, ROUND_FLOOR)
     if candidate < 2000 or candidate > 100000 or candidate in trials:
         return dict(summary, action='bounded_stop', reason='period domain or repeated point reached; boundary unresolved')
     return dict(summary, action='audit', selected_period_ns=f'{candidate/1000:.3f}',

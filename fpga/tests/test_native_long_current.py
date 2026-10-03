@@ -1,9 +1,13 @@
 """Existing long policy, real closed role templates, mocked scalar pilot only."""
 import copy
 import ast
+import functools
 import hashlib
+import importlib.util
 import json
 from pathlib import Path
+import shutil
+import sys
 import tempfile
 import types
 from contextlib import nullcontext
@@ -19,7 +23,86 @@ ROLE=ROOT/'artifacts/s4-p8-canon1-continuous1000-role-v1'
 PILOT=ROOT/'artifacts/s4-p8-canon1-continuous100-role-v1'
 
 
+def captured_azure_meter_fixture(test):
+    """Replay the declared old Azure meter in an isolated, exact-source tree.
+
+    The live meter has advanced under wrap-up authority, so the old long
+    descriptor must not be silently relabelled as current Azure admission.
+    No captured file, live financial guard, package or queue is modified.
+    """
+    @functools.wraps(test)
+    def replay(self):
+        frozen=ROOT/'results/throughput-20260929/s4-p16-diet-continuous1000-thread8-native-v1/packet-v3/capture/source/fpga/cloud/host_hours_azure_signed_v1.py'
+        meter_pin='9c3d902e3da0969145c4148f06a51ec9ca22a322513068074f7b338cb8ddf137'
+        self.assertEqual(hashlib.sha256(frozen.read_bytes()).hexdigest(),meter_pin)
+        live_meter=ROOT/'cloud/host_hours_azure_signed_v1.py'
+        live_pin=hashlib.sha256(live_meter.read_bytes()).hexdigest()
+        spec=importlib.util.spec_from_file_location('_captured_azure_meter_fixture',frozen)
+        meter=importlib.util.module_from_spec(spec);spec.loader.exec_module(meter)
+        # Its unchanged parser reads only individually pinned repository data;
+        # __file__ remains the genuine captured source for descriptor identity.
+        meter.ROOT=ROOT
+        with tempfile.TemporaryDirectory(prefix='captured-azure-meter-') as temporary:
+            isolated=Path(temporary).resolve()/'fpga';(isolated/'tools').mkdir(parents=True)
+            worker=package.worker()
+            files={worker.source_name(name):worker.helper_path(name) for name in worker.PINS}
+            files['tools/native_long_package_v3.py']=Path(package.__file__)
+            for version in range(1,15):
+                name=f'tools/native_profile_variants_v{version}.py'
+                files[name]=ROOT/name
+            for version in (1,2,3):
+                for kind in ('package','stage'):
+                    name=f'tools/native_threaded_wide_{kind}_v{version}.py'
+                    files[name]=ROOT/name
+            for name,path in files.items():
+                target=isolated/name;target.parent.mkdir(parents=True,exist_ok=True)
+                shutil.copyfile(path,target)
+                self.assertEqual(hashlib.sha256(target.read_bytes()).hexdigest(),hashlib.sha256(path.read_bytes()).hexdigest())
+            def financial_closure(descriptor):
+                self.assertEqual(descriptor['checker_sha256'],meter_pin)
+                for name,pin in meter.evidence_pins(descriptor).items():
+                    source=frozen if name=='cloud/host_hours_azure_signed_v1.py' else ROOT/name
+                    self.assertEqual(hashlib.sha256(source.read_bytes()).hexdigest(),pin)
+                    target=isolated/name;target.parent.mkdir(parents=True,exist_ok=True)
+                    shutil.copyfile(source,target)
+            old_budget=json.loads((ROOT/'results/throughput-20260929/s4-p16-diet-continuous1000-thread8-native-v1/budget.json').read_text())
+            financial_closure(old_budget)
+            spec=importlib.util.spec_from_file_location('_current_long_with_captured_meter',isolated/'tools/native_long_package_v3.py')
+            closed=importlib.util.module_from_spec(spec);spec.loader.exec_module(closed)
+            actual_prepare=closed.prepare
+            def prepare(*args,**kwargs):
+                financial_closure(json.loads(Path(args[6] if len(args)>6 else kwargs['budget']).read_text()))
+                return actual_prepare(*args,**kwargs)
+            closed.prepare=prepare
+            import fpga.cloud as cloud
+            from fpga.tools import global_queue_v1 as queue, native_profile_variants_v14 as matcher
+            # The real intake bytecode uses the exact same checker source,
+            # now rooted at this closed historical financial fixture.
+            identity=types.FunctionType(queue.functional_identity.__code__,
+                dict(queue.functional_identity.__globals__,FPGA=isolated))
+            with patch.object(sys.modules[__name__],'package',closed), \
+                 patch.dict(sys.modules,{'fpga.cloud.host_hours_azure_signed_v1':meter}), \
+                 patch.object(cloud,'host_hours_azure_signed_v1',meter,create=True), \
+                 patch.object(queue,'functional_identity',identity), \
+                 patch.object(matcher,'HERE',isolated/'tools'):
+                result=test(self)
+            self.assertEqual(hashlib.sha256(frozen.read_bytes()).hexdigest(),meter_pin)
+            self.assertEqual(hashlib.sha256(live_meter.read_bytes()).hexdigest(),live_pin)
+            return result
+    return replay
+
+
 class CurrentLongTests(unittest.TestCase):
+    def test_captured_meter_replay_does_not_grant_current_azure_admission(self):
+        budget=json.loads((ROOT/'results/throughput-20260929/s4-p16-diet-continuous1000-thread8-native-v1/budget.json').read_text())
+        current=hashlib.sha256((ROOT/'cloud/host_hours_azure_signed_v1.py').read_bytes()).hexdigest()
+        self.assertNotEqual(current,budget['checker_sha256'])
+        with self.assertRaisesRegex(ValueError,'signed meter source'):
+            package.worker(budget,8)
+        changed=dict(budget,checker_sha256=current)
+        with self.assertRaisesRegex(ValueError,'exact source-bound serial Azure10815 descriptor'):
+            package.azure_binding(changed,changed['host'])
+
     def test_future_compiler_count_uses_actual_own_rss_and_reserved_cores(self):
         bound=ROOT/'results/throughput-20260929/s4-p16-diet-continuous1000-thread8-native-v1/bound'
         manifest=json.loads((bound/'manifest.json').read_text())
@@ -50,6 +133,7 @@ class CurrentLongTests(unittest.TestCase):
         next(row for row in tiny['steps'] if row['name']=='build')['native_child_usage']['peak_rss_kib']=100000
         self.assertEqual(runtime.compilation_bound(manifest,tiny,8)['compile_workers'],8)
 
+    @captured_azure_meter_fixture
     def test_future_override_packages_truthful_config_without_mutating_role(self):
         bound=ROOT/'results/throughput-20260929/s4-p16-diet-continuous1000-thread8-native-v1'
         raw=(bound/'bound/manifest.json').read_bytes()
@@ -191,6 +275,7 @@ class CurrentLongTests(unittest.TestCase):
             wrong=copy.deepcopy(descriptor);wrong[key]=value
             with self.assertRaises(ValueError):package.azure_binding(wrong,descriptor['host'])
 
+    @captured_azure_meter_fixture
     def test_real_measured_bound_role_closed_packet_and_safe_inspection(self):
         bound=ROOT/'results/throughput-20260929/s4-p8-canon1-continuous-bound-v1'
         manifest=json.loads((bound/'manifest.json').read_text())
@@ -305,6 +390,7 @@ class CurrentLongTests(unittest.TestCase):
             with patch.object(runtime.wide.time,'time',return_value=runtime.wide.DEADLINE-runtime.wide.DRAIN_LEAD_SECONDS-10814):
                 with self.assertRaisesRegex(ValueError,'full wide10815'):value.guard_protected(selected)
 
+    @captured_azure_meter_fixture
     def test_wide_long_real_closed_package_data_stage_and_namespace(self):
         full,values,pins=self.wide_fixture();policy=runtime.duration_for(8)
         from fpga.cloud import host_hours_azure_signed_v1 as meter
@@ -372,6 +458,7 @@ class CurrentLongTests(unittest.TestCase):
                 self.assertEqual(events,[({'source_sha256':'a'*64},count)])
                 self.assertEqual(scope['result'],'no native execution')
 
+    @captured_azure_meter_fixture
     def test_public_worker_run_uses_real_wide_parent_before_commands(self):
         # The production failure occurred in package run's source preflight,
         # before execute(). Import the actual closed package and call run;

@@ -1,0 +1,11 @@
+{
+  "status": "PASS_expected_contracts",
+  "id": "s4-r14f-b-equivalence-controls-faults-q1-v1",
+  "gate": "queue/evidence/s4-r14f-b-equivalence-controls-faults-q1-v1/gate-receipt.json",
+  "gate_sha256": "be90525c8baf499e05174fe071a2958b094032dd8156a031c8d825d31a16b4b7",
+  "scope": "AUTHOR: actual healthy N256 twin body prelude then20 public chip partial/reset/range/profile/generation/receiver cases,11 C atomic-output errors,480 quiet edges; reset clears staging/loaded/authority and requires reload, not arithmetic checkpoint rollback.",
+  "source_check": "Selected compiled67/build parameters/steps match own frozen F role;6a992/c2d3/C7679; same executable healthy first, no old R14 gate credit.",
+  "independent_review": false,
+  "arbitrary_corruption_or_generic_fault_coverage_claim": false,
+  "clock_area_transport_GL_or_promotion_claim": false
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS_expected_contracts",
+  "id": "s4-r14f-b-equivalence-fullspecial-normal-q1-v1",
+  "gate": "queue/evidence/s4-r14f-b-equivalence-fullspecial-normal-q1-v1/gate-receipt.json",
+  "gate_sha256": "864eebafd9af2604964e8fdcecb4cc91d6c37d3b9fec58c2695e495dfd022675",
+  "scope": "AUTHOR: two fullN65536 actual impulse b^(N/2) squares yield special−1; actual cold/raw/C/FPGA/model/independent bodies all match, full56 owners16776705/10753, OFF10N canonical and ON W+2 raw fence. Not inferred from AW8 or old R14.",
+  "source_check": "Own selected compiled67/build parameters/steps match immutable F fullspecial role; compiler6a992/ingressc2d3/C7679; no coordinator fullN arithmetic or RTL rerun.",
+  "independent_review": false,
+  "clock_area_transport_GL_or_promotion_claim": false,
+  "remaining": "own1000 and source-own physical/nonauthor/advisor"
+}

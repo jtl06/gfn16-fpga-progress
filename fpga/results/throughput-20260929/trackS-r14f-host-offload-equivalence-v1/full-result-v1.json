@@ -1,0 +1,12 @@
+{
+  "status": "PASS_expected_contracts",
+  "id": "s4-r14f-b-equivalence-full-normal-q1-v1",
+  "gate": "queue/evidence/s4-r14f-b-equivalence-full-normal-q1-v1/gate-receipt.json",
+  "gate_sha256": "f308b6552f2e8100b8bd359fd2d34bb4c80c344fca1766977cda125fa9362184",
+  "scope": "AUTHOR: own N65536 actual FIELD100 OFF/B_ON, two contexts/counts2/2, all131072 canonical words and actual cold/profile/raw/full56 bodies matched by worker source-bound C/model/independent reference checks; own8461 interval/W+2.",
+  "source_check": "Own selected compiled67 source map/build parameters/steps match immutable full role; F compiler6a992 and banked ingressc2d3 plus C7679, relay OFF; no old R14 results.",
+  "independent_review": false,
+  "coordinator_full_N_numeric_rerun": false,
+  "clock_area_transport_GL_or_promotion_claim": false,
+  "remaining": "fullspecial and own100/1000, physical/nonauthor/advisor"
+}

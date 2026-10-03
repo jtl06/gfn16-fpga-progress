@@ -1,9 +1,0 @@
-Synthesis Status : Successful - Fri Oct  2 06:46:32 2026
-Revision Name : probe
-Top-level Entity Name : genefer_stream27_host_contexts_aw16_p16_timing7_v1_storage2_v1
-Family : Arria 10
-Quartus Prime Version : 26.1.0 Build 110 03/26/2026 SC Pro Edition
-Device : 10AX115N4F40E3SG
-Logic utilization estimate (in ALMs) : 345,565 / 427,200 ( 81 % )
-Total registers : 648609
-Estimated DSP Blocks Post-Merging : 1,300

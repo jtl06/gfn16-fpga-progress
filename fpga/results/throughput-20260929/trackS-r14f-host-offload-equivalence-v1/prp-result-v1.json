@@ -1,0 +1,11 @@
+{
+  "status": "PASS_expected_contracts",
+  "id": "s4-r14f-b-equivalence-prp-normal-q1-v1",
+  "gate": "queue/evidence/s4-r14f-b-equivalence-prp-normal-q1-v1/gate-receipt.json",
+  "gate_sha256": "b41347a14f5b13aadb73fe52054d8edc3b62567f0b7e6d64ca31a21ce76259ff",
+  "scope": "AUTHOR: complete N256 exponents1009^256/2017^256, leading bit included, counts2555/2811 with5364 descriptors/no checkpoints. Actual cold/raw/C/on-chip/independent pow all512 canonical words match, full56 final owners42849662977/47144707073; own215 interval.",
+  "source_check": "Selected build67/parameters/steps match own frozen F role, compiler6a992/ingressc2d3/C7679; no old R14 gate credit.",
+  "independent_review": false,
+  "full_N_PRP_or_primality_claim": false,
+  "clock_area_transport_GL_or_promotion_claim": false
+}

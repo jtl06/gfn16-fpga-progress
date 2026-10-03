@@ -1,0 +1,100 @@
+{
+  "transfers": [
+    "source_to_warm",
+    "job_configuration_snapshot",
+    "profiles_to_carry",
+    "descriptors_to_warm_control",
+    "arithmetic_to_field0",
+    "field0_to_CRT",
+    "arithmetic_to_field1",
+    "field1_to_CRT",
+    "arithmetic_to_field2",
+    "field2_to_CRT",
+    "CRT_double_to_carry",
+    "carry_feedback_to_warm",
+    "carry_boundary_to_fields",
+    "prospective_fault_to_sticky_origin",
+    "field0_FAST_to_report_and_quarantine",
+    "field1_FAST_to_report_and_quarantine",
+    "field2_FAST_to_report_and_quarantine",
+    "FAST_barrier_to_sixteen_carry_receivers",
+    "B_cold_registered_packet",
+    "B_profile_binding",
+    "B_final_packet"
+  ],
+  "stage_ids": [
+    "CRT_coefficient_output",
+    "complete_automatic_correction_ingress",
+    "complete_feedback_ingress",
+    "doubled_coefficient",
+    "feedback_descriptor_capture",
+    "field0_accepted_protocol_FAST",
+    "field0_delayed_report",
+    "field1_accepted_protocol_FAST",
+    "field1_delayed_report",
+    "field2_accepted_protocol_FAST",
+    "field2_delayed_report",
+    "global_registered_report",
+    "local_fault_capture",
+    "per_carry_quarantine_receive"
+  ],
+  "findings": [],
+  "exclusions": [
+    {
+      "kind": "external_virtual_io",
+      "reason": "Compute-only virtual pins; no board I/O, protocol electrical timing, pin mapping or external throughput.",
+      "endpoints": [
+        "all non-clock top virtual inputs/outputs"
+      ]
+    },
+    {
+      "kind": "external_reset",
+      "reason": "Reset release/recovery and board reset distribution are not proven by this source inventory.",
+      "endpoints": [
+        "rst_n"
+      ]
+    },
+    {
+      "kind": "inside_single_macroblock",
+      "reason": "Declared macroblock transfer ledger only; internal CT/GS/root/term/divider connectivity requires actual post-fit reports.",
+      "endpoints": [
+        "field0/1/2 internal arithmetic",
+        "CRT/carry internal pipelines"
+      ]
+    },
+    {
+      "kind": "inside_single_macroblock",
+      "reason": "New field-internal payload owner/row/B-coefficient lookahead FFs select data one edge ahead; original full-owner admission, cache/fault authority and public E4 calendar remain. Not a new inter-macroblock cycle or timing exception.",
+      "endpoints": [
+        "field0/1/2 protocol payload lookahead to term/B coefficient selection"
+      ]
+    },
+    {
+      "kind": "inside_single_macroblock",
+      "reason": "R3 field-local CT/GS stop copies use exact original sticky setter/reset on same edge; public controller_error/pending and origin work unchanged. No new pipeline stage or timing exception.",
+      "endpoints": [
+        "field0/1/2 fault_replicas to forward_transform/inverse_transform quarantine"
+      ]
+    },
+    {
+      "kind": "inside_single_macroblock",
+      "reason": "Protected source retains full25 final inverse alignment6->7, canonical profile/threshold/term/carry timing and zero-edge ENA split. Source inventory is not netlist completeness or timing proof.",
+      "endpoints": [
+        "three final inverse GS paths/full25 metadata",
+        "canonical accepted-base terms",
+        "term payload selector",
+        "carry accepted-profile terms"
+      ]
+    },
+    {
+      "kind": "inside_single_macroblock",
+      "reason": "No R11 transport boundary exists in this source. Final GS7, raw term join, exact uint32 field-C0 direct identity and healthy feedback/correction q retain source own calendar. FAST/report semantic changes explicitly inventoried; no netlist completeness or <=6-level proof.",
+      "endpoints": [
+        "field CT/GS",
+        "raw term/addB",
+        "raw square/inverse",
+        "field C0 admission"
+      ]
+    }
+  ]
+}

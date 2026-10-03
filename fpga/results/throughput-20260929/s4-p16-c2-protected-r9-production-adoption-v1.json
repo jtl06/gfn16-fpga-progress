@@ -1,0 +1,143 @@
+{
+  "schema": "gfn16-production-adoption-v1",
+  "recorded_utc": "2026-10-02T22:18:00Z",
+  "candidate": "Streaming P16 protected two-context R9 registered-error, seed2",
+  "status": "adopted_internal_compute_only_throughput_record",
+  "replaces_record": "Protected R7 two-context throughput; retained as two-context fallback. Timing7 remains the single-test record/fallback.",
+  "candidate_core_sha256": "33a89e3bf4f505118cb4f6f45fb23f00e718396f86137fe6d4e990401ab679c8",
+  "production_source_count": 55,
+  "native_observer_source_count": 56,
+  "production_top": "genefer_stream27_host_contexts_aw16_p16_storage_combo_registerederror_v1",
+  "production_binder_sha256": "3a507134f0a68fa393653ca1f8c7ac6e7fe7288d1f5ad0e7e36dc9657cf2a865",
+  "production_bundle": {
+    "path": "results/throughput-20260929/trackS-c2-storage-combo-registerederror-native-v1/full-normal/production-bundle.json",
+    "sha256": "01220c6efc522973786786eb5c65076d3bf396a9c290aa65464e3086e34d8bc9"
+  },
+  "source_scope": "Exact protected R9 root and its own selected seed2 layout only. Frozen R10/R11/R12/lean and old pre-R6 C2 are not adopted or rebased.",
+  "independent_reviews": [
+    {
+      "path": "results/throughput-20260929/s4-p16-c2-r9-eight-numerical-ledger-scoped-review-v1.json",
+      "sha256": "c3b537553497afe03e8de22a74df87560aae01ce344350e34821f41a9a67c0d9"
+    },
+    {
+      "path": "results/throughput-20260929/r9-registerederror-barrier-independent-v2.json",
+      "sha256": "a578d00901e33f420ca0fdb1f4a7227fbf5e5990e990ce50d7b5883e3d22acbf"
+    },
+    {
+      "path": "results/throughput-20260929/r9-seed2-clock-scoped-independent-v2.json",
+      "sha256": "38c3ebd97749f2ba83e6603c8c24903a66d500fc9ea48b9968197e17022a2bc0"
+    }
+  ],
+  "review_partition": {
+    "source_and_numerical_jobs_0_to_7": "p16_independent_reviewer; its authored barrier jobs8/9 excluded",
+    "registered_error_barrier_jobs_8_to_9": "independent_review; its authored storage2/private lean and directbound ancestry excluded, qualified literal ancestry reused",
+    "physical_clock": "independent_review; own new layout/QDB/constraints only, no source/numerical/self-authored storage/lean replay",
+    "single_reviewer_global_nonauthorship_claim": false
+  },
+  "advisor_acceptance": {
+    "path": "docs/briefs/2026-10-02-advisor-verification-C2-R9.md",
+    "sha256": "27cffe3ac5db63c65e66747b2b587b8f01c9fc51c4e82614910e4a27e60775fa"
+  },
+  "advisor_request": {
+    "path": "results/throughput-20260929/trackS-c2-protected-r9-promotion-v1/promotion-request-v1.json",
+    "sha256": "78dd2a4e164adad1da8d7e3fc8add575f935e027ef2f19d96cb99d91bfa74dc5"
+  },
+  "frozen_request_disposition": "The earlier immutable request remains READY/NOT_ADOPTED as submitted; this additive receipt records the subsequent explicit advisor acceptance and adoption.",
+  "numerical_index": {
+    "path": "results/throughput-20260929/trackS-c2-storage-combo-registerederror-ownlong-v1/numerical-index-v1.json",
+    "sha256": "3ce202af137753f9be1d258614bc303bf7307e52b8472bf1bc8c5c72115ea473"
+  },
+  "numerical_closure_overlay": {
+    "path": "results/throughput-20260929/trackS-c2-storage-combo-registerederror-ownlong-v1/numerical-index-closure-overlay-v1.json",
+    "sha256": "f284ff2e76709d7f67c96c44a33481a927aafa595111fcb692a7c68128791cbf"
+  },
+  "healthy_ledger": {
+    "path": "results/throughput-20260929/trackS-c2-registerederror-ledger-v1/publication-ledger-joined-v2.json",
+    "sha256": "86de887bfea10b24f20234000bebc5ac92faf74a5a5a133ec7df777d59fc60d5"
+  },
+  "selected_layout": {
+    "id": "s4-p16-c2-combo-r9-whole-12000-azure4-seed2-v1",
+    "invocation": "490d54d6ba564e6c9477c7b05a6859a0",
+    "original_tree_sha256": "ea15cb8768375a2966655f5dd147a5b699d4a1869a6cfa718d69eaebefa89235",
+    "qdb_inventory_sha256": "90f3dc491ac86e51e7155031cd8c5fde968a96d52cde286432458aa377f21872",
+    "pass": {
+      "path": "queue/standing-fit-state/audit-terminal/s4-p16-c2-combo-r9-whole-12000-azure4-seed2-v1-audit3/receipt.json",
+      "sha256": "eb373d08175b2b5ce536eabef29aa7522b0ad380373cf553e613b79002ac4327",
+      "period_ns": "13.070"
+    },
+    "adjacent_fail": {
+      "path": "queue/standing-fit-state/audit-terminal/s4-p16-c2-combo-r9-whole-12000-azure4-seed2-v1-audit4/receipt.json",
+      "sha256": "b2d6fb049784efbf1e8bd33d1e4a32fb8b1d40f6218abd2112ac4cb191e3aea4",
+      "period_ns": "13.068"
+    }
+  },
+  "sample": {
+    "N": 65536,
+    "base_per_context": 604832956,
+    "contexts": 2,
+    "operations_including_leading_bit_per_context": 1911814,
+    "ordinary_outputs": true
+  },
+  "compute_projection": {
+    "ordinary_equal_sample_pair_cycles": 16173357858,
+    "selected_audited_period_ns": "13.070",
+    "pair_seconds": "211.38578720406",
+    "amortized_seconds_per_test": "105.69289360203",
+    "warm_launch_interval_cycles": 8459,
+    "formula": "204+(1911814-1)*8459+12558+2*(4096+10*65536)+15+2",
+    "publication_edge_delta_vs_R7": "One extra publication edge per job, two per pair, bound by the own R9 native2/100/1000 ledger.",
+    "boundary": "Both cold profiles, final canonicalization and internal N+4 copy included; timely descriptors and no host gaps assumed. External load/setup/readback/transport excluded.",
+    "measured_full_sample_PRP_runtime": false,
+    "amortized_throughput_is_individual_latency": false
+  },
+  "whole_resources": {
+    "needed_alms": 312824,
+    "placed_alms": 376452,
+    "labs": 42023,
+    "device_labs": 42720,
+    "registers": 590951,
+    "m20ks": 1916,
+    "mlabs": 624,
+    "needed_dsps": 1300,
+    "physical_dsps": 1318
+  },
+  "selected_internal_timing": {
+    "minimum_setup_ns": "0.001",
+    "failing_endpoints": 0,
+    "minimum_hold_ns": "0.005",
+    "minimum_pulse_width_ns": "5.931",
+    "adjacent_failing_period_ns": "13.068",
+    "clock_uncertainty_ns": "0.030",
+    "raw_sdc_exceptions": "none",
+    "four_corner_saved_layout_audit": true,
+    "same_qdb_and_original_tree": true
+  },
+  "qualification_scope": {
+    "own_native_gates": 10,
+    "continuous_operations_per_context": 1000,
+    "total_continuous_operations": 2000,
+    "accelerated_wrap_not_billions_of_real_edges": true,
+    "protected_build": true,
+    "lean": false,
+    "scope_limits": [
+      "Two-test internal compute-only amortized throughput, not individual latency, board runtime or measured full-sample PRP.",
+      "Healthy legal owners/profiles and timely descriptor feed; accepted cold one-shot and own timestamp-alias tests are not billions of actual protocol edges.",
+      "Cache evidence is eventual duplicate-abort/no-publication, not first matching-token age or readiness-substitution immunity.",
+      "Targeted registered-origin/publication sweeps are N256; private publication flags may pulse, externally visible publication is masked.",
+      "Full COUNT2 reset footer is not epoch-wrap evidence; own1000 proves actual epoch16 wrap. Crosstalk is output-word comparator mutation, not arbitrary RAM fault immunity or peer-local recovery.",
+      "Virtual-I/O compute-only timing; board I/O and reset-release excluded, unsupported latch paths not qualified, minimal printed reserve is not robust global Fmax.",
+      "No lean, GL, rollback, R11/R12 execution or clock transfer; old pre-R6 C2 full-chain HOLD remains."
+    ]
+  },
+  "exclusions": [
+    "1ps printed setup reserve is not robust board margin or global maximum frequency.",
+    "Virtual I/O and reset-release/recovery/removal are not signed off; unsupported latch-selector paths are not qualified.",
+    "No actual complete 1.9-million-operation hardware/sample PRP runtime.",
+    "Cache coverage is eventual duplicate-token abort, not arbitrary first-token age/readiness protection.",
+    "Targeted output-comparator cross-talk is not arbitrary RAM/configuration protection or peer-local recovery.",
+    "Host Gerbicz–Li and rollback are unimplemented.",
+    "All pre-R6 C2 full-chain projections remain HOLD.",
+    "No source, numerical, fault or clock qualification transfers to R10/R11/R12/lean successors or to another R9 layout."
+  ],
+  "implementation": "Main records partitioned independent receipts and explicit advisor acceptance after identity checks only; no third numerical replay, frozen-source rebase, publication or board programming."
+}

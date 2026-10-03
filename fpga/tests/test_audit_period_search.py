@@ -59,6 +59,34 @@ class SearchTests(unittest.TestCase):
         self.assertEqual(decision['action'], 'bounded_stop')
         self.assertIsNone(decision['best_passing_period_ns'])
 
+    def test_zero_margin_prediction_is_only_untried_interior_test(self):
+        passed=receipt(15.740,selected_slack=.258)
+        failed=receipt(15.480,selected_slack=-.002)
+        decision=s.choose([passed,failed],'fixed','original')
+        self.assertEqual(decision['action'],'audit')
+        self.assertEqual(decision['selected_period_ns'],'15.482')
+        self.assertEqual(decision['best_passing_period_ns'],15.740)
+        actual=receipt(15.482,selected_slack=0)
+        final=s.choose([passed,failed,actual],'fixed','original')
+        self.assertEqual(final['action'],'complete')
+        self.assertEqual(final['best_passing_period_ns'],15.482)
+        self.assertEqual(final['failing_lower_period_ns'],15.480)
+
+    def test_prediction_rounding_duplicate_and_outside_bracket_fall_back(self):
+        passed=receipt(15.740,selected_slack=.257)
+        failed=receipt(15.482,selected_slack=-.001)
+        self.assertEqual(s.choose([passed,failed],'fixed','original')['selected_period_ns'],'15.484')
+        # If that prediction itself fails, do not retry it or assert monotonic
+        # closure: choose a new interior midpoint and require actual evidence.
+        failed_prediction=receipt(15.484,selected_slack=-.001)
+        self.assertEqual(s.choose([passed,failed,failed_prediction],'fixed','original')['selected_period_ns'],'15.612')
+        high_lower=receipt(15.600,selected_slack=-.001)
+        self.assertEqual(s.choose([passed,high_lower],'fixed','original')['selected_period_ns'],'15.670')
+        corrupt=receipt(15.484,selected_slack=0)
+        corrupt['timing']['selected']['corners']['0']=phase(15.484,0,hold=-.001)['corners']['0']
+        with self.assertRaisesRegex(ValueError,'inconsistent'):
+            s.choose([passed,failed,corrupt],'fixed','original')
+
 
 if __name__ == '__main__':
     unittest.main()

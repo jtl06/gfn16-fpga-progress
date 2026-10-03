@@ -1,0 +1,12 @@
+{
+  "status": "PASS_expected_contracts",
+  "id": "s4-r14f-b-equivalence-aw8-normal-q1-v1",
+  "gate": "queue/evidence/s4-r14f-b-equivalence-aw8-normal-q1-v1/gate-receipt.json",
+  "gate_sha256": "560f4e98c8780e079e6fef2dc794581e1a04b8a5c66cb57691d1579a8dae6c9f",
+  "scope": "AUTHOR: own FIELD100/B twins N256, contexts2 counts3/14, exact actual input/cold/profile/raw/C/on-chip/independent canonical bodies and full56 owner/calendar/W+2 checks; no footer-only substitution.",
+  "raw_evidence": "queue/evidence/s4-r14f-b-equivalence-aw8-normal-q1-v1/attempt-0/collected/output/native",
+  "independent_review": false,
+  "old_R14_results_inherited": false,
+  "clock_area_transport_GL_or_promotion_claim": false,
+  "remaining": "own full ordinary/full special/complete small PRP/control and production100/1000; own physical plus different nonauthor review/advisor"
+}

@@ -1,9 +1,0 @@
-{
-  "status": "prepared_not_executed",
-  "ticket_sha256": "eaccdfe0233c579883a5625877477f3db40bc4d39235e7c28a2740b9285cb71d",
-  "archive_sha256": "979d2790231d6b239bc25154a7f4e78f93e9ddffa5e7a3018b1baa83f01b9a71",
-  "archive_bytes": 5251814,
-  "native_root": "/home/azureuser/gfn16-worker/native/jobs/s4-p16-timing7-continuous1000-wide07-v1",
-  "build_key": "d315f7f5da4fd1c72ded144825fb053df65d0dc49745aaf53cfcb238d4f0c45f",
-  "files": 257
-}

@@ -7,6 +7,15 @@ const root=path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const manifest=JSON.parse(fs.readFileSync(path.join(root,'backup/manifest.json'),'utf8'));
 const failures=[];
 const digest=b=>crypto.createHash('sha256').update(b).digest('hex');
+const current=JSON.parse(fs.readFileSync(path.join(root,'backup/CURRENT-TECHNICAL-SUMMARY.json'),'utf8'));
+if(!manifest.files.some(x=>x.sha256===current.adopted_FIELD100.core_sha256))failures.push({reason:'FIELD100 exact accepted core missing'});
+for(const closure of manifest.restore_source_closures){
+ if(closure.bundle_identity?.publicly_retained){
+  const raw=fs.readFileSync(path.join(root,closure.bundle_identity.path));
+  if(digest(raw)!==closure.bundle_identity.sha256)failures.push({reason:'original production bundle mismatch',job:closure.job});
+ }
+}
+if(!fs.existsSync(path.join(root,'backup/CORRECTNESS-2026-10-02.md'))||!fs.existsSync(path.join(root,'fpga/docs/SOURCES.md'))||!fs.existsSync(path.join(root,'fpga/config/upstreams.lock.json')))failures.push({reason:'HOLD/provenance boundary missing'});
 for(const item of manifest.files){
  if(path.isAbsolute(item.path)||item.path.split('/').includes('..'))throw new Error('Unsafe manifest path');
  const p=path.join(root,item.path);

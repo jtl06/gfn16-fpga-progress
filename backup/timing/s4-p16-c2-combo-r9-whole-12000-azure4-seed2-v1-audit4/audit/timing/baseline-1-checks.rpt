@@ -1,0 +1,16 @@
++-----------------------------------------------+
+; Summary                                       ;
++----------------------+------------------------+
+; Check                ; Number of Issues Found ;
++----------------------+------------------------+
+; no_clock             ; 0                      ;
+; multiple_clock       ; 0                      ;
+; generated_clock      ; 0                      ;
+; loops                ; 0                      ;
+; uncertainty          ; 0                      ;
+; no_input_delay       ; 0                      ;
+; no_output_delay      ; 0                      ;
+; partial_input_delay  ; 0                      ;
+; partial_output_delay ; 0                      ;
++----------------------+------------------------+
+

@@ -1,0 +1,21 @@
+{
+  "schema": "r14f-literal-field100-source-freeze-v1",
+  "rtl_ready_at_utc": "2026-10-03T03:10:21Z",
+  "compiler": {"path": "reference/stream27_host_offload_field100_v1.py", "sha256": "6a9920ca2b704145553ed9f5fc13d0e6f97de78b0f89a960801bf7919b184633"},
+  "ingress": {"path": "rtl/kernel/genefer_stream27_host_offload_ingress_field100_v1.sv", "sha256": "c2d3e209fe13b988b38667781d0691f0b1944b643366d563bf86477307e451bc"},
+  "source_test": {"path": "tests/test_stream27_host_offload_field100_v1.py", "sha256": "abb4b2e104febfe6e22ab6f8ddf5bea6608c27e850e8c3da3ef0ba10b79d4124", "cases_passed": 5},
+  "literal_parent_bundles": {"256": "dd8d9196a5ac79381b8e701d021d19a067dde4d319b15799b13f8d8f61441a00", "65536": "f5f0617d989b64bb965b612a0d0cb8b6074c1ecd4f85f01ed66f970dfbf521f2"},
+  "ON_source_map_sha256": {"256": "f17ce9fd74569b5b37c0293ee386bdca8ecdcf92ec4c014d65784c8a20dc3dbd", "65536": "ea14fdaf7887cb3539eaf348c0b488a0a824ee084ec72502ffb20d6cac4b9819"},
+  "OFF_exact_literal_parent_files_and_parameters": true,
+  "relay13_enabled": 0,
+  "HOST_OFFLOAD_default": 0,
+  "retained_parent_sources": 58,
+  "ON_sources": 66,
+  "private_graph_edits_reversible": 6,
+  "cold_RAM_shape": "48 explicit independent 1R1W banks, 27-bit data, context concatenated with row address; no content reset",
+  "host_ABI": "same frozen C7679 profile/word/owner contract; high c1 is unscaled canonical residue",
+  "old_R14_native_or_physical_results_inherited": false,
+  "native_qualification": false,
+  "physical_RAM_inference_or_area_claim": false,
+  "authority": "direct human r106: only FIELD100 and R14-F"
+}

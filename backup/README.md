@@ -1,3 +1,5 @@
+> The snapshot below is historical. See [current FIELD100/R14-F status](CURRENT-CAMPAIGN-2026-10-03.md), its exact public manifest, and the preserved old-C2 HOLD notice.
+
 # Curated FPGA source and evidence backup
 
 This branch preserves a stable byte-for-byte snapshot of independently written FPGA RTL, arithmetic references, tests, tools, technical notes and compact record evidence. The chart on `main` remains a separate history. The live source snapshot is work in progress; filenames and presence in this branch do not establish qualification.

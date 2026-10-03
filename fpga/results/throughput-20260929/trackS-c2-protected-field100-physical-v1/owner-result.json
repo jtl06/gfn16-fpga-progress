@@ -1,0 +1,26 @@
+{
+  "status": "native_fit_success_raw12_PASS_own_audit_pending",
+  "observed_utc": "2026-10-03T01:22:37Z",
+  "native_finished_utc": "2026-10-03T00:34:39.880770Z",
+  "ticket": "s4-p16-c2-protected-field100-whole-12000-aws12-seed2-v1",
+  "invocation": "5d364479d4454db88ba9b13e6dbb9cd2",
+  "source": "Own58/84b14 sourceguard unchanged/drift[]; ownAW8e508/full3efd PASS;25crossings",
+  "controls": "12ns Balancedseed2 AWS12/40; vendor0/summary0",
+  "resources": {
+    "needed_ALM": 318615,
+    "placed_ALM": 383577,
+    "LAB": 42114,
+    "FF": 596923,
+    "M20K": 1916,
+    "MLAB": 624,
+    "DSP_needed": 1300,
+    "DSP_physical": 1318
+  },
+  "raw_STA_ns": {
+    "setup": 0.16,
+    "hold": 0.007,
+    "mpw": 5.403
+  },
+  "worst": "field0 epoch out_error selfloop:13levels/78.62%wire; next scratchRAM to fold_range14levels",
+  "scope": "Protected own routed result; raw12PASS not final tight clock/promotion. No inherited numerical or <=6levels claim; own audit/long/fault/review separate."
+}

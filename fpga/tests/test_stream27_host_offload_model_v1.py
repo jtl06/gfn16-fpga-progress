@@ -97,6 +97,33 @@ class HostBoundaryTests(unittest.TestCase):
             expected = b.arithmetic.canonicalize(coefficients, base)
             self.assertEqual(output.digits, tuple(expected))
 
+    def test_payload_bytes_exact_word_order_and_zero_extended_limits(self):
+        p = b.profile(32, 16, 300, 7)
+        packet = b.prepare_cold([0xffffffff] + [0] * 31, [-1] + [0] * 15,
+                                [448] + [0] * 15, p, context=0, epoch=0)
+        raw = b.cold_payload_bytes(packet)
+        self.assertEqual(len(raw), 4 * (3 * 32 + 6 * 16))
+        self.assertEqual(raw[:4], (b.converter.FIELDS[0] - 1).to_bytes(4, 'little'))
+        words = [int.from_bytes(raw[j:j + 4], 'little') for j in range(0, len(raw), 4)]
+        self.assertEqual(words[3 * 32], b.converter.FIELDS[0] - 1)
+        profile = b.profile_payload_bytes(p)
+        self.assertEqual(len(profile), 32)
+        self.assertEqual(int.from_bytes(profile[8:20], 'little'), p.reciprocal)
+        self.assertEqual(int.from_bytes(profile[20:32], 'little'), p.coefficient_limit)
+        self.assertLess(int.from_bytes(profile[28:32], 'little'), 1 << 13)
+
+    def test_raw_final_row_order_decode_and_signed_boundaries(self):
+        p = b.profile(32, 16, 300, 7)
+        digits = list(range(32)); c0 = [-1] + [0] * 15; c1 = [448] + [0] * 15
+        words = [digits[lane * 2 + row] for row in range(2) for lane in range(16)] + c0 + c1
+        raw = b''.join((w & 0xffffffff).to_bytes(4, 'little') for w in words)
+        packet = b.decode_final_payload(raw, p, context=1, owner=7)
+        self.assertEqual((packet.digits, packet.c0, packet.c1), (tuple(digits), tuple(c0), tuple(c1)))
+        self.assertEqual(b.finalize(packet, expected_context=1, expected_owner=7).digits,
+                         canonical.independent_integer_oracle(digits, c0, c1, 300))
+        with self.assertRaises(ValueError):
+            b.decode_final_payload(raw[:-4], p, context=1, owner=7)
+
     def test_special_image_and_final_owner_ranges(self):
         p = b.profile(32, 16, 300, 3)
         packet = b.FinalPacket(p, 0, 3, (0,) * 32, (-1,) + (0,) * 15, (0,) * 16)
