@@ -1,3 +1,5 @@
+> New [R15 exploratory checkpoint](R15-EXPLORATORY-2026-10-03.md): not adopted; shell physics pending. FIELD100 remains accepted. Earlier final-wrap snapshot below is historical.
+
 > The snapshots below are historical. See the [final technical disposition](FINAL-TECHNICAL-STATE-2026-10-03.md), [compute-completion summary](FINAL-COMPUTE-COMPLETION-SUMMARY.json), exact public manifest and preserved old-C2 HOLD notice.
 
 # Curated FPGA source and evidence backup

@@ -1,6 +1,6 @@
 {
-  "schema": "gfn16-curated-current-public-backup-v2",
-  "captured_at_utc": "2026-10-03T06:28:44.636Z",
+  "schema": "gfn16-curated-incremental-R15-public-backup-v1",
+  "captured_at_utc": "2026-10-03T16:13:44.564Z",
   "scope": "Selected unchanged original public files, current screened project source/tests/tools, exact FIELD100/R14-F captures, compact public technical evidence. No root history/vendor/private operations.",
   "stable_before_copy_after": true,
   "files": [
@@ -27,6 +27,18 @@
       "size": 5363,
       "sha256": "9199fc61e5d0ee8b464d5ce7a217e7c9b09e31a2feb526b15498b6bcff421752",
       "kind": "final-public-technical-summary-not-private-original"
+    },
+    {
+      "path": "backup/R15-EXPLORATORY-2026-10-03.md",
+      "size": 1756,
+      "sha256": "ec7b5fd8f9d927dba8c1f60e9086dc27addb9d7f8756acd5aae5aa929e82503a",
+      "kind": "new-public-R15-technical-summary-not-original-private-receipt"
+    },
+    {
+      "path": "backup/R15-TECHNICAL-SUMMARY.json",
+      "size": 3305,
+      "sha256": "3f587e711e431c49262f68fbcaafdafff661d0323932984e5038d43d4df90641",
+      "kind": "new-public-R15-technical-summary-not-original-private-receipt"
     },
     {
       "path": "backup/timing/s4-p16-c2-combo-r9-whole-12000-azure4-seed2-v1-audit3/audit/timing/baseline-0-checks.rpt",
@@ -5177,6 +5189,18 @@
       "kind": "technical-document"
     },
     {
+      "path": "fpga/docs/r15-application-cdc-contract-v1.md",
+      "size": 2767,
+      "sha256": "d121de2c0281d76ce3b60a12d42bb6a70dbde9e4cb1a7b157de0b792dc9bd06c",
+      "kind": "original-source-notice-or-technical-contract"
+    },
+    {
+      "path": "fpga/docs/r15-host-link-contract-v1.md",
+      "size": 7171,
+      "sha256": "a99cd0fa28c962d05416f8509682329395737b46bbe45a5d35044c643816c977",
+      "kind": "original-source-notice-or-technical-contract"
+    },
+    {
       "path": "fpga/docs/SAFETY.md",
       "size": 3001,
       "sha256": "27cc11bb2d3c4f1c405d3bcf80e0d77c91c2800497abd9483fd290a00bcb4b91",
@@ -5205,6 +5229,192 @@
       "size": 8890,
       "sha256": "c3c3fbe371de9bcaf1781b8175dc53c5615393c8a63c62783e81527c822c449c",
       "kind": "technical-document"
+    },
+    {
+      "path": "fpga/host/LICENSES/Apache-2.0.txt",
+      "size": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "kind": "required-text-for-existing-per-file-license-notice-not-new-grant"
+    },
+    {
+      "path": "fpga/host/LICENSES/README.md",
+      "size": 948,
+      "sha256": "fb4417b31a1b5301ebd773d7b42b589ce48985f474bfc7d9c006b374510b4e24",
+      "kind": "required-text-for-existing-per-file-license-notice-not-new-grant"
+    },
+    {
+      "path": "fpga/host/r15_anonymous_platform.py",
+      "size": 4150,
+      "sha256": "967c13bcf58b3864132036116deaf520a0410da62a8871ef4d0e96905cf9ee2a",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/host/r15_arithmetic.py",
+      "size": 7101,
+      "sha256": "0873645a20dbc56a8258581ee15c455195bc312d214190f7d41c9201b7344061",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/host/r15_boinc_sdk_bridge.cpp",
+      "size": 1768,
+      "sha256": "424cd392f457feb51e1129daf7d711656877006c8f282bfd5132b4caa453a503",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/host/r15_boinc_sdk_standalone.py",
+      "size": 4996,
+      "sha256": "bfbbb9b2b87f91301c886e246f90f135ec8197976be37e5a85d034af1aa177b6",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/host/r15_boinc_wrapper.py",
+      "size": 25508,
+      "sha256": "ebba2cb849cefb0f6c3ca2d9ae8ffb7492460462cfa211b6e00269c4072f4afd",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/host/r15_canonical_job_session.py",
+      "size": 9770,
+      "sha256": "c31f3f3f792dee8f1701f6624d538086961c92136161a7735efa938edb91d481",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/host/r15_checkpoint_store.py",
+      "size": 4387,
+      "sha256": "9b8d359e5ceef2275abfd4b4d1fe45d7b42dba5c8e07ad6d8293019f6bb93242",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/host/r15_end_a_window_controller.py",
+      "size": 9700,
+      "sha256": "46b4d2adcb03289e80ce8ce49437615fce093e9fed3d9b0119042e0e973c2b83",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/host/r15_genefer_format_fixture.py",
+      "size": 3978,
+      "sha256": "80b18ca0a920d2510af8248e185555ba15a8d03a1137561d3ac5ee6e58979b22",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/host/r15_genefer_format_oracle.cpp",
+      "size": 777,
+      "sha256": "f079004783e5b54ebda8c4c6fe838d4c081e76c3061a0a7d575760a30a4eeeab",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/host/r15_genefer_pl_fixture.py",
+      "size": 4294,
+      "sha256": "7a8ae3eb13f05a62b760a19e731d9413086c14511ab376bd1b8fba1ee2ecbd04",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/host/r15_genefer_pl_oracle.cpp",
+      "size": 4181,
+      "sha256": "795adfd3855048478cea4f5d7f1166a3ce947debe96bf9a26debe2ffb8e443cf",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/host/r15_genefer_pl_output.py",
+      "size": 1933,
+      "sha256": "26112a823b82b9c20972e82a5064bf409883920b497915e0a66a9880dcdce214",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/host/r15_genefer_pl_recipe.py",
+      "size": 1813,
+      "sha256": "b6ea39a4de14826d55df7585b34d1a997c66886f03a0f76f8a151530aa8a9ac1",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/host/r15_genefer_proof.py",
+      "size": 5525,
+      "sha256": "cecced7c948b4037bdaac3d249f0a89160f42157f7a22065d22ba75d8543e9ef",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/host/r15_host_contract.json",
+      "size": 4337,
+      "sha256": "968731cc1a7b7c6e2ae0e291f6acd0d28a1b61c94b5970a8810e3542f8b64f14",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/host/r15_host_output.py",
+      "size": 2486,
+      "sha256": "bc3ca6b557de2fa2ebddd3c2221831e0f1694ef8855e3eaa05d8a45fe0ef7bd7",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/host/r15_host_recipe.py",
+      "size": 2169,
+      "sha256": "101ab4274dacd73bc700a66181aaecd69ff021d7b08be94590e84a44c315a85c",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/host/r15_host_selftest.py",
+      "size": 4062,
+      "sha256": "bfed119f34d94c870ccc047f41b4f8818fd95a0f79b8dd7b9d75828ad95ba755",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/host/r15_image_codec.py",
+      "size": 5174,
+      "sha256": "7ce7a137adbf3b5665e992039d5630a9aca5e40d9af8eb95decc84c9ed2ebdd4",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/host/r15_link_adapter.py",
+      "size": 3107,
+      "sha256": "bfdf02e062634d85be3c1c111d8eefad86d58ba971eb9bf18e1ed28317e0bfc0",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/host/r15_shell_adapter.py",
+      "size": 5234,
+      "sha256": "1c4dad65a111b272a4082f802fcf81cb2fe8c0805c0601859a95d1bb4aed37f9",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/host/r15_transport.py",
+      "size": 6971,
+      "sha256": "866200e6a3f8967a9c4222855e4c2cf61b512783177121757c1831adb240a73d",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/host/r15_vfio_device.md",
+      "size": 1463,
+      "sha256": "bde40a6fb69faa5a5c3df1e1326a56ac261604d7123dcd558b6fd885d599ce76",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/host/r15_vfio_device.py",
+      "size": 22330,
+      "sha256": "07d63630c40206e1aa303ea061532b9b4f4c2b9be4d8c9f7b5cec5a19bffa892",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/host/r15_window_output.py",
+      "size": 3333,
+      "sha256": "d0c1b98bdec79a0455c6f5e0d063b9bb38855da5889bb6cd0ca479574217d9dc",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/host/r15_window_recipe.py",
+      "size": 2052,
+      "sha256": "929da80524e5dd8998f9c310178f0d3fc07644f61f721d10e8f8073b3eba18b2",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/host/r15_window_selftest.py",
+      "size": 6009,
+      "sha256": "12039d988b958602e789e7cab44aee3ed83b52b067c726ad008a15f732feb9cb",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/host/THIRD-PARTY-NOTICES",
+      "size": 1551,
+      "sha256": "179de9ab93143d03992735102cc97bbda9e685fb36d26c9bec04e153fb17e944",
+      "kind": "original-source-notice-or-technical-contract"
     },
     {
       "path": "fpga/Makefile",
@@ -9759,6 +9969,840 @@
       "size": 7701,
       "sha256": "6f766e68c147af57158442976c3fe09c0d17465b2c1cf85a874f67c681c897ef",
       "kind": "current-source-WIP-not-captured-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_all_bind.py",
+      "size": 4863,
+      "sha256": "7bf49d27c712d9a093b5f92d07f791d946ef0ac7bd526bb72186d4e8fac59099",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_all_io_bind.py",
+      "size": 5142,
+      "sha256": "60b270f21ee4f0b93a8a2089af14d5a61e181e25d09c76f35c63fbdac55513bb",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_all_shell_bind_v2.py",
+      "size": 3460,
+      "sha256": "16cb58b243ae4e076adfc85511071716e383975d2e94e13c72463811c9999885",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_all_shell_bind.py",
+      "size": 5041,
+      "sha256": "d9cc0e3d2bfe9ab6678c683c2008256fb8f48e417b4fa63082a055374928c852",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_alloff_native.py",
+      "size": 3349,
+      "sha256": "4189cbe7ad6c9c1b12e076d7ea285d0783c064afc36c427ee94d4de08753ce2a",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_application_full_diagnostic_packet_v8.py",
+      "size": 3689,
+      "sha256": "11f665f4882d46322418e5be8daa39fbf3df86d6ac6a23352b27ab24f9df2f26",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_application_full_diagnostic_v8.py",
+      "size": 5010,
+      "sha256": "7254f804826b27dae9a17d0e3a10abc079e69d4e97cf3cae39f452b64015063c",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_application_full_live_monitor_closure_packet_v2.py",
+      "size": 405,
+      "sha256": "45d57f998da87456f18a7a22c84814f7d7b1e8e5806c30371ba502c5589adcb3",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_application_full_live_monitor_closure_v2.py",
+      "size": 2402,
+      "sha256": "da16d56c4c513b5467ac15641b7ca416ac690291121c90c77631b08c66fdafb0",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_application_full_live_monitor_operator_refresh_v3.py",
+      "size": 3050,
+      "sha256": "69ab5ebbb048b8ecbf0aacdb76c68dd97750a05696d542e53033b6448e5d30c5",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_application_full_live_monitor_packet_v9.py",
+      "size": 3390,
+      "sha256": "cbe6dd618622d9c52e33c3e498d17d600beee1e93b907825d2025f233fda2097",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_application_full_live_monitor_v9.py",
+      "size": 8630,
+      "sha256": "4a9226f05d3073bc191a27fec23a8e865d542ddb0ba653389cb1bc26e9b9e045",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_application_full_v9_owner_outcome.py",
+      "size": 4880,
+      "sha256": "718d06471dcbf8d5ee04043d5f8245ba3a45537676a60980df06d58bf740e686",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_application_horizon_adapter_v5.py",
+      "size": 2589,
+      "sha256": "6d95e3ef17875b3fb8fe25ddddf1bef8b94d5d6bbf63ad3bae9244b3fa19175b",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_application_packet_v3.py",
+      "size": 4146,
+      "sha256": "9083c11f6722d7b473216bf0d7e63281bd3be0de48f97b37c8693fccfeb21f6f",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_application_v4_operator_refresh_packet_v2.py",
+      "size": 4348,
+      "sha256": "d5e7cea9f20c8ca105155aa8d50d968b1032ac3c4f5ddbb1bf327a6bc78d7f4b",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_application_v4_packet.py",
+      "size": 3815,
+      "sha256": "7612e40877377d060d787d7283c38902be338af5a68edf38da6df91cdaa76e3a",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_application_v4_quota_recovery_packet_v1.py",
+      "size": 6217,
+      "sha256": "253f527fa40fa6a850eb11275db70c0e0acaa3a68de014af7af9b150ab453208",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_async_fifo_native.py",
+      "size": 2732,
+      "sha256": "02c5c9aa0d53eb674bee5c83903280d2e59b3c7a5ebd18cc705f6572e3a5707b",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_azure_native_packet_v2.py",
+      "size": 7286,
+      "sha256": "81759beacdcb06c76b50d1fcb96488daee555d9c61a8a828cf88faab7b143605",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_azure_native_packet.py",
+      "size": 5615,
+      "sha256": "0179dddcf748bfe9a20f6d59721da34e26d95b2ca674a0bc206eff61347ada2e",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_bar2_offset_proof_v1.py",
+      "size": 2767,
+      "sha256": "341bfbea89dcde7a380e59dcba2b0b0fc4ca0dc3691fe7a081d0bdb48e269b1d",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_board_constraints_v1.py",
+      "size": 2027,
+      "sha256": "3b5c6664f8f8c5981935c68a5f90aeded6ec7675d7005fb64203453a1cecbe41",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_board_glue_v1.py",
+      "size": 5445,
+      "sha256": "79c707f7f0d21851760fee7c7aab8d2ca94d6e24c7a3f171aa424f73a95ac8c7",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_board_glue_v2.py",
+      "size": 2441,
+      "sha256": "7ef7496d32d6fa0f5c6ed27bacc34069ee16bef470e197b169cee70afa8be970",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_board_glue_v3.py",
+      "size": 1800,
+      "sha256": "9e179043232ed17e51aa5fe76d48890a56f22508732dc0322411b26b664a4b61",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_canonical_foldstage_bind.py",
+      "size": 3211,
+      "sha256": "8701a0f1c8e3cb3f0e9c24fdabe939633170b95fed79290a94f4364b58de4788",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_canonical_foldstage_infraretry.py",
+      "size": 3074,
+      "sha256": "f7a5a3cbea5aa575c77cc03dbde86205f2eb6b22af4afa30993dacc44bc853c3",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_canonical_foldstage_internal_native.py",
+      "size": 3235,
+      "sha256": "f53366269bdd624775d864553d796643bc2cd5dccea754ac9b85295704e41b89",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_canonical_foldstage_internal_v3_native.py",
+      "size": 3461,
+      "sha256": "097efcfebc822e3083cecd46c393a3024426a74bb188d897d553c74af0c0cd14",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_canonical_foldstage_native.py",
+      "size": 9211,
+      "sha256": "ddc7d7abbb92e138db672b033ae13ea8104b8ef088e5e957c9c80d4f7fda5cdc",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_canonical_foldstage_physical.py",
+      "size": 4103,
+      "sha256": "1cc8745de1eb5603c6ba670c459c0fbe6afc179f082c0689d58dadb172145b21",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_canonical_foldstage_result.py",
+      "size": 5462,
+      "sha256": "0ee58fac370e12055ed2ea78aceef5fe27f0adfe13e81d3783443a70cf190d8b",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_cdc_package.py",
+      "size": 3699,
+      "sha256": "5fada045ecb5b9e585867ecf36ddbd86f75734ea296805e658a42da249bbe40d",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_compute_continuous.py",
+      "size": 9038,
+      "sha256": "f1b7e1ba94f91f0b0310194a7cc1913b78ff7e6dfc49323fd814bec576f05b75",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_compute_framing_native.py",
+      "size": 9176,
+      "sha256": "041ae3245703c6df72a594bb1424191a3c57f9f36903e2faea5f4500bd7c2550",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_compute_full_wrap_native.py",
+      "size": 6538,
+      "sha256": "fb0d7927e9dbfe68a2d9c1d7b83420f2f70f8cbdd5e0ab09eeaa34d6313db831",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_compute_healthy_join.py",
+      "size": 7691,
+      "sha256": "724689b9ad96e1046b03cc5c0c05311cc523519c2e8a328331da3a01f9e2d1c9",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_compute_long_packet.py",
+      "size": 4396,
+      "sha256": "91f5eb67454b5ccf7130f28ae56c8530ba282f699243e93913d2c8079791e90d",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_compute_native.py",
+      "size": 6770,
+      "sha256": "fa0f93cbb8343e098eceb9e0bd36249ff3ea7f7ee85115c743d4180328659641",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_compute_physical.py",
+      "size": 11081,
+      "sha256": "8d0f7aa2727e17dda36ddb315cd22e108b815f38726a9b81bacf11b1bf99b2c3",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_compute_pilot_native.py",
+      "size": 5663,
+      "sha256": "e7ff796d44c4010fdd1e8626dec28e1037537ba68dd15cc3e040c426a936f5cf",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_compute_protected_twin_native.py",
+      "size": 5300,
+      "sha256": "c9812e8fcc025b5146e202e503df3944192bf6d4aa57aff6693f1e7eae07691f",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_compute_prp_native.py",
+      "size": 8832,
+      "sha256": "a39122403f06ede3beeb8f9890e11e2c1b6b6f8179db1a427fa88616ff6e971f",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_compute_qualification_index.py",
+      "size": 8208,
+      "sha256": "edc32fb27dafffbb8a8841844a5486a7f264cf72ed98d4e4430621b9bf39eca5",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_compute_quota_retry_packet_v2.py",
+      "size": 4520,
+      "sha256": "2332d43a166df55d8483d59616006cdbbf1335922462a0dee679a33b8cc26a9d",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_crt_numeric_pair_native.py",
+      "size": 5994,
+      "sha256": "44bd93c6fc9c0baf8efc3784dba64b62d6d5ae0c4461da32d509a654564115c2",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_crt_storage_physical.py",
+      "size": 4504,
+      "sha256": "8033d5f50ae32d63ebd08039323a6ca821dbcae2738cf38efad1274355e10d0e",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_crt_storage_result.py",
+      "size": 6849,
+      "sha256": "41b73f281069f8b04c301fd1b922e8c8473027441f6814a730df315198b37c49",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_direct_cold_bind_v2.py",
+      "size": 3844,
+      "sha256": "2158f682a0437b6f4697ab70ea312dd1b673b00a75802e27cfecbdd1dfd6f811",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_direct_cold_bind.py",
+      "size": 10053,
+      "sha256": "f8c76b69e7d386e8eeb19214da7554609dc2d1a80554daca924a82869a777d78",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_direct_cold_native.py",
+      "size": 7292,
+      "sha256": "99db1e74d5d42a994b202098be5dcb51a428a9a688227a9ad576a38bbb25afb1",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_direct_compute_full_native.py",
+      "size": 9317,
+      "sha256": "da937dac77596565bc9db40dd4d55e663bf3646c3253cd0f3ad7248de36074e3",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_direct_compute_native.py",
+      "size": 7772,
+      "sha256": "baab5dffbcdd9140a66f52079ebcd1f05d4d26d758ff9952f5788744c24491b2",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_direct_driver_adapter_v2.py",
+      "size": 4135,
+      "sha256": "a799a27ff651a958f1db57b626dd6b1622bb9e49262edd7112602b90438e28d6",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_direct_write_native.py",
+      "size": 8588,
+      "sha256": "aab6b1317bb2f5378fc8e68e26bd30392f159d0756be1f135aa63cdbd629a54e",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_dma_aperture_model_v1.py",
+      "size": 1929,
+      "sha256": "43a812812d1d9342d35c4049cedf97617f5c1f9f5aac9ffa59bae95afd03f8ad",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_dma_aperture_native_v1.py",
+      "size": 4221,
+      "sha256": "a231d13b7e17c6480c076cb5e5bd2ca59d26f67f2564685d144063d08ea17f21",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_dma_aperture_native_v2.py",
+      "size": 6997,
+      "sha256": "af09b7aac0709dfc88bb1d82075660ee047c0b88d3464cc993cc3f26014cc33f",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_dma_aperture_v2.py",
+      "size": 1323,
+      "sha256": "a4a65e49eb10ae030fb6d6d89cf2414e18dfe214437534ae4cb8c0dd465f8866",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_fixed_schedule_bind.py",
+      "size": 8544,
+      "sha256": "0b86fe6368e4f07172cf6049bfe5cf668424bde7d3e1981796c90d7baa296ae7",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_fixed_schedule_model.py",
+      "size": 4218,
+      "sha256": "070f4158a6d284656c889741b67f37455067641cc86ad64ca936bd81f6102512",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_fixed_schedule_native.py",
+      "size": 8074,
+      "sha256": "eaae859dc447100d4659db413e4fab445b7bcac6a8e7ee2efb64880c9fbc5a56",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_generated_aperture_audit_v1.py",
+      "size": 1981,
+      "sha256": "e91fa45f0f52c32de590f7f51ca8901a3fd99adef1b0e5ea1feb661fcb94c646",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_generated_clock_proof_v1.py",
+      "size": 2526,
+      "sha256": "8bd7700e9916cb25e6c3093617d0a3ec470401edcf037c2120428b373cdd334a",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_host_link_model_v1.py",
+      "size": 9573,
+      "sha256": "24444c207982c037b713ae4d0394e05455bce20dfe70ad54fd02cf1c47f9eff7",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_host_mmio_v1.py",
+      "size": 3541,
+      "sha256": "93f3ceb62650d9852d0a9655c1343aac5301594db386cbbdc472598c3d809fbe",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_host_window_application_gmp_native.py",
+      "size": 5345,
+      "sha256": "71b6954bdc52d3d59197a5e806cdaba1f94f7877915c8671d9c3add26bab4cb1",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_host_window_application_gmp_output.py",
+      "size": 1547,
+      "sha256": "97d4512e4b536474df88196502f85b959f685e4340001a1256b301e0d715f231",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_host_window_application_gmp_packet.py",
+      "size": 4021,
+      "sha256": "695f3d84eb23faf0d9f3f2923f123c2ed178ae8fae67b3efe10a841bc006ee2d",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_host_window_gmp_native.py",
+      "size": 5415,
+      "sha256": "3ce3c5afd8342be6d965021bfa8c642ff7c61d97809c4cb08203c57675c3effe",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_host_window_gmp_output.py",
+      "size": 1991,
+      "sha256": "72b4b38c5b0526299e69116e0add795a9604b9ba3c20f01515a39b8088a320c2",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_host_window_gmp_packet.py",
+      "size": 5705,
+      "sha256": "8dc5aa7f3555f3124dfd2cca13bf18e8d1eba5c6effad17133c3ee8882ed6902",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_interface_package_v2.py",
+      "size": 3911,
+      "sha256": "98441f97042d927a59cc2539543b78ab601881cff8dffedb41d9b1f076941ad8",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_interface_package_v3.py",
+      "size": 3911,
+      "sha256": "cbe16d71fa878e28452e141559d9c771fb7ac8d00a1a51885ef9288ca754b36b",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_interface_package_v4.py",
+      "size": 3881,
+      "sha256": "86f54185ce96e8a8d8202e06e7556076ab72a0001f9b7aaeb4ef565e946de29b",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_lean_watchdog_bind.py",
+      "size": 11019,
+      "sha256": "3dfe66d187d492e5e3c161fae98b14c1d4908cf08cf49fca3d08e4f7eb2d6d3b",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_lean_watchdog_model.py",
+      "size": 2716,
+      "sha256": "7a7cd60529b418eb1ceeedd25e1821e0ee8196718abf77e3c6c140631ea22d4a",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_link_reset_native_v1.py",
+      "size": 3078,
+      "sha256": "71355e10f1d3773e51215d70b99f3eb5a5c92c3103b3dd23d2097e5460d81d1d",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_normal_adapter_v2.py",
+      "size": 2964,
+      "sha256": "b6fc257097ac385638286cd31df359c8183d7f7ada2681ff47f93287c0effb26",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_normal_validator_v2.py",
+      "size": 1451,
+      "sha256": "eb308da04091d15954d2a8009b205f28342761363ac62777252d34ff7e3fc656",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_pcie_application_bind_v1.py",
+      "size": 8782,
+      "sha256": "0ca9bebb50bb94d431fbc65735bb12a59158a4d9c8a2f18753eb4934340f09ba",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_pcie_application_bind_v2.py",
+      "size": 3396,
+      "sha256": "708fc8c25166a5a03c77c748d5336b178bd7e15f0726549bba2eac5d82623f67",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_pcie_application_bind_v3.py",
+      "size": 2314,
+      "sha256": "25ffde037fbc6fdb270fe07a167082d8ce445682175a78be5a3269c27fc6aa4c",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_pcie_application_bind_v4.py",
+      "size": 1222,
+      "sha256": "b540a3f28168054c1db1eb0e7624b2a5c9cd20b72859a205acbe1751122ade38",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_pcie_avmm_fault_native_v1.py",
+      "size": 1857,
+      "sha256": "a8e1beab2b0b6c92b2a86293cd78ae5122cf712d8412620e776ffe24ddcd1796",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_pcie_avmm_model_v1.py",
+      "size": 3250,
+      "sha256": "8cb142ba1960c52931a4659282cf5508fa2971c469df376086df958068b69850",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_pcie_avmm_native_v1.py",
+      "size": 3694,
+      "sha256": "f2ab2c393a9b044e3002088fd4decae7f4ccb5b04c1fbd83a85762f420ea2b9e",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_pcie_avmm_packetfault_v8.py",
+      "size": 4392,
+      "sha256": "6be9135c34bcbc39f1daade64a07191a340fa8edad516f3e0e695e15c85d68f0",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_pcie_avmm_v2.py",
+      "size": 5913,
+      "sha256": "658a101a5f02fe61a6d6096039a257364c60307904bbc12fbcbbb614ba53710c",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_pcie_avmm_v3.py",
+      "size": 3934,
+      "sha256": "55ad3c93d4f1a9302b5070b20e661ad38c8356111d942a12a14188cc7b4ce328",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_pcie_avmm_v4.py",
+      "size": 4147,
+      "sha256": "4c1c7d3b49bfb049cfd14f8c10e93dc7e630dfb3168098364e8ea1c32280ff03",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_pcie_avmm_v5.py",
+      "size": 5190,
+      "sha256": "6af76eaccfe823bf81f9aeffdbec5beee0c91c2784234910e5ddc610adbec804",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_pcie_avmm_v6.py",
+      "size": 9067,
+      "sha256": "27e384cf01018e8b46c169a9ffc51f62945c00128c87945648a87e3c12c5c153",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_pcie_avmm_v7.py",
+      "size": 2599,
+      "sha256": "7ca492983ad2f81bc53be3d2f8ccb16d6562e6375f5f175759b09679a7fc4290",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_pcie_avmm_v8_native.py",
+      "size": 6732,
+      "sha256": "c012d1e57be8908e60292b383c062858cbea6e7186987f4ca6601cea2f13eeae",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_pcie_avmm_v8_negative.py",
+      "size": 2524,
+      "sha256": "b1e6053d4e7cff82299cf35f872a9a20345498245b77774a0dd0745bf8c096b6",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_pcie_avmm_v8.py",
+      "size": 714,
+      "sha256": "103271dbb7ff7b7d547f94db8bec79596cf33081c55d4fb531b4bb7a0720ecf2",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_pcie_shell_bind_v1.py",
+      "size": 8829,
+      "sha256": "a8cb3325c11aff1df533068f6d536033edd94984d2488c91e3f35ff39f9849ef",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_pcie_shell_bind_v2.py",
+      "size": 9646,
+      "sha256": "ebd64e7908453c49388d6485cb5a244bb78731496f23c098da9b1420e03bb0d9",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_protocol_age_azure_packet_v1.py",
+      "size": 4081,
+      "sha256": "41519325a13cdef8a9673bd2f9c0881a15ec1fe2f14de694f740a680c45e5219",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_protocol_age_azure_packet_v2.py",
+      "size": 4603,
+      "sha256": "e30ef21f0794925f91b6ac8791caeb538430728b2d97d38fd91da394b9944351",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_protocol_age_azure_packet_v3.py",
+      "size": 4895,
+      "sha256": "08266d4d83880af30dde897aae795117fbda2ea8ad2f06123140748467cbd77b",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_protocol_age_bind_v2.py",
+      "size": 1778,
+      "sha256": "ca11d809c697182462c8f6131d108b9b651dc590598b75d0fabb2b03521b051d",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_protocol_age_bind_v3.py",
+      "size": 1817,
+      "sha256": "65b6b3838cd9e70949c830c651624fd90392f65109e81a6c1711247b341ea2fd",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_protocol_age_bind.py",
+      "size": 7247,
+      "sha256": "cffbc7b69da66b8d590a126025217a380307ae9e0768f8706eb3d011f35ef32c",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_protocol_age_component_azure_packet_v1.py",
+      "size": 5190,
+      "sha256": "a0927a38b7a727273edffc4c32af05ef92a35ac32c41b68520addc8d436b047a",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_protocol_age_component_v1.py",
+      "size": 8717,
+      "sha256": "89e3d5a2c1d50e2a77e64b196620a65a27c1778d0a2ea77bab485b681228e4ff",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_protocol_age_model.py",
+      "size": 5466,
+      "sha256": "5873b51366304dec928615eea17d98d23af70692859dd58606d71cdfb5f7cf8b",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_protocol_age_native_v2.py",
+      "size": 3820,
+      "sha256": "1237f54142b3aa394b0349c5ade2a47f4dd83f2e5a4e36d26eb352a3db3f8094",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_protocol_age_native_v3.py",
+      "size": 3804,
+      "sha256": "ec9d9afc915323ab211c73dd110343847c49451614681a40c3dadef0b8ad6a26",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_protocol_age_native.py",
+      "size": 6153,
+      "sha256": "4df7fb0b243d333166c63edd3e9ce3b3b9cc1097692fd0b1ec051b37c628223d",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_qsys_aperture_component_v1.py",
+      "size": 2779,
+      "sha256": "2c4fa80632ebce1292a98e9f277a8ea4bf7cae5ff45701312882532059b3ba09",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_qsys_application_v1.py",
+      "size": 3833,
+      "sha256": "a16ae066df8f0a8a99ef4250f58263a66d6b7e59f5ff1fb995fd4bd784502c63",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_qsys_application_v2.py",
+      "size": 899,
+      "sha256": "924ce600f3ad5b53b9027fe5b935e682479922162d0d7192fb64e5b77f22c551",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_qsys_guarded_recipe_v1.py",
+      "size": 2167,
+      "sha256": "c41e0f119b46fb2d5df2bcc3e3a7064d79d5a49aef07412ea671aed2ea6096da",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_qsys_source_v1.py",
+      "size": 2874,
+      "sha256": "e3cd6554f5145c891885fa86fa0c9e2066546995abd0e42582c2519f565faa68",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_qsys_source_v2.py",
+      "size": 3670,
+      "sha256": "fd8db079aa845bdc29679de31c5e10a3880cf544887696f5e98f3b142fd49744",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_qsys_source_v3.py",
+      "size": 3156,
+      "sha256": "d04cc70858691b89a4d816d70f91eee50ffd4cf6fc9c70b0267ce1428714c36c",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_real_shell_clock_global_v1.py",
+      "size": 5404,
+      "sha256": "8976d066bdbe3849b397d37bdaa3290b068ca0294891d34c10920e392d1f5b27",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_real_shell_inventory_v1.py",
+      "size": 17010,
+      "sha256": "f5c05a04027f38254d64e247def2703ca90f34db4afc7f06b2b6b097b41b7031",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_real_shell_project_v1.py",
+      "size": 6012,
+      "sha256": "495255d036cedb56262be5d30d5659ddf393025cf688db9397cdb190f07447fc",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_real_shell_project_v2.py",
+      "size": 1230,
+      "sha256": "a8f10a4ef4e79c362fc8b38265a085bb077238ededa0ed3e6884c62b1ff39eb9",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_real_shell_project_v3.py",
+      "size": 2572,
+      "sha256": "79a03eed73e36cd37d151f7013973c6c714068c59e5afadb5376c5ed501fecdf",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_real_shell_project_v4.py",
+      "size": 6939,
+      "sha256": "0f5a2b14c05b34d5133f55071c39afbb4a3406c5264965a912bdb31c936a0d18",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_shell_application_full_native.py",
+      "size": 9233,
+      "sha256": "cac9300865aff8ec700da581d74753e42274c75032e0c8214d2f87e3a76a6711",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_shell_application_native.py",
+      "size": 8312,
+      "sha256": "6095ecd7ab6ae4de5e388346b1f6c2dd66033f3168798e5c4540739de394cf6c",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_shell_application_v4_native.py",
+      "size": 8087,
+      "sha256": "789899fd3ff122c62de5c47ddcedb4f269c7bd2f9f7631467382bc20fe018b60",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_shell_mmio_v1.py",
+      "size": 1257,
+      "sha256": "11ee5fbf3a1b29cae7ebd6f3756dc2817c94068f6f5c6f4f9f6a18ba76dd8a90",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_shell_packets_v1.py",
+      "size": 3429,
+      "sha256": "7c305e396077031a357e6201de8e6839b43c515692b4a530434429d86dbd62db",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_storage_native_result.py",
+      "size": 2774,
+      "sha256": "dbd9d1994540fd9a9e14274c692beb03d31e270b608ce7d8eeda502eb5c37eae",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_storage_ram_audit.py",
+      "size": 3321,
+      "sha256": "fa531982c77963be12ed11c22c29a6fdeee0750944c02bace8da637a436a9b19",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_storage_ram_bind.py",
+      "size": 11008,
+      "sha256": "adf35093f686365ddee0c7a46bf41803af28ea4ba4ae9c466bec6cc151591e06",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_storage_ram_model.py",
+      "size": 4236,
+      "sha256": "dec47c28231fe5b88d4e8739c14882e3aecbe9caece1ebaa899a9299a12094c7",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_storage_ram_native.py",
+      "size": 5952,
+      "sha256": "fd44f9d3830dd51457538c7a2e8dba0d523eadc28948583919e63b4c31abf706",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_storage_ram_package.py",
+      "size": 4286,
+      "sha256": "7e100f5c0096cfcd66303b484fbc99b4d17c87a0f5bd73763000248173fc5a3c",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_term_prefetch_forward_model.py",
+      "size": 11350,
+      "sha256": "fcff8cb0477445db7daa71f18bf30459144b159edc2a5b100abf03f0f20bcb20",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_transform_stop_model_v1.py",
+      "size": 15222,
+      "sha256": "f4cebb99daa15e4f339c58eb5dd129caf073c304425ddae8f6c4b0a1510bf630",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/reference/stream27_r15_watchdog_native.py",
+      "size": 3973,
+      "sha256": "685cebc2bc5880485fc7b66977691e72e7fd4242286d30ed824fd070e4622a8f",
+      "kind": "authored-current-source-snapshot-not-qualification"
     },
     {
       "path": "fpga/reference/stream27_r85_width_bounds.py",
@@ -39359,6 +40403,744 @@
       "kind": "exact-physical-source/control-not-QDB"
     },
     {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-ledger-v1/publication-ledger-native2-100-1000-v3.json",
+      "size": 72815,
+      "sha256": "1f2778688fb0a9dfa181f1cd9c98d71089196e3f8170aff3588d7f3a3d1082f7",
+      "kind": "original-own-compute-ledger-with-honest-conditional-limits"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/production-bundle.json",
+      "size": 2340929,
+      "sha256": "e27236e8a4d65ced6b8e63ab65fa868ef872b1bd66f27bac1142cc6feb443b61",
+      "kind": "original-source-only-production-bundle-required-for-frozen-restore"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_crt3_27_mont_pipe.sv",
+      "size": 6643,
+      "sha256": "7e76b7affb9534b61d58238014d938ba6c19df3bc09ae75a62c2c71d47eccba3",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_digit_reduce27_pipe.sv",
+      "size": 2693,
+      "sha256": "61e14bb13c2dbcc13b5030756578a0d0358269beb24fb207a5641b98795883e8",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_div_recip_precision.sv",
+      "size": 5409,
+      "sha256": "832021ed0b3410dc867d92ac4436a725d5717f9630d233073e39896789ebbd7c",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_montgomery_mul27_sparse_pipe.sv",
+      "size": 2326,
+      "sha256": "501d0ce309a3915f7aed0f3bde14ba1ee8d56ddc5f6abef1f2f5bb572d64db4b",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_ntt_banked27_engine.sv",
+      "size": 27268,
+      "sha256": "534af0c3b2d16b9694200f415e90397ed5000c1350e3e8a7ca02ca4a3383f77f",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_sdp_ram32.sv",
+      "size": 1128,
+      "sha256": "993567fb68fdc216b9ff04489d1810f743b86564434e4b48261ad606b25d53b0",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_blockcarry_lane_localbase_v1.sv",
+      "size": 10948,
+      "sha256": "cb3fcd665036a1d9028bc2d7e33e96c2e5f57e3e95e16a25460173d32560b236",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_blockcarry_setup_param_v1.sv",
+      "size": 3631,
+      "sha256": "c9ba8163c8bb43afecf1afee07a8a55c4eb89539318cf235b83508ab692f4f26",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_blockcarry_small_cell_localbase_v1.sv",
+      "size": 4346,
+      "sha256": "2005d97a1b512c365b1b6494d8974d3f869d15ee7ce8713115eab8d713e69c1b",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_blockcarry_small_cell.sv",
+      "size": 4184,
+      "sha256": "eafee617681cbd84cedfe90874938f63bf5ae84123ba1c914410785b44a3e74f",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_canonical_image_foldpayload100_v1.sv",
+      "size": 12802,
+      "sha256": "e07ccea57740154b803d9b4c4e85e456e280d61ca6f24d455834413dee02a234",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_correction_serial_p16_f0_v1.sv",
+      "size": 766,
+      "sha256": "ef4bc7575185d545c56cc6922470414f821c60fdf3ad2b75baec85787c69778f",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_correction_serial_p16_f1_v1.sv",
+      "size": 764,
+      "sha256": "c5cc1405cba830e7453e0dab85fb3500bfb7a7578a72d267beead468072ca1b9",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_correction_serial_p16_f2_v1.sv",
+      "size": 765,
+      "sha256": "9c46d963f71eec3214677cc7d8a3a1b684f1905bb64d288ebf3f584fae1433a2",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_correction_serial_v1.sv",
+      "size": 6990,
+      "sha256": "2cb1f600293128e56502ac2a3a4384cb437b7af03175033cb0ee6a8ada758309",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_delay_mlab_v1.sv",
+      "size": 1923,
+      "sha256": "fbcdb5da28c9ae64a68189d0b5a6b60182edcc2c80d98728ca9673555591b36e",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_descriptor_fifo_ff_v1.sv",
+      "size": 1396,
+      "sha256": "24977500d5f4cbae04358065877371436218b6c5341e930a6922c91e46a44a86",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_epoch_protocol_contexts_v1_payload_lookahead_v1_protected_field100_v1.sv",
+      "size": 10134,
+      "sha256": "f15a0d82ceaab192417aed9a1e009c92447d662c0a4b69832bf06db99782e090",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_epoch_protocol_v5.sv",
+      "size": 8550,
+      "sha256": "a01f6b93200d4ee5d1eb7e81664cfd89e373a447e9cbf5173387188f1212df45",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_host_contexts_aw8_p16_protected_field100_v1_r15_fixed_v1_r15_leanwatch_v1_r15_all_v1.sv",
+      "size": 23918,
+      "sha256": "75ad59d8679813eff03394ec3bac63f317c27b2a00124582e9581096265567d0",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_host_image_rowwrite_v1.sv",
+      "size": 6532,
+      "sha256": "885337be00e43a5a1b49f006e98db6607da35d5d3d62a1723b07e277788597cc",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_lazy28_rootregistered_butterfly_v1.sv",
+      "size": 3127,
+      "sha256": "889cdb7ff9417897c7c62a52fe67e6750f3f71f5c854d8529c629cc3a98cb145",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_mdc_commutator_shared_packed_faultlocal_v1_r15_leanwatch_v1.sv",
+      "size": 6514,
+      "sha256": "02cf02c55100024700520b3a2d7b06c581ac907c43fcba22b72e3d7bdd78915c",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_mdc_commutator_slots_v2.sv",
+      "size": 6498,
+      "sha256": "3484e192967d6295dd6dc7f6a325dfd31e1573a327c881be9f9e10558c458da5",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_mdc_commutator_sm1_registered_v1.sv",
+      "size": 6835,
+      "sha256": "c262261f1a7c7428056111ccdef97462edd081016f219428d2a81b7e429819c9",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_mdc_commutator_sync.sv",
+      "size": 7183,
+      "sha256": "72e6d497280f8d5eeba28c0af30b79a116e20b338d50a9894355a28d3aa4d218",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_mdc_fifo_smallreg_v1.sv",
+      "size": 1503,
+      "sha256": "0ff1605c74d81670291f1bd0ee88afe6f5461d999d5ee65fc6f1cc722f4ec4be",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_merged_final_gs_pair_inputreg_v1.sv",
+      "size": 1655,
+      "sha256": "a230a237c5650552e773cb06930ca5d90abb7f37209d4aae8973b6f2be059a5d",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_merged_final_gs_pair_v1.sv",
+      "size": 2132,
+      "sha256": "07fc26a9ae44d37eeb8286296c7ddef94c1db6b0103855169d1c4a1bda20a3cc",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_montgomery_factored_v1.sv",
+      "size": 4082,
+      "sha256": "866c2b19c9e6afbbb56ce71089288334579f90e977ca139b41097d0f9191c690",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_mul_select_token_c2_timing10_v1.sv",
+      "size": 2614,
+      "sha256": "e24cd1ad4207ebb542b9d3de1eac02bca85c64eebe4d532eddbaeaab35a33f97",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_quarantine_replicas_v1.sv",
+      "size": 930,
+      "sha256": "9fc57a202e70c7894d05e29a9de09f44bcf97bb410d783d432cd9aa5ea342a9f",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_r15_numeric_delay_mlab_v1.sv",
+      "size": 1039,
+      "sha256": "8a2cc398d9fa0868fbc60aa77754a41c1a3820707448db1631f65e47d97ae63d",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_r15_progress_watchdog_v1.sv",
+      "size": 1203,
+      "sha256": "0e0bbad86bc4735bb766c6b67850bfa69ceca71bb6ab1a07b8bab5ab16372c71",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_root_rom_prefetch.sv",
+      "size": 1952,
+      "sha256": "f4b9415b855d58a1c5ddbc79fd473eef5388b05c888db1c5dde4825e2b3184fc",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_row_arithmetic_param_v1.sv",
+      "size": 3740,
+      "sha256": "346528436c6351b96a2ce0340fa6bc2b55d9338e6a1045237bcba80b9b99ee05",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_shared_term_roots_aw8_p16_f0_v1.sv",
+      "size": 3341,
+      "sha256": "371e2890a158a2bcb2b14cf8e14ae212206a459bf83d3c3800e4e5b71c5644a7",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_shared_term_roots_aw8_p16_f1_v1.sv",
+      "size": 3343,
+      "sha256": "04842a3293eef8e9813d90b509385a50d75856cf3433d0e680810c8ab6f464f9",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_shared_term_roots_aw8_p16_f2_v1.sv",
+      "size": 3343,
+      "sha256": "6c4bba24c8b0753acb68a28d80edab8ac18961f371073d6b1f8a2cb488967822",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_shared_warm_aw8_p16_f0_storage_combo_quarantine_v1_timing10_v1_protected_field100_v1_r15_leanwatch_v1.sv",
+      "size": 34030,
+      "sha256": "7ba842527fb0124b4d34c09a90a0bd2f5b77c6ed28e71daccd809f6c05edcfbf",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_shared_warm_aw8_p16_f1_storage_combo_quarantine_v1_timing10_v1_protected_field100_v1_r15_leanwatch_v1.sv",
+      "size": 33992,
+      "sha256": "bccf7744d9f5ee28cccb55ec17a20d4cfada95babcc2bf1c325e2f649eb17dbf",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_shared_warm_aw8_p16_f2_storage_combo_quarantine_v1_timing10_v1_protected_field100_v1_r15_leanwatch_v1.sv",
+      "size": 33992,
+      "sha256": "09a5c578e941468d2f1be51b48ec283dcf407dc61fd8949f5ed43b387b0cf3e9",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_signed_boundary_inputreg_v1.sv",
+      "size": 1462,
+      "sha256": "907f71b5aad203375d2822ede4207c5e69b3ed4ea79210fc018313e555615a54",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_signed_boundary_reduce27_pipe.sv",
+      "size": 3799,
+      "sha256": "140fcad078bd089456712e27eed9c1f78f340298f72a7d6860d5bed70bbb9f2d",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_square_p16_f0_v1_contexts_v1.sv",
+      "size": 1702,
+      "sha256": "5e1499e6e19c5a0d3549ec465a1a187ed324d85f0d685717b3c5a0205ecf653e",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_square_p16_f1_v1_contexts_v1.sv",
+      "size": 1701,
+      "sha256": "2705d66be1124fc7365e57f96363a8385867a49c480f6efede407ea6c2ddc727",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_square_p16_f2_v1_contexts_v1.sv",
+      "size": 1701,
+      "sha256": "c963e0b647c4bcfb6192c81690b104ef49f66c0fa847c7c6a8911e53b6ab1ece",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_term_context_param_v1_contexts_v1_storage2_v1_payload_lookahead_v1_select_token_v1.sv",
+      "size": 8032,
+      "sha256": "b8071f8ea6ba6ac1b7cf8f0b10f92253c738f1b9a4edbf366245b706af001422",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_term_context_v2.sv",
+      "size": 7187,
+      "sha256": "1785c86519e52908e5e450ec8d48656e2fc402808ad3660bda6aa7e8d4c86592",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_threefield_carry_aw8_p16_registered_error_v1_protected_field100_v1_r15_leanwatch_v1.sv",
+      "size": 15582,
+      "sha256": "a9b9b391747eae88e51942ce7d571f5bf94cf2e38ce5766d5f68f9bf371f0e37",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_warm_contexts_aw8_p16_registered_error_v1_protected_field100_v1_r15_fixed_v1_r15_leanwatch_v1.sv",
+      "size": 16315,
+      "sha256": "23319aac79b17ecfdfa12873a193d771eb91c0898ef48bd6bad3592d3cb60c32",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream28_merged_ct_aw8_p16_f0_v1_shared_comm_mlab_v1_r15_leanwatch_v1.sv",
+      "size": 51552,
+      "sha256": "3499e363127aebe187c0f4a0368e21f45eeb116a1f4e3672989ff51a72f090e9",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream28_merged_ct_aw8_p16_f1_v1_shared_comm_mlab_v1_r15_leanwatch_v1.sv",
+      "size": 51488,
+      "sha256": "627bb284edb05d540f0892188f6d863fc6b0e2e914e85a75bd8b95445b576a56",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream28_merged_ct_aw8_p16_f2_v1_shared_comm_mlab_v1_r15_leanwatch_v1.sv",
+      "size": 51488,
+      "sha256": "674a2f00f5db0e97a99bcc426eb0383aa256ecb3baf1ea407dde1068a492e9f7",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream28_merged_gs_aw8_p16_f0_v1_shared_comm_mlab_v1_c2_inputreg_v1_r15_leanwatch_v1.sv",
+      "size": 54186,
+      "sha256": "3961950fd117d29ec0ace6bed2bc5ca2d75fe5284fad643f20720b9b5392a1db",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream28_merged_gs_aw8_p16_f1_v1_shared_comm_mlab_v1_c2_inputreg_v1_r15_leanwatch_v1.sv",
+      "size": 54090,
+      "sha256": "e7be64f257738e03aee9f0ce63fbf39ffa5d5ad7b76423218db2960ea1ec3b96",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream28_merged_gs_aw8_p16_f2_v1_shared_comm_mlab_v1_c2_inputreg_v1_r15_leanwatch_v1.sv",
+      "size": 54082,
+      "sha256": "a7c55904dd6403f0720a16fbeabf9843a5a0469e0725046be283474751fad43b",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/merged_stream27_root_library_aw8_p16_f0_v1.sv",
+      "size": 51612,
+      "sha256": "6fa0f6d3558288b00c29c504b0e4eff850ba288fef1e7994da812bf6c5fbb47f",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/merged_stream27_root_library_aw8_p16_f1_v1.sv",
+      "size": 51612,
+      "sha256": "20fb20d7b4a8aefaf91da5ea76ab57e784965956aefa15d997c295be0b36c160",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/merged_stream27_root_library_aw8_p16_f2_v1.sv",
+      "size": 51612,
+      "sha256": "5d084e2391d134c1c6861bf9291a581b9791a3bc8d830069009ada5743c890b0",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/production-bundle.json",
+      "size": 8541694,
+      "sha256": "079ea8523f4599bd521d3a3b3c513001b4e537912fb75ad5a2894447e4c7d428",
+      "kind": "original-source-only-production-bundle-required-for-frozen-restore"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_crt3_27_mont_pipe.sv",
+      "size": 6643,
+      "sha256": "7e76b7affb9534b61d58238014d938ba6c19df3bc09ae75a62c2c71d47eccba3",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_digit_reduce27_pipe.sv",
+      "size": 2693,
+      "sha256": "61e14bb13c2dbcc13b5030756578a0d0358269beb24fb207a5641b98795883e8",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_div_recip_precision.sv",
+      "size": 5409,
+      "sha256": "832021ed0b3410dc867d92ac4436a725d5717f9630d233073e39896789ebbd7c",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_montgomery_mul27_sparse_pipe.sv",
+      "size": 2326,
+      "sha256": "501d0ce309a3915f7aed0f3bde14ba1ee8d56ddc5f6abef1f2f5bb572d64db4b",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_ntt_banked27_engine.sv",
+      "size": 27268,
+      "sha256": "534af0c3b2d16b9694200f415e90397ed5000c1350e3e8a7ca02ca4a3383f77f",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_sdp_ram32.sv",
+      "size": 1128,
+      "sha256": "993567fb68fdc216b9ff04489d1810f743b86564434e4b48261ad606b25d53b0",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_blockcarry_lane_localbase_v1.sv",
+      "size": 10948,
+      "sha256": "cb3fcd665036a1d9028bc2d7e33e96c2e5f57e3e95e16a25460173d32560b236",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_blockcarry_setup_param_v1.sv",
+      "size": 3631,
+      "sha256": "c9ba8163c8bb43afecf1afee07a8a55c4eb89539318cf235b83508ab692f4f26",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_blockcarry_small_cell_localbase_v1.sv",
+      "size": 4346,
+      "sha256": "2005d97a1b512c365b1b6494d8974d3f869d15ee7ce8713115eab8d713e69c1b",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_blockcarry_small_cell.sv",
+      "size": 4184,
+      "sha256": "eafee617681cbd84cedfe90874938f63bf5ae84123ba1c914410785b44a3e74f",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_canonical_image_foldpayload100_v1.sv",
+      "size": 12802,
+      "sha256": "e07ccea57740154b803d9b4c4e85e456e280d61ca6f24d455834413dee02a234",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_correction_serial_p16_f0_v1.sv",
+      "size": 766,
+      "sha256": "ef4bc7575185d545c56cc6922470414f821c60fdf3ad2b75baec85787c69778f",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_correction_serial_p16_f1_v1.sv",
+      "size": 764,
+      "sha256": "c5cc1405cba830e7453e0dab85fb3500bfb7a7578a72d267beead468072ca1b9",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_correction_serial_p16_f2_v1.sv",
+      "size": 765,
+      "sha256": "9c46d963f71eec3214677cc7d8a3a1b684f1905bb64d288ebf3f584fae1433a2",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_correction_serial_v1.sv",
+      "size": 6990,
+      "sha256": "2cb1f600293128e56502ac2a3a4384cb437b7af03175033cb0ee6a8ada758309",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_delay_mlab_v1.sv",
+      "size": 1923,
+      "sha256": "fbcdb5da28c9ae64a68189d0b5a6b60182edcc2c80d98728ca9673555591b36e",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_descriptor_fifo_ff_v1.sv",
+      "size": 1396,
+      "sha256": "24977500d5f4cbae04358065877371436218b6c5341e930a6922c91e46a44a86",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_epoch_protocol_contexts_v1_payload_lookahead_v1_protected_field100_v1.sv",
+      "size": 10134,
+      "sha256": "f15a0d82ceaab192417aed9a1e009c92447d662c0a4b69832bf06db99782e090",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_epoch_protocol_v5.sv",
+      "size": 8550,
+      "sha256": "a01f6b93200d4ee5d1eb7e81664cfd89e373a447e9cbf5173387188f1212df45",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_host_contexts_aw16_p16_protected_field100_v1_r15_fixed_v1_r15_leanwatch_v1_r15_all_v1.sv",
+      "size": 23924,
+      "sha256": "89531b01f8764409880a008883f58cbff93b61569452234599b3131a25a2696b",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_host_image_rowwrite_v1.sv",
+      "size": 6532,
+      "sha256": "885337be00e43a5a1b49f006e98db6607da35d5d3d62a1723b07e277788597cc",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_lazy28_rootregistered_butterfly_v1.sv",
+      "size": 3127,
+      "sha256": "889cdb7ff9417897c7c62a52fe67e6750f3f71f5c854d8529c629cc3a98cb145",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_mdc_commutator_shared_packed_faultlocal_v1_r15_leanwatch_v1.sv",
+      "size": 6514,
+      "sha256": "02cf02c55100024700520b3a2d7b06c581ac907c43fcba22b72e3d7bdd78915c",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_mdc_commutator_slots_v2.sv",
+      "size": 6498,
+      "sha256": "3484e192967d6295dd6dc7f6a325dfd31e1573a327c881be9f9e10558c458da5",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_mdc_commutator_sm1_registered_v1.sv",
+      "size": 6835,
+      "sha256": "c262261f1a7c7428056111ccdef97462edd081016f219428d2a81b7e429819c9",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_mdc_commutator_sync.sv",
+      "size": 7183,
+      "sha256": "72e6d497280f8d5eeba28c0af30b79a116e20b338d50a9894355a28d3aa4d218",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_mdc_fifo_smallreg_v1.sv",
+      "size": 1503,
+      "sha256": "0ff1605c74d81670291f1bd0ee88afe6f5461d999d5ee65fc6f1cc722f4ec4be",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_merged_final_gs_pair_inputreg_v1.sv",
+      "size": 1655,
+      "sha256": "a230a237c5650552e773cb06930ca5d90abb7f37209d4aae8973b6f2be059a5d",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_merged_final_gs_pair_v1.sv",
+      "size": 2132,
+      "sha256": "07fc26a9ae44d37eeb8286296c7ddef94c1db6b0103855169d1c4a1bda20a3cc",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_montgomery_factored_v1.sv",
+      "size": 4082,
+      "sha256": "866c2b19c9e6afbbb56ce71089288334579f90e977ca139b41097d0f9191c690",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_mul_select_token_c2_timing10_v1.sv",
+      "size": 2614,
+      "sha256": "e24cd1ad4207ebb542b9d3de1eac02bca85c64eebe4d532eddbaeaab35a33f97",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_quarantine_replicas_v1.sv",
+      "size": 930,
+      "sha256": "9fc57a202e70c7894d05e29a9de09f44bcf97bb410d783d432cd9aa5ea342a9f",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_r15_numeric_delay_mlab_v1.sv",
+      "size": 1039,
+      "sha256": "8a2cc398d9fa0868fbc60aa77754a41c1a3820707448db1631f65e47d97ae63d",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_r15_progress_watchdog_v1.sv",
+      "size": 1203,
+      "sha256": "0e0bbad86bc4735bb766c6b67850bfa69ceca71bb6ab1a07b8bab5ab16372c71",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_root_rom_prefetch.sv",
+      "size": 1952,
+      "sha256": "f4b9415b855d58a1c5ddbc79fd473eef5388b05c888db1c5dde4825e2b3184fc",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_row_arithmetic_param_v1.sv",
+      "size": 3740,
+      "sha256": "346528436c6351b96a2ce0340fa6bc2b55d9338e6a1045237bcba80b9b99ee05",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_shared_term_roots_aw16_p16_f0_v1.sv",
+      "size": 10144,
+      "sha256": "7aba21482ae0ea956865a542826f1c24445b3fb85ec776ed1fcf35c69dd2ca92",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_shared_term_roots_aw16_p16_f1_v1.sv",
+      "size": 10144,
+      "sha256": "54862b70e382fc3a1083794844969629492f5ae101ed1ad7ddb3cd1cd6150058",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_shared_term_roots_aw16_p16_f2_v1.sv",
+      "size": 10144,
+      "sha256": "44e96d3f541cb91a596b766a29f4aa33cb877f3d49f318c07d4d8b454dacdb21",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_shared_warm_aw16_p16_f0_storage_combo_quarantine_v1_timing10_v1_protected_field100_v1_r15_leanwatch_v1.sv",
+      "size": 33548,
+      "sha256": "fa6eea4b6744663b6e95a30f8bc5b0f832f94b8c0d07ddeba0ea6ab795c876f2",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_shared_warm_aw16_p16_f1_storage_combo_quarantine_v1_timing10_v1_protected_field100_v1_r15_leanwatch_v1.sv",
+      "size": 33510,
+      "sha256": "ea8d9fda4a8c05d93f613bea7ae6ed142a5070a36e0a30b5aa38740bfc60c892",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_shared_warm_aw16_p16_f2_storage_combo_quarantine_v1_timing10_v1_protected_field100_v1_r15_leanwatch_v1.sv",
+      "size": 33510,
+      "sha256": "fab9b8cf83cdff898455bbdbde55849e363bef33055e31a189e1f2453272f0ac",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_signed_boundary_inputreg_v1.sv",
+      "size": 1462,
+      "sha256": "907f71b5aad203375d2822ede4207c5e69b3ed4ea79210fc018313e555615a54",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_signed_boundary_reduce27_pipe.sv",
+      "size": 3799,
+      "sha256": "140fcad078bd089456712e27eed9c1f78f340298f72a7d6860d5bed70bbb9f2d",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_square_p16_f0_v1_contexts_v1.sv",
+      "size": 1702,
+      "sha256": "5e1499e6e19c5a0d3549ec465a1a187ed324d85f0d685717b3c5a0205ecf653e",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_square_p16_f1_v1_contexts_v1.sv",
+      "size": 1701,
+      "sha256": "2705d66be1124fc7365e57f96363a8385867a49c480f6efede407ea6c2ddc727",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_square_p16_f2_v1_contexts_v1.sv",
+      "size": 1701,
+      "sha256": "c963e0b647c4bcfb6192c81690b104ef49f66c0fa847c7c6a8911e53b6ab1ece",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_term_context_param_v1_contexts_v1_storage2_v1_payload_lookahead_v1_select_token_v1.sv",
+      "size": 8032,
+      "sha256": "b8071f8ea6ba6ac1b7cf8f0b10f92253c738f1b9a4edbf366245b706af001422",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_term_context_v2.sv",
+      "size": 7187,
+      "sha256": "1785c86519e52908e5e450ec8d48656e2fc402808ad3660bda6aa7e8d4c86592",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_threefield_carry_aw16_p16_registered_error_v1_protected_field100_v1_r15_leanwatch_v1.sv",
+      "size": 15588,
+      "sha256": "2f70b0c317d6f59d619dde78af386195e6dc7a0b4a12122105280db5edb68766",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_warm_contexts_aw16_p16_registered_error_v1_protected_field100_v1_r15_fixed_v1_r15_leanwatch_v1.sv",
+      "size": 15724,
+      "sha256": "4f46a60616f7b9119adb0fc08dec904a7da3366ec8d5712062722f4a5768a23f",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream28_merged_ct_aw16_p16_f0_v1_shared_comm_mlab_v1_r15_leanwatch_v1.sv",
+      "size": 111259,
+      "sha256": "dd9d5a64b843f7aa710ea01a9bdb0f778c14d7fd6798118c5f5bb145a0b338ce",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream28_merged_ct_aw16_p16_f1_v1_shared_comm_mlab_v1_r15_leanwatch_v1.sv",
+      "size": 111131,
+      "sha256": "b48cc3acfb7d9c84c870d43ec24f3e2eec4fce961ea069cebd949219ac6c1c06",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream28_merged_ct_aw16_p16_f2_v1_shared_comm_mlab_v1_r15_leanwatch_v1.sv",
+      "size": 111131,
+      "sha256": "b413e5bd91b82612c7d0c9f8978917a3c7d62d5e039f452568655dbced2d98a1",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream28_merged_gs_aw16_p16_f0_v1_shared_comm_mlab_v1_c2_inputreg_v1_r15_leanwatch_v1.sv",
+      "size": 113797,
+      "sha256": "ee3c8d2ae11d4165f6a4c0cd72bcaa07cc47e2836537afb20a7523e2be76c9d3",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream28_merged_gs_aw16_p16_f1_v1_shared_comm_mlab_v1_c2_inputreg_v1_r15_leanwatch_v1.sv",
+      "size": 113637,
+      "sha256": "06cb5d82e9a63c22ca44970e055087a050e0b2b3165627b2c7bd9e0b571b9974",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream28_merged_gs_aw16_p16_f2_v1_shared_comm_mlab_v1_c2_inputreg_v1_r15_leanwatch_v1.sv",
+      "size": 113637,
+      "sha256": "597526f0d2a3aaf5d10f808b89f1f287e2fefe83533409aac4ef5f2ad5051820",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/merged_stream27_root_library_aw16_p16_f0_v1.sv",
+      "size": 1843166,
+      "sha256": "dc3f79d0ca3e3779badc17ee1305eddc605f3563013b3bba468c1e2cafaab2b3",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/merged_stream27_root_library_aw16_p16_f1_v1.sv",
+      "size": 1843166,
+      "sha256": "c33b591a34153da3562ae09d8e31180607b400c86a3203c92f3794d2fe27406d",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
+      "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/merged_stream27_root_library_aw16_p16_f2_v1.sv",
+      "size": 1843166,
+      "sha256": "ffebf05c66bd6e487d20f4ad853582d8397b655e9af77e8050402a7330d4bd5b",
+      "kind": "R15-exploratory-exact-captured-RTL"
+    },
+    {
       "path": "fpga/rtl/kernel/genefer_a10_banked27_engine_pointlaunch_v3.sv",
       "size": 22320,
       "sha256": "087bb158c0f493e22ed8e49372e233928979ed2161eff11f21f4510d2888c646",
@@ -40647,6 +42429,66 @@
       "size": 930,
       "sha256": "9fc57a202e70c7894d05e29a9de09f44bcf97bb410d783d432cd9aa5ea342a9f",
       "kind": "current-source-WIP-not-captured-qualification"
+    },
+    {
+      "path": "fpga/rtl/kernel/genefer_stream27_r15_async_fifo_v1.sv",
+      "size": 2282,
+      "sha256": "56950d26083b7e0738a832b64c7847e2aa9d1916edf5d8fe1f26d6750768bf7d",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/rtl/kernel/genefer_stream27_r15_core_transport_v1.sv",
+      "size": 9097,
+      "sha256": "b9d0f4c52cb2a8a0e41adf9ef670b1658875225280e16590c89e4ce4f94a3e43",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/rtl/kernel/genefer_stream27_r15_direct_write_guard_v1.sv",
+      "size": 4640,
+      "sha256": "49fe6d62a03979723598249d813d040c0e19e50db39a453bc51e955096df62c9",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/rtl/kernel/genefer_stream27_r15_dma_aperture_v1.sv",
+      "size": 6654,
+      "sha256": "244ec8e67e8f61dddc3cb7c91f82ebe17fb92de2252a13fd3e55fccbc90fd644",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/rtl/kernel/genefer_stream27_r15_host_image_ack_v1.sv",
+      "size": 6859,
+      "sha256": "39c03859d05315d46bed95de016103ad5a1622588d16745943dedd2f5ed661b5",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/rtl/kernel/genefer_stream27_r15_link_reset_v1.sv",
+      "size": 2352,
+      "sha256": "a6122e27d445d8bd77424084f714f90ad6924f56f6db9b725a8463047f7b3740",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/rtl/kernel/genefer_stream27_r15_link_reset_v2.sv",
+      "size": 2126,
+      "sha256": "331073e8d599be8d8d8c62bc04436292d4959b7f3f258e9406720fa4e3458e4e",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/rtl/kernel/genefer_stream27_r15_pcie_avmm_v1.sv",
+      "size": 13711,
+      "sha256": "0a2455c1625b10b376cd15b6899b6c56b68b1233a278294b906101ffd515e1d0",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/rtl/kernel/genefer_stream27_r15_progress_watchdog_v1.sv",
+      "size": 1203,
+      "sha256": "0e0bbad86bc4735bb766c6b67850bfa69ceca71bb6ab1a07b8bab5ab16372c71",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/rtl/kernel/genefer_stream27_r15_raw_loader_v1.sv",
+      "size": 8431,
+      "sha256": "007218786058ccacabed012238076ec684c834c4cc78f54f42c7c4f7450cb686",
+      "kind": "authored-current-source-snapshot-not-qualification"
     },
     {
       "path": "fpga/rtl/kernel/genefer_stream27_root_rom_prefetch.sv",
@@ -42789,6 +44631,126 @@
       "size": 7653,
       "sha256": "315b65506b45cc088ef2e5e8eefd98927220a9d6b74b72cb52f52b03217a75a5",
       "kind": "current-source-WIP-not-captured-qualification"
+    },
+    {
+      "path": "fpga/rtl/tb/stream27_r15_async_fifo.cpp",
+      "size": 3607,
+      "sha256": "70c50c958b1c1bc2f166a86224a29ce0a76825fb5651c788201a19390fd16d8c",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/rtl/tb/stream27_r15_canonical_foldstage_internal_v3.cpp",
+      "size": 3661,
+      "sha256": "2e8f45fbb43312a518162e31f401e22afd60e973f4988ab1c23964fe01f4e7cf",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/rtl/tb/stream27_r15_canonical_foldstage_internal.cpp",
+      "size": 2342,
+      "sha256": "d0cc644c7fe9fdf6c214f0af9b6480e2f56a4a798ec1f63bdbeb44320c075476",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/rtl/tb/stream27_r15_canonical_foldstage.cpp",
+      "size": 9210,
+      "sha256": "dd6d2933cf8e8bd9d782df017b4df0698e3d9edcdb5a6ca332a6e19f4e42dceb",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/rtl/tb/stream27_r15_crt_numeric_pair_v1.cpp",
+      "size": 4079,
+      "sha256": "365b1491eb24a5b802e5ad8af505060c3a6311651322e708b8665ca44cb66255",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/rtl/tb/stream27_r15_direct_cold_fault.inc",
+      "size": 2599,
+      "sha256": "2f7bc7498eed39eebcdc2e0b04d3a58592a9e9e8d501f8d92535ea54ab1c8ae6",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/rtl/tb/stream27_r15_direct_cold_load.inc",
+      "size": 2068,
+      "sha256": "25462adda1c1449091264a9e65566c80a6a201b867fc0f08d75d36aaf986a976",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/rtl/tb/stream27_r15_direct_write_guard.cpp",
+      "size": 6944,
+      "sha256": "74fdd85549480d10277a82b7cb0e7ab1be098e6928e407ec15620b3a03f4d8a4",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/rtl/tb/stream27_r15_direct_write_guard.sv",
+      "size": 4076,
+      "sha256": "a6082d79085129129a7c9b15e38757788b672b4cd97583b5db076fe638fe3e81",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/rtl/tb/stream27_r15_dma_aperture.cpp",
+      "size": 10225,
+      "sha256": "e3f164ce5af8b52473e9da8c168862bc814717f7e0ce080aa41256e5efbd648f",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/rtl/tb/stream27_r15_host_window_application_gmp.cpp",
+      "size": 10215,
+      "sha256": "46f23af9365212b6e8c58a28ab5b04380040ac3fbc241bf278bc4b4d720bbf04",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/rtl/tb/stream27_r15_host_window_gmp.cpp",
+      "size": 8993,
+      "sha256": "66a0f0365ef1fa136c34483ae2022320a7ff31711503dd8b9992e330d56b5756",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/rtl/tb/stream27_r15_link_reset_probe.cpp",
+      "size": 4158,
+      "sha256": "591d4b0e1d63253a64aa055f5191d880552acc9a4f97270a59eeaa356123ee0c",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/rtl/tb/stream27_r15_link_reset_probe.sv",
+      "size": 1199,
+      "sha256": "27bede9587bdb573b257578926458e34f02f56e6b2751ecde46c623efe40a817",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/rtl/tb/stream27_r15_pcie_avmm_faults.cpp",
+      "size": 4754,
+      "sha256": "7ee991b5880d375aa2d3121241575d2a843a57b45400451e674271f792c38c26",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/rtl/tb/stream27_r15_pcie_avmm.cpp",
+      "size": 7506,
+      "sha256": "7aee042596e2cf020ea450856291166d0a36780ae8012f0c8b801db25c32ab10",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/rtl/tb/stream27_r15_protocol_age_probe.cpp",
+      "size": 4940,
+      "sha256": "43fb7863873b9ea3debc7b2ae64ed9c23548823b3191f6bba7564c9de3667386",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/rtl/tb/stream27_r15_shell_application.cpp",
+      "size": 9006,
+      "sha256": "f8c4f8131bc80e3acca5b8396ac45d50e215d5387778d806403370e675845f29",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/rtl/tb/stream27_r15_watchdog_probe.cpp",
+      "size": 3587,
+      "sha256": "845a78db5c48a570e18d74520851cf535316edc4beca44b2c2a3b9dfb3f07326",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/rtl/tb/stream27_r15_watchdog_probe.sv",
+      "size": 880,
+      "sha256": "33c12ddb8d6e943c1b1c70c2e5d48c82a161ed65b7c170603f8e42830426d27d",
+      "kind": "authored-current-source-snapshot-not-qualification"
     },
     {
       "path": "fpga/rtl/tb/stream27_s4_continuous_v1.cpp",
@@ -45263,6 +47225,138 @@
       "kind": "current-source-WIP-not-captured-qualification"
     },
     {
+      "path": "fpga/tests/test_r15_anonymous_platform.py",
+      "size": 4838,
+      "sha256": "d35e2ce586a24aff0f78b8938aa772100da2a01b3b6ad63dd781fe2f1ea62897",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_r15_application_gmp_existing_native.py",
+      "size": 4214,
+      "sha256": "a6a550c238341cc142f6415a4e4464326b011c8d72350f11465980de07dd5e1d",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_r15_boinc_offline.py",
+      "size": 14481,
+      "sha256": "b962b7d3bd23582017ff48283d6197986f4b2cedd4fed2c494422e372e72ce61",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_r15_boinc_wrapper.py",
+      "size": 2120,
+      "sha256": "a9e5ae550cf6405014170a17cc1dfeb0d310153075dfa475f7e5dbf579438b0e",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_r15_canonical_job_session.py",
+      "size": 8685,
+      "sha256": "dc0267eac969948bc5e0e2e96cf9483e11e31e2b31d46433a4c9860a6167079e",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_r15_checkpoint_store.py",
+      "size": 5011,
+      "sha256": "5f1175176d5dd9d6fb60788a81a1e0b277fe80619e71349bf4eed96dd19d9641",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_r15_compute_long.py",
+      "size": 13767,
+      "sha256": "660fc6b5d5d8c8d202f19fd9c5e18d40265d81dda72ce791fd8adc0166dcfa4a",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_r15_end_a_window_controller.py",
+      "size": 9543,
+      "sha256": "d8205ea41a098e53dc6734735448f7c69857efed8580ba8982e228ee921d7ff5",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_r15_genefer_fixtures.py",
+      "size": 793,
+      "sha256": "d2563e1d026c8003f3ed4773885723248ec2cb71fe932f65a6164913865d2983",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_r15_genefer_pl_output.py",
+      "size": 2052,
+      "sha256": "b9015e179e127b523cae04953b4853d53e54a7f281a64fd23d57fce6d0ea8a22",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_r15_gmp_existing_native.py",
+      "size": 13808,
+      "sha256": "bf63093077939b9bf1c1a3e4e7f2f7935f2aec319b4f6e41d749ac1ed8ba0be8",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_r15_gmp_isolated_stage.py",
+      "size": 7335,
+      "sha256": "04e0f1567678f110eca12479da2454816e5070bfa83299a054753fa785f26c18",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_r15_host_arithmetic.py",
+      "size": 4581,
+      "sha256": "2cf1ade9f1fff6a2120b997414e79b01255c004880b0c78958291db94e5c4198",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_r15_host_output.py",
+      "size": 890,
+      "sha256": "11c64db580cab77ced6d75307b69f07fd49a644d862029df7f83773a620444e7",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_r15_host_proof_integer_boundary.py",
+      "size": 2319,
+      "sha256": "ce2018df2c2854a696af6345be21c081c6654dc4b86b9dfd64917db2c5db43f8",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_r15_host_transport.py",
+      "size": 4655,
+      "sha256": "b868330e8b854e83921f1cc65c3990b1d631ef47d3b0ea302f32bfa05022a884",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_r15_image_codec.py",
+      "size": 4500,
+      "sha256": "560078be00772e96df164ce3927263faa74df43bd727e5e775c80506e31c28a4",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_r15_link_adapter.py",
+      "size": 2606,
+      "sha256": "c2b413b837b8e9bcfcbfd6a114b557eff24f91fa80ff9c75333d3d1d7132102c",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_r15_shared_fit_scratch.py",
+      "size": 2870,
+      "sha256": "0ba06363419d0e30d98fa2d701db614994036918723c4e6d2b32c8d41afbf569",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_r15_shell_adapter.py",
+      "size": 3454,
+      "sha256": "230f2fa12166627354e031d2c6b8f4fc9799318a783eb1e104c92031bb4ed294",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_r15_vfio_device.py",
+      "size": 16393,
+      "sha256": "0f0cf1ccdef89a6bc2dd3e0c2d0105f5a42f6da56ac4192c0e2fda8e49fb0492",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_r15_window_output.py",
+      "size": 2804,
+      "sha256": "54f255703024e6a4f99afaa898bffa634456350c4a86ff47d21572d6fc8bbafb",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
       "path": "fpga/tests/test_r75_thread_compare.py",
       "size": 8823,
       "sha256": "85ba23959932715d315e9aa021c7c2db8dbe84ba04b663167d7c5d92cd87f5dc",
@@ -47241,6 +49335,462 @@
       "size": 2106,
       "sha256": "1a5d820c7721a8aa2771c4bdb6215db0747c670fcabecaa15105a5ffda64e466",
       "kind": "current-source-WIP-not-captured-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_all_bind.py",
+      "size": 1976,
+      "sha256": "f85e1c366ca01a986f187164268cb0fdb92ee629e3c60f102cef55c26d65dc12",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_all_io_bind.py",
+      "size": 1842,
+      "sha256": "49914264f6e41eb869c391ee5ac1e51451a0d773458b9474fd3bad3e389c852e",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_all_shell_bind_v2.py",
+      "size": 2878,
+      "sha256": "3265e5aaa1e47b9d4fa6d9d63e195f2ba10ae2e6f423da8a42a0cd13d5f6b683",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_all_shell_bind.py",
+      "size": 5173,
+      "sha256": "f77e0bff5cda2f411e0cb6f1b899d526dd90668aec1e116d1c0200014d488b67",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_alloff_native.py",
+      "size": 1014,
+      "sha256": "e34dab36ede9621926463231c2efe7153e31364750132cc443cc32913e970350",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_application_full_diagnostic_v8.py",
+      "size": 1867,
+      "sha256": "ca18e2bcf6454caa5d5d652f40401b9d9e1c9256b8f194bae93461b2458c4ac1",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_application_full_live_monitor_v9.py",
+      "size": 2459,
+      "sha256": "eb0ac5279c3a8c96f1b581fa1c057ae09f07396b539dd1963faf66197bc96c70",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_application_horizon_adapter_v5.py",
+      "size": 706,
+      "sha256": "cb98e45f423f94ff6d6c99a824cca31bfdbef493de10b75b10796b2fd784685e",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_application_v4_operator_refresh_packet_v2.py",
+      "size": 3242,
+      "sha256": "2abbfce7636eacf07c46caf7edaac5729bdb3d6116b1b70f09bc1c5dd42c9194",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_application_v4_quota_recovery_packet_v1.py",
+      "size": 3042,
+      "sha256": "47729fff5c853cbf55dd48fa701bd86cc5a623e8247dea4579bd45e52df453d7",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_async_fifo_native.py",
+      "size": 1272,
+      "sha256": "92be4fd85666bc423192ec473d9fc5202004b9292a60510fe8b4c6269ceee476",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_bar2_offset_proof_v1.py",
+      "size": 359,
+      "sha256": "7dc30992a6e7b074e1b13599d44d2f1519b2e0cc514dc7dc2958224e492577c3",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_board_constraints_v1.py",
+      "size": 825,
+      "sha256": "a1926e5b9fd385a4d3bd69a1b5e3244e8d001b0cc28fd78efafeafe7eb23c57f",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_board_glue_v1.py",
+      "size": 796,
+      "sha256": "8803a9aa1a8d8c991b040e5880c01c3f63305ea3dc6092eb83d63b6cfe918959",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_board_glue_v2.py",
+      "size": 455,
+      "sha256": "1374d3349143b445045e43cf2f3fd330d65241f8ad937d3309ea3053b3579fc2",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_canonical_foldstage.py",
+      "size": 3474,
+      "sha256": "48a117bd26c04e976365fdf00300a7f1579649f81f3582caac3d5397ece4a521",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_compute_continuous.py",
+      "size": 693,
+      "sha256": "f0b68319cfd237c9ef325cdc5ad6b98aabed03d73c078978fa1241f4e174a6c0",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_compute_framing_native.py",
+      "size": 857,
+      "sha256": "8ebe9b7dd562ff1228dc721add852ed1bf8cc1a3d737751e615cb681e1ac817c",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_compute_full_wrap_native.py",
+      "size": 776,
+      "sha256": "b7c6b112f0fbb2e07e8d51f9d52fbbb6805a9e9d972e68f4634783b32c5289be",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_compute_healthy_join.py",
+      "size": 667,
+      "sha256": "aa6a58d352444aa305336458a5737d2879339168a53dfd03ba58837bbd07ad61",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_compute_native.py",
+      "size": 1490,
+      "sha256": "adcc3df340550283e4ca027b14b30c665bcb62ddbd4d0ddf9b5d768c1ae061ae",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_compute_physical.py",
+      "size": 1447,
+      "sha256": "8e188781b701b578d5ac928d1018a718c65a5e1633e78860a5a7fbcf0b54d6be",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_compute_pilot_native.py",
+      "size": 1390,
+      "sha256": "690bd2c4f1bc66b69caa7e9eabf9090002429b1e686d64e8712497d8f379b5c1",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_compute_protected_twin_native.py",
+      "size": 836,
+      "sha256": "17de2ef87c4fc83d73c60e5bf313908b68c58421e7140fb867a7c946968a6f1d",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_compute_prp_native.py",
+      "size": 780,
+      "sha256": "56d546e928346650272dc31c09749248dce901e795bd4bc36157fe271669f313",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_direct_cold_bind_v2.py",
+      "size": 1540,
+      "sha256": "564a2bf557f03fd4328e62969a2db202657ad8e5797cf037f2543983730bb9d8",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_direct_cold_bind.py",
+      "size": 1959,
+      "sha256": "2523c9309b68733d638e46f28fe26b216465fc7806c02efa199beab829258cad",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_direct_cold_native.py",
+      "size": 1794,
+      "sha256": "b9ca48ac78dda9e1eaa8a75efa98ead217a867cc2aacab756829caedb8de8964",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_direct_compute_full_native.py",
+      "size": 1156,
+      "sha256": "91bd5606d6913c10782331dd7fba723716d7942239f6530a6e456cb84a5e64d4",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_direct_compute_native.py",
+      "size": 1154,
+      "sha256": "88aefbb6004a456ab4fbb5ea39b62023dfe7f17c41622d80652d53e003760bc1",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_direct_driver_adapter_v2.py",
+      "size": 860,
+      "sha256": "92e286d97be1979211185393a159f595aba281ff4922f7861cac7fde63917aea",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_direct_write_native.py",
+      "size": 2185,
+      "sha256": "1d4b32744b139ed74ba3b964a71214627c512ef6c6f6b18ff73bd2354ed8d443",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_dma_aperture_v1.py",
+      "size": 4126,
+      "sha256": "9e559b1bebd83f9fb59466e74c1ada19592a074a00df04b6068d13ab0a0b8a50",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_dma_aperture_v2.py",
+      "size": 2876,
+      "sha256": "b8c5a0175d4a6f775cae845df3e1998d6e8ac4c411b29da7ec7acdbef2818d15",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_fixed_schedule_native.py",
+      "size": 1562,
+      "sha256": "c88564d9a57c9aeb627ee10fa8e9fd620540c3264f55fc0c0bfd93bd52047a52",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_fixed_schedule.py",
+      "size": 2754,
+      "sha256": "f542549c047b96bb708125a27c0e0bb0422772b785bc9be42f447855a4b4d300",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_generated_aperture_audit_v1.py",
+      "size": 482,
+      "sha256": "d72d5ccbc6e143dd53ef6a71cd42fd26e75632d8b462ffe801e37ecff272249b",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_generated_clock_proof_v1.py",
+      "size": 555,
+      "sha256": "15d077fbf67cc9abac6cde60dcd5ec1d8a0f8db46e8d1a4ddfc642424a664ec7",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_host_image_ack_v1.py",
+      "size": 1849,
+      "sha256": "c1ff7ca7e75f259a22365dd7a1bef9f65a30a8093d9ffb57c6831430b574f973",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_host_link_model_v1.py",
+      "size": 5487,
+      "sha256": "1b74f12901346c7371147d84213b6e0569ec03c14c608e1c570bce1f8a2fc450",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_host_mmio_v1.py",
+      "size": 1315,
+      "sha256": "32f8561fe696b72f72a1398a1cbb6985313194da75b1a8ef61f11423813dac57",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_host_window_application_gmp_native.py",
+      "size": 2025,
+      "sha256": "629cd681ea7963ff6a3d25eb04634eba55a4b7455134f5c42e0409ff6126cd4d",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_host_window_gmp_native.py",
+      "size": 4035,
+      "sha256": "73ad855e07f2da94114ef1adcfac8b0b98998f1db4905240949895c0a360637d",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_interface_package_v2.py",
+      "size": 656,
+      "sha256": "f02069d88ef94046a3a26efa992d8c60a6867a55d463293de5cb5c0f18130f04",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_lean_watchdog_bind.py",
+      "size": 6046,
+      "sha256": "6aa019e524aa0318ed739f2d64e86174f7329e80a38a73b8bac18ec112fa981b",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_lean_watchdog_model.py",
+      "size": 1948,
+      "sha256": "cc78a765b3924b38c8c53b03054391e6f00db9128b336fe86b501435e25d611b",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_link_reset_native_v1.py",
+      "size": 1828,
+      "sha256": "dd306567c56ad9909da44d88de7777219b52fdf150c46fcb5b2095f7c3754d6d",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_normal_adapter_v2.py",
+      "size": 1996,
+      "sha256": "9d0508891c2d3a896ac2b525123f41e0cc8d3a05b1e3e8404cf476dc6b18ee64",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_pcie_application_bind_v2.py",
+      "size": 1385,
+      "sha256": "f682d8736ff39ad909902db1c4251a670e2f98d1f35cb8bcbf39c5609813b5af",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_pcie_application_bind_v3.py",
+      "size": 1543,
+      "sha256": "aa9d947e2edc8156c1fa0e25299f1a6766d92ba0c50f182d8cc79420f8db837c",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_pcie_application_bind_v4.py",
+      "size": 1072,
+      "sha256": "4ede355b1dea3a65191390efd2eac26b5923a5ee8232899dc82115fcd1e09ea9",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_pcie_avmm_packetfault_v8.py",
+      "size": 1514,
+      "sha256": "9cac4c8af3d8c7ce406e3f96f7f3bcfc8092413e3c5d840e199fca7f875ad0e5",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_pcie_avmm_v1.py",
+      "size": 9746,
+      "sha256": "dadfd95c26182a963e0b8ca62d86d52091786d87fb9f1783ed5544a8346f61ce",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_pcie_avmm_v8_native.py",
+      "size": 1609,
+      "sha256": "476bfa2d8bb59134df5b529abe3b34bac963cd5dabeaa70db1bf8e67d388da3a",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_pcie_shell_bind_v1.py",
+      "size": 1656,
+      "sha256": "7c2371cf00584880e992d0c72bde2d662d0e96731b94ea0e90df58b092ecc44f",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_pcie_shell_bind_v2.py",
+      "size": 4439,
+      "sha256": "e21e057714b4934fdda3ca0973526ab2896460cc4e81566c8d9cb3533d93c36c",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_protocol_age_component_azure_packet_v1.py",
+      "size": 3011,
+      "sha256": "5db9b075235615a3e98a6c8d6e9519fcfa620bc57031046f5db694a970ce5117",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_protocol_age_component_v1.py",
+      "size": 2394,
+      "sha256": "c428406e885d096843755c2e990cf278ebe731b8c330079e13e1340d8b71b625",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_protocol_age_v2.py",
+      "size": 2366,
+      "sha256": "e3bfa2daeae54fdfcd29e91d3ab869b3386016c705c555671cb3ad020f03670e",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_protocol_age_v3.py",
+      "size": 2234,
+      "sha256": "1847e44636908c5629458336a5b68ce7f877576b99239bc3f13309b2c9e00449",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_protocol_age.py",
+      "size": 3762,
+      "sha256": "fdab641b05e37eb9b5b1c52e05ee7c0df984516321c824dbf1ddca69c9200634",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_qsys_aperture_component_v1.py",
+      "size": 863,
+      "sha256": "5d7408812dbeb16f73a36e301ef4355b4b1f4a78ae5e87ff1aaa9529b2adb06a",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_qsys_application_v1.py",
+      "size": 1155,
+      "sha256": "e0c54d83937324780a69955b7251bbf2a320c43461726336afb739f86e1b006e",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_qsys_guarded_recipe_v1.py",
+      "size": 842,
+      "sha256": "cfd8eb2f30eb1ffa0ed63061ab5ad0e860faee49f6087ea4d80d6ac4ab0c7834",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_qsys_source_v3.py",
+      "size": 807,
+      "sha256": "3d19a1746360226d45d210ec7e5ebe807d3cf36c3218f2450b0b7140b54e7b2e",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_real_shell_clock_global_v1.py",
+      "size": 2367,
+      "sha256": "112a2ffa81f47da12081c1227987f6c155c624795b187f259db05b11f3911f54",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_real_shell_inventory_v1.py",
+      "size": 1811,
+      "sha256": "8c7506c23076973d93b45ec49ae3fbe22e3835ba6fea3a08ef92efba10d575b2",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_real_shell_source_v1.py",
+      "size": 2339,
+      "sha256": "5ba33c64b72ac97e5efe15cc847da0fd2530e6f2b7e4484da1be02daed48b441",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_shell_application_full_native.py",
+      "size": 1327,
+      "sha256": "956907239463eb9053601e0c50267e76283522d41719b752f346fa0f5e98c98f",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_shell_application_native.py",
+      "size": 1892,
+      "sha256": "a90216607d90db9a08903d0b72561f3c6138f8722e68a70a9ffbef7f0dd1bb5a",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_shell_application_v4_native.py",
+      "size": 1316,
+      "sha256": "d62445313f2908f96528c6b01d6337eefd4fab8dfc91af90ce185c1471618e38",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_shell_packets_v1.py",
+      "size": 2235,
+      "sha256": "ce9163ea5628df02253ec2e6f6ae423923a33296e625213c52575d6354725b54",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_storage_ram.py",
+      "size": 4060,
+      "sha256": "3759cc8e6002d51ac3b605eeaaffbf9eb0a37aef1ab7838436d1872834285827",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_term_prefetch_forward_model.py",
+      "size": 1345,
+      "sha256": "1487bfccc0c98a7da8a6e83f0ed2f2e5e2b9c6439de0ebd65f925d3379e4afcc",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_transform_stop_model_v1.py",
+      "size": 5171,
+      "sha256": "0221fcb4c457e27b143f14249598b8919a1def3267cc50b234400a6f6f844ac3",
+      "kind": "authored-current-source-snapshot-not-qualification"
+    },
+    {
+      "path": "fpga/tests/test_stream27_r15_watchdog_native.py",
+      "size": 1072,
+      "sha256": "d0d03e96e9451a49afa6992859129ccacd044ef2fc28cfcbe4b5cd9c1bd4f4e5",
+      "kind": "authored-current-source-snapshot-not-qualification"
     },
     {
       "path": "fpga/tests/test_stream27_r85_width_bounds.py",
@@ -57029,10 +59579,754 @@
           "sha256": "d8c95e7deb241118c06fd03e678e12c7f44b3f1a4a5a1d3eb012f69059c55ede"
         }
       ]
+    },
+    {
+      "job": "R15-exploratory-compute60-aw8-normal",
+      "classification": "EXPLORATORY_NOT_ADOPTED; captured compute only; not current-shell fit",
+      "top": "genefer_stream27_host_contexts_aw8_p16_protected_field100_v1_r15_fixed_v1_r15_leanwatch_v1_r15_all_v1",
+      "bundle_identity": {
+        "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/production-bundle.json",
+        "sha256": "e27236e8a4d65ced6b8e63ab65fa868ef872b1bd66f27bac1142cc6feb443b61",
+        "publicly_retained": true
+      },
+      "sources": [
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_merged_final_gs_pair_v1.sv",
+          "size": 2132,
+          "sha256": "07fc26a9ae44d37eeb8286296c7ddef94c1db6b0103855169d1c4a1bda20a3cc",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_mdc_fifo_smallreg_v1.sv",
+          "size": 1503,
+          "sha256": "0ff1605c74d81670291f1bd0ee88afe6f5461d999d5ee65fc6f1cc722f4ec4be",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_mdc_commutator_sm1_registered_v1.sv",
+          "size": 6835,
+          "sha256": "c262261f1a7c7428056111ccdef97462edd081016f219428d2a81b7e429819c9",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_mdc_commutator_sync.sv",
+          "size": 7183,
+          "sha256": "72e6d497280f8d5eeba28c0af30b79a116e20b338d50a9894355a28d3aa4d218",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_ntt_banked27_engine.sv",
+          "size": 27268,
+          "sha256": "534af0c3b2d16b9694200f415e90397ed5000c1350e3e8a7ca02ca4a3383f77f",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/merged_stream27_root_library_aw8_p16_f0_v1.sv",
+          "size": 51612,
+          "sha256": "6fa0f6d3558288b00c29c504b0e4eff850ba288fef1e7994da812bf6c5fbb47f",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_shared_term_roots_aw8_p16_f0_v1.sv",
+          "size": 3341,
+          "sha256": "371e2890a158a2bcb2b14cf8e14ae212206a459bf83d3c3800e4e5b71c5644a7",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_mdc_commutator_slots_v2.sv",
+          "size": 6498,
+          "sha256": "3484e192967d6295dd6dc7f6a325dfd31e1573a327c881be9f9e10558c458da5",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_root_rom_prefetch.sv",
+          "size": 1952,
+          "sha256": "f4b9415b855d58a1c5ddbc79fd473eef5388b05c888db1c5dde4825e2b3184fc",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_digit_reduce27_pipe.sv",
+          "size": 2693,
+          "sha256": "61e14bb13c2dbcc13b5030756578a0d0358269beb24fb207a5641b98795883e8",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_signed_boundary_reduce27_pipe.sv",
+          "size": 3799,
+          "sha256": "140fcad078bd089456712e27eed9c1f78f340298f72a7d6860d5bed70bbb9f2d",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_epoch_protocol_v5.sv",
+          "size": 8550,
+          "sha256": "a01f6b93200d4ee5d1eb7e81664cfd89e373a447e9cbf5173387188f1212df45",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_row_arithmetic_param_v1.sv",
+          "size": 3740,
+          "sha256": "346528436c6351b96a2ce0340fa6bc2b55d9338e6a1045237bcba80b9b99ee05",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_term_context_v2.sv",
+          "size": 7187,
+          "sha256": "1785c86519e52908e5e450ec8d48656e2fc402808ad3660bda6aa7e8d4c86592",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_correction_serial_p16_f0_v1.sv",
+          "size": 766,
+          "sha256": "ef4bc7575185d545c56cc6922470414f821c60fdf3ad2b75baec85787c69778f",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_correction_serial_v1.sv",
+          "size": 6990,
+          "sha256": "2cb1f600293128e56502ac2a3a4384cb437b7af03175033cb0ee6a8ada758309",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream28_merged_ct_aw8_p16_f0_v1_shared_comm_mlab_v1_r15_leanwatch_v1.sv",
+          "size": 51552,
+          "sha256": "3499e363127aebe187c0f4a0368e21f45eeb116a1f4e3672989ff51a72f090e9",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_delay_mlab_v1.sv",
+          "size": 1923,
+          "sha256": "fbcdb5da28c9ae64a68189d0b5a6b60182edcc2c80d98728ca9673555591b36e",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_montgomery_factored_v1.sv",
+          "size": 4082,
+          "sha256": "866c2b19c9e6afbbb56ce71089288334579f90e977ca139b41097d0f9191c690",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_square_p16_f0_v1_contexts_v1.sv",
+          "size": 1702,
+          "sha256": "5e1499e6e19c5a0d3549ec465a1a187ed324d85f0d685717b3c5a0205ecf653e",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/merged_stream27_root_library_aw8_p16_f1_v1.sv",
+          "size": 51612,
+          "sha256": "20fb20d7b4a8aefaf91da5ea76ab57e784965956aefa15d997c295be0b36c160",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_shared_term_roots_aw8_p16_f1_v1.sv",
+          "size": 3343,
+          "sha256": "04842a3293eef8e9813d90b509385a50d75856cf3433d0e680810c8ab6f464f9",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_correction_serial_p16_f1_v1.sv",
+          "size": 764,
+          "sha256": "c5cc1405cba830e7453e0dab85fb3500bfb7a7578a72d267beead468072ca1b9",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream28_merged_ct_aw8_p16_f1_v1_shared_comm_mlab_v1_r15_leanwatch_v1.sv",
+          "size": 51488,
+          "sha256": "627bb284edb05d540f0892188f6d863fc6b0e2e914e85a75bd8b95445b576a56",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_square_p16_f1_v1_contexts_v1.sv",
+          "size": 1701,
+          "sha256": "2705d66be1124fc7365e57f96363a8385867a49c480f6efede407ea6c2ddc727",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/merged_stream27_root_library_aw8_p16_f2_v1.sv",
+          "size": 51612,
+          "sha256": "5d084e2391d134c1c6861bf9291a581b9791a3bc8d830069009ada5743c890b0",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_shared_term_roots_aw8_p16_f2_v1.sv",
+          "size": 3343,
+          "sha256": "6c4bba24c8b0753acb68a28d80edab8ac18961f371073d6b1f8a2cb488967822",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_correction_serial_p16_f2_v1.sv",
+          "size": 765,
+          "sha256": "9c46d963f71eec3214677cc7d8a3a1b684f1905bb64d288ebf3f584fae1433a2",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream28_merged_ct_aw8_p16_f2_v1_shared_comm_mlab_v1_r15_leanwatch_v1.sv",
+          "size": 51488,
+          "sha256": "674a2f00f5db0e97a99bcc426eb0383aa256ecb3baf1ea407dde1068a492e9f7",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_square_p16_f2_v1_contexts_v1.sv",
+          "size": 1701,
+          "sha256": "c963e0b647c4bcfb6192c81690b104ef49f66c0fa847c7c6a8911e53b6ab1ece",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_crt3_27_mont_pipe.sv",
+          "size": 6643,
+          "sha256": "7e76b7affb9534b61d58238014d938ba6c19df3bc09ae75a62c2c71d47eccba3",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_montgomery_mul27_sparse_pipe.sv",
+          "size": 2326,
+          "sha256": "501d0ce309a3915f7aed0f3bde14ba1ee8d56ddc5f6abef1f2f5bb572d64db4b",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_div_recip_precision.sv",
+          "size": 5409,
+          "sha256": "832021ed0b3410dc867d92ac4436a725d5717f9630d233073e39896789ebbd7c",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_blockcarry_small_cell.sv",
+          "size": 4184,
+          "sha256": "eafee617681cbd84cedfe90874938f63bf5ae84123ba1c914410785b44a3e74f",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_blockcarry_setup_param_v1.sv",
+          "size": 3631,
+          "sha256": "c9ba8163c8bb43afecf1afee07a8a55c4eb89539318cf235b83508ab692f4f26",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_host_image_rowwrite_v1.sv",
+          "size": 6532,
+          "sha256": "885337be00e43a5a1b49f006e98db6607da35d5d3d62a1723b07e277788597cc",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_descriptor_fifo_ff_v1.sv",
+          "size": 1396,
+          "sha256": "24977500d5f4cbae04358065877371436218b6c5341e930a6922c91e46a44a86",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_sdp_ram32.sv",
+          "size": 1128,
+          "sha256": "993567fb68fdc216b9ff04489d1810f743b86564434e4b48261ad606b25d53b0",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_lazy28_rootregistered_butterfly_v1.sv",
+          "size": 3127,
+          "sha256": "889cdb7ff9417897c7c62a52fe67e6750f3f71f5c854d8529c629cc3a98cb145",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_signed_boundary_inputreg_v1.sv",
+          "size": 1462,
+          "sha256": "907f71b5aad203375d2822ede4207c5e69b3ed4ea79210fc018313e555615a54",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_quarantine_replicas_v1.sv",
+          "size": 930,
+          "sha256": "9fc57a202e70c7894d05e29a9de09f44bcf97bb410d783d432cd9aa5ea342a9f",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_mdc_commutator_shared_packed_faultlocal_v1_r15_leanwatch_v1.sv",
+          "size": 6514,
+          "sha256": "02cf02c55100024700520b3a2d7b06c581ac907c43fcba22b72e3d7bdd78915c",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_term_context_param_v1_contexts_v1_storage2_v1_payload_lookahead_v1_select_token_v1.sv",
+          "size": 8032,
+          "sha256": "b8071f8ea6ba6ac1b7cf8f0b10f92253c738f1b9a4edbf366245b706af001422",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_mul_select_token_c2_timing10_v1.sv",
+          "size": 2614,
+          "sha256": "e24cd1ad4207ebb542b9d3de1eac02bca85c64eebe4d532eddbaeaab35a33f97",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream28_merged_gs_aw8_p16_f0_v1_shared_comm_mlab_v1_c2_inputreg_v1_r15_leanwatch_v1.sv",
+          "size": 54186,
+          "sha256": "3961950fd117d29ec0ace6bed2bc5ca2d75fe5284fad643f20720b9b5392a1db",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_merged_final_gs_pair_inputreg_v1.sv",
+          "size": 1655,
+          "sha256": "a230a237c5650552e773cb06930ca5d90abb7f37209d4aae8973b6f2be059a5d",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream28_merged_gs_aw8_p16_f1_v1_shared_comm_mlab_v1_c2_inputreg_v1_r15_leanwatch_v1.sv",
+          "size": 54090,
+          "sha256": "e7be64f257738e03aee9f0ce63fbf39ffa5d5ad7b76423218db2960ea1ec3b96",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream28_merged_gs_aw8_p16_f2_v1_shared_comm_mlab_v1_c2_inputreg_v1_r15_leanwatch_v1.sv",
+          "size": 54082,
+          "sha256": "a7c55904dd6403f0720a16fbeabf9843a5a0469e0725046be283474751fad43b",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_blockcarry_lane_localbase_v1.sv",
+          "size": 10948,
+          "sha256": "cb3fcd665036a1d9028bc2d7e33e96c2e5f57e3e95e16a25460173d32560b236",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_blockcarry_small_cell_localbase_v1.sv",
+          "size": 4346,
+          "sha256": "2005d97a1b512c365b1b6494d8974d3f869d15ee7ce8713115eab8d713e69c1b",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_epoch_protocol_contexts_v1_payload_lookahead_v1_protected_field100_v1.sv",
+          "size": 10134,
+          "sha256": "f15a0d82ceaab192417aed9a1e009c92447d662c0a4b69832bf06db99782e090",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_threefield_carry_aw8_p16_registered_error_v1_protected_field100_v1_r15_leanwatch_v1.sv",
+          "size": 15582,
+          "sha256": "a9b9b391747eae88e51942ce7d571f5bf94cf2e38ce5766d5f68f9bf371f0e37",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_warm_contexts_aw8_p16_registered_error_v1_protected_field100_v1_r15_fixed_v1_r15_leanwatch_v1.sv",
+          "size": 16315,
+          "sha256": "23319aac79b17ecfdfa12873a193d771eb91c0898ef48bd6bad3592d3cb60c32",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_shared_warm_aw8_p16_f0_storage_combo_quarantine_v1_timing10_v1_protected_field100_v1_r15_leanwatch_v1.sv",
+          "size": 34030,
+          "sha256": "7ba842527fb0124b4d34c09a90a0bd2f5b77c6ed28e71daccd809f6c05edcfbf",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_shared_warm_aw8_p16_f1_storage_combo_quarantine_v1_timing10_v1_protected_field100_v1_r15_leanwatch_v1.sv",
+          "size": 33992,
+          "sha256": "bccf7744d9f5ee28cccb55ec17a20d4cfada95babcc2bf1c325e2f649eb17dbf",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_shared_warm_aw8_p16_f2_storage_combo_quarantine_v1_timing10_v1_protected_field100_v1_r15_leanwatch_v1.sv",
+          "size": 33992,
+          "sha256": "09a5c578e941468d2f1be51b48ec283dcf407dc61fd8949f5ed43b387b0cf3e9",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_canonical_image_foldpayload100_v1.sv",
+          "size": 12802,
+          "sha256": "e07ccea57740154b803d9b4c4e85e456e280d61ca6f24d455834413dee02a234",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_r15_numeric_delay_mlab_v1.sv",
+          "size": 1039,
+          "sha256": "8a2cc398d9fa0868fbc60aa77754a41c1a3820707448db1631f65e47d97ae63d",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_r15_progress_watchdog_v1.sv",
+          "size": 1203,
+          "sha256": "0e0bbad86bc4735bb766c6b67850bfa69ceca71bb6ab1a07b8bab5ab16372c71",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/aw8-normal/source/fpga/rtl/genefer_stream27_host_contexts_aw8_p16_protected_field100_v1_r15_fixed_v1_r15_leanwatch_v1_r15_all_v1.sv",
+          "size": 23918,
+          "sha256": "75ad59d8679813eff03394ec3bac63f317c27b2a00124582e9581096265567d0",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        }
+      ]
+    },
+    {
+      "job": "R15-exploratory-compute60-full-normal-v2",
+      "classification": "EXPLORATORY_NOT_ADOPTED; captured compute only; not current-shell fit",
+      "top": "genefer_stream27_host_contexts_aw16_p16_protected_field100_v1_r15_fixed_v1_r15_leanwatch_v1_r15_all_v1",
+      "bundle_identity": {
+        "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/production-bundle.json",
+        "sha256": "079ea8523f4599bd521d3a3b3c513001b4e537912fb75ad5a2894447e4c7d428",
+        "publicly_retained": true
+      },
+      "sources": [
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_merged_final_gs_pair_v1.sv",
+          "size": 2132,
+          "sha256": "07fc26a9ae44d37eeb8286296c7ddef94c1db6b0103855169d1c4a1bda20a3cc",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_mdc_fifo_smallreg_v1.sv",
+          "size": 1503,
+          "sha256": "0ff1605c74d81670291f1bd0ee88afe6f5461d999d5ee65fc6f1cc722f4ec4be",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_mdc_commutator_sm1_registered_v1.sv",
+          "size": 6835,
+          "sha256": "c262261f1a7c7428056111ccdef97462edd081016f219428d2a81b7e429819c9",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_mdc_commutator_sync.sv",
+          "size": 7183,
+          "sha256": "72e6d497280f8d5eeba28c0af30b79a116e20b338d50a9894355a28d3aa4d218",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_ntt_banked27_engine.sv",
+          "size": 27268,
+          "sha256": "534af0c3b2d16b9694200f415e90397ed5000c1350e3e8a7ca02ca4a3383f77f",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/merged_stream27_root_library_aw16_p16_f0_v1.sv",
+          "size": 1843166,
+          "sha256": "dc3f79d0ca3e3779badc17ee1305eddc605f3563013b3bba468c1e2cafaab2b3",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_shared_term_roots_aw16_p16_f0_v1.sv",
+          "size": 10144,
+          "sha256": "7aba21482ae0ea956865a542826f1c24445b3fb85ec776ed1fcf35c69dd2ca92",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_mdc_commutator_slots_v2.sv",
+          "size": 6498,
+          "sha256": "3484e192967d6295dd6dc7f6a325dfd31e1573a327c881be9f9e10558c458da5",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_root_rom_prefetch.sv",
+          "size": 1952,
+          "sha256": "f4b9415b855d58a1c5ddbc79fd473eef5388b05c888db1c5dde4825e2b3184fc",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_digit_reduce27_pipe.sv",
+          "size": 2693,
+          "sha256": "61e14bb13c2dbcc13b5030756578a0d0358269beb24fb207a5641b98795883e8",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_signed_boundary_reduce27_pipe.sv",
+          "size": 3799,
+          "sha256": "140fcad078bd089456712e27eed9c1f78f340298f72a7d6860d5bed70bbb9f2d",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_epoch_protocol_v5.sv",
+          "size": 8550,
+          "sha256": "a01f6b93200d4ee5d1eb7e81664cfd89e373a447e9cbf5173387188f1212df45",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_row_arithmetic_param_v1.sv",
+          "size": 3740,
+          "sha256": "346528436c6351b96a2ce0340fa6bc2b55d9338e6a1045237bcba80b9b99ee05",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_term_context_v2.sv",
+          "size": 7187,
+          "sha256": "1785c86519e52908e5e450ec8d48656e2fc402808ad3660bda6aa7e8d4c86592",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_correction_serial_p16_f0_v1.sv",
+          "size": 766,
+          "sha256": "ef4bc7575185d545c56cc6922470414f821c60fdf3ad2b75baec85787c69778f",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_correction_serial_v1.sv",
+          "size": 6990,
+          "sha256": "2cb1f600293128e56502ac2a3a4384cb437b7af03175033cb0ee6a8ada758309",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream28_merged_ct_aw16_p16_f0_v1_shared_comm_mlab_v1_r15_leanwatch_v1.sv",
+          "size": 111259,
+          "sha256": "dd9d5a64b843f7aa710ea01a9bdb0f778c14d7fd6798118c5f5bb145a0b338ce",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_delay_mlab_v1.sv",
+          "size": 1923,
+          "sha256": "fbcdb5da28c9ae64a68189d0b5a6b60182edcc2c80d98728ca9673555591b36e",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_montgomery_factored_v1.sv",
+          "size": 4082,
+          "sha256": "866c2b19c9e6afbbb56ce71089288334579f90e977ca139b41097d0f9191c690",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_square_p16_f0_v1_contexts_v1.sv",
+          "size": 1702,
+          "sha256": "5e1499e6e19c5a0d3549ec465a1a187ed324d85f0d685717b3c5a0205ecf653e",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/merged_stream27_root_library_aw16_p16_f1_v1.sv",
+          "size": 1843166,
+          "sha256": "c33b591a34153da3562ae09d8e31180607b400c86a3203c92f3794d2fe27406d",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_shared_term_roots_aw16_p16_f1_v1.sv",
+          "size": 10144,
+          "sha256": "54862b70e382fc3a1083794844969629492f5ae101ed1ad7ddb3cd1cd6150058",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_correction_serial_p16_f1_v1.sv",
+          "size": 764,
+          "sha256": "c5cc1405cba830e7453e0dab85fb3500bfb7a7578a72d267beead468072ca1b9",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream28_merged_ct_aw16_p16_f1_v1_shared_comm_mlab_v1_r15_leanwatch_v1.sv",
+          "size": 111131,
+          "sha256": "b48cc3acfb7d9c84c870d43ec24f3e2eec4fce961ea069cebd949219ac6c1c06",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_square_p16_f1_v1_contexts_v1.sv",
+          "size": 1701,
+          "sha256": "2705d66be1124fc7365e57f96363a8385867a49c480f6efede407ea6c2ddc727",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/merged_stream27_root_library_aw16_p16_f2_v1.sv",
+          "size": 1843166,
+          "sha256": "ffebf05c66bd6e487d20f4ad853582d8397b655e9af77e8050402a7330d4bd5b",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_shared_term_roots_aw16_p16_f2_v1.sv",
+          "size": 10144,
+          "sha256": "44e96d3f541cb91a596b766a29f4aa33cb877f3d49f318c07d4d8b454dacdb21",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_correction_serial_p16_f2_v1.sv",
+          "size": 765,
+          "sha256": "9c46d963f71eec3214677cc7d8a3a1b684f1905bb64d288ebf3f584fae1433a2",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream28_merged_ct_aw16_p16_f2_v1_shared_comm_mlab_v1_r15_leanwatch_v1.sv",
+          "size": 111131,
+          "sha256": "b413e5bd91b82612c7d0c9f8978917a3c7d62d5e039f452568655dbced2d98a1",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_square_p16_f2_v1_contexts_v1.sv",
+          "size": 1701,
+          "sha256": "c963e0b647c4bcfb6192c81690b104ef49f66c0fa847c7c6a8911e53b6ab1ece",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_crt3_27_mont_pipe.sv",
+          "size": 6643,
+          "sha256": "7e76b7affb9534b61d58238014d938ba6c19df3bc09ae75a62c2c71d47eccba3",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_montgomery_mul27_sparse_pipe.sv",
+          "size": 2326,
+          "sha256": "501d0ce309a3915f7aed0f3bde14ba1ee8d56ddc5f6abef1f2f5bb572d64db4b",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_div_recip_precision.sv",
+          "size": 5409,
+          "sha256": "832021ed0b3410dc867d92ac4436a725d5717f9630d233073e39896789ebbd7c",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_blockcarry_small_cell.sv",
+          "size": 4184,
+          "sha256": "eafee617681cbd84cedfe90874938f63bf5ae84123ba1c914410785b44a3e74f",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_blockcarry_setup_param_v1.sv",
+          "size": 3631,
+          "sha256": "c9ba8163c8bb43afecf1afee07a8a55c4eb89539318cf235b83508ab692f4f26",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_host_image_rowwrite_v1.sv",
+          "size": 6532,
+          "sha256": "885337be00e43a5a1b49f006e98db6607da35d5d3d62a1723b07e277788597cc",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_descriptor_fifo_ff_v1.sv",
+          "size": 1396,
+          "sha256": "24977500d5f4cbae04358065877371436218b6c5341e930a6922c91e46a44a86",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_sdp_ram32.sv",
+          "size": 1128,
+          "sha256": "993567fb68fdc216b9ff04489d1810f743b86564434e4b48261ad606b25d53b0",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_lazy28_rootregistered_butterfly_v1.sv",
+          "size": 3127,
+          "sha256": "889cdb7ff9417897c7c62a52fe67e6750f3f71f5c854d8529c629cc3a98cb145",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_signed_boundary_inputreg_v1.sv",
+          "size": 1462,
+          "sha256": "907f71b5aad203375d2822ede4207c5e69b3ed4ea79210fc018313e555615a54",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_quarantine_replicas_v1.sv",
+          "size": 930,
+          "sha256": "9fc57a202e70c7894d05e29a9de09f44bcf97bb410d783d432cd9aa5ea342a9f",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_mdc_commutator_shared_packed_faultlocal_v1_r15_leanwatch_v1.sv",
+          "size": 6514,
+          "sha256": "02cf02c55100024700520b3a2d7b06c581ac907c43fcba22b72e3d7bdd78915c",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_term_context_param_v1_contexts_v1_storage2_v1_payload_lookahead_v1_select_token_v1.sv",
+          "size": 8032,
+          "sha256": "b8071f8ea6ba6ac1b7cf8f0b10f92253c738f1b9a4edbf366245b706af001422",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_mul_select_token_c2_timing10_v1.sv",
+          "size": 2614,
+          "sha256": "e24cd1ad4207ebb542b9d3de1eac02bca85c64eebe4d532eddbaeaab35a33f97",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream28_merged_gs_aw16_p16_f0_v1_shared_comm_mlab_v1_c2_inputreg_v1_r15_leanwatch_v1.sv",
+          "size": 113797,
+          "sha256": "ee3c8d2ae11d4165f6a4c0cd72bcaa07cc47e2836537afb20a7523e2be76c9d3",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_merged_final_gs_pair_inputreg_v1.sv",
+          "size": 1655,
+          "sha256": "a230a237c5650552e773cb06930ca5d90abb7f37209d4aae8973b6f2be059a5d",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream28_merged_gs_aw16_p16_f1_v1_shared_comm_mlab_v1_c2_inputreg_v1_r15_leanwatch_v1.sv",
+          "size": 113637,
+          "sha256": "06cb5d82e9a63c22ca44970e055087a050e0b2b3165627b2c7bd9e0b571b9974",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream28_merged_gs_aw16_p16_f2_v1_shared_comm_mlab_v1_c2_inputreg_v1_r15_leanwatch_v1.sv",
+          "size": 113637,
+          "sha256": "597526f0d2a3aaf5d10f808b89f1f287e2fefe83533409aac4ef5f2ad5051820",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_blockcarry_lane_localbase_v1.sv",
+          "size": 10948,
+          "sha256": "cb3fcd665036a1d9028bc2d7e33e96c2e5f57e3e95e16a25460173d32560b236",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_blockcarry_small_cell_localbase_v1.sv",
+          "size": 4346,
+          "sha256": "2005d97a1b512c365b1b6494d8974d3f869d15ee7ce8713115eab8d713e69c1b",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_epoch_protocol_contexts_v1_payload_lookahead_v1_protected_field100_v1.sv",
+          "size": 10134,
+          "sha256": "f15a0d82ceaab192417aed9a1e009c92447d662c0a4b69832bf06db99782e090",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_threefield_carry_aw16_p16_registered_error_v1_protected_field100_v1_r15_leanwatch_v1.sv",
+          "size": 15588,
+          "sha256": "2f70b0c317d6f59d619dde78af386195e6dc7a0b4a12122105280db5edb68766",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_warm_contexts_aw16_p16_registered_error_v1_protected_field100_v1_r15_fixed_v1_r15_leanwatch_v1.sv",
+          "size": 15724,
+          "sha256": "4f46a60616f7b9119adb0fc08dec904a7da3366ec8d5712062722f4a5768a23f",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_shared_warm_aw16_p16_f0_storage_combo_quarantine_v1_timing10_v1_protected_field100_v1_r15_leanwatch_v1.sv",
+          "size": 33548,
+          "sha256": "fa6eea4b6744663b6e95a30f8bc5b0f832f94b8c0d07ddeba0ea6ab795c876f2",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_shared_warm_aw16_p16_f1_storage_combo_quarantine_v1_timing10_v1_protected_field100_v1_r15_leanwatch_v1.sv",
+          "size": 33510,
+          "sha256": "ea8d9fda4a8c05d93f613bea7ae6ed142a5070a36e0a30b5aa38740bfc60c892",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_shared_warm_aw16_p16_f2_storage_combo_quarantine_v1_timing10_v1_protected_field100_v1_r15_leanwatch_v1.sv",
+          "size": 33510,
+          "sha256": "fab9b8cf83cdff898455bbdbde55849e363bef33055e31a189e1f2453272f0ac",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_canonical_image_foldpayload100_v1.sv",
+          "size": 12802,
+          "sha256": "e07ccea57740154b803d9b4c4e85e456e280d61ca6f24d455834413dee02a234",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_r15_numeric_delay_mlab_v1.sv",
+          "size": 1039,
+          "sha256": "8a2cc398d9fa0868fbc60aa77754a41c1a3820707448db1631f65e47d97ae63d",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_r15_progress_watchdog_v1.sv",
+          "size": 1203,
+          "sha256": "0e0bbad86bc4735bb766c6b67850bfa69ceca71bb6ab1a07b8bab5ab16372c71",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        },
+        {
+          "path": "fpga/results/throughput-20260929/trackS-r15-compute-native-v1/full-normal-v2/source/fpga/rtl/genefer_stream27_host_contexts_aw16_p16_protected_field100_v1_r15_fixed_v1_r15_leanwatch_v1_r15_all_v1.sv",
+          "size": 23924,
+          "sha256": "89531b01f8764409880a008883f58cbff93b61569452234599b3131a25a2696b",
+          "kind": "R15-exploratory-exact-captured-RTL"
+        }
+      ]
     }
   ],
-  "phase": "FINAL_TECHNICAL_SNAPSHOT_ROOT_COMPLETION_HANDOFF",
-  "base_commit": "8e81c3ed09c3fc469dd440954d6696047bc02030",
+  "phase": "R15_EXPLORATORY_SOURCE_CHECKPOINT_NOT_ADOPTED_PHYSICAL_PENDING",
+  "base_commit": "00355e1bdf7be59722e454186bce582f52b5ddbd",
   "source_snapshot_frozen_for_copy": true,
   "public_current_summary": "backup/CURRENT-TECHNICAL-SUMMARY.json",
   "isolated_removed_paths": [
@@ -58105,5 +61399,25 @@
         "kind": "final-public-technical-summary-not-private-original"
       }
     ]
-  }
+  },
+  "r15_public_summary": "backup/R15-TECHNICAL-SUMMARY.json",
+  "r15_omissions": [
+    {
+      "path": "fpga/host/r15_boinc_sdk_fixture.py",
+      "reason": "personal/account/access marker; exact original retained privately"
+    },
+    {
+      "path": "fpga/host/r15_boinc_sdk_recipe.py",
+      "reason": "personal/account/access marker; exact original retained privately"
+    },
+    {
+      "path": "fpga/tests/test_r15_boinc_sdk_standalone.py",
+      "reason": "personal/account/access marker; exact original retained privately"
+    },
+    {
+      "path": "fpga/tests/test_r15_f16_existing_native.py",
+      "reason": "personal/account/access marker; exact original retained privately"
+    }
+  ],
+  "r15_delta_no_deletions": true
 }

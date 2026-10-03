@@ -1,0 +1,75 @@
+{
+  "schema": "public-r15-exploratory-snapshot-v1",
+  "captured_utc": "2026-10-03T16:13:44.564Z",
+  "status": "EXPLORATORY_NOT_ADOPTED",
+  "adopted_record": "FIELD100 seed2; unchanged CURRENT-TECHNICAL-SUMMARY.json",
+  "compute60": {
+    "ledger_status": "OWN_SOURCE_NATIVE_2_100_1000_JOIN_PASS",
+    "ledger_sha256": "1f2778688fb0a9dfa181f1cd9c98d71089196e3f8170aff3588d7f3a3d1082f7",
+    "native100_pending": false,
+    "native1000_pending": false,
+    "selected_own_period_ns": 11.728,
+    "adjacent_fail_period_ns": 11.726,
+    "whole_shell_clock_inherited": false,
+    "sample": {
+      "count_per_context": 1911814,
+      "interval": 8461,
+      "first_edges": [
+        204,
+        4434
+      ],
+      "warm_edges": [
+        16175862556,
+        16175866786
+      ],
+      "allocation_edges": [
+        16175862558,
+        16176522022
+      ],
+      "publication_edges": [
+        16176522021,
+        16177181485
+      ],
+      "pair_completion_cycles": 16177181485,
+      "full_read_completion_cycles": 16177247021,
+      "source_ready": false,
+      "conditional_model_only": true,
+      "proof_obligations": [
+        "actual transport/control/tag acceptance and fill",
+        "field-retirement versus downstream-CRT lease distinction",
+        "four-edge term recurrence and storage reuse",
+        "fault/reset/cancel flush and origin publication masking",
+        "source-owned I/F/C/cache/seed/PW and cold FIRST edges",
+        "unchanged N+4 copy and per-job publication drain"
+      ],
+      "measured_or_inherited_sample_cycles": false,
+      "clock_or_area_claim": false
+    },
+    "scopes": [
+      "Own lean compute60 ordinary equal-K1911814 timely-feed internal pair only; host GL assumed (unimplemented).",
+      "Own finite outputs/source parameters/launch-warm-publication ledger mechanically joined, without numeric replay.",
+      "Scalar function arithmetic only; conditional model/sample flags preserved, full sample not measured.",
+      "Includes setup/canonical/PUB1/copyN+4; external scalar LOAD/readback, DIRECT cold transport, host finalization excluded.",
+      "Special minus-one adds N per affected job. No individual latency, hardware/PrimeGrid, clock, PCIe/CDC, GL/rollback or protected-fault claim.",
+      "Fresh protected twin/PRP/wrap/minimal framing faults/own1000/reviews and physical/advisor remain distinct gates."
+    ],
+    "promotion_allowed": false
+  },
+  "real_shell": {
+    "numerical_full_v9": "source-specific normal PASS reported; independent coverage remains separate",
+    "physical": "PENDING; no completed shell resources/timing/adoption claim"
+  },
+  "host": {
+    "source_only": true,
+    "default_off": true,
+    "hardware_IO_denied_by_default": true,
+    "mock_tests_not_hardware": true,
+    "separately_installed_GMP_or_BOINC_prerequisites_not_vendored": true
+  },
+  "limitations": [
+    "No board execution, real PCIe/VFIO/DMA/IRQ or PrimeGrid submission qualification",
+    "No measured full-sample PRP/GPU comparison; conditional internal ledger is not latency",
+    "Generated vendor implementation, rawQDB/layout/binaries/large witnesses and private operations are not public backups"
+  ],
+  "licensing": "Original per-file notices and Genefer MIT THIRD-PARTY-NOTICES preserved; no blanket Apache grant or upstream relicensing"
+}

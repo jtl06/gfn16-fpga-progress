@@ -1,0 +1,31 @@
+Genefer22 source-derived arithmetic/byte-format adaptation
+Source: https://github.com/galloty/genefer22
+Commit: d5060c61090942f42a908492628eba13ebd7cd82
+Files: src/genefer.h, src/gint.h, src/file.h
+
+MIT License
+
+Copyright (c) 2022 Yves Gallot
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+GMP is a separately installed LGPLv3-or-GPLv2 dual-licensed runtime; gmpy2
+is separately LGPL-licensed. Neither is vendored/relicensed here. Any future
+GPL-derived integration remains in its upstream license scope. No Apache-2
+claim is made for this source-derived proof adaptation.

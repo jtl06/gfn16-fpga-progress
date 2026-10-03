@@ -1,0 +1,45 @@
+{
+  "schema": "r15-host-software-contract-v1",
+  "scope": "Implementation prototype; independent reviewer required; no board or deployment qualification",
+  "default_off": ["software_backend", "gerbicz_li", "proof_codec", "vfio", "boinc_wrapper", "direct_cold", "descriptor_stream", "canonical_export", "checkpoint_store", "canonical_window_session", "end_a_window_controller"],
+  "wire_authority": ["reference/stream27_r15_host_link_model_v1.py", "reference/stream27_r15_host_mmio_v1.py", "reference/stream27_r15_shell_mmio_v1.py"],
+  "cold": {
+    "payload": "N block-major ordinary signed32 digits; 16 signed c0; 16 signed c1",
+    "data_record": "32-byte LE record with explicit session32/lease32/context/full56 owner/index/raw32",
+    "retained_setup": "R96/A77 wire fields reserved zero; original START/PROFILE computes and validates them",
+    "commit": "Complete destination ACKs and exact header/lease/idle authority; raw image readiness only",
+    "partial_or_reset": "Revoke publication and drain both domains; payload is not rolled back; full reload required",
+    "physical_ports": "Integrator-supplied lease/grant; peer address independence alone is not a physical port grant"
+  },
+  "descriptors": "Idle external backpressure is legal; active frame-launch underflow is typed abort, never internal calendar stall",
+  "exports": {
+    "A": "canonical96-natural-image-v1: retained already-materialized N signed96 canonical words, full56 owner/context/completed sequence; exact special image [-1,0,...]. Use directly; NEVER invoke raw carry finalizer",
+    "A_software_codec": "Twelve-byte LE payload sits inside owned session/full56/index framing; vendor DMA packet is not assigned. Coherent final error/publication fence and all N ordered full-width words are required",
+    "B": "raw32-natural-carry-c0-c1-v1: requested NEW pre-canonical endpoint with N raw signed32 carry digits, 2P c0/c1, owner/row/count. Source/tap/storage/overflow/native equivalence not qualified; adapter refuses it",
+    "format_policy": "Unknown or mixed formats reject; no canonical96-to-raw32 trimming or second finalization",
+    "retained_materialization_removed": false,
+    "host_cost_or_throughput_credit": false
+  },
+  "checkpoint": {
+    "implemented": "Private R15CP1 source/owner/context/profile/count/residue digest and restore model",
+    "not_genefer_ctx": true,
+    "persistent_atomic_store": "Two independent default-OFF private mode0600 POSIX files, fsync/replace/directory-fsync and identity/bounds/digest validation. Stable host-run identity is not the per-job owner. Restart requires actual common reset/drain/full reload; software interruption tests are not real power-loss qualification"
+  },
+  "gerbicz_li": {
+    "implemented": "GMP/software modular product-window identity; corrupt window restores last verified residue; original genefer PRP product schedule",
+    "hardware_binding": "Pending source-own DIRECT65/70 end-A chunk integration. No arbitrary in-job checkpoints; bounded feed windows keep GLOBAL PRP ordinal separate from per-job full56 owner. Profile/cold/canonical/transport/host-check gaps excluded from existing compute projection",
+    "fault_immunity": false
+  },
+  "proof": {
+    "source": "genefer22 d5060c61090942f42a908492628eba13ebd7cd82; MIT notice preserved",
+    "implemented": "Non-CYCLO little-endian version1/depth/gint records/hash/challenge/CRC; PL relation prototype",
+    "oracle": "Exact upstream PL/GL methods with synthetic N32 GMP transform fixture prepared, execution pending",
+    "server_certificate_and_upload": "Unimplemented"
+  },
+  "vfio": "Inert userspace capability/MMIO abstraction; real device bind/open/ioctl/DMA/IRQ and vendor BAR mapping unimplemented",
+  "reset_delivery": "Only common board reset/link-reset semantics are specified by hardware author. VFIO/FLR/MMIO soft-reset delivery is unbound; software/mock reset ACK is not hardware recovery proof",
+  "boinc": "Anonymous-platform XML and injected status/checkpoint/slot scaffold only; SDK linkage, app IDs, input/upload integration unimplemented",
+  "performance": "Report measured backend, host conversion/check/proof and transport time separately; no brief timing/size estimate inherited",
+  "host_gl_assumed_label_for_lean_hardware_remains": true,
+  "real_hardware_programming_or_primegrid_submission": false
+}
